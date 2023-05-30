@@ -47,13 +47,23 @@ theme:
     - navigation.top
 
 # Plugins
+# INHERIT: mkdocs.yml
 plugins:
   - search:
         lang: ru
         separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
-  - glightbox
+  - glightbox:
+      draggable: false
+      auto_caption: true
+      caption_position: bottom
+  # sponsor feature, maybe someday
+  # - privacy:
+  #     enabled: !ENV [CI, false]
+  #     links_attr_map:
+  #       target: _blank
+  #       links_noopener: true
 
 extra:
   homepage: https://hootsdev.github.io/afk.GG/
@@ -131,3 +141,5 @@ nav:
   - Credits: 
     - Contributors: about.md
     - Community Servers: dis.md
+  - Cool Stories:
+     - The Hospital: coolstory/th-retirement.md

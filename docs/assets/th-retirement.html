@@ -1,0 +1,2000 @@
+---
+permalink: /th
+layout: default
+title: Hospital. The End.
+---
+<meta name="viewport" content="width=device-width, initial-scale=0.4">
+<!-- <link rel="stylesheet" href="{{ '/assets/css/entry.css' | relative_url }}" /> -->
+<script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
+        </script>
+<style>
+  .markdown-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+    margin-top: 25px;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #f8f8f2;
+    background: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+  }
+
+  :not(pre)>code[class*="language-"],
+  pre[class*="language-"] {
+    background: #272822;
+  }
+
+  /* Inline code */
+  :not(pre)>code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: slategray;
+  }
+
+  .token.punctuation {
+    color: #f8f8f2;
+  }
+
+  .namespace {
+    opacity: .7;
+  }
+
+  .token.property,
+  .token.tag,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    color: #f92672;
+  }
+
+  .token.boolean,
+  .token.number {
+    color: #ae81ff;
+  }
+
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    color: #a6e22e;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string,
+  .token.variable {
+    color: #f8f8f2;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.function {
+    color: #e6db74;
+  }
+
+  .token.keyword {
+    color: #66d9ef;
+  }
+
+  .token.regex,
+  .token.important {
+    color: #fd971f;
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+
+  /* highlight */
+  pre[data-line] {
+    position: relative;
+    padding: 1em 0 1em 3em;
+  }
+
+  pre[data-line] .line-highlight-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+  }
+
+  pre[data-line] .line-highlight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: inherit 0;
+    margin-top: 1em;
+    background: hsla(24, 20%, 50%, .08);
+    background: linear-gradient(to right, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+    pointer-events: none;
+    line-height: inherit;
+    white-space: pre;
+  }
+
+  pre[data-line] .line-highlight:before,
+  pre[data-line] .line-highlight[data-end]:after {
+    content: attr(data-start);
+    position: absolute;
+    top: .4em;
+    left: .6em;
+    min-width: 1em;
+    padding: 0 .5em;
+    background-color: hsla(24, 20%, 50%, .4);
+    color: hsl(24, 20%, 95%);
+    font: bold 65%/1.5 sans-serif;
+    text-align: center;
+    vertical-align: .3em;
+    border-radius: 999px;
+    text-shadow: none;
+    box-shadow: 0 1px white;
+  }
+
+  pre[data-line] .line-highlight[data-end]:after {
+    content: attr(data-end);
+    top: auto;
+    bottom: .4em;
+  }
+
+  .markdown-body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box
+  }
+
+  .markdown-body .pagebreak,
+  .markdown-body .newpage {
+    page-break-before: always
+  }
+
+  .markdown-body pre.line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber
+  }
+
+  .markdown-body pre.line-numbers>code {
+    position: relative
+  }
+
+  .markdown-body pre.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 1em;
+    font-size: 100%;
+    left: 0;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+  }
+
+  .markdown-body pre.line-numbers .line-numbers-rows>span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber
+  }
+
+  .markdown-body pre.line-numbers .line-numbers-rows>span:before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: .8em;
+    text-align: right
+  }
+
+  .markdown-body .mathjax-exps .MathJax_Display {
+    text-align: center !important
+  }
+
+  .markdown-body:not([for="preview"]) .code-chunk .btn-group {
+    display: none
+  }
+
+  .markdown-body:not([for="preview"]) .code-chunk .status {
+    display: none
+  }
+
+  .markdown-body:not([for="preview"]) .code-chunk .output-div {
+    margin-bottom: 16px
+  }
+
+  .markdown-body .md-toc {
+    padding: 0
+  }
+
+  .markdown-body .md-toc .md-toc-link-wrapper .md-toc-link {
+    display: inline;
+    padding: .25rem 0
+  }
+
+  .markdown-body .md-toc .md-toc-link-wrapper .md-toc-link p,
+  .markdown-body .md-toc .md-toc-link-wrapper .md-toc-link div {
+    display: inline
+  }
+
+  .markdown-body .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+    font-weight: 800
+  }
+
+  .scrollbar-style::-webkit-scrollbar {
+    width: 8px
+  }
+
+  .scrollbar-style::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent
+  }
+
+  .scrollbar-style::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(150, 150, 150, 0.66);
+    border: 4px solid rgba(150, 150, 150, 0.66);
+    background-clip: content-box
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode]) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: auto
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode]) .markdown-body {
+    position: relative;
+    top: 0
+  }
+
+
+  @media screen and (max-width:450px) {
+    html body[for="html-export"]:not([data-presentation-mode]) .markdown-body {
+      font-size: 14px !important;
+      padding: 1em
+    }
+
+  }
+
+  @media print {
+    html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
+      display: none
+    }
+
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
+    position: fixed;
+    top: 0;
+    left: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    color: inherit;
+    z-index: 99;
+    width: 130px;
+    text-align: center;
+    opacity: .4
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn {
+    opacity: 1
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 32px 0 48px 0;
+    font-size: 14px;
+    box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: inherit
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar {
+    width: 8px
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(150, 150, 150, 0.66);
+    border: 4px solid rgba(150, 150, 150, 0.66);
+    background-clip: content-box
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a {
+    text-decoration: none
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc {
+    padding: 16px 16px
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link {
+    display: inline;
+    padding: .25rem 0
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div {
+    display: inline
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+    font-weight: 800
+  }
+
+  html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-body {
+    left: 300px;
+    width: calc(100% - 300px);
+    box-sizing: border-box
+  }
+
+
+  @media screen and (max-width:450px) {
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-body {
+      width: 100%
+    }
+
+  }
+
+
+  html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc {
+    display: none
+  }
+
+  @font-face {
+    font-family: "Sofia Sans Condensed";
+    src: url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;500;600;700&display=swap");
+  }
+
+  @font-face {
+    font-family: "Jura";
+    src: url("https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap");
+  }
+
+  .markdown-body.markdown-body {
+    background-color: #424242;
+    color: #d0deec;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: Sofia Sans Condensed, sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.01rem;
+  }
+
+  .markdown-body.markdown-body h1,
+  .markdown-body.markdown-body h2,
+  .markdown-body.markdown-body h3,
+  .markdown-body.markdown-body h4,
+  .markdown-body.markdown-body h5,
+  .markdown-body.markdown-body h6 {
+    font-family: Jura, sans-serif;
+    padding: 20px;
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+  }
+
+  .markdown-body.markdown-body h1 {
+    font-size: 60px;
+  }
+
+  .markdown-body.markdown-body h2 {
+    font-size: 34px;
+  }
+
+  .markdown-body.markdown-body h3 {
+    font-size: 26px;
+  }
+
+  .markdown-body.markdown-body ol,
+  .markdown-body.markdown-body ul {
+    font-size: 22px;
+    margin-left: 17%;
+  }
+
+  .markdown-body.markdown-body li {
+    line-height: 1.6;
+  }
+
+  .markdown-body.markdown-body p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* .markdown-body.markdown-body img {
+    max-width: 1000px;
+  } */
+
+  .markdown-body.markdown-body blockquote p {
+    margin-left: 3%;
+  }
+
+  .markdown-body.markdown-body blockquote {
+    border-left: 10px groove;
+    border-radius: 100px;
+    margin-left: 20%;
+    padding: 5px 0 5px 0;
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(35deg, hsl(310, 100%, 65%), hsl(160, 100%, 65%));
+  }
+
+  .markdown-body.markdown-body pre {
+    margin-left: 10%;
+    max-width: fit-content;
+  }
+
+  .markdown-body.markdown-body em {
+    color: skyblue;
+    font-weight: 400;
+  }
+
+  .markdown-body.markdown-body blockquote:has(h6) {
+    box-shadow: 0.7rem 0.9rem 0.7rem #0003, 0.7rem 0.6rem 0.4rem #00000059;
+    display: flow-root;
+    font-size: 1rem;
+    page-break-inside: avoid;
+    line-height: 2;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 0 0 1px 0;
+  }
+
+  .markdown-body.markdown-body blockquote:has(h6) h6:before {
+    content: "";
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .markdown-body.markdown-body blockquote h6 {
+    background-color: #000000;
+    margin: 0;
+    border-top-right-radius: 10px;
+    color: #00b0ff;
+  }
+
+  .markdown-body.markdown-body blockquote:has(h6) h6:before {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .markdown-body.markdown-body blockquote.danger h6:before {
+    content: "⊠ Danger ";
+  }
+
+  .markdown-body.markdown-body blockquote.success h6:before {
+    background-color: #00c853 !important;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg>') !important;
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg>') !important;
+  }
+
+  .markdown-body.markdown-body blockquote.warning h6:before {
+    background-color: #ff9100 !important;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2 1 21Z"/></svg>') !important;
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2 1 21Z"/></svg>') !important;
+  }
+
+  .markdown-body.markdown-body blockquote.bug h6:before {
+    background-color: #f50057 !important;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 13h2v1h-2v-1m10-8v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5l9-4 9 4m-4 5h-2.2c-.2-.6-.6-1.1-1.1-1.5l1.2-1.2-.7-.7L12.8 8H12c-.2 0-.5 0-.7.1L9.9 6.6l-.8.8 1.2 1.2c-.5.3-.9.8-1.1 1.4H7v1h2v1H7v1h2v1H7v1h2.2c.4 1.2 1.5 2 2.8 2s2.4-.8 2.8-2H17v-1h-2v-1h2v-1h-2v-1h2v-1m-6 2h2v-1h-2v1Z"/></svg>') !important;
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 13h2v1h-2v-1m10-8v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5l9-4 9 4m-4 5h-2.2c-.2-.6-.6-1.1-1.1-1.5l1.2-1.2-.7-.7L12.8 8H12c-.2 0-.5 0-.7.1L9.9 6.6l-.8.8 1.2 1.2c-.5.3-.9.8-1.1 1.4H7v1h2v1H7v1h2v1H7v1h2.2c.4 1.2 1.5 2 2.8 2s2.4-.8 2.8-2H17v-1h-2v-1h2v-1h-2v-1h2v-1m-6 2h2v-1h-2v1Z"/></svg>') !important;
+  }
+
+  .markdown-body.markdown-body blockquote.info h6:before {
+    background-color: #00b8d4 !important;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>') !important;
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>') !important;
+  }
+
+  .markdown-body.markdown-body blockquote.note h6:before {
+    background-color: #2575ff !important;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1-2.05-2.05 1-1c.1-.11.24-.16.38-.16m-1.97 1.74 2.06 2.06-6.06 6.06H7.07v-2.06l6.06-6.06Z"/></svg>') !important;
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m3.1 5.07c.14 0 .28.05.4.16l1.27 1.27c.23.22.23.57 0 .78l-1 1-2.05-2.05 1-1c.1-.11.24-.16.38-.16m-1.97 1.74 2.06 2.06-6.06 6.06H7.07v-2.06l6.06-6.06Z"/></svg>') !important;
+  }
+
+  .markdown-body.markdown-body blockquote.tip h6:before {
+    background-color: #00bfa5 !important;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.58.58 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27Z"/></svg>') !important;
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.58.58 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27Z"/></svg>') !important;
+  }
+
+  .markdown-body.markdown-body blockquote.example h6:before {
+    background-color: #7c4dff;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2v2h1v14a4 4 0 0 0 4 4 4 4 0 0 0 4-4V4h1V2H7m4 14c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1m2-4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1m1-5h-4V4h4v3Z"/></svg>');
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2v2h1v14a4 4 0 0 0 4 4 4 4 0 0 0 4-4V4h1V2H7m4 14c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1m2-4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1m1-5h-4V4h4v3Z"/></svg>');
+  }
+
+  .markdown-body.markdown-body blockquote.abstract h6:before {
+    background-color: #00b0ff;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 9H7V7h10m0 6H7v-2h10m-3 6H7v-2h7M12 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m7 0h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>') !important;
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 9H7V7h10m0 6H7v-2h10m-3 6H7v-2h7M12 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m7 0h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>') !important;
+  }
+
+  .markdown-body.markdown-body blockquote.tldr h6:before {
+    content: "∑⨊⨋" !important;
+    color: #00b8d4;
+  }
+
+  .markdown-body.markdown-body blockquote.question h6:before {
+    background-color: #64dd17 !important;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10Z"/></svg>') !important;
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10Z"/></svg>') !important;
+  }
+
+  .markdown-body.markdown-body blockquote.tip {
+    border-left: 15px groove;
+    border-color: #00bfa5;
+    background-color: rgba(0, 191, 165, 0.07);
+  }
+
+  .markdown-body.markdown-body blockquote.info {
+    border-left: 15px groove;
+    border-color: #00b8d4;
+    background-color: rgba(0, 184, 212, 0.07);
+  }
+
+  .markdown-body.markdown-body blockquote.note {
+    border-left: 15px groove;
+    border-color: #2575ff;
+    background-color: rgba(37, 117, 255, 0.07);
+  }
+
+  .markdown-body.markdown-body blockquote.example {
+    border-left: 15px groove;
+    border-color: #7c4dff;
+    background-color: rgba(124, 77, 255, 0.07);
+  }
+
+  .markdown-body.markdown-body blockquote.tldr {
+    border-left: 15px groove;
+    border-color: #00b8d4;
+    background-color: rgba(0, 184, 212, 0.07);
+  }
+
+  .markdown-body.markdown-body blockquote.warning {
+    border-left: 15px groove;
+    border-color: #ff9100;
+    background-color: rgba(255, 145, 0, 0.07);
+  }
+
+  .markdown-body.markdown-body blockquote.success {
+    border-left: 15px groove;
+    border-color: #00c853;
+    background-color: rgba(0, 200, 83, 0.07);
+  }
+
+  .markdown-body.markdown-body blockquote.bug {
+    border-left: 15px groove;
+    border-color: #f50057;
+    background-color: rgba(245, 0, 87, 0.07);
+  }
+
+  .markdown-body.markdown-body blockquote.abstract {
+    border-left: 15px groove;
+    border-color: #00b0ff;
+    background-color: rgba(0, 176, 255, 0.07);
+  }
+
+  .markdown-body.markdown-body blockquote.question {
+    border-left: 15px groove;
+    border-color: #64dd17;
+    background-color: rgba(100, 221, 23, 0.07);
+  }
+
+  .md-sidebar-toc {
+    background-color: #424242 !important;
+    color: #eba1aa;
+  }
+
+  .md-sidebar-toc .md-toc-link {
+    font-size: large;
+    line-height: 1.6;
+    color: #bada55;
+  }
+</style>
+<div class="mume markdown-body">
+  <hr>
+  <a href="/afk.GG">{{ page.title }}</a>
+  <h1 class="mume-header" id="my-retirement">My Retirement</h1>
+
+  <h2 class="mume-header" id="%D1%82%D1%8B-%D0%BA%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B9">&#x422;&#x44B;
+    &#x43A;&#x442;&#x43E; &#x442;&#x430;&#x43A;&#x43E;&#x439;?</h2>
+
+  <p>&#x422;&#x430;&#x43A; &#x43A;&#x430;&#x43A; &#x43D;&#x435; &#x432;&#x441;&#x435; &#x432;
+    &#x433;&#x438;&#x43B;&#x44C;&#x434;&#x438;&#x438; &#x430;&#x43A;&#x442;&#x438;&#x432;&#x43D;&#x43E;
+    &#x441;&#x438;&#x434;&#x44F;&#x442; &#x432; &#x434;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;&#x435;, &#x442;&#x43E;
+    &#x434;&#x43B;&#x44F; &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x430; &#x43A;&#x440;&#x430;&#x442;&#x43A;&#x43E;
+    &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44E;&#x441;&#x44C;.</p>
+  <p>This is [<strong>TOSHIRO</strong>]!<br>
+    &#x41E;&#x441;&#x442;&#x430;&#x432;&#x438;&#x43B; &#x43F;&#x43E;&#x437;&#x430;&#x434;&#x438;
+    &#x432;&#x43E;&#x437;&#x440;&#x430;&#x441;&#x442; &#x425;&#x440;&#x438;&#x441;&#x442;&#x430;.<br>
+    &#x41E;&#x431;&#x438;&#x442;&#x430;&#x44E; &#x432;
+    &#x41D;&#x435;&#x440;&#x435;&#x437;&#x438;&#x43D;&#x43E;&#x432;&#x43E;&#x439;, &#x440;&#x43E;&#x434;&#x43E;&#x43C;
+    &#x438;&#x437; &#x41A;&#x443;&#x43A;&#x443;&#x435;&#x432;&#x43E; (&#x43F;&#x43E;&#x43D;&#x430;&#x435;&#x445;)<br>
+    &#x41F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x438;&#x442;&#x435;&#x43B;&#x44C; IT
+    &#x444;&#x430;&#x443;&#x43D;&#x44B; (&#x43F;&#x43E;&#x433;&#x440;&#x43E;&#x43C;&#x438;&#x437;&#x434;)<br>
+    &#x412; &#x43E;&#x431;&#x449;&#x435;&#x43C;, &#x442;&#x438;&#x43F;&#x438;&#x447;&#x43D;&#x44B;&#x439;
+    &#x437;&#x430;&#x434;&#x440;&#x43E;&#x442;/&#x43D;&#x435;&#x434;&#x43E;&#x431;&#x43E;&#x442;&#x430;&#x43D;.<br>
+    &#x412; &#x438;&#x433;&#x440;&#x430;&#x44E; &#x432; &#x410;&#x424;&#x41A; 4 &#x433;&#x43E;&#x434;&#x430;,
+    &#x438;&#x437; &#x43D;&#x438;&#x445; 2 &#x432; &#x413;&#x43E;&#x441;&#x43F;&#x438;&#x442;&#x430;&#x43B;&#x435;.<br>
+    &#x41F;&#x435;&#x440;&#x432;&#x44B;&#x439; &#x433;&#x43E;&#x434; &#x445;&#x43E;&#x441;&#x43F;&#x430;
+    &#x431;&#x44B;&#x43B; &#x447;&#x438;&#x441;&#x442;&#x43E; &#x430;&#x444;&#x43A;,
+    &#x43F;&#x440;&#x438;&#x445;&#x43E;&#x434;&#x438;&#x43B; &#x43D;&#x430; &#x43F;&#x438;&#x43D;&#x433;&#x438;
+    &#x431;&#x435;&#x437;&#x434;&#x43D;&#x44B; &#x43E;&#x43D;&#x43B;&#x438;.<br>
+    &#x421; &#x437;&#x438;&#x43C;&#x44B; 2021/2022 &#x43E;&#x442;&#x43A;&#x440;&#x44B;&#x43B; &#x434;&#x43B;&#x44F;
+    &#x441;&#x435;&#x431;&#x44F;
+    &#x441;&#x443;&#x449;&#x435;&#x441;&#x442;&#x432;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435;
+    &#x434;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;&#x430; &#x438; &#x43A;&#x440;&#x430;&#x439;&#x43D;&#x435;
+    &#x436;&#x438;&#x432;&#x43E;&#x433;&#x43E; &#x43A;&#x43E;&#x43C;&#x44C;&#x44E;&#x43D;&#x438;&#x442;&#x438;</p>
+  <h2 class="mume-header" id="%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE">&#x427;&#x442;&#x43E; &#x44D;&#x442;&#x43E;?</h2>
+
+  <p><strong>&#x41C;&#x43E;&#x435; &#x43D;&#x430;&#x441;&#x43B;&#x435;&#x434;&#x438;&#x435;.</strong><br>
+    &#x425;&#x43E;&#x447;&#x443; &#x43F;&#x43E;&#x434;&#x435;&#x43B;&#x438;&#x442;&#x44C;&#x441;&#x44F;
+    &#x442;&#x435;&#x43C; &#x447;&#x442;&#x43E; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x43B;&#x43E;&#x441;&#x44C;
+    &#x443;&#x43B;&#x443;&#x447;&#x448;&#x438;&#x442;&#x44C; &#x432; &#x433;&#x438; &#x437;&#x430;
+    &#x44D;&#x442;&#x43E;&#x442; &#x433;&#x43E;&#x434; &#x438; &#x442;&#x435;&#x43C; &#x447;&#x442;&#x43E;
+    &#x43D;&#x435;&#x442;.</p>
+  <p><strong>&#x41E;&#x442;&#x432;&#x435;&#x442;&#x44B; &#x43D;&#x430;
+      &#x432;&#x43E;&#x43F;&#x440;&#x43E;&#x441;&#x44B;.</strong><br>
+    &#x442;&#x440;&#x430;&#x444;&#x444;&#x435;&#x439; &#x43F;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x43D;&#x43E;
+    &#x43B;&#x44E;&#x431;&#x438;&#x43B; &#x43F;&#x43E;&#x432;&#x442;&#x43E;&#x440;&#x44F;&#x442;&#x44C;
+    &#x201C;&#x427;&#x442;&#x43E; <strong>&#x422;&#x42B;</strong> &#x441;&#x434;&#x435;&#x43B;&#x430;&#x43B;
+    &#x434;&#x43B;&#x44F; &#x433;&#x438;&#x43B;&#x44C;&#x434;&#x438;&#x438;?!&#x201D;.<br>
+    &#x421;&#x43E;&#x431;&#x441;&#x442;&#x432;&#x435;&#x43D;&#x43D;&#x43E;, &#x432;&#x441;&#x435;
+    &#x43E;&#x442;&#x432;&#x435;&#x442;&#x44B; &#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x43D;&#x430;&#x439;&#x442;&#x438;
+    &#x442;&#x443;&#x442; &#x1F603;</p>
+  <p><strong>&#x411;&#x435;&#x437; &#x43A;&#x443;&#x43F;&#x44E;&#x440;</strong>.<br>
+    &#x41F;&#x43E;&#x441;&#x43B;&#x435; &#x43D;&#x435;&#x431;&#x43E;&#x43B;&#x44C;&#x448;&#x43E;&#x433;&#x43E;
+    &#x43E;&#x442;&#x441;&#x442;&#x443;&#x43F;&#x43B;&#x435;&#x43D;&#x438;&#x44F; (&#x41A;&#x430;&#x440;&#x43C;&#x430;)
+    &#x442;&#x443;&#x442; &#x431;&#x443;&#x434;&#x443;&#x442; &#x433;&#x43E;&#x43B;&#x44B;&#x435;
+    &#x444;&#x430;&#x43A;&#x442;&#x44B;, &#x441;&#x43A;&#x440;&#x438;&#x43D;&#x448;&#x43E;&#x442;&#x44B;
+    &#x43C;&#x43E;&#x435;&#x439; &#x43F;&#x43E;&#x440;&#x43A;&#x438; &#x438; &#x43D;&#x435;
+    &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;.<br>
+    <em>&#x412;&#x44B;&#x432;&#x43E;&#x434;&#x44B; &#x434;&#x435;&#x43B;&#x430;&#x439;&#x442;&#x435;
+      &#x441;&#x430;&#x43C;&#x438;.</em>
+  </p>
+  <h2 class="mume-header" id="%D0%BA%D0%B0%D1%80%D0%BC%D0%B0">&#x41A;&#x430;&#x440;&#x43C;&#x430;</h2>
+
+  <p>&#x41F;&#x440;&#x435;&#x436;&#x434;&#x435; &#x432;&#x441;&#x435;&#x433;&#x43E; &#x445;&#x43E;&#x447;&#x443;
+    &#x43F;&#x43E;&#x431;&#x43B;&#x430;&#x433;&#x43E;&#x434;&#x430;&#x440;&#x438;&#x442;&#x44C; <strong>@Luxray</strong>
+    &#x437;&#x430; &#x43F;&#x440;&#x43E;&#x434;&#x435;&#x43B;&#x430;&#x43D;&#x43D;&#x443;&#x44E;
+    &#x440;&#x430;&#x431;&#x43E;&#x442;&#x443; &#x438; &#x442;&#x435;&#x440;&#x43F;&#x435;&#x43D;&#x438;&#x435; &#x432;
+    &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x435;&#x439; &#x431;&#x435;&#x437;&#x434;&#x43D;&#x435;.<br>
+    &#x422;&#x44B; &#x43C;&#x43E;&#x43B;&#x43E;&#x434;&#x435;&#x446;, &#x431;&#x435;&#x437; &#x442;&#x435;&#x431;&#x44F;
+    &#x43C;&#x44B; &#x431;&#x44B; &#x431;&#x44B;&#x43B;&#x438; &#x435;&#x449;&#x435;
+    &#x433;&#x43B;&#x443;&#x431;&#x436;&#x435; &#x432; &#x440;&#x435;&#x439;&#x442;&#x438;&#x43D;&#x433;&#x435;.<br>
+    &#x42F; &#x441;&#x43E;&#x436;&#x430;&#x43B;&#x435;&#x44E; &#x43E;
+    &#x434;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x43D;&#x44B;&#x445; &#x43C;&#x43D;&#x43E;&#x439;
+    &#x43D;&#x435;&#x443;&#x434;&#x43E;&#x431;&#x441;&#x442;&#x432;&#x430;&#x445; (&#x438;&#x433;&#x43D;&#x43E;&#x440;
+    &#x43F;&#x43E;&#x440;&#x43A;&#x438;).<br>
+    &#x41F;&#x43E;&#x440;&#x43A;&#x430;, &#x43A;&#x430;&#x43A;
+    &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43C;&#x435;&#x43D;&#x442;, &#x43D;&#x435;
+    &#x441;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x430;&#x441;&#x44C; &#x441;&#x43E;
+    &#x441;&#x432;&#x43E;&#x438;&#x43C;
+    &#x43F;&#x440;&#x435;&#x434;&#x43D;&#x430;&#x437;&#x43D;&#x430;&#x447;&#x435;&#x43D;&#x438;&#x435;&#x43C;.<br>
+    &#x410;&#x434;&#x43C;&#x438;&#x43D;&#x438;&#x441;&#x442;&#x440;&#x430;&#x446;&#x438;&#x44F;
+    &#x434;&#x430;&#x432;&#x43D;&#x43E; &#x438;&#x437;&#x431;&#x435;&#x433;&#x430;&#x435;&#x442;
+    &#x43A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x43E;&#x432; &#x441;&#x43E; &#x43C;&#x43D;&#x43E;&#x439;<br>
+    &#x414;&#x430; &#x438; &#x443; &#x43C;&#x435;&#x43D;&#x44F; &#x43D;&#x435;&#x442; &#x43D;&#x438;
+    &#x43E;&#x434;&#x43D;&#x43E;&#x439; &#x43F;&#x440;&#x438;&#x447;&#x438;&#x43D;&#x44B; &#x43D;&#x435;
+    &#x43E;&#x442;&#x432;&#x435;&#x447;&#x430;&#x442;&#x44C;
+    &#x432;&#x437;&#x430;&#x438;&#x43C;&#x43D;&#x43E;&#x441;&#x442;&#x44C;&#x44E;.<br>
+    &#x412;&#x440;&#x44F;&#x434; &#x43B;&#x438; &#x443; &#x442;&#x435;&#x431;&#x44F; &#x431;&#x44B;&#x43B;
+    &#x448;&#x430;&#x43D;&#x441; &#x443;&#x437;&#x43D;&#x430;&#x442;&#x44C; &#x43E;&#x431; &#x44D;&#x442;&#x43E;&#x43C;,
+    &#x43D;&#x43E; &#x443; &#x442;&#x435;&#x431;&#x44F; &#x435;&#x441;&#x442;&#x44C;
+    &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F; &#x43A; &#x43C;&#x43E;&#x435;&#x439; &#x43F;&#x43E;&#x440;&#x43A;&#x435;,
+    &#x43C;&#x43E;&#x436;&#x435;&#x448;&#x44C; &#x43F;&#x43E;&#x447;&#x438;&#x442;&#x430;&#x442;&#x44C;
+    &#x43A;&#x430;&#x43A; &#x432;&#x441;&#x435; &#x43F;&#x440;&#x438;&#x448;&#x43B;&#x43E; &#x43A;
+    &#x442;&#x430;&#x43A;&#x43E;&#x43C;&#x443; &#x440;&#x435;&#x437;&#x443;&#x43B;&#x44C;&#x442;&#x430;&#x442;&#x443;.
+  </p>
+  <p><em>&#x420;&#x435;&#x437;&#x43A;&#x43E;&#x441;&#x442;&#x44C;
+      &#x432;&#x44B;&#x441;&#x43A;&#x430;&#x437;&#x44B;&#x432;&#x430;&#x43D;&#x438;&#x439; &#x432;
+      &#x441;&#x442;&#x43E;&#x440;&#x43E;&#x43D;&#x443;</em>
+    <strong>@&#x410;&#x440;&#x430;&#x437;&#x44F;&#x448;</strong> &#x438; <strong>@rokkicsq</strong>:<br>
+    &#x41E;&#x434;&#x43D;&#x438;&#x43C; &#x438;&#x437; &#x43A;&#x43B;&#x44E;&#x447;&#x435;&#x432;&#x44B;&#x445;
+    &#x444;&#x430;&#x43A;&#x442;&#x43E;&#x440;&#x43E;&#x432;, &#x432;&#x43B;&#x438;&#x44F;&#x44E;&#x449;&#x438;&#x445;
+    &#x43D;&#x430; &#x43E;&#x431;&#x449;&#x443;&#x44E; &#x43C;&#x43E;&#x442;&#x438;&#x432;&#x430;&#x446;&#x438;&#x44E;
+    &#x438;
+    &#x437;&#x430;&#x438;&#x43D;&#x442;&#x435;&#x440;&#x435;&#x441;&#x43E;&#x432;&#x430;&#x43D;&#x43D;&#x43E;&#x441;&#x442;&#x44C;
+    &#x432; &#x438;&#x433;&#x440;&#x435;, &#x44F;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F;
+    &#x43E;&#x442;&#x43D;&#x43E;&#x448;&#x435;&#x43D;&#x438;&#x435; &#x431;&#x43B;&#x438;&#x437;&#x43A;&#x438;&#x445;
+    &#x438; &#x443;&#x432;&#x430;&#x436;&#x430;&#x435;&#x43C;&#x44B;&#x445; &#x43A;&#x43E;&#x43B;&#x43B;&#x435;&#x433;
+    &#x43F;&#x43E; &#x446;&#x435;&#x445;&#x443; &#x43A; &#x44D;&#x442;&#x43E;&#x439; &#x441;&#x430;&#x43C;&#x43E;&#x439;
+    &#x438;&#x433;&#x440;&#x435; &#x438; &#x434;&#x440;&#x443;&#x433; &#x434;&#x440;&#x443;&#x433;&#x443;.<br>
+    &#x42F; &#x43F;&#x43E;&#x43D;&#x438;&#x43C;&#x430;&#x44E;, &#x447;&#x442;&#x43E;
+    &#x438;&#x43D;&#x43E;&#x433;&#x434;&#x430; &#x43F;&#x435;&#x447;&#x430;&#x43B;&#x44C;&#x43D;&#x43E; &#x438;
+    &#x433;&#x440;&#x443;&#x441;&#x442;&#x43D;&#x43E; &#x43E;&#x442;
+    &#x440;&#x435;&#x436;&#x438;&#x43C;&#x43E;&#x432;/&#x43D;&#x43E;&#x432;&#x43E;&#x432;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x439;/&#x43A;&#x438;&#x442;&#x43E;&#x432;&#x43E;&#x441;&#x442;&#x438;
+    &#x438; &#x445;&#x43E;&#x447;&#x435;&#x442;&#x441;&#x44F;
+    &#x432;&#x44B;&#x441;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C;&#x441;&#x44F;. &#x41D;&#x43E;
+    &#x43A;&#x430;&#x43A;&#x43E;&#x435; &#x43C;&#x43D;&#x435;&#x43D;&#x438;&#x435; &#x438;
+    &#x432;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x43B;&#x435;&#x43D;&#x438;&#x435;
+    &#x441;&#x43B;&#x43E;&#x436;&#x438;&#x442;&#x441;&#x44F; &#x443;
+    &#x447;&#x438;&#x442;&#x430;&#x44E;&#x449;&#x435;&#x433;&#x43E;, &#x431;&#x43B;&#x438;&#x437;&#x43A;&#x43E;
+    &#x432;&#x430;&#x43C; &#x43D;&#x435;&#x437;&#x43D;&#x430;&#x43A;&#x43E;&#x43C;&#x43E;&#x433;&#x43E;?<br>
+    <em>&#x410; &#x447;&#x430;&#x442; &#x447;&#x438;&#x442;&#x430;&#x44E;&#x442; 2
+      &#x441;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x430; &#x413;&#x43E;&#x441;&#x43F;&#x430; (&#x411;&#x435;&#x437;
+      &#x43C;&#x430;&#x43B;&#x43E;&#x433;&#x43E; 140 &#x447;&#x435;&#x43B;&#x43E;&#x432;&#x435;&#x43A;)</em><br>
+    &#x418; &#x434;&#x430;&#x43B;&#x435;&#x43A;&#x43E; &#x43D;&#x435; &#x432;&#x441;&#x435;&#x43C;
+    &#x43C;&#x43E;&#x436;&#x435;&#x442; &#x431;&#x44B;&#x442;&#x44C; &#x43F;&#x440;&#x438;&#x44F;&#x442;&#x43D;&#x43E;,
+    &#x43A;&#x43E;&#x433;&#x434;&#x430; &#x438;&#x445; &#x43B;&#x44E;&#x431;&#x438;&#x43C;&#x443;&#x44E;
+    &#x438;&#x433;&#x440;&#x443; &#x43F;&#x43E;&#x43B;&#x438;&#x432;&#x430;&#x44E;&#x442;
+    &#x433;&#x440;&#x44F;&#x437;&#x44C;&#x44E;.<br>
+    &#x41E;&#x434;&#x43D;&#x430;&#x436;&#x434;&#x44B; &#x43F;&#x440;&#x435;&#x434;&#x43B;&#x430;&#x433;&#x430;&#x43B;
+    &#x441;&#x434;&#x435;&#x43B;&#x430;&#x442;&#x44C; &#x433;&#x430;&#x439;&#x434;&#x43B;&#x430;&#x439;&#x43D;&#x44B;
+    &#x43A;&#x43E;&#x43C;&#x44C;&#x44E;&#x43D;&#x438;&#x442;&#x438;. &#x41E;&#x442;&#x43A;&#x43B;&#x438;&#x43A;&#x430;
+    &#x432; &#x43F;&#x43E;&#x440;&#x43A;&#x435; &#x43D;&#x435; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x43B;.
+    &#x41E;&#x441;&#x442;&#x430;&#x43B;&#x43E;&#x441;&#x44C;, &#x434;&#x435;&#x43B;&#x430;&#x442;&#x44C; &#x442;&#x43E;,
+    &#x447;&#x442;&#x43E; &#x432; &#x43C;&#x43E;&#x438;&#x445; &#x441;&#x438;&#x43B;&#x430;&#x445;.<br>
+    &#x421;&#x43C;&#x435;&#x43D;&#x438;&#x43B; &#x43F;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43D;
+    &#x43F;&#x43E;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x44F;, &#x43F;&#x440;&#x438;
+    &#x445;&#x430;&#x440;&#x430;&#x43A;&#x442;&#x435;&#x440;&#x43D;&#x44B;&#x445;
+    &#x43D;&#x430;&#x43F;&#x430;&#x434;&#x43A;&#x430;&#x445; &#x432; &#x441;&#x442;&#x43E;&#x440;&#x43E;&#x43D;&#x443;
+    &#x438;&#x433;&#x440;&#x44B;/&#x438;&#x433;&#x440;&#x43E;&#x43A;&#x43E;&#x432;, &#x43D;&#x430;
+    &#x440;&#x435;&#x437;&#x43A;&#x443;&#x44E; &#x43A;&#x440;&#x438;&#x442;&#x438;&#x43A;&#x443;.<br>
+    &#x426;&#x435;&#x43B;&#x44C; - &#x434;&#x430;&#x442;&#x44C; &#x43F;&#x43E;&#x43D;&#x44F;&#x442;&#x44C;,
+    &#x447;&#x442;&#x43E; &#x44D;&#x442;&#x43E; &#x43D;&#x435; &#x43D;&#x43E;&#x440;&#x43C;&#x430; &#x432;
+    &#x433;&#x438;. &#x427;&#x442;&#x43E; &#x44D;&#x442;&#x43E;
+    &#x43F;&#x43E;&#x440;&#x438;&#x446;&#x430;&#x435;&#x442;&#x441;&#x44F;.<br>
+    <em>(&#x434;&#x430;&#x436;&#x435; &#x435;&#x441;&#x43B;&#x438;
+      &#x438;&#x441;&#x442;&#x43E;&#x447;&#x43D;&#x438;&#x43A; &#x43D;&#x435;&#x433;&#x430;&#x442;&#x438;&#x432;&#x430;
+      &#x442;&#x440;&#x430;&#x444;)</em>.<br>
+    &#x41E;&#x436;&#x438;&#x434;&#x430;&#x435;&#x43C;&#x43E; &#x441;&#x43B;&#x43E;&#x432;&#x438;&#x43B;
+    &#x43E;&#x442;&#x432;&#x435;&#x442;&#x43D;&#x44B;&#x439; &#x43D;&#x435;&#x433;&#x430;&#x442;&#x438;&#x432;.
+    &#x41F;&#x43E;&#x44F;&#x432;&#x438;&#x43B;&#x441;&#x44F;
+    &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43D;&#x44B;&#x439;
+    &#x43F;&#x440;&#x43E;&#x446;&#x435;&#x43D;&#x442; &#x43B;&#x44E;&#x434;&#x435;&#x439;,
+    &#x441;&#x447;&#x438;&#x442;&#x430;&#x44E;&#x449;&#x438;&#x445; &#x43C;&#x435;&#x43D;&#x44F;
+    &#x442;&#x43E;&#x43A;&#x441;&#x438;&#x43A;&#x43E;&#x43C;. &#x41E;&#x434;&#x43D;&#x430;&#x43A;&#x43E;,
+    &#x43D;&#x438;&#x43A;&#x430;&#x43A;&#x43E;&#x439; &#x43B;&#x438;&#x447;&#x43D;&#x43E;&#x439;
+    &#x43D;&#x435;&#x43F;&#x440;&#x438;&#x44F;&#x437;&#x43D;&#x438; &#x43D;&#x438; &#x43A; &#x43A;&#x43E;&#x43C;&#x443;
+    &#x43D;&#x435;&#x442; &#x438; &#x43D;&#x435; &#x431;&#x44B;&#x43B;&#x43E;. &#x412;&#x441;&#x435; &#x43C;&#x44B;
+    &#x43B;&#x44E;&#x434;&#x438; &#x438; &#x43D;&#x438;&#x447;&#x442;&#x43E;
+    &#x447;&#x435;&#x43B;&#x43E;&#x432;&#x435;&#x447;&#x435;&#x441;&#x43A;&#x43E;&#x435; &#x43D;&#x430;&#x43C;
+    &#x43D;&#x435; &#x447;&#x443;&#x436;&#x434;&#x43E;.<br>
+    <em>&#x410;&#x440;&#x430;&#x437;&#x443;, &#x43D;&#x438;&#x447;&#x435;&#x433;&#x43E;
+      &#x43B;&#x438;&#x447;&#x43D;&#x43E;&#x433;&#x43E;</em>, &#x43D;&#x43E; &#x43A;&#x430;&#x436;&#x434;&#x44B;&#x439;
+    &#x43F;&#x430;&#x442;&#x447; &#x43F;&#x440;&#x43E; &#x43A;&#x438;&#x442;&#x430;&#x439;&#x446;&#x435;&#x432;,
+    &#x441;&#x440;&#x443;&#x449;&#x438;&#x445; &#x442;&#x43E; &#x43D;&#x430; &#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x443;,
+    &#x442;&#x43E; &#x432; &#x442;&#x430;&#x440;&#x435;&#x43B;&#x43A;&#x443;, &#x43D;&#x435; &#x43E;&#x447;
+    &#x43F;&#x440;&#x438;&#x44F;&#x442;&#x43D;&#x43E;.<br>
+    <em>&#x420;&#x43E;&#x43A;&#x43A;&#x438;</em>, &#x442;&#x432;&#x43E;&#x435;
+    &#x44D;&#x43A;&#x441;&#x446;&#x435;&#x43D;&#x442;&#x440;&#x438;&#x447;&#x43D;&#x43E;&#x435;
+    &#x43F;&#x43E;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435; &#x43A;&#x430;&#x436;&#x434;&#x443;&#x44E;
+    &#x431;&#x435;&#x437;&#x434;&#x43D;&#x443;, &#x43A;&#x430;&#x43A; &#x442;&#x44B; &#x443;&#x436;&#x435;
+    &#x43E;&#x441;&#x43E;&#x437;&#x43D;&#x430;&#x43B;, &#x43D;&#x438;&#x43A;&#x43E;&#x43C;&#x443;
+    &#x43C;&#x43E;&#x442;&#x438;&#x432;&#x430;&#x446;&#x438;&#x438; &#x43D;&#x435;
+    &#x434;&#x43E;&#x431;&#x430;&#x432;&#x43B;&#x44F;&#x43B;&#x43E;. &#x41D;&#x43E; &#x432; &#x44D;&#x442;&#x443;
+    &#x431;&#x435;&#x437;&#x434;&#x43D;&#x443; &#x442;&#x44B;
+    &#x43F;&#x43E;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x43B; &#x43D;&#x430;&#x434; &#x44D;&#x442;&#x438;&#x43C;
+    &#x438; &#x44D;&#x442;&#x43E; &#x43A;&#x440;&#x443;&#x442;&#x43E;, &#x442;&#x430;&#x43A;
+    &#x434;&#x435;&#x440;&#x436;&#x430;&#x442;&#x44C;!
+  </p>
+  <p>&#x412;&#x441;&#x435; &#x43C;&#x43E;&#x438;
+    &#x201C;<em>&#x43D;&#x430;&#x43F;&#x430;&#x434;&#x43A;&#x438;</em>&#x201D; &#x43D;&#x430;
+    &#x442;&#x440;&#x430;&#x444;&#x444;&#x435;&#x44F; &#x431;&#x44B;&#x43B;&#x438;
+    &#x438;&#x441;&#x43A;&#x43B;&#x44E;&#x447;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x43E; &#x43D;&#x430;
+    &#x441;&#x43E;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x44F;, &#x432;
+    &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x445;
+    &#x441;&#x43E;&#x434;&#x435;&#x440;&#x436;&#x430;&#x43B;&#x430;&#x441;&#x44C;
+    <strong>&#x43B;&#x43E;&#x436;&#x43D;&#x430;&#x44F;</strong>/<strong>&#x441;&#x430;&#x431;&#x43E;&#x442;&#x438;&#x440;&#x443;&#x44E;&#x449;&#x430;&#x44F;</strong>
+    <strong>&#x433;&#x438;&#x43B;&#x44C;&#x434;&#x443;</strong>
+    &#x438;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x438;&#x44F;<br>
+    <em>(&#x43F;&#x43E;&#x43F;&#x430;&#x434;&#x430;&#x43B;&#x430; &#x43F;&#x43E;&#x434;
+      &#x43F;&#x430;&#x442;&#x442;&#x435;&#x440;&#x43D;)</em>.<br>
+    &#x418; &#x43C;&#x43E;&#x438; &#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x430;&#x440;&#x438;&#x438;
+    (&#x432;&#x43E;&#x43F;&#x440;&#x435;&#x43A;&#x438; &#x440;&#x430;&#x437;&#x434;&#x443;&#x442;&#x43E;&#x43C;&#x443;
+    &#x441;&#x430;&#x43C;&#x43E;&#x43C;&#x43D;&#x435;&#x43D;&#x438;&#x44E; &#x442;&#x440;&#x430;&#x444;&#x435;&#x44F;)
+    <strong>&#x432;&#x441;&#x435;&#x433;&#x434;&#x430;</strong>
+    &#x43F;&#x440;&#x435;&#x434;&#x43D;&#x430;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x43B;&#x438;&#x441;&#x44C;
+    <strong>&#x432;&#x441;&#x435;&#x43C;</strong> &#x447;&#x438;&#x442;&#x430;&#x44E;&#x449;&#x438;&#x43C;
+    &#x447;&#x430;&#x442; &#x447;&#x43B;&#x435;&#x43D;&#x430;&#x43C; &#x433;&#x438;. &#x427;&#x442;&#x43E;&#x431;&#x44B;
+    &#x431;&#x44B;&#x43B; &#x445;&#x43E;&#x442;&#x44F; &#x431;&#x44B; &#x448;&#x430;&#x43D;&#x441;
+    &#x432;&#x43E;&#x441;&#x43F;&#x440;&#x438;&#x43D;&#x44F;&#x442;&#x44C;
+    &#x438;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x438;&#x44E;
+    &#x430;&#x434;&#x435;&#x43A;&#x432;&#x430;&#x442;&#x43D;&#x43E;. &#x418;
+    &#x43A;&#x43E;&#x43D;&#x435;&#x447;&#x43D;&#x43E; &#x436;&#x435; &#x43F;&#x43E;
+    &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x443;, &#x447;&#x442;&#x43E;&#x431;&#x44B; &#x43D;&#x435;
+    &#x43C;&#x43E;&#x447;&#x438;&#x442;&#x44C; &#x440;&#x435;&#x43F;&#x443;&#x442;&#x430;&#x446;&#x438;&#x44E;
+    &#x43B;&#x438;&#x434;&#x435;&#x440;&#x430;, &#x432;&#x441;&#x435;&#x433;&#x434;&#x430; &#x448;&#x435;&#x43B; &#x432;
+    &#x43F;&#x43E;&#x440;&#x43A;&#x443;/&#x43B;&#x438;&#x447;&#x43A;&#x443; &#x442;&#x440;&#x430;&#x444;&#x443; &#x441;
+    &#x43F;&#x440;&#x43E;&#x441;&#x44C;&#x431;&#x430;&#x43C;&#x438;
+  </p>
+  <blockquote>
+    <p><em>&#x201C;&#x442;&#x440;&#x430;&#x444;&#x444;&#x435;&#x439;, &#x442;&#x443;&#x442;
+        &#x43E;&#x448;&#x438;&#x431;&#x43A;&#x430;&#x201D;</em><br>
+      <em>&#x201C;&#x422;&#x443;&#x442; &#x43B;&#x44E;&#x434;&#x438; &#x43C;&#x43E;&#x433;&#x443;&#x442; &#x43D;&#x435;
+        &#x43F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x44C;&#x43D;&#x43E;
+        &#x43F;&#x43E;&#x43D;&#x44F;&#x442;&#x44C;&#x201D;</em><br>
+      <em>&#x201C;&#x43C;&#x430;&#x43B;&#x43E; &#x43A;&#x43E;&#x43D;&#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;,
+        &#x43D;&#x435; &#x43F;&#x43E;&#x439;&#x43C;&#x443;&#x442;&#x201D;</em>
+    </p>
+  </blockquote>
+  <p>&#x41D;&#x43E; &#x432;&#x43C;&#x435;&#x441;&#x442;&#x43E;
+    &#x431;&#x43B;&#x430;&#x433;&#x43E;&#x434;&#x430;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x438;
+    &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x43B; &#x427;&#x421;</p>
+  <h2 class="mume-header" id="%D0%BF%D0%BE%D1%80-%D0%BA%D0%B5">&#x41F;&#x43E;&#x440; &#x43A;&#x435;?</h2>
+
+  <p>&#x421;&#x43F;&#x443;&#x441;&#x442;&#x44F; &#x433;&#x43E;&#x434; &#x430;&#x444;&#x43A;
+    &#x440;&#x435;&#x436;&#x438;&#x43C;&#x430;, &#x43A;&#x43E;&#x433;&#x434;&#x430; &#x44F;
+    &#x437;&#x430;&#x43B;&#x435;&#x442;&#x435;&#x43B; &#x432; &#x434;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;, &#x44F;
+    &#x431;&#x44B;&#x43B; &#x43A;&#x440;&#x430;&#x439;&#x43D;&#x435; &#x443;&#x434;&#x438;&#x432;&#x43B;&#x435;&#x43D;
+    2&#x443;&#x43C; &#x432;&#x435;&#x449;&#x430;&#x43C;:</p>
+  <ol>
+    <li>&#x41D;&#x430;&#x43B;&#x438;&#x447;&#x438;&#x44E; &#x442;&#x430;&#x43A;&#x43E;&#x433;&#x43E;
+      &#x436;&#x438;&#x432;&#x43E;&#x433;&#x43E; &#x43A;&#x43E;&#x43C;&#x44C;&#x44E;&#x43D;&#x438;&#x442;&#x438; &#x432;
+      &#x43F;&#x440;&#x438;&#x43D;&#x446;&#x438;&#x43F;&#x435; (&#x410;&#x424;&#x41A; &#x436;&#x435; &#x1F604;)</li>
+    <li>&#x412;&#x435;&#x441;&#x44C;&#x43C;&#x430; &#x441;&#x442;&#x440;&#x430;&#x43D;&#x43D;&#x43E;&#x439;
+      (&#x438;&#x43D;&#x442;&#x443;&#x438;&#x442;&#x438;&#x432;&#x43D;&#x43E;
+      &#x43D;&#x435;&#x43F;&#x43E;&#x43D;&#x44F;&#x442;&#x43D;&#x43E;&#x439;) &#x438;
+      &#x43D;&#x435;&#x43F;&#x440;&#x43E;&#x437;&#x440;&#x430;&#x447;&#x43D;&#x43E;&#x439;
+      &#x43E;&#x440;&#x433;&#x430;&#x43D;&#x438;&#x437;&#x430;&#x446;&#x438;&#x438;.</li>
+  </ol>
+  <p>&#x41E;&#x431;&#x44B;&#x447;&#x43D;&#x43E;, &#x432; &#x43B;&#x44E;&#x431;&#x43E;&#x439;
+    &#x438;&#x433;&#x440;&#x435; &#x432; &#x43B;&#x44E;&#x431;&#x43E;&#x43C;
+    &#x43A;&#x43B;&#x430;&#x43D;&#x435;/&#x433;&#x438;/&#x430;&#x43B;&#x44C;&#x44F;&#x43D;&#x441;&#x435;
+    &#x432;&#x441;&#x435;&#x433;&#x434;&#x430; &#x43F;&#x43E; &#x440;&#x435;&#x433;&#x430;&#x43B;&#x438;&#x44F;&#x43C;
+    &#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x441;&#x440;&#x430;&#x437;&#x443;
+    &#x440;&#x430;&#x441;&#x43F;&#x43E;&#x437;&#x43D;&#x430;&#x442;&#x44C; &#x43A;&#x442;&#x43E;
+    &#x435;&#x441;&#x442;&#x44C; &#x413;&#x41C;, &#x43A;&#x442;&#x43E; &#x437;&#x430;&#x43C;&#x44B; &#x438;
+    &#x442;.&#x434;.<br>
+    &#x410; &#x442;&#x443;&#x442; &#x441;&#x442;&#x443;&#x43F;&#x43E;&#x440; &#x441;&#x43E;
+    &#x432;&#x441;&#x435;&#x43C;&#x438; &#x44D;&#x442;&#x438;
+    &#x43D;&#x430;&#x43D;&#x43E;-&#x43C;&#x438;&#x43A;&#x440;&#x43E;-&#x433;&#x43B;&#x430;&#x432;-&#x432;&#x440;&#x430;&#x447;&#x430;&#x43C;&#x438;.<br>
+    &#x418; &#x432;&#x440;&#x43E;&#x434;&#x435; &#x43A;&#x430;&#x43A; &#x443;&#x436;&#x435; &#x433;&#x43E;&#x434;
+    &#x442;&#x443;&#x442;, &#x43A;&#x430;&#x43A;-&#x442;&#x43E; &#x441;&#x442;&#x44B;&#x434;&#x43D;&#x43E;
+    &#x437;&#x430;&#x43B;&#x435;&#x442;&#x430;&#x442;&#x44C; &#x441; &#x442;&#x430;&#x43A;&#x438;&#x43C;&#x438;
+    &#x432;&#x43E;&#x43F;&#x440;&#x43E;&#x441;&#x430;&#x43C;&#x438; &#x432;
+    &#x43A;&#x430;&#x43A;&#x438;&#x435;-&#x442;&#x43E; &#x43E;&#x431;&#x449;&#x438;&#x435; &#x447;&#x430;&#x442;&#x44B;,
+    &#x430; &#x43B;&#x438;&#x447;&#x43D;&#x43E; &#x43E;&#x441;&#x43E;&#x431;&#x43E;
+    &#x43D;&#x438;&#x43A;&#x43E;&#x433;&#x43E; &#x43D;&#x435; &#x437;&#x43D;&#x430;&#x43B;
+    &#x442;&#x43E;&#x433;&#x434;&#x430;.<br>
+    &#x41D;&#x43E; &#x438;&#x43D;&#x442;&#x435;&#x440;&#x435;&#x441;
+    &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x43D;&#x43E;
+    &#x437;&#x430;&#x436;&#x435;&#x433;&#x441;&#x44F; &#x438; &#x44F; &#x441;&#x442;&#x430;&#x43B;
+    &#x438;&#x437;&#x443;&#x447;&#x430;&#x442;&#x44C;.</p>
+  <h3 class="mume-header" id="%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D1%81%D1%82%D0%B2%D0%BE">
+    &#x417;&#x43D;&#x430;&#x43A;&#x43E;&#x43C;&#x441;&#x442;&#x432;&#x43E;</h3>
+
+  <pre class="language-text">&#x41D;&#x430;&#x441;&#x442;&#x43E;&#x44F;&#x449;&#x438;&#x43C; &#x43E;&#x442;&#x43A;&#x440;&#x43E;&#x432;&#x435;&#x43D;&#x438;&#x435;&#x43C; &#x441;&#x442;&#x430;&#x43B;&#x438; &#x432;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x43D;&#x44B;&#x435; &#x442;&#x43E;&#x433;&#x434;&#x430; &#x43D;&#x435;&#x434;&#x430;&#x432;&#x43D;&#x43E; &#x43F;&#x43E;&#x440;&#x43A;&#x438;.
+</pre>
+  <p>&#x411;&#x44B;&#x43B;&#x430; &#x43D;&#x430;&#x434;&#x435;&#x436;&#x434;&#x430; &#x447;&#x442;&#x43E;
+    &#x43F;&#x43E;&#x43C;&#x43E;&#x433;&#x443;&#x442;, &#x431;&#x435;&#x437; &#x43B;&#x438;&#x448;&#x43D;&#x438;&#x445;
+    &#x432;&#x43E;&#x43F;&#x440;&#x43E;&#x441;&#x43E;&#x432;, &#x43E;&#x442;&#x434;&#x435;&#x43B;&#x438;&#x442;&#x44C;
+    &#x430;&#x434;&#x43C;&#x438;&#x43D;&#x438;&#x441;&#x442;&#x440;&#x430;&#x446;&#x438;&#x44E; &#x43E;&#x442;
+    &#x43A;&#x443;&#x447;&#x438; &#x434;&#x440;&#x443;&#x433;&#x438;&#x445;
+    &#x43D;&#x435;&#x43F;&#x43E;&#x43D;&#x44F;&#x442;&#x43D;&#x44B;&#x445;
+    &#x446;&#x432;&#x435;&#x442;&#x430;&#x441;&#x442;&#x44B;&#x445; &#x440;&#x43E;&#x43B;&#x435;&#x439;.<br>
+    <img class="pure-img" src="https://i.imgur.com/USpKS4s.png" alt>
+  </p>
+  <p>&#x41E;&#x436;&#x438;&#x434;&#x430;&#x43D;&#x438;&#x435; &#x443;&#x432;&#x438;&#x434;&#x435;&#x442;&#x44C;
+    &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A; &#x433;&#x43B;&#x430;&#x432;&#x43D;&#x44B;&#x445;
+    &#x43F;&#x430;&#x440;&#x43D;&#x435;&#x439;,
+    &#x43D;&#x435;&#x43E;&#x43F;&#x440;&#x430;&#x432;&#x434;&#x430;&#x43B;&#x43E;&#x441;&#x44C;.<br>
+    &#x41A;&#x430;&#x43A; &#x43C;&#x43D;&#x43E;&#x433;&#x438;&#x435;
+    &#x43D;&#x430;&#x432;&#x435;&#x440;&#x43D;&#x44F;&#x43A;&#x430;
+    &#x437;&#x430;&#x43C;&#x435;&#x447;&#x430;&#x43B;&#x438;, &#x442;&#x438;&#x43F;&#x438;&#x447;&#x43D;&#x43E;&#x435;
+    &#x43D;&#x430;&#x441;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x435; &#x43F;&#x43E;&#x440;&#x43A;&#x438;
+    &#x43E;&#x431;&#x44B;&#x447;&#x43D;&#x43E; &#x432;&#x44B;&#x433;&#x43B;&#x44F;&#x434;&#x438;&#x442;
+    &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;&#x43D;&#x43E; &#x442;&#x430;&#x43A;<br>
+    <img class="pure-img" src="https://i.imgur.com/hfPoNBJ.png" alt>
+  </p>
+  <p>&#x410; &#x432;&#x441;&#x44F; &#x441;&#x442;&#x430;&#x440;&#x430;&#x44F;
+    &#x433;&#x432;&#x430;&#x440;&#x434;&#x438;&#x44F; &#x441;&#x438;&#x434;&#x438;&#x442; &#x432;
+    &#x438;&#x43D;&#x432;&#x438;&#x437;&#x435; 24/7.<br>
+    &#x418; &#x41A;&#x430;&#x43F;&#x43F;&#x44B; &#x43F;&#x43E; &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x443; &#x43D;&#x435;
+    &#x431;&#x44B;&#x43B;&#x43E; &#x442;&#x430;&#x43C;.<br>
+    &#x422;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x442;&#x44B;, &#x43F;&#x430;&#x440;&#x43E;&#x447;&#x43A;&#x430;
+    &#x436;&#x435;&#x43B;&#x435;&#x437;&#x43E;&#x43A;, &#x438;,
+    &#x432;&#x43E;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x43E;, &#x43E;&#x442;&#x440;&#x44F;&#x434;
+    &#x43D;&#x435;&#x432;&#x438;&#x434;&#x438;&#x43C;&#x44B;&#x445;
+    &#x43F;&#x438;&#x437;&#x434;&#x44E;&#x43A;&#x43E;&#x432;</p>
+  <p><strong><em>&#x43D;&#x435;&#x432;&#x438;&#x434;&#x438;&#x43C;&#x44B;&#x435;
+        &#x43F;&#x438;&#x437;&#x434;&#x44E;&#x43A;&#x438; &#x438; &#x433;&#x434;&#x435; &#x43E;&#x43D;&#x438;
+        &#x43E;&#x431;&#x438;&#x442;&#x430;&#x44E;&#x442; &#x447;.1</em></strong><br>
+    <img class="pure-img" src="https://i.imgur.com/EyI0NQ8.png" width="500px">
+  </p>
+  <p>&#x41E;&#x441;&#x442;&#x430;&#x432;&#x430;&#x43B;&#x441;&#x44F; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;
+    &#x43E;&#x434;&#x438;&#x43D; &#x441;&#x43F;&#x43E;&#x441;&#x43E;&#x431;
+    &#x43F;&#x440;&#x43E;&#x44F;&#x441;&#x43D;&#x438;&#x442;&#x44C;
+    &#x441;&#x438;&#x442;&#x443;&#x430;&#x446;&#x438;&#x44E;<br>
+    <img class="pure-img" src="https://i.imgur.com/YqdUhIK.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/MAeUkD5.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/5B2Y8Sh.png" width="600px"><br>
+    <img class="pure-img" src="https://i.imgur.com/32l9Xwe.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/cga8qSF.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/Ntzy0oP.png" alt>
+  </p>
+  <hr>
+  <p><em>&#x431;&#x44B;&#x43B; &#x43D;&#x443;&#x436;&#x435;&#x43D; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E;
+      &#x441;&#x43F;&#x438;&#x441;&#x43E;&#x43A; &#x438;&#x437; 5 &#x43D;&#x438;&#x43A;&#x43E;&#x432;&#x2026;</em></p>
+  <hr>
+  <p><img class="pure-img" src="https://i.imgur.com/PcIKJqt.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/eteUqXy.png" alt><br>
+    &#x41A;&#x430;&#x436;&#x435;&#x442;&#x441;&#x44F; &#x443;&#x441;&#x43F;&#x435;&#x445;!
+  </p>
+  <p><img class="pure-img" src="https://i.imgur.com/HKSZZCx.png" alt></p>
+  <hr>
+  <p><em>&#x41A;&#x430;&#x436;&#x435;&#x442;&#x441;&#x44F;
+      &#x43B;&#x44E;&#x431;&#x43E;&#x437;&#x43D;&#x430;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x44B;&#x43C;
+      &#x442;&#x443;&#x442; &#x43D;&#x435; &#x43E;&#x441;&#x43E;&#x431;&#x43E; &#x440;&#x430;&#x434;&#x44B;&#x2026;</em>
+  </p>
+  <hr>
+  <p>&#x412;&#x441;&#x435;&#x433;&#x434;&#x430; &#x431;&#x435;&#x441;&#x43F;&#x43E;&#x43A;&#x43E;&#x438;&#x43B;&#x43E;
+    &#x43F;&#x43E;&#x447;&#x435;&#x43C;&#x443; &#x445;&#x43E;&#x441;&#x43F;
+    &#x43F;&#x43E;&#x43A;&#x438;&#x434;&#x430;&#x44E;&#x442; &#x43B;&#x44E;&#x434;&#x438;, &#x43C;&#x44B; &#x436;&#x435;
+    &#x442;&#x43E;&#x43F; &#x413;&#x418;.<br>
+    &#x410; &#x442;&#x443;&#x442; &#x443;&#x445;&#x43E;&#x434; &#x43B;&#x438;&#x434;&#x435;&#x440;&#x430;
+    &#x432;&#x442;&#x43E;&#x440;&#x43E;&#x433;&#x43E; &#x441;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x430; &#x438;
+    &#x442;&#x438;&#x448;&#x438;&#x43D;&#x430;&#x2026;</p>
+  <p><img class="pure-img" src="https://i.imgur.com/DlQNOId.png" alt></p>
+  <p>&#x423;&#x445;&#x43E;&#x434; &#x445;&#x435;&#x43B;&#x441;py &#x442;&#x43E;&#x433;&#x434;&#x430;
+    &#x441;&#x43F;&#x440;&#x43E;&#x432;&#x43E;&#x446;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43B;
+    &#x442;&#x43E;&#x43D;&#x43D;&#x44B; &#x441;&#x43F;&#x430;&#x43C;&#x430; &#x432; &#x447;&#x430;&#x442;
+    &#x433;&#x438;, &#x442;&#x43E;&#x433;&#x434;&#x430; &#x436;&#x435;, &#x43F;&#x43E;
+    &#x441;&#x447;&#x430;&#x441;&#x442;&#x43B;&#x438;&#x432;&#x43E;&#x43C;&#x443;
+    &#x441;&#x442;&#x435;&#x447;&#x435;&#x43D;&#x438;&#x44E;
+    &#x43E;&#x431;&#x441;&#x442;&#x43E;&#x44F;&#x442;&#x435;&#x43B;&#x44C;&#x441;&#x442;&#x432;,
+    &#x43F;&#x43E;&#x44F;&#x432;&#x438;&#x43B;&#x441;&#x44F; &#x435;&#x449;&#x435; &#x43E;&#x434;&#x438;&#x43D;
+    &#x447;&#x430;&#x442; &#x432; &#x43A;&#x430;&#x447;&#x435;&#x441;&#x442;&#x432;&#x435;
+    &#x43D;&#x43E;&#x432;&#x43E;&#x439; &#x444;&#x438;&#x448;&#x43A;&#x438; &#x201C;&#x421;&#x43F;&#x430;&#x43C;&#x201D;
+  </p>
+  <p><img class="pure-img" src="https://i.imgur.com/LZ1n5Of.png" alt></p>
+  <p>&#x438; &#x425;&#x435;&#x43B;&#x43F;&#x438; &#x442;&#x443;&#x442;
+    &#x441;&#x43E;&#x432;&#x435;&#x440;&#x448;&#x435;&#x43D;&#x43D;&#x43E; &#x43D;&#x435;
+    &#x43F;&#x440;&#x438;&#x447;&#x435;&#x43C;&#x2026;&#x1F604;<br>
+    <img class="pure-img" src="https://i.imgur.com/vM5upwD.png" alt>
+  </p>
+  <p><img class="pure-img" src="https://i.imgur.com/WUKcoB8.png" alt><br>
+    &#x41F;&#x440;&#x435;&#x434;&#x443;&#x43F;&#x440;&#x435;&#x436;&#x434;&#x435;&#x43D;,
+    &#x432;&#x43E;&#x43E;&#x440;&#x443;&#x436;&#x435;&#x43D;.</p>
+  <hr>
+  <h3 class="mume-header" id="first-contact">First Contact</h3>
+
+  <p>&#x41F;&#x435;&#x440;&#x432;&#x430;&#x44F; &#x43F;&#x43E;&#x43F;&#x44B;&#x442;&#x43A;&#x430;
+    &#x43D;&#x430;&#x447;&#x430;&#x442;&#x44C; &#x445;&#x43E;&#x442;&#x44C;
+    &#x43A;&#x430;&#x43A;&#x443;&#x44E;-&#x442;&#x43E; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x443; &#x432;
+    &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x438;
+    &#x43F;&#x43E;&#x434;&#x43D;&#x44F;&#x442;&#x438;&#x44F; &#x431;&#x43E;&#x435;&#x432;&#x43E;&#x433;&#x43E;
+    &#x434;&#x443;&#x445;&#x430;</p>
+  <p><img class="pure-img" src="https://i.imgur.com/P0HiCbY.png" alt></p>
+  <p><img class="pure-img" src="https://i.imgur.com/tw146Td.png" alt><br>
+    &#x42D;&#x442;&#x43E; &#x431;&#x44B;&#x43B;&#x43E; 2 &#x431;&#x435;&#x437;&#x434;&#x43D;&#x44B;
+    &#x43D;&#x430;&#x437;&#x430;&#x434;, &#x441;&#x435;&#x439;&#x447;&#x430;&#x441;
+    &#x441;&#x43C;&#x43E;&#x442;&#x440;&#x438;&#x442;&#x441;&#x44F;
+    &#x43E;&#x441;&#x43E;&#x431;&#x435;&#x43D;&#x43D;&#x43E; &#x43A;&#x43E;&#x43C;&#x438;&#x447;&#x43D;&#x43E;.<br>
+    <img class="pure-img" src="https://i.imgur.com/XZJDS0n.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/9GVP8qG.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/CiuJkPi.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/dOa90Ni.png" alt><br>
+    &#x41A;&#x440;&#x438;&#x442;&#x438;&#x43A;&#x443;&#x435;&#x448;&#x44C; -
+    &#x43F;&#x440;&#x435;&#x434;&#x43B;&#x430;&#x433;&#x430;&#x439;,
+    &#x43F;&#x440;&#x435;&#x434;&#x43B;&#x430;&#x433;&#x430;&#x435;&#x448;&#x44C; -
+    &#x43A;&#x440;&#x438;&#x442;&#x438;&#x43A;&#x443;&#x439;.<br>
+    &#x41D;&#x430;&#x439;&#x441; &#x442;&#x430;&#x43A;&#x442;&#x438;&#x43A;&#x430;,
+    &#x43E;&#x441;&#x43E;&#x431;&#x435;&#x43D;&#x43D;&#x43E; &#x43A;&#x43E;&#x433;&#x434;&#x430; &#x43D;&#x435; &#x432;
+    &#x437;&#x443;&#x431; &#x43D;&#x43E;&#x433;&#x43E;&#x439;.<br>
+    <img class="pure-img" src="https://i.imgur.com/ILDTXKy.png" alt><br>
+    Close enough!<br>
+    <img class="pure-img" src="https://i.imgur.com/1iTIPFq.png" alt>
+  </p>
+  <p><em>&#x201C;&#x41D;&#x435;&#x432;&#x438;&#x434;&#x438;&#x43C;&#x44B;&#x435;
+      &#x43F;&#x438;&#x437;&#x434;&#x44E;&#x43A;&#x438; &#x438; &#x433;&#x434;&#x435; &#x43E;&#x43D;&#x438;
+      &#x43E;&#x431;&#x438;&#x442;&#x430;&#x44E;&#x442; &#x447;.2&#x201D;</em><br>
+    <img class="pure-img" src="https://i.imgur.com/HdGL1XB.png" alt><br>
+    &#x442;&#x440;&#x430;&#x444;&#x443; &#x447;&#x442;&#x43E; &#x43E;&#x431; &#x441;&#x442;&#x435;&#x43D;&#x443;
+    &#x433;&#x43E;&#x440;&#x43E;&#x445;, &#x43E;&#x431;&#x44A;&#x44F;&#x441;&#x43D;&#x44F;&#x442;&#x44C;
+    &#x43F;&#x43E;&#x447;&#x435;&#x43C;&#x443; &#x43B;&#x438;&#x434;&#x435;&#x440;
+    &#x434;&#x43E;&#x43B;&#x436;&#x435;&#x43D; &#x431;&#x44B;&#x442;&#x44C; &#x43D;&#x430; &#x432;&#x438;&#x434;&#x443;,
+    &#x430; &#x43D;&#x435; &#x43F;&#x440;&#x44F;&#x442;&#x430;&#x442;&#x44C;&#x441;&#x44F;
+    &#x43F;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x43D;&#x43E; &#x43E;&#x442;
+    &#x43C;&#x435;&#x43C;&#x431;&#x435;&#x440;&#x43E;&#x432;<br>
+    <img class="pure-img" src="https://i.imgur.com/C8lPQUj.png" alt><br>
+    &#x43C;&#x43E;&#x436;&#x435;&#x442; &#x431;&#x44B;&#x442;&#x44C;
+    &#x43A;&#x43E;&#x433;&#x434;&#x430;-&#x43D;&#x438;&#x431;&#x443;&#x434;&#x44C; &#x432;
+    &#x433;&#x43E;&#x441;&#x43F;&#x435; &#x43F;&#x43E;&#x44F;&#x432;&#x438;&#x442;&#x44C;&#x441;&#x44F;
+    &#x43D;&#x435;&#x443;&#x44F;&#x437;&#x432;&#x438;&#x43C;&#x44B;&#x439;, &#x430;
+    &#x43F;&#x43E;&#x43A;&#x430;&#x2026;<br>
+    <img class="pure-img" src="https://pp.userapi.com/c410619/v410619582/2a29/VUeCtZkayOc.jpg" alt>
+  </p>
+  <hr>
+  <h3 class="mume-header"
+    id="%D1%80%D0%B5%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9-%D1%87%D0%B0%D1%82%D0%BE%D0%B2-%D0%B2-%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D1%80%D0%B4%D0%B5-%D0%B3%D0%B0%D0%B9%D0%B4%D0%BB%D0%B0%D0%B9%D0%BD%D1%8B">
+    &#x420;&#x435;&#x43E;&#x440;&#x433;&#x430;&#x43D;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44F;
+    &#x43A;&#x430;&#x442;&#x435;&#x433;&#x43E;&#x440;&#x438;&#x439; &#x447;&#x430;&#x442;&#x43E;&#x432; &#x432;
+    &#x434;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;&#x435;,
+    &#x433;&#x430;&#x439;&#x434;&#x43B;&#x430;&#x439;&#x43D;&#x44B;</h3>
+
+  <p><img class="pure-img" src="https://i.imgur.com/6YhBv9p.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/PMCmfan.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/67G9PDr.png" alt>
+  </p>
+  <p>&#x412; &#x438;&#x442;&#x43E;&#x433;&#x435; &#x441;&#x434;&#x435;&#x43B;&#x430;&#x43B;
+    &#x447;&#x435;&#x440;&#x43D;&#x43E;&#x432;&#x438;&#x43A;
+    &#x433;&#x430;&#x439;&#x434;&#x43B;&#x430;&#x43D;&#x43E;&#x439;, &#x432;&#x437;&#x44F;&#x432; &#x437;&#x430;
+    &#x43E;&#x441;&#x43D;&#x43E;&#x432;&#x443; &#x442;&#x435;&#x43A;&#x441;&#x442;,
+    &#x43D;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x43D;&#x44B;&#x439; &#x434;&#x43B;&#x44F;
+    &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x44B; &#x432; &#x43E;&#x445;&#x43E;&#x442;&#x435;&#x2026;<br>
+    <strong>&#x420;&#x435;&#x437;&#x443;&#x43B;&#x44C;&#x442;&#x430;&#x442;:</strong>
+    &#x41E;&#x441;&#x442;&#x430;&#x43B;&#x441;&#x44F; &#x432;&#x430;&#x43B;&#x44F;&#x442;&#x44C;&#x441;&#x44F; &#x432;
+    &#x437;&#x430;&#x43A;&#x440;&#x44B;&#x442;&#x43E;&#x43C; &#x447;&#x430;&#x442;&#x435;<br>
+    <img class="pure-img"
+      src="https://media.discordapp.net/attachments/964715021554819104/998878266666524762/unknown.png" width="1100px">
+  </p>
+  <hr>
+  <p>Meanwhile&#x2026;<br>
+    <img class="pure-img" src="https://i.imgur.com/RckJYBD.png" alt><br>
+    Well, at least I tried xD
+  </p>
+  <hr>
+  <p>beginning of the end<br>
+    <img class="pure-img" src="https://i.imgur.com/aMCEtkC.png" alt>
+  </p>
+  <hr>
+  <p>Still loyal to hosp<br>
+    <img class="pure-img" src="https://i.imgur.com/mXF49tX.png" alt>
+  </p>
+  <hr>
+  <h3 class="mume-header"
+    id="%D0%B5%D0%B6%D0%B5%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D1%8B%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D1%8B-%D0%BF%D0%BE-%D0%BF%D0%BC%D0%BF%D1%83%D1%88%D0%BB%D0%B2%D0%BB">
+    &#x415;&#x436;&#x435;&#x43C;&#x435;&#x441;&#x44F;&#x447;&#x43D;&#x44B;&#x435; &#x441;&#x442;&#x430;&#x442;&#x44B;
+    &#x43F;&#x43E; &#x41F;&#x41C;/&#x43F;&#x443;&#x448;/&#x43B;&#x432;&#x43B;</h3>
+
+  <p>&#x412;&#x43E;&#x442; &#x44D;&#x442;&#x43E;
+    &#x434;&#x435;&#x439;&#x441;&#x442;&#x432;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x43E;
+    &#x43A;&#x440;&#x443;&#x442;&#x430;&#x44F; &#x448;&#x442;&#x443;&#x43A;&#x430; &#x431;&#x44B;&#x43B;&#x430;,
+    &#x436;&#x430;&#x43B;&#x44C; &#x447;&#x442;&#x43E; &#x442;&#x43E;&#x442; &#x43A;&#x442;&#x43E;
+    &#x437;&#x430;&#x43D;&#x438;&#x43C;&#x430;&#x43B;&#x441;&#x44F; &#x44D;&#x442;&#x438;&#x43C;,
+    &#x441;&#x433;&#x43E;&#x440;&#x435;&#x43B; &#x43A; &#x447;&#x435;&#x440;&#x442;&#x44F;&#x43C;.<br>
+    <img class="pure-img" src="https://i.imgur.com/6HnmSDl.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/eRypiIB.png" alt>
+  </p>
+  <hr>
+  <p>&#x41A;&#x43E;&#x43C;&#x443; &#x438;&#x43D;&#x442;&#x435;&#x440;&#x435;&#x441;&#x43D;&#x43E; &#x438;
+    &#x432;&#x438;&#x434;&#x435;&#x43E; &#x441;&#x43E; &#x441;&#x43A;&#x440;&#x438;&#x43D;&#x430;
+    &#x43C;&#x43E;&#x433;&#x443; &#x441;&#x43A;&#x438;&#x43D;&#x443;&#x442;&#x44C;.<br>
+    &#x421;&#x434;&#x435;&#x43B;&#x430;&#x43B;
+    &#x430;&#x432;&#x442;&#x43E;&#x43C;&#x430;&#x442;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44E;
+    &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x430;&#x44F; &#x441;&#x43E;&#x431;&#x438;&#x440;&#x430;&#x435;&#x442;
+    &#x441;&#x442;&#x430;&#x442;&#x44B; &#x413;&#x438;&#x43B;&#x44C;&#x434;
+    &#x43C;&#x435;&#x43C;&#x431;&#x435;&#x440;&#x43E;&#x432;.<br>
+    <img class="pure-img" src="https://i.imgur.com/v8Ikwk2.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/ybRdVmS.png" alt><br>
+    &#x41A;&#x430;&#x437;&#x430;&#x43B;&#x43E;&#x441;&#x44C; &#x431;&#x44B;, &#x431;&#x435;&#x440;&#x438; &#x434;&#x430;
+    &#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x439;&#x441;&#x44F;&#x2026;
+  </p>
+  <hr>
+  <h3 class="mume-header"
+    id="%D0%B3%D0%B8%D0%BB%D1%8C%D0%B4%D0%B5%D0%B9%D1%81%D0%BA%D0%B8%D0%B5-%D1%81%D1%83%D0%BD%D0%B4%D1%83%D0%BA%D0%B8-%D1%81-%D1%8D%D0%B2%D0%B5%D0%BD%D1%82%D0%BE%D0%B2">
+    &#x413;&#x438;&#x43B;&#x44C;&#x434;&#x435;&#x439;&#x441;&#x43A;&#x438;&#x435;
+    &#x441;&#x443;&#x43D;&#x434;&#x443;&#x43A;&#x438; &#x441; &#x44D;&#x432;&#x435;&#x43D;&#x442;&#x43E;&#x432;</h3>
+
+  <p><img class="pure-img" src="https://i.imgur.com/LFApj4f.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/elwytRV.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/9P760fY.png" alt>
+  </p>
+  <p><em>&#x43E;&#x434;&#x43D;&#x43E; &#x434;&#x435;&#x43B;&#x43E;
+      &#x440;&#x435;&#x430;&#x43B;&#x438;&#x437;&#x43E;&#x432;&#x44B;&#x432;&#x430;&#x442;&#x44C;
+      &#x438;&#x434;&#x435;&#x438; &#x43D;&#x430; &#x441;&#x432;&#x43E;&#x439; &#x43B;&#x430;&#x434;, &#x438;
+      &#x441;&#x43E;&#x432;&#x441;&#x435;&#x43C; &#x434;&#x440;&#x443;&#x433;&#x43E;&#x435;
+      &#x43A;&#x43E;&#x433;&#x434;&#x430; &#x444;&#x438;&#x43D;&#x430;&#x43B;&#x44C;&#x43D;&#x430;&#x44F;
+      &#x440;&#x435;&#x430;&#x43B;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44F; &#x442;&#x435;&#x440;&#x44F;&#x435;&#x442;
+      &#x432;&#x441;&#x44F;&#x43A;&#x438;&#x439;
+      &#x438;&#x437;&#x43D;&#x430;&#x447;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x439;
+      &#x441;&#x43C;&#x44B;&#x441;&#x43B;.<br>
+      &#x418;&#x43C;&#x435;&#x435;&#x43C; &#x447;&#x442;&#x43E; &#x438;&#x43C;&#x435;&#x435;&#x43C;,
+      &#x431;&#x435;&#x437;&#x43B;&#x438;&#x43A;&#x430;&#x44F;, &#x440;&#x43E;&#x43B;&#x44C; <strong>hero</strong></em>
+  </p>
+  <p><img class="pure-img" src="https://i.imgur.com/J0oSYGp.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/dh5wgiR.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/P0j35aE.png" alt>
+  </p>
+  <hr>
+  <h3 class="mume-header" id="description-wars">Description Wars</h3>
+
+  <p>&#x410;&#x432;&#x433;&#x443;&#x441;&#x442;<br>
+    <img class="pure-img" src="https://i.imgur.com/zwhhWzy.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/ZfMEDjb.png" alt><br>
+    &#x41D;&#x43E;&#x44F;&#x431;&#x440;&#x44C; &#x434;&#x432;&#x438;&#x436;&#x435;&#x442;&#x441;&#x44F; &#x43A;
+    &#x43A;&#x43E;&#x43D;&#x446;&#x443;, &#x430; &#x43E;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x438;&#x44F;
+    &#x432;&#x441;&#x435; &#x442;&#x435; &#x436;&#x435;&#x2026;<br>
+    &#x41D;&#x438; &#x441;&#x435;&#x431;&#x435;, &#x43D;&#x438; &#x43B;&#x44E;&#x434;&#x44F;&#x43C;.
+  </p>
+  <hr>
+  <h3 class="mume-header"
+    id="%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82-%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9-%D0%B2-%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D1%80%D0%B4%D0%B5">
+    &#x423;&#x434;&#x43E;&#x431;&#x43D;&#x44B;&#x439; &#x432;&#x430;&#x440;&#x438;&#x430;&#x43D;&#x442;
+    &#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x44F; &#x437;&#x43D;&#x430;&#x43D;&#x438;&#x439; &#x432;
+    &#x434;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;&#x435;</h3>
+
+  <p>&#x42D;&#x442;&#x43E; &#x43C;&#x43E;&#x435; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x435;&#x435;
+    &#x43F;&#x440;&#x435;&#x434;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x435; &#x43F;&#x43E;
+    &#x443;&#x43B;&#x443;&#x447;&#x448;&#x435;&#x43D;&#x438;&#x44E; &#x43D;&#x430;&#x448;&#x435;&#x439;
+    &#x433;&#x438;.<br>
+    <img class="pure-img" src="https://i.imgur.com/UtMYFRn.png" alt>
+  </p>
+  <hr>
+  <h3 class="mume-header" id="abex-s7">ABEX S7</h3>
+
+  <p>&#x41A; &#x442;&#x43E;&#x43C;&#x443; &#x43C;&#x43E;&#x43C;&#x435;&#x43D;&#x442;&#x443; &#x43C;&#x435;&#x43D;&#x44F;
+    &#x431;&#x435;&#x441;&#x43F;&#x43E;&#x43A;&#x43E;&#x438;&#x43B;&#x43E; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;
+    &#x43E;&#x434;&#x43D;&#x43E;.</p>
+  <p><img class="pure-img" src="https://i.imgur.com/3ZkPLBB.png" alt><br>
+    &#x41A;&#x430;&#x43A; &#x432;&#x438;&#x434;&#x43D;&#x43E; &#x438;&#x437;
+    &#x441;&#x43A;&#x440;&#x438;&#x43D;&#x43E;&#x432;, &#x44F; &#x435;&#x449;&#x435;
+    &#x437;&#x430;&#x434;&#x43E;&#x43B;&#x433;&#x43E; &#x434;&#x43E; 7 &#x431;&#x435;&#x437;&#x434;&#x43D;&#x44B;
+    &#x433;&#x43E;&#x432;&#x43E;&#x440;&#x438;&#x43B; &#x442;&#x440;&#x430;&#x444;&#x444;&#x443;, &#x447;&#x442;&#x43E;
+    &#x43E;&#x434;&#x43D;&#x438;&#x43C;&#x438; &#x43A;&#x438;&#x442;&#x430;&#x43C;&#x438;
+    &#x431;&#x435;&#x437;&#x434;&#x43D;&#x430; &#x43D;&#x435;
+    &#x432;&#x44B;&#x438;&#x433;&#x440;&#x44B;&#x432;&#x430;&#x435;&#x442;&#x441;&#x44F;.<br>
+    &#x427;&#x442;&#x43E; &#x43D;&#x443;&#x436;&#x43D;&#x430;
+    &#x434;&#x438;&#x441;&#x446;&#x438;&#x43F;&#x43B;&#x438;&#x43D;&#x430;,
+    &#x43A;&#x43E;&#x43C;&#x430;&#x43D;&#x434;&#x43D;&#x44B;&#x439; &#x434;&#x443;&#x445;.<br>
+    &#x41D;&#x430; &#x447;&#x442;&#x43E; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x430;&#x43B;
+    &#x43E;&#x442;&#x432;&#x435;&#x442;&#x44B; &#x43E;&#x442; &#x423;&#x431;&#x438; &#x438;
+    &#x442;&#x440;&#x430;&#x444;&#x435;&#x44F;, &#x447;&#x442;&#x43E; &#x44D;&#x442;&#x43E; &#x432;&#x441;&#x435;
+    &#x445;&#x435;&#x440;&#x43D;&#x44F;, &#x432;&#x430;&#x436;&#x435;&#x43D; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;
+    &#x43A;&#x43E;&#x448;&#x435;&#x43B;&#x435;&#x43A; &#x438; &#x43D;&#x438;&#x447;&#x435;&#x433;&#x43E; &#x441;
+    &#x44D;&#x442;&#x438;&#x43C; &#x43D;&#x435; &#x43F;&#x43E;&#x434;&#x435;&#x43B;&#x430;&#x442;&#x44C;<br>
+    &#x430; &#x434;&#x438;&#x441;&#x446;&#x438;&#x43F;&#x43B;&#x438;&#x43D;&#x430;&#x2026; &#x201C;&#x43D;&#x443;
+    &#x44D;&#x442;&#x43E; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E; &#x43B;&#x44E;&#x434;&#x438; &#x443;
+    &#x43D;&#x430;&#x441; &#x432;&#x43E;&#x442; &#x442;&#x430;&#x43A;&#x438;&#x435;
+    &#x445;&#x443;&#x435;&#x432;&#x44B;&#x435;, &#x440;&#x430;&#x441;&#x43F;&#x438;&#x437;&#x434;&#x44F;&#x438; &#x438;
+    &#x43D;&#x438;&#x447;&#x435;&#x433;&#x43E; &#x441; &#x44D;&#x442;&#x438;&#x43C; &#x43D;&#x435;
+    &#x43F;&#x43E;&#x434;&#x435;&#x43B;&#x430;&#x442;&#x44C;&#x201D;.<br>
+    &#x41A;&#x430;&#x43A; &#x432;&#x438;&#x434;&#x43D;&#x43E; &#x43F;&#x43E; &#x444;&#x430;&#x43A;&#x442;&#x443;,
+    &#x43D;&#x438;&#x43A;&#x430;&#x43A;&#x438;&#x445; &#x43F;&#x43E;&#x43F;&#x44B;&#x442;&#x43E;&#x43A;
+    &#x434;&#x430;&#x436;&#x435; &#x43F;&#x440;&#x435;&#x434;&#x43F;&#x440;&#x438;&#x43D;&#x44F;&#x442;&#x43E;
+    &#x43D;&#x435; &#x431;&#x44B;&#x43B;&#x43E;.</p>
+  <p>&#x41F;&#x414; &#x438; &#x410;&#x43A;&#x432;&#x438;&#x43B;&#x43E;&#x43D;
+    &#x43F;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x438;&#x43B;&#x438;
+    &#x436;&#x438;&#x440;&#x43D;&#x435;&#x439;&#x448;&#x443;&#x44E; &#x442;&#x43E;&#x447;&#x43A;&#x443; &#x432;
+    &#x44D;&#x442;&#x43E;&#x43C; &#x432;&#x43E;&#x43F;&#x440;&#x43E;&#x441;&#x435;.<br>
+    &#x414;&#x432;&#x430;&#x436;&#x434;&#x44B; &#x43D;&#x430; &#x43C;&#x43E;&#x43C;&#x435;&#x43D;&#x442;
+    &#x43D;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x438;&#x44F; &#x44D;&#x442;&#x438;&#x445;
+    &#x441;&#x442;&#x440;&#x43E;&#x43A;.</p>
+  <h3 class="mume-header"
+    id="%D0%BF%D0%B8%D0%B7%D0%B4%D1%82%D1%8C-%D0%BD%D0%B5-%D0%BC%D0%B5%D1%88%D0%BA%D0%B8-%D0%B2%D0%BE%D1%80%D0%BE%D1%87%D0%B0%D1%82%D1%8C">
+    &#x201C;&#x41F;&#x438;&#x437;&#x434;*&#x442;&#x44C;, &#x43D;&#x435; &#x43C;&#x435;&#x448;&#x43A;&#x438;
+    &#x432;&#x43E;&#x440;&#x43E;&#x447;&#x430;&#x442;&#x44C;&#x201D;</h3>
+
+  <p>&#x41F;&#x43E;&#x43C;&#x438;&#x43C;&#x43E; &#x43F;&#x43E;&#x440;&#x43A;&#x438;:</p>
+  <ul>
+    <li>&#x420;&#x435;&#x433;&#x443;&#x43B;&#x44F;&#x440;&#x43D;&#x43E; &#x43F;&#x43E;&#x441;&#x442;&#x438;&#x43B;
+      &#x43F;&#x430;&#x43A;&#x438; &#x43D;&#x430; &#x431;&#x43E;&#x441;&#x441;&#x43E;&#x432;</li>
+    <li>&#x418;&#x43D;&#x442;&#x435;&#x440;&#x435;&#x441;&#x43D;&#x44B;&#x435;
+      &#x43D;&#x430;&#x445;&#x43E;&#x434;&#x43A;&#x438; &#x441; &#x440;&#x435;&#x434;&#x434;&#x438;&#x442;&#x430;
+      &#x432; &#x442;&#x430;&#x432;&#x435;&#x440;&#x43D;&#x443; (&#x447;&#x442;&#x43E;-&#x442;&#x43E;
+      &#x431;&#x44B;&#x43B;&#x43E; &#x443;&#x434;&#x430;&#x43B;&#x435;&#x43D;&#x43E; &#x431;&#x435;&#x437;
+      &#x43F;&#x440;&#x438;&#x447;&#x438;&#x43D;)</li>
+    <li>&#x41F;&#x430;&#x43A;&#x438; &#x432;
+      &#x440;&#x430;&#x437;&#x43B;&#x43E;&#x43C;/&#x442;&#x441;/&#x43A;&#x443;&#x440;&#x441;&#x443;</li>
+    <li>&#x41E;&#x434;&#x438;&#x43D; &#x438;&#x437; &#x441;&#x43F;&#x43E;&#x43D;&#x441;&#x43E;&#x440;&#x43E;&#x432;
+      (&#x442;&#x430;&#x439;&#x43D;&#x44B;&#x439;) &#x432;
+      &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x435;&#x43C;
+      &#x440;&#x43E;&#x437;&#x44B;&#x433;&#x440;&#x44B;&#x448;&#x435; &#x432;
+      &#x414;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;&#x435;.</li>
+    <li>&#x413;&#x430;&#x439;&#x434; &#x43F;&#x43E; &#x422;&#x421;, &#x433;&#x430;&#x439;&#x434; &#x43F;&#x43E;
+      &#x43F;&#x440;&#x43E;&#x434;&#x430;&#x436;&#x435; &#x43D;&#x435;&#x43D;&#x443;&#x436;&#x43D;&#x44B;&#x445;
+      &#x440;&#x435;&#x43B;&#x438;&#x43A;&#x43E;&#x432; &#x432; &#x431;&#x435;&#x437;&#x434;&#x43D;&#x435;
+      (&#x434;&#x43B;&#x44F; &#x432;&#x442;&#x43E;&#x440;&#x43E;&#x433;&#x43E;
+      &#x441;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x430;)</li>
+    <li>and many more.</li>
+  </ul>
+  <h2 class="mume-header" id="%D1%88%D1%82%D0%B0%D0%B1%D0%B8%D1%81%D1%82">
+    &#x428;&#x442;&#x430;&#x431;&#x438;&#x441;&#x442;</h2>
+
+  <p>&#x412;&#x43E; &#x432;&#x440;&#x435;&#x43C;&#x44F; &#x442;&#x435;&#x441;&#x442;&#x43E;&#x432;&#x43E;&#x439;
+    S7(&#x43C;&#x43E;&#x433;&#x443; &#x43E;&#x448;&#x438;&#x431;&#x430;&#x442;&#x44C;&#x441;&#x44F;)
+    &#x423;&#x431;&#x438; &#x440;&#x435;&#x448;&#x438;&#x43B; &#x437;&#x430;&#x43A;&#x438;&#x43D;&#x443;&#x442;&#x44C;
+    &#x43C;&#x435;&#x43D;&#x44F; &#x432; &#x448;&#x442;&#x430;&#x431;&#x438;&#x441;&#x442;&#x44B;.<br>
+    &#x425;&#x43E;&#x442;&#x44F; &#x44F; &#x43D;&#x435; &#x445;&#x43E;&#x442;&#x435;&#x43B;,
+    &#x43F;&#x43E;&#x442;&#x43E;&#x43C;&#x443; &#x447;&#x442;&#x43E; &#x437;&#x43D;&#x430;&#x43B; &#x447;&#x435;&#x43C;
+    &#x432;&#x441;&#x435; &#x437;&#x430;&#x43A;&#x43E;&#x43D;&#x447;&#x438;&#x442;&#x441;&#x44F;, &#x432;
+    &#x432;&#x438;&#x434;&#x443; &#x442;&#x43E;&#x433;&#x43E;, &#x447;&#x442;&#x43E;
+    &#x43E;&#x442;&#x43D;&#x43E;&#x448;&#x435;&#x43D;&#x438;&#x44F; &#x441; &#x442;&#x440;&#x430;&#x444;&#x43E;&#x43C;
+    &#x442;&#x43E;&#x433;&#x434;&#x430; &#x431;&#x44B;&#x43B;&#x438; &#x443;&#x436;&#x435; &#x43D;&#x435;
+    &#x43E;&#x447;&#x435;&#x43D;&#x44C;.<br>
+    &#x420;&#x435;&#x437;&#x443;&#x43B;&#x44C;&#x442;&#x430;&#x442;
+    &#x43E;&#x436;&#x438;&#x434;&#x430;&#x435;&#x43C;&#x44B;&#x439;,
+    &#x442;&#x440;&#x430;&#x444;&#x435;&#x439;&#x43A;&#x430;
+    &#x43F;&#x43E;&#x438;&#x433;&#x440;&#x43E;&#x440;&#x438;&#x43B;
+    &#x43D;&#x435;&#x43C;&#x43D;&#x43E;&#x436;&#x43A;&#x43E; &#x438; &#x442;&#x438;&#x445;&#x43E;, &#x431;&#x435;&#x437;
+    &#x43E;&#x431;&#x44A;&#x44F;&#x441;&#x43D;&#x435;&#x43D;&#x438;&#x439;, &#x441;&#x43D;&#x44F;&#x43B;
+    &#x448;&#x442;&#x430;&#x431;&#x438;&#x441;&#x442;&#x430;.</p>
+  <p><img class="pure-img" src="https://i.imgur.com/PrDDweh.png" alt></p>
+  <p>&#x42F; &#x43F;&#x43E;&#x43D;&#x438;&#x43C;&#x430;&#x44E;, &#x440;&#x43E;&#x43B;&#x44C;
+    &#x441;&#x43D;&#x44F;&#x442;&#x44C; &#x437;&#x430; &#x440;&#x443;&#x43B;&#x435;&#x43C;
+    &#x43B;&#x435;&#x433;&#x447;&#x435;, &#x447;&#x435;&#x43C; &#x43F;&#x438;&#x441;&#x430;&#x442;&#x44C;
+    &#x441;&#x43E;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x44F;, &#x43F;&#x430;&#x440;&#x430;
+    &#x43A;&#x43B;&#x438;&#x43A;&#x43E;&#x432; &#x432;&#x441;&#x435;&#x433;&#x43E;,
+    &#x43E;&#x441;&#x43E;&#x431;&#x435;&#x43D;&#x43D;&#x43E; &#x435;&#x441;&#x43B;&#x438; &#x43D;&#x435;
+    &#x442;&#x435;&#x440;&#x43F;&#x438;&#x442;&#x441;&#x44F;.</p>
+  <h2 class="mume-header" id="%D1%80%D0%B5%D0%B1%D0%B5%D0%BD%D0%BE%D0%BA">
+    &#x420;&#x435;&#x431;&#x435;&#x43D;&#x43E;&#x43A;</h2>
+
+  <p><img class="pure-img" src="https://i.imgur.com/bZK7Ghq.png" alt></p>
+  <p>&#x41D;&#x430;&#x432;&#x435;&#x440;&#x43D;&#x43E;&#x435; &#x441;&#x430;&#x43C;&#x44B;&#x439;
+    &#x44F;&#x440;&#x43A;&#x438;&#x439; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;
+    &#x441;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x436;&#x430; &#x442;&#x440;&#x430;&#x444;&#x435;&#x44F;
+    &#x44D;&#x442;&#x43E; &#x43E;&#x441;&#x442;&#x440;&#x43E;&#x432; &#x437;&#x43E;&#x43B;&#x43E;&#x442;&#x430;
+    (&#x44D;&#x432;&#x435;&#x43D;&#x442; &#x441; &#x437;&#x430;&#x449;&#x438;&#x442;&#x43D;&#x44B;&#x43C;&#x438;
+    &#x43A;&#x430;&#x43C;&#x43D;&#x44F;&#x43C;&#x438;, &#x446;&#x432;&#x435;&#x442;&#x430;&#x43C;&#x438;).<br>
+    &#x41F;&#x43E; &#x434;&#x430;&#x43D;&#x43D;&#x43E;&#x43C;&#x443; &#x44D;&#x432;&#x435;&#x43D;&#x442;&#x443;
+    &#x420;&#x435;&#x437;&#x437; &#x43D;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x43B;
+    &#x437;&#x434;&#x43E;&#x440;&#x43E;&#x432;&#x435;&#x43D;&#x43D;&#x44B;&#x439; &#x433;&#x430;&#x439;&#x434;,<br>
+    &#x432; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x43C; &#x440;&#x430;&#x441;&#x43F;&#x438;&#x441;&#x430;&#x43B;
+    &#x43F;&#x440;&#x435;&#x438;&#x43C;&#x443;&#x449;&#x435;&#x441;&#x442;&#x432;&#x430; &#x438;&#x433;&#x440;&#x44B;
+    &#x447;&#x435;&#x440;&#x435;&#x437; &#x430;&#x442;&#x430;&#x43A;&#x443; &#x438;
+    &#x43F;&#x43E;&#x447;&#x435;&#x43C;&#x443; &#x43D;&#x430;&#x434;&#x43E;
+    &#x41E;&#x411;&#x42F;&#x417;&#x410;&#x422;&#x415;&#x41B;&#x42C;&#x41D;&#x41E; &#x43D;&#x435;
+    &#x432;&#x44B;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x442;&#x44C;
+    &#x43D;&#x438;&#x43A;&#x430;&#x43A;&#x443;&#x44E; &#x437;&#x430;&#x449;&#x438;&#x442;&#x443;.</p>
+  <p><em></em></p>
+  <details>
+    <summary><em><code>&#x441;&#x43F;&#x43E;&#x439;&#x43B;&#x435;&#x440;</code></em></summary>
+    <p></p>
+    <pre data-role="codeBlock" data-info class="language-"><code>&#x427;&#x442;&#x43E; &#x431;&#x44B; &#x431;&#x44B;&#x441;&#x442;&#x440;&#x435;&#x435; &#x43D;&#x430;&#x439;&#x442;&#x438; &#x442;&#x440;&#x435;&#x445; &#x442;&#x430;&#x43A;&#x438;&#x445; &#x436;&#x435; &#x438;&#x433;&#x440;&#x43E;&#x43A;&#x43E;&#x432; &#x43C;&#x438;&#x43D;&#x438;&#x43C;&#x443;&#x43C;,
+&#x421; &#x43D;&#x438;&#x43C;&#x438; &#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x434;&#x43E;&#x433;&#x43E;&#x432;&#x43E;&#x440;&#x438;&#x442;&#x441;&#x44F; &#x43E;&#x431; &#x43E;&#x431;&#x43C;&#x435;&#x43D;&#x435; &#x430;&#x442;&#x430;&#x43A;&#x430;&#x43C;&#x438;
+&#x41D;&#x43E; &#x434;&#x430;&#x436;&#x435; &#x435;&#x441;&#x43B;&#x438; &#x43D;&#x435;&#x434;&#x43E;&#x433;&#x43E;&#x432;&#x430;&#x440;&#x438;&#x432;&#x430;&#x442;&#x44C;&#x441;&#x44F;,
+&#x441; &#x432;&#x44B;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x435;&#x43C; &#x437;&#x430;&#x449;&#x438;&#x442;&#x44B; &#x432;&#x430;&#x448;&#x430; &#x43F;&#x440;&#x438;&#x432;&#x43B;&#x435;&#x43A;&#x430;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x43F;&#x430;&#x434;&#x430;&#x435;&#x442; &#x43D;&#x430; &#x430;&#x431;&#x441;&#x43E;&#x43B;&#x44E;&#x442;&#x43D;&#x44B;&#x439; &#x43C;&#x438;&#x43D;&#x438;&#x43C;&#x443;&#x43C;
+&#x438; &#x432; &#x43D;&#x430;&#x43F;&#x430;&#x434;&#x430;&#x44E;&#x449;&#x438;&#x445;, &#x432; &#x43B;&#x443;&#x447;&#x448;&#x435;&#x43C; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x435;, &#x43E;&#x43A;&#x430;&#x436;&#x435;&#x442;&#x441;&#x44F; &#x430;&#x442;&#x442;&#x430;&#x43A;&#x435;&#x440;, &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x435;&#x441;&#x43B;&#x438; &#x443; &#x43D;&#x435;&#x433;&#x43E; &#x43D;&#x430; &#x432;&#x430;&#x441; &#x437;&#x430;&#x43A;&#x43E;&#x43D;&#x447;&#x438;&#x43B;&#x438;&#x441;&#x44C; &#x440;&#x435;&#x442;&#x440;&#x430;&#x438;
+&#x410; &#x442;&#x430;&#x43A;&#x438;&#x435; &#x438;&#x433;&#x440;&#x43E;&#x43A;&#x438; &#x441;&#x43A;&#x43E;&#x440;&#x435;&#x439; &#x432;&#x441;&#x435;&#x433;&#x43E; &#x440;&#x435;&#x434;&#x43A;&#x43E; &#x431;&#x443;&#x434;&#x443;&#x442; &#x432;&#x43E;&#x43E;&#x431;&#x449;&#x435; &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x43E;&#x432;&#x430;&#x442;&#x44C; &#x43E;&#x431;&#x44B;&#x447;&#x43D;&#x44B;&#x439; &#x43F;&#x43E;&#x434;&#x431;&#x43E;&#x440;
+&#x417;&#x430;&#x447;&#x435;&#x43C;? &#x415;&#x441;&#x43B;&#x438; &#x43E;&#x43D;&#x438; &#x443;&#x436;&#x435; &#x43D;&#x430;&#x448;&#x43B;&#x438; &#x441; &#x43A;&#x435;&#x43C; &#x43E;&#x431;&#x43C;&#x435;&#x43D;&#x438;&#x432;&#x430;&#x442;&#x44C;&#x441;&#x44F; &#x430;&#x442;&#x430;&#x43A;&#x430;&#x43C;&#x438;
+</code></pre>
+  </details>
+  <hr>
+  <p><em>&#x427;&#x442;&#x43E;
+      &#x441;&#x43E;&#x432;&#x435;&#x442;&#x43E;&#x432;&#x430;&#x43B;&#xA0;&#x43D;&#x435;&#x432;&#x438;&#x434;&#x438;&#x43C;&#x44B;&#x439;
+      &#x43F;&#x438;&#x437;&#x434;&#x44E;&#x43A;?</em><br>
+    &#x41C;&#x43E;&#x436;&#x435;&#x442;&#x435; &#x43F;&#x43E;&#x441;&#x43C;&#x43E;&#x442;&#x440;&#x435;&#x442;&#x44C;
+    &#x441;&#x430;&#x43C;&#x438;, &#x434;&#x43B;&#x44F; &#x43F;&#x43E;&#x438;&#x441;&#x43A;&#x430; -
+    &#x434;&#x430;&#x442;&#x430; &#x43F;&#x435;&#x440;&#x432;&#x43E;&#x433;&#x43E;
+    &#x44D;&#x432;&#x435;&#x43D;&#x442;&#x430; &#x441; &#x433;&#x430;&#x439;&#x434;&#x43E;&#x43C;: 28.04.2022</p>
+  <p><img class="pure-img" src="https://i.imgur.com/oleBbw4.png" alt></p>
+  <p>&#x43E;&#x434;&#x438;&#x43D; &#x438;&#x437; &#x442;&#x43E;&#x43F;
+    &#x440;&#x435;&#x437;&#x443;&#x43B;&#x44C;&#x442;&#x430;&#x442;&#x43E;&#x432; &#x442;&#x435;&#x445;
+    &#x43E;&#x441;&#x442;&#x440;&#x43E;&#x432;&#x43E;&#x432;<br>
+    <img class="pure-img" src="https://cdn.discordapp.com/attachments/628853486288764929/969132115113422858/unknown.png"
+      width="300px"><br>
+    &#x420;&#x430;&#x43D;&#x434;&#x43E;&#x43C; &#x441; &#x440;&#x435;&#x434;&#x434;&#x438;&#x442;&#x430; &#x43D;&#x430;
+    &#x43A;&#x440;&#x430;&#x439;&#x43D;&#x438;&#x445; &#x43E;&#x441;&#x442;&#x440;&#x43E;&#x432;&#x430;&#x445;<br>
+    <img class="pure-img" src="https://i.imgur.com/mDFn2B8.png" width="300px">
+  </p>
+  <p><strong>&#x421;&#x43E;&#x432;&#x435;&#x442; &#x441;&#x442;&#x430;&#x432;&#x438;&#x442;&#x44C;
+      &#x437;&#x430;&#x449;&#x438;&#x442;&#x443;</strong> &#x438; &#x43D;&#x435;
+    <strong>&#x438;&#x433;&#x440;&#x430;&#x442;&#x44C; &#x432;
+      &#x43F;&#x43E;&#x434;&#x434;&#x430;&#x432;&#x43A;&#x438;</strong> &#x441;&#x442;&#x43E;&#x438;&#x43B;
+    &#x43F;&#x440;&#x438;&#x441;&#x43B;&#x443;&#x448;&#x430;&#x432;&#x448;&#x435;&#x43C;&#x443;&#x441;&#x44F;
+    <strong>~3k &#x43A;&#x440;&#x438;&#x441;&#x442;&#x430;&#x43B;&#x43E;&#x432;</strong>.<br>
+    &#x41A;&#x430;&#x43A;
+    &#x43F;&#x440;&#x43E;&#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43B;
+    <em>&#x442;&#x440;&#x430;&#x444;</em>?<br>
+    &#x414;&#x43B;&#x44F; &#x43D;&#x435;&#x433;&#x43E; <strong>3&#x43A; &#x43A;&#x440;&#x438;
+      &#x445;&#x435;&#x440;&#x43D;&#x44F;</strong>, &#x440;&#x430;&#x434;&#x438;
+    &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x439; &#x43E;&#x43D; <strong>&#x43D;&#x435;
+      &#x441;&#x43E;&#x431;&#x438;&#x440;&#x430;&#x435;&#x442;&#x441;&#x44F;</strong>
+    &#x432;&#x447;&#x438;&#x442;&#x44B;&#x432;&#x430;&#x442;&#x44C;&#x441;&#x44F; &#x432; &#x433;&#x430;&#x439;&#x434;
+    &#x420;&#x435;&#x437;&#x437;&#x430;.<br>
+    &#x41D;&#x435; &#x437;&#x43D;&#x430;&#x44E;, &#x441;&#x430;&#x43C; &#x43B;&#x438; &#x43E;&#x43D;
+    &#x434;&#x43E;&#x434;&#x443;&#x43C;&#x430;&#x43B;&#x441;&#x44F;, &#x438;&#x43B;&#x438; &#x43A;&#x442;&#x43E;
+    &#x43F;&#x43E;&#x43C;&#x43E;&#x433;, &#x43D;&#x43E; &#x44D;&#x442;&#x43E;&#x442; &#x43E;&#x431;&#x441;&#x435;&#x440;
+    &#x434;&#x43E;&#x441;&#x442;&#x430;&#x442;&#x43E;&#x447;&#x43D;&#x43E;
+    &#x43E;&#x43F;&#x435;&#x440;&#x430;&#x442;&#x438;&#x432;&#x43D;&#x43E; &#x431;&#x44B;&#x43B;
+    &#x443;&#x434;&#x430;&#x43B;&#x435;&#x43D;.
+  </p>
+  <p>&#x415;&#x441;&#x43B;&#x438; &#x432;&#x44B; &#x43F;&#x43E;&#x441;&#x442;&#x440;&#x430;&#x434;&#x430;&#x43B;&#x438;
+    &#x43E;&#x442; &#x201C;&#x441;&#x43E;&#x432;&#x435;&#x442;&#x43E;&#x432;&#x201D;
+    &#x442;&#x440;&#x430;&#x444;&#x435;&#x439;&#x43A;&#x438;, &#x434;&#x443;&#x43C;&#x430;&#x44E;
+    &#x441;&#x442;&#x43E;&#x438;&#x442; &#x441;&#x43F;&#x440;&#x43E;&#x441;&#x438;&#x442;&#x44C; &#x441;
+    &#x43D;&#x435;&#x433;&#x43E;.<br>
+    &#x415;&#x441;&#x43B;&#x438; &#x44D;&#x442;&#x43E; &#x445;&#x435;&#x440;&#x43D;&#x44F; &#x434;&#x43B;&#x44F;
+    &#x43D;&#x435;&#x433;&#x43E;, &#x43F;&#x443;&#x441;&#x442;&#x44C;
+    &#x43A;&#x43E;&#x43C;&#x43F;&#x435;&#x43D;&#x441;&#x438;&#x440;&#x443;&#x435;&#x442;.</p>
+  <h2 class="mume-header" id="%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%B4%D0%B0%D1%80%D0%BD%D0%BE%D1%81%D1%82%D1%8C">
+    &#x411;&#x43B;&#x430;&#x433;&#x43E;&#x434;&#x430;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C;</h2>
+
+  <p>&#x41F;&#x43B;&#x430;&#x442;&#x430;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x443;&#x44E; &#x44F;
+    &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x43B; &#x437;&#x430; &#x441;&#x432;&#x43E;&#x438;
+    &#x442;&#x440;&#x443;&#x434;&#x44B;.</p>
+  <p><img class="pure-img" src="https://i.imgur.com/7nLjtDW.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/wJJWjRE.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/a1ndhp6.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/axjqL5P.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/VDMVUpY.png" alt>
+  </p>
+  <h2 class="mume-header" id="%D0%BF%D0%BE%D0%B1%D0%B5%D0%B4%D0%B0">&#x41F;&#x43E;&#x431;&#x435;&#x434;&#x430;</h2>
+
+  <p>&#x41F;&#x43E;&#x441;&#x43B;&#x435; &#x44D;&#x442;&#x43E;&#x433;&#x43E;
+    &#x440;&#x430;&#x437;&#x433;&#x43E;&#x432;&#x43E;&#x440;&#x430;, &#x431;&#x43E;&#x43B;&#x44C;&#x448;&#x435;
+    &#x43D;&#x435; &#x431;&#x44B;&#x43B;&#x43E; &#x43D;&#x435; &#x441;&#x438;&#x43B; &#x43D;&#x435;
+    &#x436;&#x435;&#x43B;&#x430;&#x43D;&#x438;&#x44F; &#x43A;&#x430;&#x43A; &#x43B;&#x438;&#x431;&#x43E;
+    &#x432;&#x437;&#x430;&#x438;&#x43C;&#x43E;&#x434;&#x435;&#x439;&#x441;&#x442;&#x432;&#x43E;&#x432;&#x430;&#x442;&#x44C;
+    &#x441; &#x44D;&#x442;&#x438;&#x43C; &#x447;&#x435;&#x43B;&#x43E;&#x432;&#x435;&#x43A;&#x43E;&#x43C;.<br>
+    &#x42F; &#x437;&#x430;&#x431;&#x438;&#x43B; &#x43D;&#x430; &#x447;&#x430;&#x442;&#x44B; &#x432;
+    &#x434;&#x438;&#x441;&#x43A;&#x43E;.<br>
+    &#x41F;&#x435;&#x440;&#x435;&#x441;&#x442;&#x430;&#x43B; &#x43F;&#x43E;&#x441;&#x442;&#x438;&#x442;&#x44C;
+    &#x434;&#x430;&#x436;&#x435; &#x432; &#x441;&#x432;&#x43E;&#x439; &#x43B;&#x44E;&#x431;&#x438;&#x43C;&#x44B;&#x439;
+    &#x422;&#x440;&#x435;&#x448; &#x421;&#x43A;&#x430;&#x43C;.<br>
+    &#x41E;&#x441;&#x442;&#x430;&#x43B;&#x441;&#x44F; &#x43F;&#x43E;&#x43C;&#x43E;&#x433;&#x430;&#x442;&#x44C;
+    &#x41F;&#x43E;&#x43B;&#x438;&#x43D;&#x435; &#x441;&#x43E; &#x432;&#x442;&#x43E;&#x440;&#x44B;&#x43C;.</p>
+  <p>ps:<br>
+    &#x41D;&#x430; &#x432;&#x441;&#x44F;&#x43A;&#x438;&#x439; &#x43F;&#x43E;&#x43C;&#x43E;&#x433;
+    &#x442;&#x440;&#x430;&#x444;&#x444;&#x438; &#x440;&#x430;&#x441;&#x441;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C;
+    &#x432; &#x430;&#x434;&#x43C;&#x438;&#x43D;&#x43A;&#x435;</p>
+  <details>
+    <summary>&#x43F;&#x440;&#x43E; &#x443;&#x433;&#x440;&#x43E;&#x437;&#x44B; &#x438;
+      &#x43F;&#x435;&#x440;&#x435;&#x434;&#x430;&#x447;&#x443; &#x43F;&#x43E;&#x441;&#x442;&#x430;</summary>
+    <p><em>&#x445;&#x43E;&#x442;&#x44C; &#x438; &#x431;&#x44B;&#x43B;&#x43E;
+        &#x43E;&#x447;&#x435;&#x432;&#x438;&#x434;&#x43D;&#x43E; &#x447;&#x442;&#x43E;
+        &#x441;&#x43B;&#x43E;&#x432;&#x430; &#x435;&#x433;&#x43E; &#x43D;&#x435; &#x441;&#x442;&#x43E;&#x44F;&#x442;
+        &#x438; &#x433;&#x440;&#x43E;&#x448;&#x430;</em></p>
+    <p><img class="pure-img" src="https://i.imgur.com/bvwmw7h.png" alt="ubi11"></p>
+  </details>
+  <hr>
+  <hr>
+  <p>3 &#x43C;&#x435;&#x441;&#x44F;&#x446;&#x430; &#x441;&#x43F;&#x443;&#x441;&#x442;&#x44F;&#x2026;</p>
+  <hr>
+  <hr>
+  <h2 class="mume-header" id="ae-s8">AE S8</h2>
+
+  <p>&#x41F;&#x43E;&#x447;&#x435;&#x43C;&#x443; &#x442;&#x43E; &#x43E;&#x43D; &#x440;&#x435;&#x448;&#x438;&#x43B;,
+    &#x447;&#x442;&#x43E; &#x44F; &#x442;&#x443;&#x442; &#x441;&#x438;&#x436;&#x443; &#x438; &#x436;&#x434;&#x443;
+    &#x43A;&#x43E;&#x433;&#x434;&#x430; &#x43E;&#x43D; &#x441;&#x43E; &#x43C;&#x43D;&#x43E;&#x439;
+    &#x437;&#x430;&#x433;&#x43E;&#x432;&#x43E;&#x440;&#x438;&#x442;<br>
+    <img class="pure-img" src="https://i.imgur.com/qQxNRrV.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/Om9KF3H.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/J99dtL4.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/L44wgLB.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/LJv7bbI.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/Z0ubF2b.png" alt>
+  </p>
+  <p><strong>&#x442;&#x443;&#x442; &#x443;&#x436;&#x435; &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x441;&#x44F;
+      &#x43A;&#x430;&#x43A;&#x43E;&#x439;-&#x442;&#x43E; &#x441;&#x44E;&#x440;.</strong><br>
+    <img class="pure-img" src="https://i.imgur.com/qwujJna.png" alt><br>
+    &#x427;&#x442;&#x43E; &#x43E;&#x43D; &#x43D;&#x435;&#x441;&#x435;&#x442;.<br>
+    &#x421;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C; &#x447;&#x442;&#x43E; &#x44F; &#x431;&#x44B;&#x43B;
+    &#x443;&#x434;&#x438;&#x432;&#x43B;&#x435;&#x43D;, &#x43D;&#x438;&#x447;&#x435;&#x433;&#x43E; &#x43D;&#x435;
+    &#x441;&#x43A;&#x430;&#x437;&#x430;&#x442;&#x44C;.<br>
+    &#x42F; &#x434;&#x43E; &#x441;&#x438;&#x445; &#x43F;&#x43E;&#x440; &#x442;&#x430;&#x43A; &#x438; &#x43D;&#x435;
+    &#x43F;&#x43E;&#x43D;&#x44F;&#x43B; &#x447;&#x442;&#x43E; &#x44D;&#x442;&#x43E;&#x2026;<br>
+    <em>&#x43E;&#x441;&#x43E;&#x431;&#x44B;&#x439;
+      &#x441;&#x435;&#x43A;&#x441;&#x442;&#x430;&#x43D;&#x442;&#x441;&#x43A;&#x438;&#x439;
+      &#x43F;&#x440;&#x438;&#x435;&#x43C;?<br>
+      &#x414;&#x436;&#x435;&#x434;&#x430;&#x439;&#x441;&#x43A;&#x430;&#x44F;
+      &#x442;&#x435;&#x445;&#x43D;&#x438;&#x43A;&#x430;?<br>
+      &#x41C;&#x430;&#x43D;&#x442;&#x440;&#x430;?</em>
+  </p>
+  <p><img class="pure-img" src="https://i.imgur.com/eOB50HZ.png" alt></p>
+  <p>&#x41F;&#x43E;&#x447;&#x442;&#x438; &#x432;&#x441;&#x435;
+    &#x441;&#x43A;&#x430;&#x437;&#x430;&#x43D;&#x43D;&#x43E;&#x435;,
+    <strong>&#x43F;&#x440;&#x43E;&#x442;&#x438;&#x432;&#x43E;&#x43F;&#x43E;&#x43B;&#x43E;&#x436;&#x43D;&#x43E;</strong>
+    &#x432; &#x440;&#x435;&#x430;&#x43B;&#x44C;&#x43D;&#x43E;&#x441;&#x442;&#x438;.<br>
+    &#x42D;&#x442;&#x43E; &#x431;&#x44B;&#x441;&#x442;&#x440;&#x43E;
+    &#x43E;&#x43F;&#x440;&#x435;&#x434;&#x435;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F;
+    &#x437;&#x430;&#x441;&#x43B;&#x443;&#x433;&#x430;&#x43C;&#x438; &#x433;&#x43B;&#x430;&#x432;&#x44B;
+    &#x433;&#x438;&#x43B;&#x44C;&#x434;&#x438;&#x438;.<br>
+    &#x411;&#x43B;&#x430;&#x433;&#x43E; &#x413;&#x41C; &#x43B;&#x438;&#x447;&#x43D;&#x43E;&#x441;&#x442;&#x44C;
+    &#x43F;&#x443;&#x431;&#x43B;&#x438;&#x447;&#x43D;&#x430;&#x44F; &#x438;
+    &#x440;&#x435;&#x437;&#x443;&#x43B;&#x44C;&#x442;&#x430;&#x442; &#x435;&#x433;&#x43E;
+    &#x443;&#x441;&#x438;&#x43B;&#x438;&#x439; &#x432;&#x441;&#x435;&#x433;&#x434;&#x430; &#x43D;&#x430;
+    &#x43B;&#x438;&#x446;&#x43E;.
+  </p>
+  <p><em></em></p>
+  <details>
+    <summary>
+      <em><code>&#x441;&#x43F;&#x43E;&#x439;&#x43B;&#x435;&#x440;. &#x437;&#x430;&#x441;&#x43B;&#x443;&#x433;&#x438; &#x442;&#x440;&#x430;&#x444;&#x435;&#x439;&#x43A;&#x438; &#x432; &#x43F;&#x43E;&#x441;&#x43B;&#x435;&#x434;&#x43D;&#x435;&#x435; &#x432;&#x440;&#x435;&#x43C;&#x44F;:</code></em>
+    </summary>
+    <p></p>
+    <hr>
+  </details>
+  <hr>
+  <p><em>&#x421;&#x435;&#x431;&#x435; &#x431;&#x44B; &#x437;&#x430;&#x434;&#x430;&#x43B; &#x44D;&#x442;&#x438;
+      &#x432;&#x43E;&#x43F;&#x440;&#x43E;&#x441;&#x44B;</em>.</p>
+  <blockquote>
+    <p><em>&#x410;&#x434;&#x43C;&#x438;&#x43D;&#x43A;&#x430;, &#x430; &#x44D;&#x442;&#x43E;
+        &#x441;&#x447;&#x438;&#x442;&#x430;&#x439; 1
+        &#x447;&#x435;&#x43B;&#x43E;&#x432;&#x435;&#x43A;,&#x443;&#x436;&#x435;
+        &#x43F;&#x43E;&#x440;&#x44F;&#x434;&#x43A;&#x43E;&#x43C;
+        &#x437;&#x430;&#x435;&#x431;&#x430;&#x43B;&#x430;&#x441;&#x44C;</em></p>
+  </blockquote>
+  <p>&#x44D;&#x442;&#x43E; &#x43F;&#x435;&#x440;&#x435;&#x433;&#x43E;&#x440;&#x435;&#x432;&#x448;&#x430;&#x44F;
+    &#x41F;&#x43E;&#x43B;&#x438;&#x43D;&#x430;, &#x434;&#x43E; &#x43D;&#x435;&#x435; &#x421;&#x435;&#x43B;&#x444;.<br>
+    *&#x41D;&#x435; &#x441;&#x435;&#x431;&#x44F; &#x436;&#x435; &#x43E;&#x43D;
+    &#x43F;&#x43E;&#x434;&#x440;&#x430;&#x437;&#x443;&#x43C;&#x435;&#x432;&#x430;&#x43B; *&#x1F602;<br>
+    &#x423;&#x441;&#x442;&#x430;&#x43B;&#x438; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x442;&#x44C; &#x437;&#x430;
+    &#x434;&#x43E;&#x434;&#x438;&#x43A;&#x430;,
+    &#x432;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x44E;&#x449;&#x435;&#x433;&#x43E;
+    &#x43F;&#x430;&#x43B;&#x43A;&#x438; &#x432; &#x43A;&#x43E;&#x43B;&#x435;&#x441;&#x430;.</p>
+  <p>&#x412; &#x43E;&#x434;&#x43D;&#x43E;&#x43C; &#x43F;&#x440;&#x430;&#x432;:</p>
+  <blockquote>
+    <p>&#x442;&#x44B; &#x43C;&#x435;&#x43D;&#x44F; &#x438; &#x441;&#x435;&#x439;&#x447;&#x430;&#x441; &#x43D;&#x435;
+      &#x43F;&#x43E;&#x439;&#x43C;&#x435;&#x448;&#x44C;</p>
+  </blockquote>
+  <p>&#x442;&#x430;&#x43A;&#x438;&#x435;
+    &#x43D;&#x435;&#x430;&#x434;&#x435;&#x43A;&#x432;&#x430;&#x442;&#x43D;&#x44B;&#x435;
+    &#x43C;&#x430;&#x43D;&#x44F;&#x444;&#x430;&#x43D;&#x442;&#x430;&#x437;&#x438;&#x438; &#x43C;&#x430;&#x43B;&#x43E;
+    &#x43A;&#x442;&#x43E; &#x441;&#x43F;&#x43E;&#x441;&#x43E;&#x431;&#x435;&#x43D;
+    &#x43F;&#x43E;&#x43D;&#x44F;&#x442;&#x44C;.</p>
+  <p><img class="pure-img" src="https://i.imgur.com/5DfUHjI.png" alt><br>
+    &#x41F;&#x440;&#x43E;&#x431;&#x43B;&#x435;&#x43C;&#x44B; &#x441; &#x43F;&#x430;&#x43C;&#x44F;&#x442;&#x44C;&#x44E;
+    &#x43D;&#x430; &#x43B;&#x438;&#x446;&#x43E;.<br>
+    &#x41A;&#x442;&#x43E;, &#x432; &#x437;&#x434;&#x440;&#x430;&#x432;&#x43E;&#x43C; &#x443;&#x43C;&#x435;,
+    &#x431;&#x443;&#x434;&#x435;&#x442; &#x434;&#x443;&#x43C;&#x430;&#x442;&#x44C; &#x43E;
+    &#x43C;&#x43E;&#x442;&#x438;&#x432;&#x430;&#x446;&#x438;&#x438;
+    &#x437;&#x430;&#x43A;&#x43E;&#x43D;&#x447;&#x435;&#x43D;&#x43E;&#x433;&#x43E;
+    &#x44D;&#x433;&#x43E;&#x43C;&#x430;&#x43D;&#x44C;&#x44F;&#x43A;&#x430; &#x441;
+    &#x43F;&#x440;&#x438;&#x437;&#x43D;&#x430;&#x43A;&#x430;&#x43C;&#x438;
+    &#x431;&#x438;&#x43F;&#x43E;&#x43B;&#x44F;&#x440;&#x43A;&#x438;?<br>
+    <em>(&#x434;&#x440;&#x443;&#x433;&#x438;&#x445;
+      &#x43E;&#x431;&#x44A;&#x44F;&#x441;&#x43D;&#x435;&#x43D;&#x438;&#x439; &#x44D;&#x442;&#x438;&#x43C;
+      &#x432;&#x44B;&#x43A;&#x438;&#x434;&#x43E;&#x43D;&#x430;&#x43C; &#x43D;&#x435;
+      &#x43D;&#x430;&#x448;&#x435;&#x43B;)</em>
+  </p>
+  <p><img class="pure-img" src="https://i.imgur.com/3VyRKJK.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/NBfIBIM.png" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/oekN4Wa.png" alt>
+  </p>
+  <h2 class="mume-header" id="%D1%83%D1%85%D0%BE%D0%B4">&#x423;&#x445;&#x43E;&#x434;</h2>
+
+  <p>&#x411;&#x43E;&#x43B;&#x435;&#x435; &#x43E;&#x441;&#x442;&#x430;&#x432;&#x430;&#x442;&#x44C;&#x441;&#x44F; &#x432;
+    &#x433;&#x438; &#x43D;&#x435; &#x43E;&#x441;&#x442;&#x430;&#x43B;&#x43E;&#x441;&#x44C; &#x43D;&#x438;
+    &#x43C;&#x430;&#x43B;&#x435;&#x439;&#x448;&#x435;&#x433;&#x43E;
+    &#x436;&#x435;&#x43B;&#x430;&#x43D;&#x438;&#x44F;.<br>
+    &#x41F;&#x440;&#x435;&#x434;&#x443;&#x43F;&#x440;&#x435;&#x434;&#x438;&#x43B;
+    &#x437;&#x430;&#x440;&#x430;&#x43D;&#x435;&#x435; &#x431;&#x43B;&#x438;&#x437;&#x43A;&#x438;&#x445;
+    &#x440;&#x435;&#x431;&#x44F;&#x442; &#x43E; &#x441;&#x432;&#x43E;&#x435;&#x43C;
+    &#x443;&#x445;&#x43E;&#x434;&#x435;.<br>
+    11 &#x43E;&#x442;&#x43F;&#x438;&#x441;&#x430;&#x43B;&#x441;&#x44F; &#x432; &#x43F;&#x43E;&#x440;&#x43A;&#x443;.<br>
+    <img class="pure-img" src="https://i.imgur.com/yIvkdVl.png" alt><br>
+    &#x425;&#x43E;&#x442;&#x44C; &#x438; &#x433;&#x440;&#x443;&#x441;&#x442;&#x43D;&#x43E;.
+  </p>
+  <p>&#x41D;&#x43E; &#x43A;&#x442;&#x43E;-&#x442;&#x43E; &#x43D;&#x435; &#x43C;&#x43E;&#x436;&#x435;&#x442;
+    &#x443;&#x433;&#x43E;&#x43C;&#x43E;&#x43D;&#x438;&#x442;&#x44C;&#x441;&#x44F;&#x2026;<br>
+    <img class="pure-img" src="https://i.imgur.com/Kq58r0o.png" alt><br>
+    &#x427;&#x435;&#x433;&#x43E; &#x445;&#x43E;&#x442;&#x435;&#x43B;?<br>
+    &#x417;&#x430;&#x447;&#x435;&#x43C; &#x43F;&#x438;&#x441;&#x430;&#x43B;?<br>
+    &#x42D;&#x442;&#x43E; &#x442;&#x430;&#x43A;&#x43E;&#x439; &#x441;&#x43F;&#x43E;&#x441;&#x43E;&#x431;
+    &#x43F;&#x43E;&#x442;&#x435;&#x448;&#x438;&#x442;&#x44C; &#x427;&#x421;&#x412; &#x438;&#x43B;&#x438;
+    &#x447;&#x442;&#x43E;?
+  </p>
+  <hr>
+  <p>&#x41D;&#x435;&#x434;&#x435;&#x43B;&#x44F; &#x442;&#x438;&#x448;&#x438;&#x43D;&#x44B;&#x2026;<br>
+    &#x41D;&#x43E; &#x43D;&#x430;&#x434;&#x435;&#x44F;&#x442;&#x44C;&#x441;&#x44F; &#x43D;&#x430;
+    &#x441;&#x43F;&#x43E;&#x43A;&#x43E;&#x439;&#x43D;&#x44B;&#x439; &#x443;&#x445;&#x43E;&#x434; &#x43D;&#x435;
+    &#x43F;&#x440;&#x438;&#x445;&#x43E;&#x434;&#x438;&#x442;&#x441;&#x44F;</p>
+  <p><img class="pure-img" src="https://i.imgur.com/YlzSOe4.png" alt><br>
+    <em>&#x442;&#x438;&#x445;&#x43E; &#x448;&#x438;&#x444;&#x435;&#x440;&#x43E;&#x43C;
+      &#x448;&#x443;&#x440;&#x448;&#x430;&#x2026;</em><br>
+    &#x421;&#x435;&#x439;&#x447;&#x430;&#x441; &#x431;&#x44B; &#x446;&#x438;&#x442;&#x430;&#x442;&#x44B;
+    &#x441;&#x435;&#x431;&#x44F; &#x441;&#x43A;&#x438;&#x434;&#x44B;&#x432;&#x430;&#x442;&#x44C; &#x438; &#x43E;&#x442;
+    &#x441;&#x435;&#x431;&#x44F;
+    &#x43A;&#x43E;&#x43C;&#x43C;&#x435;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;.
+  </p>
+  <p><img class="pure-img" src="https://i.imgur.com/d1IMmKy.png" alt></p>
+  <p>&#x422;&#x430;&#x43A; &#x438; &#x43D;&#x435; &#x43F;&#x43E;&#x43D;&#x44F;&#x43B;.<br>
+    <img class="pure-img" src="https://i.imgur.com/mAjU1PH.png" alt>
+  </p>
+  <p>&#x414;&#x430;&#x43B;&#x44C;&#x448;&#x435; &#x447;&#x441;, &#x43E;&#x442;&#x432;&#x435;&#x447;&#x430;&#x442;&#x44C;
+    &#x43D;&#x435;&#x442; &#x441;&#x43C;&#x44B;&#x441;&#x43B;&#x430;.<br>
+    &#x432; &#x434;&#x435;&#x43D;&#x44C; &#x443;&#x431;&#x438;&#x439;&#x441;&#x442;&#x432;&#x430;
+    &#x43B;&#x430;&#x441;&#x442; &#x431;&#x43E;&#x441;&#x441;&#x430;,
+    &#x43F;&#x440;&#x43E;&#x441;&#x43D;&#x443;&#x43B;&#x441;&#x44F; &#x431;&#x435;&#x437; &#x413;&#x418;.</p>
+  <h2 class="mume-header" id="%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2-%D0%B8-s8">
+    &#x412;&#x442;&#x43E;&#x440;&#x43E;&#x439; &#x441;&#x43E;&#x441;&#x442;&#x430;&#x432; &#x438; S8</h2>
+
+  <p>&#x41A;&#x430;&#x43A; &#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x437;&#x430;&#x43C;&#x435;&#x442;&#x438;&#x442;&#x44C;,
+    &#x43D;&#x435; &#x438;&#x43C;&#x435;&#x44E; &#x43D;&#x438;&#x43A;&#x430;&#x43A;&#x43E;&#x433;&#x43E;
+    &#x43E;&#x442;&#x43D;&#x43E;&#x448;&#x435;&#x43D;&#x438;&#x44F; &#x43A;
+    &#x430;&#x434;&#x43C;&#x438;&#x43D;&#x438;&#x441;&#x442;&#x440;&#x430;&#x446;&#x438;&#x438;
+    &#x413;&#x43E;&#x441;&#x43F;&#x430;.<br>
+    &#x41C;&#x430;&#x442;&#x435;&#x440;&#x438; &#x43F;&#x43E;&#x43C;&#x43E;&#x433;&#x430;&#x43B; &#x43F;&#x43E;
+    &#x441;&#x43E;&#x431;&#x441;&#x442;&#x432;&#x435;&#x43D;&#x43D;&#x43E;&#x439;
+    &#x438;&#x43D;&#x438;&#x446;&#x438;&#x430;&#x442;&#x438;&#x432;&#x435; &#x43F;&#x43E; &#x43C;&#x435;&#x440;&#x435;
+    &#x432;&#x43E;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x43E;&#x441;&#x442;&#x438;.<br>
+    &#x411;&#x43B;&#x430;&#x433;&#x43E; &#x443; &#x43D;&#x435;&#x435; &#x431;&#x44B;&#x43B;&#x430;
+    &#x432;&#x43E;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x445;&#x43E;&#x442;&#x44F;
+    &#x431;&#x44B; &#x432; &#x43A;&#x430;&#x43A;&#x438;&#x445;-&#x442;&#x43E; &#x43A;&#x430;&#x43D;&#x430;&#x43B;
+    &#x434;&#x430;&#x442;&#x44C; &#x43F;&#x440;&#x430;&#x432;&#x430; &#x43D;&#x430; &#x43F;&#x43E;&#x441;&#x442;&#x44B;
+    &#x438; &#x442;&#x435;&#x433;&#x438; &#x438;&#x43D;&#x442;&#x435;&#x440;&#x43D;&#x43E;&#x432;.</p>
+  <p>&#x414;&#x443;&#x43C;&#x430;&#x44E; &#x43D;&#x438; &#x434;&#x43B;&#x44F; &#x43A;&#x43E;&#x433;&#x43E;
+    &#x43D;&#x435; &#x441;&#x435;&#x43A;&#x440;&#x435;&#x442;, &#x447;&#x442;&#x43E;
+    &#x432;&#x442;&#x43E;&#x440;&#x43E;&#x439; &#x44F;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F;
+    &#x438;&#x43D;&#x43A;&#x443;&#x431;&#x430;&#x442;&#x43E;&#x440;&#x43E;&#x43C; &#x434;&#x43B;&#x44F;
+    &#x43F;&#x435;&#x440;&#x432;&#x43E;&#x433;&#x43E; &#x43D;&#x430; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x439;
+    &#x44D;&#x43A;&#x441;&#x442;&#x440;&#x435;&#x43D;&#x43D;&#x44B;&#x445; &#x43B;&#x438;&#x432;&#x43E;&#x432;
+    &#x438;&#x437; &#x43F;&#x435;&#x440;&#x432;&#x43E;&#x433;&#x43E;.<br>
+    &#x41D;&#x43E; &#x442;&#x430;&#x43A; &#x431;&#x44B;&#x43B;&#x43E; &#x43D;&#x435;
+    &#x432;&#x441;&#x435;&#x433;&#x434;&#x430;.<br>
+    &#x425;&#x435;&#x43B;&#x43F;&#x438; &#x442;&#x430;&#x449;&#x438;&#x43B; &#x432;&#x442;&#x43E;&#x440;&#x43E;&#x439;
+    &#x438; &#x431;&#x44B;&#x43B; &#x43F;&#x440;&#x43E;&#x442;&#x438;&#x432; &#x442;&#x43E;&#x433;&#x43E;,
+    &#x447;&#x442;&#x43E; &#x43F;&#x435;&#x440;&#x432;&#x44B;&#x439; &#x434;&#x435;&#x440;&#x433;&#x430;&#x435;&#x442;
+    &#x43D;&#x430;&#x440;&#x43E;&#x434; &#x43A;&#x43E;&#x433;&#x434;&#x430; &#x435;&#x43C;&#x443;
+    &#x432;&#x437;&#x443;&#x434;&#x443;&#x43C;&#x430;&#x435;&#x442;&#x441;&#x44F;.<br>
+    &#x421; &#x443;&#x445;&#x43E;&#x434;&#x43E;&#x43C; &#x425;&#x435;&#x43B;&#x43F;&#x430;&#x440;&#x44F;,
+    &#x43C;&#x430;&#x442;&#x44C; &#x43E;&#x434;&#x438;&#x43D;&#x43E;&#x447;&#x43A;&#x430;
+    &#x43F;&#x44B;&#x442;&#x430;&#x43B;&#x430;&#x441;&#x44C; &#x442;&#x430;&#x449;&#x438;&#x442;&#x44C;
+    &#x432;&#x442;&#x43E;&#x440;&#x43E;&#x439;.<br>
+    &#x418; &#x43E;&#x436;&#x438;&#x434;&#x430;&#x435;&#x43C;&#x43E; &#x441;&#x433;&#x43E;&#x440;&#x435;&#x43B;&#x430;,
+    &#x43A;&#x43E;&#x433;&#x434;&#x430; &#x435;&#x435; &#x435;&#x449;&#x435; &#x43D;&#x430;
+    &#x431;&#x435;&#x437;&#x434;&#x43D;&#x443; &#x43F;&#x43E;&#x442;&#x430;&#x449;&#x438;&#x43B;&#x438; &#x432;
+    &#x43F;&#x435;&#x440;&#x432;&#x44B;&#x439;.<br>
+    &#x422;&#x430;&#x43A; &#x432;&#x442;&#x43E;&#x440;&#x43E;&#x439; &#x43E;&#x441;&#x442;&#x430;&#x43B;&#x441;&#x44F;
+    &#x431;&#x435;&#x441;&#x43F;&#x440;&#x438;&#x437;&#x43E;&#x440;&#x43D;&#x44B;&#x43C;,
+    &#x43F;&#x43E;&#x442;&#x43E;&#x43C;&#x443; &#x447;&#x442;&#x43E; &#x432;
+    &#x430;&#x434;&#x43C;&#x438;&#x43D;&#x43A;&#x435; &#x43F;&#x435;&#x440;&#x432;&#x43E;&#x433;&#x43E;
+    &#x43D;&#x435;&#x442; &#x434;&#x435;&#x43B;&#x430; &#x434;&#x43E; &#x432;&#x442;&#x43E;&#x440;&#x43E;&#x433;&#x43E;
+    &#x43F;&#x43E;&#x43A;&#x430; &#x43D;&#x435; &#x43D;&#x443;&#x436;&#x43D;&#x44B;
+    &#x437;&#x430;&#x43C;&#x435;&#x43D;&#x44B;.</p>
+  <h2 class="mume-header" id="the-end">The End</h2>
+
+  <p>&#x41F;&#x43E;&#x434;&#x432;&#x435;&#x434;&#x443; &#x43D;&#x435;&#x431;&#x43E;&#x43B;&#x44C;&#x448;&#x43E;&#x439;
+    &#x438;&#x442;&#x43E;&#x433;.<br>
+    &#x42F; &#x432;&#x441;&#x435;&#x433;&#x434;&#x430; &#x43B;&#x44E;&#x431;&#x438;&#x43B; &#x413;&#x43E;&#x441;&#x43F;
+    &#x438; &#x432;&#x441;&#x435;&#x439; &#x434;&#x443;&#x448;&#x43E;&#x439; &#x442;&#x43E;&#x43F;&#x438;&#x43B;
+    &#x437;&#x430; &#x435;&#x433;&#x43E; &#x43B;&#x438;&#x434;&#x435;&#x440;&#x441;&#x442;&#x432;&#x43E; &#x432;
+    &#x421;&#x41D;&#x413; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x440;&#x430;&#x43D;&#x441;&#x442;&#x432;&#x435;.<br>
+    &#x422;&#x430;&#x43C; &#x43E;&#x441;&#x442;&#x430;&#x43B;&#x43E;&#x441;&#x44C; &#x43C;&#x43D;&#x43E;&#x433;&#x43E;
+    &#x43D;&#x435; &#x431;&#x435;&#x437;&#x440;&#x430;&#x437;&#x43B;&#x438;&#x447;&#x43D;&#x44B;&#x445;
+    &#x43C;&#x43D;&#x435; &#x43B;&#x44E;&#x434;&#x435;&#x439;, &#x438; &#x43A;&#x442;&#x43E;-&#x442;&#x43E;
+    &#x442;&#x435;&#x440;&#x44F;&#x435;&#x442; &#x438;&#x43D;&#x442;&#x435;&#x440;&#x435;&#x441; &#x43A;
+    &#x438;&#x433;&#x440;&#x435;, &#x43A;&#x442;&#x43E;-&#x442;&#x43E; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E;
+    &#x432;&#x44B;&#x433;&#x43E;&#x440;&#x430;&#x435;&#x442; &#x438;
+    &#x43D;&#x435;&#x433;&#x430;&#x442;&#x438;&#x432;&#x438;&#x442;.<br>
+    &#x418; &#x43E;&#x434;&#x43D;&#x43E;&#x437;&#x43D;&#x430;&#x447;&#x43D;&#x43E; &#x442;&#x43E;&#x447;&#x43D;&#x43E;
+    &#x43D;&#x438;&#x43A;&#x442;&#x43E; &#x43D;&#x435;
+    &#x438;&#x441;&#x43F;&#x44B;&#x442;&#x44B;&#x432;&#x430;&#x435;&#x442;
+    &#x440;&#x430;&#x434;&#x43E;&#x441;&#x442;&#x438; &#x438;
+    &#x443;&#x434;&#x43E;&#x432;&#x43E;&#x43B;&#x44C;&#x441;&#x442;&#x432;&#x438;&#x44F;
+    &#x43F;&#x43E;&#x441;&#x43B;&#x435; &#x44D;&#x442;&#x43E;&#x439; &#x431;&#x435;&#x437;&#x434;&#x43D;&#x44B;.<br>
+    &#x418; &#x44D;&#x442;&#x43E; &#x43F;&#x435;&#x447;&#x430;&#x43B;&#x438;&#x442; &#x43C;&#x435;&#x43D;&#x44F;.<br>
+    &#x42F; &#x43F;&#x43E;-&#x43F;&#x440;&#x435;&#x436;&#x43D;&#x435;&#x43C;&#x443; &#x43D;&#x435;
+    &#x438;&#x441;&#x43F;&#x44B;&#x442;&#x44B;&#x432;&#x430;&#x44E;
+    &#x437;&#x43B;&#x43E;&#x441;&#x442;&#x438;/&#x43E;&#x431;&#x438;&#x434;&#x44B;/&#x43D;&#x435;&#x43D;&#x430;&#x432;&#x438;&#x441;&#x442;&#x438;/&#x443;&#x432;&#x430;&#x436;&#x435;&#x43D;&#x438;&#x44F;/&#x436;&#x430;&#x43B;&#x43E;&#x441;&#x442;&#x438;
+    &#x43D;&#x438; &#x43A; &#x442;&#x440;&#x430;&#x444;&#x443; &#x43B;&#x438;&#x447;&#x43D;&#x43E;, &#x43D;&#x438;
+    &#x43A; &#x43A;&#x43E;&#x43C;&#x443; &#x43B;&#x438;&#x431;&#x43E; &#x435;&#x449;&#x435;, &#x43D;&#x43E;
+    &#x437;&#x430; &#x434;&#x435;&#x440;&#x436;&#x430;&#x432;&#x443; &#x43E;&#x431;&#x438;&#x434;&#x43D;&#x43E;.</p>
+  <p><strong>&#x415;&#x441;&#x43B;&#x438; &#x44D;&#x442;&#x43E;&#x442; &#x442;&#x435;&#x43A;&#x441;&#x442;
+      &#x43F;&#x43E;&#x43F;&#x430;&#x43B; &#x43A; &#x442;&#x435;&#x431;&#x435; &#x432; &#x440;&#x443;&#x43A;&#x438;,
+      &#x442;&#x440;&#x430;&#x444;&#x444;&#x438; &#x431;&#x43E;&#x439;</strong><br>
+    &#x41D;&#x430;&#x434;&#x435;&#x44E;&#x441;&#x44C; &#x441;&#x443;&#x43C;&#x435;&#x435;&#x448;&#x44C;
+    &#x432;&#x43E;&#x441;&#x43F;&#x440;&#x438;&#x43D;&#x44F;&#x442;&#x44C; &#x43C;&#x43E;&#x435;
+    &#x43F;&#x43E;&#x441;&#x43B;&#x430;&#x43D;&#x438;&#x435;
+    &#x43F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x44C;&#x43D;&#x43E;,<br>
+    &#x418; &#x43F;&#x43E;&#x434;&#x447;&#x435;&#x440;&#x43F;&#x43D;&#x443;&#x442;&#x44C; &#x434;&#x43B;&#x44F;
+    &#x441;&#x435;&#x431;&#x44F; &#x442;&#x443;&#x442; &#x43F;&#x43E;&#x43B;&#x435;&#x437;&#x43D;&#x443;&#x44E;
+    &#x438;&#x43D;&#x444;&#x443;.</p>
+  <ol>
+    <li><strong>&#x41D;&#x435; &#x442;&#x440;&#x435;&#x431;&#x443;&#x439; &#x43E;&#x442;
+        &#x43B;&#x44E;&#x434;&#x435;&#x439; &#x431;&#x43E;&#x43B;&#x44C;&#x448;&#x435;, &#x447;&#x435;&#x43C;
+        &#x43C;&#x43E;&#x436;&#x435;&#x448;&#x44C; &#x441;&#x434;&#x435;&#x43B;&#x430;&#x442;&#x44C;
+        &#x441;&#x430;&#x43C;.</strong><br>
+      (&#x422;&#x44B; &#x445;&#x43E;&#x447;&#x435;&#x448;&#x44C; &#x43E;&#x442; &#x43B;&#x44E;&#x434;&#x435;&#x439;
+      &#x430;&#x43A;&#x442;&#x438;&#x432;&#x430; &#x438;
+      &#x43E;&#x43F;&#x435;&#x440;&#x430;&#x442;&#x438;&#x432;&#x43D;&#x43E;&#x439;
+      &#x440;&#x435;&#x430;&#x43A;&#x446;&#x438;&#x438; &#x432; &#x431;&#x435;&#x437;&#x434;&#x43D;&#x443;,
+      &#x441;&#x430;&#x43C; &#x441;&#x438;&#x434;&#x438;&#x448;&#x44C; &#x432;
+      &#x438;&#x43D;&#x432;&#x438;&#x437;&#x435;, &#x441;&#x43A;&#x440;&#x44B;&#x432;&#x430;&#x441;&#x44C;
+      &#x43E;&#x442; &#x43B;&#x44E;&#x434;&#x435;&#x439; &#x441;
+      &#x432;&#x43E;&#x43F;&#x440;&#x43E;&#x441;&#x430;&#x43C;&#x438;.<br>
+      &#x41D;&#x438;&#x43A;&#x442;&#x43E; &#x43D;&#x435; &#x431;&#x443;&#x434;&#x435;&#x442;
+      &#x441;&#x43B;&#x443;&#x448;&#x430;&#x442;&#x44C;
+      &#x43D;&#x435;&#x432;&#x438;&#x434;&#x438;&#x43C;&#x43E;&#x433;&#x43E;
+      &#x43F;&#x438;&#x437;&#x434;&#x44E;&#x43A;&#x430;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x439;
+      &#x438;&#x445; &#x438;&#x433;&#x43D;&#x43E;&#x440;&#x438;&#x442;.)</li>
+    <li>&#x41F;&#x440;&#x435;&#x436;&#x434;&#x435; &#x447;&#x435;&#x43C;
+      <strong>&#x434;&#x430;&#x432;&#x430;&#x442;&#x44C; &#x441;&#x43E;&#x432;&#x435;&#x442;&#x44B;</strong>,
+      &#x43B;&#x438;&#x431;&#x43E;
+      <strong>&#x43F;&#x435;&#x440;&#x435;&#x43F;&#x440;&#x43E;&#x432;&#x435;&#x440;&#x44C;</strong>,
+      &#x43B;&#x438;&#x431;&#x43E; <strong>&#x43D;&#x435; &#x434;&#x430;&#x432;&#x430;&#x439;</strong> &#x438;&#x445;
+      &#x432;&#x43E;&#x432;&#x441;&#x435;.<br>
+      &#x425;&#x432;&#x430;&#x442;&#x438;&#x442;
+      &#x441;&#x430;&#x431;&#x43E;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; &#x441;&#x432;&#x43E;&#x44E;
+      &#x436;&#x435; &#x433;&#x438;&#x43B;&#x44C;&#x434;&#x438;&#x44E;.
+    </li>
+    <li>&#x415;&#x441;&#x43B;&#x438; &#x43D;&#x435;
+      &#x441;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x435;&#x441;&#x44C;,
+      &#x438;&#x449;&#x438;&#x442;&#x435; &#x43B;&#x44E;&#x434;&#x435;&#x439; &#x432; &#x413;&#x418; &#x43D;&#x430;
+      <strong>&#x43A;&#x43E;&#x43D;&#x43A;&#x440;&#x435;&#x442;&#x43D;&#x44B;&#x435;
+        &#x437;&#x430;&#x434;&#x430;&#x43D;&#x438;&#x44F;</strong>.<br>
+      &#x41D;&#x435;&#x434;&#x43E;&#x441;&#x442;&#x430;&#x442;&#x43E;&#x447;&#x43D;&#x43E;
+      &#x43E;&#x431;&#x44A;&#x44F;&#x432;&#x438;&#x442;&#x44C; &#x43D;&#x430;&#x431;&#x43E;&#x440; &#x432;
+      <strong>&#x448;&#x442;&#x430;&#x431;&#x438;&#x441;&#x442;&#x44B;</strong>,
+      &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x435; &#x43D;&#x435; &#x43F;&#x43E;&#x439;&#x43C;&#x438;
+      &#x447;&#x442;&#x43E; &#x434;&#x435;&#x43B;&#x430;&#x44E;&#x442;.<br>
+      (&#x41D;&#x435; &#x445;&#x432;&#x430;&#x442;&#x430;&#x435;&#x442; &#x442;&#x435;&#x441;&#x442;&#x43E;&#x432;?
+      &#x41A;&#x438;&#x434;&#x430;&#x435;&#x448;&#x44C; &#x432; &#x438;&#x43D;&#x444;&#x43E;
+      &#x201C;&#x41D;&#x423;&#x416;&#x41D;&#x410; &#x41F;&#x41E;&#x41C;&#x41E;&#x429;&#x42C; &#x421;
+      &#x422;&#x415;&#x421;&#x422;&#x41E;&#x412;&#x42B;&#x41C;&#x418;
+      &#x41F;&#x420;&#x41E;&#x413;&#x41E;&#x41D;&#x410;&#x41C;&#x418; &#x41F;&#x410;&#x41A;&#x418;
+      &#x422;&#x410;&#x41A;&#x418;&#x415; &#x422;&#x41E;&#x201D;).<br>
+      &#x41C;&#x430;&#x43B;&#x43E; &#x43A;&#x442;&#x43E; &#x445;&#x43E;&#x447;&#x435;&#x442;
+      &#x43F;&#x43E;&#x434;&#x43F;&#x438;&#x441;&#x44B;&#x432;&#x430;&#x442;&#x44C;&#x441;&#x44F; &#x43D;&#x430;
+      &#x43A;&#x430;&#x43A;&#x443;&#x44E;-&#x442;&#x43E;
+      &#x430;&#x431;&#x441;&#x442;&#x440;&#x430;&#x43A;&#x442;&#x43D;&#x443;&#x44E; &#x434;&#x438;&#x447;&#x44C;,
+      &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x443;&#x44E; &#x43F;&#x440;&#x438;&#x434;&#x443;&#x43C;&#x430;&#x43B;&#x430;
+      &#x430;&#x434;&#x43C;&#x438;&#x43D;&#x43A;&#x430;.
+    </li>
+    <li>&#x418; &#x437;&#x430;&#x432;&#x44F;&#x437;&#x44B;&#x432;&#x430;&#x439; &#x441;
+      &#x438;&#x433;&#x440;&#x430;&#x43C;&#x438; &#x432; &#x446;&#x430;&#x440;&#x44C;&#x43A;&#x430;.<br>
+      &#x423; &#x442;&#x435;&#x431;&#x44F; &#x443;&#x436;&#x435;
+      &#x43F;&#x43E;&#x434;&#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x445; &#x442;&#x43E;&#x43B;&#x43A;&#x43E;&#x43C;
+      &#x43D;&#x435; &#x43E;&#x441;&#x442;&#x430;&#x43B;&#x43E;&#x441;&#x44C;, &#x441;&#x430;&#x43C;
+      &#x43F;&#x440;&#x438;&#x434;&#x443;&#x448;&#x438;&#x43B;.</li>
+    <li>&#x421;&#x43B;&#x435;&#x434;&#x438; &#x437;&#x430;
+      <strong>&#x434;&#x438;&#x441;&#x446;&#x438;&#x43F;&#x43B;&#x438;&#x43D;&#x43E;&#x439;</strong>.
+      <em>&#x441;&#x432;&#x43E;&#x435;&#x439; &#x432; &#x43F;&#x435;&#x440;&#x432;&#x443;&#x44E;
+        &#x43E;&#x447;&#x435;&#x440;&#x435;&#x434;&#x44C;</em><br>
+      (&#x415;&#x441;&#x43B;&#x438; &#x442;&#x435;&#x431;&#x435;
+      &#x436;&#x430;&#x43B;&#x443;&#x44E;&#x442;&#x441;&#x44F; &#x432; &#x43B;&#x438;&#x447;&#x43A;&#x443;
+      &#x43D;&#x430; &#x431;&#x443;&#x43B;&#x43B;&#x438;&#x43D;&#x433;, &#x442;&#x43E; &#x44D;&#x442;&#x43E;
+      &#x442;&#x432;&#x43E;&#x439; &#x43F;&#x43E;&#x43B;&#x43D;&#x435;&#x439;&#x448;&#x438;&#x439;
+      &#x43F;&#x440;&#x43E;&#x432;&#x430;&#x43B;,<br>
+      &#x43F;&#x43E;&#x43A;&#x430;&#x437;&#x44B;&#x432;&#x430;&#x44E;&#x449;&#x438;&#x439;, &#x447;&#x442;&#x43E;
+      &#x442;&#x44B; &#x43D;&#x438;&#x445;&#x443;&#x44F; &#x43D;&#x435; &#x432; &#x43A;&#x443;&#x440;&#x441;&#x435;
+      &#x447;&#x442;&#x43E; &#x442;&#x432;&#x43E;&#x440;&#x438;&#x442;&#x441;&#x44F; &#x432; &#x433;&#x438;<br>
+      &#x438; &#x442;&#x432;&#x43E;&#x438; &#x433;&#x440;&#x43E;&#x437;&#x43D;&#x44B;&#x435;
+      &#x441;&#x43E;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x44F; &#x43F;&#x440;&#x43E; &#x43A;&#x430;&#x440;&#x443;
+      &#x437;&#x430; &#x43A;&#x438;&#x442;&#x43E;&#x432;&#x44B;&#x435; &#x448;&#x443;&#x442;&#x43A;&#x438;
+      &#x432;&#x44B;&#x437;&#x44B;&#x432;&#x430;&#x44E;&#x442; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;
+      &#x441;&#x43C;&#x435;&#x445;)
+    </li>
+    <li>&#x41F;&#x43E;&#x43A;&#x430; <strong>&#x442;&#x44B;</strong> &#x431;&#x443;&#x434;&#x435;&#x448;&#x44C;
+      <strong>&#x43F;&#x43E;&#x434;&#x43F;&#x438;&#x432;&#x430;&#x441;&#x43E;&#x43C;</strong>,
+      &#x432;&#x43E;&#x43A;&#x440;&#x443;&#x433; &#x442;&#x435;&#x431;&#x44F; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;
+      &#x442;&#x430;&#x43A;&#x438;&#x435; &#x438; &#x431;&#x443;&#x434;&#x443;&#x442;
+      &#x43E;&#x441;&#x442;&#x430;&#x432;&#x430;&#x442;&#x44C;&#x441;&#x44F;
+      &#x432;&#x441;&#x435;&#x433;&#x434;&#x430;.<br>
+      (&#x430;&#x433;&#x430;, &#x44D;&#x442;&#x43E; &#x43F;&#x440;&#x43E;
+      &#x201C;&#x445;&#x43E;&#x447;&#x435;&#x448;&#x44C; &#x447;&#x442;&#x43E;-&#x442;&#x43E;
+      &#x438;&#x437;&#x43C;&#x435;&#x43D;&#x438;&#x442;&#x44C;, &#x43D;&#x430;&#x447;&#x43D;&#x438; &#x441;
+      &#x441;&#x435;&#x431;&#x44F;&#x201D;)
+    </li>
+  </ol>
+  <p>P.S. &#x41C;&#x430;&#x43B;&#x43E;&#x432;&#x435;&#x440;&#x43E;&#x44F;&#x442;&#x43D;&#x43E;, &#x43D;&#x43E;
+    &#x432;&#x441;&#x435; &#x436;&#x435;.<br>
+    &#x415;&#x441;&#x43B;&#x438; &#x43D;&#x430;&#x434;&#x443;&#x43C;&#x430;&#x435;&#x448;&#x44C;
+    &#x438;&#x437;&#x432;&#x438;&#x43D;&#x438;&#x442;&#x441;&#x44F;, &#x438;&#x437; &#x427;&#x421;&#x430;
+    &#x434;&#x43E;&#x441;&#x442;&#x430;&#x43B;.<br>
+    &#x423;&#x434;&#x430;&#x447;&#x438;.</p>
+  <p>P.S.S &#x423;&#x433;&#x43E;&#x43C;&#x43E;&#x43D;&#x438;&#x442;&#x435; &#x448;&#x430;&#x432;&#x43A;&#x443;.</p>
+  <p><img class="pure-img" src="https://i.imgur.com/ApANfv4.jpeg" alt><br>
+    <img class="pure-img" src="https://i.imgur.com/brsafvm.png" alt>
+  </p>
+  <p>&#x41D;&#x438;&#x436;&#x435; &#x441;&#x43A;&#x440;&#x438;&#x43D; &#x43B;&#x438;&#x447;&#x43A;&#x438; &#x441;
+    &#x445;&#x430;&#x441;&#x43A;&#x438; &#x437;&#x430; <strong>&#x432;&#x441;&#x435;
+      &#x432;&#x440;&#x435;&#x43C;&#x44F;</strong>
+    &#x43F;&#x440;&#x435;&#x431;&#x44B;&#x432;&#x430;&#x43D;&#x438;&#x44F; &#x432;
+    &#x445;&#x43E;&#x441;&#x43F;&#x435;.<br>
+    &#x42F; &#x441; &#x43D;&#x438;&#x43C; &#x43D;&#x435;
+    &#x43A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43B; &#x43E;&#x442;
+    &#x441;&#x43B;&#x43E;&#x432;&#x430; &#x441;&#x43E;&#x432;&#x441;&#x435;&#x43C;, &#x438; &#x442;&#x443;&#x442;
+    &#x432;&#x43D;&#x435;&#x437;&#x430;&#x43F;&#x43D;&#x43E; &#x442;&#x430;&#x43A;&#x43E;&#x439;
+    &#x432;&#x44B;&#x441;&#x435;&#x440; &#x438; &#x441;&#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;
+    &#x445;&#x435;&#x439;&#x442;&#x430;.</p>
+  <p><img class="pure-img" src="https://i.imgur.com/HsHT9hb.png" alt></p>
+  <p>&#x41C;&#x435;&#x43D;&#x44F; &#x43D;&#x430;&#x441;&#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;
+    &#x443;&#x434;&#x438;&#x432;&#x438;&#x43B;&#x430; &#x44D;&#x442;&#x430;
+    &#x432;&#x43D;&#x435;&#x437;&#x430;&#x43F;&#x43D;&#x43E;&#x441;&#x442;&#x44C;, &#x431;&#x435;&#x437;
+    &#x43A;&#x430;&#x43A;&#x438;&#x445; &#x43B;&#x438;&#x431;&#x44E;
+    &#x43F;&#x440;&#x435;&#x434;&#x43F;&#x43E;&#x441;&#x44B;&#x43B;&#x43E;&#x43A;.<br>
+    &#x418; &#x441;&#x43B;&#x43E;&#x433; &#x438; &#x43C;&#x430;&#x43D;&#x435;&#x440;&#x430;
+    &#x43F;&#x43E;&#x434;&#x430;&#x447;&#x438; &#x43D;&#x430;&#x441;&#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;
+    &#x431;&#x44B;&#x43B;&#x430; &#x43F;&#x43E;&#x445;&#x43E;&#x436;&#x435; &#x43D;&#x430;
+    &#x442;&#x440;&#x430;&#x444;&#x444;&#x435;&#x435;&#x432;&#x441;&#x43A;&#x443;&#x44E;&#x2026;<br>
+    &#x427;&#x442;&#x43E; &#x43F;&#x43E;&#x43D;&#x430;&#x447;&#x430;&#x43B;&#x443; &#x443; &#x43C;&#x435;&#x43D;&#x44F;
+    &#x431;&#x44B;&#x43B;&#x43E; &#x434;&#x432;&#x430; &#x432;&#x430;&#x440;&#x438;&#x430;&#x43D;&#x442;&#x430;:</p>
+  <ul>
+    <li>&#x44D;&#x442;&#x43E; &#x43E;&#x43D; &#x438; &#x435;&#x441;&#x442;&#x44C;, &#x43B;&#x43E;&#x43B;.</li>
+    <li>&#x443; &#x445;&#x430;&#x441;&#x43A;&#x438; &#x44F;&#x437;&#x44B;&#x43A; &#x432; &#x436;&#x43E;&#x43F;&#x435;
+      &#x443;&#x436;&#x435; &#x43D;&#x430;&#x441;&#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E;
+      &#x433;&#x43B;&#x443;&#x431;&#x43E;&#x43A;&#x43E;, &#x447;&#x442;&#x43E; &#x43E;&#x43D;
+      &#x437;&#x430;&#x433;&#x43E;&#x432;&#x43E;&#x440;&#x438;&#x43B;
+      &#x43F;&#x43E;-&#x442;&#x440;&#x430;&#x444;&#x435;&#x435;&#x432;&#x441;&#x43A;&#x438;.</li>
+  </ul>
+  <p>&#x41A;&#x430;&#x43A; &#x43D;&#x430; &#x441;&#x430;&#x43C;&#x43E;&#x43C; &#x434;&#x435;&#x43B;&#x435;,
+    &#x43D;&#x435;&#x438;&#x437;&#x432;&#x435;&#x441;&#x442;&#x43D;&#x43E; &#x434;&#x43E; &#x441;&#x438;&#x445;
+    &#x43F;&#x43E;&#x440;.<br>
+    &#x414;&#x430; &#x438; &#x43D;&#x435;&#x432;&#x430;&#x436;&#x43D;&#x43E;, &#x434;&#x440;&#x443;&#x433;
+    &#x434;&#x440;&#x443;&#x433;&#x430; &#x441;&#x442;&#x43E;&#x44F;&#x442;.</p>
+
+  <h2 id="psss">P.S.S.S.: unpublished</h2>
+  <p>Рабирал старые скрины, еще нашел инфы для контекста. Оставлю тут для истории</p>
+  <h4>Прочувствуй-те атмосферу после унизительного s8</h4>
+  <p>Каждый старается найти причину и объяснение, как, находясь в зените китовости, можно было так облажаться</p>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/afterS8.png" alt></p>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/afters81.png" alt></p>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/afters82.png" alt></p>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/afters83.png" alt></p>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/afters84.png" alt></p>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/afters85.png" alt></p>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/afters86.png" alt></p>
+
+  <h4>Советы от "гуру"</h4>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/goodadvices.png" alt></p>
+
+  <h4>Когда развели чатов, <em>"не связанных"</em> с уходом Хелпи</h4>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/aboutshitchats.png" alt></p>
+
+  <h4>А это уже ближе к концу.</h4>
+  <p>Когда очень хочется сабботировать ги, но не дают</p>
+  <p>Сомневающимся: чат провисел меньше часа с одним постом в нем <em>известного</em> вредителя.</p>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/poop1.png" alt></p>
+  <h4>И это <em>рулевой.</em></h4>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/whoislead.png" alt></p>
+  <h4>Зато киты регулярно сталкивались в <b>гильдейском чате</b> с таким...</h4>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/feelswhale.png" alt></p>
+  <p>И чего у нас киты сезонно мигрируют, действительно</p>
+  <h4>Вот кста еще одна инициатива</h4>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/idea.png" alt></p>
+  <p>Ответ, ну вы поняли</p>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/idearesponse.png" alt></p>
+
+  <h4>Немного про манию величия наглядно</h4>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/wtfwiththischats.png" alt></p>
+  <h4>GOLDENPORKA</h4>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/goldenporka.png" alt></p>
+
+  <h4>После ухода</h4>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/wolw.png" alt></p>
+  <p>Miss u too!</p>
+  <h4>Goog night, sweet prince...</h4>
+  <p><img class="pure-img" src="/afk.GG/assets/img/th-ps/sweetdreams.png" alt></p>
+</div>
+<div class="md-sidebar-toc">
+  <div class="md-toc">
+    <details style="padding:0;;padding-left:0px;" open>
+      <summary class="md-toc-link-wrapper">
+        <a href="#my-retirement" class="md-toc-link">
+          <p>My Retirement</p>
+        </a>
+      </summary>
+      <div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x442;&#x44B;-&#x43A;&#x442;&#x43E;-&#x442;&#x430;&#x43A;&#x43E;&#x439;" class="md-toc-link">
+            <p>&#x422;&#x44B; &#x43A;&#x442;&#x43E; &#x442;&#x430;&#x43A;&#x43E;&#x439;?</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x447;&#x442;&#x43E;-&#x44D;&#x442;&#x43E;" class="md-toc-link">
+            <p>&#x427;&#x442;&#x43E; &#x44D;&#x442;&#x43E;?</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x43A;&#x430;&#x440;&#x43C;&#x430;" class="md-toc-link">
+            <p>&#x41A;&#x430;&#x440;&#x43C;&#x430;</p>
+
+          </a>
+        </div>
+        <details style="padding:0;;padding-left:24px;" open>
+          <summary class="md-toc-link-wrapper">
+            <a href="#&#x43F;&#x43E;&#x440;-&#x43A;&#x435;" class="md-toc-link">
+              <p>&#x41F;&#x43E;&#x440; &#x43A;&#x435;?</p>
+            </a>
+          </summary>
+          <div>
+            <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+              <a href="#&#x437;&#x43D;&#x430;&#x43A;&#x43E;&#x43C;&#x441;&#x442;&#x432;&#x43E;" class="md-toc-link">
+                <p>&#x417;&#x43D;&#x430;&#x43A;&#x43E;&#x43C;&#x441;&#x442;&#x432;&#x43E;</p>
+
+              </a>
+            </div>
+            <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+              <a href="#first-contact" class="md-toc-link">
+                <p>First Contact</p>
+
+              </a>
+            </div>
+            <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+              <a href="#&#x440;&#x435;&#x43E;&#x440;&#x433;&#x430;&#x43D;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44F;-&#x43A;&#x430;&#x442;&#x435;&#x433;&#x43E;&#x440;&#x438;&#x439;-&#x447;&#x430;&#x442;&#x43E;&#x432;-&#x432;-&#x434;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;&#x435;-&#x433;&#x430;&#x439;&#x434;&#x43B;&#x430;&#x439;&#x43D;&#x44B;"
+                class="md-toc-link">
+                <p>&#x420;&#x435;&#x43E;&#x440;&#x433;&#x430;&#x43D;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44F;
+                  &#x43A;&#x430;&#x442;&#x435;&#x433;&#x43E;&#x440;&#x438;&#x439; &#x447;&#x430;&#x442;&#x43E;&#x432;
+                  &#x432; &#x434;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;&#x435;,
+                  &#x433;&#x430;&#x439;&#x434;&#x43B;&#x430;&#x439;&#x43D;&#x44B;</p>
+
+              </a>
+            </div>
+            <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+              <a href="#&#x435;&#x436;&#x435;&#x43C;&#x435;&#x441;&#x44F;&#x447;&#x43D;&#x44B;&#x435;-&#x441;&#x442;&#x430;&#x442;&#x44B;-&#x43F;&#x43E;-&#x43F;&#x43C;&#x43F;&#x443;&#x448;&#x43B;&#x432;&#x43B;"
+                class="md-toc-link">
+                <p>&#x415;&#x436;&#x435;&#x43C;&#x435;&#x441;&#x44F;&#x447;&#x43D;&#x44B;&#x435;
+                  &#x441;&#x442;&#x430;&#x442;&#x44B; &#x43F;&#x43E;
+                  &#x41F;&#x41C;/&#x43F;&#x443;&#x448;/&#x43B;&#x432;&#x43B;</p>
+
+              </a>
+            </div>
+            <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+              <a href="#&#x433;&#x438;&#x43B;&#x44C;&#x434;&#x435;&#x439;&#x441;&#x43A;&#x438;&#x435;-&#x441;&#x443;&#x43D;&#x434;&#x443;&#x43A;&#x438;-&#x441;-&#x44D;&#x432;&#x435;&#x43D;&#x442;&#x43E;&#x432;"
+                class="md-toc-link">
+                <p>&#x413;&#x438;&#x43B;&#x44C;&#x434;&#x435;&#x439;&#x441;&#x43A;&#x438;&#x435;
+                  &#x441;&#x443;&#x43D;&#x434;&#x443;&#x43A;&#x438; &#x441;
+                  &#x44D;&#x432;&#x435;&#x43D;&#x442;&#x43E;&#x432;</p>
+
+              </a>
+            </div>
+            <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+              <a href="#description-wars" class="md-toc-link">
+                <p>Description Wars</p>
+
+              </a>
+            </div>
+            <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+              <a href="#&#x443;&#x434;&#x43E;&#x431;&#x43D;&#x44B;&#x439;-&#x432;&#x430;&#x440;&#x438;&#x430;&#x43D;&#x442;-&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x44F;-&#x437;&#x43D;&#x430;&#x43D;&#x438;&#x439;-&#x432;-&#x434;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;&#x435;"
+                class="md-toc-link">
+                <p>&#x423;&#x434;&#x43E;&#x431;&#x43D;&#x44B;&#x439; &#x432;&#x430;&#x440;&#x438;&#x430;&#x43D;&#x442;
+                  &#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x44F; &#x437;&#x43D;&#x430;&#x43D;&#x438;&#x439; &#x432;
+                  &#x434;&#x438;&#x441;&#x43A;&#x43E;&#x440;&#x434;&#x435;</p>
+
+              </a>
+            </div>
+            <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+              <a href="#abex-s7" class="md-toc-link">
+                <p>ABEX S7</p>
+
+              </a>
+            </div>
+            <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+              <a href="#&#x43F;&#x438;&#x437;&#x434;&#x442;&#x44C;-&#x43D;&#x435;-&#x43C;&#x435;&#x448;&#x43A;&#x438;-&#x432;&#x43E;&#x440;&#x43E;&#x447;&#x430;&#x442;&#x44C;"
+                class="md-toc-link">
+                <p>&#x201C;&#x41F;&#x438;&#x437;&#x434;*&#x442;&#x44C;, &#x43D;&#x435;
+                  &#x43C;&#x435;&#x448;&#x43A;&#x438; &#x432;&#x43E;&#x440;&#x43E;&#x447;&#x430;&#x442;&#x44C;&#x201D;
+                </p>
+
+              </a>
+            </div>
+          </div>
+        </details>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x448;&#x442;&#x430;&#x431;&#x438;&#x441;&#x442;" class="md-toc-link">
+            <p>&#x428;&#x442;&#x430;&#x431;&#x438;&#x441;&#x442;</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x440;&#x435;&#x431;&#x435;&#x43D;&#x43E;&#x43A;" class="md-toc-link">
+            <p>&#x420;&#x435;&#x431;&#x435;&#x43D;&#x43E;&#x43A;</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x431;&#x43B;&#x430;&#x433;&#x43E;&#x434;&#x430;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C;"
+            class="md-toc-link">
+            <p>&#x411;&#x43B;&#x430;&#x433;&#x43E;&#x434;&#x430;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C;</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x43F;&#x43E;&#x431;&#x435;&#x434;&#x430;" class="md-toc-link">
+            <p>&#x41F;&#x43E;&#x431;&#x435;&#x434;&#x430;</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ae-s8" class="md-toc-link">
+            <p>AE S8</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x443;&#x445;&#x43E;&#x434;" class="md-toc-link">
+            <p>&#x423;&#x445;&#x43E;&#x434;</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#&#x432;&#x442;&#x43E;&#x440;&#x43E;&#x439;-&#x441;&#x43E;&#x441;&#x442;&#x430;&#x432;-&#x438;-s8"
+            class="md-toc-link">
+            <p>&#x412;&#x442;&#x43E;&#x440;&#x43E;&#x439; &#x441;&#x43E;&#x441;&#x442;&#x430;&#x432; &#x438; S8</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#the-end" class="md-toc-link">
+            <p>The End</p>
+
+          </a>
+        </div>
+        <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#psss" class="md-toc-link">
+            <p>P.S.S.S</p>
+
+          </a>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</div>
+<a id="sidebar-toc-btn">&#x2261;≡≡≡</a>
+<script>
+  document.body.setAttribute('html-show-sidebar-toc', true)
+  var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+  sidebarTOCBtn.addEventListener('click', function (event) {
+    event.stopPropagation()
+    if (document.body.hasAttribute('html-show-sidebar-toc')) {
+      document.body.removeAttribute('html-show-sidebar-toc')
+    } else {
+      document.body.setAttribute('html-show-sidebar-toc', true)
+    }
+  })
+</script>
