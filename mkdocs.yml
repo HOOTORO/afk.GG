@@ -18,7 +18,7 @@ theme:
       primary: black
       accent: deep purple
   font:
-    text: Roboto Flex
+    text: Open Sans
     code: Fira Mono
   language: ru
   logo: assets/logo2.png
@@ -42,8 +42,8 @@ plugins:
   - search:
         lang: ru
         separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
+  # - minify:
+      # minify_html: true
 
   # custom_dir: overrides
 extra:
@@ -82,7 +82,6 @@ markdown_extensions:
   - toc:
       permalink: true
       title: On this page
-      permalink_title: Anchor link to this section for reference
       toc_depth: 3
   - tables
   - pymdownx.betterem
@@ -94,9 +93,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji 
       emoji_generator: !!python/name:materialx.emoji.to_svg
-      options:
-        custom_icons:
-          - overrides/.icons
+      # options:
+        # custom_icons:
+          # - overrides/.icons
   - pymdownx.highlight:
       use_pygments: true
       anchor_linenums: true
@@ -111,3 +110,13 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
+
+nav:
+  - Home: index.md 
+  - Guides: 
+      - TRESCAMBLE: guides/trescamble.md
+  - Competitive:
+      - AbEx: events/abex.md
+  - Credits: 
+    - Contributors: about.md
+    - Community Servers: dis.md

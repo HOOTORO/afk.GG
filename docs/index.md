@@ -1,16 +1,12 @@
 ---
 hide:
   - footer
-nav:
- - Section:
-    - /index.md 
-    - Page 1: guides/trescamble.md
-    - Page 2: credits/about.md
 ---
 # AFK Arena Guides & Tools
 
 !!! tip "Introduction"
 
+        Collection of useful links about Afk Arena, game by Lilith Games  
         Let's make some rock!
 
 ## ➤ Guides ⊛
