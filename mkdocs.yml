@@ -34,7 +34,7 @@ theme:
     - navigation.indexes
     - navigation.footer
     # - toc.integrate
-    - toc.follow
+    # - toc.follow
     - navigation.top
   plugins: 
     - search:
@@ -69,7 +69,7 @@ extra:
 markdown_extensions:
   - admonition
   - abbr
-  # - attr_list
+  - attr_list
   - def_list
   - footnotes
   - md_in_html
@@ -79,7 +79,7 @@ markdown_extensions:
       permalink_title: Anchor link to this section for reference
       toc_depth: 3
   - tables
-  # - pymdownx.betterem
+  - pymdownx.betterem
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
@@ -93,7 +93,7 @@ markdown_extensions:
           - overrides/.icons
   - pymdownx.highlight:
       use_pygments: true
-      # anchor_linenums: true
+      anchor_linenums: true
       pygments_lang_class: true
       auto_title: true
       linenums_style: pymdownx-inline
