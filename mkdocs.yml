@@ -1,4 +1,4 @@
-site_name: Afk. All You Want To Know
+site_name: AFK. All You Want To Know
 theme:
   name: material
   palette:
@@ -7,7 +7,7 @@ theme:
       toggle:
         icon: material/weather-night 
         name: Switch to dark mode
-      primary: orange
+      primary: deep orange
       accent: light green
 
     # Palette toggle for dark mode
@@ -15,26 +15,29 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-      primary: black
+      primary: blue grey
       accent: deep purple
   font:
-    text: Open Sans
+    # Good ones fonts: Roboto Flex, Open Sans
+    # text: Open Sans
+    # text: Roboto Flex
+    text: Font Awesome
     code: Fira Mono
   language: ru
-  logo: assets/logo2.png
-  favicon: images/favicon.png
+  logo: assets/logo2r.png
+  favicon: assets/favicon.png
   features: 
     - header.autohide
     - navigation.instant
     - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     - navigation.tracking
     # - navigation.sections
     # - navigation.expand
     # - navigation.indexes
     # - navigation.footer
     - toc.integrate
-    # - toc.follow
+    - toc.follow
     - navigation.top
 
 # Plugins
@@ -112,7 +115,7 @@ markdown_extensions:
       alternate_style: true
 
 nav:
-  - Home: index.md 
+  - Main: index.md 
   - Guides: 
       - TRESCAMBLE: guides/trescamble.md
   - Competitive:
