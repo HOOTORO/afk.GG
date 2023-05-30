@@ -41,13 +41,13 @@ permalink: /trescamble/
     Регионы на окраинах[^region] (40 < RN < 20) более комфортны для F2P/low_spender.
     Это пожалуй единственная вещь, с которой сложно что-то поделать в этом режиме.
     - **PATH** - *Путь/Дорога/Маршрут*
-    Выбирается в начале сезона из 3ех вариантов: ![routes_trns](/docs/images/img/routes.png)
+    Выбирается в начале сезона из 3ех вариантов: ![routes_trns](/docs/images/routes.png)
     - **PTS** - Очки престижа, получаемые за победу над оппонентами.
     - **Дивизион** - Лига, определяемая количеством PTS.
     - **Бракет/Корзина** - Ранг внутри дивизиона. Определяется PTS.
-    ![brack](/docs/images/img/brackets_small.png) Ромбы под текущей лигой, как раз показывают бракет.
+    ![brack](/docs/images/brackets_small.png) Ромбы под текущей лигой, как раз показывают бракет.
     - **Stat buff** - Бафф Дивизиона, снижается по ходу сезона
-    ![stbuff](/docs/images/img/buff.png) в последнем дивизионе (Master) **отсутствует**
+    ![stbuff](/docs/images/buff.png) в последнем дивизионе (Master) **отсутствует**
     - **Мета** - сформированные со временем архетипы команд, показавшие наиболее Высокую эффективность.
     Грубо говоря она работает по принципу "камень, ножницы, бумага".
     - **WR** - _Вр_(англ. Winrate) соотношение побед к поражениям.
@@ -66,7 +66,7 @@ permalink: /trescamble/
         </thead>
         <tbody>
             <tr>
-                <td colspan=1><img src="/docs/images/img/regions.png" alt="regi" /></td>
+                <td colspan=1><img src="/docs/images/regions.png" alt="regi" /></td>
                 <td>
                     <table id="divisions" cellspacing="0">
                         <thead>
@@ -78,37 +78,37 @@ permalink: /trescamble/
                         </thead>
                         <tbody>
                             <tr>
-                                <td><img src="/docs/images/img/afk/icon_rank_1_smol.png" alt="rook" /></td>
+                                <td><img src="/docs/images/afk/icon_rank_1_smol.png" alt="rook" /></td>
                                 <td><strong>Rookie</strong></td>
                                 <td><em>1000 pts</em></td>
                             </tr>
                             <tr>
-                                <td><img src="/docs/images/img/afk/icon_rank_2_smol.png" alt="init" /></td>
+                                <td><img src="/docs/images/afk/icon_rank_2_smol.png" alt="init" /></td>
                                 <td><strong>Inititate</strong></td>
                                 <td><em>2000 pts</em></td>
                             </tr>
                             <tr>
-                                <td><img src="/docs/images/img/afk/icon_rank_3_smol.png" alt="ad" /></td>
+                                <td><img src="/docs/images/afk/icon_rank_3_smol.png" alt="ad" /></td>
                                 <td><strong>Adept</strong></td>
                                 <td><em>3000 pts</em></td>
                             </tr>
                             <tr>
-                                <td><img src="/docs/images/img/afk/icon_rank_4_smol.png" alt="vet" /></td>
+                                <td><img src="/docs/images/afk/icon_rank_4_smol.png" alt="vet" /></td>
                                 <td><strong>Veteran</strong></td>
                                 <td><em>4000 pts</em></td>
                             </tr>
                             <tr>
-                                <td><img src="/docs/images/img/afk/icon_rank_5_smol.png" alt="exp" /></td>
+                                <td><img src="/docs/images/afk/icon_rank_5_smol.png" alt="exp" /></td>
                                 <td><strong>Expert</strong></td>
                                 <td><em>5000 pts</em></td>
                             </tr>
                             <tr>
-                                <td><img src="/docs/images/img/afk/icon_rank_6_smol.png" alt="masta" /></td>
+                                <td><img src="/docs/images/afk/icon_rank_6_smol.png" alt="masta" /></td>
                                 <td><strong>Master</strong></td>
                                 <td><em>6000 pts</em></td>
                             </tr>
                             <tr>
-                                <td><img src="/docs/images/img/afk/icon_rank_7_smol.png" alt="secret"  /></td>
+                                <td><img src="/docs/images/afk/icon_rank_7_smol.png" alt="secret"  /></td>
                                 <td><strong>Champion</strong></td>
                                 <td><em markdown="span">Секретная лига[^suspect]</em></td>
                             </tr>
@@ -117,8 +117,8 @@ permalink: /trescamble/
                 </td>
             </tr>
             <tr>
-                <td><img src="/docs/images/img/divstatbuff.png" alt="nolck" /></td>
-                <td><img src="/docs/images/img/brackets.png" alt="nolck" /></td>
+                <td><img src="/docs/images/divstatbuff.png" alt="nolck" /></td>
+                <td><img src="/docs/images/brackets.png" alt="nolck" /></td>
             </tr>
         </tbody>
         <tfoot>
@@ -169,7 +169,7 @@ permalink: /trescamble/
 
 !!! info Visual Clock
 
-    ![clo](/docs/images/img/clock.png)
+    ![clo](/docs/images/clock.png)
 
 ## HOW IT WORKS?
 
@@ -336,12 +336,12 @@ _Не смотря на то, что в целом это самый стаби�
         </thead>
         <tbody>
             <tr>
-                <td><img src="/docs/images/img/alteam.png" alt="alt"></td>
-                <td><img src="/docs/images/img/tkapa.png" alt="kappa"></td>
+                <td><img src="/docs/images/alteam.png" alt="alt"></td>
+                <td><img src="/docs/images/tkapa.png" alt="kappa"></td>
             </tr>
             <tr>
-                <td><img src="/docs/images/img/ph.png" alt="phantom" class="small"></td>
-                <td><img src="/docs/images/img/thg.png" alt="mine"></td>
+                <td><img src="/docs/images/ph.png" alt="phantom" class="small"></td>
+                <td><img src="/docs/images/thg.png" alt="mine"></td>
             </tr>
         </tbody>
         <tfoot>
@@ -381,8 +381,8 @@ _Не смотря на то, что в целом это самый стаби�
         </thead>
         <tbody>
             <tr>
-                <td><img src="/docs/images/img/ptty.png" alt="alt"></td>
-                <td><img src="/docs/images/img/meh.png" alt="kappa"></td>
+                <td><img src="/docs/images/ptty.png" alt="alt"></td>
+                <td><img src="/docs/images/meh.png" alt="kappa"></td>
             </tr>
         </tbody>
         <tfoot>
