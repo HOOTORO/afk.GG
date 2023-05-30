@@ -1,0 +1,79 @@
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %} {{ super() }}
+<!-- Additional styles for landing page -->
+<style>
+    /* Application header should be static for the landing page */
+    .md-header {
+        position: initial;
+    }
+
+    /* Remove spacing, as we cannot hide it completely */
+    .md-main__inner {
+        margin: 0;
+    }
+
+    .md-tabs {
+        display: flex;
+        background-color: #534c4c8a;
+    }
+
+    /* Hide main content for now */
+    .md-content {
+        display: none;
+    }
+
+    /* Hide table of contents */
+    @media screen and (min-width: 60em) {
+        .md-sidebar--secondary {
+            display: none;
+        }
+    }
+
+    /* Hide navigation */
+    @media screen and (min-width: 76.25em) {
+        .md-sidebar--primary {
+            display: none;
+        }
+    }
+
+    .md-container {
+        background-image: url("/images/bg.png");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+{% endblock %}
+<!-- Content -->
+{% block content %}
+ {{ content }}
+{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}
+<section class="mdx-container">
+    <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+            <!-- Hero content -->
+            <div class="mdx-hero__content">
+                <h1>About our beloved idle gachagame.</h1>
+                <p>Get ready.</p>
+                <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+                    class="md-button md-button--primary">
+                    Community Resources
+                </a>
+                <!-- <a
+                    href="{{ 'insiders/' | url }}"
+                    title="Material for MkDocs Insiders"
+                    class="md-button"
+                    >
+                    Get Insiders
+                </a> -->
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
