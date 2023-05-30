@@ -14,7 +14,3 @@
     - Идейный вдохновитель: [White Nigger](https://discordid.netlify.app/?id=402485240184176641) (Без Ярика, инфа по TS пылилась бы на полке и дальше)
 
     _Всем спасибо за помощь и уделенное время!_
-
-### TO open new window
-
-{:target="_blank" rel="noopener noreferrer"}

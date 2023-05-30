@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "file:///c%3A/Users/maruk/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+        "https://json.schemastore.org/mkdocs-1.0.json": "file:///Users/reinweise/HOOTSMAN/repos/Afk.A/mkdocs.yml"
+    }
+}

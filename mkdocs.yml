@@ -20,10 +20,26 @@ theme:
   font:
     text: Roboto Flex
     code: Fira Mono
-  language: en
+  language: ru
   logo: assets/logo2.png
   favicon: images/favicon.png
-  custom_dir: overrides
+  features: 
+    - navigation.instant
+    - header.autohide
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.footer
+    # - toc.integrate
+    - toc.follow
+    - navigation.top
+  plugins: 
+    - search:
+        lang: ru
+  # custom_dir: overrides
 extra:
   homepage: https://hootsdev.github.io/Afk.A/
   consent:
@@ -39,6 +55,12 @@ extra:
   copyright: >
     Copyright &copy; 2023 HOOTSMAN –
     <a href="#__consent">Change cookie settings</a>
+  # version:
+  #   provider: mike
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/nom3rcy
+      name: Top#1 Ru Guild
 
 # extra_css:
 #   - stylesheets/extra.css
@@ -46,3 +68,40 @@ extra:
 #   - javascripts/extra.js
 markdown_extensions:
   - admonition
+  - abbr
+  # - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+      permalink_title: Anchor link to this section for reference
+      toc_depth: 3
+  - tables
+  # - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      use_pygments: true
+      # anchor_linenums: true
+      pygments_lang_class: true
+      auto_title: true
+      linenums_style: pymdownx-inline
+      linenums: true
+      line_spans: __span
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true

@@ -1,3 +1,13 @@
+---
+hide:
+  - footer
+nav:
+ - Section:
+    - section/index.md 
+    - Page 1: guides/trescamble.md
+    - Page 2: credits/about.md
+---
+
 # AFK Arena Guides & Tools
 
 !!! tip "Introduction"
