@@ -15,8 +15,8 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-      primary: light green
-      accent: orange
+      primary: black
+      accent: deep purple
   font:
     text: Roboto Flex
     code: Fira Mono
@@ -26,16 +26,16 @@ theme:
   features: 
     - navigation.instant
     - header.autohide
-    # - navigation.tabs
-    # - navigation.tabs.sticky
-    # - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
     - navigation.sections
     - navigation.expand
-    # - navigation.indexes
+    - navigation.indexes
     # - navigation.footer
     # - toc.integrate
     # - toc.follow
-    # - navigation.top
+    - navigation.top
   plugins: 
     - search:
         lang: ru
