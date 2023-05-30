@@ -22,7 +22,7 @@ Great in-depth game mechanics testing.
 AFK Tryharder's Holy Bible.  
 Masterpiece for sure!
 
-### [Trescamble!](/afk.GG/trescamble) by HOOTSMAN
+### [Trescamble!](/Afk.A/guides/trescamble) by HOOTSMAN
 
 Treasure Scrable mechanics and recommendations.
 
