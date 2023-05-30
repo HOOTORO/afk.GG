@@ -9,17 +9,13 @@ hide:
         Collection of useful links about Afk Arena, game by Lilith Games  
         Let's make some rock!
 
-## ➤ Guides ⊛
+## ➤ To Read ⊛
 
 ### [Beyond Comprehensive](https://docs.google.com/document/d/1anFewmc_96HU6_mfVsfYniNmRPInNZY7RNMKxW3Kjnw/edit#) by Bob49
 
 Great in-depth game mechanics testing.  
 AFK Tryharder's Holy Bible.  
 Masterpiece for sure!
-
-### [Trescamble!](/Afk.A/guides/trescamble) by HOOTSMAN
-
-Treasure Scrable mechanics and recommendations.
 
 ## ➤ Helpful stuff ◬
 
