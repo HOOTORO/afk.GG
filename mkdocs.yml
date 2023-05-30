@@ -29,9 +29,9 @@ theme:
   features: 
     - header.autohide
     - navigation.instant
+    - navigation.tracking
     - navigation.tabs
     # - navigation.tabs.sticky
-    - navigation.tracking
     # - navigation.sections
     # - navigation.expand
     # - navigation.indexes
@@ -83,15 +83,19 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - toc:
-      permalink: true
-      title: On this page
+      # permalink: true
+      # slugify: !!python/object/apply:pymdownx.slugs.slugify
+      # permalink: "\ue112"
+      # title: On this page
       toc_depth: 3
   - tables
-  - pymdownx.betterem
+  - pymdownx.betterem:
+       smart_enable: all
   - pymdownx.caret
   - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.tilde
-  - pymdownx.critic
+  # - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji 
@@ -100,16 +104,15 @@ markdown_extensions:
         # custom_icons:
           # - overrides/.icons
   - pymdownx.highlight:
-      use_pygments: true
       anchor_linenums: true
-      pygments_lang_class: true
-      auto_title: true
-      linenums_style: pymdownx-inline
-      linenums: true
       line_spans: __span
-  - pymdownx.superfences
-  - pymdownx.highlight
+      pygments_lang_class: true
+      # use_pygments: true
+      # auto_title: true
+      # linenums_style: pymdownx-inline
+      # linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.superfences
   - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
