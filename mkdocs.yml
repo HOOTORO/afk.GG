@@ -24,21 +24,27 @@ theme:
   logo: assets/logo2.png
   favicon: images/favicon.png
   features: 
-    - navigation.instant
     - header.autohide
+    - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking
-    - navigation.sections
-    - navigation.expand
-    - navigation.indexes
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.indexes
     # - navigation.footer
-    # - toc.integrate
+    - toc.integrate
     # - toc.follow
     - navigation.top
-  plugins: 
-    - search:
+
+# Plugins
+plugins:
+  - search:
         lang: ru
+        separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
   # custom_dir: overrides
 extra:
   homepage: https://hootsdev.github.io/Afk.A/
