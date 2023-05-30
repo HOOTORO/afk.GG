@@ -1,4 +1,5 @@
 site_name: AFK. All You Want To Know
+site_url: https://hootsdev.github.io/afk.GG/
 theme:
   name: material
   custom_dir: overrides
