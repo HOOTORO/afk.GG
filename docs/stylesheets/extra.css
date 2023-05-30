@@ -1,6 +1,6 @@
 .md-tabs {
     display: flex;
-    background-color: transparent;
+    background-color: #00000080;
 }
 .mdx-container {
     margin: 100px;
