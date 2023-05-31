@@ -26,10 +26,11 @@
 
 ## 2Ez TOP-1
 
-|                    HOW-TO                    |                    ABEX                     |
+|                    HOW-TO                     |                     ABEX                      |
 | :-------------------------------------------: | :-------------------------------------------: |
-|  ![expectations](../images/memes/klubni.png)  |  ![ivanlizni](../images/memes/ivanlizni.png)  |
+|  ![expectations](../images/memes/klubni.png)  |  ![ivanlizni](../images/memes/ivanlizni.png) { width="350" } |
 |    ![ivancat](../images/memes/ivancat.png)    |   ![deyrawant](../images/memes/deyrax4.png)   |
 | ![inantrez](../images/memes/ivantreznor.png)  |   ![deyrabe](../images/memes/deyradps.png)    |
 | ![ivancasino](../images/memes/ivancasino.png) | ![reality](../images/memes/returntreznor.png) |
+
 <!-- |   ![ivankick](../images/memes/ivankick.png)   |   ![ivansliv](../images/memes/ivansliv.png)   | -->
