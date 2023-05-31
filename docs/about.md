@@ -2,7 +2,7 @@
 
 ## Guides
 
-!!! example "Trescamble!"
+!!! sh-luv "Trescamble!"
 
     **Над текстом работали:**
 
