@@ -147,7 +147,8 @@ nav:
       - TRESCAMBLE: '!guides/trescamble.md'
   - RU|Rankings:
       - '!events/index.md'
-      - AbEx: '!events/abex.md'
+      - Abyssal Expedition: '!events/abex.md'
+      - Hunting Fields: '!events/hf.md'
   - Credits: 
     - Contributors: about.md
     - Community Servers: dis.md
