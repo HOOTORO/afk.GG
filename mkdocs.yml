@@ -13,16 +13,23 @@ theme:
       toggle:
         icon: material/weather-night 
         name: Switch to dark mode
-      primary: deep orange
-      accent: light green
+      # deep orange + lime
+      primary: orange
+      accent: lime
 
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-      primary: blue grey
-      accent: deep purple
+        # color pairs:
+        # deep purple + lime/orange/amber
+        # deep orange + lime
+        # black + orange/amber
+        # cyan + amber/deep purple
+        # blue grey + deep purple
+      primary: deep purple
+      accent: amber
   font:
     # Good ones fonts: Roboto Flex, Open Sans
     # text: Open Sans
@@ -30,7 +37,7 @@ theme:
     text: Font Awesome
     code: Fira Mono
   language: ru
-  logo: assets/logo2r.png
+  logo: assets/logo2rv2.png
   favicon: assets/favicon.png
   features: 
     - header.autohide
