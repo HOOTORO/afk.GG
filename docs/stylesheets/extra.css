@@ -1,6 +1,13 @@
+::selection {
+    background-color: hsl(310, 100%, 65%);
+    color: hsl(230, 30%, 15%);
+    -webkit-text-fill-color: hsl(230, 30%, 15%);
+}
+
 .md-tabs {
     display: flex;
-    background-color: #00000080;
+    background-color: #332201ed;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 .mdx-container {
     margin: 100px;
