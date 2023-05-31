@@ -47,7 +47,6 @@ theme:
     # - navigation.footer
 
 # Plugins
-# INHERIT: mkdocs.yml
 plugins:
   - search:
         lang: ru

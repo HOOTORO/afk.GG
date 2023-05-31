@@ -17,4 +17,4 @@
 
 ## Furniture enchant + stats 
 
-{{ read_excel('../assets/furnstats.xlsx', engine='openpyxl') }}
+{{ read_excel('../assets/furnstats.xlsx', engine='openpyxl', na_filter=False ) }}
