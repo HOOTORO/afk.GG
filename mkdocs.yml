@@ -34,8 +34,10 @@ theme:
     # Good ones fonts: Roboto Flex, Open Sans
     # text: Open Sans
     # text: Roboto Flex
+    # text: Google Sans
     text: Font Awesome
-    code: Fira Mono
+    code: Google Sans Mono
+    # code: Fira Mono
   language: ru
   logo: assets/logo2rv2.png
   favicon: assets/favicon.png
@@ -141,18 +143,19 @@ markdown_extensions:
 nav:
   - Main: index.md 
   - Knowledge Base: 
-      - '!guides/index.md'
-      - Community Resource: '!guides/links.md'
-      - Infographica: '!guides/infographics.md'
-      - TRESCAMBLE: '!guides/trescamble.md'
+      - _guides/index.md
+      - Community Resource: _guides/links.md
+      - Infographica: _guides/infographics.md
+      - TRESCAMBLE: _guides/trescamble.md
   - RU|Rankings:
-      - '!events/index.md'
-      - Abyssal Expedition: '!events/abex.md'
-      - Hunting Fields: '!events/hf.md'
+      - _events/index.md
+      - Abyssal Expedition: _events/abex.md
+      - Hunting Fields: _events/hf.md
   - Credits: 
     - Contributors: about.md
     - Community Servers: dis.md
   - P.Fiction:
-    - '!coolstory/index.md'
-    - The Hospital: '!coolstory/th-retirement.md'
-    - No Mercy: '!coolstory/nm-respect.md'
+    - _coolstory/index.md
+    - memes: _coolstory/meme.md
+    - No Mercy: _coolstory/nm-respect.md
+    - The Hospital: _coolstory/th-retirement.md
