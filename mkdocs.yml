@@ -133,14 +133,17 @@ markdown_extensions:
 
 nav:
   - Main: index.md 
-  - Community Resource: links.md
-  - Guides: 
-      - TRESCAMBLE: guides/trescamble.md
-  - Competitive:
-      - AbEx: events/abex.md
+  - Knowledge Base: 
+      - '!guides/index.md'
+      - TRESCAMBLE: '!guides/trescamble.md'
+      - Community Resource: '!guides/links.md'
+  - RU|Rankings:
+      - '!events/index.md'
+      - AbEx: '!events/abex.md'
   - Credits: 
     - Contributors: about.md
     - Community Servers: dis.md
-  - Cool Stories:
-    - The Hospital: coolstory/th-retirement.md
-    - No Mercy: coolstory/respect.md
+  - P.Fiction:
+    - '!coolstory/index.md'
+    - The Hospital: '!coolstory/th-retirement.md'
+    - No Mercy: '!coolstory/nm-respect.md'
