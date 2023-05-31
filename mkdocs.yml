@@ -58,6 +58,7 @@ plugins:
       draggable: false
       auto_caption: true
       caption_position: bottom
+  - table-reader
   # sponsor feature, maybe someday
   # - privacy:
   #     enabled: !ENV [CI, false]
@@ -135,8 +136,9 @@ nav:
   - Main: index.md 
   - Knowledge Base: 
       - '!guides/index.md'
-      - TRESCAMBLE: '!guides/trescamble.md'
       - Community Resource: '!guides/links.md'
+      - Infographica: '!guides/infographics.md'
+      - TRESCAMBLE: '!guides/trescamble.md'
   - RU|Rankings:
       - '!events/index.md'
       - AbEx: '!events/abex.md'

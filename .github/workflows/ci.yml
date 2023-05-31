@@ -25,4 +25,6 @@ jobs:
       - run: pip install mkdocs-minify-plugin
       - run: pip install mkdocs-glightbox
       - run: pip install mkdocs-redirects
+      - run: pip install mkdocs-table-reader-plugin
+      - run: pip install openpyxl
       - run: mkdocs gh-deploy --force
