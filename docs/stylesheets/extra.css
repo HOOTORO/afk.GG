@@ -1,31 +1,34 @@
 ::selection {
-    background-color: hsl(310, 100%, 65%);
-    color: hsl(230, 30%, 15%);
-    -webkit-text-fill-color: hsl(230, 30%, 15%);
+  background-color: hsl(310, 100%, 65%);
+  color: hsl(230, 30%, 15%);
+  -webkit-text-fill-color: hsl(230, 30%, 15%);
 }
 
 .md-tabs {
-    display: flex;
-    background-color: #332201ed;
-    -webkit-font-smoothing: subpixel-antialiased;
+  display: flex;
+  background-color: #332201ed;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 .mdx-container {
-    margin: 100px;
+  margin: 100px;
 }
 
 .glightbox img {
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .red-font {
-    color: #eb01aa !important;
+  color: #eb01aa !important;
 }
 
 em {
-    color: skyblue;
+  color: skyblue;
+}
+.md-tabs__link {
+  color: #fdf5f5;
 }
