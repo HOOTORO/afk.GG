@@ -22,3 +22,13 @@
 ## Furniture enchant + stats
 
 {{ read_excel('../assets/furnstats.xlsx', engine='openpyxl', na_filter=False) }}
+
+
+## SHOP VALUES
+
+![shopvalues](images/shopval.png)
+## VIP COST
+
+![vip1](images/vipcost.png)
+
+![vip2](images/costvip.webp)

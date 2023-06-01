@@ -24,7 +24,7 @@
 
 ## Oche ozornoy
 
-![ozornoy](../images/th/tr_meme.jpg)
+![ozornoy](../images/th/tr_meme.jpg) 
 
 ## 2Ez TOP-1
 
