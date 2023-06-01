@@ -1,5 +1,8 @@
 # Community memes
 
+## Platinum names
+![gosling](../images/memes/gosling.png)
+![brutus](../images/memes/nerfb.png)
 ## almost ftp
 ![almost](../images/memes/vipftp.png)
 ## Старый, добрый ремингтон всегда решал вопросы
