@@ -1,5 +1,10 @@
 site_name: AFK. All You Want To Know
 site_url: https://hootsdev.github.io/afk.GG/
+
+copyright: >-
+  Copyright &copy; 2023 HOOTSMAN –
+  <a href="#__consent">Change cookie settings</a>
+
 theme:
   name: material
   custom_dir: overrides
@@ -7,40 +12,42 @@ theme:
     - stylesheets/extra.css
   # extra_javascript:
   # - javascripts/extra.js
+  
   palette:
     # Palette toggle for light mode
+      # deep orange + lime
     - scheme: default
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-      # deep orange + lime
       primary: orange
       accent: lime
 
     # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
         # color pairs:
         # deep purple + lime/orange/amber
         # deep orange + lime
         # black + orange/amber
         # cyan + amber/deep purple
         # blue grey + deep purple
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
       primary: deep purple
       accent: amber
-  font:
     # Good ones fonts: Roboto Flex, Open Sans
     # text: Open Sans
     # text: Roboto Flex
     # text: Google Sans
+    # code: Fira Mono
+  font:
     text: Font Awesome
     code: Google Sans Mono
-    # code: Fira Mono
-  language: ru
-  logo: assets/logo2rv2.png
   favicon: assets/favicon.png
+  logo: assets/logo2rv2.png
+  language: ru
+
   features:
     - header.autohide
     - navigation.instant
@@ -77,24 +84,21 @@ plugins:
 extra:
   homepage: https://hootsdev.github.io/afk.GG/
   consent:
-  title: Cookie consent
-  description:
-    We use cookies to recognize your repeated visits and preferences, as well
-    as to measure the effectiveness of our documentation and whether users
-    find what they're searching for. With your consent, you're helping us to
-    make our documentation better.
-  actions:
-    - accept
-    - manage
-  copyright: >
-    Copyright &copy; 2023 HOOTSMAN –
-    <a href="#__consent">Change cookie settings</a>
-  # version:
-  #   provider: mike
+    title: Cookie consent
+    description:
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage
   social:
     - icon: fontawesome/brands/discord
       link: https://discord.com/invite/nom3rcy
       name: Top#1 Ru Guild
+  # version:
+  #   provider: mike
 
 markdown_extensions:
   - abbr
