@@ -53,14 +53,14 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
-    # - toc.integrate
-    - toc.follow
     - navigation.top
     - navigation.footer
-    # - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
-    # - navigation.indexes
+    # - toc.integrate
+    - toc.follow
+    # - navigation.tabs.sticky
+    - navigation.indexes
 
 # Plugins
 plugins:
@@ -71,8 +71,8 @@ plugins:
       minify_html: true
   - glightbox:
       draggable: false
-      auto_caption: true
-      caption_position: bottom
+      # auto_caption: true
+      # caption_position: bottom
   - table-reader
   # sponsor feature, maybe someday
   # - privacy:
@@ -80,12 +80,17 @@ plugins:
   #     links_attr_map:
   #       target: _blank
   #       links_noopener: true
-
 extra:
-  homepage: https://hootsdev.github.io/afk.GG/
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discordid.netlify.app/?id=88370628763078656
+      name: HOOTSMAN
+
+
+  # homepage: https://hootsdev.github.io/afk.GG/
   consent:
     title: Cookie consent
-    description:
+    description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
@@ -93,13 +98,12 @@ extra:
     actions:
       - accept
       - manage
-  social:
-    - icon: fontawesome/brands/discord
-      link: https://discord.com/invite/nom3rcy
-      name: Top#1 Ru Guild
   # version:
   #   provider: mike
 
+      # slugify: !!python/object/apply:pymdownx.slugs.slugify
+      # permalink: "\ue112"
+      # title: On this page
 markdown_extensions:
   - abbr
   - admonition
@@ -110,9 +114,6 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
-      # slugify: !!python/object/apply:pymdownx.slugs.slugify
-      # permalink: "\ue112"
-      # title: On this page
       toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
@@ -146,6 +147,7 @@ markdown_extensions:
 
 nav:
   - Main: index.md
+  # - nm: nmem.md
   - Knowledge Base:
       - _guides/index.md
       - Community Resource: _guides/links.md

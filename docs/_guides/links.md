@@ -1,7 +1,3 @@
----
-hide:
-  - footer
----
 Useful Resources
 ----------------
 

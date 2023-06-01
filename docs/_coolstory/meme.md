@@ -1,5 +1,7 @@
 # Community memes
 
+## almost ftp
+![almost](../images/memes/vipftp.png)
 ## Старый, добрый ремингтон всегда решал вопросы
 
 ![keepyougunclose](../images/memes/20230412_1654_Discord_Cool.png)
