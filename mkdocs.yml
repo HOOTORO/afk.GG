@@ -56,11 +56,11 @@ theme:
     # - toc.integrate
     - toc.follow
     - navigation.top
+    - navigation.footer
     # - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     # - navigation.indexes
-    # - navigation.footer
 
 # Plugins
 plugins:
