@@ -5,13 +5,13 @@ theme:
   custom_dir: overrides
   extra_css:
     - stylesheets/extra.css
-# extra_javascript:
+  # extra_javascript:
   # - javascripts/extra.js
   palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/weather-night 
+        icon: material/weather-night
         name: Switch to dark mode
       # deep orange + lime
       primary: orange
@@ -41,7 +41,7 @@ theme:
   language: ru
   logo: assets/logo2rv2.png
   favicon: assets/favicon.png
-  features: 
+  features:
     - header.autohide
     - navigation.instant
     - navigation.tracking
@@ -58,8 +58,8 @@ theme:
 # Plugins
 plugins:
   - search:
-        lang: ru
-        separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang: ru
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
   - glightbox:
@@ -78,14 +78,14 @@ extra:
   homepage: https://hootsdev.github.io/afk.GG/
   consent:
   title: Cookie consent
-  description:  
+  description:
     We use cookies to recognize your repeated visits and preferences, as well
     as to measure the effectiveness of our documentation and whether users
     find what they're searching for. With your consent, you're helping us to
     make our documentation better.
   actions:
-  - accept
-  - manage
+    - accept
+    - manage
   copyright: >
     Copyright &copy; 2023 HOOTSMAN –
     <a href="#__consent">Change cookie settings</a>
@@ -113,20 +113,20 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
-       smart_enable: all
+      smart_enable: all
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight
-      # anchor_linenums: true
-      # line_spans: __span
-      # pygments_lang_class: true
-      # use_pygments: true
-      # auto_title: true
-      # linenums_style: pymdownx-inline
-      # linenums: true
+    # anchor_linenums: true
+    # line_spans: __span
+    # pygments_lang_class: true
+    # use_pygments: true
+    # auto_title: true
+    # linenums_style: pymdownx-inline
+    # linenums: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
@@ -141,8 +141,8 @@ markdown_extensions:
   # - pymdownx.snippets
 
 nav:
-  - Main: index.md 
-  - Knowledge Base: 
+  - Main: index.md
+  - Knowledge Base:
       - _guides/index.md
       - Community Resource: _guides/links.md
       - Infographica: _guides/infographics.md
@@ -151,11 +151,11 @@ nav:
       - _events/index.md
       - Abyssal Expedition: _events/abex.md
       - Hunting Fields: _events/hf.md
-  - Credits: 
-    - Contributors: about.md
-    - Community Servers: dis.md
+  - Credits:
+      - Contributors: about.md
+      - Community Servers: dis.md
   - P.Fiction:
-    - _coolstory/index.md
-    - memes: _coolstory/meme.md
-    - No Mercy: _coolstory/nm-respect.md
-    - The Hospital: _coolstory/th-retirement.md
+      - _coolstory/index.md
+      - memes: _coolstory/meme.md
+      - No Mercy: _coolstory/nm-respect.md
+      - The Hospital: _coolstory/th-retirement.md
