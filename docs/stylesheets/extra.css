@@ -25,6 +25,12 @@
 .red-font {
   color: #eb01aa !important;
 }
+.green-f {
+  color: green;
+}
+.brown-f {
+  color: brown;
+}
 
 em {
   color: skyblue;
@@ -32,7 +38,6 @@ em {
 .md-tabs__link {
   color: #fdf5f5;
 }
-
 
 :root {
   --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
@@ -49,11 +54,11 @@ em {
 .md-typeset .sh-luv > summary::before {
   background-color: rgba(235, 5, 5);
   -webkit-mask-image: var(--md-admonition-icon--sh-luv);
-          mask-image: var(--md-admonition-icon--sh-luv);
+  mask-image: var(--md-admonition-icon--sh-luv);
 }
 
 .mdx-hero__content {
   display: flex;
-  justify-content:space-between;
-  -webkit-font-smoothing: subpixel-antialiased; 
+  justify-content: space-between;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
