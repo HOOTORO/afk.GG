@@ -4,22 +4,30 @@ permalink: /dis
 
 # Community Servers
 
-## [NoMercy](https://discord.gg/nom3rcy){:target="_blank" rel="noopener noreferrer"}
+## [RU:NoMercy](https://discord.gg/nom3rcy){:target="_blank" rel="noopener noreferrer"}
 
-Top #1 ru guild
+Current Top #1 ru guild
 
-## [Crowd Sourcing](https://discord.gg/EYtHQVWSyn){:target="_blank" rel="noopener noreferrer"}
+## [RU:Затонувшая гильдия](https://discord.gg/NFqvgcX3ak)
+
+Одна из первых подсуетившихся во времена появления АЕ-гильдия
+
+## [EN:Crowd Sourcing](https://discord.gg/EYtHQVWSyn){:target="_blank" rel="noopener noreferrer"}
 
 Most accurate data about big event (AE, HF...)
 
-## [Cursed Friends](https://discord.gg/5neB6RzAHv){:target="_blank" rel="noopener noreferrer"}
+## [EN:Cursed Friends](https://discord.gg/5neB6RzAHv){:target="_blank" rel="noopener noreferrer"}
 
 All about Cursed Realm formations
 
-## [Seas0n's Analytica](https://discord.gg/n8mutNttdZ){:target="_blank" rel="noopener noreferrer"}
+## [EN:Seas0n's Analytica](https://discord.gg/n8mutNttdZ){:target="_blank" rel="noopener noreferrer"}
 
 very intresting navigation~!
 
-## [Official AFK Arena](https://discord.gg/afkarena){:target="_blank" rel="noopener noreferrer"}
+## [EN:NaXiS AFK-Helper](https://discord.com/invite/H6NY2hG)
+
+ originally was server of NaXiS guild (btw helper originally was created for internal purposes of guild), but when it was opened to the world there also created channel for non-guild-users of [Helper](https://afkhelper.nax.is/)
+
+## [International:Official AFK Arena](https://discord.gg/afkarena){:target="_blank" rel="noopener noreferrer"}
 
 most boring server overall
