@@ -27,7 +27,7 @@
 ![](../images/memes/Screenshot_20230603-022912.jpg)
 ![](../images/memes/image-28.png)
 ![](../images/memes/image-29.png)
-![](image-../images/memes/image-40.png)
+![](../images/memes/image-40.png)
 ![](../images/memes/unknown-245.png)
 ![](../images/memes/IMG_9493-1.png)
 ![](../images/memes/NemoraSays-1.png)
