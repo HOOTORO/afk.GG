@@ -163,5 +163,6 @@ nav:
   - P.Fiction:
       - _coolstory/index.md
       - memes: _coolstory/meme.md
+      - RU Community: _coolstory/makerugreatagain.md
       - No Mercy: _coolstory/nm-respect.md
       - The Hospital: _coolstory/th-retirement.md
