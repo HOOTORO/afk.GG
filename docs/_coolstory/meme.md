@@ -1,4 +1,11 @@
 # Community memes
+## Sun
+
+![](../images/memes/qa4ILzXCpT0.png)
+![](../images/memes/hu.png)
+![](../images/memes/hu2.png)
+![](../images/memes/kva.png)
+![](../images/memes/adv.png)
 
 ## Kappa version
 
@@ -30,9 +37,6 @@
 ## Belka
 
 ![](../images/memes/IMG_20230603_105344.jpg)
-## Sun
-
-![](../images/memes/qa4ILzXCpT0.png)
 
 ## Platinum names
 ![gosling](../images/memes/gosling.png)
