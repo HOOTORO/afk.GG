@@ -1,5 +1,38 @@
 # Community memes
 
+## Kappa version
+![](../images/memes/2355122_760x500-1.jpg)
+![](../images/memes/Anime--basedmoni-ah-eto-bleh-meme-7613995_12.jpg)
+![](../images/memes/Screenshot_20220410-185855.jpg)
+![](../images/memes/Screenshot_20220909-164047.jpg)
+![](../images/memes/Screenshot_20230602-180821.jpg)
+![](../images/memes/Screenshot_20230603-022349.jpg)
+![](../images/memes/Screenshot_20230603-022405.jpg)
+![](../images/memes/Screenshot_20230603-022423.jpg)
+![](../images/memes/Screenshot_20230603-022435.jpg)
+![](../images/memes/Screenshot_20230603-022453.jpg)
+![](../images/memes/Screenshot_20230603-022511.jpg)
+![](../images/memes/Screenshot_20230603-022655.jpg)
+![](../images/memes/Screenshot_20230603-022711.jpg)
+![](../images/memes/Screenshot_20230603-022721.jpg)
+![](../images/memes/Screenshot_20230603-022809.jpg)
+![](../images/memes/Screenshot_20230603-022912.jpg)
+![](../images/memes/image-28.png)
+![](../images/memes/image-29.png)
+![](image-../images/memes/image-40.png)
+![](../images/memes/unknown-245.png)
+![](../images/memes/IMG_9493-1.png)
+![](../images/memes/NemoraSays-1.png)
+![](../images/memes/NemoraSays-2.png)
+![](../images/memes/Screenshot_20221108_023415.png)
+
+## Belka
+
+![](../images/memes/IMG_20230603_105344.jpg)
+## Sun
+
+![](../images/memes/qa4ILzXCpT0.png)
+
 ## Platinum names
 ![gosling](../images/memes/gosling.png)
 ![brutus](../images/memes/nerfb.png)
