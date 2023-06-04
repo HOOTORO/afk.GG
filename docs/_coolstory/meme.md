@@ -1,79 +1,79 @@
 # Community memes
 ## Sun
 
-![](../images/memes/qa4ILzXCpT0.png)
-![](../images/memes/hu.png)
-![](../images/memes/hu2.png)
-![](../images/memes/kva.png)
-![](../images/memes/adv.png)
+![](../converted/qa4ILzXCpT0.jpg)
+![](../converted/hu.jpg)
+![](../converted/hu2.jpg)
+![](../converted/kva.jpg)
+![](../converted/adv.jpg)
 
 ## Kappa version
 
-![](../images/memes/2355122_760x500-1.jpg)
-![](../images/memes/Anime--basedmoni-ah-eto-bleh-meme-7613995_12.jpg)
-![](../images/memes/Screenshot_20220410-185855.jpg)
-![](../images/memes/Screenshot_20220909-164047.jpg)
-![](../images/memes/Screenshot_20230602-180821.jpg)
-![](../images/memes/Screenshot_20230603-022349.jpg)
-![](../images/memes/Screenshot_20230603-022405.jpg)
-![](../images/memes/Screenshot_20230603-022423.jpg)
-![](../images/memes/Screenshot_20230603-022435.jpg)
-![](../images/memes/Screenshot_20230603-022453.jpg)
-![](../images/memes/Screenshot_20230603-022511.jpg)
-![](../images/memes/Screenshot_20230603-022655.jpg)
-![](../images/memes/Screenshot_20230603-022711.jpg)
-![](../images/memes/Screenshot_20230603-022721.jpg)
-![](../images/memes/Screenshot_20230603-022809.jpg)
-![](../images/memes/Screenshot_20230603-022912.jpg)
-![](../images/memes/image-28.png)
-![](../images/memes/image-29.png)
-![](../images/memes/image-40.png)
-![](../images/memes/unknown-245.png)
-![](../images/memes/IMG_9493-1.png)
-![](../images/memes/NemoraSays-1.png)
-![](../images/memes/NemoraSays-2.png)
-![](../images/memes/Screenshot_20221108_023415.png)
+![](../converted/2355122_760x500-1.jpg)
+![](../converted/Anime--basedmoni-ah-eto-bleh-meme-7613995_12.jpg)
+![](../converted/Screenshot_20220410-185855.jpg)
+![](../converted/Screenshot_20220909-164047.jpg)
+![](../converted/Screenshot_20230602-180821.jpg)
+![](../converted/Screenshot_20230603-022349.jpg)
+![](../converted/Screenshot_20230603-022405.jpg)
+![](../converted/Screenshot_20230603-022423.jpg)
+![](../converted/Screenshot_20230603-022435.jpg)
+![](../converted/Screenshot_20230603-022453.jpg)
+![](../converted/Screenshot_20230603-022511.jpg)
+![](../converted/Screenshot_20230603-022655.jpg)
+![](../converted/Screenshot_20230603-022711.jpg)
+![](../converted/Screenshot_20230603-022721.jpg)
+![](../converted/Screenshot_20230603-022809.jpg)
+![](../converted/Screenshot_20230603-022912.jpg)
+![](../converted/image-28.jpg)
+![](../converted/image-29.jpg)
+![](../converted/image-40.jpg)
+![](../converted/unknown-245.jpg)
+![](../converted/IMG_9493-1.jpg)
+![](../converted/NemoraSays-1.jpg)
+![](../converted/NemoraSays-2.jpg)
+![](../converted/Screenshot_20221108_023415.jpg)
 
 ## Belka
 
-![](../images/memes/IMG_20230603_105344.jpg)
+![](../converted/IMG_20230603_105344.jpg)
 
 ## Platinum names
-![gosling](../images/memes/gosling.png)
-![brutus](../images/memes/nerfb.png)
+![gosling](../converted/gosling.jpg)
+![brutus](../converted/nerfb.jpg)
 ## almost ftp
-![almost](../images/memes/vipftp.png)
+![almost](../converted/vipftp.jpg)
 ## Старый, добрый ремингтон всегда решал вопросы
 
-![keepyougunclose](../images/memes/20230412_1654_Discord_Cool.png)
+![keepyougunclose](../converted/20230412_1654_Discord_Cool.jpg)
 
 ## Проблемы не ясны
 
-![nadudonil norm](../images/memes/nadonatilnorm.png)
+![nadudonil norm](../converted/nadonatilnorm.jpg)
 
 ## Что могло пойти не так?
 
-![clownfiesta](../images/memes/clown34.png)
+![clownfiesta](../converted/clown34.jpg)
 
 ## R.I.P. Talene in CR
 
-![reelsheet](../images/memes/silasStonks.png)
+![reelsheet](../converted/silasStonks.jpg)
 
 ## pepega AbEx S7
 
-![ae7fiesta](../images/memes/AES7_TheHospital.jpg)
+![ae7fiesta](../converted/AES7_TheHospital.jpg)
 
 ## Oche ozornoy
 
-![ozornoy](../images/th/tr_meme.jpg) 
+![ozornoy](../converted/tr_meme.jpg) 
 
 ## 2Ez TOP-1
 
 |                    HOW-TO                     |                     ABEX                      |
 | :-------------------------------------------: | :-------------------------------------------: |
-|  ![expectations](../images/memes/klubni.png)  |  ![ivanlizni](../images/memes/ivanlizni.png) { width="350" } |
-|    ![ivancat](../images/memes/ivancat.png)    |   ![deyrawant](../images/memes/deyrax4.png)   |
-| ![inantrez](../images/memes/ivantreznor.png)  |   ![deyrabe](../images/memes/deyradps.png)    |
-| ![ivancasino](../images/memes/ivancasino.png) | ![reality](../images/memes/returntreznor.png) |
+|  ![expectations](../converted/klubni.jpg)  |  ![ivanlizni](../converted/ivanlizni.jpg) { width="350" } |
+|    ![ivancat](../converted/ivancat.jpg)    |   ![deyrawant](../converted/deyrax4.jpg)   |
+| ![inantrez](../converted/ivantreznor.jpg)  |   ![deyrabe](../converted/deyradps.jpg)    |
+| ![ivancasino](../converted/ivancasino.jpg) | ![reality](../converted/returntreznor.jpg) |
 
-<!-- |   ![ivankick](../images/memes/ivankick.png)   |   ![ivansliv](../images/memes/ivansliv.png)   | -->
+<!-- |   ![ivankick](../converted/ivankick.jpg)   |   ![ivansliv](../converted/ivansliv.jpg)   | -->

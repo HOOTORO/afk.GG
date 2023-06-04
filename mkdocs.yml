@@ -44,8 +44,8 @@ theme:
   font:
     text: Font Awesome
     code: Google Sans Mono
-  favicon: assets/favicon.png
-  logo: assets/logo2rv2.png
+  favicon: converted/favicon.jpg
+  logo: converted/logo2rv2.jpg
   language: ru
 
   features:

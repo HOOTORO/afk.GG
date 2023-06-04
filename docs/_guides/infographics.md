@@ -3,14 +3,14 @@
 
 ## Cero Pet Guide
 
-![cero](images/ceropet.png)
+![cero](../converted/ceropet.jpg)
 ## Stats value level dependant
 
-![stats](images/stats.png)
+![stats](../converted/stats.jpg)
 
 ## Game mechanics
 
-![gm](images/gm.png)
+![gm](../converted/gm.jpg)
 
 ## Awk. Heroes
 
@@ -26,9 +26,9 @@
 
 ## SHOP VALUES
 
-![shopvalues](images/shopval.png)
+![shopvalues](../converted/shopval.jpg)
 ## VIP COST
 
-![vip1](images/vipcost.png)
+![vip1](../converted/vipcost.jpg)
 
-![vip2](images/costvip.webp)
+![vip2](../converted/costvip.webp)
