@@ -120,8 +120,6 @@
 
 ![](../converted/OZFylYDQuPQ.jpg)
 
-![](../converted/Screenshot_20230603-073257.jpg)
-
 ![](../converted/unknown-7.jpg)
 
 ![](../converted/w_vQPEBKRY4.jpg)
