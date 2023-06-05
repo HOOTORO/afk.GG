@@ -157,12 +157,10 @@ nav:
       - _events/index.md
       - Abyssal Expedition: _events/abex.md
       - Hunting Fields: _events/hf.md
-  - Credits:
-      - Contributors: about.md
-      - Community Servers: dis.md
-  - P.Fiction:
+  - Discord: dis.md
+  - Blog:
       - _coolstory/index.md
-      - memes: _coolstory/meme.md
+      - Memes: _coolstory/meme.md
       - RU Community: _coolstory/makerugreatagain.md
       - No Mercy: _coolstory/nm-respect.md
       - The Hospital: _coolstory/th-retirement.md
