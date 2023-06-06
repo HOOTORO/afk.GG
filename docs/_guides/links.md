@@ -1,5 +1,4 @@
-Useful Resources
-----------------
+# Useful Resources
 
 !!! tip "Introduction"
 
@@ -11,7 +10,7 @@ Useful Resources
 ??? info "[Beyond Comprehensive](https://docs.google.com/document/d/1anFewmc_96HU6_mfVsfYniNmRPInNZY7RNMKxW3Kjnw/edit#){:target="_blank" rel="noopener noreferrer"} by Bob49"
 
     > Great in-depth game mechanics testing.  
-    > AFK Tryharder's Holy Bible.  
+    > AFK tryhard's Holy Bible.  
     > Masterpiece for sure!
 
 ??? info "[AFK Analytica](https://www.afkanalytica.com/home){:target="_blank" rel="noopener noreferrer"} by inSeas0n"
@@ -35,13 +34,14 @@ Useful Resources
 ??? info "[Guidelist (Reddit)](https://docs.google.com/spreadsheets/d/e/2PACX-1vT6SZiRrnf2JlvJE4pyHA4DyZVrm9dl0OFm2nNXsQIwwGmfbE6ILbmiY9Fdnb373vLdUYsmTRme4n3K/pubhtml?gid=0&single=true){:target="_blank" rel="noopener noreferrer"}"
 
     Last Actual Guidelist Reddit Version
+
 ## ➤ Tools ◬
 
 ??? example "[Code Redemption](https://cdkey.lilith.com/afk-global){:target="_blank" rel="noopener noreferrer"}"
 
     Don't miss free stuff!
 
-??? example "[AFKalculator and more](https://afkalc.com/){:target="_blank" rel="noopener noreferrer"}"
+??? example "[AFCalculator and more](https://afkalc.com/){:target="_blank" rel="noopener noreferrer"}"
 
     Various stuff
     Help with tierlists creation, AE stuff(relic drop/sell)  
@@ -49,8 +49,8 @@ Useful Resources
 
 ??? example "[AFK Helper](https://afkhelper.nax.is/){:target="_blank" rel="noopener noreferrer"}"
 
-    Great DB with formations for campain and towers stages.  
-    Helpful if you're lookin for non-whale formations of early stages.
+    Great DB with formations for campaign and towers stages.  
+    Helpful if you're looking for non-whale formations of early stages.
 
 ??? example "[AbEx relic drop](https://afk-abyssal.netlify.app/){:target="_blank" rel="noopener noreferrer"}"
 
@@ -83,13 +83,12 @@ Useful Resources
 ??? abstract "[Karam.](https://space.bilibili.com/5482059?from=search&seid=5629209936129208270){:target="_blank" rel="noopener noreferrer"}"
 
     Bilibili guy
+
 ## ➤ Google Tables ⊟
 
 ??? tip "[NM Pulls Data and Templates](https://docs.google.com/spreadsheets/d/1B54LWQrPGhx1Jc7qG1g7ofE_Zs0Y2-Gb83Ka9wsunR8/edit#gid=1494048482){:target="_blank" rel="noopener noreferrer"}"
 
     Templates for drop stat collecting
-
-
 
 ??? tip "[RC Stats](https://docs.google.com/spreadsheets/d/1eXx7XoDyn9RoH8NXGAMPuD8U2ii55feieT6r-bIi1MM/edit#gid=1757883554){:target="_blank" rel="noopener noreferrer"}"
 
