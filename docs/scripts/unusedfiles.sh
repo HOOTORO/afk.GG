@@ -7,7 +7,7 @@ mdlinks=("${(@f)$(grep --color -rwho "\!.*(.*)" docs/**/*.md)}")
 # echo "$images"
 for str in $mdlinks  #$(grep --color -rwh "\!.*(.*)" docs/**/*.md)
 do
-    # echo "Full str: $str"
+    # https://regex101.com/r/86fzFp/1
     if [[ $str =~ '[(].*/(.*)[)]$' ]] && res=$match[1]; then
         echo "CAPTURED: $res"
         if ! (($images[(Ie)$res])); then
