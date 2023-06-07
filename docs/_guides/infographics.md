@@ -1,9 +1,9 @@
 # Picture respesentations
 
-
 ## Cero Pet Guide
 
 ![cero](../converted/ceropet.jpg)
+
 ## Stats value level dependant
 
 ![stats](../converted/stats.jpg)
@@ -11,6 +11,16 @@
 ## Game mechanics
 
 ![gm](../converted/gm.jpg)
+
+## SHOP VALUES
+
+![shopvalues](../converted/shopval.jpg)
+
+## VIP COST
+
+| outdated                          | info                               |
+| --------------------------------- | ---------------------------------- |
+| ![vip1](../converted/vipcost.jpg) | ![vip2](../converted/costvip.webp) {width=300} |
 
 ## Awk. Heroes
 
@@ -23,12 +33,3 @@
 
 {{ read_excel('../assets/furnstats.xlsx', engine='openpyxl', na_filter=False) }}
 
-
-## SHOP VALUES
-
-![shopvalues](../converted/shopval.jpg)
-## VIP COST
-
-![vip1](../converted/vipcost.jpg)
-
-![vip2](../converted/costvip.webp)
