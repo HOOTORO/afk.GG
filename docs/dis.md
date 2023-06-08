@@ -14,7 +14,7 @@ permalink: /dis
 
 ## [EN:Crowd Sourcing](https://discord.gg/EYtHQVWSyn){:target="_blank" rel="noopener noreferrer"}
 
-ОБновления крупных событий (AE, HF...) чаще всего тут появляются первыми в EN сообществе
+Обновления крупных событий (AE, HF...) чаще всего тут появляются первыми в EN сообществе
 
 ## [EN:Cursed Friends](https://discord.gg/5neB6RzAHv){:target="_blank" rel="noopener noreferrer"}
 
