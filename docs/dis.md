@@ -6,7 +6,7 @@ permalink: /dis
 
 ## [RU:NoMercy](https://discord.gg/nom3rcy){:target="_blank" rel="noopener noreferrer"}
 
-Current Top #1 ru guild
+ 2023/05 Top #1 СНГ гильдия
 
 ## [RU:Затонувшая гильдия](https://discord.gg/NFqvgcX3ak)
 
@@ -14,20 +14,20 @@ Current Top #1 ru guild
 
 ## [EN:Crowd Sourcing](https://discord.gg/EYtHQVWSyn){:target="_blank" rel="noopener noreferrer"}
 
-Most accurate data about big event (AE, HF...)
+ОБновления крупных событий (AE, HF...) чаще всего тут появляются первыми в EN сообществе
 
 ## [EN:Cursed Friends](https://discord.gg/5neB6RzAHv){:target="_blank" rel="noopener noreferrer"}
 
-All about Cursed Realm formations
+Посвящен курседу
 
 ## [EN:Seas0n's Analytica](https://discord.gg/n8mutNttdZ){:target="_blank" rel="noopener noreferrer"}
 
-very intresting navigation~!
+Сервер inSeas0n'a, круто придумал с навигацией~!
 
 ## [EN:NaXiS AFK-Helper](https://discord.com/invite/H6NY2hG)
 
- originally was server of NaXiS guild (btw helper originally was created for internal purposes of guild), but when it was opened to the world there also created channel for non-guild-users of [Helper](https://afkhelper.nax.is/)
+ изначально сервер англоговорящей гильдии  NaXiS ([АФКХелпер](https://afkhelper.nax.is/) был задуман для внутригильдейского использования изначально), но когда его пустили по миру, тогда же там появились и разделы не только для своих соги.
 
 ## [International:Official AFK Arena](https://discord.gg/afkarena){:target="_blank" rel="noopener noreferrer"}
 
-most boring server overall
+Офф сервер игры. Скукотища.

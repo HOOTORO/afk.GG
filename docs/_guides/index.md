@@ -1,8 +1,7 @@
 # Содержание
 
-Game Guides, Data, Tools and other stuff related to game.  
-Driven by community!
+Информация по игре созданная руками сообщества. Постарался собрать в одном месте все полезные ресурсы, которыми пользуюсь.
 
-- [Com. Resources](links.md) Collection of resources links driven by Community!  
-- [Infographics](infographics.md) picture representations
-- [TRESCAMBLE!](trescamble.md) by HOOTSMAN
+- [Ссылки](links.md) Коллекция ссылок на ресурсы. Большинство ресурсов англоязычные.  
+- [Инфографика](infographics.md) Информативные картинки, в основном найденные на просторах Реддита/Дискорда
+- [TRESCAMBLE!](trescamble.md) by HOOTSMAN. Авторское описание механизмов работы "Охоты за Сокровищами".

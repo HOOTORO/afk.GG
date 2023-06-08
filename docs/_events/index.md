@@ -2,10 +2,11 @@
 
 Результативные сводки, возможно капля аналитики, соревновательных игровых событий.
 
-- [AbEx](abex.md) - main dish! Abyssal Expedition
-- [HF](hf.md) - Hunting Fields
+- [AbEx](abex.md) - Главное блюдо! Abyssal Expedition
+- [HF](hf.md) - Охотничьи Угодья
 
-??? warning "[Abyssal Expedition Global Ranking](https://rank-afk-cn.lilith.com/index.html){:target="_blank" rel="noopener noreferrer"}"
+??? warning "[AbEx Топ по 3 глобальным серверам игры](https://rank-afk-cn.lilith.com/index.html){:target="_blank" rel="noopener noreferrer"}"
 
-    global not in term "international"  
-    But cn, international and test?(not sure) together
+    Международный, китайский и южно-азиатский[^ns] а.к.а "тестовый" сервера вместе 
+
+[^ns]: но это не точно :laugh:

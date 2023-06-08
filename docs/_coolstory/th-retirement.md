@@ -11,7 +11,7 @@ permalink: /th
 
 ---
 
-# History of «the Hospital»
+# История «the Hospital»
 
 <!-- prettier-ignore -->
 *[хоспа]: сленг. Hospital

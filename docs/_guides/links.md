@@ -2,67 +2,69 @@
 
 !!! tip "Introduction"
 
-        Collection of useful links about Afk Arena, game by Lilith Games  
-        Let's make some rock!
+        Перечисленные ниже ресурсы сделаны сообществом!
 
 ## ➤ Game knowledge ⊛
 
 ??? info "[Beyond Comprehensive](https://docs.google.com/document/d/1anFewmc_96HU6_mfVsfYniNmRPInNZY7RNMKxW3Kjnw/edit#){:target="_blank" rel="noopener noreferrer"} by Bob49"
 
-    > Great in-depth game mechanics testing.  
-    > AFK tryhard's Holy Bible.  
-    > Masterpiece for sure!
+    > Пожалуй наиболее детальный разбор механик и взаимодействий в игре.
+    > Библия трайхарда АФК Арены  
+    > Произведение искусства, за авторством bob49
 
 ??? info "[AFK Analytica](https://www.afkanalytica.com/home){:target="_blank" rel="noopener noreferrer"} by inSeas0n"
 
-    Run by inSeason, last update in 2022.  
-    So information can be outdated.  
-    Better check his [Discord](/afk.GG/dis)
+    Сайт inSeas0n'a. Много разнообразных данных о статах и игровых ресурсах  
+    Так же у него имеется дискорд-сервер [Discord](/afk.GG/dis)
 
 ??? info "[Reddit](https://www.reddit.com/r/afkarena){:target="_blank" rel="noopener noreferrer"}"
 
-    Game subreddit
+    Достаточно много информации по игре можно найти на реддите
 
 ??? info "[AFK Guide](https://afk.guide/){:target="_blank" rel="noopener noreferrer"}"
 
-    Good resource for newcomers!
+    Неплохой ресурс для новичков
 
-??? info "[Mobile Gacha Revenue](https://docs.google.com/spreadsheets/d/13plqhSBip9VNHW98IC1fGwPPY7-_qAi-nOQofdBvENA/edit#gid=1333208165){:target="_blank" rel="noopener noreferrer"}"
+??? info "[Gacha Revenue](https://docs.google.com/spreadsheets/d/13plqhSBip9VNHW98IC1fGwPPY7-_qAi-nOQofdBvENA/edit#gid=1333208165){:target="_blank" rel="noopener noreferrer"}"
 
-    excel table with data about revenue of mobile gacha games 
+    Таблица с капитализацией популярных гача игр.
 
 ??? info "[Guidelist (Reddit)](https://docs.google.com/spreadsheets/d/e/2PACX-1vT6SZiRrnf2JlvJE4pyHA4DyZVrm9dl0OFm2nNXsQIwwGmfbE6ILbmiY9Fdnb373vLdUYsmTRme4n3K/pubhtml?gid=0&single=true){:target="_blank" rel="noopener noreferrer"}"
 
-    Last Actual Guidelist Reddit Version
+    Гайдлист по версии реддита
 
 ## ➤ Tools ◬
 
-??? example "[Code Redemption](https://cdkey.lilith.com/afk-global){:target="_blank" rel="noopener noreferrer"}"
+??? example "[Коды возмещения](https://cdkey.lilith.com/afk-global){:target="_blank" rel="noopener noreferrer"}"
+    Выше линк на офф сайт для активации кодов, так же есть [open source iOS|Android приложение](https://afkredeem.com/)
+    Которое будет уведомлять о всех выпущеных кодах и активировать без необходимости посещать сайт Lilith. Так что вы никогда не пропустите ни одного кода!
 
-    Don't miss free stuff!
+??? example "[AFCalculator и не только](https://afkalc.com/){:target="_blank" rel="noopener noreferrer"}"
 
-??? example "[AFCalculator and more](https://afkalc.com/){:target="_blank" rel="noopener noreferrer"}"
+    Много полезный инструментов, создание тиер-листов.
+    Калькуляторы:
 
-    Various stuff
-    Help with tierlists creation, AE stuff(relic drop/sell)  
-    calculators (costs, loot, si)  
+    - для бездны дропа/продажи реликов
+    - сравнения value ресурсов
+    - ИП эмблем
+    - АФК и Быстрых наград
 
 ??? example "[AFK Helper](https://afkhelper.nax.is/){:target="_blank" rel="noopener noreferrer"}"
 
-    Great DB with formations for campaign and towers stages.  
-    Helpful if you're looking for non-whale formations of early stages.
+    База проходок кампании/башек. Теряет актуальность по мере снижения сложности в кампании.
+    Но все еще остается полезной для поиска адекватных проходок, особенно на ранних стадиях
 
 ??? example "[AbEx relic drop](https://afk-abyssal.netlify.app/){:target="_blank" rel="noopener noreferrer"}"
 
-    another relic drop calculator
+    Еще один калькулятор дроп реликов в бездне
 
 ??? example "[Engravings Calculator](https://akagipanda.github.io/){:target="_blank" rel="noopener noreferrer"}"
 
-    Calculate time estimate
+    Калькулятор для примерного расчета прироста грав.
 
 ??? example "[Elder Tree Planner](https://docs.google.com/spreadsheets/d/1AUbMoJifxG0zCs1SkKTPmLy76qIWyCwHH3gqEu4k7QU/edit#gid=2139514170){:target="_blank" rel="noopener noreferrer"}"
 
-    Calculates juice income and time til desired tree cap.
+    Калькулятор для примерного расчета прироста сока(дерево), показывает временные рамки до капа личного/общего.
 
 ## ➤ Videos
 
@@ -70,29 +72,30 @@
 
     [Bilibili search request](https://search.bilibili.com/all?keyword=%E5%89%91%E4%B8%8E%E8%BF%9C%E5%BE%81%20%E5%85%AC%E4%BC%9A%E8%AF%95%E7%82%BC&from_source=webtop_search&spm_id_from=333.788&search_source=5){:target="_blank" rel="noopener noreferrer"}
 
-    Predefined cn words 'afk arena guild trial'
+    Поиск испытаний гильдии, в ссылке на китайском указан запрос 'afk arena guild trial'
 
 ??? abstract "[cr, camp and more](https://www.youtube.com/channel/UCqXC4sY0uLHke70krnOuBmA)"
 
-    cn youtuber
+    Китайский ютабер
 
 ??? abstract "[Wombat](https://www.youtube.com/@Wombat907){:target="_blank" rel="noopener noreferrer"}"
 
-    cn youtuber
+    Китайский ютабер
 
 ??? abstract "[Karam.](https://space.bilibili.com/5482059?from=search&seid=5629209936129208270){:target="_blank" rel="noopener noreferrer"}"
 
-    Bilibili guy
+    Весьма известный своими проходками Bilibili паренек
 
 ## ➤ Google Tables ⊟
 
 ??? tip "[NM Pulls Data and Templates](https://docs.google.com/spreadsheets/d/1B54LWQrPGhx1Jc7qG1g7ofE_Zs0Y2-Gb83Ka9wsunR8/edit#gid=1494048482){:target="_blank" rel="noopener noreferrer"}"
 
-    Templates for drop stat collecting
+    Шаблоны для ведения статистики по призывам
 
 ??? tip "[RC Stats](https://docs.google.com/spreadsheets/d/1eXx7XoDyn9RoH8NXGAMPuD8U2ii55feieT6r-bIi1MM/edit#gid=1757883554){:target="_blank" rel="noopener noreferrer"}"
 
-    subj.
+    Табличная версия, статов, которые можно посмотреть у inSeas0n
+
 ??? tip "[AFK Arena Assets](https://drive.google.com/drive/u/0/folders/1j7Hi-HoKdNjYJIJyq-UEGtIQSgv_tdCo){:target="_blank" rel="noopener noreferrer"}"
 
-    maybe useful for content makers
+    Внутриигровые картинки, анимации и прочее. Может быть полезным для создателей контента.

@@ -1,4 +1,4 @@
-| history                                                            | in                                                | memes                                     |
+| История                                                            | в                                                | мемах                                     |
 | :----------------------------------------------------------------- | :------------------------------------------------ | :---------------------------------------- |
 | ![serioushoot](../assets/images/7.jpg)                             | ![bbsirhohland](../assets/images/2.jpg)           | ![byeyorn](../assets/images/3.jpg)        |
 | ![fathoot](../assets/images/4.jpg)                                 | ![aefast](../assets/images/1.jpg)                 | ![gamepid](../assets/images/6.jpg)        |
