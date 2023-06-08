@@ -8,9 +8,9 @@
 
 ??? info "[Beyond Comprehensive](https://docs.google.com/document/d/1anFewmc_96HU6_mfVsfYniNmRPInNZY7RNMKxW3Kjnw/edit#){:target="_blank" rel="noopener noreferrer"} by Bob49"
 
-    > Пожалуй наиболее детальный разбор механик и взаимодействий в игре.
-    > Библия трайхарда АФК Арены  
-    > Произведение искусства, за авторством bob49
+    > Пожалуй наиболее детальный разбор механик и взаимодействий в игре.  
+    > Библия трайхарда АФК Арены   
+    > Произведение искусства, за авторством bob49  
 
 ??? info "[AFK Analytica](https://www.afkanalytica.com/home){:target="_blank" rel="noopener noreferrer"} by inSeas0n"
 
