@@ -149,19 +149,19 @@ markdown_extensions:
 nav:
   - Main: index.md
   # - nm: nmem.md
-  - Knowledge Base:
+  - База знаний:
       - _guides/index.md
-      - Community Resource: _guides/links.md
-      - Infographica: _guides/infographics.md
-      - TRESCAMBLE: _guides/trescamble.md
-  - RU|Rankings:
+      - Ресурсы сообщества: _guides/links.md
+      - Инфографика: _guides/infographics.md
+      - TRESCAMBLE. Охота за костылями: _guides/trescamble.md
+  - СНГ Топ:
       - _events/index.md
-      - Abyssal Expedition: _events/abex.md
-      - Hunting Fields: _events/hf.md
+      - Abyssal Expedition/Бездна: _events/abex.md
+      - Hunting Fields/Охотничьи угодья: _events/hf.md
   - Discord: dis.md
-  - Blog:
+  - Блог:
       - _coolstory/index.md
-      - Memes: _coolstory/meme.md
+      - Мемы. Сделанно в СНГ: _coolstory/meme.md
       - RU Community: _coolstory/makerugreatagain.md
       - No Mercy: _coolstory/nm-respect.md
       - The Hospital: _coolstory/th-retirement.md
