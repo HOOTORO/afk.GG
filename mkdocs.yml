@@ -150,10 +150,10 @@ nav:
   - Main: index.md
   # - nm: nmem.md
   - База знаний:
-      - _guides/index.md
-      - Ресурсы сообщества: _guides/links.md
-      - Инфографика: _guides/infographics.md
-      - TRESCAMBLE. Охота за костылями: _guides/trescamble.md
+      - kb/index.md
+      - Ресурсы сообщества: kb/links.md
+      - Инфографика: kb/infographics.md
+      - TRESCAMBLE. Охота за костылями: kb/trescamble.md
   - СНГ Топ:
       - _events/index.md
       - Abyssal Expedition/Бездна: _events/abex.md
