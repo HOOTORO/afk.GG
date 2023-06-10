@@ -1,6 +1,6 @@
 # Memestrory
 
-!!! tip "[Предложка для мемов](https://discord.gg/xjJavhAvv6) _Discord_" 
+!!! tip "[Предложка для мемов](https://discord.gg/xjJavhAvv6) <- _Discord_" 
 
         Если чем поделиться?  
         Не держи в себе, закинь картинку в предложку.  
