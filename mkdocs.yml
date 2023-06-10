@@ -155,13 +155,14 @@ nav:
       - Инфографика: kb/infographics.md
       - TRESCAMBLE. Охота за костылями: kb/trescamble.md
   - СНГ Топ:
-      - _events/index.md
-      - Abyssal Expedition/Бездна: _events/abex.md
-      - Hunting Fields/Охотничьи угодья: _events/hf.md
+      - top/index.md
+      - Abyssal Expedition/Бездна: top/abex.md
+      - Hunting Fields/Охотничьи угодья: top/hf.md
   - Discord: dis.md
   - Блог:
-      - _coolstory/index.md
-      - Мемы. Сделанно в СНГ: _coolstory/meme.md
-      - RU Community: _coolstory/makerugreatagain.md
-      - No Mercy: _coolstory/nm-respect.md
-      - The Hospital: _coolstory/th-retirement.md
+      - blog/index.md
+      - Мемы. Сделанно в СНГ: blog/meme.md
+      - Сон сутулой собаки: blog/dogdream.md
+      - RU Community: blog/makerugreatagain.md
+      - No Mercy: blog/nm-respect.md
+      - The Hospital: blog/th-retirement.md

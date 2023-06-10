@@ -65,3 +65,9 @@ em {
   justify-content: space-between;
   -webkit-font-smoothing: subpixel-antialiased;
 }
+
+a[href*="dogdream"]::after {
+  content: "NEW!";
+  color: red;
+  display: contents;
+}
