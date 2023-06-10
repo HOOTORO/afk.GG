@@ -1,6 +1,6 @@
 # Memestrory
 
-!!! tip "[Предложка для мемов](https://discord.gg/xjJavhAvv6) <- _Discord_" 
+!!! tip "_Discord_ -> [Предложка для мемов](https://discord.gg/xjJavhAvv6){target="_blank" rel="noopener noreferrer"} <-"
 
         Если чем поделиться?  
         Не держи в себе, закинь картинку в предложку.  
