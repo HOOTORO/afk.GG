@@ -12,4 +12,9 @@
 
 ## Local Prices
 
-{{ read_csv('../assets/tables/local.csv', na_filter=True, keep_default_na=False, skip_blank_lines=False,  colalign=("center",)) }} 
+{{ read_csv('../assets/tables/loc.csv', na_filter=True, keep_default_na=False, skip_blank_lines=False,  colalign=("center",)) }} 
+
+## Deals Value
+
+{{ read_csv('../assets/tables/rf2p.csv', engine='pyarrow', na_filter=True, keep_default_na=False, skip_blank_lines=False, floatfmt="f.",  colalign=("center",)) }} 
+
