@@ -5,3 +5,9 @@
 {% block htmltitle %}
 <title>afk.GG</title>
 {% endblock %}
+{% block scripts %}
+  <!-- Add scripts that need to run before here -->
+  <script src="{{ 'javascripts/tablesort.js' | url }}""></script>
+  {{ super() }}
+  <!-- Add scripts that need to run afterwards here -->
+{% endblock %}
