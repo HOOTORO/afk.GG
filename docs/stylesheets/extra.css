@@ -73,11 +73,11 @@ a[href*="dogdream/"]::after {
 }
 
 table {
+  margin: 20px auto;
   border-collapse: collapse;
   border: 1px solid #eee;
   border-bottom: 2px solid #00cccc;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
-    0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
 }
 
 table tr:hover td {
@@ -91,6 +91,7 @@ tbody td {
   border: 0.5px solid #eee;
   padding: 10px 10px !important;
   border-collapse: collapse;
+  vertical-align: middle !important;
 }
 
 
@@ -113,13 +114,11 @@ tr td:last-of-type {
 
 
 th {
-  width: 40px;
   text-align: left;
   white-space: nowrap;
-  transform: rotate(-40deg);
+  /* transform: rotate(-40deg); */
   padding-left: 0;
   margin-bottom: 1px;
-  /* vertical-align: middle !important; */
 }
 
 thead {
