@@ -1,4 +1,4 @@
-import os
+# import os
 from io import BytesIO
 
 import pandas as pd
@@ -6,7 +6,7 @@ import requests
 
 
 def on_pre_build(config, **kwargs) -> None:
-    if os.environ['disable_hook'] == 1: return None
+    # if os.environ['disable_hook'] == 1: return None
     spreadsheet_id = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY"
     sheet_ids = [156134846, 249616100]
     url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}/export?gid={sheet_ids[0]}&format=csv"
