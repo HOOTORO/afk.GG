@@ -91,13 +91,10 @@ tbody td {
   border: 0.5px solid #eee;
   padding: 10px 10px !important;
   border-collapse: collapse;
-  vertical-align: middle !important;
+  vertical-align: top !important;
+  max-width: fit-content;
 }
 
-
-table th.last {
-  border-right: none;
-}
 
 tr:nth-child(even) {
   background-color: #ffd4002b;
@@ -115,14 +112,15 @@ tr td:last-of-type {
 
 th {
   text-align: left;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   /* transform: rotate(-40deg); */
   padding-left: 0;
   margin-bottom: 1px;
+  vertical-align: top;
 }
 
 thead {
   text-transform: uppercase;
   text-decoration: underline;
-  height:60px;
+  height:80px;
 }
