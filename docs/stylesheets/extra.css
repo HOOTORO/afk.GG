@@ -66,9 +66,19 @@ em {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-a[href*="dogdream/"]::after {
+a[href$="dogdream/"]::after{
   content: "NEW!";
   color: red;
+  display: contents;
+}
+
+
+/* .upd::after , */
+a[href$="th-retirement/"]::after,
+a[href$="#before-beginning"]::after{
+  content: "UPD!";
+  color: red;
+  padding-left: 20px;
   display: contents;
 }
 
