@@ -94,10 +94,7 @@ table tr:hover td {
   color: #72c2ca;
   background-color: #5701eb37;
 }
-tr, td {
-  height: 30px;
-  min-height: 30px;
-}
+
 table th,
 tbody td {
   text-align: left;
