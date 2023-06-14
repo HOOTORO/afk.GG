@@ -323,3 +323,10 @@ input:checked + label:before {
   content: '';
   background:#666;
 } */
+
+
+#tbl {
+  display: block;
+  margin: auto;
+  width: 8em;
+}

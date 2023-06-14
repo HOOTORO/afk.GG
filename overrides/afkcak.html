@@ -21,14 +21,12 @@
 {% endblock %}
 {% block scripts %}
   <!-- Add scripts that need to run before here -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="{{ 'javascripts/tablerender.js' | url }}">
-  // findTable()
-  </script>
-  <script src="{{ 'javascripts/selectlist.js' | url }}"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <script src="{{ 'javascripts/main.js' | url }}"></script>
+  <!-- <script src="{{ 'javascripts/selectlist.js' | url }}"></script>
   <script src="{{ 'javascripts/select.js' | url }}"></script>
-  <script src="{{ 'javascripts/clc.js' | url }}"></script>
+  <script src="{{ 'javascripts/clc.js' | url }}"></script> -->
   {{ super() }}
   <!-- Add scripts that need to run afterwards here -->
 {% endblock %}
