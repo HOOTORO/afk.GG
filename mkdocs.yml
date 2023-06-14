@@ -11,10 +11,17 @@ theme:
   custom_dir: overrides
   extra_css:
     - stylesheets/extra.css
+    - stylesheets/select.css
   extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    - javascripts/selectlist.js
+    - javascripts/select.js
+    - javascripts/tablerender.js
+    - javascripts/clc.js
+    # - https://code.jquery.com/jquery-3.6.0.slim.min.js
     - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
     - javascripts/tablesort.js
-    # - javascripts/extra.js
   
   palette:
     # Palette toggle for light mode
