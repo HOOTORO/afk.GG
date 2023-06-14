@@ -215,10 +215,10 @@ body .dribbble img {
 }
 .select-menu select,
 .select-menu button {
-  font-family: "Mukta Malar", Arial;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 14px;
   margin: 0;
   border: 0;
   outline: 0;
