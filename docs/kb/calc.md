@@ -11,5 +11,5 @@ title: AFK calc
 
 ## Dia Prices
 
-{{ read_csv('../assets/tables/val.csv', na_filter=True, keep_default_na=False, skip_blank_lines=False,  colalign=("center",)) }} 
+<!-- {{ read_csv('../assets/tables/val.csv', na_filter=True, keep_default_na=False, skip_blank_lines=False,  colalign=("center",)) }}  -->
 

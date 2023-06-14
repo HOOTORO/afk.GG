@@ -1,8 +1,12 @@
-window.onload = function () {
+window.onload = async function () {
+  await init().finally(() => renderPriority());
+};
+
+function renderPriority() {
   findTable();
   selectPriority();
   renderHorizontal();
-};
+}
 
 function findTable() {
   const tables = document.getElementsByTagName("table");
@@ -18,17 +22,17 @@ function selectPriority() {
     const element = tbl.rows[i].cells[5];
     const val = element.innerHTML;
     element.innerHTML = "";
-    const selectlist = document.createElement("select");
-    selectlist.setAttribute("data-menu", "horizontal");
+    const list = document.createElement("select");
+    list.setAttribute("data-menu", "horizontal");
     [0, 1, 2, 3, 4, 5].forEach((el) => {
       const opt = document.createElement("option");
       if (val == el.toString()) {
         opt.setAttribute("selected", "");
       }
       opt.innerHTML = el.toString();
-      selectlist.appendChild(opt);
+      list.appendChild(opt);
     });
-    element.appendChild(selectlist);
+    element.appendChild(list);
   }
 }
 

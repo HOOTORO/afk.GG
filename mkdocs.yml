@@ -38,8 +38,8 @@ theme:
     # text: Google Sans
     # code: Fira Mono
   font:
-    text: Font Awesome
-    code: Google Sans Mono
+    text: Open Sans
+    code: Average Sans
   favicon: converted/favicon.jpg
   logo: converted/logo2rv2.jpg
   language: ru
@@ -67,7 +67,8 @@ plugins:
       minify_html: true
   - glightbox:
       draggable: false
-  - table-reader
+  # - table-reader
+  # - extra-sass
   # sponsor feature, maybe someday
   # - privacy:
   #     enabled: !ENV [CI, false]
@@ -79,7 +80,7 @@ hooks:
     - scripts/hooks.py
 
 extra:
-  version: 1.1
+  # version: 1.1
   social:
     - icon: fontawesome/brands/discord
       link: https://discordid.netlify.app/?id=88370628763078656
@@ -122,8 +123,9 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
+      # broke after fix settings xD
+      # line_spans: __span
+      # pygments_lang_class: true
       use_pygments: true
       auto_title: true
       linenums_style: pymdownx-inline
