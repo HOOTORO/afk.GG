@@ -9,3 +9,5 @@ newm*
 docs/assets/tables/*csv
 __pycache*
 *.log
+node_modules
+dist
