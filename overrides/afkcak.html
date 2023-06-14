@@ -7,15 +7,8 @@
 <!-- Content -->
 {% block content %}
   {{ super() }}
-  <div id="tbl">
+  <div id="app">
   </div>
-  <form>
-    <select id="ddlViewBy">
-      <option value="1">test1</option>
-      <option value="2" selected="selected">test2</option>
-      <option value="3">test3</option>
-    </select>
-  </form>
 
   {{ content }}
 {% endblock %}

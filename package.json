@@ -10,7 +10,7 @@
     "name": "HOLYDOOM HOOTSMAN"
   },
   "scripts": {
-    "build": "tsc --build",
+    "RE:build": "tsc --build",
     "serve": "tsc --build && mkdocs serve",
     "serve.th": "tsc --build && mkdocs serve --watch-theme"
   },
