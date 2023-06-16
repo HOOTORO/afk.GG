@@ -1,4 +1,4 @@
-function renderBalck() {
+function renderBlack() {
   $("select[data-menu]").each(function () {
     let select = $(this),
       options = select.find("option"),
@@ -12,7 +12,7 @@ function renderBalck() {
       list.append($("<li />").text(option.text()));
     });
 
-    menu.css("--t", select.find(":selected").index() * -41 + "px");
+    menu.css("--t", select.find(":selected").index() * -1 + "px");
 
     select.wrap(menu);
 

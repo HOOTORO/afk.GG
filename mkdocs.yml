@@ -40,8 +40,8 @@ theme:
   font:
     text: Open Sans
     code: Average Sans
-  favicon: converted/favicon.jpg
-  logo: converted/logo2rv2.jpg
+  favicon: favicon.jpg
+  logo: assets/logo2rv2.jpg
   language: ru
 
   features:
@@ -67,7 +67,12 @@ plugins:
       minify_html: true
   - glightbox:
       draggable: false
-  # - table-reader
+      touchNavigation: true
+      loop: true
+      auto_caption: true
+      caption_position: top
+      zoomable: true
+  - table-reader
   # - extra-sass
   # sponsor feature, maybe someday
   # - privacy:
@@ -148,16 +153,20 @@ nav:
   # - nm: nmem.md
   - База знаний:
       - kb/index.md
-      - Ресурсы сообщества: kb/links.md
+      - Полезные ресурсы: kb/links.md
       - Инфографика: kb/infographics.md
       - TRESCAMBLE. Охота за костылями: kb/trescamble.md
-      - Diamond Values: kb/diaval.md
-      - Tree Calculator: kb/calc.md
-  - СНГ Топ:
+      - Tools:
+        - Dia Values: tools/diaval.md
+        - Tree Estimator: tools/calc.md 
+  - Сообщество:
       - top/index.md
-      - Abyssal Expedition/Бездна: top/abex.md
-      - Hunting Fields/Охотничьи угодья: top/hf.md
-  - Discord: dis.md
+      - СНГ Топ:
+        - AbEx/Бездна: top/abex.md
+        - HF/Охотничьи угодья: top/hf.md
+      - Discord: 
+        - (RU) Made in USSR: disru.md
+        - (EN) International: disen.md
   - Блог:
       - blog/index.md
       - Мемы. Сделанно в СНГ: blog/meme.md

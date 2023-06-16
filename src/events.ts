@@ -1,3 +1,33 @@
+// window.onload = async function () {
+//   await init()
+//     .then(() => renderPriority())
+//     .finally(() => populateStorage());
+// };
+
+let app = document.getElementById("app");
+if (!localStorage.getItem("app")) {
+  populateStorage();
+} else {
+  setApp();
+}
+app.onchange = populateStorage;
+
+function setApp() {
+  console.log("SET APP");
+  const appState = localStorage.getItem("app");
+  document.getElementById("app").innerHTML = appState;
+}
+
+function populateStorage() {
+  console.log("POPULI STORAGE!!");
+  localStorage.setItem("app", app.innerHTML);
+  setApp();
+}
+
+window.onhashchange = function () {
+  console.log("Change!" + this);
+};
+
 // CLICK Black Select
 // $(document).on("click", ".select-menu", function (e) {
 //   let menu = $(this);
@@ -52,8 +82,8 @@ $(document).on("click", ".select-menu", function (e) {
         .text(nextOption.text())
         .appendTo(buttonDiv);
 
-    options.prop("selected", false);
-    nextOption.prop("selected", true);
+    options.prop("selected", "");
+    nextOption.prop("selected", "selected");
 
     menu.addClass("change");
 

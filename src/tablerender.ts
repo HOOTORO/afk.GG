@@ -1,7 +1,3 @@
-window.onload = async function () {
-  await init().finally(() => renderPriority());
-};
-
 function renderPriority() {
   findTable();
   selectPriority();
@@ -18,18 +14,18 @@ function findTable() {
 
 function selectPriority() {
   const tbl = document.getElementById("afk-table-0") as HTMLTableElement;
-  for (let i = 1; i < tbl.rows.length - 1; i++) {
+  for (let i = 1; i < tbl.rows.length; i++) {
     const element = tbl.rows[i].cells[5];
-    const val = element.innerHTML;
+    const val = element.innerText;
     element.innerHTML = "";
     const list = document.createElement("select");
     list.setAttribute("data-menu", "horizontal");
     [0, 1, 2, 3, 4, 5].forEach((el) => {
       const opt = document.createElement("option");
-      if (val == el.toString()) {
-        opt.setAttribute("selected", "");
-      }
       opt.innerHTML = el.toString();
+      if (val === el.toString()) {
+        opt.setAttribute("selected", "selected");
+      }
       list.appendChild(opt);
     });
     element.appendChild(list);

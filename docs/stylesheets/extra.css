@@ -13,6 +13,11 @@
   margin: 100px;
 }
 
+figure > img{
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .glightbox img {
   user-drag: none;
   -webkit-user-drag: none;

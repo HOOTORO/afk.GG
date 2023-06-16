@@ -34,6 +34,32 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+// window.onload = async function () {
+//   await init()
+//     .then(() => renderPriority())
+//     .finally(() => populateStorage());
+// };
+var app = document.getElementById("app");
+if (!localStorage.getItem("app")) {
+    populateStorage();
+}
+else {
+    setApp();
+}
+app.onchange = populateStorage;
+function setApp() {
+    console.log("SET APP");
+    var appState = localStorage.getItem("app");
+    document.getElementById("app").innerHTML = appState;
+}
+function populateStorage() {
+    console.log("POPULI STORAGE!!");
+    localStorage.setItem("app", app.innerHTML);
+    setApp();
+}
+window.onhashchange = function () {
+    console.log("Change!" + this);
+};
 // CLICK Black Select
 // $(document).on("click", ".select-menu", function (e) {
 //   let menu = $(this);
@@ -69,8 +95,8 @@ $(document).on("click", ".select-menu", function (e) {
             .addClass("next")
             .text(nextOption.text())
             .appendTo(buttonDiv);
-        options.prop("selected", false);
-        nextOption.prop("selected", true);
+        options.prop("selected", "");
+        nextOption.prop("selected", "selected");
         menu.addClass("change");
         setTimeout(function () {
             next_1.removeClass("next");
@@ -79,7 +105,7 @@ $(document).on("click", ".select-menu", function (e) {
         }, 650);
     }
 });
-function renderBalck() {
+function renderBlack() {
     $("select[data-menu]").each(function () {
         var select = $(this), options = select.find("option"), menu = $("<div />").addClass("select-menu"), button = $("<div />").addClass("button"), list = $("<ul />");
         $("<em />").prependTo(button);
@@ -87,7 +113,7 @@ function renderBalck() {
             var option = $(this);
             list.append($("<li />").text(option.text()));
         });
-        menu.css("--t", select.find(":selected").index() * -41 + "px");
+        menu.css("--t", select.find(":selected").index() * -1 + "px");
         select.wrap(menu);
         button.append(list).insertAfter(select);
         list.clone().insertAfter(button);
@@ -194,18 +220,6 @@ function remCol(id, n) {
     var tb = document.getElementById(id);
     tb.deleteCaption();
 }
-window.onload = function () {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, init().finally(function () { return renderPriority(); })];
-                case 1:
-                    _a.sent();
-                    return [2 /*return*/];
-            }
-        });
-    });
-};
 function renderPriority() {
     findTable();
     selectPriority();
@@ -222,21 +236,21 @@ function selectPriority() {
     var tbl = document.getElementById("afk-table-0");
     var _loop_1 = function (i) {
         var element = tbl.rows[i].cells[5];
-        var val = element.innerHTML;
+        var val = element.innerText;
         element.innerHTML = "";
         var list = document.createElement("select");
         list.setAttribute("data-menu", "horizontal");
         [0, 1, 2, 3, 4, 5].forEach(function (el) {
             var opt = document.createElement("option");
-            if (val == el.toString()) {
-                opt.setAttribute("selected", "");
-            }
             opt.innerHTML = el.toString();
+            if (val === el.toString()) {
+                opt.setAttribute("selected", "selected");
+            }
             list.appendChild(opt);
         });
         element.appendChild(list);
     };
-    for (var i = 1; i < tbl.rows.length - 1; i++) {
+    for (var i = 1; i < tbl.rows.length; i++) {
         _loop_1(i);
     }
 }
