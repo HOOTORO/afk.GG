@@ -1,13 +1,13 @@
-.mypy*
+# hidden
+.mypy_cache
 .DS_Store
-.vscode
+node_modules
 site
-notreadme.md
-404.md
-new.md
+# only ignored
+.vscode
 newm*
 docs/assets/tables/*csv
 __pycache*
 *.log
-node_modules
 dist
+ignored

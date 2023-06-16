@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
       "rootDir": "./src",
-      // "outDir": "./docs/javascripts",
       "outFile": "./docs/javascripts/main.js",
       "allowJs": true,
       "target": "es5"

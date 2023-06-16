@@ -1,6 +1,6 @@
 # Useful Resources
 
-!!! tip "Introduction"
+!!! sh-luv "Powered by Community!"
 
         Перечисленные ниже ресурсы сделаны сообществом!
 
