@@ -12,7 +12,7 @@
   "scripts": {
     "RE:build": "tsc --build",
     "serve": "tsc --build && mkdocs serve",
-    "serve.th": "tsc --build && mkdocs serve --watch-theme"
+    "serve.th": "tsc --build && tsc --watch & mkdocs serve --watch-theme"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.16",

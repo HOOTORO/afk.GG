@@ -127,8 +127,6 @@ tr td:last-of-type {
 
 th {
   text-align: left;
-  /* white-space: nowrap; */
-  /* transform: rotate(-40deg); */
   padding-left: 0;
   margin-bottom: 1px;
   vertical-align: top;
@@ -153,7 +151,6 @@ thead {
 } */
 
 .dropdown-el {
-  margin-top: 20vh;
   min-width: 12em;
   position: relative;
   display: inline-block;
@@ -239,9 +236,27 @@ thead {
   top: 0.55em;
 }
 
-
 #tbl {
   display: block;
   margin: auto;
   width: 8em;
+}
+
+.out {
+  padding: 20px;
+}
+
+output {
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid violet;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+output > div {
+  padding: 2px 20px;
 }

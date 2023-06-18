@@ -34,81 +34,296 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-// window.onload = async function () {
-//   await init()
-//     .then(() => renderPriority())
-//     .finally(() => populateStorage());
-// };
-var app = document.getElementById("app");
-if (!localStorage.getItem("app")) {
-    populateStorage();
+var sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
+var base = "https://docs.google.com/spreadsheets/d/".concat(sheetId, "/gviz/tq?");
+var query = encodeURIComponent("Select *");
+var url = function (x) {
+    return "".concat(base, "&sheet=").concat(x, "&tq=").concat(query);
+};
+var resources = [
+    { id: "bait", label: "Bait" },
+    { id: "reds", label: "Red Cores" },
+    { id: "tc", label: "Temple Card" },
+    { id: "sg", label: "Stargazer Card" },
+    { id: "dia", label: "Diamonds" },
+    { id: "yells", label: "Yellow Shards" },
+    { id: "poe", label: "POE" },
+    { id: "dust", label: "Dust" },
+    { id: "juice", label: "Twisted Essence" },
+    { id: "mcard", label: "Furn. Card" },
+    { id: "ss", label: "Secret Spices" }
+];
+var sources = [
+    { id: "cursed-realm", label: "Cursed Realm", tableName: "CR", period: 7, display: true },
+    { id: "treasure-scramble", label: "Treasure Scramble", tableName: "TS", period: 7, display: true },
+    { id: "nightmare-corridor", label: "Nightmare Corridor", tableName: "NC", period: 7, display: true },
+    { id: "afk-income", label: "Base AFK Income", tableName: "AFK", period: 1 / 24, display: false }
+];
+// CLICK Black Select
+$(document).on("click", ".select-menu", function (e) {
+    var menu = $(this);
+    if (!menu.hasClass("open")) {
+        menu.addClass("open");
+    }
+});
+$(document).on("click", ".select-menu > ul > li", function (e) {
+    var li = $(this), menu = li.parent().parent(), select = menu.children("select"), selected = select.find("option:selected"), index = li.index();
+    menu.css("--t", index * -38 + "px");
+    selected.removeAttr("selected");
+    select.find("option").eq(index).attr("selected", "");
+    menu.addClass(index > selected.index() ? "tilt-down" : "tilt-up");
+    select.trigger("change");
+    setTimeout(function () {
+        menu.removeClass("open tilt-up tilt-down");
+    }, 500);
+});
+$(document).on("click", function (e) {
+    e.stopPropagation();
+    if ($(".select-menu").has(e.target).length === 0) {
+        $(".select-menu").removeClass("open");
+    }
+});
+// =>  <=
+var rewards = [];
+function getRewards(source, rank) {
+    return rewards.find(function (v) { return v.rank === rank && v.source === source; });
 }
-else {
-    setApp();
+function userInput() {
+    return __awaiter(this, void 0, void 0, function () {
+        var inputForm, _i, _a, tbl;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    inputForm = document.createElement("form");
+                    inputForm.setAttribute("class", "a-form");
+                    _i = 0, _a = sources.filter(function (value) { return value.display; });
+                    _b.label = 1;
+                case 1:
+                    if (!(_i < _a.length)) return [3 /*break*/, 4];
+                    tbl = _a[_i];
+                    return [4 /*yield*/, getSelectList(tbl)
+                            .then(function (h) { return inputForm.appendChild(h); })
+                            .finally(function () { return console.log("we re donr"); })];
+                case 2:
+                    _b.sent();
+                    _b.label = 3;
+                case 3:
+                    _i++;
+                    return [3 /*break*/, 1];
+                case 4: return [2 /*return*/, inputForm];
+            }
+        });
+    });
+}
+function getSelectList(re) {
+    return __awaiter(this, void 0, void 0, function () {
+        var listName;
+        return __generator(this, function (_a) {
+            listName = document.createElement("h4");
+            listName.textContent = re.label;
+            fetchTableData(re.tableName)
+                .then(function (tt) { return getHeaders(re.label, tt); })
+                .then(function (t) { return getOptions(t); })
+                .then(function (o) { return listName.appendChild(makeBlackSelect(re.id, o)); })
+                .finally(function () { return app.dispatchEvent(blackEvent); });
+            return [2 /*return*/, listName];
+        });
+    });
+}
+function getOptions(table) {
+    var firstColumn = [];
+    for (var _i = 0, _a = table.rows; _i < _a.length; _i++) {
+        var element = _a[_i];
+        var row = element;
+        //iterate through rows
+        firstColumn.push(row.c[0].v);
+        //rows would be accessed using the "row" variable assigned in the for loop
+    }
+    return firstColumn;
+}
+function getHeaders(source, table) {
+    var columns = [];
+    table.cols.forEach(function (element, index) {
+        columns.push({ id: index, label: element.label });
+    });
+    table.rows.forEach(function (el) {
+        var r = {
+            source: source.toLowerCase().replace(" ", "-"),
+            rank: el.c[0].v,
+            bait: 0,
+            reds: 0,
+            sg: 0,
+            tc: 0,
+            dia: 0,
+            yells: 0,
+            poe: 0,
+            dust: 0,
+            juice: 0,
+            mcard: 0,
+            ss: 0,
+        };
+        var keys = Object.keys(r);
+        columns.forEach(function (col) {
+            var _a;
+            if (el.c[col.id] && keys.some(function (e) { return e === col.label.toLowerCase(); })) {
+                r[col.label.toLowerCase()] = (_a = el.c[col.id]) === null || _a === void 0 ? void 0 : _a.v;
+            }
+        });
+        rewards.push(r);
+    });
+    return table;
+}
+window.onload = function () {
+    startApp();
+};
+var app = document.getElementById("app");
+app.addEventListener("BlackSelect", function (e) {
+    console.log("Black FIRE!");
+    console.log(e);
+    renderBlack();
+    checkStorage();
+}, false);
+function startApp() {
+    userInput()
+        .then(function (u) { return app.appendChild(u); })
+        .then(function () { return app.appendChild(makeOut()); })
+        .finally(function () { return console.log("app started"); });
 }
 app.onchange = populateStorage;
+function checkStorage() {
+    $(".select-menu > select").each(function () {
+        if (!localStorage.getItem(this.id)) {
+            populateStorage();
+        }
+        else {
+            setApp();
+        }
+    });
+}
 function setApp() {
+    var _a;
     console.log("SET APP");
-    var appState = localStorage.getItem("app");
-    document.getElementById("app").innerHTML = appState;
+    (_a = $(".select-menu > select")) === null || _a === void 0 ? void 0 : _a.each(function () {
+        var storedValue = localStorage.getItem(this.id);
+        var select = $(this), menu = select.parent(), options = select.find("option");
+        var selected, sindex = 0;
+        options.each(function (index, element) {
+            if (element.textContent === storedValue) {
+                options.eq(index).attr("selected", "");
+                sindex = index;
+                selected = element;
+            }
+        });
+        menu.css("--t", sindex * -38 + "px");
+        updateOutput();
+        console.log("Value set for  ".concat(this.id, " => ").concat(selected.textContent));
+    });
 }
 function populateStorage() {
     console.log("POPULI STORAGE!!");
-    localStorage.setItem("app", app.innerHTML);
+    console.log(this);
+    $(".select-menu > select").each(function () {
+        var select = $(this), selected = select.find(":selected").get(0);
+        console.log("".concat(this.id, ", ").concat(selected.innerText));
+        localStorage.setItem(this.id, selected.innerText);
+    });
     setApp();
 }
-window.onhashchange = function () {
-    console.log("Change!" + this);
-};
-// CLICK Black Select
-// $(document).on("click", ".select-menu", function (e) {
-//   let menu = $(this);
-//   if (!menu.hasClass("open")) {
-//     menu.addClass("open");
-//   }
-// });
-// $(document).on("click", ".select-menu > ul > li", function (e) {
-//   let li = $(this),
-//     menu = li.parent().parent(),
-//     select = menu.children("select") as JQuery<HTMLSelectElement>,
-//     selected = select.find("option:selected") as JQuery<HTMLOptionElement>,
-//     index = li.index();
-//   menu.css("--t", index * -41 + "px");
-//   selected.attr("selected", 0);
-//   select.find("option").eq(index).attr("selected", 1);
-//   menu.addClass(index > selected.index() ? "tilt-down" : "tilt-up");
-//   setTimeout(() => {
-//     menu.removeClass("open tilt-up tilt-down");
-//   }, 500);
-// });
-// $(document).on("click", (e) => {
-//   e.stopPropagation();
-//   if ($(".select-menu").has(e.target as unknown as string).length === 0) {
-//     $(".select-menu").removeClass("open");
-//   }
-// });
-// HORIZONTAL wheel
-$(document).on("click", ".select-menu", function (e) {
-    var menu = $(this), select = menu.children("select"), options = select.find("option"), active = select.find("option:selected"), button = menu.children("button"), buttonDiv = button.children("div"), current = buttonDiv.children("span");
-    if (!menu.hasClass("change")) {
-        var nextOption = options.eq(active.index() == options.length - 1 ? 0 : active.index() + 1), next_1 = $("<span />")
-            .addClass("next")
-            .text(nextOption.text())
-            .appendTo(buttonDiv);
-        options.prop("selected", "");
-        nextOption.prop("selected", "selected");
-        menu.addClass("change");
-        setTimeout(function () {
-            next_1.removeClass("next");
-            menu.removeClass("change");
-            current.remove();
-        }, 650);
+function makeOut() {
+    var out = document.createElement("div");
+    out.className = "out";
+    var output = document.createElement("output");
+    output.name = "Total Income";
+    output.setAttribute("for", "a-form");
+    output.id = "result";
+    var label = document.createElement("label");
+    label.setAttribute("for", "result");
+    label.textContent = output.name;
+    resources.forEach(function (el) {
+        var rr = resultRow(el);
+        output.appendChild(rr);
+    });
+    out.appendChild(label);
+    label.appendChild(output);
+    return out;
+}
+function resultRow(nl) {
+    var res = document.createElement("span");
+    res.id = nl.id;
+    res.appendChild(getResImg(nl.id));
+    return res;
+}
+function updateOutput() {
+    var output = {
+        source: "out",
+        rank: "total",
+        bait: 0,
+        reds: 0,
+        sg: 0,
+        tc: 0,
+        dia: 0,
+        yells: 0,
+        poe: 0,
+        dust: 0,
+        juice: 0,
+        mcard: 0,
+        ss: 0,
+    };
+    var resKeys = Object.keys(output).filter(function (value, index) { return value && index > 1; });
+    $(".select-menu > select").each(function () {
+        var rank = localStorage.getItem(this.id);
+        var rews = getRewards(this.id, rank);
+        console.log(rews);
+        for (var _i = 0, resKeys_2 = resKeys; _i < resKeys_2.length; _i++) {
+            var element = resKeys_2[_i];
+            if (rews[element]) {
+                output[element] += rews[element];
+            }
+        }
+    });
+    for (var _i = 0, resKeys_1 = resKeys; _i < resKeys_1.length; _i++) {
+        var element = resKeys_1[_i];
+        var lab = document.createElement("label");
+        lab.setAttribute("for", element);
+        lab.innerText = output[element];
+        $("#".concat(element)).children("label").remove();
+        document.getElementById(element).appendChild(lab);
     }
-});
+    console.log(output);
+}
+function getResImg(name) {
+    var img = document.createElement("img");
+    img.src = "../../assets/icons/s/".concat(name, ".png");
+    img.width = 24;
+    return img;
+}
+function fetchTableData(tableName) {
+    return __awaiter(this, void 0, void 0, function () {
+        var response, text, json, x;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, fetch(url(tableName))];
+                case 1:
+                    response = _a.sent();
+                    return [4 /*yield*/, response.text()];
+                case 2:
+                    text = _a.sent();
+                    json = JSON.parse(text.substring(47).slice(0, -2));
+                    x = {
+                        cols: json.table.cols,
+                        rows: json.table.rows,
+                    };
+                    return [2 /*return*/, x];
+            }
+        });
+    });
+}
+var blackEvent = new Event("BlackSelect");
 function renderBlack() {
     $("select[data-menu]").each(function () {
         var select = $(this), options = select.find("option"), menu = $("<div />").addClass("select-menu"), button = $("<div />").addClass("button"), list = $("<ul />");
         $("<em />").prependTo(button);
+        select.removeAttr("data-menu");
         options.each(function (i) {
             var option = $(this);
             list.append($("<li />").text(option.text()));
@@ -117,6 +332,58 @@ function renderBlack() {
         select.wrap(menu);
         button.append(list).insertAfter(select);
         list.clone().insertAfter(button);
+    });
+}
+function makeBlackSelect(name, options) {
+    var list = document.createElement("select");
+    list.setAttribute("data-menu", "");
+    list.id = name;
+    var storedValue = localStorage.getItem(list.id);
+    for (var i = 0; i < options.length; i++) {
+        var element = options[i];
+        var opt = document.createElement("option");
+        opt.innerHTML = element;
+        if ((storedValue && storedValue === element) || (!storedValue && i === 0)) {
+            opt.selected = true;
+        }
+        list.appendChild(opt);
+    }
+    return list;
+}
+function makeCutieSelect(name, options) {
+    var sp = document.createElement("span");
+    var hea = document.createElement("h2");
+    hea.textContent = name;
+    sp.setAttribute("class", "dropdown-el");
+    app.appendChild(hea);
+    var firstFlag = true;
+    options.forEach(function (elem, index) {
+        var input = document.createElement("input");
+        input.type = "radio";
+        input.name = "sortType";
+        input.value = elem;
+        input.id = name + index;
+        if (firstFlag) {
+            input.checked = firstFlag;
+            firstFlag = !firstFlag;
+        }
+        var lab = document.createElement("label");
+        lab.setAttribute("for", name);
+        lab.textContent = elem;
+        sp.appendChild(input);
+        sp.appendChild(lab);
+    });
+    return sp;
+}
+function renderCutie() {
+    $(".dropdown-el").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).toggleClass("expanded");
+        $("#" + $(e.target).attr("for")).prop("checked", true);
+    });
+    $(document).on("click", function () {
+        $(".dropdown-el").removeClass("expanded");
     });
 }
 function renderHorizontal() {
@@ -134,156 +401,30 @@ function renderHorizontal() {
         button.append(buttonDiv).insertAfter(select);
     });
 }
-function renderCutie() {
-    $(".dropdown-el").on("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $(this).toggleClass("expanded");
-        $("#" + $(e.target).attr("for")).prop("checked", true);
-    });
-    $(document).on("click", function () {
-        $(".dropdown-el").removeClass("expanded");
-    });
-}
-var sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
-var base = "https://docs.google.com/spreadsheets/d/".concat(sheetId, "/gviz/tq?");
-var sheetName = "vals";
-var query = encodeURIComponent("Select *");
-var url = "".concat(base, "&sheet=").concat(sheetName, "&tq=").concat(query);
-var data = [];
-// document.addEventListener("DOMContentLoaded", init);
-var output = function () {
-    var app = document.getElementById("app");
-    var table = document.createElement("table");
-    table.setAttribute("class", "output");
-    app.appendChild(table);
-    return table;
-};
-function init() {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, fetch(url)
-                        .then(function (res) { return res.text(); })
-                        .then(function (rep) {
-                        //Remove additional text and extract only JSON:
-                        var jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-                        processHeader(jsonData);
-                    })
-                        .finally(function () { return renderPriority(); })];
-                case 1:
-                    _a.sent();
-                    return [2 /*return*/];
-            }
-        });
-    });
-}
-function processHeader(json) {
-    var tbl = output();
-    var colz = [];
-    var tr = document.createElement("tr");
-    //Extract column labels
-    json.table.cols.forEach(function (heading) {
-        if (heading.label) {
-            var column = heading.label;
-            colz.push(column);
-            var th = document.createElement("th");
-            th.innerText = column;
-            tr.appendChild(th);
-        }
-    });
-    tbl.appendChild(tr);
-    //extract row data:
-    json.table.rows.forEach(function (rowData) {
-        var row = {};
-        colz.forEach(function (ele, ind) {
-            row[ele] = rowData.c[ind] != null ? rowData.c[ind].v : "";
-        });
-        data.push(row);
-    });
-    processRows(tbl, data);
-}
-function processRows(table, json) {
-    json.forEach(function (row) {
-        var tr = document.createElement("tr");
-        var keys = Object.keys(row);
-        keys.forEach(function (key) {
-            var td = document.createElement("td");
-            td.textContent = row[key];
-            tr.appendChild(td);
-        });
-        table.appendChild(tr);
-    });
-    renderPriority();
-}
-function remCol(id, n) {
-    var tb = document.getElementById(id);
-    tb.deleteCaption();
-}
-function renderPriority() {
-    findTable();
-    selectPriority();
-    renderHorizontal();
-}
-function findTable() {
-    var tables = document.getElementsByTagName("table");
-    for (var i = 0; i < tables.length; i++) {
-        var element = tables[i];
-        element.setAttribute("id", "afk-table-" + i);
-    }
-}
-function selectPriority() {
-    var tbl = document.getElementById("afk-table-0");
-    var _loop_1 = function (i) {
-        var element = tbl.rows[i].cells[5];
-        var val = element.innerText;
-        element.innerHTML = "";
-        var list = document.createElement("select");
-        list.setAttribute("data-menu", "horizontal");
-        [0, 1, 2, 3, 4, 5].forEach(function (el) {
-            var opt = document.createElement("option");
-            opt.innerHTML = el.toString();
-            if (val === el.toString()) {
-                opt.setAttribute("selected", "selected");
-            }
-            list.appendChild(opt);
-        });
-        element.appendChild(list);
-    };
-    for (var i = 1; i < tbl.rows.length; i++) {
-        _loop_1(i);
-    }
-}
-function generateTable() {
-    // creates a <table> element and a <tbody> element
-    var tg = document.getElementById("tbl");
-    var tbl = document.createElement("table");
-    var tblBody = document.createElement("tbody");
-    // creating all cells
-    for (var i = 0; i < 2; i++) {
-        // creates a table row
-        var row = document.createElement("tr");
-        for (var j = 0; j < 2; j++) {
-            // Create a <td> element and a text node, make the text
-            // node the contents of the <td>, and put the <td> at
-            // the end of the table row
-            var cell = document.createElement("td");
-            var cellText = document.createTextNode("cell in row ".concat(i, ", column ").concat(j));
-            cell.appendChild(cellText);
-            row.appendChild(cell);
-        }
-        // add the row to the end of the table body
-        tblBody.appendChild(row);
-    }
-    // put the <tbody> in the <table>
-    tbl.appendChild(tblBody);
-    tg.appendChild(tbl);
-    // sets the border attribute of tbl to '2'
-    tbl.setAttribute("border", "2");
-}
-var randomId = function (length) {
-    if (length === void 0) { length = 6; }
-    return Math.random()
-        .toString(36)
-        .substring(2, length + 2);
-};
+// HORIZONTAL wheel
+// $(document).on("click", ".select-menu", function (e) {
+//   let menu = $(this),
+//     select = menu.children("select"),
+//     options = select.find("option"),
+//     active = select.find("option:selected"),
+//     button = menu.children("button"),
+//     buttonDiv = button.children("div"),
+//     current = buttonDiv.children("span");
+//   if (!menu.hasClass("change")) {
+//     let nextOption = options.eq(
+//         active.index() == options.length - 1 ? 0 : active.index() + 1
+//       ),
+//       next = $("<span />")
+//         .addClass("next")
+//         .text(nextOption.text())
+//         .appendTo(buttonDiv);
+//     options.prop("selected", "");
+//     nextOption.prop("selected", "selected");
+//     menu.addClass("change");
+//     setTimeout(() => {
+//       next.removeClass("next");
+//       menu.removeClass("change");
+//       current.remove();
+//     }, 650);
+//   }
+// });

@@ -1,4 +1,11 @@
-/* .select-menu {
+.a-form {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid cyan;
+  border-radius: 10px;
+}
+
+.select-menu {
   --background: #242836;
   --text: #fff;
   --icon: #fff;
@@ -9,8 +16,9 @@
   position: relative;
   z-index: 1;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
+  width: 120px;
 }
 
 .select-menu select, .select-menu .button {
@@ -29,11 +37,11 @@
   -ms-user-select: none;
   user-select: none;
   opacity: 0;
-  padding: 11px 16px 8px 12px;
+  padding: 11px 10px 8px 10px;
   visibility: hidden;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .select-menu ul {
@@ -49,7 +57,7 @@
 }
 
 .select-menu ul li {
-  padding: 11px 16px 8px 12px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -75,7 +83,6 @@
   bottom: 0;
   padding: 0;
   z-index: 1;
-  width: 100%;
   display: block;
   overflow: hidden;
   border-radius: 6px;
@@ -96,7 +103,7 @@
 }
 
 .select-menu .button em:before, .select-menu .button em:after {
-  --o: .4;
+  --o: .001;
   content: "";
   width: 7px;
   height: 7px;
@@ -181,18 +188,9 @@ html {
 
 *:before, *:after {
   box-sizing: inherit;
-} */
+}
 
-/* body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto", Arial;
-  background: #171C28;
-} */
-
-/* body .dribbble {
+body .dribbble {
   position: fixed;
   display: block;
   right: 20px;
@@ -202,11 +200,11 @@ html {
 body .dribbble img {
   display: block;
   height: 28px;
-} */
+}
 
 
 /* ----------------------------- */
-.select-menu {
+/* .select-menu {
   --background: #fff;
   --text: #171C28;
   --icon: #3F4656;
@@ -520,7 +518,7 @@ html {
 }
 *:before, *:after {
   box-sizing: inherit;
-}
+} */
 
 /* body {
   min-height: 100vh;
@@ -530,7 +528,7 @@ html {
   background: #275EFE;
   font-family: "Mukta Malar", Arial;
 } */
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   body {
     flex-direction: column;
   }
@@ -547,4 +545,4 @@ body .dribbble {
 body .dribbble img {
   display: block;
   width: 76px;
-}
+} */

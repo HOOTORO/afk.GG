@@ -4,6 +4,7 @@
 node_modules
 site
 # only ignored
+.fleet
 .vscode
 newm*
 docs/assets/tables/*csv
