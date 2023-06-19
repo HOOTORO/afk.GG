@@ -136,3 +136,21 @@ thead {
     color: red;
     animation: heart 1000ms infinite;
 }
+
+.md-nav {
+    background-color: #2c313d;
+    border-radius: 10px;
+}
+
+.md-sidebar__scrollwrap {
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+.md-nav__list {
+    padding: 3px;
+}
+
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+    top: 10px;
+}
