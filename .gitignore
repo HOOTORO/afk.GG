@@ -1,3 +1,5 @@
+# temporal
+mkdocs.yml
 # hidden
 .mypy_cache
 .DS_Store
