@@ -1,15 +1,41 @@
-/* Error: expected "{".
- *    ,
- * 27 |     flex-wrap: wrap;
- *    |                    ^
- *    '
- *   src/scss/_/_output.scss 27:20  @import
- *   src/scss/extra.scss 1:9        root stylesheet */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+#tbl {
+  display: block;
+  margin: auto;
+  width: 8em;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
+.out {
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  output {
+    flex-direction: column !important;
+  }
+}
+output {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #2c313d;
+}
+
+output > div {
+  padding: 2px 20px;
+}
+
+output > div {
+  padding: 2px 20px;
+}
+
+span > label {
   display: block;
   padding-left: 5px;
 }
@@ -23,6 +49,14 @@ span > img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+body {
+  background: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h4 {
@@ -109,6 +143,7 @@ select::-ms-expand {
   max-height: 120px;
   align-items: center;
   align-content: stretch;
+  background-color: #2c313d;
 }
 
 .red-font {
@@ -271,3 +306,23 @@ thead {
   color: red;
   animation: heart 1000ms infinite;
 }
+
+.md-nav {
+  background-color: #2c313d;
+  border-radius: 10px;
+}
+
+.md-sidebar__scrollwrap {
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.md-nav__list {
+  padding: 3px;
+}
+
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  top: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
