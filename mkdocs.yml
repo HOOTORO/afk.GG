@@ -158,6 +158,7 @@ nav:
           - Инфографика: kb/infographics.md
           - TRESCAMBLE. Охота за костылями: kb/trescamble.md
           - Tools:
+                - Income: tools/income.md
                 - Dia Values: tools/diaval.md
                 - Tree Estimator: tools/calc.md
     - Сообщество:
