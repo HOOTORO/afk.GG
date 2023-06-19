@@ -93,10 +93,11 @@ select::-ms-expand {
   font-size: 1em;
   color: #999;
   font-weight: 400;
+  width: 600px;
 }
 
 .range {
-  width: 100px;
+  width: 600px;
   height: 10px;
   -webkit-appearance: none;
   background: #111;
