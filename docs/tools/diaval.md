@@ -1,15 +1,15 @@
 ---
 permalink: tools
-template: soon.html
+template: tools.html
 title: Table data
 ---
 # Dia Shop Values { .red-font }
 
-!!! warning "CONSIDERATIONS"
+!!! warning "ВНИМАНИЕ"
 
-        _EG.Yellow_, _Juice_ based on refresh shop cost, local price omitted from calculations since gold and fodder eventually became useless  
-        _TC, POE_ costs average values of all income places  
-        Rift values of different prices **same** resource averaged  
+        Цена _Желтых грав_ и _Эссенции_ основана на рефреше магазина, локальная цена опущена из расчетов, так как золото и кормовые герои стали бесполезными  
+        Цена _Карт храма и Пое_ взята как средняя с учетом всех доступных для покупки мест    
+        В Разломе разные цены на **одинаковые** товары усреднены   
 <!-- {{ read_excel('../assets/tables/AFKDiavalues.xlsx', engine='openpyxl', na_filter=False) }} -->
 
 ## Dia Prices
@@ -22,4 +22,3 @@ title: Table data
 
 ## Deals Value
 
-{{ read_csv('../assets/tables/rf2p.csv', engine='pyarrow', na_filter=True, keep_default_na=False, skip_blank_lines=False, floatfmt="f.",  colalign=("center",)) }}  
