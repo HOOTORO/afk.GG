@@ -2,175 +2,176 @@ site_name: AFK. All You Want To Know
 site_url: https://hootsdev.github.io/afk.GG/
 
 copyright: >-
-  afk.GG is an 'AFK Arena' fansite, and is not affiliated with Lilith Games in any way. – <a href="#__consent">Change cookie settings</a> – 
-  Copyright &copy; 2023, Лев Николаевич HOOTSMAN 
-  <br>
+    afk.GG is an 'AFK Arena' fansite, and is not affiliated with Lilith Games in any way. – <a href="#__consent">Change cookie settings</a> –
+    Copyright &copy; 2023, Лев Николаевич HOOTSMAN
+    <br>
 
 theme:
-  name: material
-  custom_dir: overrides
-  extra_css:
-    - stylesheets/extra.css
-    - stylesheets/select.css
-  extra_javascript:
-    # - https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
-    - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-    - javascripts/main.js
-  
-  palette:
-    # Palette toggle for light mode
-      # deep orange + lime
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-      primary: orange
-      accent: lime
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
-      primary: deep purple
-      accent: amber
-    # Good ones fonts: Roboto Flex, Open Sans
-    # text: Open Sans
-    # text: Roboto Flex
-    # text: Google Sans
-    # code: Fira Mono
-  font:
-    text: Open Sans
-    code: Average Sans
-  favicon: favicon.jpg
-  logo: assets/logo2rv2.jpg
-  language: ru
+    name: material
+    custom_dir: overrides
+    extra_css:
+        - https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css
+        - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+        - stylesheets/main.css
+        - stylesheets/extra.css
+    extra_javascript:
+        - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+        - javascripts/main.js
 
-  features:
-    - header.autohide
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.top
-    - navigation.footer
-    - navigation.sections
-    - navigation.expand
-    - toc.follow
-    # - toc.integrate
-    # - navigation.tabs.sticky
-    - navigation.indexes
+    palette:
+        # Palette toggle for light mode
+        # deep orange + lime!
+        - scheme: default
+          toggle:
+              icon: material/weather-night
+              name: Switch to dark mode
+          primary: orange
+          accent: lime
+        - scheme: slate
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to light mode
+          primary: deep purple
+          accent: amber
+        # Good ones fonts: Roboto Flex, Open Sans
+        # text: Open Sans
+        # text: Roboto Flex
+        # text: Google Sans
+        # code: Fira Mono
+    font:
+        text: Open Sans
+        code: Average Sans
+    favicon: favicon.jpg
+    logo: assets/logo2rv2.jpg
+    language: ru
+
+    features:
+        - header.autohide
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.top
+        - navigation.footer
+        - navigation.sections
+        - navigation.expand
+        - toc.follow
+        # - toc.integrate
+        # - navigation.tabs.sticky
+        - navigation.indexes
 
 # Plugins
 plugins:
-  - search:
-      lang: ru
-      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
-  - glightbox:
-      draggable: false
-      touchNavigation: true
-      loop: true
-      auto_caption: true
-      caption_position: top
-      zoomable: true
-  - table-reader
-  # - extra-sass
-  # sponsor feature, maybe someday
-  # - privacy:
-  #     enabled: !ENV [CI, false]
-  #     links_attr_map:
-  #       target: _blank
-  #       links_noopener: true
+    - search:
+          lang: ru
+          separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+    - minify:
+          minify_html: true
+    - glightbox:
+          draggable: false
+          touchNavigation: true
+          loop: true
+          auto_caption: true
+          caption_position: top
+          zoomable: true
+    - table-reader
+    # - extra-sass
+    # sponsor feature, maybe someday
+    # - privacy:
+    #     enabled: !ENV [CI, false]
+    #     links_attr_map:
+    #       target: _blank
+    #       links_noopener: true
 
 hooks:
     - scripts/hooks.py
 
 extra:
-  # version: 1.1
-  social:
-    - icon: fontawesome/brands/discord
-      link: https://discordid.netlify.app/?id=88370628763078656
-      name: HOOTSMAN
-  homepage: https://hootsdev.github.io/afk.GG/
-  consent:
-    title: Cookie consent
-    description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-    actions:
-      - accept
-      - manage
-  # version:
-  #   provider: mike
-      # slugify: !!python/object/apply:pymdownx.slugs.slugify
-      # permalink: "\ue112"
-      # title: On this page
+    # version: 1.1
+    social:
+        - icon: fontawesome/brands/discord
+          link: https://discordid.netlify.app/?id=88370628763078656
+          name: HOOTSMAN
+    homepage: https://hootsdev.github.io/afk.GG/
+    consent:
+        title: Cookie consent
+        description: >-
+            We use cookies to recognize your repeated visits and preferences, as well
+            as to measure the effectiveness of our documentation and whether users
+            find what they're searching for. With your consent, you're helping us to
+            make our documentation better.
+        actions:
+            - accept
+            - manage
+            # version:
+            #   provider: mike
+            # slugify: !!python/object/apply:pymdownx.slugs.slugify
+            # permalink: "\ue112"
+            # title: On this page
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - tables
-  - toc:
-      permalink: true
-      toc_depth: 3
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight:
-      anchor_linenums: true
-      # broke after fix settings xD
-      # line_spans: __span
-      # pygments_lang_class: true
-      use_pygments: true
-      auto_title: true
-      linenums_style: pymdownx-inline
-      linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
-  - pymdownx.critic
-  # - pymdownx.snippets
+    - abbr
+    - admonition
+    - attr_list
+    - def_list
+    - footnotes
+    - md_in_html
+    - tables
+    - toc:
+          permalink: true
+          toc_depth: 3
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight:
+          anchor_linenums: true
+          # broke after fix settings xD
+          # line_spans: __span
+          # pygments_lang_class: true
+          use_pygments: true
+          auto_title: true
+          linenums_style: pymdownx-inline
+          linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.tilde
+    - pymdownx.critic
+    # - pymdownx.snippets
 
 nav:
-  - Main: index.md
-  # - nm: nmem.md
-  - База знаний:
-      - kb/index.md
-      - Полезные ресурсы: kb/links.md
-      - Инфографика: kb/infographics.md
-      - TRESCAMBLE. Охота за костылями: kb/trescamble.md
-      - Tools:
-        - Dia Values: tools/diaval.md
-        - Tree Estimator: tools/calc.md 
-  - Сообщество:
-      - top/index.md
-      - СНГ Топ:
-        - AbEx/Бездна: top/abex.md
-        - HF/Охотничьи угодья: top/hf.md
-      - Discord: 
-        - (RU) Made in USSR: disru.md
-        - (EN) International: disen.md
-  - Блог:
-      - blog/index.md
-      - Мемы. Сделанно в СНГ: blog/meme.md
-      - Сон сутулой собаки: blog/dogdream.md
-      - RU Community: blog/makerugreatagain.md
-      - No Mercy: blog/nm-respect.md
-      - The Hospital: blog/th-retirement.md
+    - Main: index.md
+    # - nm: nmem.md
+    - База знаний:
+          - kb/index.md
+          - Полезные ресурсы: kb/links.md
+          - Инфографика: kb/infographics.md
+          - TRESCAMBLE. Охота за костылями: kb/trescamble.md
+          - Tools:
+                - Dia Values: tools/diaval.md
+                - Tree Estimator: tools/calc.md
+    - Сообщество:
+          - top/index.md
+          - СНГ Топ:
+                - AbEx/Бездна: top/abex.md
+                - HF/Охотничьи угодья: top/hf.md
+          - Discord:
+                - (RU) Made in USSR: disru.md
+                - (EN) International: disen.md
+    - Блог:
+          - blog/index.md
+          - Мемы. Сделанно в СНГ: blog/meme.md
+          - Сон сутулой собаки: blog/dogdream.md
+          - RU Community: blog/makerugreatagain.md
+          - No Mercy: blog/nm-respect.md
+          - The Hospital: blog/th-retirement.md
