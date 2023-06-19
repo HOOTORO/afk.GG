@@ -9,6 +9,11 @@
   padding: 20px;
 }
 
+@media (max-width: 900px) {
+  output {
+    flex-direction: column !important;
+  }
+}
 output {
   padding: 10px;
   margin: 10px;
@@ -112,6 +117,11 @@ select::-ms-expand {
   box-shadow: -407px 0 0 400px #bada55;
 }
 
+@media (max-width: 900px) {
+  #a-form {
+    max-height: 300px !important;
+  }
+}
 #a-form {
   display: flex;
   border: 1px solid #bada55;

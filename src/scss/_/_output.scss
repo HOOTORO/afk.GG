@@ -7,7 +7,11 @@
 .out {
     padding: 20px;
 }
-
+@media (max-width: 900px) {
+    output {
+        flex-direction: column !important;
+    }
+}
 output {
     padding: 10px;
     margin: 10px;

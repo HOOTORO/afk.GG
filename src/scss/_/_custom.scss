@@ -1,3 +1,9 @@
+@media (max-width: 900px) {
+    #a-form {
+        max-height: 300px !important;
+    }
+}
+
 #a-form {
     display: flex;
     border: 1px solid #bada55;
