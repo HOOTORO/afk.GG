@@ -2,6 +2,17 @@ interface GtableData {
   cols: Array<{ id: string; label: string; type: string }>;
   rows: Array<{ c: Array<{ v: string; f: string }> }>;
 }
+const tLoadedEvent = new Event("tableready");
+
+// Listen for the event.
+app.addEventListener(
+  "tableready",
+  (e) => {
+    console.log(e)
+    /* … */
+  },
+  false
+  );
 
 async function fetchTableData(tableName: string): Promise<GtableData> {
   const response = await fetch(url(tableName));
@@ -12,5 +23,6 @@ async function fetchTableData(tableName: string): Promise<GtableData> {
     cols: json.table.cols,
     rows: json.table.rows,
   };
+  app.dispatchEvent(tLoadedEvent)
   return x;
 }

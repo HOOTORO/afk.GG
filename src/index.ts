@@ -1,23 +1,12 @@
-
 window.onload = function () {
     startApp();
 };
 
-let app = document.getElementById("app");
-app.addEventListener(
-    "BlackSelect",
-    (e) => {
-        console.log("Black FIRE!");
-        console.log(e);
-        renderBlack();
-        checkStorage();
-    },
-    false
-);
+let app = document.getElementById("app")
 
 function startApp() {
     userInput()
-        .then((u) => app.appendChild(u))
+        .then(u => app.appendChild(u))
         .then(() => app.appendChild(makeOut()))
         .finally(() => console.log("app started"));
 }
@@ -25,11 +14,15 @@ function startApp() {
 app.onchange = populateStorage;
 
 function checkStorage() {
-    $(".select-menu > select").each(function () {
+    $("select").each(function () {
         if (!localStorage.getItem(this.id)) {
             populateStorage();
         } else {
             setApp();
         }
     });
+}
+
+const l = (x) => {
+    console.log(x)
 }

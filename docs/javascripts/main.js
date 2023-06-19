@@ -60,29 +60,99 @@ var sources = [
     { id: "afk-income", label: "Base AFK Income", tableName: "AFK", period: 1 / 24, display: false }
 ];
 // CLICK Black Select
-$(document).on("click", ".select-menu", function (e) {
-    var menu = $(this);
-    if (!menu.hasClass("open")) {
-        menu.addClass("open");
-    }
+//$(document).on("click", ".select-menu", function (e) {
+//  let menu = $(this);
+//  if (!menu.hasClass("open")) {
+//    menu.addClass("open");
+//  }
+//});
+//
+//$(document).on("click", ".select-menu > ul > li", function (e) {
+//  let li = $(this),
+//    menu = li.parent().parent(),
+//    select = menu.children("select"),
+//    selected = select.find("option:selected") as JQuery<HTMLOptionElement>,
+//    index = li.index();
+//
+//  menu.css("--t", index * -38 + "px");
+//  selected.removeAttr("selected");
+//  select.find("option").eq(index).attr("selected", "");
+//
+//  menu.addClass(index > selected.index() ? "tilt-down" : "tilt-up");
+//  select.trigger("change");
+//
+//  setTimeout(() => {
+//    menu.removeClass("open tilt-up tilt-down");
+//  }, 500);
+//});
+//
+//$(document).on("click", (e) => {
+//  e.stopPropagation();
+//  if ($(".select-menu").has(e.target as unknown as string).length === 0) {
+//    $(".select-menu").removeClass("open");
+//  }
+//});
+//
+//
+$(document).on("click", "select", function (e) {
+    checkStorage();
+    console.log(e);
+    //    let menu = $(this);
+    //    if (!menu.hasClass("open")) {
+    //        menu.addClass("open");
+    //    }
 });
-$(document).on("click", ".select-menu > ul > li", function (e) {
-    var li = $(this), menu = li.parent().parent(), select = menu.children("select"), selected = select.find("option:selected"), index = li.index();
-    menu.css("--t", index * -38 + "px");
-    selected.removeAttr("selected");
-    select.find("option").eq(index).attr("selected", "");
-    menu.addClass(index > selected.index() ? "tilt-down" : "tilt-up");
-    select.trigger("change");
-    setTimeout(function () {
-        menu.removeClass("open tilt-up tilt-down");
-    }, 500);
-});
-$(document).on("click", function (e) {
-    e.stopPropagation();
-    if ($(".select-menu").has(e.target).length === 0) {
-        $(".select-menu").removeClass("open");
-    }
-});
+window.onload = function () {
+    startApp();
+};
+var app = document.getElementById("app");
+function startApp() {
+    userInput()
+        .then(function (u) { return app.appendChild(u); })
+        .then(function () { return app.appendChild(makeOut()); })
+        .finally(function () { return console.log("app started"); });
+}
+app.onchange = populateStorage;
+function checkStorage() {
+    $("select").each(function () {
+        if (!localStorage.getItem(this.id)) {
+            populateStorage();
+        }
+        else {
+            setApp();
+        }
+    });
+}
+var l = function (x) {
+    console.log(x);
+};
+function setApp() {
+    var _a;
+    l("set from localstore");
+    (_a = $("select")) === null || _a === void 0 ? void 0 : _a.each(function () {
+        var storedValue = localStorage.getItem(this.id);
+        var select = $(this), options = select.find("option");
+        var selected, sindex = 0;
+        options.each(function (index, element) {
+            if (element.textContent === storedValue) {
+                options.eq(index).attr("selected", "selected");
+                sindex = index;
+                selected = element;
+            }
+        });
+        var x = document.getElementById("rangeValue").innerText.split(" ").at(0);
+        updateOutput(x);
+        console.log("Value set for  ".concat(this.id, " => ").concat(selected.textContent));
+    });
+}
+function populateStorage() {
+    l("save data to local store");
+    $("select").each(function () {
+        var select = $(this), selected = select.find(":selected").get(0);
+        localStorage.setItem(this.id, selected.innerText);
+    });
+    setApp();
+}
 // =>  <=
 var rewards = [];
 function getRewards(source, rank) {
@@ -90,43 +160,24 @@ function getRewards(source, rank) {
 }
 function userInput() {
     return __awaiter(this, void 0, void 0, function () {
-        var inputForm, _i, _a, tbl;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
-                case 0:
-                    inputForm = document.createElement("form");
-                    inputForm.setAttribute("class", "a-form");
-                    _i = 0, _a = sources.filter(function (value) { return value.display; });
-                    _b.label = 1;
-                case 1:
-                    if (!(_i < _a.length)) return [3 /*break*/, 4];
-                    tbl = _a[_i];
-                    return [4 /*yield*/, getSelectList(tbl)
-                            .then(function (h) { return inputForm.appendChild(h); })
-                            .finally(function () { return console.log("we re donr"); })];
-                case 2:
-                    _b.sent();
-                    _b.label = 3;
-                case 3:
-                    _i++;
-                    return [3 /*break*/, 1];
-                case 4: return [2 /*return*/, inputForm];
-            }
-        });
-    });
-}
-function getSelectList(re) {
-    return __awaiter(this, void 0, void 0, function () {
-        var listName;
+        var inputForm;
         return __generator(this, function (_a) {
-            listName = document.createElement("h4");
-            listName.textContent = re.label;
-            fetchTableData(re.tableName)
-                .then(function (tt) { return getHeaders(re.label, tt); })
-                .then(function (t) { return getOptions(t); })
-                .then(function (o) { return listName.appendChild(makeBlackSelect(re.id, o)); })
-                .finally(function () { return app.dispatchEvent(blackEvent); });
-            return [2 /*return*/, listName];
+            inputForm = document.createElement("form");
+            inputForm.setAttribute("id", "a-form");
+            sources.filter(function (v) { return v.display; }).forEach(function (k, v) {
+                var label = document.createElement("label");
+                label.setAttribute("for", k.id);
+                label.innerText = k.label;
+                fetchTableData(k.tableName)
+                    .then(function (raw) { return getHeaders(k.label, raw); })
+                    .then(function (table) { return getOptions(table); })
+                    .then(function (firstcolumn) { return makeSelect(k.id, firstcolumn); })
+                    .then(function (select) { return inputForm.appendChild(select); })
+                    .then(function (x) { return inputForm.insertBefore(label, x); })
+                    //            .then(select => console.log(select))
+                    .finally(function () { return l(k); });
+            });
+            return [2 /*return*/, inputForm];
         });
     });
 }
@@ -135,9 +186,7 @@ function getOptions(table) {
     for (var _i = 0, _a = table.rows; _i < _a.length; _i++) {
         var element = _a[_i];
         var row = element;
-        //iterate through rows
         firstColumn.push(row.c[0].v);
-        //rows would be accessed using the "row" variable assigned in the for loop
     }
     return firstColumn;
 }
@@ -148,19 +197,10 @@ function getHeaders(source, table) {
     });
     table.rows.forEach(function (el) {
         var r = {
-            source: source.toLowerCase().replace(" ", "-"),
-            rank: el.c[0].v,
-            bait: 0,
-            reds: 0,
-            sg: 0,
-            tc: 0,
-            dia: 0,
-            yells: 0,
-            poe: 0,
-            dust: 0,
-            juice: 0,
-            mcard: 0,
-            ss: 0,
+            source: source.toLowerCase().replace(" ", "-"), rank: el.c[0].v,
+            bait: 0, reds: 0, sg: 0, tc: 0,
+            dia: 0, yells: 0, poe: 0, dust: 0,
+            juice: 0, mcard: 0, ss: 0,
         };
         var keys = Object.keys(r);
         columns.forEach(function (col) {
@@ -173,61 +213,35 @@ function getHeaders(source, table) {
     });
     return table;
 }
-window.onload = function () {
-    startApp();
-};
-var app = document.getElementById("app");
-app.addEventListener("BlackSelect", function (e) {
-    console.log("Black FIRE!");
-    console.log(e);
-    renderBlack();
-    checkStorage();
-}, false);
-function startApp() {
-    userInput()
-        .then(function (u) { return app.appendChild(u); })
-        .then(function () { return app.appendChild(makeOut()); })
-        .finally(function () { return console.log("app started"); });
-}
-app.onchange = populateStorage;
-function checkStorage() {
-    $(".select-menu > select").each(function () {
-        if (!localStorage.getItem(this.id)) {
-            populateStorage();
-        }
-        else {
-            setApp();
-        }
+function timeRange() {
+    var container = document.createElement("div");
+    container.id = "time-range";
+    var sliderValue = document.createElement("span");
+    sliderValue.id = "rangeValue";
+    sliderValue.innerText = "1";
+    var slider = document.createElement("Input");
+    setAttributes(slider, {
+        "class": "range",
+        "type": "range",
+        "value": "1",
+        "min": "1",
+        "max": "48",
+        "onChange": "rangeSlide(this.value)",
+        "onmousemove": "rangeSlide(this.value)",
     });
+    var x = container.appendChild(sliderValue);
+    return x.appendChild(slider);
+    //    const options = [1, 2, 3, 4, 5, 6, 7, 8]
 }
-function setApp() {
-    var _a;
-    console.log("SET APP");
-    (_a = $(".select-menu > select")) === null || _a === void 0 ? void 0 : _a.each(function () {
-        var storedValue = localStorage.getItem(this.id);
-        var select = $(this), menu = select.parent(), options = select.find("option");
-        var selected, sindex = 0;
-        options.each(function (index, element) {
-            if (element.textContent === storedValue) {
-                options.eq(index).attr("selected", "");
-                sindex = index;
-                selected = element;
-            }
-        });
-        menu.css("--t", sindex * -38 + "px");
-        updateOutput();
-        console.log("Value set for  ".concat(this.id, " => ").concat(selected.textContent));
-    });
+function rangeSlide(value) {
+    document.getElementById('rangeValue').innerHTML = value + " weeks";
+    updateOutput(value);
 }
-function populateStorage() {
-    console.log("POPULI STORAGE!!");
-    console.log(this);
-    $(".select-menu > select").each(function () {
-        var select = $(this), selected = select.find(":selected").get(0);
-        console.log("".concat(this.id, ", ").concat(selected.innerText));
-        localStorage.setItem(this.id, selected.innerText);
-    });
-    setApp();
+var xh = "\n    <div>\n        <span id=\"rangeValue\">1 week</span>\n        <Input class=\"range\" type=\"range\" name \"\" value=\"1\" min=\"1\" max=\"48\" onChange=\"rangeSlide(this.value)\" onmousemove=\"rangeSlide(this.value)\"></Input>\n    </div>\n";
+function setAttributes(el, attrs) {
+    for (var key in attrs) {
+        el.setAttribute(key, attrs[key]);
+    }
 }
 function makeOut() {
     var out = document.createElement("div");
@@ -236,15 +250,17 @@ function makeOut() {
     output.name = "Total Income";
     output.setAttribute("for", "a-form");
     output.id = "result";
+    output.innerHTML += xh;
     var label = document.createElement("label");
     label.setAttribute("for", "result");
     label.textContent = output.name;
     resources.forEach(function (el) {
         var rr = resultRow(el);
+        output.appendChild(label);
         output.appendChild(rr);
     });
     out.appendChild(label);
-    label.appendChild(output);
+    out.appendChild(output);
     return out;
 }
 function resultRow(nl) {
@@ -253,24 +269,16 @@ function resultRow(nl) {
     res.appendChild(getResImg(nl.id));
     return res;
 }
-function updateOutput() {
+function updateOutput(x) {
     var output = {
         source: "out",
         rank: "total",
-        bait: 0,
-        reds: 0,
-        sg: 0,
-        tc: 0,
-        dia: 0,
-        yells: 0,
-        poe: 0,
-        dust: 0,
-        juice: 0,
-        mcard: 0,
-        ss: 0,
+        bait: 0, reds: 0, sg: 0, tc: 0,
+        dia: 0, yells: 0, poe: 0, dust: 0,
+        juice: 0, mcard: 0, ss: 0,
     };
     var resKeys = Object.keys(output).filter(function (value, index) { return value && index > 1; });
-    $(".select-menu > select").each(function () {
+    $("select").each(function () {
         var rank = localStorage.getItem(this.id);
         var rews = getRewards(this.id, rank);
         console.log(rews);
@@ -285,8 +293,10 @@ function updateOutput() {
         var element = resKeys_1[_i];
         var lab = document.createElement("label");
         lab.setAttribute("for", element);
-        lab.innerText = output[element];
-        $("#".concat(element)).children("label").remove();
+        lab.innerText = (output[element] * x).toString();
+        var parent_1 = $("#".concat(element)).parent().get();
+        $("#result > #".concat(element)).prepend(lab);
+        $("#result > #".concat(element)).children("label").remove();
         document.getElementById(element).appendChild(lab);
     }
     console.log(output);
@@ -297,6 +307,12 @@ function getResImg(name) {
     img.width = 24;
     return img;
 }
+var tLoadedEvent = new Event("tableready");
+// Listen for the event.
+app.addEventListener("tableready", function (e) {
+    console.log(e);
+    /* … */
+}, false);
 function fetchTableData(tableName) {
     return __awaiter(this, void 0, void 0, function () {
         var response, text, json, x;
@@ -313,78 +329,27 @@ function fetchTableData(tableName) {
                         cols: json.table.cols,
                         rows: json.table.rows,
                     };
+                    app.dispatchEvent(tLoadedEvent);
                     return [2 /*return*/, x];
             }
         });
     });
 }
-var blackEvent = new Event("BlackSelect");
-function renderBlack() {
-    $("select[data-menu]").each(function () {
-        var select = $(this), options = select.find("option"), menu = $("<div />").addClass("select-menu"), button = $("<div />").addClass("button"), list = $("<ul />");
-        $("<em />").prependTo(button);
-        select.removeAttr("data-menu");
-        options.each(function (i) {
-            var option = $(this);
-            list.append($("<li />").text(option.text()));
-        });
-        menu.css("--t", select.find(":selected").index() * -1 + "px");
-        select.wrap(menu);
-        button.append(list).insertAfter(select);
-        list.clone().insertAfter(button);
-    });
-}
-function makeBlackSelect(name, options) {
+function makeSelect(name, options) {
     var list = document.createElement("select");
-    list.setAttribute("data-menu", "");
     list.id = name;
     var storedValue = localStorage.getItem(list.id);
     for (var i = 0; i < options.length; i++) {
         var element = options[i];
         var opt = document.createElement("option");
-        opt.innerHTML = element;
+        opt.innerText = element.toString();
+        opt.setAttribute("value", element.toString());
         if ((storedValue && storedValue === element) || (!storedValue && i === 0)) {
-            opt.selected = true;
+            opt.setAttribute("selected", "");
         }
         list.appendChild(opt);
     }
     return list;
-}
-function makeCutieSelect(name, options) {
-    var sp = document.createElement("span");
-    var hea = document.createElement("h2");
-    hea.textContent = name;
-    sp.setAttribute("class", "dropdown-el");
-    app.appendChild(hea);
-    var firstFlag = true;
-    options.forEach(function (elem, index) {
-        var input = document.createElement("input");
-        input.type = "radio";
-        input.name = "sortType";
-        input.value = elem;
-        input.id = name + index;
-        if (firstFlag) {
-            input.checked = firstFlag;
-            firstFlag = !firstFlag;
-        }
-        var lab = document.createElement("label");
-        lab.setAttribute("for", name);
-        lab.textContent = elem;
-        sp.appendChild(input);
-        sp.appendChild(lab);
-    });
-    return sp;
-}
-function renderCutie() {
-    $(".dropdown-el").on("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $(this).toggleClass("expanded");
-        $("#" + $(e.target).attr("for")).prop("checked", true);
-    });
-    $(document).on("click", function () {
-        $(".dropdown-el").removeClass("expanded");
-    });
 }
 function renderHorizontal() {
     $("select[data-menu]").each(function () {

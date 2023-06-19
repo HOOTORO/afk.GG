@@ -10,9 +10,11 @@
     "name": "HOLYDOOM HOOTSMAN"
   },
   "scripts": {
+    "SASS:build": "sass --no-source-map src/scss/extra.scss docs/stylesheets/main.css",
     "RE:build": "tsc --build",
     "serve": "tsc --build && mkdocs serve",
-    "serve.th": "tsc --build && tsc --watch & mkdocs serve --watch-theme"
+    "watch:scss": "sass --watch src/scss/extra.scss docs/stylesheets/main.css",
+    "serve.th": "tsc --build && tsc --watch & mkdocs serve --watch-theme & sass --watch src/scss/extra.scss docs/stylesheets/main.css"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.16",

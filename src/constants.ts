@@ -5,8 +5,6 @@ const url = function (x) {
     return `${base}&sheet=${x}&tq=${query}`;
 };
 
-type AfkMode = {id: string; label:string; tableName: string; period: number; display: boolean}
-
 const resources = [
     {id: "bait", label: "Bait"},
     {id: "reds", label: "Red Cores"},

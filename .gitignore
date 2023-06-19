@@ -4,11 +4,13 @@
 node_modules
 site
 # only ignored
-.fleet
-.vscode
-newm*
-docs/assets/tables/*csv
+*.css.map
 __pycache*
 *.log
+.fleet
+.vscode
+docs/assets/tables/*csv
 dist
 ignored
+newm*
+tiesto.md

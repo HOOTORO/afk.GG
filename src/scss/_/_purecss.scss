@@ -1,0 +1,48 @@
+$glass: rgba(255, 255, 255, 0.2);
+$glass-icon: rgba(255, 255, 255, 0.3);
+$gradient: linear-gradient(35deg, #2E303D, #2e33ad);
+$option: #320a28;
+
+//body {
+//    background: $gradient;
+//}
+
+h4 {
+    margin: 1em;
+}
+
+/* <select> styles */
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 9em;
+    height: 2em;
+    padding: 5px;
+    margin: 1em;
+    text-align: center;
+    background: url(../assets/svg/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, $glass-icon 2em, $glass 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* <option> colors */
+    option {
+        color: inherit;
+        background-color: $option;
+    }
+
+    /* Remove focus outline */
+    &:focus {
+        outline: none;
+    }
+
+    /* Remove IE arrow */
+    &::-ms-expand {
+        display: none;
+    }
+}

@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% block styles %} {{ super() }}
+
+{% endblock %}
+{% block content %}
+
+<select>
+  <option selected value="0">Pure CSS Select</option>
+  <option value="1">No Wrapper</option>
+  <option value="2">No JS</option>
+  <option value="3">Nice!</option>
+</select>
+{{ content }}
+{% endblock %}
+{% block scripts %}
+    </div>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+{{ super() }}
+<!-- Add scripts that need to run afterwards here -->
+{% endblock %}

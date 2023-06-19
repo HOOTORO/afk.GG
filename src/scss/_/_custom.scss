@@ -1,0 +1,48 @@
+#a-form {
+    display: flex;
+    border: 1px solid #bada55;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 5px;
+    flex-wrap: wrap;
+    max-height: 120px;
+    align-items: center;
+    align-content: stretch;
+}
+
+.red-font {
+    color: #eb01aa !important;
+}
+
+.green-f {
+    color: green !important;
+}
+
+.brown-f {
+    color: brown !important;
+}
+
+.cyan-f {
+    color: cyan !important;
+}
+
+em {
+    color: skyblue;
+}
+
+
+a[href$="dogdream/"]::after {
+    //    content: "NEW!";
+    //    color: red;
+    //    display: contents;
+}
+
+
+/* .upd::after , */
+a[href$="th-retirement/"]::after,
+a[href$="#before-beginning"]::after {
+    content: "UPD!";
+    color: red;
+    padding-left: 20px;
+    display: contents;
+}
