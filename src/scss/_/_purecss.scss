@@ -1,11 +1,12 @@
 $glass: rgba(255, 255, 255, 0.2);
 $glass-icon: rgba(255, 255, 255, 0.3);
-$gradient: linear-gradient(35deg, #2E303D, #2e33ad);
+//$gradient: linear-gradient(35deg, #2E303D, #2e33ad);
+$gradient: linear-gradient(90deg, #755EBC, #2e33ad);
 $option: #320a28;
 
-//body {
-//    background: $gradient;
-//}
+body {
+    background: $gradient;
+}
 
 h4 {
     margin: 1em;

@@ -49,6 +49,10 @@ span > img {
   margin-left: auto;
 }
 
+body {
+  background: linear-gradient(90deg, #755EBC, #2e33ad);
+}
+
 h4 {
   margin: 1em;
 }
