@@ -272,9 +272,10 @@ img {
   border-radius: 10px;
 }
 
-a[href$="income/"]::after {
+a[href$="income/"]::before {
   content: "NEW!";
   color: red;
+  padding-right: 15px;
   display: contents;
 }
 
