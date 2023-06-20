@@ -118,9 +118,10 @@ function startApp() {
 }
 function setApp(key) {
     var storedVal = localStorage.getItem(key);
-    $("#".concat(key, " *")).filter(function () {
-        return $(this).text().toLowerCase().indexOf(storedVal) > -1;
-    }).attr("selected", "selected");
+    $("#".concat(key, " option[value=\"").concat(storedVal, "\"]")).first().attr("selected", "");
+    //    $(`#${key} *`).filter(function () {
+    //        return $(this).text().toLowerCase().indexOf(storedVal) > -1
+    //    }).attr("selected", "selected")
     L("[L.Store]|> Value set for  ".concat(key, " => ").concat(storedVal));
 }
 function populateStorage(key, value) {

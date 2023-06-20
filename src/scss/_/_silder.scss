@@ -56,3 +56,9 @@ input[type="range"] {
     width: -webkit-fill-available;
     margin: 0;
 }
+
+datalist {
+    background: linear-gradient(to right, #1488ad, #3ade10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

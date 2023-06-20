@@ -1,8 +1,9 @@
 function setApp(key) {
     const storedVal = localStorage.getItem(key);
-    $(`#${key} *`).filter(function () {
-        return $(this).text().toLowerCase().indexOf(storedVal) > -1
-    }).attr("selected", "selected")
+    $(`#${key} option[value="${storedVal}"]`).first().attr("selected","")
+    //    $(`#${key} *`).filter(function () {
+//        return $(this).text().toLowerCase().indexOf(storedVal) > -1
+//    }).attr("selected", "selected")
     L(`[L.Store]|> Value set for  ${key} => ${storedVal}`);
 }
 
