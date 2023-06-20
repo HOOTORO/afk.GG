@@ -1,19 +1,43 @@
 @import "varr";
 
-
 #a-form {
     display: flex;
     border: 1px solid #bada55;
     border-radius: 10px;
     flex-direction: row;
     margin: 5px;
-    padding: 5px;
     flex-wrap: wrap;
-    max-height: 120px;
+    max-height: fit-content;
     align-content: center;
     align-items: center;
     justify-content: center;
     background-color: var(--containers-bg);
+}
+
+output {
+    padding-bottom: 10px;
+    margin: 5px;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background-color: var(--containers-bg);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+output:before {
+    position: sticky;
+    content: "Total Income";
+    right: 90%;
+    margin: 0;
+    color: orange;
+    background: linear-gradient(190deg, #700bad, #200bad);
+    padding: 5px; //0 0 5px;
+    border: 1px solid #500bad;
+    border-bottom-right-radius: 10px;
+    font-weight: 900;
 }
 
 @media (max-width: 900px) {
@@ -30,30 +54,6 @@
     }
 }
 
-output:before {
-    content: "Total Income";
-    margin: 0;
-    color: orange;
-    background: linear-gradient(190deg, #700bad, #200bad);
-    padding: 5px; //0 0 5px;
-    border: 1px solid #500bad;
-    border-bottom-right-radius: 10px;
-    font-weight: 900;
-}
-
-output {
-    padding-bottom: 10px;
-    /* margin: 5px; */
-    border: 2px solid blueviolet;
-    border-radius: 10px;
-    display: inline-flex;
-    justify-content: flex-start;
-    overflow: hidden;
-    background-color: var(--containers-bg);
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 
 @media (max-width: 900px) {
     output {
@@ -67,7 +67,6 @@ output > div {
 }
 
 
-
 span {
     color: var(--text);
     margin-right: auto;
@@ -75,7 +74,7 @@ span {
 }
 
 
-.inc-res {
+.select-container, .inc-res {
     display: inline-flex;
     max-width: fit-content;
     align-items: center;
@@ -83,10 +82,13 @@ span {
 }
 
 
-
 span > img {
     display: block;
     height: 30px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.select-container > h4 {
+    margin: 0;
 }

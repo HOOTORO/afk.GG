@@ -1,8 +1,3 @@
-type AfkResource = {
-    id: string;
-    label: string;
-};
-
 function makeOut() {
     const out = document.createElement("div");
     out.className = "out";
@@ -56,18 +51,10 @@ function updateOutput(x: number) {
     });
     for (const element of resKeys) {
     L(`[UPD.OUT]|> ${element} val. -> ${output[element]}`)
-//        const lab = document.createElement("label");
-//        lab.setAttribute("for", element);
-//        lab.innerText = (output[element]*x).toString();
-//        $(`#result > #${element}`).prepend(lab);
-//        $(`#result > #${element}`).children("label").remove();
-//        document.getElementById(element).appendChild(lab)
         $("#"+element).text((output[element] * x).toString());
         
     }
 }
-
-
 function getResImg(name: string) {
     const img = document.createElement("img");
     img.src = `../../assets/icons/s/${name}.png`;

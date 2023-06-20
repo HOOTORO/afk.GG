@@ -1,4 +1,12 @@
 const verb = true
+
+const xh = `
+    <div>
+        <span id="rangeValue">1 week</span>
+        <Input class="range" type="range" name "" value="1" min="1" max="52" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+    </div>
+`
+
 const userFields = [
     {name: "cursed-realm", type: "select", src: "gsheet"},
     {name: "treasure-scramble", type: "select", src: "gsheet"},

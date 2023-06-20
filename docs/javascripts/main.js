@@ -35,6 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var verb = true;
+var xh = "\n    <div>\n        <span id=\"rangeValue\">1 week</span>\n        <Input class=\"range\" type=\"range\" name \"\" value=\"1\" min=\"1\" max=\"52\" onChange=\"rangeSlide(this.value)\" onmousemove=\"rangeSlide(this.value)\"></Input>\n    </div>\n";
 var userFields = [
     { name: "cursed-realm", type: "select", src: "gsheet" },
     { name: "treasure-scramble", type: "select", src: "gsheet" },
@@ -67,6 +68,11 @@ var sources = [
     { id: "afk-income", label: "Base AFK Income", tableName: "AFK", period: 1 / 24, display: false }
 ];
 var recalc = new Event("recalc");
+var tLoadedEvent = new Event("tableready");
+// Listen for the event.
+$(document).on("tableready", "app", function (e) {
+    /* … */
+});
 $(document).on("click", "select", function (e) {
     L("[Events]|> ".concat(e));
 });
@@ -79,10 +85,10 @@ $(document).on("change", "select", function (x) {
     });
     $(x.target).find(":selected").attr("selected", "");
     populateStorage(x.target.id, changedValue);
-    //    $(x.target).trigger("recalc")
     var sli = localStorage.getItem("rangeValue");
     updateOutput(sli);
 });
+// test
 $(document).on("recalc", "app", function (y) {
     L(y);
 });
@@ -108,18 +114,7 @@ function startApp() {
         .then(function (u) { return app.appendChild(u); })
         .then(function () { return app.appendChild(makeOut()); })
         .finally(function () { return L("[MAIN]|> app started"); });
-    //        .finally(() => $("#app").trigger("change", ["foo", "bar"]));
 }
-//app.onchange = populateStorage;
-//function checkStorage() {
-//    $("select").each(function () {
-//        if (!localStorage.getItem(this.id)) {
-//            populateStorage();
-//        } else {
-//            setApp();
-//        }
-//    });
-//}
 function setApp(key) {
     var storedVal = localStorage.getItem(key);
     $("#".concat(key, " *")).filter(function () {
@@ -134,6 +129,17 @@ function populateStorage(key, value) {
         setApp(key);
     }
 }
+function setAttributes(el, attrs) {
+    for (var key in attrs) {
+        el.setAttribute(key, attrs[key]);
+    }
+}
+function rangeSlide(value) {
+    document.getElementById('rangeValue').innerHTML = value + " weeks";
+    $(this).attr("value", value.toString());
+    populateStorage("rangeValue", value);
+    updateOutput(value);
+}
 // =>  <=
 var rewards = [];
 function getRewards(source, rank) {
@@ -146,16 +152,18 @@ function userInput() {
             inputForm = document.createElement("form");
             inputForm.setAttribute("id", "a-form");
             sources.filter(function (v) { return v.display; }).forEach(function (k, v) {
+                var container = document.createElement("div");
+                container.setAttribute("class", "select-container");
                 var label = document.createElement("h4");
-                //        label.setAttribute("for", k.id)
                 label.innerText = k.label;
                 fetchTableData(k.tableName)
                     .then(function (raw) { return getHeaders(k.label, raw); })
                     .then(function (table) { return getOptions(table); })
                     .then(function (firstcolumn) { return makeSelect(k.id, firstcolumn); })
-                    .then(function (select) { return inputForm.appendChild(select); })
-                    .then(function (x) { return inputForm.insertBefore(label, x); })
+                    .then(function (select) { return container.appendChild(select); })
+                    .then(function (x) { return container.insertBefore(label, x); })
                     .finally(function () { return L(k); });
+                inputForm.append(container);
             });
             return [2 /*return*/, inputForm];
         });
@@ -192,38 +200,6 @@ function getHeaders(source, table) {
         rewards.push(r);
     });
     return table;
-}
-function timeRange() {
-    var container = document.createElement("div");
-    container.id = "time-range";
-    var sliderValue = document.createElement("span");
-    sliderValue.id = "rangeValue";
-    sliderValue.innerText = "1";
-    var slider = document.createElement("Input");
-    setAttributes(slider, {
-        "class": "range",
-        "type": "range",
-        "value": "1",
-        "min": "1",
-        "max": "48",
-        "onChange": "rangeSlide(this.value)",
-        "onmousemove": "rangeSlide(this.value)",
-    });
-    var x = container.appendChild(sliderValue);
-    return x.appendChild(slider);
-    //    const options = [1, 2, 3, 4, 5, 6, 7, 8]
-}
-function rangeSlide(value) {
-    document.getElementById('rangeValue').innerHTML = value + " weeks";
-    $(this).attr("value", value.toString());
-    populateStorage("rangeValue", value);
-    updateOutput(value);
-}
-var xh = "\n    <div>\n        <span id=\"rangeValue\">1 week</span>\n        <Input class=\"range\" type=\"range\" name \"\" value=\"1\" min=\"1\" max=\"52\" onChange=\"rangeSlide(this.value)\" onmousemove=\"rangeSlide(this.value)\"></Input>\n    </div>\n";
-function setAttributes(el, attrs) {
-    for (var key in attrs) {
-        el.setAttribute(key, attrs[key]);
-    }
 }
 function makeOut() {
     var out = document.createElement("div");
@@ -271,12 +247,6 @@ function updateOutput(x) {
     for (var _i = 0, resKeys_1 = resKeys; _i < resKeys_1.length; _i++) {
         var element = resKeys_1[_i];
         L("[UPD.OUT]|> ".concat(element, " val. -> ").concat(output[element]));
-        //        const lab = document.createElement("label");
-        //        lab.setAttribute("for", element);
-        //        lab.innerText = (output[element]*x).toString();
-        //        $(`#result > #${element}`).prepend(lab);
-        //        $(`#result > #${element}`).children("label").remove();
-        //        document.getElementById(element).appendChild(lab)
         $("#" + element).text((output[element] * x).toString());
     }
 }
@@ -286,13 +256,6 @@ function getResImg(name) {
     img.width = 24;
     return img;
 }
-var tLoadedEvent = new Event("tableready");
-// Listen for the event.
-app.addEventListener("tableready", function (e) {
-    //    console.log(e)
-    //        checkStorage();
-    /* … */
-}, false);
 function fetchTableData(tableName) {
     return __awaiter(this, void 0, void 0, function () {
         var response, text, json, x;

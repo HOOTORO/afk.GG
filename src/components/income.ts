@@ -9,16 +9,18 @@ async function userInput() {
     let inputForm = document.createElement("form");
     inputForm.setAttribute("id", "a-form");
     sources.filter(v => v.display).forEach((k, v) => {
+        const container = document.createElement("div")
+        container.setAttribute("class","select-container")
         const label = document.createElement("h4")
-//        label.setAttribute("for", k.id)
         label.innerText = k.label
         fetchTableData(k.tableName)
             .then(raw => getHeaders(k.label, raw))
             .then(table => getOptions(table))
             .then(firstcolumn => makeSelect(k.id, firstcolumn))
-            .then(select => inputForm.appendChild(select))
-            .then(x => inputForm.insertBefore(label, x))
+            .then(select => container.appendChild(select))
+            .then(x => container.insertBefore(label, x))
             .finally(() => L(k))
+        inputForm.append(container)
     });
     return inputForm;
 }
@@ -54,47 +56,4 @@ function getHeaders(source: string, table: GtableData) {
         rewards.push(r);
     });
     return table;
-}
-
-function timeRange() {
-    let container = document.createElement("div")
-    container.id = "time-range"
-    let sliderValue = document.createElement("span")
-    sliderValue.id = "rangeValue"
-    sliderValue.innerText = "1"
-    const slider = document.createElement("Input")
-    setAttributes(slider, {
-        "class": "range",
-        "type": "range",
-        "value": "1",
-        "min": "1",
-        "max": "48",
-        "onChange": "rangeSlide(this.value)",
-        "onmousemove": "rangeSlide(this.value)",
-
-    })
-    let x = container.appendChild(sliderValue)
-    return x.appendChild(slider)
-//    const options = [1, 2, 3, 4, 5, 6, 7, 8]
-}
-
-function rangeSlide(value) {
-    document.getElementById('rangeValue').innerHTML = value + " weeks";
-    $(this).attr("value", value.toString())
-    populateStorage("rangeValue", value)
-    updateOutput(value)
-}
-
-const xh = `
-    <div>
-        <span id="rangeValue">1 week</span>
-        <Input class="range" type="range" name "" value="1" min="1" max="52" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
-    </div>
-`
-
-
-function setAttributes(el, attrs) {
-    for (var key in attrs) {
-        el.setAttribute(key, attrs[key]);
-    }
 }

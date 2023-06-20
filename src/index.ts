@@ -16,25 +16,9 @@ for (let inputfield of userFields) {
     }
 }
 
-
-
-
 function startApp() {
     userInput()
         .then(u => app.appendChild(u))
         .then(() => app.appendChild(makeOut()))
         .finally(() => L("[MAIN]|> app started"));
-//        .finally(() => $("#app").trigger("change", ["foo", "bar"]));
 }
-
-//app.onchange = populateStorage;
-
-//function checkStorage() {
-//    $("select").each(function () {
-//        if (!localStorage.getItem(this.id)) {
-//            populateStorage();
-//        } else {
-//            setApp();
-//        }
-//    });
-//}

@@ -1,4 +1,10 @@
 const recalc = new Event("recalc");
+const tLoadedEvent = new Event("tableready");
+
+// Listen for the event.
+$(document).on("tableready", "app", function(e) {
+        /* … */
+});
 
 $(document).on("click", "select", function (e) {
     L(`[Events]|> ${e}`)
@@ -16,11 +22,11 @@ $(document).on("change", "select", function (x) {
     $(x.target).find(":selected").attr("selected", "")
     populateStorage(x.target.id, changedValue)
     
-//    $(x.target).trigger("recalc")
     const sli:number = localStorage.getItem("rangeValue") as unknown as number
     updateOutput(sli)
 });
 
+// test
 $(document).on("recalc", "app", function (y) {
     L(y)    
 })

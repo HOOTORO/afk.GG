@@ -14,3 +14,15 @@ function populateStorage(key, value) {
     }
 }
 
+function setAttributes(el, attrs) {
+    for (var key in attrs) {
+        el.setAttribute(key, attrs[key]);
+    }
+}
+
+function rangeSlide(value) {
+    document.getElementById('rangeValue').innerHTML = value + " weeks";
+    $(this).attr("value", value.toString())
+    populateStorage("rangeValue", value)
+    updateOutput(value)
+}
