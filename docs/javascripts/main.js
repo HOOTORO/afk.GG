@@ -59,58 +59,21 @@ var sources = [
     { id: "nightmare-corridor", label: "Nightmare Corridor", tableName: "NC", period: 7, display: true },
     { id: "afk-income", label: "Base AFK Income", tableName: "AFK", period: 1 / 24, display: false }
 ];
-// CLICK Black Select
-//$(document).on("click", ".select-menu", function (e) {
-//  let menu = $(this);
-//  if (!menu.hasClass("open")) {
-//    menu.addClass("open");
-//  }
-//});
-//
-//$(document).on("click", ".select-menu > ul > li", function (e) {
-//  let li = $(this),
-//    menu = li.parent().parent(),
-//    select = menu.children("select"),
-//    selected = select.find("option:selected") as JQuery<HTMLOptionElement>,
-//    index = li.index();
-//
-//  menu.css("--t", index * -38 + "px");
-//  selected.removeAttr("selected");
-//  select.find("option").eq(index).attr("selected", "");
-//
-//  menu.addClass(index > selected.index() ? "tilt-down" : "tilt-up");
-//  select.trigger("change");
-//
-//  setTimeout(() => {
-//    menu.removeClass("open tilt-up tilt-down");
-//  }, 500);
-//});
-//
-//$(document).on("click", (e) => {
-//  e.stopPropagation();
-//  if ($(".select-menu").has(e.target as unknown as string).length === 0) {
-//    $(".select-menu").removeClass("open");
-//  }
-//});
-//
-//
 $(document).on("click", "select", function (e) {
     checkStorage();
-    console.log(e);
-    //    let menu = $(this);
-    //    if (!menu.hasClass("open")) {
-    //        menu.addClass("open");
-    //    }
+    //    console.log(e)
 });
-window.onload = function () {
-    startApp();
-};
 var app = document.getElementById("app");
+startApp();
+//window.onload = function () {
+//    startApp();
+//};
 function startApp() {
     userInput()
         .then(function (u) { return app.appendChild(u); })
         .then(function () { return app.appendChild(makeOut()); })
         .finally(function () { return console.log("app started"); });
+    //        .finally(() => $("#app").trigger("change", ["foo", "bar"]));
 }
 app.onchange = populateStorage;
 function checkStorage() {
@@ -125,6 +88,9 @@ function checkStorage() {
 }
 var l = function (x) {
     console.log(x);
+};
+app.onchange = function (x) {
+    l(x);
 };
 function setApp() {
     var _a;
@@ -174,7 +140,6 @@ function userInput() {
                     .then(function (firstcolumn) { return makeSelect(k.id, firstcolumn); })
                     .then(function (select) { return inputForm.appendChild(select); })
                     .then(function (x) { return inputForm.insertBefore(label, x); })
-                    //            .then(select => console.log(select))
                     .finally(function () { return l(k); });
             });
             return [2 /*return*/, inputForm];
@@ -251,15 +216,10 @@ function makeOut() {
     output.setAttribute("for", "a-form");
     output.id = "result";
     output.innerHTML += xh;
-    var label = document.createElement("label");
-    label.setAttribute("for", "result");
-    label.textContent = output.name;
     resources.forEach(function (el) {
         var rr = resultRow(el);
-        output.appendChild(label);
         output.appendChild(rr);
     });
-    out.appendChild(label);
     out.appendChild(output);
     return out;
 }
@@ -281,7 +241,6 @@ function updateOutput(x) {
     $("select").each(function () {
         var rank = localStorage.getItem(this.id);
         var rews = getRewards(this.id, rank);
-        console.log(rews);
         for (var _i = 0, resKeys_2 = resKeys; _i < resKeys_2.length; _i++) {
             var element = resKeys_2[_i];
             if (rews[element]) {
@@ -294,12 +253,10 @@ function updateOutput(x) {
         var lab = document.createElement("label");
         lab.setAttribute("for", element);
         lab.innerText = (output[element] * x).toString();
-        var parent_1 = $("#".concat(element)).parent().get();
         $("#result > #".concat(element)).prepend(lab);
         $("#result > #".concat(element)).children("label").remove();
         document.getElementById(element).appendChild(lab);
     }
-    console.log(output);
 }
 function getResImg(name) {
     var img = document.createElement("img");
@@ -310,7 +267,8 @@ function getResImg(name) {
 var tLoadedEvent = new Event("tableready");
 // Listen for the event.
 app.addEventListener("tableready", function (e) {
-    console.log(e);
+    //    console.log(e)
+    checkStorage();
     /* … */
 }, false);
 function fetchTableData(tableName) {

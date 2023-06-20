@@ -18,7 +18,6 @@ async function userInput() {
             .then(firstcolumn => makeSelect(k.id, firstcolumn))
             .then(select => inputForm.appendChild(select))
             .then(x => inputForm.insertBefore(label, x))
-            //            .then(select => console.log(select))
             .finally(() => l(k))
     });
     return inputForm;

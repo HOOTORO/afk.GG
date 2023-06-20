@@ -14,15 +14,10 @@ function makeOut() {
     output.innerHTML += xh;
 
 
-    const label = document.createElement("label");
-    label.setAttribute("for", "result");
-    label.textContent = output.name;
     resources.forEach((el) => {
         const rr = resultRow(el);
-        output.appendChild(label)
         output.appendChild(rr);
     });
-    out.appendChild(label);
     out.appendChild(output);
     return out;
 }
@@ -49,7 +44,6 @@ function updateOutput(x:number) {
     $("select").each(function () {
         const rank = localStorage.getItem(this.id);
         const rews = getRewards(this.id, rank);
-        console.log(rews);
         for (const element of resKeys) {
             if (rews[element]) {
                 output[element] += rews[element];
@@ -60,12 +54,10 @@ function updateOutput(x:number) {
         const lab = document.createElement("label");
         lab.setAttribute("for", element);
         lab.innerText = (output[element]*x).toString();
-        let parent = $(`#${element}`).parent().get()
         $(`#result > #${element}`).prepend(lab);
         $(`#result > #${element}`).children("label").remove();
         document.getElementById(element).appendChild(lab);
     }
-    console.log(output);
 }
 
 

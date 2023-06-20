@@ -1,0 +1,30 @@
+$glass: rgba(255, 255, 255, 0.2);
+$glass-icon: rgba(255, 255, 255, 0.3);
+$gradient: linear-gradient(180deg, #2E303D, #141419);
+//$gradient: linear-gradient(35deg, #2E303D, #2e33ad);
+$def-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
+$option: #320a28;
+$dark-bg: #141419;
+$light-bg: snow;
+$light-bg2: #cdcdaf;
+$d-wrapper: #2c313d;
+
+$l-text: $dark-bg;
+$d-text: $light-bg;
+
+[data-md-color-scheme=slate] {
+    --slate-gradient: #{$gradient};
+    --containers-bg: #{$d-wrapper};
+    --nav-color: #{$d-wrapper};
+    --text: #{$d-text};
+    --md-code-bg-color: #{$light-bg2};
+    --md-code-fg-color: #{$dark-bg};
+
+}
+
+[data-md-color-scheme=default] {
+    --nav-color: snow;
+    --slate-gradient: #{$def-gradient};
+    --containers-bg: #{$light-bg};
+    --text: #{$l-text};
+}

@@ -1,11 +1,7 @@
-$glass: rgba(255, 255, 255, 0.2);
-$glass-icon: rgba(255, 255, 255, 0.3);
-//$gradient: linear-gradient(35deg, #2E303D, #2e33ad);
-$gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2  );
-$option: #320a28;
+@import "varr";
 
 body {
-    background: $gradient no-repeat center center fixed; 
+    background: var(--slate-gradient) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

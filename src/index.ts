@@ -1,14 +1,16 @@
-window.onload = function () {
-    startApp();
-};
+let app = document.getElementById("app");
+startApp();
+//window.onload = function () {
+//    startApp();
+//};
 
-let app = document.getElementById("app")
 
 function startApp() {
     userInput()
         .then(u => app.appendChild(u))
         .then(() => app.appendChild(makeOut()))
         .finally(() => console.log("app started"));
+//        .finally(() => $("#app").trigger("change", ["foo", "bar"]));
 }
 
 app.onchange = populateStorage;
@@ -25,4 +27,8 @@ function checkStorage() {
 
 const l = (x) => {
     console.log(x)
+}
+
+app.onchange = (x) => {
+    l(x);
 }

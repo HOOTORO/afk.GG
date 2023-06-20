@@ -1,22 +1,51 @@
+@import "varr";
+
 #tbl {
     display: block;
     margin: auto;
     width: 8em;
 }
 
-.out {
-    padding: 20px;
+#a-form {
+    display: flex;
+    border: 1px solid #bada55;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
+    max-height: 120px;
+    align-items: center;
+    align-content: stretch;
+    background-color: var(--containers-bg);
 }
 
 @media (max-width: 900px) {
-    output {
-        flex-direction: column !important;
+    #a-form {
+        display: inline-flex;
+        max-height: 300px;
+    }
+
+    #app {
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
+output:before {
+    content: "Total Income";
+    margin: 0;
+    color: orange;
+    background: linear-gradient(190deg, #700bad, #200bad);
+    padding: 5px; //0 0 5px;
+    border: 1px solid #500bad;
+    border-bottom-right-radius: 10px;
+    font-weight: 900;
+}
+
 output {
-    padding: 10px;
-    margin: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
     border: 2px solid blueviolet;
     border-radius: 10px;
     display: flex;
@@ -24,7 +53,15 @@ output {
     align-items: flex-end;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #2c313d;
+    overflow: hidden;
+    background-color: var(--containers-bg);
+}
+
+@media (max-width: 900px) {
+    output {
+        display: inline-flex;
+        flex-direction: row;
+    }
 }
 
 output > div {
@@ -42,6 +79,7 @@ span > label {
 
 
 span {
+    color: var(--text);
     margin-right: auto;
     margin-left: auto;
 }

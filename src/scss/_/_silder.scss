@@ -1,17 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+output > div {
+    width: -webkit-fill-available;
+}
+
 #rangeValue {
     position: relative;
     display: block;
     text-align: center;
     font-size: 1em;
-    color: #e1e3ef;
+    color: var(--text);
+    //    color: #e1e3ef;
     font-weight: 400;
-    width: 600px;
+    //    width: 43vw;
 }
 
+//@media (max-width: 1200px) {
+//    .range {
+//        width: 68vw !important;
+//    }
+//}
+//
+//
+//@media (max-width: 1740px) {
+//    .range {
+//        width: 43vw !important;
+//    }
+//}
+//
+//@media (max-width: 1960px) {
+//    .range {
+//        width: 32vw !important;
+//    }
+//}
+//
+//@media (max-width: 1860px) {
+//    .range {
+//        width: 34vw !important;
+//    }
+//}
+
 .range {
-    width: 600px;
+    width: -webkit-fill-available;
+    margin-left: 5px;
     height: 10px;
     -webkit-appearance: none;
     background: #111;
