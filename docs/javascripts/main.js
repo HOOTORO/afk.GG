@@ -104,7 +104,7 @@ for (var _i = 0, userFields_1 = userFields; _i < userFields_1.length; _i++) {
     var inputfield = userFields_1[_i];
     if (!localStorage.getItem(inputfield.name)) {
         var selected = $(inputfield.name).find(":selected").get(0);
-        populateStorage(inputfield.name, selected.innerText);
+        populateStorage(inputfield.name, selected === null || selected === void 0 ? void 0 : selected.innerText);
     }
     else {
         setApp(inputfield.name);

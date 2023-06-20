@@ -10,7 +10,7 @@ startApp();
 for (let inputfield of userFields) {
     if (!localStorage.getItem(inputfield.name)) {
         const selected = $(inputfield.name).find(":selected").get(0)
-        populateStorage(inputfield.name, selected.innerText);
+        populateStorage(inputfield.name, selected?.innerText);
     } else {
         setApp(inputfield.name);
     }
