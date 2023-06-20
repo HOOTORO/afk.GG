@@ -324,13 +324,14 @@ thead {
   margin: 100px;
 }
 
-.glightbox img {
+.glightbox, .glightbox img {
   user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  pointer-events: none;
 }
 
 .md-tabs__link {
@@ -364,12 +365,22 @@ thead {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+@keyframes discord {
+  0%, 20% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
 .discord {
   color: blueviolet;
+  animation: discord 2000ms infinite;
 }
 
 .twemoji {
-  scale: 1.2;
+  margin-left: 5px;
+  scale: 1.8;
 }
 
 @keyframes heart {
