@@ -13,6 +13,9 @@ $l-text: $dark-bg;
 $d-text: $light-bg;
 $slider-radius: 20px;
 
+$l-sel-text: #280808;
+$d-sel-text: white;
+
 [data-md-color-scheme=slate] {
     --slate-gradient: #{$gradient};
     --containers-bg: #{$d-wrapper};
@@ -20,6 +23,7 @@ $slider-radius: 20px;
     --text: #{$d-text};
     --md-code-bg-color: #{$light-bg2};
     --md-code-fg-color: #{$dark-bg};
+    --select-font-color: #{$d-sel-text}
 
 }
 
@@ -28,4 +32,5 @@ $slider-radius: 20px;
     --slate-gradient: #{$def-gradient};
     --containers-bg: #{$light-bg};
     --text: #{$l-text};
+    --select-font-color: #{$l-sel-text}
 }

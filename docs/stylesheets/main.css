@@ -6,6 +6,7 @@
   --text: snow;
   --md-code-bg-color: #cdcdaf;
   --md-code-fg-color: #141419;
+  --select-font-color: white ;
 }
 
 [data-md-color-scheme=default] {
@@ -13,6 +14,7 @@
   --slate-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
   --containers-bg: snow;
   --text: #141419;
+  --select-font-color: #280808 ;
 }
 
 #a-form {
@@ -108,6 +110,7 @@ span > img {
   --text: snow;
   --md-code-bg-color: #cdcdaf;
   --md-code-fg-color: #141419;
+  --select-font-color: white ;
 }
 
 [data-md-color-scheme=default] {
@@ -115,6 +118,7 @@ span > img {
   --slate-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
   --containers-bg: snow;
   --text: #141419;
+  --select-font-color: #280808 ;
 }
 
 body {
@@ -143,7 +147,7 @@ select {
   margin: 1em;
   text-align: center;
   background: url(../assets/svg/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center/1.4em, linear-gradient(to left, rgba(255, 255, 255, 0.3) 2em, rgba(255, 255, 255, 0.2) 3em);
-  color: white;
+  color: var(--select-font-color);
   border-radius: 0.25em;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -169,6 +173,7 @@ select::-ms-expand {
   --text: snow;
   --md-code-bg-color: #cdcdaf;
   --md-code-fg-color: #141419;
+  --select-font-color: white ;
 }
 
 [data-md-color-scheme=default] {
@@ -176,6 +181,7 @@ select::-ms-expand {
   --slate-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
   --containers-bg: snow;
   --text: #141419;
+  --select-font-color: #280808 ;
 }
 
 output > div {

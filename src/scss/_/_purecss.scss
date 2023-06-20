@@ -27,7 +27,7 @@ select {
     text-align: center;
     background: url(../assets/svg/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em,
     linear-gradient(to left, $glass-icon 2em, $glass 3em);
-    color: white;
+    color: var(--select-font-color);
     border-radius: 0.25em;
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
