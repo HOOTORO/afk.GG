@@ -3,7 +3,11 @@ const verb = true
 const xh = `
     <div>
         <span id="rangeValue">1 week</span>
-        <Input class="range" type="range" name "" value="1" min="1" max="52" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+        <input class="range" type="range" name="times" value="1" min="1" max="52" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)" list="values" />
+<datalist id="values">
+`
+const leftover = `
+</datalist>
     </div>
 `
 

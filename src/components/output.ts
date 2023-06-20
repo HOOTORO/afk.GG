@@ -1,14 +1,19 @@
 function makeOut() {
-    const out = document.createElement("div");
-    out.className = "out";
 
-    const output = document.createElement("output");
+    const out = document.createElement("div"),
+        output = document.createElement("output"),
+        datalist = xh + weekLabels(52,
+            [{n: 1, desc: "↑ нед."},
+                {n: 2, desc: "↑ ~1 мес.   "},
+                {n: 26, desc: "↑ полгода"},
+                {n: 52, desc: "1 год ↑"}
+            ]) + leftover
+
+    out.className = "out";
     output.name = "Total Income";
     output.setAttribute("for", "a-form");
     output.id = "result";
-    output.innerHTML += xh;
-
-
+    output.innerHTML += datalist;
     resources.forEach((el) => {
         const resContainer = document.createElement("div")
         resContainer.className = "inc-res"
@@ -50,11 +55,12 @@ function updateOutput(x: number) {
         }
     });
     for (const element of resKeys) {
-    L(`[UPD.OUT]|> ${element} val. -> ${output[element]}`)
-        $("#"+element).text((output[element] * x).toString());
-        
+        L(`[UPD.OUT]|> ${element} val. -> ${output[element]}`)
+        $("#" + element).text((output[element] * x).toString());
+
     }
 }
+
 function getResImg(name: string) {
     const img = document.createElement("img");
     img.src = `../../assets/icons/s/${name}.png`;

@@ -35,7 +35,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var verb = true;
-var xh = "\n    <div>\n        <span id=\"rangeValue\">1 week</span>\n        <Input class=\"range\" type=\"range\" name \"\" value=\"1\" min=\"1\" max=\"52\" onChange=\"rangeSlide(this.value)\" onmousemove=\"rangeSlide(this.value)\"></Input>\n    </div>\n";
+var xh = "\n    <div>\n        <span id=\"rangeValue\">1 week</span>\n        <input class=\"range\" type=\"range\" name=\"times\" value=\"1\" min=\"1\" max=\"52\" onChange=\"rangeSlide(this.value)\" onmousemove=\"rangeSlide(this.value)\" list=\"values\" />\n<datalist id=\"values\">\n";
+var leftover = "\n</datalist>\n    </div>\n";
 var userFields = [
     { name: "cursed-realm", type: "select", src: "gsheet" },
     { name: "treasure-scramble", type: "select", src: "gsheet" },
@@ -134,6 +135,23 @@ function setAttributes(el, attrs) {
         el.setAttribute(key, attrs[key]);
     }
 }
+function weekLabels(n, stops) {
+    var _a;
+    var html = "";
+    var _loop_1 = function (i) {
+        L(stops.some(function (v) { return v.n === i; }));
+        if (stops.some(function (v) { return v.n === i; })) {
+            html += "<option value=\"".concat(i.toString(), "\" label=\"").concat((_a = stops.find(function (v) { return v.n === i; })) === null || _a === void 0 ? void 0 : _a.desc, "\"></option>");
+        }
+        else {
+            html += "<option value=\"".concat(i.toString(), "\" label=\"\"></option>");
+        }
+    };
+    for (var i = 1; i <= n; i++) {
+        _loop_1(i);
+    }
+    return html;
+}
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value + " weeks";
     $(this).attr("value", value.toString());
@@ -202,13 +220,16 @@ function getHeaders(source, table) {
     return table;
 }
 function makeOut() {
-    var out = document.createElement("div");
+    var out = document.createElement("div"), output = document.createElement("output"), datalist = xh + weekLabels(52, [{ n: 1, desc: "↑ нед." },
+        { n: 2, desc: "↑ ~1 мес.   " },
+        { n: 26, desc: "↑ полгода" },
+        { n: 52, desc: "1 год ↑" }
+    ]) + leftover;
     out.className = "out";
-    var output = document.createElement("output");
     output.name = "Total Income";
     output.setAttribute("for", "a-form");
     output.id = "result";
-    output.innerHTML += xh;
+    output.innerHTML += datalist;
     resources.forEach(function (el) {
         var resContainer = document.createElement("div");
         resContainer.className = "inc-res";
