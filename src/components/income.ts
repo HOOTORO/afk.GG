@@ -9,8 +9,8 @@ async function userInput() {
     let inputForm = document.createElement("form");
     inputForm.setAttribute("id", "a-form");
     sources.filter(v => v.display).forEach((k, v) => {
-        const label = document.createElement("label")
-        label.setAttribute("for", k.id)
+        const label = document.createElement("h4")
+//        label.setAttribute("for", k.id)
         label.innerText = k.label
         fetchTableData(k.tableName)
             .then(raw => getHeaders(k.label, raw))
@@ -18,7 +18,7 @@ async function userInput() {
             .then(firstcolumn => makeSelect(k.id, firstcolumn))
             .then(select => inputForm.appendChild(select))
             .then(x => inputForm.insertBefore(label, x))
-            .finally(() => l(k))
+            .finally(() => L(k))
     });
     return inputForm;
 }
@@ -80,6 +80,8 @@ function timeRange() {
 
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value + " weeks";
+    $(this).attr("value", value.toString())
+    populateStorage("rangeValue", value)
     updateOutput(value)
 }
 

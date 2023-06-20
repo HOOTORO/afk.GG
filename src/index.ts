@@ -1,34 +1,40 @@
-let app = document.getElementById("app");
+const L = (x) => {
+    if (verb) {
+        console.log(x)
+    }
+}
+
+const app = document.getElementById("app");
 startApp();
-//window.onload = function () {
-//    startApp();
-//};
+
+for (let inputfield of userFields) {
+    if (!localStorage.getItem(inputfield.name)) {
+        const selected = $(inputfield.name).find(":selected").get(0)
+        populateStorage(inputfield.name, selected.innerText);
+    } else {
+        setApp(inputfield.name);
+    }
+}
+
+
 
 
 function startApp() {
     userInput()
         .then(u => app.appendChild(u))
         .then(() => app.appendChild(makeOut()))
-        .finally(() => console.log("app started"));
+        .finally(() => L("[MAIN]|> app started"));
 //        .finally(() => $("#app").trigger("change", ["foo", "bar"]));
 }
 
-app.onchange = populateStorage;
+//app.onchange = populateStorage;
 
-function checkStorage() {
-    $("select").each(function () {
-        if (!localStorage.getItem(this.id)) {
-            populateStorage();
-        } else {
-            setApp();
-        }
-    });
-}
-
-const l = (x) => {
-    console.log(x)
-}
-
-app.onchange = (x) => {
-    l(x);
-}
+//function checkStorage() {
+//    $("select").each(function () {
+//        if (!localStorage.getItem(this.id)) {
+//            populateStorage();
+//        } else {
+//            setApp();
+//        }
+//    });
+//}

@@ -10,7 +10,7 @@ app.addEventListener(
     "tableready",
     (e) => {
 //    console.log(e)
-        checkStorage();
+//        checkStorage();
         /* … */
     },
     false

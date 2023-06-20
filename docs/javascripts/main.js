@@ -34,6 +34,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var verb = true;
+var userFields = [
+    { name: "cursed-realm", type: "select", src: "gsheet" },
+    { name: "treasure-scramble", type: "select", src: "gsheet" },
+    { name: "nightmare-corridor", type: "select", src: "gsheet" },
+    //    {name: "afk", type: "bool", src: "gsheet"}
+];
 var sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
 var base = "https://docs.google.com/spreadsheets/d/".concat(sheetId, "/gviz/tq?");
 var query = encodeURIComponent("Select *");
@@ -59,65 +66,73 @@ var sources = [
     { id: "nightmare-corridor", label: "Nightmare Corridor", tableName: "NC", period: 7, display: true },
     { id: "afk-income", label: "Base AFK Income", tableName: "AFK", period: 1 / 24, display: false }
 ];
+var recalc = new Event("recalc");
 $(document).on("click", "select", function (e) {
-    checkStorage();
-    //    console.log(e)
+    L("[Events]|> ".concat(e));
 });
+// Storing user input
+$(document).on("change", "select", function (x) {
+    var changedValue = $(x.target).find(":selected").val();
+    L("[Events]|> Changing ".concat(x.target.id, ", new value => ").concat(changedValue));
+    $("#" + x.target.id + " option[selected]").each(function () {
+        this.removeAttribute("selected");
+    });
+    $(x.target).find(":selected").attr("selected", "");
+    populateStorage(x.target.id, changedValue);
+    //    $(x.target).trigger("recalc")
+    var sli = localStorage.getItem("rangeValue");
+    updateOutput(sli);
+});
+$(document).on("recalc", "app", function (y) {
+    L(y);
+});
+var L = function (x) {
+    if (verb) {
+        console.log(x);
+    }
+};
 var app = document.getElementById("app");
 startApp();
-//window.onload = function () {
-//    startApp();
-//};
+for (var _i = 0, userFields_1 = userFields; _i < userFields_1.length; _i++) {
+    var inputfield = userFields_1[_i];
+    if (!localStorage.getItem(inputfield.name)) {
+        var selected = $(inputfield.name).find(":selected").get(0);
+        populateStorage(inputfield.name, selected.innerText);
+    }
+    else {
+        setApp(inputfield.name);
+    }
+}
 function startApp() {
     userInput()
         .then(function (u) { return app.appendChild(u); })
         .then(function () { return app.appendChild(makeOut()); })
-        .finally(function () { return console.log("app started"); });
+        .finally(function () { return L("[MAIN]|> app started"); });
     //        .finally(() => $("#app").trigger("change", ["foo", "bar"]));
 }
-app.onchange = populateStorage;
-function checkStorage() {
-    $("select").each(function () {
-        if (!localStorage.getItem(this.id)) {
-            populateStorage();
-        }
-        else {
-            setApp();
-        }
-    });
+//app.onchange = populateStorage;
+//function checkStorage() {
+//    $("select").each(function () {
+//        if (!localStorage.getItem(this.id)) {
+//            populateStorage();
+//        } else {
+//            setApp();
+//        }
+//    });
+//}
+function setApp(key) {
+    var storedVal = localStorage.getItem(key);
+    $("#".concat(key, " *")).filter(function () {
+        return $(this).text().toLowerCase().indexOf(storedVal) > -1;
+    }).attr("selected", "selected");
+    L("[L.Store]|> Value set for  ".concat(key, " => ").concat(storedVal));
 }
-var l = function (x) {
-    console.log(x);
-};
-app.onchange = function (x) {
-    l(x);
-};
-function setApp() {
-    var _a;
-    l("set from localstore");
-    (_a = $("select")) === null || _a === void 0 ? void 0 : _a.each(function () {
-        var storedValue = localStorage.getItem(this.id);
-        var select = $(this), options = select.find("option");
-        var selected, sindex = 0;
-        options.each(function (index, element) {
-            if (element.textContent === storedValue) {
-                options.eq(index).attr("selected", "selected");
-                sindex = index;
-                selected = element;
-            }
-        });
-        var x = document.getElementById("rangeValue").innerText.split(" ").at(0);
-        updateOutput(x);
-        console.log("Value set for  ".concat(this.id, " => ").concat(selected.textContent));
-    });
-}
-function populateStorage() {
-    l("save data to local store");
-    $("select").each(function () {
-        var select = $(this), selected = select.find(":selected").get(0);
-        localStorage.setItem(this.id, selected.innerText);
-    });
-    setApp();
+function populateStorage(key, value) {
+    L("[L.Store]|> save data to local store");
+    if (key && value) {
+        localStorage.setItem(key, value);
+        setApp(key);
+    }
 }
 // =>  <=
 var rewards = [];
@@ -131,8 +146,8 @@ function userInput() {
             inputForm = document.createElement("form");
             inputForm.setAttribute("id", "a-form");
             sources.filter(function (v) { return v.display; }).forEach(function (k, v) {
-                var label = document.createElement("label");
-                label.setAttribute("for", k.id);
+                var label = document.createElement("h4");
+                //        label.setAttribute("for", k.id)
                 label.innerText = k.label;
                 fetchTableData(k.tableName)
                     .then(function (raw) { return getHeaders(k.label, raw); })
@@ -140,7 +155,7 @@ function userInput() {
                     .then(function (firstcolumn) { return makeSelect(k.id, firstcolumn); })
                     .then(function (select) { return inputForm.appendChild(select); })
                     .then(function (x) { return inputForm.insertBefore(label, x); })
-                    .finally(function () { return l(k); });
+                    .finally(function () { return L(k); });
             });
             return [2 /*return*/, inputForm];
         });
@@ -200,6 +215,8 @@ function timeRange() {
 }
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value + " weeks";
+    $(this).attr("value", value.toString());
+    populateStorage("rangeValue", value);
     updateOutput(value);
 }
 var xh = "\n    <div>\n        <span id=\"rangeValue\">1 week</span>\n        <Input class=\"range\" type=\"range\" name \"\" value=\"1\" min=\"1\" max=\"52\" onChange=\"rangeSlide(this.value)\" onmousemove=\"rangeSlide(this.value)\"></Input>\n    </div>\n";
@@ -217,8 +234,12 @@ function makeOut() {
     output.id = "result";
     output.innerHTML += xh;
     resources.forEach(function (el) {
+        var resContainer = document.createElement("div");
+        resContainer.className = "inc-res";
         var rr = resultRow(el);
-        output.appendChild(rr);
+        resContainer.appendChild(getResImg(el.id));
+        resContainer.appendChild(rr);
+        output.appendChild(resContainer);
     });
     out.appendChild(output);
     return out;
@@ -226,7 +247,6 @@ function makeOut() {
 function resultRow(nl) {
     var res = document.createElement("span");
     res.id = nl.id;
-    res.appendChild(getResImg(nl.id));
     return res;
 }
 function updateOutput(x) {
@@ -250,12 +270,14 @@ function updateOutput(x) {
     });
     for (var _i = 0, resKeys_1 = resKeys; _i < resKeys_1.length; _i++) {
         var element = resKeys_1[_i];
-        var lab = document.createElement("label");
-        lab.setAttribute("for", element);
-        lab.innerText = (output[element] * x).toString();
-        $("#result > #".concat(element)).prepend(lab);
-        $("#result > #".concat(element)).children("label").remove();
-        document.getElementById(element).appendChild(lab);
+        L("[UPD.OUT]|> ".concat(element, " val. -> ").concat(output[element]));
+        //        const lab = document.createElement("label");
+        //        lab.setAttribute("for", element);
+        //        lab.innerText = (output[element]*x).toString();
+        //        $(`#result > #${element}`).prepend(lab);
+        //        $(`#result > #${element}`).children("label").remove();
+        //        document.getElementById(element).appendChild(lab)
+        $("#" + element).text((output[element] * x).toString());
     }
 }
 function getResImg(name) {
@@ -268,7 +290,7 @@ var tLoadedEvent = new Event("tableready");
 // Listen for the event.
 app.addEventListener("tableready", function (e) {
     //    console.log(e)
-    checkStorage();
+    //        checkStorage();
     /* … */
 }, false);
 function fetchTableData(tableName) {

@@ -15,8 +15,12 @@ function makeOut() {
 
 
     resources.forEach((el) => {
+        const resContainer = document.createElement("div")
+        resContainer.className = "inc-res"
         const rr = resultRow(el);
-        output.appendChild(rr);
+        resContainer.appendChild(getResImg(el.id))
+        resContainer.appendChild(rr);
+        output.appendChild(resContainer);
     });
     out.appendChild(output);
     return out;
@@ -25,11 +29,10 @@ function makeOut() {
 function resultRow(nl: AfkResource) {
     const res = document.createElement("span");
     res.id = nl.id;
-    res.appendChild(getResImg(nl.id));
     return res;
 }
 
-function updateOutput(x:number) {
+function updateOutput(x: number) {
     let output: ResourceReward = {
         source: "out",
         rank: "total",
@@ -41,6 +44,7 @@ function updateOutput(x:number) {
     const resKeys = Object.keys(output).filter(
         (value, index) => value && index > 1
     );
+
     $("select").each(function () {
         const rank = localStorage.getItem(this.id);
         const rews = getRewards(this.id, rank);
@@ -51,12 +55,15 @@ function updateOutput(x:number) {
         }
     });
     for (const element of resKeys) {
-        const lab = document.createElement("label");
-        lab.setAttribute("for", element);
-        lab.innerText = (output[element]*x).toString();
-        $(`#result > #${element}`).prepend(lab);
-        $(`#result > #${element}`).children("label").remove();
-        document.getElementById(element).appendChild(lab);
+    L(`[UPD.OUT]|> ${element} val. -> ${output[element]}`)
+//        const lab = document.createElement("label");
+//        lab.setAttribute("for", element);
+//        lab.innerText = (output[element]*x).toString();
+//        $(`#result > #${element}`).prepend(lab);
+//        $(`#result > #${element}`).children("label").remove();
+//        document.getElementById(element).appendChild(lab)
+        $("#"+element).text((output[element] * x).toString());
+        
     }
 }
 

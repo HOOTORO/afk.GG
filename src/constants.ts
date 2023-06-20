@@ -1,3 +1,11 @@
+const verb = true
+const userFields = [
+    {name: "cursed-realm", type: "select", src: "gsheet"},
+    {name: "treasure-scramble", type: "select", src: "gsheet"},
+    {name: "nightmare-corridor", type: "select", src: "gsheet"},
+//    {name: "afk", type: "bool", src: "gsheet"}
+];
+
 const sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
 const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
 const query = encodeURIComponent("Select *");
