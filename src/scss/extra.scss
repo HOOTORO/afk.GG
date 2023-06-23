@@ -1,5 +1,10 @@
-@import "_/output", "_/purecss", "_/silder", "_/custom", "_/table";
+@import "_/output", "_/purecss", "_/silder", "_/custom", "_/table", "_/radio", "_/varr";
 
+@mixin box-sizing {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 
 ::selection {
     background-color: hsl(310, 100%, 65%);
@@ -9,7 +14,7 @@
 
 .md-tabs {
     display: flex;
-    background-color: #222200de;
+    background-color: var(--tab-bg);
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -24,11 +29,11 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    pointer-events: none;
+    // pointer-events: none;
 }
 
 .md-tabs__link {
-    color: #fdf5f5;
+    color: var(--nav-link);
 }
 
 :root {
@@ -108,4 +113,10 @@
 
 .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
     top: 10px;
+}
+
+.md-tabs__link--active, 
+.md-tabs__link:focus, 
+.md-tabs__link:hover {
+color: #00eaff;
 }

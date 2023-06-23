@@ -1,4 +1,5 @@
 ---
+date: 2022-11-11
 title: The Hospital. Retirement.
 author: "Лев Николаевич HOOTSMAN"
 permalink: /th
