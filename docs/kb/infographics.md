@@ -2,7 +2,10 @@
 
 ## Cero Pet Guide
 
-![cero](../converted/ceropet.jpg)
+<figure markdown>
+    ![cero](https://preview.redd.it/ceros-pet-guide-2023-06-20-v0-enh44dsvod7b1.png)
+    <figcaption>Updated 2023-06-23</figcaption>
+</figure>
 
 ## Stats value level dependant
 
