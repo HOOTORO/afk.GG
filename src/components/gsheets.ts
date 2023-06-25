@@ -1,8 +1,3 @@
-// import { url } from "../constants";
-// import { tLoadedEvent } from "../events";
-// import { app } from "../index";
-// import * as lo from "../log";
-
 interface Gsheet {
     cols: Array<{ id: string; label: string; type: string }>;
     rows: Array<{ c: Array<{ v: string; f: string }> }>;
@@ -11,7 +6,6 @@ interface Gsheet {
 async function fetchTableData(tableName: string): Promise<Gsheet> {
     const response = await fetch(url(tableName));
     const text = await response.text();
-    L(text);
     //Remove additional text and extract only JSON:
     const json = JSON.parse(text.substring(47).slice(0, -2));
     let x: Gsheet = {
@@ -24,7 +18,6 @@ async function fetchTableData(tableName: string): Promise<Gsheet> {
 
 function headers(t: Gsheet) {
     return t.cols.map((x) => {
-        LG(`id:${CharIdToNumber(x.id)} => val:${x.label}`);
         return { id: CharIdToNumber(x.id), label: x.label };
     });
 }

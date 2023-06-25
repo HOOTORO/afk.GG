@@ -1,5 +1,3 @@
-// import { verb } from "./constants";
-
 const LC = (x) => {
     L(`⬇︎[COMPONENT]⬇︎\n ${x}`);
 };

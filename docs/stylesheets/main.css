@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
 [data-md-color-scheme=slate] {
   --slate-gradient: linear-gradient(180deg, #2E303D, #141419);
   --containers-bg: #2c313d;
@@ -317,6 +318,14 @@ img {
   font-style: oblique;
 }
 
+h1 {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+h2 {
+  text-shadow: #FC0 1px 0 10px;
+}
+
 table {
   margin: 20px auto;
   border-collapse: collapse;
@@ -428,6 +437,13 @@ thead {
   background-color: hsl(310, 100%, 65%);
   color: hsl(230, 30%, 15%);
   -webkit-text-fill-color: hsl(230, 30%, 15%);
+}
+
+.md-tabs__link {
+  font-family: "Jura", sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  text-rendering: optimizeLegibility;
 }
 
 .md-tabs {

@@ -1,17 +1,32 @@
-enum AfkResrc {
-    Dia = "Dia",
-    Bait = "Bait",
-    Reds = "Red Core",
-    Yells = "Yellow Shard",
-    SI3 = "Emblem Choice Chest",
-    TC = "Time Emblem",
-    SG = "Stargazer Scroll",
-    POE = "POE",
-    Dust = "Dust",
-    Juice = "Twisted Essence",
-    FuCard = "Mythic Furniture Scroll",
-    SecSpec = "Secret Spices",
-}
+type gms = "CR" | "TS" | "NC";
+type bres =
+    | "dia"
+    | "bait"
+    | "redc"
+    | "yells"
+    | "emblcc"
+    | "timee"
+    | "stars"
+    | "poe"
+    | "dust"
+    | "twise"
+    | "mythfs"
+    | "secrs";
+
+const allRes = [
+    "dia",
+    "bait",
+    "redc",
+    "yells",
+    "emblcc",
+    "timee",
+    "stars",
+    "poe",
+    "dust",
+    "twise",
+    "mythfs",
+    "secrs",
+];
 
 enum GameMode {
     // CR = "Cursed Realm",
@@ -24,7 +39,6 @@ enum GameMode {
 }
 
 const verb = true;
-
 const xh = `
     <div>
         <span id="rangeValue">1 week</span>

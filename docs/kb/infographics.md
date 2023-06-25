@@ -1,38 +1,68 @@
-# Picture respesentations
+# Picture representations
+
+## Hero stats proportions in different game modes
+
+<figure markdown>
+
+![stats](../assets/images/infographics/1.jpg)
+
+<figcaption>Lil' bit outdated, but still relevant!</figcaption>
+</figure>
 
 ## Cero Pet Guide
 
 <figure markdown>
-    ![cero](https://preview.redd.it/ceros-pet-guide-2023-06-20-v0-enh44dsvod7b1.png)
-    <figcaption>Updated 2023-06-23</figcaption>
+
+![cero](https://cdn.discordapp.com/attachments/1000585139857915984/1120774910969643068/2023-06-20_-_Pet_Guide.png)
+
+<figcaption>Updated 2023-06-23</figcaption>
 </figure>
-
-## Stats value level dependant
-
-![stats](../converted/stats.jpg)
 
 ## Game mechanics
 
-![gm](../converted/gm.jpg)
+<figure markdown>
+
+![gm](../assets/images/infographics/2.jpg)
+
+<figcaption>
+mb outdated
+</figcaption>
+</figure>
+
+better check [bob doc](/afk.GG/kb/links/#game-knowledge)
 
 ## SHOP VALUES
 
-![shopvalues](../converted/shopval.jpg)
+<figure markdown>
+
+![shopval](../assets/images/infographics/3.jpg)
+
+<figcaption>Relevant</figcaption>
+</figure>
 
 ## VIP COST
 
+<figure markdown>
+
 | outdated                          | info                               |
 | --------------------------------- | ---------------------------------- |
-| ![vip1](../converted/vipcost.jpg) | ![vip2](../converted/costvip.webp) {width=300} |
+| ![vipcost](../assets/images/infographics/4.jpg){width=400} | ![costvip](../assets/images/infographics/5.webp) {width=400} |
+
+<figcaption>Outdated</figcaption>
+</figure>
 
 ## Awk. Heroes
 
-| ![1](../assets/awk1.webp) | ![2](../assets/awk2.webp) |
+<figure markdown>
+
+| ![awk1](../assets/images/infographics/6.webp) | ![awk2](../assets/images/infographics/7.webp) |
 | ------------------------- | ------------------------- |
-| ![3](../assets/awk3.webp) | ![4](../assets/awk4.webp) |
-| ![5](../assets/awk5.webp) | ![](../assets/awk6.webp)  |
+| ![awk3](../assets/images/infographics/8.webp) | ![awk4](../assets/images/infographics/9.webp) |
+| ![awk5](../assets/images/infographics/10.webp) | ![awk6](../assets/images/infographics/11.webp)  |
+
+<figcaption>Outdated</figcaption>
+</figure>
 
 ## Furniture enchant + stats
 
 {{ read_excel('../assets/furnstats.xlsx', engine='openpyxl', na_filter=False) }}
-

@@ -8,6 +8,7 @@ node_modules
 # Build files
 build
 site
+*.bs
 
 # Distribution files
 dist
@@ -36,3 +37,6 @@ docs/en
 ignored
 newm*
 tiesto.md
+unused-assets
+ru/*
+en/*

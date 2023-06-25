@@ -7,21 +7,20 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var AfkResrc;
-(function (AfkResrc) {
-    AfkResrc["Dia"] = "Dia";
-    AfkResrc["Bait"] = "Bait";
-    AfkResrc["Reds"] = "Red Core";
-    AfkResrc["Yells"] = "Yellow Shard";
-    AfkResrc["SI3"] = "Emblem Choice Chest";
-    AfkResrc["TC"] = "Time Emblem";
-    AfkResrc["SG"] = "Stargazer Scroll";
-    AfkResrc["POE"] = "POE";
-    AfkResrc["Dust"] = "Dust";
-    AfkResrc["Juice"] = "Twisted Essence";
-    AfkResrc["FuCard"] = "Mythic Furniture Scroll";
-    AfkResrc["SecSpec"] = "Secret Spices";
-})(AfkResrc || (AfkResrc = {}));
+const allRes = [
+    "dia",
+    "bait",
+    "redc",
+    "yells",
+    "emblcc",
+    "timee",
+    "stars",
+    "poe",
+    "dust",
+    "twise",
+    "mythfs",
+    "secrs",
+];
 var GameMode;
 (function (GameMode) {
     GameMode["CR"] = "CR";
@@ -82,11 +81,6 @@ const sources = [
     },
 ];
 const tLoadedEvent = new Event("tableready");
-$(document).on("tableready", "app", function (e) {
-});
-$(document).on("click", "select", function (e) {
-    L(`[Events]|> ${e}`);
-});
 $(document).on("change", "select", function (x) {
     const changedValue = $(x.target).find(":selected").val();
     L(`[Events]|> Changing ${x.target.id}, new value => ${changedValue}`);
@@ -95,33 +89,61 @@ $(document).on("change", "select", function (x) {
     });
     $(x.target).find(":selected").attr("selected", "");
     populateStorage(x.target.id, changedValue);
-    updateUserRank(x.target.id, changedValue);
-    LCD(`User => ${user}`);
-    updateResourceBox(user[gMode(x.target.id)].rewards);
-});
-$(document).on("recalc", "app", function (y) {
-    L(y);
+    const rewrd = rewards.find((g) => g.mode === gMode(x.target.id) && g.rank === changedValue);
+    user.reward = rewrd;
+    LCD(`User =>`);
+    L(user);
+    user.calc();
+    updateResourceBox(user.income);
 });
 const L = (x) => {
     if (verb) {
         console.log(x);
     }
 };
+class User {
+    constructor(sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY") {
+        this.spreadSheetId = sheetId;
+        this.leaderboard = [];
+        this.income = allRes.map((v) => generateAFKResObj(v));
+    }
+    set reward(val) {
+        if (!val)
+            return;
+        const existingResult = this.leaderboard.find((x) => x.mode === (val === null || val === void 0 ? void 0 : val.mode));
+        if (!existingResult) {
+            this.leaderboard.push(val);
+        }
+        else {
+            existingResult.rank = val.rank;
+            existingResult.rewards = val === null || val === void 0 ? void 0 : val.rewards;
+        }
+    }
+    calc() {
+        this.income = allRes.map((v) => generateAFKResObj(v));
+        this.leaderboard.forEach((x) => {
+            x.rewards.forEach((r) => {
+                const ex = this.income.findIndex((k) => k.type === r.type);
+                if (ex > -1) {
+                    this.income[ex].amount += r.amount;
+                }
+            });
+        });
+    }
+}
 L(`[Extended log] => ${verb}`);
 L(`Looking for entry tag...`);
 const app = document.getElementById("app");
-const user = initUser();
-const resources = {};
-initBaseResources(resources);
-const rewards = {};
+let rewards = [];
+const user = new User("1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY");
+initUser(user);
 startApp();
-function initUser() {
+setTimeout(() => L(rewards), 2000);
+function initUser(u) {
     L(`Init user...`);
-    const u = {};
     for (let inputField of userFields) {
         if (!localStorage.getItem(inputField.name)) {
             const selected = $(inputField.name).find(":selected").get(0);
-            u[gMode(inputField.name)].rank = selected === null || selected === void 0 ? void 0 : selected.innerText;
             populateStorage(inputField.name, selected === null || selected === void 0 ? void 0 : selected.innerText);
         }
         else {
@@ -133,6 +155,7 @@ function initUser() {
 function startApp() {
     L("launch app...");
     drawInputs().catch((x) => L(`Promise rejected => ${x}`));
+    L("app started");
 }
 function drawInputs() {
     return __awaiter(this, void 0, void 0, function* () {
@@ -141,7 +164,6 @@ function drawInputs() {
             const mode = sources.find((s) => s.tableName === x.mode);
             x.table
                 .then((t) => {
-                L(t);
                 const container = domElWithProperties("div", [
                     { n: "class", v: "select-container" },
                 ]), label = document.createElement("h4"), s = makeSelect(mode.id, columnData(0, t));
@@ -149,11 +171,17 @@ function drawInputs() {
                 container.appendChild(s);
                 container.insertBefore(label, s);
                 inputForm.append(container);
-                loadRewards(x.mode, t);
+                loadRewards(x.mode, t).forEach((r) => rewards.push({
+                    mode: x.mode,
+                    rank: r.rank,
+                    rewards: r.rewards.filter((h) => h.amount > 0),
+                }));
             })
                 .then(() => app.appendChild(inputForm))
                 .catch((x) => L(`Promise rejected${x}`))
-                .finally(() => L(`Inputs done`));
+                .finally(() => {
+                L(`Inputs done`);
+            });
         });
         setTimeout(() => app.appendChild(makeOut()), 2000);
     });
@@ -167,16 +195,6 @@ const LG = (x) => {
 const LCD = (x) => {
     LC(`<dataloader> -> ${x}`);
 };
-function initBaseResources(r) {
-    LCD("Init Base Res");
-    for (let r of Object.values(AfkResrc)) {
-        const ir = generateAFKResObj(r);
-        LCD(`<#>type  => ${ir.type}, label => ${ir.label}, image => ${ir.img} <#>`);
-    }
-    Object.values(AfkResrc).forEach((x) => {
-        resources[x] = generateAFKResObj(x);
-    });
-}
 class BaseResource {
 }
 class BaseResQty extends BaseResource {
@@ -191,19 +209,25 @@ function modeRewards() {
     });
 }
 function loadRewards(gm, gt) {
-    gt.rows.forEach((v) => {
-        const r = v.c[0].v, pairs = v.c.slice(1, v.c.length).map((v, i) => {
-            const bs = resources[gt.cols[i + 1].label], qty = v ? v.v : 0;
-            return { type: bs, amount: qty };
+    return gt.rows.map((v) => {
+        const rank = v.c[0].v, pairs = v.c
+            .slice(1, v.c.length)
+            .map((v, i) => {
+            const col1rank = gt.cols[i + 1].label, qty = v ? v.v : 0;
+            return {
+                type: col1rank,
+                label: col1rank,
+                img: `../../assets/icons/s/${col1rank}.png`,
+                amount: qty,
+            };
         });
-        rewards[gm].push({ rank: r, rewards: pairs });
+        return { rank: rank, rewards: pairs };
     });
 }
 function fetchTableData(tableName) {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield fetch(url(tableName));
         const text = yield response.text();
-        L(text);
         const json = JSON.parse(text.substring(47).slice(0, -2));
         let x = {
             cols: json.table.cols,
@@ -215,7 +239,6 @@ function fetchTableData(tableName) {
 }
 function headers(t) {
     return t.cols.map((x) => {
-        LG(`id:${CharIdToNumber(x.id)} => val:${x.label}`);
         return { id: CharIdToNumber(x.id), label: x.label };
     });
 }
@@ -248,11 +271,13 @@ function generateAFKResObj(x) {
         }
     })
         .join("");
-    return {
+    const br = {
         type: gid,
         label: short,
         img: `../../assets/icons/s/${short}.png`,
+        amount: 0,
     };
+    return br;
 }
 const gMode = (x) => {
     const source = sources.find((y) => y.id === x || y.label === x || y.tableName === x);
@@ -264,10 +289,8 @@ const gMode = (x) => {
 function setApp(key) {
     const storedVal = localStorage.getItem(key);
     $(`#${key} option[value="${storedVal}"]`).first().attr("selected", "");
-    L(`[L.Store]|> Value set for  ${key} => ${storedVal}`);
 }
 function populateStorage(key, value) {
-    L("[L.Store]|> save data to local store");
     if (key && value) {
         localStorage.setItem(key, value);
         setApp(key);
@@ -305,6 +328,7 @@ function rangeSlide(value) {
     document.getElementById("rangeValue").innerHTML = value + " weeks";
     $(this).attr("value", value.toString());
     populateStorage("rangeValue", value);
+    updateResourceBox(user.income, value);
 }
 function radioGroups(opts) {
     const container = document.createElement("div");
@@ -342,9 +366,6 @@ const radio = `
    </form>
 
 `;
-const LI = (x) => {
-    L(`⬇︎[INCOME]⬇︎\n${x}`);
-};
 function makeOut() {
     const out = document.createElement("div"), output = document.createElement("output"), datalist = xh +
         weekLabels(52, [
@@ -364,40 +385,32 @@ function makeOut() {
     return out;
 }
 function drawResourceBox(parent) {
-    initBaseResources();
-    Object.values(AfkResrc).forEach((el) => {
-        const re = resources[el];
+    allRes.forEach((el) => {
+        LCD(`el => ${el}`);
         const resContainer = domElWithProperties("div", [
             { n: "class", v: "inc-res" },
         ]);
-        const rr = domElWithProperties("span", [{ n: "id", v: re.type }]);
-        resContainer.appendChild(getResImg(re.img));
+        const rr = domElWithProperties("span", [{ n: "id", v: el }]);
+        resContainer.appendChild(getResImg(el));
         resContainer.appendChild(rr);
         parent.appendChild(resContainer);
     });
 }
-function updateUserRank(modeId, newRank) {
-    user[gMode(modeId)].rank = newRank;
-    user[gMode(modeId)].rewards = getRankRewards(gMode(modeId), newRank);
-}
 function getResImg(src) {
     const img = document.createElement("img");
-    img.src = src;
+    img.src = `../../assets/icons/s/${src}.png`;
     img.width = 24;
     return img;
 }
 function getRankRewards(gm, rank) {
-    return rewards[gm].find((v) => v.rank === rank).rewards;
+    return rewards.find((v) => v.rank === rank && v.mode === gm)
+        .rewards;
 }
-function UserTotals(u) {
-    Object.values(AfkResrc).forEach((v) => {
-        const s = user.leaderboard[v].reward;
-        LCD(`SSS: ${s}`);
-    });
-}
-function updateResourceBox(gr) {
-    gr.forEach((x) => (document.getElementById(x.type).innerHTML =
-        x.amount));
+function updateResourceBox(gr, timeW = 1) {
+    L(gr);
+    gr.filter((f) => f.amount > -1).forEach((x) => (document.getElementById(x.type).innerHTML = (x
+        ? x.amount * timeW
+        : 0)));
 }
 function mistyData() {
     fetchTableData("MV").then((v) => mistyResources(v));

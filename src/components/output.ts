@@ -1,7 +1,3 @@
-// // import { leftover, xh } from "../constants";
-// // import { afk } from "./dataloader";
-// // import { domElWithProperties, weekLabels } from "./helper";
-
 function makeOut() {
     const out = document.createElement("div"),
         output = document.createElement("output"),
@@ -26,56 +22,36 @@ function makeOut() {
 }
 
 function drawResourceBox(parent) {
-    initBaseResources();
-    Object.values(AfkResrc).forEach((el) => {
-        const re = resources[el as string];
+    allRes.forEach((el) => {
+        LCD(`el => ${el}`);
         const resContainer = domElWithProperties("div", [
             { n: "class", v: "inc-res" },
         ]);
-        const rr = domElWithProperties("span", [{ n: "id", v: re.type }]);
-        resContainer.appendChild(getResImg(re.img));
+        const rr = domElWithProperties("span", [{ n: "id", v: el }]);
+        resContainer.appendChild(getResImg(el));
         resContainer.appendChild(rr);
         parent.appendChild(resContainer);
     });
 }
 
-function updateUserRank(modeId: string, newRank: string) {
-    user[gMode(modeId)].rank = newRank;
-    user[gMode(modeId)].rewards = getRankRewards(gMode(modeId), newRank);
-}
 function getResImg(src: string) {
     const img = document.createElement("img");
-    img.src = src;
+    img.src = `../../assets/icons/s/${src}.png`;
     img.width = 24;
     return img;
 }
 
 function getRankRewards(gm: GameMode, rank: string) {
-    return rewards[gm].find((v) => v.rank === rank).rewards;
-}
-function UserTotals(u: User) {
-    Object.values(AfkResrc).forEach((v) => {
-        const s = user.leaderboard[v as string].reward;
-        LCD(`SSS: ${s}`);
-    });
-
-    // Object.keys(GameMode)..reduce((a, b) =>  user[a].amount + user[b].amount, 0 )
-    // })) => {
-    //         user[v].amount = u.scores
-    //             .map((x) => x.rewards.find((r) => r.type === v).amount)
-    //             .reduce((a, b) => a + b, 0);
-    //         LCD(`${v}`);
-    //         n.push(v);
-    //     });
-    // })
-
-    // return n;
+    return rewards.find((v) => v.rank === rank && v.mode === (gm as string))
+        .rewards;
 }
 
-function updateResourceBox(gr: BaseResQty[]) {
-    gr.forEach(
+function updateResourceBox(gr: BaseResQty[], timeW = 1) {
+    L(gr);
+    gr.filter((f) => f.amount > -1).forEach(
         (x) =>
-            (document.getElementById(x.type).innerHTML =
-                x.amount as unknown as string)
+            (document.getElementById(x.type).innerHTML = (x
+                ? x.amount * timeW
+                : 0) as unknown as string)
     );
 }

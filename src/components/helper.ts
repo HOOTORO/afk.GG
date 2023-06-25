@@ -1,4 +1,3 @@
-// import * as lo from "../log";
 function generateAFKResObj(x) {
     const gid = x.toLowerCase().replace(/ /g, "-"),
         short = x
@@ -11,12 +10,13 @@ function generateAFKResObj(x) {
                 }
             })
             .join("");
-
-    return {
+    const br: BaseResQty = {
         type: gid,
         label: short,
         img: `../../assets/icons/s/${short}.png`,
+        amount: 0,
     };
+    return br;
 }
 
 const gMode = (x) => {
@@ -33,11 +33,9 @@ const gMode = (x) => {
 function setApp(key) {
     const storedVal = localStorage.getItem(key);
     $(`#${key} option[value="${storedVal}"]`).first().attr("selected", "");
-    L(`[L.Store]|> Value set for  ${key} => ${storedVal}`);
 }
 
 function populateStorage(key, value) {
-    L("[L.Store]|> save data to local store");
     if (key && value) {
         localStorage.setItem(key, value);
         setApp(key);
@@ -79,6 +77,7 @@ function rangeSlide(value) {
     document.getElementById("rangeValue").innerHTML = value + " weeks";
     $(this).attr("value", value.toString());
     populateStorage("rangeValue", value);
+    updateResourceBox(user.income, value);
 }
 
 function radioGroups(

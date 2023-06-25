@@ -74,14 +74,14 @@ plugins:
 ##### TODO: add eng lang support
 # - material-relative-language-selector
 # - mdpo
-    - i18n:
-        docs_structure: suffix
-        default_language: ru
-        languages:
-            ru:
-                name: Russian
-                build: true
-                site_name: "AFK. Все что пожелаешь узнать."
+    # - i18n:
+    #     docs_structure: suffix
+    #     default_language: ru
+    #     languages:
+    #         ru:
+    #             name: Russian
+    #             build: true
+    #             site_name: "AFK. Все что пожелаешь узнать."
     ##### sponsor feature, maybe someday
     # - privacy:
     #     enabled: !ENV [CI, false]
