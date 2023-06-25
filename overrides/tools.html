@@ -14,5 +14,7 @@
 {% block scripts %}
 <!-- Add scripts that need to run before here -->
 {{ super() }}
+<script type="text/javascript" src="{{ 'javascripts/main.js' | url }}"></script>
+
 <!-- Add scripts that need to run afterwards here -->
 {% endblock %}

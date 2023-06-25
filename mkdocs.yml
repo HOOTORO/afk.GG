@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: AFK. All You Want To Know
+site_name: AFK. Все что желаешь знать.
 site_url: https://hootsdev.github.io/afk.GG/
 # dev_addr: "127.0.0.1:800"
 
@@ -15,7 +15,7 @@ extra_css:
 extra_javascript:
     - https://requirejs.org/docs/release/2.3.6/minified/require.js
     - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-    - javascripts/main.js
+    # - javascripts/main.js
 theme:
     name: material
     language: ru
@@ -100,7 +100,7 @@ extra:
         - icon: fontawesome/brands/discord
           link: https://discordid.netlify.app/?id=88370628763078656
           name: HOOTSMAN
-    homepage: https://hootsdev.github.io/afk.GG/
+    homepage: https://hootsdev.github.io/afk.GG/ru
     consent:
         title: Cookie consent
         description: >-

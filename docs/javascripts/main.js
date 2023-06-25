@@ -183,11 +183,7 @@ function drawInputs() {
                 L(`Inputs done`);
             });
         });
-        setTimeout(() => {
-            app.appendChild(makeOut());
-            user.calc();
-            $("select-container").trigger("change");
-        }, 2000);
+        setTimeout(() => app.appendChild(makeOut()), 2000);
     });
 }
 const LC = (x) => {

@@ -12,12 +12,15 @@
     color: hsl(230, 30%, 15%);
     -webkit-text-fill-color: hsl(230, 30%, 15%);
 }
-
+.md-grid {
+    max-width: 1340px; 
+  }
 .md-tabs__link{
     font-family: 'Jura', sans-serif !important;
     font-weight: 500 !important;
     letter-spacing: 0.5px !important;
     text-rendering: optimizeLegibility;
+    color: var(--nav-link);
 }
 
 .md-tabs {
@@ -38,10 +41,6 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     // pointer-events: none;
-}
-
-.md-tabs__link {
-    color: var(--nav-link);
 }
 
 :root {
