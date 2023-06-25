@@ -11,7 +11,7 @@
   },
   "scripts": {
     "SASS:build": "sass --no-source-map src/scss/extra.scss docs/stylesheets/main.css",
-    "RE:build": "tsc --build",
+    "RE:build": "tsc --build && mkdocs build",
     "serve": "tsc --build && mkdocs serve",
     "watch:scss": "sass --watch src/scss/extra.scss docs/stylesheets/main.css",
     "serve.th": "tsc --build && tsc --watch & sass --watch src/scss/extra.scss docs/stylesheets/main.css & mkdocs serve --watch-theme"

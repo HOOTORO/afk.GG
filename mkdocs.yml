@@ -1,26 +1,34 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: AFK. All You Want To Know
 site_url: https://hootsdev.github.io/afk.GG/
+# dev_addr: "127.0.0.1:800"
 
 copyright: >-
     afk.GG is an 'AFK Arena' fansite, and is not affiliated with Lilith Games in any way. – <a href="#__consent">Change cookie settings</a> –
     Copyright &copy; 2023, Лев Николаевич HOOTSMAN
     <br>
 
+extra_css:
+    # - https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css
+    # - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+    - stylesheets/main.css
+extra_javascript:
+    - https://requirejs.org/docs/release/2.3.6/minified/require.js
+    - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    - javascripts/main.js
 theme:
     name: material
+    language: ru
+    favicon: favicon.jpg
+    logo: assets/logo2rv2.jpg
     custom_dir: overrides
-    extra_css:
-        - https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css
-        - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
-        - stylesheets/main.css
-        - stylesheets/extra.css
-    extra_javascript:
-        - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-        - javascripts/main.js
-
+# Good ones fonts: 
+# text: Roboto Flex, Open Sans, Google Sans
+# code: Fira Mono
+    font:
+        text: Open Sans
+        code: Average Sans
     palette:
-        # Palette toggle for light mode
-        # deep orange + lime!
         - scheme: default
           toggle:
               icon: material/weather-night
@@ -33,18 +41,6 @@ theme:
               name: Switch to light mode
           primary: deep purple
           accent: amber
-        # Good ones fonts: Roboto Flex, Open Sans
-        # text: Open Sans
-        # text: Roboto Flex
-        # text: Google Sans
-        # code: Fira Mono
-    font:
-        text: Open Sans
-        code: Average Sans
-    favicon: favicon.jpg
-    logo: assets/logo2rv2.jpg
-    language: ru
-
     features:
         - header.autohide
         - navigation.instant
@@ -59,7 +55,6 @@ theme:
         # - navigation.tabs.sticky
         - navigation.indexes
 
-# Plugins
 plugins:
     - search:
           lang: ru
@@ -73,14 +68,28 @@ plugins:
           auto_caption: true
           caption_position: top
           zoomable: true
-    - table-reader
-    # - extra-sass
-    # sponsor feature, maybe someday
+    - table-reader:
+          allow_missing_files: False
+# - extra-sass
+##### TODO: add eng lang support
+# - material-relative-language-selector
+# - mdpo
+    # - i18n:
+    #     docs_structure: suffix
+    #     default_language: ru
+    #     languages:
+    #         ru:
+    #             name: Russian
+    #             build: true
+    #             site_name: "AFK. Все что пожелаешь узнать."
+    ##### sponsor feature, maybe someday
     # - privacy:
     #     enabled: !ENV [CI, false]
     #     links_attr_map:
     #       target: _blank
     #       links_noopener: true
+    
+
 
 hooks:
     - scripts/hooks.py
@@ -107,6 +116,14 @@ extra:
             # slugify: !!python/object/apply:pymdownx.slugs.slugify
             # permalink: "\ue112"
             # title: On this page
+    # alternate:
+    #   - name: Russian
+    #     link: /ru/
+    #     lang: ru
+    #   - name: English
+    #     link: /en/
+    #     lang: en
+
 markdown_extensions:
     - abbr
     - admonition
@@ -150,7 +167,7 @@ markdown_extensions:
     # - pymdownx.snippets
 
 nav:
-    - Main: index.md
+    - Главная: index.md
     # - nm: nmem.md
     - База знаний:
           - kb/index.md

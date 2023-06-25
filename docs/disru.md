@@ -11,10 +11,10 @@ permalink: /disen
     Только убедитесь что приглашение/ссылка на сервер рабочая!  
     Ссылка на мой дис нижнем правом углу.
 
-## [RU:NoMercy](https://discord.gg/nom3rcy){:target="_blank" rel="noopener noreferrer"}
+## [NoMercy](https://discord.gg/nom3rcy){:target="_blank" rel="noopener noreferrer"}
 
  2023/05 Top #1 СНГ гильдия
 
-## [RU:Затонувшая гильдия](https://discord.gg/NFqvgcX3ak){:target="_blank" rel="noopener noreferrer"}
+## [Затонувшая гильдия](https://discord.gg/NFqvgcX3ak){:target="_blank" rel="noopener noreferrer"}
 
 Одна из первых подсуетившихся во времена появления АЕ-гильдия

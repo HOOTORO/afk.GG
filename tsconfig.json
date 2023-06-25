@@ -1,9 +1,19 @@
 {
-    "compilerOptions": {
-      "rootDir": "./src",
-      "outFile": "./docs/javascripts/main.js",
-      "allowJs": true,
-      "target": "es5"
-    },
-    "include": ["./src/**/*"]
-  }
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    // "noImplicitAny": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "preserveConstEnums": true,
+    "rootDir": "src",
+    "outFile": "docs/javascripts/main.js",
+    // "allowJs": true,
+    // "noEmit": true,
+    // "allow// importingTsExtensions": true,
+    "target": "ES6"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

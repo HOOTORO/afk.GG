@@ -7,309 +7,445 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (g && (g = 0, op[0] && (_ = 0)), _) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-var verb = true;
-var xh = "\n    <div>\n        <span id=\"rangeValue\">1 week</span>\n        <input class=\"range\" type=\"range\" name=\"times\" value=\"1\" min=\"1\" max=\"52\" onChange=\"rangeSlide(this.value)\" onmousemove=\"rangeSlide(this.value)\" list=\"values\" />\n<datalist id=\"values\">\n";
-var leftover = "\n</datalist>\n    </div>\n";
-var userFields = [
+const allRes = [
+    "dia",
+    "bait",
+    "redc",
+    "yells",
+    "emblcc",
+    "timee",
+    "stars",
+    "poe",
+    "dust",
+    "twise",
+    "mythfs",
+    "secrs",
+];
+var GameMode;
+(function (GameMode) {
+    GameMode["CR"] = "CR";
+    GameMode["TS"] = "TS";
+    GameMode["NC"] = "NC";
+    GameMode["all"] = "all";
+})(GameMode || (GameMode = {}));
+const verb = true;
+const xh = `
+    <div>
+        <span id="rangeValue">1 week</span>
+        <input class="range" type="range" name="times" value="1" min="1" max="52" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)" list="values" />
+<datalist id="values">
+`;
+const leftover = `
+</datalist>
+    </div>
+`;
+const userFields = [
     { name: "cursed-realm", type: "select", src: "gsheet" },
     { name: "treasure-scramble", type: "select", src: "gsheet" },
     { name: "nightmare-corridor", type: "select", src: "gsheet" },
-    //    {name: "afk", type: "bool", src: "gsheet"}
 ];
-var sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
-var base = "https://docs.google.com/spreadsheets/d/".concat(sheetId, "/gviz/tq?");
-var query = encodeURIComponent("Select *");
-var url = function (x) {
-    return "".concat(base, "&sheet=").concat(x, "&tq=").concat(query);
+const sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
+const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
+const query = encodeURIComponent("Select *");
+const url = function (x) {
+    return `${base}&sheet=${x}&tq=${query}`;
 };
-var resources = [
-    { id: "bait", label: "Bait" },
-    { id: "reds", label: "Red Cores" },
-    { id: "tc", label: "Temple Card" },
-    { id: "sg", label: "Stargazer Card" },
-    { id: "dia", label: "Diamonds" },
-    { id: "yells", label: "Yellow Shards" },
-    { id: "poe", label: "POE" },
-    { id: "dust", label: "Dust" },
-    { id: "juice", label: "Twisted Essence" },
-    { id: "mcard", label: "Furn. Card" },
-    { id: "ss", label: "Secret Spices" }
+const sources = [
+    {
+        id: "cursed-realm",
+        label: "Cursed Realm",
+        tableName: "CR",
+        period: 7,
+        display: true,
+    },
+    {
+        id: "treasure-scramble",
+        label: "Treasure Scramble",
+        tableName: "TS",
+        period: 7,
+        display: true,
+    },
+    {
+        id: "nightmare-corridor",
+        label: "Nightmare Corridor",
+        tableName: "NC",
+        period: 7,
+        display: true,
+    },
+    {
+        id: "afk-income",
+        label: "Base AFK Income",
+        tableName: "AFK",
+        period: 1 / 24,
+        display: false,
+    },
 ];
-var sources = [
-    { id: "cursed-realm", label: "Cursed Realm", tableName: "CR", period: 7, display: true },
-    { id: "treasure-scramble", label: "Treasure Scramble", tableName: "TS", period: 7, display: true },
-    { id: "nightmare-corridor", label: "Nightmare Corridor", tableName: "NC", period: 7, display: true },
-    { id: "afk-income", label: "Base AFK Income", tableName: "AFK", period: 1 / 24, display: false }
-];
-var recalc = new Event("recalc");
-var tLoadedEvent = new Event("tableready");
-// Listen for the event.
-$(document).on("tableready", "app", function (e) {
-    /* … */
-});
-$(document).on("click", "select", function (e) {
-    L("[Events]|> ".concat(e));
-});
-// Storing user input
+const tLoadedEvent = new Event("tableready");
 $(document).on("change", "select", function (x) {
-    var changedValue = $(x.target).find(":selected").val();
-    L("[Events]|> Changing ".concat(x.target.id, ", new value => ").concat(changedValue));
+    const changedValue = $(x.target).find(":selected").val();
+    L(`[Events]|> Changing ${x.target.id}, new value => ${changedValue}`);
     $("#" + x.target.id + " option[selected]").each(function () {
         this.removeAttribute("selected");
     });
     $(x.target).find(":selected").attr("selected", "");
     populateStorage(x.target.id, changedValue);
-    var sli = localStorage.getItem("rangeValue");
-    updateOutput(sli);
+    const rewrd = rewards.find((g) => g.mode === gMode(x.target.id) && g.rank === changedValue);
+    user.reward = rewrd;
+    LCD(`User =>`);
+    L(user);
+    user.calc();
+    updateResourceBox(user.income);
 });
-// test
-$(document).on("recalc", "app", function (y) {
-    L(y);
-});
-var L = function (x) {
+const L = (x) => {
     if (verb) {
         console.log(x);
     }
 };
-var app = document.getElementById("app");
+class User {
+    constructor(sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY") {
+        this.spreadSheetId = sheetId;
+        this.leaderboard = [];
+        this.income = allRes.map((v) => generateAFKResObj(v));
+    }
+    set reward(val) {
+        if (!val)
+            return;
+        const existingResult = this.leaderboard.find((x) => x.mode === (val === null || val === void 0 ? void 0 : val.mode));
+        if (!existingResult) {
+            this.leaderboard.push(val);
+        }
+        else {
+            existingResult.rank = val.rank;
+            existingResult.rewards = val === null || val === void 0 ? void 0 : val.rewards;
+        }
+    }
+    calc() {
+        this.income = allRes.map((v) => generateAFKResObj(v));
+        this.leaderboard.forEach((x) => {
+            x.rewards.forEach((r) => {
+                const ex = this.income.findIndex((k) => k.type === r.type);
+                if (ex > -1) {
+                    this.income[ex].amount += r.amount;
+                }
+            });
+        });
+    }
+}
+L(`[Extended log] => ${verb}`);
+L(`Looking for entry tag...`);
+const app = document.getElementById("app");
+let rewards = [];
+const user = new User("1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY");
+initUser(user);
 startApp();
-for (var _i = 0, userFields_1 = userFields; _i < userFields_1.length; _i++) {
-    var inputfield = userFields_1[_i];
-    if (!localStorage.getItem(inputfield.name)) {
-        var selected = $(inputfield.name).find(":selected").get(0);
-        populateStorage(inputfield.name, selected === null || selected === void 0 ? void 0 : selected.innerText);
+setTimeout(() => L(rewards), 2000);
+function initUser(u) {
+    L(`Init user...`);
+    for (let inputField of userFields) {
+        if (!localStorage.getItem(inputField.name)) {
+            const selected = $(inputField.name).find(":selected").get(0);
+            populateStorage(inputField.name, selected === null || selected === void 0 ? void 0 : selected.innerText);
+        }
+        else {
+            setApp(inputField.name);
+        }
     }
-    else {
-        setApp(inputfield.name);
-    }
+    return u;
 }
 function startApp() {
-    userInput()
-        .then(function (u) { return app.appendChild(u); })
-        .then(function () { return app.appendChild(makeOut()); })
-        .finally(function () { return L("[MAIN]|> app started"); });
+    L("launch app...");
+    drawInputs().catch((x) => L(`Promise rejected => ${x}`));
+    L("app started");
 }
+function drawInputs() {
+    return __awaiter(this, void 0, void 0, function* () {
+        let inputForm = domElWithProperties("form", [{ n: "id", v: "a-form" }]);
+        modeRewards().forEach((x) => {
+            const mode = sources.find((s) => s.tableName === x.mode);
+            x.table
+                .then((t) => {
+                const container = domElWithProperties("div", [
+                    { n: "class", v: "select-container" },
+                ]), label = document.createElement("h4"), s = makeSelect(mode.id, columnData(0, t));
+                label.innerText = mode.label;
+                container.appendChild(s);
+                container.insertBefore(label, s);
+                inputForm.append(container);
+                loadRewards(x.mode, t).forEach((r) => rewards.push({
+                    mode: x.mode,
+                    rank: r.rank,
+                    rewards: r.rewards.filter((h) => h.amount > 0),
+                }));
+            })
+                .then(() => app.appendChild(inputForm))
+                .catch((x) => L(`Promise rejected${x}`))
+                .finally(() => {
+                L(`Inputs done`);
+            });
+        });
+        setTimeout(() => app.appendChild(makeOut()), 2000);
+    });
+}
+const LC = (x) => {
+    L(`⬇︎[COMPONENT]⬇︎\n ${x}`);
+};
+const LG = (x) => {
+    L(`⬇︎[GSHEET]⬇︎\n${x}`);
+};
+const LCD = (x) => {
+    LC(`<dataloader> -> ${x}`);
+};
+class BaseResource {
+}
+class BaseResQty extends BaseResource {
+}
+function modeRewards() {
+    const modes = [GameMode.CR, GameMode.TS, GameMode.NC];
+    return modes.map((x) => {
+        return {
+            mode: x,
+            table: fetchTableData(x),
+        };
+    });
+}
+function loadRewards(gm, gt) {
+    return gt.rows.map((v) => {
+        const rank = v.c[0].v, pairs = v.c
+            .slice(1, v.c.length)
+            .map((v, i) => {
+            const col1rank = gt.cols[i + 1].label, qty = v ? v.v : 0;
+            return {
+                type: col1rank,
+                label: col1rank,
+                img: `../../assets/icons/s/${col1rank}.png`,
+                amount: qty,
+            };
+        });
+        return { rank: rank, rewards: pairs };
+    });
+}
+function fetchTableData(tableName) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const response = yield fetch(url(tableName));
+        const text = yield response.text();
+        const json = JSON.parse(text.substring(47).slice(0, -2));
+        let x = {
+            cols: json.table.cols,
+            rows: json.table.rows,
+        };
+        app.dispatchEvent(tLoadedEvent);
+        return x;
+    });
+}
+function headers(t) {
+    return t.cols.map((x) => {
+        return { id: CharIdToNumber(x.id), label: x.label };
+    });
+}
+function columnData(n, t) {
+    return t.rows.map((x) => x.c[n].v);
+}
+function CharIdToNumber(n) {
+    const input = n.toUpperCase().charCodeAt(0), ACode = 65, ZCode = 90;
+    if (input < ACode || input > ZCode) {
+        throw new Error("Bad Character");
+    }
+    return input - ACode + 1;
+}
+function tableObjects(table) {
+    return table.rows.map((el) => {
+        return headers(table).map((h) => {
+            return { obj: h.label, value: el.c[h.id].v };
+        });
+    });
+}
+function generateAFKResObj(x) {
+    const gid = x.toLowerCase().replace(/ /g, "-"), short = x
+        .split(" ")
+        .map((v, i) => {
+        if (i > 0) {
+            return v.charAt(0).toLowerCase();
+        }
+        else {
+            return v.toLowerCase().substring(0, 4);
+        }
+    })
+        .join("");
+    const br = {
+        type: gid,
+        label: short,
+        img: `../../assets/icons/s/${short}.png`,
+        amount: 0,
+    };
+    return br;
+}
+const gMode = (x) => {
+    const source = sources.find((y) => y.id === x || y.label === x || y.tableName === x);
+    if (!source) {
+        throw new Error("Unknown Source Mode");
+    }
+    return Object.values(GameMode).find((y) => y === source.tableName);
+};
 function setApp(key) {
-    var storedVal = localStorage.getItem(key);
-    $("#".concat(key, " option[value=\"").concat(storedVal, "\"]")).first().attr("selected", "");
-    //    $(`#${key} *`).filter(function () {
-    //        return $(this).text().toLowerCase().indexOf(storedVal) > -1
-    //    }).attr("selected", "selected")
-    L("[L.Store]|> Value set for  ".concat(key, " => ").concat(storedVal));
+    const storedVal = localStorage.getItem(key);
+    $(`#${key} option[value="${storedVal}"]`).first().attr("selected", "");
 }
 function populateStorage(key, value) {
-    L("[L.Store]|> save data to local store");
     if (key && value) {
         localStorage.setItem(key, value);
         setApp(key);
     }
 }
 function setAttributes(el, attrs) {
-    for (var key in attrs) {
+    for (let key in attrs) {
         el.setAttribute(key, attrs[key]);
     }
 }
+function chainDomElement(tags) {
+    let parentEl = document.createElement(tags[0]);
+    tags.forEach((tag) => parentEl.appendChild(document.createElement(tag)));
+    return parentEl;
+}
+function domElWithProperties(tag, props) {
+    const doc = document.createElement(tag);
+    props.forEach((v) => doc.setAttribute(v.n, v.v));
+    return doc;
+}
 function weekLabels(n, stops) {
     var _a;
-    var html = "";
-    var _loop_1 = function (i) {
-        L(stops.some(function (v) { return v.n === i; }));
-        if (stops.some(function (v) { return v.n === i; })) {
-            html += "<option value=\"".concat(i.toString(), "\" label=\"").concat((_a = stops.find(function (v) { return v.n === i; })) === null || _a === void 0 ? void 0 : _a.desc, "\"></option>");
+    let html = "";
+    for (let i = 1; i <= n; i++) {
+        if (stops.some((v) => v.n === i)) {
+            html += `<option value="${i.toString()}" label="${(_a = stops.find((v) => v.n === i)) === null || _a === void 0 ? void 0 : _a.desc}"></option>`;
         }
         else {
-            html += "<option value=\"".concat(i.toString(), "\" label=\"\"></option>");
+            html += `<option value="${i.toString()}" label=""></option>`;
         }
-    };
-    for (var i = 1; i <= n; i++) {
-        _loop_1(i);
     }
     return html;
 }
 function rangeSlide(value) {
-    document.getElementById('rangeValue').innerHTML = value + " weeks";
+    document.getElementById("rangeValue").innerHTML = value + " weeks";
     $(this).attr("value", value.toString());
     populateStorage("rangeValue", value);
-    updateOutput(value);
+    updateResourceBox(user.income, value);
 }
-// =>  <=
-var rewards = [];
-function getRewards(source, rank) {
-    return rewards.find(function (v) { return v.rank === rank && v.source === source; });
-}
-function userInput() {
-    return __awaiter(this, void 0, void 0, function () {
-        var inputForm;
-        return __generator(this, function (_a) {
-            inputForm = document.createElement("form");
-            inputForm.setAttribute("id", "a-form");
-            sources.filter(function (v) { return v.display; }).forEach(function (k, v) {
-                var container = document.createElement("div");
-                container.setAttribute("class", "select-container");
-                var label = document.createElement("h4");
-                label.innerText = k.label;
-                fetchTableData(k.tableName)
-                    .then(function (raw) { return getHeaders(k.label, raw); })
-                    .then(function (table) { return getOptions(table); })
-                    .then(function (firstcolumn) { return makeSelect(k.id, firstcolumn); })
-                    .then(function (select) { return container.appendChild(select); })
-                    .then(function (x) { return container.insertBefore(label, x); })
-                    .finally(function () { return L(k); });
-                inputForm.append(container);
-            });
-            return [2 /*return*/, inputForm];
-        });
-    });
-}
-function getOptions(table) {
-    var firstColumn = [];
-    for (var _i = 0, _a = table.rows; _i < _a.length; _i++) {
-        var element = _a[_i];
-        var row = element;
-        firstColumn.push(row.c[0].v);
+function radioGroups(opts) {
+    const container = document.createElement("div");
+    container.id = "mv";
+    for (let row of opts) {
+        const form = document.createElement("form"), wrap = document.createElement("div");
+        form.id = `misty-row-${row.id}`;
+        wrap.className = "misty-group";
+        for (let choice of row.res) {
+            const input = `<input type="radio" id="misty-ch-${row.id}-${choice.type}" name="selector">
+                            <label for="misty-ch-${row.id}-${choice.type}">
+                                ${choice.amount}
+                                <img src="../../assets/icons/s/${choice.type}.png" width="24"></label>
+                            </label>`;
+            wrap.innerHTML += input;
+        }
+        container.appendChild(form.appendChild(wrap));
     }
-    return firstColumn;
+    return container;
 }
-function getHeaders(source, table) {
-    var columns = [];
-    table.cols.forEach(function (element, index) {
-        columns.push({ id: index, label: element.label });
-    });
-    table.rows.forEach(function (el) {
-        var r = {
-            source: source.toLowerCase().replace(" ", "-"), rank: el.c[0].v,
-            bait: 0, reds: 0, sg: 0, tc: 0,
-            dia: 0, yells: 0, poe: 0, dust: 0,
-            juice: 0, mcard: 0, ss: 0,
-        };
-        var keys = Object.keys(r);
-        columns.forEach(function (col) {
-            var _a;
-            if (el.c[col.id] && keys.some(function (e) { return e === col.label.toLowerCase(); })) {
-                r[col.label.toLowerCase()] = (_a = el.c[col.id]) === null || _a === void 0 ? void 0 : _a.v;
-            }
-        });
-        rewards.push(r);
-    });
-    return table;
-}
+const radio = `
+<form>
+ <div class="misty-group">
+<input type="radio" id="option-one" name="selector"><label for="option-one">One</label>
+   <input type="radio" id="option-two" name="selector"><label for="option-two">Two</label>
+   <input type="radio" id="option-three" name="selector"><label for="option-three"><img src="https://uberstrategist.com/wp-content/uploads/2023/04/unnamed-20.png" width="24"></label>
+  </div>
+   </form>
+<form>
+   <div class="misty-group">
+<input type="radio" id="option-one1" name="selector"><label for="option-one1">One</label>
+     <input type="radio" id="option-two1" name="selector"><label for="option-two1">Two</label>
+     <input type="radio" id="option-three1" name="selector"><label for="option-three1"><img src="https://uberstrategist.com/wp-content/uploads/2023/04/unnamed-20.png" width="24"></label>
+  </div>
+   </form>
+
+`;
 function makeOut() {
-    var out = document.createElement("div"), output = document.createElement("output"), datalist = xh + weekLabels(52, [{ n: 1, desc: "↑ нед." },
-        { n: 2, desc: "↑ ~1 мес.   " },
-        { n: 26, desc: "↑ полгода" },
-        { n: 52, desc: "1 год ↑" }
-    ]) + leftover;
+    const out = document.createElement("div"), output = document.createElement("output"), datalist = xh +
+        weekLabels(52, [
+            { n: 1, desc: "↑ нед." },
+            { n: 2, desc: "↑ ~1 мес.   " },
+            { n: 26, desc: "↑ полгода" },
+            { n: 52, desc: "1 год ↑" },
+        ]) +
+        leftover;
     out.className = "out";
     output.name = "Total Income";
     output.setAttribute("for", "a-form");
     output.id = "result";
     output.innerHTML += datalist;
-    resources.forEach(function (el) {
-        var resContainer = document.createElement("div");
-        resContainer.className = "inc-res";
-        var rr = resultRow(el);
-        resContainer.appendChild(getResImg(el.id));
-        resContainer.appendChild(rr);
-        output.appendChild(resContainer);
-    });
+    drawResourceBox(output);
     out.appendChild(output);
     return out;
 }
-function resultRow(nl) {
-    var res = document.createElement("span");
-    res.id = nl.id;
-    return res;
-}
-function updateOutput(x) {
-    var output = {
-        source: "out",
-        rank: "total",
-        bait: 0, reds: 0, sg: 0, tc: 0,
-        dia: 0, yells: 0, poe: 0, dust: 0,
-        juice: 0, mcard: 0, ss: 0,
-    };
-    var resKeys = Object.keys(output).filter(function (value, index) { return value && index > 1; });
-    $("select").each(function () {
-        var rank = localStorage.getItem(this.id);
-        var rews = getRewards(this.id, rank);
-        for (var _i = 0, resKeys_2 = resKeys; _i < resKeys_2.length; _i++) {
-            var element = resKeys_2[_i];
-            if (rews[element]) {
-                output[element] += rews[element];
-            }
-        }
+function drawResourceBox(parent) {
+    allRes.forEach((el) => {
+        LCD(`el => ${el}`);
+        const resContainer = domElWithProperties("div", [
+            { n: "class", v: "inc-res" },
+        ]);
+        const rr = domElWithProperties("span", [{ n: "id", v: el }]);
+        resContainer.appendChild(getResImg(el));
+        resContainer.appendChild(rr);
+        parent.appendChild(resContainer);
     });
-    for (var _i = 0, resKeys_1 = resKeys; _i < resKeys_1.length; _i++) {
-        var element = resKeys_1[_i];
-        L("[UPD.OUT]|> ".concat(element, " val. -> ").concat(output[element]));
-        $("#" + element).text((output[element] * x).toString());
-    }
 }
-function getResImg(name) {
-    var img = document.createElement("img");
-    img.src = "../../assets/icons/s/".concat(name, ".png");
+function getResImg(src) {
+    const img = document.createElement("img");
+    img.src = `../../assets/icons/s/${src}.png`;
     img.width = 24;
     return img;
 }
-function fetchTableData(tableName) {
-    return __awaiter(this, void 0, void 0, function () {
-        var response, text, json, x;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, fetch(url(tableName))];
-                case 1:
-                    response = _a.sent();
-                    return [4 /*yield*/, response.text()];
-                case 2:
-                    text = _a.sent();
-                    json = JSON.parse(text.substring(47).slice(0, -2));
-                    x = {
-                        cols: json.table.cols,
-                        rows: json.table.rows,
-                    };
-                    app.dispatchEvent(tLoadedEvent);
-                    return [2 /*return*/, x];
-            }
-        });
+function getRankRewards(gm, rank) {
+    return rewards.find((v) => v.rank === rank && v.mode === gm)
+        .rewards;
+}
+function updateResourceBox(gr, timeW = 1) {
+    L(gr);
+    gr.filter((f) => f.amount > -1).forEach((x) => (document.getElementById(x.type).innerHTML = (x
+        ? x.amount * timeW
+        : 0)));
+}
+function mistyData() {
+    fetchTableData("MV").then((v) => mistyResources(v));
+}
+function mistyResources(t) {
+    var _a;
+    let options = [];
+    for (let rdata of t.rows) {
+        let res = { id: rdata.c[0], res: [] };
+        for (let i = 1; i < rdata.c.length; i++) {
+            res.res.push((_a = rdata.c[i]) === null || _a === void 0 ? void 0 : _a.v);
+        }
+        options.push(res);
+    }
+    return options;
+}
+function prizeQty(elem) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const t = yield fetchTableData("MV2");
+        let col = t.cols.findIndex((v) => v.id);
+        let qty = t.rows[elem.n].c[col].v;
+        return qty;
     });
 }
 function makeSelect(name, options) {
-    var list = document.createElement("select");
+    const list = document.createElement("select");
     list.id = name;
-    var storedValue = localStorage.getItem(list.id);
-    for (var i = 0; i < options.length; i++) {
-        var element = options[i];
-        var opt = document.createElement("option");
+    const storedValue = localStorage.getItem(list.id);
+    for (let i = 0; i < options.length; i++) {
+        const element = options[i];
+        let opt = document.createElement("option");
         opt.innerText = element.toString();
         opt.setAttribute("value", element.toString());
-        if ((storedValue && storedValue === element) || (!storedValue && i === 0)) {
+        if ((storedValue && storedValue === element) ||
+            (!storedValue && i === 0)) {
             opt.setAttribute("selected", "");
         }
         list.appendChild(opt);
@@ -318,7 +454,7 @@ function makeSelect(name, options) {
 }
 function renderHorizontal() {
     $("select[data-menu]").each(function () {
-        var select = $(this), type = select.data("menu"), menu = $("<div />").addClass("select-menu " + type), button = $("<button />"), buttonDiv = $("<div />");
+        let select = $(this), type = select.data("menu"), menu = $("<div />").addClass("select-menu " + type), button = $("<button />"), buttonDiv = $("<div />");
         $("<span />")
             .text(select.find("option:selected").text())
             .appendTo(buttonDiv);
@@ -331,30 +467,4 @@ function renderHorizontal() {
         button.append(buttonDiv).insertAfter(select);
     });
 }
-// HORIZONTAL wheel
-// $(document).on("click", ".select-menu", function (e) {
-//   let menu = $(this),
-//     select = menu.children("select"),
-//     options = select.find("option"),
-//     active = select.find("option:selected"),
-//     button = menu.children("button"),
-//     buttonDiv = button.children("div"),
-//     current = buttonDiv.children("span");
-//   if (!menu.hasClass("change")) {
-//     let nextOption = options.eq(
-//         active.index() == options.length - 1 ? 0 : active.index() + 1
-//       ),
-//       next = $("<span />")
-//         .addClass("next")
-//         .text(nextOption.text())
-//         .appendTo(buttonDiv);
-//     options.prop("selected", "");
-//     nextOption.prop("selected", "selected");
-//     menu.addClass("change");
-//     setTimeout(() => {
-//       next.removeClass("next");
-//       menu.removeClass("change");
-//       current.remove();
-//     }, 650);
-//   }
-// });
+//# sourceMappingURL=main.js.map

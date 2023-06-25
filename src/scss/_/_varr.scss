@@ -1,20 +1,36 @@
+// general stuff
 $glass: rgba(255, 255, 255, 0.2);
 $glass-icon: rgba(255, 255, 255, 0.3);
 $gradient: linear-gradient(180deg, #2E303D, #141419);
 //$gradient: linear-gradient(35deg, #2E303D, #2e33ad);
 $def-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 $option: #320a28;
-$dark-bg: #141419;
-$light-bg: snow;
-$light-bg2: #cdcdaf;
-$d-wrapper: #2c313d;
-
-$l-text: $dark-bg;
-$d-text: $light-bg;
 $slider-radius: 20px;
 
-$l-sel-text: #280808;
+
+// dark theme vars
+$dark-bg: #141419;
+$d-wrapper: #2c313d;
+$d-text: snow;
 $d-sel-text: white;
+$d-foot-bg: #{$dark-bg};
+$d-foot-fg: #{$d-text};
+$d-tabs-bg: #222200de;
+$d-nav-link: #ffffff;
+
+
+// light theme vars
+$light-bg: snow;
+$light-bg2: #cdcdaf;
+$l-text: #373737;
+$l-sel-text: #280808;
+$l-foot-bg: wheat;
+$l-foot-fg: #1d1810;
+$l-tabs-bg:#22220077;
+$l-nav-link: #ffff;
+
+
+
 
 [data-md-color-scheme=slate] {
     --slate-gradient: #{$gradient};
@@ -23,14 +39,22 @@ $d-sel-text: white;
     --text: #{$d-text};
     --md-code-bg-color: #{$light-bg2};
     --md-code-fg-color: #{$dark-bg};
-    --select-font-color: #{$d-sel-text}
-
+    --select-font-color: #{$d-sel-text};
+    --md-footer-bg-color: #{$d-foot-bg};
+    --md-footer-fg-color: #{$d-foot-fg};
+    --tab-bg: #{$d-tabs-bg};
+    --nav-link: #{$d-nav-link};
 }
 
 [data-md-color-scheme=default] {
-    --nav-color: snow;
+    --nav-color: #{$light-bg};
     --slate-gradient: #{$def-gradient};
     --containers-bg: #{$light-bg};
     --text: #{$l-text};
-    --select-font-color: #{$l-sel-text}
+    --select-font-color: #{$l-sel-text};
+    --md-footer-bg-color: #{$l-foot-bg};
+    --md-footer-fg-color: #{$l-foot-fg};
+    --tab-bg: #{$l-tabs-bg};
+    --nav-link: #{$l-nav-link};
+
 }

@@ -6,8 +6,11 @@ function makeSelect(name: string, options: string[] | number[]) {
         const element = options[i];
         let opt = document.createElement("option");
         opt.innerText = element.toString();
-        opt.setAttribute("value", element.toString())
-        if ((storedValue && storedValue === element) || (!storedValue && i === 0)) {
+        opt.setAttribute("value", element.toString());
+        if (
+            (storedValue && storedValue === element) ||
+            (!storedValue && i === 0)
+        ) {
             opt.setAttribute("selected", "");
         }
         list.appendChild(opt);

@@ -28,21 +28,44 @@ img {
 }
 
 
-a[href$="income/"]::before {
-    content: "NEW!";
+// a[href$="/income/"]::before {
+//     content: "NEW!";
+//     color: red;
+//     padding-right: 15px;
+//     display: contents;
+//     text-decoration: underline;
+// }
+
+
+// /* .upd::after , */
+// a[href$="th-retirement/"]::after,
+// a[href$="#before-beginning"]::after {
+//     content: "UPD!";
+//     color: red;
+//     padding-left: 20px;
+//     display: contents;
+//     text-decoration: underline;
+// }
+
+.new::after {
+    content: "new!";
+    font-size: small;
     color: red;
-    padding-right: 15px;
-    display: contents;
+    vertical-align: super;
 }
 
-
-/* .upd::after , */
-a[href$="th-retirement/"]::after,
-a[href$="#before-beginning"]::after {
-    content: "UPD!";
+.upd::after {
+    content: "upd!";
+    font-size: small;
     color: red;
-    padding-left: 20px;
-    display: contents;
+    vertical-align: super;
+}
+
+.publdate {
+    text-align: center;
+    display: block;
+    -webkit-text-stroke: rgb(0, 227, 255);
+    font-style: oblique;
 }
 
 h1 {

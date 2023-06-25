@@ -13,5 +13,5 @@
 
 ## Посчитать
 
-- [Income Value](../tools/income.md) Позволяет прикинуть приход ресурсов при указании средних значений в режимах.
+- [Income Value](../tools/income.md){ .new } Позволяет прикинуть приход ресурсов при указании средних значений в режимах.
 - [Diamond Values](../tools/diaval.md) Shop values tables
