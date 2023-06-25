@@ -13,7 +13,7 @@ function generateAFKResObj(x) {
     const br: BaseResQty = {
         type: gid,
         label: short,
-        img: `../../assets/icons/s/${short}.png`,
+        img: `../../../assets/icons/s/${short}.png`,
         amount: 0,
     };
     return br;

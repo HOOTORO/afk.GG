@@ -2,7 +2,7 @@
 # echo > imgs.log
 echo > unsusedimages.log
 
-images=("${(@f)$(ls docs/converted)}") # $(ls docs/converted)
+images=("${(@f)$(ls unused-assets/converted)}") # $(ls docs/converted)
 mdlinks=("${(@f)$(grep --color -rwo "\!.*(.*)" docs/**/*.md)}") 
 LINKS=()
 
@@ -18,14 +18,16 @@ do
     fi
 done
 
-echo "$mdlinks" > mdlinks.log
-echo "$LINKS" > LINKS.log 
-echo "$images" > images.log                             
+# echo "$mdlinks" > mdlinks.log
+# echo "$LINKS" > LINKS.log 
+# echo "$images" > images.log                             
 
 for img in $images
 do
     if ! (($LINKS[(Ie)$img])); then
             echo "$img not used!" >> unsusedimages.log
+    else 
+        echo "$img used $LINKS[(Ie)$img]" >> unsusedimages.log
     fi
 done
 # /bin/ls -1U | wc -l

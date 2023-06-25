@@ -134,7 +134,7 @@ markdown_extensions:
     - tables
     - toc:
           permalink: true
-          toc_depth: 3
+          toc_depth: 2
     - pymdownx.arithmatex:
           generic: true
     - pymdownx.betterem:
@@ -167,29 +167,29 @@ markdown_extensions:
     # - pymdownx.snippets
 
 nav:
-    - Главная: index.md
+    - Главная: ru/index.md
     # - nm: nmem.md
     - База знаний:
-          - kb/index.md
-          - Полезные ресурсы: kb/links.md
-          - Инфографика: kb/infographics.md
-          - TRESCAMBLE. Охота за костылями: kb/trescamble.md
+          - ru/kb/index.md
+          - Полезные ресурсы: ru/kb/links.md
+          - Инфографика: ru/kb/infographics.md
+          - TRESCAMBLE. Охота за костылями: ru/kb/trescamble.md
           - Tools:
-                - Income: tools/income.md
-                - Dia Values: tools/diaval.md
-                - Tree Estimator: tools/calc.md
+                - Income: ru/tools/income.md
+                - Dia Values: ru/tools/diaval.md
+                - Tree Estimator: ru/tools/calc.md
     - Сообщество:
-          - top/index.md
+          - ru/top/index.md
           - СНГ Топ:
-                - AbEx/Бездна: top/abex.md
-                - HF/Охотничьи угодья: top/hf.md
+                - AbEx/Бездна: ru/top/abex.md
+                - HF/Охотничьи угодья: ru/top/hf.md
           - Discord:
-                - (RU) Made in USSR: disru.md
-                - (EN) International: disen.md
+                - (RU) Made in USSR: ru/disru.md
+                - (EN) International: ru/disen.md
     - Блог:
-          - blog/index.md
-          - Мемы. Сделанно в СНГ: blog/meme.md
-          - Сон сутулой собаки: blog/dogdream.md
-          - RU Community: blog/makerugreatagain.md
-          - No Mercy: blog/nm-respect.md
-          - The Hospital: blog/th-retirement.md
+          - ru/blog/index.md
+          - Мемы. Сделанно в СНГ: ru/blog/meme.md
+          - Сон сутулой собаки: ru/blog/dogdream.md
+          - RU Community: ru/blog/makerugreatagain.md
+          - No Mercy: ru/blog/nm-respect.md
+          - The Hospital: ru/blog/th-retirement.md

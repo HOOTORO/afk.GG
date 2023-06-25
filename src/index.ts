@@ -92,6 +92,7 @@ async function drawInputs() {
                         rewards: r.rewards.filter((h) => h.amount > 0),
                     })
                 );
+                // setValFromLocalStore(x.mode);
             })
             .then(() => app.appendChild(inputForm))
             .catch((x) => L(`Promise rejected${x}`))
@@ -99,5 +100,9 @@ async function drawInputs() {
                 L(`Inputs done`);
             });
     });
-    setTimeout(() => app.appendChild(makeOut()), 2000);
+    setTimeout(() => {
+        app.appendChild(makeOut());
+        user.calc();
+        $("select-container").trigger("change");
+    }, 2000);
 }

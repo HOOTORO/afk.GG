@@ -18,3 +18,13 @@ function makeSelect(name: string, options: string[] | number[]) {
 
     return list;
 }
+
+function setValFromLocalStore(m: string) {
+    const storedValue = localStorage.getItem(m);
+    const r = getRankRewards(gMode(m), storedValue);
+    user.reward = {
+        mode: gMode(m),
+        rank: storedValue,
+        rewards: r,
+    } as RankReward;
+}

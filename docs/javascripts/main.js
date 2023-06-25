@@ -183,7 +183,11 @@ function drawInputs() {
                 L(`Inputs done`);
             });
         });
-        setTimeout(() => app.appendChild(makeOut()), 2000);
+        setTimeout(() => {
+            app.appendChild(makeOut());
+            user.calc();
+            $("select-container").trigger("change");
+        }, 2000);
     });
 }
 const LC = (x) => {
@@ -217,7 +221,7 @@ function loadRewards(gm, gt) {
             return {
                 type: col1rank,
                 label: col1rank,
-                img: `../../assets/icons/s/${col1rank}.png`,
+                img: `../../../assets/icons/s/${col1rank}.png`,
                 amount: qty,
             };
         });
@@ -274,7 +278,7 @@ function generateAFKResObj(x) {
     const br = {
         type: gid,
         label: short,
-        img: `../../assets/icons/s/${short}.png`,
+        img: `../../../assets/icons/s/${short}.png`,
         amount: 0,
     };
     return br;
@@ -398,7 +402,7 @@ function drawResourceBox(parent) {
 }
 function getResImg(src) {
     const img = document.createElement("img");
-    img.src = `../../assets/icons/s/${src}.png`;
+    img.src = `../../../assets/icons/s/${src}.png`;
     img.width = 24;
     return img;
 }
@@ -451,6 +455,15 @@ function makeSelect(name, options) {
         list.appendChild(opt);
     }
     return list;
+}
+function setValFromLocalStore(m) {
+    const storedValue = localStorage.getItem(m);
+    const r = getRankRewards(gMode(m), storedValue);
+    user.reward = {
+        mode: gMode(m),
+        rank: storedValue,
+        rewards: r,
+    };
 }
 function renderHorizontal() {
     $("select[data-menu]").each(function () {
