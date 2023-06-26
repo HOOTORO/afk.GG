@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+const iconSize = 38;
 const allRes = [
     "dia",
     "bait",
@@ -399,7 +400,7 @@ function drawResourceBox(parent) {
 function getResImg(src) {
     const img = document.createElement("img");
     img.src = `../../../assets/icons/s/${src}.png`;
-    img.width = 24;
+    img.width = iconSize;
     return img;
 }
 function getRankRewards(gm, rank) {

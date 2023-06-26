@@ -37,7 +37,7 @@ function drawResourceBox(parent) {
 function getResImg(src: string) {
     const img = document.createElement("img");
     img.src = `../../../assets/icons/s/${src}.png`;
-    img.width = 24;
+    img.width = iconSize;
     return img;
 }
 

@@ -1,3 +1,4 @@
+const iconSize = 38;
 type gms = "CR" | "TS" | "NC";
 type bres =
     | "dia"
