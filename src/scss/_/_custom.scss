@@ -1,3 +1,5 @@
+@import "vars";
+
 figure > img {
     overflow: hidden;
     border-radius: 10px;
@@ -27,31 +29,20 @@ img {
     border-radius: 10px;  
 }
 
-.md-header__option:before {
-    content: "Сменить \aсторону";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    white-space: pre;
-    padding: 5px;
+[data-md-color-scheme=slate] .md-header__option:before {
+    content: "Dark \aSide";
+}
+[data-md-color-scheme=default] .md-header__option:before {
+    content: "Jedi \aSide";
 }
 
-// a[href$="/income/"]::before {
-//     content: "NEW!";
-//     color: red;
-//     padding-right: 15px;
-//     display: contents;
-//     text-decoration: underline;
-// }
-
-
-// /* .upd::after , */
-// a[href$="th-retirement/"]::after,
-// a[href$="#before-beginning"]::after {
-//     content: "UPD!";
-//     color: red;
-//     padding-left: 20px;
-//     display: contents;
-//     text-decoration: underline;
-// }
+.md-header__option:before {
+    font-family: 'Marvel','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: pre;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 10px 0;
+}
 
 .new::after {
     content: "new!";

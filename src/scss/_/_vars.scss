@@ -10,6 +10,7 @@ $slider-radius: 20px;
 
 
 // dark theme vars
+$dLabel: "Dark Side";
 $dark-bg: #141419;
 $d-wrapper: #2c313d;
 $d-text: snow;
@@ -20,7 +21,9 @@ $d-tabs-bg: #222200de;
 $d-nav-link: #ffffff;
 
 
+
 // light theme vars
+$lLabel: "Jedi";
 $light-bg: snow;
 $light-bg2: #cdcdaf;
 $l-text: #373737;
@@ -52,10 +55,12 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --nav-link: #{$d-nav-link};
     --md-admonition-bg-color: #{$dadmo-bg};
     --md-default-bg: #{$d-def-bg};
-
+    --theme-label: #{$dLabel};
+    
 }
 
 [data-md-color-scheme=default] {
+    --theme-label: #{$lLabel};
     --md-admonition-bg-color: #{$ladmo-bg};
     // --nav-link: #{$l-nav-link};
     --nav-color: #{$glass};
