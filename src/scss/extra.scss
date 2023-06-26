@@ -6,11 +6,17 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+:root{
+    --md-shadow-z7: 0 0.2rem 0.9rem hsla(0, 0%, 3%, 0.229), 0 0 0 0.1rem #00000016;
+}
 
 ::selection {
     background-color: hsl(310, 100%, 65%);
     color: hsl(230, 30%, 15%);
     -webkit-text-fill-color: hsl(230, 30%, 15%);
+}
+.md-typeset .admonition, .md-typeset details {
+    box-shadow: var(--md-shadow-z7);
 }
 .md-grid {
     max-width: 1340px; 

@@ -494,10 +494,18 @@ thead {
   --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
 }
 
+:root {
+  --md-shadow-z7: 0 0.2rem 0.9rem hsla(0, 0%, 3%, 0.229), 0 0 0 0.1rem #00000016;
+}
+
 ::selection {
   background-color: hsl(310, 100%, 65%);
   color: hsl(230, 30%, 15%);
   -webkit-text-fill-color: hsl(230, 30%, 15%);
+}
+
+.md-typeset .admonition, .md-typeset details {
+  box-shadow: var(--md-shadow-z7);
 }
 
 .md-grid {
