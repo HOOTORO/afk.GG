@@ -102,14 +102,14 @@
     color: red;
     animation: heart 1000ms infinite;
 }
+// .md-sidebar__inner, label.md-nav__title > a,
+// .md-nav, .md-nav__title, .md-nav--secondary, .md-nav__item--active  {
+    // border: 1px outset cyan;
+    // border-radius: 10px;
+// }
 
-.md-nav {
-    //    background-color: #2c313d;
-    background-color: var(--nav-color);
-    border-radius: 10px;
-}
-
-.md-sidebar__scrollwrap {
+.md-sidebar__inner {
+    background: var(--md-default-bg) !important;
     overflow-y: scroll;
     border-radius: 10px;
 }

@@ -24,9 +24,15 @@ em {
 }
 
 img {
-    border-radius: 10px;
+    border-radius: 10px;  
 }
 
+.md-header__option:before {
+    content: "Сменить \aсторону";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: pre;
+    padding: 5px;
+}
 
 // a[href$="/income/"]::before {
 //     content: "NEW!";

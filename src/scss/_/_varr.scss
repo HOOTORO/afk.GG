@@ -29,6 +29,11 @@ $l-foot-bg: wheat;
 $l-foot-fg: #1d1810;
 $l-tabs-bg:#22220077;
 $l-nav-link: #ffff;
+$ladmo-bg: linear-gradient(45deg, rgba(119, 101, 20, 0.491), #ffffffb5);
+$l-def-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), #32323217);
+
+$dadmo-bg: linear-gradient(45deg, rgba(102, 102, 102, 0.605), #bebebebe);
+$d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
 
 
 
@@ -45,10 +50,15 @@ $l-nav-link: #ffff;
     --md-footer-fg-color: #{$d-foot-fg};
     --tab-bg: #{$d-tabs-bg};
     --nav-link: #{$d-nav-link};
+    --md-admonition-bg-color: #{$dadmo-bg};
+    --md-default-bg: #{$d-def-bg};
+
 }
 
 [data-md-color-scheme=default] {
-    --nav-color: #{$light-bg};
+    --md-admonition-bg-color: #{$ladmo-bg};
+    // --nav-link: #{$l-nav-link};
+    --nav-color: #{$glass};
     --slate-gradient: #{$def-gradient};
     --containers-bg: #{$light-bg};
     --text: #{$l-text};
@@ -56,6 +66,6 @@ $l-nav-link: #ffff;
     --md-footer-bg-color: #{$l-foot-bg};
     --md-footer-fg-color: #{$l-foot-fg};
     --tab-bg: #{$l-tabs-bg};
-    --nav-link: #{$l-nav-link};
+    --md-default-bg: #{$l-def-bg};
 
 }

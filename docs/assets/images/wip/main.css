@@ -13,13 +13,11 @@
   --md-footer-fg-color: snow;
   --tab-bg: rgba(34, 34, 0, 0.8705882353);
   --nav-link: #ffffff;
-  --md-admonition-bg-color: linear-gradient(45deg, rgba(102, 102, 102, 0.605), rgba(190, 190, 190, 0.7450980392));
-  --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
 }
 
 [data-md-color-scheme=default] {
-  --md-admonition-bg-color: linear-gradient(45deg, rgba(119, 101, 20, 0.491), rgba(255, 255, 255, 0.7098039216));
-  --nav-color: rgba(255, 255, 255, 0.2);
+  --md-admonition-bg-color: linear-gradient(90deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
+  --nav-color: snow;
   --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --containers-bg: snow;
   --text: #373737;
@@ -27,7 +25,7 @@
   --md-footer-bg-color: wheat;
   --md-footer-fg-color: #1d1810;
   --tab-bg: rgba(34, 34, 0, 0.4666666667);
-  --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
+  --nav-link: white;
 }
 
 #a-form {
@@ -128,13 +126,11 @@ span > img {
   --md-footer-fg-color: snow;
   --tab-bg: rgba(34, 34, 0, 0.8705882353);
   --nav-link: #ffffff;
-  --md-admonition-bg-color: linear-gradient(45deg, rgba(102, 102, 102, 0.605), rgba(190, 190, 190, 0.7450980392));
-  --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
 }
 
 [data-md-color-scheme=default] {
-  --md-admonition-bg-color: linear-gradient(45deg, rgba(119, 101, 20, 0.491), rgba(255, 255, 255, 0.7098039216));
-  --nav-color: rgba(255, 255, 255, 0.2);
+  --md-admonition-bg-color: linear-gradient(90deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
+  --nav-color: snow;
   --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --containers-bg: snow;
   --text: #373737;
@@ -142,7 +138,7 @@ span > img {
   --md-footer-bg-color: wheat;
   --md-footer-fg-color: #1d1810;
   --tab-bg: rgba(34, 34, 0, 0.4666666667);
-  --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
+  --nav-link: white;
 }
 
 body {
@@ -202,13 +198,11 @@ select::-ms-expand {
   --md-footer-fg-color: snow;
   --tab-bg: rgba(34, 34, 0, 0.8705882353);
   --nav-link: #ffffff;
-  --md-admonition-bg-color: linear-gradient(45deg, rgba(102, 102, 102, 0.605), rgba(190, 190, 190, 0.7450980392));
-  --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
 }
 
 [data-md-color-scheme=default] {
-  --md-admonition-bg-color: linear-gradient(45deg, rgba(119, 101, 20, 0.491), rgba(255, 255, 255, 0.7098039216));
-  --nav-color: rgba(255, 255, 255, 0.2);
+  --md-admonition-bg-color: linear-gradient(90deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
+  --nav-color: snow;
   --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --containers-bg: snow;
   --text: #373737;
@@ -216,7 +210,7 @@ select::-ms-expand {
   --md-footer-bg-color: wheat;
   --md-footer-fg-color: #1d1810;
   --tab-bg: rgba(34, 34, 0, 0.4666666667);
-  --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
+  --nav-link: white;
 }
 
 output > div {
@@ -308,10 +302,7 @@ img {
 }
 
 .md-header__option:before {
-  content: "Сменить \aсторону";
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  white-space: pre;
-  padding: 5px;
+  content: "Сменить сторону силы";
 }
 
 .new::after {
@@ -436,13 +427,11 @@ thead {
   --md-footer-fg-color: snow;
   --tab-bg: rgba(34, 34, 0, 0.8705882353);
   --nav-link: #ffffff;
-  --md-admonition-bg-color: linear-gradient(45deg, rgba(102, 102, 102, 0.605), rgba(190, 190, 190, 0.7450980392));
-  --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
 }
 
 [data-md-color-scheme=default] {
-  --md-admonition-bg-color: linear-gradient(45deg, rgba(119, 101, 20, 0.491), rgba(255, 255, 255, 0.7098039216));
-  --nav-color: rgba(255, 255, 255, 0.2);
+  --md-admonition-bg-color: linear-gradient(90deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
+  --nav-color: snow;
   --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --containers-bg: snow;
   --text: #373737;
@@ -450,7 +439,7 @@ thead {
   --md-footer-bg-color: wheat;
   --md-footer-fg-color: #1d1810;
   --tab-bg: rgba(34, 34, 0, 0.4666666667);
-  --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
+  --nav-link: white;
 }
 
 ::selection {
@@ -548,8 +537,12 @@ thead {
   animation: heart 1000ms infinite;
 }
 
-.md-sidebar__inner {
-  background: var(--md-default-bg) !important;
+.md-nav {
+  background-color: var(--nav-color);
+  border-radius: 10px;
+}
+
+.md-sidebar__scrollwrap {
   overflow-y: scroll;
   border-radius: 10px;
 }
@@ -568,4 +561,9 @@ thead {
   color: #00eaff;
 }
 
+.md-header__option:before {
+    top: 5px;
+        content: "Сменить \aсторону";
+    white-space: pre;
+}
 /*# sourceMappingURL=main.css.map */
