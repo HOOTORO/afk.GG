@@ -346,7 +346,6 @@ h2 {
 table {
   margin: 20px auto;
   border-radius: 0.6rem !important;
-  border: 1px solid #eee;
   border-bottom: 2px solid #00cccc;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
 }
@@ -358,7 +357,6 @@ table tr:hover td {
 
 table th,
 tbody td {
-  border: 0.5px solid #eee;
   padding: 10px 10px !important;
   vertical-align: top !important;
   max-width: fit-content;
@@ -385,8 +383,7 @@ th {
 }
 
 thead {
-  text-decoration: overline cyan 2px;
-  height: 80px;
+  text-decoration: overline double blueviolet 2px;
 }
 
 .misty-group > input[type=radio][name=selector] {
