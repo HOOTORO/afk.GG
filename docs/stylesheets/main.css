@@ -16,7 +16,7 @@
 
 [data-md-color-scheme=default] {
   --nav-color: snow;
-  --slate-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
+  --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --containers-bg: snow;
   --text: #373737;
   --select-font-color: #280808;
@@ -128,7 +128,7 @@ span > img {
 
 [data-md-color-scheme=default] {
   --nav-color: snow;
-  --slate-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
+  --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --containers-bg: snow;
   --text: #373737;
   --select-font-color: #280808;
@@ -199,7 +199,7 @@ select::-ms-expand {
 
 [data-md-color-scheme=default] {
   --nav-color: snow;
-  --slate-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
+  --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --containers-bg: snow;
   --text: #373737;
   --select-font-color: #280808;
@@ -290,7 +290,7 @@ figure > img {
 }
 
 em {
-  color: skyblue;
+  color: rgb(33, 111, 222);
 }
 
 img {
@@ -423,7 +423,7 @@ thead {
 
 [data-md-color-scheme=default] {
   --nav-color: snow;
-  --slate-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
+  --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --containers-bg: snow;
   --text: #373737;
   --select-font-color: #280808;

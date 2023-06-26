@@ -34,7 +34,7 @@ theme:
               icon: material/weather-night
               name: Switch to dark mode
           primary: orange
-          accent: lime
+          accent: cyan
         - scheme: slate
           toggle:
               icon: material/weather-sunny
