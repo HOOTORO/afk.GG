@@ -29,4 +29,5 @@ jobs:
       - run: pip install openpyxl
       - run: pip install requests     
       - run: pip install pyarrow
+      - run: pip install pillow cairosvg
       - run: mkdocs gh-deploy --force
