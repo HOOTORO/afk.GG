@@ -4,23 +4,20 @@ site_url: https://hootsdev.github.io/afk.GG/
 # dev_addr: "127.0.0.1:800"
 
 copyright: >-
-    afk.GG is an 'AFK Arena' fansite, and is not affiliated with Lilith Games in any way. – <a href="#__consent">Change cookie settings</a> –
-    Copyright &copy; 2023, Лев Николаевич HOOTSMAN
-    <br>
+    afk.GG is an 'AFK Arena' fansite, and is not affiliated with Lilith Games in any way.<br>
+    Copyright &copy; 2023, Лев Николаевич HOOTSMAN – <a href="#__consent">Change cookie settings</a><br>
 
 extra_css:
-    # - https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css
-    # - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
-    - stylesheets/main.css
+  - stylesheets/main.css
 extra_javascript:
-    - https://requirejs.org/docs/release/2.3.6/minified/require.js
-    - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-    # - javascripts/main.js
+  - https://requirejs.org/docs/release/2.3.6/minified/require.js
+  - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+  - javascripts/avatars.js
 theme:
     name: material
     language: ru
     favicon: favicon.jpg
-    logo: assets/logo2rv2.jpg
+    logo: assets/logo2.png
     custom_dir: overrides
 # Good ones fonts: 
 # text: Roboto Flex, Open Sans, Google Sans
@@ -46,30 +43,48 @@ theme:
         - navigation.instant
         - navigation.tracking
         - navigation.tabs
+        # - navigation.tabs.sticky
         - navigation.top
         - navigation.footer
         - navigation.sections
-        - navigation.expand
-        - toc.follow
-        # - toc.integrate
-        # - navigation.tabs.sticky
         - navigation.indexes
+        # - navigation.expand
+        # - toc.follow
+        # - toc.integrate
 
 plugins:
-    - search:
+  - search:
           lang: ru
           separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-    - minify:
+  - minify:
           minify_html: true
-    - glightbox:
+  - glightbox:
           draggable: false
           touchNavigation: true
           loop: true
           auto_caption: true
           caption_position: bottom
           zoomable: true
-    - table-reader:
+  - table-reader:
           allow_missing_files: False
+  - social
+#   - blogging:
+#         dirs:              # The directories included in the category
+#             - reviews
+#             - draft
+#         size: 5            # Number of articles in one page, default: 10
+#         sort: 
+#             from: new        # Sort from new to old, default
+#             # or old         # Sort from old to new
+#             by: creation     # Sort by the first commit time, default
+#             # or revision    # Sort by the latest commit time
+#         paging: false      # Disable paging
+#         show_total: false  # Remove 'total pages' label
+#         full_content: true # Use the full content for blog description
+#         template: overrides/blog.j2go # Path to customized template
+#         theme:             # Use a predefined theme
+#             name: card
+
 # - extra-sass
 ##### TODO: add eng lang support
 # - material-relative-language-selector
@@ -89,10 +104,8 @@ plugins:
     #       target: _blank
     #       links_noopener: true
     
-
-
 hooks:
-    - scripts/hooks.py
+  - scripts/hooks.py
 
 extra:
     # version: 1.1
@@ -125,71 +138,68 @@ extra:
     #     lang: en
 
 markdown_extensions:
-    - abbr
-    - admonition
-    - attr_list
-    - def_list
-    - footnotes
-    - md_in_html
-    - tables
-    - toc:
-          permalink: true
-          toc_depth: 2
-    - pymdownx.arithmatex:
-          generic: true
-    - pymdownx.betterem:
-          smart_enable: all
-    - pymdownx.caret
-    - pymdownx.details
-    - pymdownx.emoji:
-          emoji_index: !!python/name:materialx.emoji.twemoji
-          emoji_generator: !!python/name:materialx.emoji.to_svg
-    - pymdownx.highlight:
-          anchor_linenums: true
-          # broke after fix settings xD
-          # line_spans: __span
-          # pygments_lang_class: true
-          use_pygments: true
-          auto_title: true
-          linenums_style: pymdownx-inline
-          linenums: true
-    - pymdownx.inlinehilite
-    - pymdownx.keys
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences
-    - pymdownx.tabbed:
-          alternate_style: true
-    - pymdownx.tasklist:
-          custom_checkbox: true
-    - pymdownx.tilde
-    - pymdownx.critic
-    # - pymdownx.snippets
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+        permalink: true
+        toc_depth: 2
+  - pymdownx.arithmatex:
+        generic: true
+  - pymdownx.betterem:
+        smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+        anchor_linenums: true
+        use_pygments: true
+        auto_title: true
+        linenums_style: pymdownx-inline
+        linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+        alternate_style: true
+  - pymdownx.tasklist:
+        custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.critic
+  # - pymdownx.snippets
 
 nav:
-    - Главная: ru/index.md
-    # - nm: nmem.md
-    - База знаний:
-          - ru/kb/index.md
-          - Полезные ресурсы: ru/kb/links.md
-          - Инфографика: ru/kb/infographics.md
-          - TRESCAMBLE. Охота за костылями: ru/kb/trescamble.md
-          - Tools:
-                - Income: ru/tools/income.md
-                - Dia Values: ru/tools/diaval.md
-                - Tree Estimator: ru/tools/calc.md
-    - Сообщество:
-          - ru/top/index.md
-          - СНГ Топ:
-                - AbEx/Бездна: ru/top/abex.md
-                - HF/Охотничьи угодья: ru/top/hf.md
-          - Discord:
-                - (RU) Made in USSR: ru/disru.md
-                - (EN) International: ru/disen.md
-    - Блог:
-          - ru/blog/index.md
-          - Мемы. Сделанно в СНГ: ru/blog/meme.md
-          - Сон сутулой собаки: ru/blog/dogdream.md
-          - RU Community: ru/blog/makerugreatagain.md
-          - No Mercy: ru/blog/nm-respect.md
-          - The Hospital: ru/blog/th-retirement.md
+  - Главная: index.md
+  # - nm: nmem.md
+  - База знаний:
+    - ru/kb/index.md
+    - Полезные ресурсы: ru/kb/links.md
+    - Инфографика: ru/kb/infographics.md
+    - TRESCAMBLE. Охота за костылями: ru/kb/trescamble.md
+    - Tools:
+        - Income: ru/tools/income.md
+        - Dia Values: ru/tools/diaval.md
+        - Tree Estimator: ru/tools/calc.md
+  - Сообщество:
+        - ru/top/index.md
+        - СНГ Топ:
+            - AbEx/Бездна: ru/top/abex.md
+            - HF/Охотничьи угодья: ru/top/hf.md
+        - Discord:
+            - (RU) Made in USSR: ru/disru.md
+            - (EN) International: ru/disen.md
+  - HOOT-o-ROCK:
+        - ru/blog/index.md
+        - ru/blog/meme.md
+        - ru/blog/dogdream.md
+        - ru/blog/makerugreatagain.md
+        - ru/blog/nm-respect.md
+        - ru/blog/th-retirement.md

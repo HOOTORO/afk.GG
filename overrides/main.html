@@ -7,15 +7,6 @@
 <title>afk.GG</title>
 {% endblock %}
 
-{% block content %}
-    {{ super() }}
-    {% if page.meta and page.meta.date %}
-        <span class="timeago publdate" datetime="{{ page.meta.date }}">
-            Дата публикации: <code>{{ page.meta.date }}</code>
-        </span>
-    {% endif %}
-{% endblock %}
-
 {% block scripts %}
 <!-- Add scripts that need to run before here -->
     {{ super() }}

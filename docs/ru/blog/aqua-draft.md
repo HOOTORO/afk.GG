@@ -1,5 +1,11 @@
-# Особенности национальной торговли
-
+---
+title: Особенности национальной торговли
+description: >-
+    Несколько историй о людях
+date: 2023-06-27
+author: HOOTSMAN, Лев Николаевич
+template: templates/blog.j2
+---
 ## 1. Подарок
 
 ### История Delian
@@ -8,22 +14,22 @@
 
 |         Хроника событий |                _Привет_ |
 | :----------------------: | :----------------------: |
-| ![privet](image-10.png) | ![privet](image-11.png) |
-|   ![poka](image-12.png) |   ![poka](image-13.png) |
+| ![privet](../../assets/images/rumarket/image-10.png) | ![privet](../../assets/images/rumarket/image-11.png) |
+|   ![poka](../../assets/images/rumarket/image-12.png) |   ![poka](../../assets/images/rumarket/image-13.png) |
 |                         |                **_Пока_** |
 
 <figcaption></figcaption>
 </figure>
 <figure markdown>
 
-![Владелец аккаунта, он же privetpoka](image-14.png)
+![Владелец аккаунта, он же privetpoka](../../assets/images/rumarket/image-14.png)
 
 <figcaption>Новый владелец аккаунта, он же Морок</figcaption>
 </figure>
 
 ### Реакция пострадавшей стороны
 
-!!! quote "![deli](../../assets/images/choseblom/deliav.png){width=32} **_Delian_** 23.06.2023. 14:27:39"
+!!! quote "![deli](../../assets/avatars/deliav.png){width=32} **_Delian_** 23.06.2023. 14:27:39"
 
     >Не думаю, что моя информация принесёт хоть какой-то толк, так как аккаунт не был куплен, предыдущий владелец с которым мы были в
     хороших отношениях, попросту решил отдать его мне. :)  
@@ -36,16 +42,16 @@
     Сколь бы сильно тебе был неприятен человек, зачем подговаривать своих согильдийцев поступать столь подло?  
     До выхода из гильдии списалась с человеком, мол не будет ли он против того, что перейду в другую гильдию, так как мне было предельно важно
     узнать его мнение.  
-    Буль он против, то без проблем передала бы аккаунт ему, а если бы дал добро, то тут уже понятно.  
+    Будь он против, то без проблем передала бы аккаунт ему, а если бы дал добро, то тут уже понятно.  
     Спустя какое-то время ушла из гильдии, вступила в Хурики. Буквально день просидела, а утром уже минус аккаунт был.  
     Как мне сказали, Морок с которым у нас были плохие отношения, который состоит в акве, решил поднасрать и ночью купил аккаунт.  
     Помимо этого, аква решила поднасрать и другому игроку - Черная Метка, хотели связаться с человеком у которого она купила аккаунт.  
 
 ### Независимое мнение
 
-!!! example "HOOTSMAN, Лев Николаевич"
+!!! quote "HOOTSMAN, Лев Николаевич"
 
-    ![Alt text](image-15.png){ align=right width=210}
+    ![Alt text](../../assets/images/rumarket/image-15.png){ align=right width=210}
     В произошедшем инциденте,  
     чисто технически, никто никому ничего не должен.  
     Ваши ожидания исключительно ваши проблемы, как говорится.  
@@ -67,21 +73,21 @@
     - _Сир, Sir Eblo 2000_ - **ГМ Аквилона**
     - _Эликсир_ - владелец аккаунта _Ассмодеуса_
 
-[^ss]: Подражает ГМу аквы, нно это два разных участника событий.
+[^ss]: "Подражает ГМу аквы, но это два разных участника событий."
 
 ### История
 
 Началось все с покупки аккаунта Эликсира, который дропнул игру, оставив акк Pohoyoo
 
-![beginning](image.png){width=600}
+![beginning](../../assets/images/rumarket/image.png){width=600}
 
 <figure markdown>
 
-| 1. ![1](../../assets/images/wip/1.png) | 2. ![2](../../assets/images/wip/2.png) |
+| 1. ![1](../../assets/images/rumarket/1.png) | 2. ![2](../../assets/images/rumarket/2.png) |
 | :------------------------------------: | :------------------------------------: |
-| 3. ![3](../../assets/images/wip/3.png) | 4. ![4](../../assets/images/wip/4.png) |
-| 5. ![5](../../assets/images/wip/5.png) | 6. ![6](../../assets/images/wip/6.png) |
-| 7. ![7](../../assets/images/wip/7.png) |   6\* ![dop](image-5.png){width=280}   |
+| 3. ![3](../../assets/images/rumarket/3.png) | 4. ![4](../../assets/images/rumarket/4.png) |
+| 5. ![5](../../assets/images/rumarket/5.png) | 6. ![6](../../assets/images/rumarket/6.png) |
+| 7. ![7](../../assets/images/rumarket/7.png) |   6\* ![dop](../../assets/images/rumarket/image-5.png){width=280}   |
 
 <figcaption>Сделка</figcaption>
 </figure>
@@ -90,37 +96,37 @@
 
 <figure markdown>
 
-> ![present time](image-1.png) > ![Alt text](image-2.png) > ![Alt text](image-3.png) > ![Alt text](image-4.png)
+> ![present time](../../assets/images/rumarket/image-1.png) > ![Alt text](../../assets/images/rumarket/image-2.png) > ![Alt text](../../assets/images/rumarket/image-3.png) > ![Alt text](../../assets/images/rumarket/image-4.png)
 
-<figcaption> Asm успел привязать к акку гугл почту и реакция</figcation>
+<figcaption> Asm успел привязать к акку гугл почту и реакция</figcaption>
 </figure>
 
 <figure markdown>
 
-![1](../../assets/images/choseblom/1.png){width=700}
+![1](../../assets/images/rumarket/11.png){width=700}
 
-<figcaption>После этого разговора был Войс_(с кем?)_</figcation>
+<figcaption>После этого разговора был Войс_(с кем?)_</figcaption>
 </figure>
 
-> ![Alt text](image-7.png) > ![Alt text](image-9.png)
+> ![Alt text](../../assets/images/rumarket/image-7.png) > ![Alt text](../../assets/images/rumarket/image-9.png)
 
 |                  1                  |                  2                  |       Ответ владельца аккаунта        |
 | :---------------------------------: | :---------------------------------: | :-----------------------------------: |
-| ![8](../../assets/images/wip/8.png) | ![9](../../assets/images/wip/9.png) | ![10](../../assets/images/wip/10.png) |
+| ![8](../../assets/images/rumarket/8.png) | ![9](../../assets/images/rumarket/9.png) | ![10](../../assets/images/rumarket/10.png) |
 
 <figure markdown>
 
-> ![Alt text](image-6.png) > ![Alt text](image-8.png)
+> ![Alt text](../../assets/images/rumarket/image-6.png) > ![Alt text](../../assets/images/rumarket/image-8.png)
 
-<figcaption> </figcation>
+<figcaption> </figcaption>
 </figure>
 
 <figure markdown>
 
-<figcaption> </figcation>
+<figcaption> </figcaption>
 </figure>
 
 <figure markdown>
 
-<figcaption> </figcation>
+<figcaption> </figcaption>
 </figure>

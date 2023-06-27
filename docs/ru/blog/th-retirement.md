@@ -1,19 +1,14 @@
 ---
+title: The Hospital. История.
+author: "HOOTSMAN, Лев Николаевич"
 date: 2022-11-11
-title: The Hospital. Retirement.
-author: "Лев Николаевич HOOTSMAN"
-permalink: /th
+template: templates/blog.j2
 ---
-
 !!! example "Good night sweet prince"
 
     ![sweet dreams](../../assets/images/th-retirement/1.jpg)
 
 ---
-
-# История «the Hospital»
-
-## <!-- prettier-ignore -->
 
 ## Вступление
 
@@ -323,7 +318,7 @@ _Ставь лукаса если находишься в перманентно
 <figure markdown>
 <video width="700" controls><source src="../../../assets/vids/20220625ginfo.mp4" type="video/mp4"></video>
 
-![aasd](../../assets/images/th-retirement/36.jpg)
+![1](../../assets/images/th-retirement/36.jpg)
 ![ybRdVmS](../../assets/images/th-retirement/37.jpg)
 
    <figcaption>
@@ -339,7 +334,7 @@ _Ставь лукаса если находишься в перманентно
 <figure markdown>
 
 ![LFApj4f](../../assets/images/th-retirement/38.jpg)
-![ksksk](../../assets/images/th-retirement/39.jpg)
+![kis](../../assets/images/th-retirement/39.jpg)
 ![9P760fY](../../assets/images/th-retirement/40.jpg)
 
    <figcaption>

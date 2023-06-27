@@ -1,5 +1,4 @@
 ---
-permalink: tools
 template: main.html
 title: Table data
 ---

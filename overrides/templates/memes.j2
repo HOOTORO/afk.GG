@@ -1,0 +1,56 @@
+{% extends "main.html" %} 
+
+{%block libs%}
+ <script src="{{ 'javascripts/memes.js' | url }}"></script> 
+{%endblock%}
+
+{% block htmltitle %} 
+  {{ super() }} 
+{% endblock %}
+
+{%block styles%}
+  {{super()}}
+  <style>
+    .authored > code {
+        display: block;
+        border-radius: 10px;
+        font-family: 'Marvel' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        padding: 10px;
+        }
+  </style>
+{%endblock%}
+
+{% block tabs %}
+  {{ super() }}
+{% endblock %}
+
+
+{% block content %}
+  {% if not "\x3ch1" in page.content %}
+  <h1 class="red-font">{{ page.title | d(config.site_name, true)}}</h1>
+  {% endif %}
+  <blockquote>
+    <cite>
+        {{ page.meta.description }}
+    </cite>
+  </blockquote>
+  {{ super() }} 
+  {% if page.meta and page.meta.author %}
+      <span class="authored">
+        <code>
+                ✎ Writted by 🡺 {{ page.meta.author }}
+                {% if page.meta and page.meta.date %}
+                    <span class="timeago publdate" datetime="{{ page.meta.date }}">
+                        Дата публикации: <code>{{ page.meta.date }}</code>
+                    </span>
+                {% endif %}
+        </code>
+      </span>
+  {% endif %}
+{% endblock %}
+
+{%block scripts%}
+
+{{super()}}
+{%endblock%}

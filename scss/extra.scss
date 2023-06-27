@@ -1,12 +1,14 @@
-@import "_/output", "_/purecss", "_/silder", "_/custom", "_/table", "_/radio", "_/vars";
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+@import "_/output", "_/purecss", "_/silder", "_/custom", "_/table", "_/radio",
+    "_/vars", "_/admonition";
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
 
 @mixin box-sizing {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-:root{
+:root {
+    --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
     --md-shadow-z7: 0 0.2rem 0.9rem hsla(0, 0%, 3%, 0.229), 0 0 0 0.1rem #00000016;
 }
 
@@ -15,14 +17,15 @@
     color: hsl(230, 30%, 15%);
     -webkit-text-fill-color: hsl(230, 30%, 15%);
 }
-.md-typeset .admonition, .md-typeset details {
+.md-typeset .admonition,
+.md-typeset details {
     box-shadow: var(--md-shadow-z7);
 }
 .md-grid {
-    max-width: 1340px; 
-  }
-.md-tabs__link{
-    font-family: 'Jura', sans-serif !important;
+    max-width: 1440px;
+}
+.md-tabs__link {
+    font-family: "Jura", sans-serif !important;
     font-weight: 500 !important;
     letter-spacing: 0.5px !important;
     text-rendering: optimizeLegibility;
@@ -31,6 +34,7 @@
 
 .md-tabs {
     display: flex;
+    color: var(--md-default-bg);
     background-color: var(--tab-bg);
     -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -39,18 +43,15 @@
     margin: 100px;
 }
 
-.glightbox, .glightbox img {
-    user-drag: none;
+.glightbox,
+.glightbox img {
+    // user-drag: none;
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     // pointer-events: none;
-}
-
-:root {
-    --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
 }
 
 .md-typeset .admonition.sh-luv,
@@ -77,7 +78,8 @@
 }
 
 @keyframes discord {
-    0%, 20% {
+    0%,
+    20% {
         transform: scale(1.2);
     }
     100% {
@@ -96,10 +98,14 @@
 }
 
 @keyframes heart {
-    0%, 40%, 80%, 100% {
+    0%,
+    40%,
+    80%,
+    100% {
         transform: scale(1);
     }
-    20%, 60% {
+    20%,
+    60% {
         transform: scale(1.15);
     }
 }
@@ -108,11 +114,6 @@
     color: red;
     animation: heart 1000ms infinite;
 }
-// .md-sidebar__inner, label.md-nav__title > a,
-// .md-nav, .md-nav__title, .md-nav--secondary, .md-nav__item--active  {
-    // border: 1px outset cyan;
-    // border-radius: 10px;
-// }
 
 .md-sidebar__inner {
     background: var(--md-default-bg) !important;
@@ -128,8 +129,8 @@
     top: 10px;
 }
 
-.md-tabs__link--active, 
-.md-tabs__link:focus, 
+.md-tabs__link--active,
+.md-tabs__link:focus,
 .md-tabs__link:hover {
-color: #00eaff;
+    color: #00eaff;
 }

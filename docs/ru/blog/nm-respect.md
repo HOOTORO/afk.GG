@@ -1,10 +1,9 @@
 ---
 title: NM. Respect.
-author: HOOTSMAN
-date: 02.03.23
+author: HOOTSMAN, Лев Николаевич
+date: 23-03-02
+template: templates/blog.j2
 ---
-# Рак сообщества { .red-font }
-
 !!! attention "«Беспощадные[^tn]» соги!"
       Прошу!  
       Уделите немного внимания/времени данному посту.

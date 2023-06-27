@@ -1,6 +1,5 @@
 ---
-permalink: tools
-template: tools.html
+template: templates/tools.j2
 title: AFK tools
 ---
 

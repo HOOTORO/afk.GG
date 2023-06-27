@@ -1,7 +1,6 @@
 ---
 title: TRESCAMBLE
 author: "HOLLYWOOD HOOTSMAN"
-permalink: /trescamble/
 ---
 
 # Bounty Hunter Notes
