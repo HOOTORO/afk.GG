@@ -1,9 +1,12 @@
 ---
-title: TRESCAMBLE
-author: "HOLLYWOOD HOOTSMAN"
+title: TRESCAMBLE!
+description: >-
+    Bounty Hunter Notes или
+    НЕ-гайд на охоту за сокровищами.
+author: HOOTSMAN, Лев Николаевич
+date: 23-04-08
 ---
 
-# Bounty Hunter Notes
 
 <!-- prettier-ignore -->
 *[TS]: сокр. от Treasure Scramble
