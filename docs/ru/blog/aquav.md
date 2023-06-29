@@ -161,14 +161,12 @@ template: templates/blog.j2
 
     ??? danger "Обычное общение в Акве | МНОГО НЕЦЕНЗУРНОЙ ЛЕКСИКИ"
 
-        | ![сир сапожник][1]  | ![сир сапожник][2]             |
-        |---------------------|--------------------------------|
-        | ![сир сапожник][3]  | ![альтернативный сапожник][6]  |
-        | ![сир сапожник][x1] | ![альтернативный сапожник][x2] |
-        | ![сир сапожник][x3] | ![альтернативный сапожник][x4] |
+        | ![сир сапожник][1]  | ![сир сапожник][2]            |
+        |---------------------|-------------------------------|
+        | ![сир сапожник][3]  | ![альтернативный сапожник][6] |
+        | ![сир сапожник][x1] | ![клуб сапожников][7]         |
 
         <figure markdown>
-          ![клуб сапожников][7]
         </figure>
 
     ***
@@ -348,9 +346,6 @@ template: templates/blog.j2
 [15]: https://www.consultant.ru/document/cons_doc_LAW_10699/3cf93ca64f2a009e75430fc6394b66a3642ba176/
 
 [x1]: https://cdn.discordapp.com/attachments/1121769153611694110/1122601065418854580/SmartSelect_20230528_162134_Discord.png
-[x2]: https://cdn.discordapp.com/attachments/1121769153611694110/1122600804851916850/SmartSelect_20230610_032307_Discord.png
-[x3]: https://media.discordapp.net/attachments/1121769153611694110/1122600804466036909/SmartSelect_20230610_032252_Discord.png
-[x4]: https://cdn.discordapp.com/attachments/1121769153611694110/1122600804042408026/SmartSelect_20230610_025348_Discord.png
 [treat]: https://cdn.discordapp.com/attachments/1121769153611694110/1121896773779198003/5a95ff8d-a836-4111-adc0-aea465b66951.png
 [darmamu]: https://media.discordapp.net/attachments/1121769153611694110/1121902025735680070/b2fef5b0-1c81-408c-8eaf-13a16739b9c1.png
 [origin]: https://media.discordapp.net/attachments/976976670345035796/1124059283458367599/image.png
