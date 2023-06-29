@@ -10,7 +10,7 @@ fetch("../../../memes.json")
 
 function initialize(memes) {
     const memesContainer = document.getElementById("memes");
-    let eles = [];
+    // let eles = [];
     const smems = memes.memes.sort((a, b) => {
         return sortNumStr(a, b);
     });
@@ -70,7 +70,7 @@ function initialize(memes) {
         memesContainer.appendChild(column);
     }
 
-    runGLBox();
+    // runGLBox(eles);
 }
 
 function nodeAttributes(nodeName, attr) {
@@ -93,7 +93,7 @@ function sortNumStr(a, b) {
     return 0;
 }
 
-function runGLBox() {
+function runGLBox(eles) {
     const lightbox = GLightbox({
         touchNavigation: true,
         loop: true,

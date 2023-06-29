@@ -16,7 +16,13 @@ template: templates/memes.j2
         </figure>
 
 <div id="memes"></div>
+ <script src="/afk.GG/javascripts/memes.js">
+    document$.subscribe(() => {
+    const mems = JSON.parse(/afk.GG/memes.json);
+    initialize(memes)
+    })
+ </script>
 
-|                                                      Видео                                                       | мемасы |
-| :--------------------------------------------------------------------------------------------------------------: | :----: |
+|                                                      Видео                                                      | мемасы |
+|:---------------------------------------------------------------------------------------------------------------:|:------:|
 | <video width="320" height="240" controls><source src="/afk.GG/assets/vids/phil.webm" type="video/webm"></video> |        |
