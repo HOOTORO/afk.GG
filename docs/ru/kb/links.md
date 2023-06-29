@@ -1,3 +1,8 @@
+---
+title: Helpful Resources
+description: Community Driven
+author: compiled by HOOTSMAN
+---
 # Useful Resources
 
 !!! sh-luv "Powered by Community!"

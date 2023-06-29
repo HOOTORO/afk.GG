@@ -1,3 +1,8 @@
+---
+title: AbEx Rankings
+description: >
+  СНГ и глобал топы
+---
 # AbEx Rankings
 
 ## Season 9

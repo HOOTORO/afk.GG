@@ -1,6 +1,8 @@
 ---
 template: main.html
 title: Table data
+description: >
+  Data loaded from g sheets
 ---
 
 # Dia Shop Values { .red-font }
@@ -22,4 +24,3 @@ title: Table data
 {{ read_csv('../../assets/tables/loc.csv', na_filter=True, keep_default_na=False, skip_blank_lines=False, colalign=("center",)) }}
 
 ## Deals Value
-

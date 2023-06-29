@@ -1,5 +1,6 @@
 ---
 title: 🇷🇺Forged Мемасики
+description: Выкованные в СНГ с любовью!
 author: Community
 date: 2023
 template: templates/memes.j2
@@ -18,4 +19,4 @@ template: templates/memes.j2
 
 |                                                      Видео                                                       | мемасы |
 | :--------------------------------------------------------------------------------------------------------------: | :----: |
-| <video width="320" height="240" controls><source src="../../../assets/vids/phil.webm" type="video/webm"></video> |        |
+| <video width="320" height="240" controls><source src="/afk.GG/assets/vids/phil.webm" type="video/webm"></video> |        |

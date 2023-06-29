@@ -1,3 +1,11 @@
+---
+title: AFK Arena. All You Want To Know
+description: >- 
+    Welcome to HOLY DOOM residence.
+    Here you can find all information about AFK Arena game, that i've find useful.  
+    Mainly here is collection of direct links to the best community-made resources!
+    ~and several things by myself~
+---
 # Содержание
 
 Информация по игре созданная руками сообщества. Постарался собрать в одном месте все полезные ресурсы, которыми пользуюсь.

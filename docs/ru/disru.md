@@ -1,7 +1,7 @@
 ---
-permalink: /disen
+title: AFK Community Discord servers
+description: Russians
 ---
-
 # Список серверов ру части сообщества
 
 !!! info "Информация"

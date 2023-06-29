@@ -1,5 +1,7 @@
 ---
-title: Сон сутулой собаки 
+title: Сон сутулой собаки
+description: >-
+    История шпиона-неудачника.
 author: HOOTSMAN, Лев Николаевич
 date: 2023
 template: templates/blog.j2

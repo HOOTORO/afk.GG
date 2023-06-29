@@ -1,5 +1,7 @@
 ---
 title: NM. Respect.
+description: >-
+    There is no future with no respect for each other.
 author: HOOTSMAN, Лев Николаевич
 date: 23-03-02
 template: templates/blog.j2

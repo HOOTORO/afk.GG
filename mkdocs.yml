@@ -1,9 +1,13 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: AFK. Все что желаешь знать.
 site_url: https://hootsdev.github.io/afk.GG/
-# dev_addr: "127.0.0.1:800"
 
-copyright: >-
+
+# repo_name: afk.GG
+# repo_url: https://github.com/Hootsdev/afk.GG
+# edit_uri: blob/main/docs/
+
+copyright: >
     afk.GG is an 'AFK Arena' fansite, and is not affiliated with Lilith Games in any way.<br>
     Copyright &copy; 2023, Лев Николаевич HOOTSMAN – <a href="#__consent">Change cookie settings</a><br>
 
@@ -43,14 +47,11 @@ theme:
         - navigation.instant
         - navigation.tracking
         - navigation.tabs
-        # - navigation.tabs.sticky
         - navigation.top
         - navigation.footer
         - navigation.sections
         - navigation.indexes
-        # - navigation.expand
-        # - toc.follow
-        # - toc.integrate
+
 
 plugins:
   - search:
@@ -67,25 +68,12 @@ plugins:
           zoomable: true
   - table-reader:
           allow_missing_files: False
-  - social
-#   - blogging:
-#         dirs:              # The directories included in the category
-#             - reviews
-#             - draft
-#         size: 5            # Number of articles in one page, default: 10
-#         sort: 
-#             from: new        # Sort from new to old, default
-#             # or old         # Sort from old to new
-#             by: creation     # Sort by the first commit time, default
-#             # or revision    # Sort by the latest commit time
-#         paging: false      # Disable paging
-#         show_total: false  # Remove 'total pages' label
-#         full_content: true # Use the full content for blog description
-#         template: overrides/blog.j2go # Path to customized template
-#         theme:             # Use a predefined theme
-#             name: card
+  - social:
+        cards_layout_options:
+            font_family: Average Sans
+            # color: "#500BAD"
+            # background_color: "#bada55"
 
-# - extra-sass
 ##### TODO: add eng lang support
 # - material-relative-language-selector
 # - mdpo
@@ -97,23 +85,16 @@ plugins:
     #             name: Russian
     #             build: true
     #             site_name: "AFK. Все что пожелаешь узнать."
-    ##### sponsor feature, maybe someday
-    # - privacy:
-    #     enabled: !ENV [CI, false]
-    #     links_attr_map:
-    #       target: _blank
-    #       links_noopener: true
     
 hooks:
   - scripts/hooks.py
 
 extra:
-    # version: 1.1
     social:
         - icon: fontawesome/brands/discord
           link: https://discordid.netlify.app/?id=88370628763078656
           name: HOOTSMAN
-    homepage: https://hootsdev.github.io/afk.GG/ru
+    homepage: https://hootsdev.github.io/afk.GG
     consent:
         title: Cookie consent
         description: >-
@@ -124,18 +105,6 @@ extra:
         actions:
             - accept
             - manage
-            # version:
-            #   provider: mike
-            # slugify: !!python/object/apply:pymdownx.slugs.slugify
-            # permalink: "\ue112"
-            # title: On this page
-    # alternate:
-    #   - name: Russian
-    #     link: /ru/
-    #     lang: ru
-    #   - name: English
-    #     link: /en/
-    #     lang: en
 
 markdown_extensions:
   - abbr
@@ -174,32 +143,36 @@ markdown_extensions:
         custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.critic
-  # - pymdownx.snippets
 
 nav:
   - Главная: index.md
-  # - nm: nmem.md
   - База знаний:
     - ru/kb/index.md
     - Полезные ресурсы: ru/kb/links.md
     - Инфографика: ru/kb/infographics.md
     - TRESCAMBLE. Охота за костылями: ru/kb/trescamble.md
     - Tools:
-        - Income: ru/tools/income.md
-        - Dia Values: ru/tools/diaval.md
-        - Tree Estimator: ru/tools/calc.md
+      - Income: ru/tools/income.md
+      - Dia Values: ru/tools/diaval.md
+      - Tree Estimator: ru/tools/calc.md
   - Сообщество:
-        - ru/top/index.md
-        - СНГ Топ:
-            - AbEx/Бездна: ru/top/abex.md
-            - HF/Охотничьи угодья: ru/top/hf.md
-        - Discord:
-            - (RU) Made in USSR: ru/disru.md
-            - (EN) International: ru/disen.md
+    - ru/top/index.md
+    - ru/guilds/ru.md
+    - СНГ Топ:
+        - AbEx/Бездна: ru/top/abex.md
+        - HF/Охотничьи угодья: ru/top/hf.md
+    - Discord:
+        - (RU) Made in USSR: ru/disru.md
+        - (EN) International: ru/disen.md
   - HOOT-o-ROCK:
-        - ru/blog/index.md
-        - ru/blog/meme.md
+    - ru/blog/index.md
+    - ru/blog/meme.md
+    - Блог:
         - ru/blog/dogdream.md
         - ru/blog/makerugreatagain.md
         - ru/blog/nm-respect.md
         - ru/blog/th-retirement.md
+    - AFK Stats: ru/afk/stats.md
+  # - Drafts:
+  #   - hero.md
+  #   - russian business: ru/blog/aqua-draft.md

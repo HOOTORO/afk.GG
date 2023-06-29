@@ -1,5 +1,7 @@
 ---
 title: The Hospital. История.
+description: >-
+    Глазами рядового обывателя.
 author: "HOOTSMAN, Лев Николаевич"
 date: 2022-11-11
 template: templates/blog.j2

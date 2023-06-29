@@ -6,3 +6,13 @@
         width: fit-content;
     }
 }
+
+.quote > p.admonition-title {
+  display: flex ;
+  align-items: center ;
+  padding: 10px;
+}
+
+.quote > p.admonition-title > a {
+  margin-right: 15px;
+}

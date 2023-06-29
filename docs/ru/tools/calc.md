@@ -1,6 +1,8 @@
 ---
 template: templates/soon.j2
 title: AFK tools
+description: >
+    some description
 ---
 
 # Дерево

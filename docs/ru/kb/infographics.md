@@ -1,3 +1,8 @@
+---
+title: Infographics
+description: Visual representation various data/researches
+author: compiled by HOOTSMAN
+---
 # Picture representations
 
 ## Hero stats proportions in different game modes

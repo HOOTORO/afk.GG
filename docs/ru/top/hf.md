@@ -1,3 +1,8 @@
+---
+title: Hunting Fields
+description: >
+  СНГ Топ
+---
 # RU Rankings
 
 ## Season 4
