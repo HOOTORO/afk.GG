@@ -36,4 +36,5 @@ src/**/*.map
 # Temporary files
 docs/en
 ignored
-unused-assets
+uas
+test.sh

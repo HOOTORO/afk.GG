@@ -1,15 +1,16 @@
 requests>=2.31.0
 mkdocs-material>=9.1.15
-pygments>=2.15.1
-minify>=66.0.2
-minify-html>=0.11.1
 mkdocs-minify-plugin>=0.6.4
 mkdocs-glightbox>=0.3.4
 mkdocs-table-reader-plugin>=2.0
+pygments>=2.15.1
+minify>=66.0.2
+minify-html>=0.11.1
 pymd4c>=1.1.2
 Pillow>=9.5.9
 CairoSVG>=2.7.0
-
+openpyxl>=3.1.2
+pyarrow>=12.0.0
 # prerequisites https://pymd4c.dcpx.org/installation.html#prerequisites
 mkdocs-mdpo-plugin>=0.0.27
 
