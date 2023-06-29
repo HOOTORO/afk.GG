@@ -3,7 +3,7 @@ $glass: rgba(255, 255, 255, 0.2);
 $glass-icon: rgba(255, 255, 255, 0.3);
 $gradient: linear-gradient(180deg, #2e303d, #141419);
 //$gradient: linear-gradient(35deg, #2E303D, #2e33ad);
-// $def-gradient: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
+$def-rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 $def-gradient: linear-gradient(225deg, #ffffffb5, rgba(165, 144, 48, 0.621));
 $option: #320a28;
 $slider-radius: 20px;
@@ -55,6 +55,7 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --md-admonition-bg-color: #{$dadmo-bg};
     --md-default-bg: #{$d-def-bg};
     --theme-label: #{$dLabel};
+    --rnb: #{$def-rnb};
 }
 
 [data-md-color-scheme="default"] {
@@ -73,5 +74,7 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --tab-bg: #{$l-tabs-bg};
     --tab-fg: #{$l-tabs-fg};
     --md-default-bg: #{$l-def-bg};
+    --rnb: #{$def-rnb};
+
     // --md-primary-bg-color: #{$light-bg};
 }

@@ -20,7 +20,7 @@ a[class=glightbox] > img[class=mem] {
 
   a[class="glightbox"] {
         overflow-y: hidden;
-        max-height: 5rem;
+        // max-height: 5rem;
   }
   
   /* Create four equal columns that sits next to each other */
@@ -111,6 +111,15 @@ img {
     -webkit-text-stroke: rgb(0, 227, 255);
     font-style: oblique;
 }
+
+.flbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 
 h1 {
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;

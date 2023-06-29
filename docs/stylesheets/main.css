@@ -17,6 +17,7 @@
   --md-admonition-bg-color: linear-gradient(45deg, rgba(102, 102, 102, 0.605), rgba(190, 190, 190, 0.7450980392));
   --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
   --theme-label: Dark Side;
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 [data-md-color-scheme=default] {
@@ -35,6 +36,7 @@
   --tab-bg: rgba(34, 34, 0, 0.6666666667);
   --tab-fg: #373737;
   --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 #a-form {
@@ -139,6 +141,7 @@ span > img {
   --md-admonition-bg-color: linear-gradient(45deg, rgba(102, 102, 102, 0.605), rgba(190, 190, 190, 0.7450980392));
   --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
   --theme-label: Dark Side;
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 [data-md-color-scheme=default] {
@@ -157,6 +160,7 @@ span > img {
   --tab-bg: rgba(34, 34, 0, 0.6666666667);
   --tab-fg: #373737;
   --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 body {
@@ -165,6 +169,13 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+blockquote,
+blockquote:before {
+  border-left: 5px ridge !important;
+  border-color: var(--rnb);
+  border-radius: 10px;
 }
 
 h4 {
@@ -220,6 +231,7 @@ select::-ms-expand {
   --md-admonition-bg-color: linear-gradient(45deg, rgba(102, 102, 102, 0.605), rgba(190, 190, 190, 0.7450980392));
   --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
   --theme-label: Dark Side;
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 [data-md-color-scheme=default] {
@@ -238,6 +250,7 @@ select::-ms-expand {
   --tab-bg: rgba(34, 34, 0, 0.6666666667);
   --tab-fg: #373737;
   --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 output > div {
@@ -315,6 +328,7 @@ datalist {
   --md-admonition-bg-color: linear-gradient(45deg, rgba(102, 102, 102, 0.605), rgba(190, 190, 190, 0.7450980392));
   --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
   --theme-label: Dark Side;
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 [data-md-color-scheme=default] {
@@ -333,6 +347,7 @@ datalist {
   --tab-bg: rgba(34, 34, 0, 0.6666666667);
   --tab-fg: #373737;
   --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 figure > img {
@@ -355,7 +370,6 @@ a[class=glightbox] > img[class=mem] {
 
 a[class=glightbox] {
   overflow-y: hidden;
-  max-height: 5rem;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -446,6 +460,14 @@ img {
   font-style: oblique;
 }
 
+.flbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 h1 {
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
@@ -497,6 +519,15 @@ thead {
   text-decoration: overline double blueviolet 2px;
 }
 
+thead th,
+tfoot td {
+  padding: 6px;
+  /* background-color: #eba1aa; */
+  background-color: #bada55;
+  color: #400bad;
+  text-transform: uppercase;
+}
+
 .misty-group > input[type=radio][name=selector] {
   position: absolute;
   visibility: hidden;
@@ -544,6 +575,7 @@ thead {
   --md-admonition-bg-color: linear-gradient(45deg, rgba(102, 102, 102, 0.605), rgba(190, 190, 190, 0.7450980392));
   --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
   --theme-label: Dark Side;
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 [data-md-color-scheme=default] {
@@ -562,6 +594,7 @@ thead {
   --tab-bg: rgba(34, 34, 0, 0.6666666667);
   --tab-fg: #373737;
   --md-default-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), rgba(50, 50, 50, 0.0901960784));
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
 }
 
 @media screen and (min-width: 45em) {

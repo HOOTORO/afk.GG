@@ -42,3 +42,12 @@ th {
 thead {
     text-decoration: overline double blueviolet 2px;
 }
+
+thead th,
+tfoot td {
+    padding: 6px;
+    /* background-color: #eba1aa; */
+    background-color: #bada55;
+    color: #400bad;
+    text-transform: uppercase;
+}

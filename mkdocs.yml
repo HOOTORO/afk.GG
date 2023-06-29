@@ -116,7 +116,7 @@ markdown_extensions:
   - tables
   - toc:
         permalink: true
-        toc_depth: 2
+        toc_depth: 3
   - pymdownx.arithmatex:
         generic: true
   - pymdownx.betterem:
@@ -173,6 +173,6 @@ nav:
         - ru/blog/nm-respect.md
         - ru/blog/th-retirement.md
     - AFK Stats: ru/afk/stats.md
-  # - Drafts:
-  #   - hero.md
-  #   - russian business: ru/blog/aqua-draft.md
+#   - Drafts:
+#     - hero.md
+#     - russian business: ru/blog/aqua-draft.md
