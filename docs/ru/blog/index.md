@@ -1,7 +1,8 @@
 ---
 title: HOOT-o-ROCK
-description: >-
-    Персональный блог любителя зависать <del>в туалете</del> на хуторке с телефоном, поигрывая в АФК.
+description: >- 
+  Добро пожаловать на хуторок!  
+    Персональный блог завсегдатая <del>уборной с телефоном</del> AFK Arena.
 author: HOOTSMAN
 template: templates/blog.j2
 ---
