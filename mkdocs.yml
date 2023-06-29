@@ -2,7 +2,6 @@
 site_name: AFK. Все что желаешь знать.
 site_url: https://hootsdev.github.io/afk.GG/
 
-
 # repo_name: afk.GG
 # repo_url: https://github.com/Hootsdev/afk.GG
 # edit_uri: blob/main/docs/
@@ -12,20 +11,20 @@ copyright: >
     Copyright &copy; 2023, Лев Николаевич HOOTSMAN – <a href="#__consent">Change cookie settings</a><br>
 
 extra_css:
-  - stylesheets/main.css
+    - stylesheets/main.css
 extra_javascript:
-  - https://requirejs.org/docs/release/2.3.6/minified/require.js
-  - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-  - javascripts/avatars.js
+    - https://requirejs.org/docs/release/2.3.6/minified/require.js
+    - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    - javascripts/avatars.js
 theme:
     name: material
     language: ru
     favicon: favicon.jpg
     logo: assets/logo2.png
     custom_dir: overrides
-# Good ones fonts: 
-# text: Roboto Flex, Open Sans, Google Sans
-# code: Fira Mono
+    # Good ones fonts:
+    # text: Roboto Flex, Open Sans, Google Sans
+    # code: Fira Mono
     font:
         text: Open Sans
         code: Average Sans
@@ -52,42 +51,38 @@ theme:
         - navigation.sections
         - navigation.indexes
 
-
 plugins:
-  - search:
+    - search:
           lang: ru
           separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
+    - minify:
           minify_html: true
-  - glightbox:
+    - glightbox:
           draggable: false
           touchNavigation: true
           loop: true
           auto_caption: false
           # caption_position: bottom
           zoomable: true
-  - table-reader:
+    - table-reader:
           allow_missing_files: False
-  - social:
-        cards_layout_options:
-            font_family: Average Sans
-            # color: "#500BAD"
-            # background_color: "#bada55"
+    - social:
+          cards: !ENV [CI, true]
 
 ##### TODO: add eng lang support
 # - material-relative-language-selector
 # - mdpo
-    # - i18n:
-    #     docs_structure: suffix
-    #     default_language: ru
-    #     languages:
-    #         ru:
-    #             name: Russian
-    #             build: true
-    #             site_name: "AFK. Все что пожелаешь узнать."
-    
+# - i18n:
+#     docs_structure: suffix
+#     default_language: ru
+#     languages:
+#         ru:
+#             name: Russian
+#             build: true
+#             site_name: "AFK. Все что пожелаешь узнать."
+
 hooks:
-  - scripts/hooks.py
+    - scripts/hooks.py
 
 extra:
     social:
@@ -107,77 +102,77 @@ extra:
             - manage
 
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - tables
-  - toc:
-        permalink: true
-        toc_depth: 3
-  - pymdownx.arithmatex:
-        generic: true
-  - pymdownx.betterem:
-        smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight:
-        anchor_linenums: true
-        use_pygments: true
-        auto_title: true
-        linenums_style: pymdownx-inline
-        linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-        alternate_style: true
-  - pymdownx.tasklist:
-        custom_checkbox: true
-  - pymdownx.tilde
-  - pymdownx.critic
-  - pymdownx.snippets:
-      check_paths: true
-      url_download: false
-      auto_append:
-        - includes/abbr.md
+    - abbr
+    - admonition
+    - attr_list
+    - def_list
+    - footnotes
+    - md_in_html
+    - tables
+    - toc:
+          permalink: true
+          toc_depth: 3
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight:
+          anchor_linenums: true
+          use_pygments: true
+          auto_title: true
+          linenums_style: pymdownx-inline
+          linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.tilde
+    - pymdownx.critic
+    - pymdownx.snippets:
+          check_paths: true
+          url_download: false
+          auto_append:
+              - includes/abbr.md
 
 nav:
-  - Главная: index.md
-  - База знаний:
-    - ru/kb/index.md
-    - Полезные ресурсы: ru/kb/links.md
-    - Инфографика: ru/kb/infographics.md
-    - TRESCAMBLE. Охота за костылями: ru/kb/trescamble.md
-    - Tools:
-      - Income: ru/tools/income.md
-      - Dia Values: ru/tools/diaval.md
-      - Tree Estimator: ru/tools/calc.md
-  - Сообщество:
-    - ru/top/index.md
-    - ru/guilds/ru.md
-    - СНГ Топ:
-        - AbEx/Бездна: ru/top/abex.md
-        - HF/Охотничьи угодья: ru/top/hf.md
-    - Discord:
-        - (RU) Made in USSR: ru/disru.md
-        - (EN) International: ru/disen.md
-  - HOOT-o-ROCK:
-    - ru/blog/index.md
-    - ru/blog/meme.md
-    - Блог:
-        - ru/blog/dogdream.md
-        - ru/blog/makerugreatagain.md
-        - ru/blog/nm-respect.md
-        - ru/blog/th-retirement.md
-    - AFK Stats: ru/afk/stats.md
+    - Главная: index.md
+    - База знаний:
+          - ru/kb/index.md
+          - Полезные ресурсы: ru/kb/links.md
+          - Инфографика: ru/kb/infographics.md
+          - TRESCAMBLE. Охота за костылями: ru/kb/trescamble.md
+          - Tools:
+                - Income: ru/tools/income.md
+                - Dia Values: ru/tools/diaval.md
+                - Tree Estimator: ru/tools/calc.md
+    - Сообщество:
+          - ru/top/index.md
+          - ru/guilds/ru.md
+          - СНГ Топ:
+                - AbEx/Бездна: ru/top/abex.md
+                - HF/Охотничьи угодья: ru/top/hf.md
+          - Discord:
+                - (RU) Made in USSR: ru/disru.md
+                - (EN) International: ru/disen.md
+    - HOOT-o-ROCK:
+          - ru/blog/index.md
+          - ru/blog/meme.md
+          - Блог:
+                - ru/blog/aquav.md
+                - ru/blog/dogdream.md
+                - ru/blog/makerugreatagain.md
+                - ru/blog/nm-respect.md
+                - ru/blog/th-retirement.md
+          - AFK Stats: ru/afk/stats.md
 #   - Drafts:
 #     - hero.md
-#     - russian business: ru/blog/aqua-draft.md
