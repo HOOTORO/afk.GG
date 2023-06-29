@@ -143,6 +143,11 @@ markdown_extensions:
         custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.critic
+  - pymdownx.snippets:
+      check_paths: true
+      url_download: false
+      auto_append:
+        - includes/abbr.md
 
 nav:
   - Главная: index.md
