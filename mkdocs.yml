@@ -63,8 +63,8 @@ plugins:
           draggable: false
           touchNavigation: true
           loop: true
-          auto_caption: true
-          caption_position: bottom
+          auto_caption: false
+          # caption_position: bottom
           zoomable: true
   - table-reader:
           allow_missing_files: False
