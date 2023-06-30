@@ -5,6 +5,7 @@ description: >
 date: 2023-06-27
 author: HOOTSMAN, Лев Николаевич
 template: templates/blog.j2
+comments: true
 ---
 !!! warning "DISCLAIMER"
 
@@ -39,7 +40,7 @@ template: templates/blog.j2
 <figcaption>Обновление. Слова принадлежат на самом деле Сиру, контекст стал туманнее, но все еще ложится в общую канву.</figcaption>
 </figure>
 
-!!! quote "![hoot][13]{width=32} _**HOOTSMAN**_, Лев Николаевич"
+!!! quote "![hoot][13]{.ava}  _**HOOTSMAN**_, Лев Николаевич"
 
     Поразительная мелочность. Onic ниже на скринах грамотно говорил, стоило оно того?
 
@@ -47,7 +48,7 @@ template: templates/blog.j2
 
 ### Реакция пострадавшей стороны
 
-!!! quote "![deli][5]{width=32} **_Delian_**"
+!!! quote "![deli][5]{.ava}  **_Delian_**"
 
     >Не думаю, что моя информация принесёт хоть какой-то толк, так как аккаунт не был куплен, предыдущий владелец с которым мы были в
     хороших отношениях, попросту решил отдать его мне. :)  
@@ -67,7 +68,7 @@ template: templates/blog.j2
 
 ### Независимое мнение
 
-!!! quote "![hoot][13]{width=32} _**HOOTSMAN**_, Лев Николаевич"
+!!! quote "![hoot][13]{.ava}  _**HOOTSMAN**_, Лев Николаевич"
 
     ![Alt text](../../assets/images/aquavon/rm/image-15.png){ align=right width=210}
     В произошедшем инциденте,  
@@ -98,7 +99,7 @@ template: templates/blog.j2
 
 #### Завязка
 
-!!! quote "![assm][4]{width=32} **_Assmodeus_**"
+!!! quote "![assm][4]{.ava}  **_Assmodeus_**"
 
     Изначально играл на аккаунте _Эмбер_. Потом главный HR Аквы _Pohoyoo_ приводит _Elitsir_ в Акву, но тот вскоре уходит из игры, оставив аккаунт _Pohoyoo_. Мы с ним договариваемся о том, что я выкупаю аккаунт _Elitsir_'а за 20к рублей + отдаю дельфиний акк _Эмбер_ и он на нем будет играть.
 
@@ -145,7 +146,7 @@ template: templates/blog.j2
 
 #### Сходка, начало проблем
 
-!!! quote "![assm][4]{width=32} **_Assmodeus_**"
+!!! quote "![assm][4]{.ava}  **_Assmodeus_**"
 
     На сходке Аквилона выясняется, что _pohoyoo_ продал аккаунт _Ember_, Метке[^pr] и утверждает, что _Элитсир_ точно не вернется в игру.  
     ![Дружный коллектив][c1]{width=350 align=right style="padding:15px;border-radius:10px;"}
@@ -225,7 +226,7 @@ template: templates/blog.j2
 
 #### Поиск выхода
 
-!!! quote "![assm][4]{width=32} **_Assmodeus_**"
+!!! quote "![assm][4]{.ava}  **_Assmodeus_**"
 
     Написал Ингвар'у в телеграмме
     <figure markdown>
@@ -279,7 +280,7 @@ template: templates/blog.j2
 
 #### La Finale
 
-!!! quote "![assm][4]{width=32} **_Assmodeus_**"
+!!! quote "![assm][4]{.ava}  **_Assmodeus_**"
 
     На аккаунте начинается активность, заходит другой человек.  
     Сообщения о договоренностях выкупить аккаунт не поступало.  
@@ -301,7 +302,7 @@ template: templates/blog.j2
     Акк оказался таинственным образом в бане.  
     **Конец истории.**
 
-!!! quote "![assm][4]{width=32} **_Assmodeus_**"
+!!! quote "![assm][4]{.ava}  **_Assmodeus_**"
 
     В заключении: с моей стороны был косяк, что мне не следовало резко топить акк с ресурсами.  
     Надо было дать им понять, что доступ к аккаунту я имел, даже после изменения пароля в Лилит Пасс, и  дать им время обдумать, что делать дальше.  
@@ -313,13 +314,13 @@ template: templates/blog.j2
 
 ### Комментарий администрации Аквилона
 
-!!! quote "![moon][16]{width=32} _**MOONWAR**_"
+!!! quote "![moon][16]{.ava}  _**MOONWAR**_"
 
     ![moon](../../assets/images/aquavon/image-0.jpg)
 
 ### Мнение со стороны
 
-!!! quote "![hoot][13]{width=32} _**HOOTSMAN**_, Лев Николаевич"
+!!! quote "![hoot][13]{.ava} _**HOOTSMAN**_, Лев Николаевич"
 
     Ситуация конечно, мягко скажем дерьмовая.  
 
@@ -336,6 +337,62 @@ template: templates/blog.j2
 
     Пока имеется факт преступления УК РФ, погружаться в какие-то хитросплетения внутригильдейских условностей не имеет никакого смысла.  
     На этом у меня все.
+
+## 3. Sir Aquilon
+
+Ответ лидера Аквы и срыв покровов!
+
+!!! quote "![sir][17]{.ava} _**Sir Eblo 2000**_"
+
+    <figure markdown>
+    ![ho][a1]{width=600}
+    ![ho][a2]{width=600}
+    </figure>
+    ??? danger "Примеры ОСТОРОЖНО! МНОГО НЕНОРМАТИВНОЙ ЛЕКСИКИ"
+
+        <figure markdown>
+        ![ho][aa1]{width=600}
+        ![ho][aa2]{width=600}
+        ![ho][aa3]{width=600}
+        </figure>
+
+    <figure markdown>
+    ![ho][a3]{width=600}
+    ![ho][a4]{width=600}
+    ![ho][a5]{width=600}
+    ![ho][a6]{width=600}
+    </figure>
+    ??? warning "Продолжение содержит ненормативную лексику, которую не убрать/замазать без вреда содержанию. Ознакамливаться на свой страх и риск"
+        <figure markdown>
+        ![ho][a7]{width=600}
+        ![ho][a8]{width=600}
+        ![ho][a9]{width=600}
+        ![ho][a10]{width=600}
+        ![ho][a12]{width=600}
+        ![ho][a11]{width=600}
+        ![ho][a14]{width=600}
+        ![ho][a13]{width=600}
+        </figure>
+
+!!! quote "![hoot][13]{.ava} _**HOOTSMAN**_, Лев Николаевич"
+
+    <figure markdown>
+    ![Alt text](image.png)
+    <figcaption>Далее история обрывается.<figcaption>
+    </figure>
+
+    Ответ сира поднимает много не самых приятных тем.  
+    Но на мои комментарии выше никак не отвечает, так что воздержусь от комментариев относительно контента его ответа.  
+    Вместо этого поделюсь впечатлениями другого события, так вышло что в процессе общения с сиром был предоставлен шанс оказаться за стенами аквилона на экскурсии и это было внезапно и крайне интересно!  
+    Очень доставили местные мемоделы:  
+    <figure markdown>
+    ![Alt text](image-1.png){width=600}
+    <figcaption>Жаль что оттепель быстро закончилась.<figcaption>
+    </figure>
+    Рядовым аквилонцам спасибо за теплый прием, доставило на отлично :grin:  
+    А сиру могу только пособолезновать, сложно такое понимать/принимать, но далеко не все люди подлые и продажные какими их очень хочется видеть.  
+     Понятно что так проще!   
+    Но это грустно.
 
 [^leave]: Тут Assmodeus подразумевает [этот пост Сира][darmamu]
 [^t]: такие к [примеру][treat]{:target="_blank" rel="noopener noreferrer"}
@@ -354,6 +411,7 @@ template: templates/blog.j2
 [12]: https://www.consultant.ru/document/cons_doc_LAW_10699/c193654ae5c3bd5b02d92ade18796cd8864ec353/
 [13]: ../../assets/avatars/av_small.jpg
 [16]: ../../assets/avatars/moon.webp
+[17]: ../../assets/avatars/sir.webp
 [14]: https://www.consultant.ru/document/cons_doc_LAW_10699/8727611b42df79f2b3ef8d2f3b68fea711ed0c7a/
 [15]: https://www.consultant.ru/document/cons_doc_LAW_10699/3cf93ca64f2a009e75430fc6394b66a3642ba176/
 
@@ -361,3 +419,21 @@ template: templates/blog.j2
 [treat]: https://cdn.discordapp.com/attachments/1121769153611694110/1121896773779198003/5a95ff8d-a836-4111-adc0-aea465b66951.png
 [darmamu]: https://media.discordapp.net/attachments/1121769153611694110/1121902025735680070/b2fef5b0-1c81-408c-8eaf-13a16739b9c1.png
 [origin]: https://media.discordapp.net/attachments/976976670345035796/1124059283458367599/image.png
+
+[a1]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311255386173591/Screenshot_2023-06-30-14-04-16-097_com.discord-edit.jpg
+[a2]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311255704936519/Screenshot_2023-06-30-14-03-00-045_com.discord-edit.jpg
+[aa1]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311256006930474/Screenshot_2023-06-30-14-03-17-371_com.discord-edit.jpg
+[aa2]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311256896131204/Screenshot_2023-06-30-15-09-48-167_com.discord-edit.jpg
+[aa3]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311257193918494/Screenshot_2023-06-30-15-10-13-650_com.discord-edit.jpg
+[a3]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311256384413818/Screenshot_2023-06-30-14-03-31-537_com.discord-edit.jpg
+[a4]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311257445572638/Screenshot_2023-06-30-15-10-32-872_com.discord-edit.jpg
+[a5]: https://cdn.discordapp.com/attachments/1124196118910206013/1124390789926092950/image.png
+[a6]: https://cdn.discordapp.com/attachments/976976670345035796/1124392796606976051/image.png
+[a7]: https://media.discordapp.net/attachments/1124196118910206013/1124429555201998999/Screenshot_2023-06-30-22-57-32-849_com.discord-edit.jpg
+[a8]: https://media.discordapp.net/attachments/1124196118910206013/1124429555504009296/Screenshot_2023-06-30-22-58-02-608_com.discord-edit.jpg
+[a9]: https://media.discordapp.net/attachments/1124196118910206013/1124429555764039833/Screenshot_2023-06-30-22-58-19-332_com.discord-edit.jpg
+[a10]: https://media.discordapp.net/attachments/1124196118910206013/1124429556040859719/Screenshot_2023-06-30-22-58-38-312_com.discord-edit.jpg
+[a11]: https://cdn.discordapp.com/attachments/1124196118910206013/1124429556846170213/Screenshot_2023-06-30-22-59-19-052_com.discord-edit.jpg
+[a12]: https://media.discordapp.net/attachments/1124196118910206013/1124429556531613796/Screenshot_2023-06-30-22-59-01-384_com.discord-edit.jpg
+[a13]: https://cdn.discordapp.com/attachments/1124196118910206013/1124429557508866098/Screenshot_2023-06-30-23-00-01-400_com.discord-edit.jpg
+[a14]: https://cdn.discordapp.com/attachments/1124196118910206013/1124429557173342380/Screenshot_2023-06-30-22-59-40-287_com.discord-edit.jpg

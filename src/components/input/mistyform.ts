@@ -1,5 +1,3 @@
-// import { Gsheet, fetchTableData } from "components/gsheets";
-
 function mistyData() {
     fetchTableData("MV").then((v) => mistyResources(v));
     // .then((o) => mistyResources()
