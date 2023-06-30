@@ -31,8 +31,19 @@ template: templates/blog.j2
 
 ![Владелец аккаунта, он же privetpoka](../../assets/images/aquavon/rm/image-14.jpg)
 
-<figcaption>Новый владелец аккаунта, он же Морок</figcaption>
+<figcaption><del>Новый владелец аккаунта, он же Морок</del></figcaption>
+
 </figure>
+
+![Обновление][upd1]
+<figcaption>Обновление. Слова принадлежат на самом деле Сиру, контекст стал туманнее, но все еще ложится в общую канву.</figcaption>
+</figure>
+
+!!! quote "![hoot][13]{width=32} _**HOOTSMAN**_, Лев Николаевич"
+
+    Поразительная мелочность. Onic ниже на скринах грамотно говорил, стоило оно того?
+
+[upd1]: https://cdn.discordapp.com/attachments/1124129894650101850/1124129937520083035/2023-06-30_05-10-22.png
 
 ### Реакция пострадавшей стороны
 

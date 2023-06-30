@@ -41,3 +41,9 @@ description: >
     1. Указываем ваши средние показатели по 3 основным доходным режимам.
     2. Слайдером регулируем количество недель.
     3. PROFIT?
+
+<script type="text/javascript" src="/afk.GG/javascripts/main.js">
+        document$.subscribe(() => {
+        console.log(user)
+    })
+</script>
