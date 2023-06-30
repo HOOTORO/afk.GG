@@ -2,8 +2,7 @@ const desc = getMeta("description");
 if (desc?.includes("@")) {
     const regex = /@(\w+)/g;
 
-    // Alternative syntax using RegExp constructor
-    // const regex = new RegExp('@(\\w+)', 'g')
+
     let m;
     
     while ((m = regex.exec(desc)) !== null) {

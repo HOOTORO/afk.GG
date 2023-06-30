@@ -2,8 +2,8 @@
 site_name: AFK. Все что желаешь знать.
 site_url: https://hootsdev.github.io/afk.GG/
 
-# repo_name: afk.GG
-# repo_url: https://github.com/Hootsdev/afk.GG
+repo_name: afk.GG
+repo_url: https://github.com/Hootsdev/afk.GG
 # edit_uri: blob/main/docs/
 
 copyright: >
@@ -20,6 +20,8 @@ theme:
     name: material
     language: ru
     favicon: favicon.jpg
+    icon:
+      repo: fontawesome/brands/git-alt
     logo: assets/logo2.png
     custom_dir: overrides
     # Good ones fonts:
@@ -156,17 +158,17 @@ nav:
                 - Dia Values: ru/tools/diaval.md
                 - Tree Estimator: ru/tools/calc.md
     - Сообщество:
-          - ru/top/index.md
-          - ru/guilds/ru.md
+          - ru/guilds/index.md
+          - ru/guilds/meme.md
+          - ru/guilds/knownguilds.md
           - СНГ Топ:
-                - AbEx/Бездна: ru/top/abex.md
-                - HF/Охотничьи угодья: ru/top/hf.md
+                - AbEx/Бездна: ru/guilds/abex.md
+                - HF/Охотничьи угодья: ru/guilds/hf.md
           - Discord:
-                - (RU) Made in USSR: ru/disru.md
-                - (EN) International: ru/disen.md
+                - (RU) Made in USSR: ru/guilds/disru.md
+                - (EN) International: ru/guilds/disen.md
     - HOOT-o-ROCK:
           - ru/blog/index.md
-          - ru/blog/meme.md
           - Блог:
                 - ru/blog/aquav.md
                 - ru/blog/dogdream.md
