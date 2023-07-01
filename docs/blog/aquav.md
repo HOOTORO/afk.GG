@@ -26,11 +26,11 @@ comments: true
 
 |                    Хроника событий                     |                        _Привет_                        |
 |:------------------------------------------------------:|:------------------------------------------------------:|
-| ![privet](../../assets/images/aquavon/rm/image-10.jpg) | ![privet](../../assets/images/aquavon/rm/image-11.jpg) |
-|  ![poka](../../assets/images/aquavon/rm/image-12.jpg)  |  ![poka](../../assets/images/aquavon/rm/image-13.jpg)  |
+| ![privet](/afk.GG/assets/images/aquavon/rm/image-10.jpg) | ![privet](/afk.GG/assets/images/aquavon/rm/image-11.jpg) |
+|  ![poka](/afk.GG/assets/images/aquavon/rm/image-12.jpg)  |  ![poka](/afk.GG/assets/images/aquavon/rm/image-13.jpg)  |
 |                                                        |                       **_Пока_**                       |
 
-![Владелец аккаунта, он же privetpoka](../../assets/images/aquavon/rm/image-14.jpg)
+![Владелец аккаунта, он же privetpoka](/afk.GG/assets/images/aquavon/rm/image-14.jpg)
 
 <figcaption><del>Новый владелец аккаунта, он же Морок</del></figcaption>
 
@@ -70,7 +70,7 @@ comments: true
 
 !!! quote "![hoot][13]{.ava}  _**HOOTSMAN**_, Лев Николаевич"
 
-    ![Alt text](../../assets/images/aquavon/rm/image-15.png){ align=right width=210}
+    ![Alt text](/afk.GG/assets/images/aquavon/rm/image-15.png){ align=right width=210}
     В произошедшем инциденте,  
     чисто технически, никто никому ничего не должен.  
     Ваши ожидания исключительно ваши проблемы, как говорится.  
@@ -128,21 +128,21 @@ comments: true
         ![15][l15]
         </span>
 
-[l1]: ../../assets/images/aquavon/image.jpg
-[l2]: ../../assets/images/aquavon/image-1.jpg
-[l3]: ../../assets/images/aquavon/image-2.jpg
-[l4]: ../../assets/images/aquavon/image-3.jpg
-[l5]: ../../assets/images/aquavon/image-4.jpg
-[l6]: ../../assets/images/aquavon/image-5.jpg
-[l7]: ../../assets/images/aquavon/image-6.jpg
-[l8]: ../../assets/images/aquavon/image-7.jpg
-[l9]: ../../assets/images/aquavon/image-8.jpg
-[l10]: ../../assets/images/aquavon/image-9.jpg
-[l11]: ../../assets/images/aquavon/image-10.jpg
-[l12]: ../../assets/images/aquavon/image-11.jpg
-[l13]: ../../assets/images/aquavon/image-12.jpg
-[l14]: ../../assets/images/aquavon/image-13.jpg
-[l15]: ../../assets/images/aquavon/image-14.jpg
+[l1]: /afk.GG/assets/images/aquavon/image.jpg
+[l2]: /afk.GG/assets/images/aquavon/image-1.jpg
+[l3]: /afk.GG/assets/images/aquavon/image-2.jpg
+[l4]: /afk.GG/assets/images/aquavon/image-3.jpg
+[l5]: /afk.GG/assets/images/aquavon/image-4.jpg
+[l6]: /afk.GG/assets/images/aquavon/image-5.jpg
+[l7]: /afk.GG/assets/images/aquavon/image-6.jpg
+[l8]: /afk.GG/assets/images/aquavon/image-7.jpg
+[l9]: /afk.GG/assets/images/aquavon/image-8.jpg
+[l10]: /afk.GG/assets/images/aquavon/image-9.jpg
+[l11]: /afk.GG/assets/images/aquavon/image-10.jpg
+[l12]: /afk.GG/assets/images/aquavon/image-11.jpg
+[l13]: /afk.GG/assets/images/aquavon/image-12.jpg
+[l14]: /afk.GG/assets/images/aquavon/image-13.jpg
+[l15]: /afk.GG/assets/images/aquavon/image-14.jpg
 
 #### Сходка, начало проблем
 
@@ -216,12 +216,12 @@ comments: true
     Пришло понимание что ситуация тупиковая и стоит постараться хотя бы отбить собственные вложения.  
     Сразу же после войса написал Ингвар'у о предложении выкупа.  
 
-[c1]: ../../assets/images/aquavon/image-20.jpg
-[c2]: ../../assets/images/aquavon/image-21.jpg
-[c3]: ../../assets/images/aquavon/image-22.jpg
-[s1]: ../../assets/images/aquavon/image-23.jpg
-[s2]: ../../assets/images/aquavon/image-24.jpg
-[s3]: ../../assets/images/aquavon/image-26.jpg
+[c1]: /afk.GG/assets/images/aquavon/image-20.jpg
+[c2]: /afk.GG/assets/images/aquavon/image-21.jpg
+[c3]: /afk.GG/assets/images/aquavon/image-22.jpg
+[s1]: /afk.GG/assets/images/aquavon/image-23.jpg
+[s2]: /afk.GG/assets/images/aquavon/image-24.jpg
+[s3]: /afk.GG/assets/images/aquavon/image-26.jpg
 [^pr]: Цена: ~50k
 
 #### Поиск выхода
@@ -230,7 +230,7 @@ comments: true
 
     Написал Ингвар'у в телеграмме
     <figure markdown>
-        ![Alt text](../../assets/images/aquavon/imge.jpg)
+        ![Alt text](/afk.GG/assets/images/aquavon/imge.jpg)
     <figcaption>Он так и не ответил.</figcaption>
     </figure>
     
@@ -238,9 +238,9 @@ comments: true
     Узнавал у другого соги Аквы, может ли он выкупить аккаунт.  
     <figure markdown>
 
-    ![Alt text](../../assets/images/aquavon/image-29.jpg){align=right}
-    ![Alt text](../../assets/images/aquavon/image-27.jpg){align=left width=50%}
-    ![Alt text](../../assets/images/aquavon/image-28.jpg){align=left}
+    ![Alt text](/afk.GG/assets/images/aquavon/image-29.jpg){align=right}
+    ![Alt text](/afk.GG/assets/images/aquavon/image-27.jpg){align=left width=50%}
+    ![Alt text](/afk.GG/assets/images/aquavon/image-28.jpg){align=left}
     </figure>
 
     Спиралл и Кисочка позвали в войс.  
@@ -255,22 +255,22 @@ comments: true
     Ливнул с войса т.к. предложений о выкупе акка не было.
     <figure markdown>
 
-    ![Alt text](../../assets/images/aquavon/image-30.jpg){width=700}
-    ![Alt text](../../assets/images/aquavon/image-31.jpg){width=700}
-    ![Alt text](../../assets/images/aquavon/image-32.jpg){width=700}
+    ![Alt text](/afk.GG/assets/images/aquavon/image-30.jpg){width=700}
+    ![Alt text](/afk.GG/assets/images/aquavon/image-31.jpg){width=700}
+    ![Alt text](/afk.GG/assets/images/aquavon/image-32.jpg){width=700}
     <figcaption>???</figcaption>
     </figure>
 
     <figure markdown>
 
-      ![Alt text](../../assets/images/aquavon/image-33.jpg){width=700}
-      ![Alt text](../../assets/images/aquavon/image-34.jpg){width=700}
+      ![Alt text](/afk.GG/assets/images/aquavon/image-33.jpg){width=700}
+      ![Alt text](/afk.GG/assets/images/aquavon/image-34.jpg){width=700}
       <figcaption>В это же время вроде появился вариант нормального урегулирования вопроса. Но...</figcaption>
     </figure>
 
     | После этого успеваю привязать свой гугл к аккаунту.   | pohoyoo все же уболтал _Elitsire_ поменять пароли.    |
     |-------------------------------------------------------|-------------------------------------------------------|
-    | ![Alt text](../../assets/images/aquavon/image-35.jpg) | ![Alt text](../../assets/images/aquavon/image-36.jpg) |
+    | ![Alt text](/afk.GG/assets/images/aquavon/image-35.jpg) | ![Alt text](/afk.GG/assets/images/aquavon/image-36.jpg) |
 
     Источник из совета:
     >«Да это пох Элитсир'у написал в итоге, тот поблагодарил что аккаунт поддерживается, а не умер и в конце добавил что обязательно вернется в игру»
@@ -289,13 +289,13 @@ comments: true
     Из разговора узнаю о нестыковках с договоренностями _pohoyoo_. Оказалось, что вдобавок Пох наговорил Элитсир'у, будто дал мне ВРЕМЕННО аккаунт.  
     <figure markdown>
 
-    ![Alt text](../../assets/images/aquavon/image-37.jpg)
+    ![Alt text](/afk.GG/assets/images/aquavon/image-37.jpg)
     <figcaption></figcaption>
     </figure>
 
     <figure markdown>
 
-    ![Alt text](../../assets/images/aquavon/image-38.jpg)
+    ![Alt text](/afk.GG/assets/images/aquavon/image-38.jpg)
     <figcaption>Пишу Поху</figcaption>
     </figure>
 
@@ -316,7 +316,7 @@ comments: true
 
 !!! quote "![moon][16]{.ava}  _**MOONWAR**_"
 
-    ![moon](../../assets/images/aquavon/image-0.jpg)
+    ![moon](/afk.GG/assets/images/aquavon/image-0.jpg)
 
 ### Мнение со стороны
 
@@ -400,21 +400,21 @@ comments: true
 [^leave]: Тут Assmodeus подразумевает [этот пост Сира][darmamu]
 [^t]: такие к [примеру][treat]{:target="_blank" rel="noopener noreferrer"}
 
-[1]: ../../assets/images/aquavon/image-15.jpg
-[2]: ../../assets/images/aquavon/image-16.jpg
-[3]: ../../assets/images/aquavon/image-17.jpg
-[4]: ../../assets/avatars/assmodeus.webp
-[5]: ../../assets/avatars/deliav.png
-[6]: ../../assets/images/aquavon/image-18.jpg
-[7]: ../../assets/images/aquavon/image-19.jpg
+[1]: /afk.GG/assets/images/aquavon/image-15.jpg
+[2]: /afk.GG/assets/images/aquavon/image-16.jpg
+[3]: /afk.GG/assets/images/aquavon/image-17.jpg
+[4]: /afk.GG/assets/avatars/assmodeus.webp
+[5]: /afk.GG/assets/avatars/deliav.png
+[6]: /afk.GG/assets/images/aquavon/image-18.jpg
+[7]: /afk.GG/assets/images/aquavon/image-19.jpg
 [8]: https://www.consultant.ru/document/cons_doc_LAW_10699/4641cfe1bdfab945ead3ae228d36c3e8141dd9f1/
 [9]: https://www.consultant.ru/document/cons_doc_LAW_10699/8012ecdf64b7c9cfd62e90d7f55f9b5b7b72b755/
 [10]: https://www.consultant.ru/document/cons_doc_LAW_10699/598fbbd993948ff493e853c0845161561b01f0a5/
 [11]: https://www.consultant.ru/document/cons_doc_LAW_10699/d260e55e06d1e6bc720d2e591a8383a43b1a5eed/
 [12]: https://www.consultant.ru/document/cons_doc_LAW_10699/c193654ae5c3bd5b02d92ade18796cd8864ec353/
-[13]: ../../assets/avatars/av_small.jpg
-[16]: ../../assets/avatars/moon.webp
-[17]: ../../assets/avatars/sir.webp
+[13]: /afk.GG/assets/avatars/av_small.jpg
+[16]: /afk.GG/assets/avatars/moon.webp
+[17]: /afk.GG/assets/avatars/sir.webp
 [14]: https://www.consultant.ru/document/cons_doc_LAW_10699/8727611b42df79f2b3ef8d2f3b68fea711ed0c7a/
 [15]: https://www.consultant.ru/document/cons_doc_LAW_10699/3cf93ca64f2a009e75430fc6394b66a3642ba176/
 

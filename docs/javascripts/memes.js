@@ -1,4 +1,4 @@
-fetch("../../../memes.json")
+fetch("/afk.GG/memes.json")
     .then((response) => {
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
@@ -33,7 +33,7 @@ function initialize(memes) {
             const image = nodeAttributes("img", [
                     {
                         key: "src",
-                        value: `../../../assets/images/meme/${
+                        value: `/afk.GG/assets/images/meme/${
                             smems[i * rowsPerCol + j]
                         }`,
                     },

@@ -1,9 +1,10 @@
 ---
-title: 🇷🇺Forged Мемасики
+title: 🇷🇺 Forged Мемасики
 description: Выкованные в СНГ с любовью!
 author: Community
 date: 2023
 template: templates/memes.j2
+glightbox.auto_caption: false
 ---
 
 !!! warning "Любишь кекать?"

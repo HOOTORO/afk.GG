@@ -7,4 +7,4 @@ description: >
 
 ## Season 4
 
-![s4 ru ranks](../../assets/images/top/hf-s4.jpg)
+![s4 ru ranks](/afk.GG/assets/images/top/hf-s4.jpg)

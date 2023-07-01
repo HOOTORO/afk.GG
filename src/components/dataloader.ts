@@ -34,7 +34,7 @@ function loadRewards(gm: GameMode, gt: Gsheet) {
                     return {
                         type: col1rank,
                         label: col1rank,
-                        img: `../../../assets/icons/s/${col1rank}.png`,
+                        img: `/afk.GG/assets/icons/s/${col1rank}.png`,
                         amount: qty,
                     } as BaseResQty;
                 });

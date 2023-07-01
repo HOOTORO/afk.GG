@@ -218,7 +218,7 @@ function loadRewards(gm, gt) {
             return {
                 type: col1rank,
                 label: col1rank,
-                img: `../../../assets/icons/s/${col1rank}.png`,
+                img: `/afk.GG/assets/icons/s/${col1rank}.png`,
                 amount: qty,
             };
         });
@@ -275,7 +275,7 @@ function generateAFKResObj(x) {
     const br = {
         type: gid,
         label: short,
-        img: `../../../assets/icons/s/${short}.png`,
+        img: `/afk.GG/assets/icons/s/${short}.png`,
         amount: 0,
     };
     return br;
@@ -342,7 +342,7 @@ function radioGroups(opts) {
             const input = `<input type="radio" id="misty-ch-${row.id}-${choice.type}" name="selector">
                             <label for="misty-ch-${row.id}-${choice.type}">
                                 ${choice.amount}
-                                <img src="../../assets/icons/s/${choice.type}.png" width="24"></label>
+                                <img src="/afk.GG/assets/icons/s/${choice.type}.png" width="24"></label>
                             </label>`;
             wrap.innerHTML += input;
         }
@@ -399,7 +399,7 @@ function drawResourceBox(parent) {
 }
 function getResImg(src) {
     const img = document.createElement("img");
-    img.src = `../../../assets/icons/s/${src}.png`;
+    img.src = `/afk.GG/assets/icons/s/${src}.png`;
     img.width = iconSize;
     return img;
 }

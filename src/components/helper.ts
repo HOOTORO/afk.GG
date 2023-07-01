@@ -13,7 +13,7 @@ function generateAFKResObj(x) {
     const br: BaseResQty = {
         type: gid,
         label: short,
-        img: `../../../assets/icons/s/${short}.png`,
+        img: `/afk.GG/assets/icons/s/${short}.png`,
         amount: 0,
     };
     return br;
@@ -95,7 +95,7 @@ function radioGroups(
             const input = `<input type="radio" id="misty-ch-${row.id}-${choice.type}" name="selector">
                             <label for="misty-ch-${row.id}-${choice.type}">
                                 ${choice.amount}
-                                <img src="../../assets/icons/s/${choice.type}.png" width="24"></label>
+                                <img src="/afk.GG/assets/icons/s/${choice.type}.png" width="24"></label>
                             </label>`;
             wrap.innerHTML += input;
         }

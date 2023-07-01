@@ -26,7 +26,7 @@ description: >
         По всем указанным вопросам _лучше_ [:fontawesome-brands-discord: afk.GG](https://discord.gg/xjJavhAvv6){ .md-button .md-button--primary target="_blank" rel="noopener noreferrer"}  
         Но можно в личку или другом удобном вам месте.  
 
-<!--         ![p](../../assets/gif/point.gif){ width=22 }   -->
+<!--         ![p](/afk.GG/assets/gif/point.gif){ width=22 }   -->
 ??? bug "(HALP!) Known Issues"
 
     1. При первом открытии страницы может ничего не загрузится. Просто обновите страничку и все появится.

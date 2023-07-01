@@ -64,7 +64,6 @@ plugins:
           touchNavigation: true
           loop: true
           auto_caption: false
-          # caption_position: bottom
           zoomable: true
     - table-reader:
           allow_missing_files: False
@@ -104,6 +103,7 @@ extra:
             - manage
 
 markdown_extensions:
+    - meta
     - abbr
     - admonition
     - attr_list
@@ -135,7 +135,7 @@ markdown_extensions:
     - pymdownx.smartsymbols
     - pymdownx.superfences
     - pymdownx.tabbed:
-          alternate_style: true
+          alternate_style: true    
     - pymdownx.tasklist:
           custom_checkbox: true
     - pymdownx.tilde
@@ -149,32 +149,32 @@ markdown_extensions:
 nav:
     - Главная: index.md
     - База знаний:
-          - ru/kb/index.md
-          - Полезные ресурсы: ru/kb/links.md
-          - Инфографика: ru/kb/infographics.md
-          - TRESCAMBLE. Охота за костылями: ru/kb/trescamble.md
+          - kb/index.md
+          - Полезные ресурсы: kb/links.md
+          - Инфографика: kb/infographics.md
+          - TRESCAMBLE. Охота за костылями: kb/trescamble.md
           - Tools:
-                - Income: ru/tools/income.md
-                - Dia Values: ru/tools/diaval.md
-                - Tree Estimator: ru/tools/calc.md
+                - Income: tools/income.md
+                - Dia Values: tools/diaval.md
+                - Tree Estimator: tools/calc.md
     - Сообщество:
-          - ru/guilds/index.md
-          - ru/guilds/meme.md
-          - ru/guilds/knownguilds.md
+          - guilds/index.md
+          - guilds/meme.md
+          - guilds/knownguilds.md
           - СНГ Топ:
-                - AbEx/Бездна: ru/guilds/abex.md
-                - HF/Охотничьи угодья: ru/guilds/hf.md
+                - AbEx/Бездна: guilds/abex.md
+                - HF/Охотничьи угодья: guilds/hf.md
           - Discord:
-                - (RU) Made in USSR: ru/guilds/disru.md
-                - (EN) International: ru/guilds/disen.md
+                - (RU) Made in USSR: guilds/disru.md
+                - (EN) International: guilds/disen.md
     - HOOT-o-ROCK:
-          - ru/blog/index.md
+          - blog/index.md
           - Блог:
-                - ru/blog/aquav.md
-                - ru/blog/dogdream.md
-                - ru/blog/makerugreatagain.md
-                - ru/blog/nm-respect.md
-                - ru/blog/th-retirement.md
-          - AFK Stats: ru/afk/stats.md
+                - blog/aquav.md
+                - blog/dogdream.md
+                - blog/makerugreatagain.md
+                - blog/nm-respect.md
+                - blog/th-retirement.md
+          - AFK Stats: afk/stats.md
 #   - Drafts:
 #     - hero.md

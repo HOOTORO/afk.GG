@@ -8,7 +8,7 @@ template: templates/blog.j2
 ---
 !!! example "Good night sweet prince"
 
-    ![sweet dreams](../../assets/images/th-retirement/1.jpg)
+    ![sweet dreams](/afk.GG/assets/images/th-retirement/1.jpg)
 
 ---
 
@@ -92,9 +92,9 @@ _(попадала под паттерн)_.
 
 Настоящим откровением стали введенные тогда недавно _порки_[^porq].
 
-![porque](../../assets/images/th-retirement/2.jpg)
+![porque](/afk.GG/assets/images/th-retirement/2.jpg)
 
-![hfPoNBJ](../../assets/images/th-retirement/3.jpg){ align=right }
+![hfPoNBJ](/afk.GG/assets/images/th-retirement/3.jpg){ align=right }
 
 Была надежда что там можно, без лишних вопросов, отделить администрацию от кучи других непонятных цветастых ролей.
 
@@ -114,33 +114,33 @@ _(попадала под паттерн)_.
 
 <figure markdown>
 
-![EyI0NQ8](../../assets/images/th-retirement/4.jpg){ width=500 }
+![EyI0NQ8](/afk.GG/assets/images/th-retirement/4.jpg){ width=500 }
 
 <figcaption>так, так, так, что тут у нас</figcaption>
 </figure>
 
 <figure markdown>
 
-![YqdUhIK](../../assets/images/th-retirement/5.jpg){width=500}
-![MAeUkD5](../../assets/images/th-retirement/6.jpg){width=500}
+![YqdUhIK](/afk.GG/assets/images/th-retirement/5.jpg){width=500}
+![MAeUkD5](/afk.GG/assets/images/th-retirement/6.jpg){width=500}
 
    <figcaption>Оставался только один способ прояснить ситуацию </figcaption>
 </figure>
 
 <figure markdown>
 
-![invisible speak](../../assets/images/th-retirement/7.jpg){width=700}
-![invisible speak](../../assets/images/th-retirement/8.jpg){width=700}
-![invisible speak](../../assets/images/th-retirement/9.jpg){width=700}
-![invisible speak](../../assets/images/th-retirement/10.jpg){width=700}
+![invisible speak](/afk.GG/assets/images/th-retirement/7.jpg){width=700}
+![invisible speak](/afk.GG/assets/images/th-retirement/8.jpg){width=700}
+![invisible speak](/afk.GG/assets/images/th-retirement/9.jpg){width=700}
+![invisible speak](/afk.GG/assets/images/th-retirement/10.jpg){width=700}
 
    <figcaption>а ведь был нужен просто список из 5 ников…</figcaption>
 </figure>
 
 <figure markdown>
 
-![PcIKJqt](../../assets/images/th-retirement/11.jpg)
-![eteUqXy](../../assets/images/th-retirement/12.jpg)
+![PcIKJqt](/afk.GG/assets/images/th-retirement/11.jpg)
+![eteUqXy](/afk.GG/assets/images/th-retirement/12.jpg)
 
    <figcaption>
    Наконец-то успех!
@@ -149,7 +149,7 @@ _(попадала под паттерн)_.
 
 <figure markdown>
 
-![curious](../../assets/images/th-retirement/13.jpg)
+![curious](/afk.GG/assets/images/th-retirement/13.jpg)
 
    <figcaption>
 Кажется любознательным тут не особо рады…
@@ -160,7 +160,7 @@ _(попадала под паттерн)_.
 
 <figure markdown>
 
-![DlQNOId](../../assets/images/th-retirement/14.jpg)
+![DlQNOId](/afk.GG/assets/images/th-retirement/14.jpg)
 
    <figcaption>
 Всегда беспокоило почему госпиталь покидают люди, мы же топ ГИ.  
@@ -173,7 +173,7 @@ _(попадала под паттерн)_.
 
 <figure markdown>
 
-![LZ1n5Of](../../assets/images/th-retirement/15.jpg)
+![LZ1n5Of](/afk.GG/assets/images/th-retirement/15.jpg)
 
    <figcaption>
  Просто "счастливое" стечение обстоятельств.  
@@ -183,7 +183,7 @@ _(попадала под паттерн)_.
 
 <figure markdown>
 
-![vM5upwD](../../assets/images/th-retirement/16.jpg)
+![vM5upwD](/afk.GG/assets/images/th-retirement/16.jpg)
 
    <figcaption>
 Хелпи тут совершенно не причем…😄  
@@ -192,7 +192,7 @@ _(попадала под паттерн)_.
 
 <figure markdown>
 
-![WUKcoB8](../../assets/images/th-retirement/17.jpg)
+![WUKcoB8](/afk.GG/assets/images/th-retirement/17.jpg)
 
    <figcaption>
 Предупрежден, вооружен.
@@ -207,8 +207,8 @@ _(попадала под паттерн)_.
 
 <figure markdown>
 
-![P0HiCbY](../../assets/images/th-retirement/18.jpg)
-![tw146Td](../../assets/images/th-retirement/19.jpg)
+![P0HiCbY](/afk.GG/assets/images/th-retirement/18.jpg)
+![tw146Td](/afk.GG/assets/images/th-retirement/19.jpg)
 
    <figcaption>
       Первая попытка начать хоть какую-то работу в направлении поднятия боевого духа
@@ -216,31 +216,31 @@ _(попадала под паттерн)_.
 </figure>
 <figure markdown>
 
-![sss](../../assets/images/th-retirement/20.jpg)
-![9GVP8qG](../../assets/images/th-retirement/21.jpg)
-![CiuJkPi](../../assets/images/th-retirement/22.jpg)
-![dOa90Ni](../../assets/images/th-retirement/23.jpg)
+![sss](/afk.GG/assets/images/th-retirement/20.jpg)
+![9GVP8qG](/afk.GG/assets/images/th-retirement/21.jpg)
+![CiuJkPi](/afk.GG/assets/images/th-retirement/22.jpg)
+![dOa90Ni](/afk.GG/assets/images/th-retirement/23.jpg)
 
    <figcaption>
       Это было 2 бездны назад, сейчас выглядит особенно комично.  
    </figcaption>
 </figure>
 <figure markdown>
-   ![](../../assets/images/th-retirement/24.jpg)
+   ![](/afk.GG/assets/images/th-retirement/24.jpg)
    <figcaption>
       Критикуешь - предлагай, предлагаешь - критикуй.
       Хорошая тактика, особенно когда не в зуб ногой.
    </figcaption>
 </figure>
 <figure markdown>
-   ![1iTIPFq](../../assets/images/th-retirement/25.jpg)
+   ![1iTIPFq](/afk.GG/assets/images/th-retirement/25.jpg)
    <figcaption>
       Close enough!  
    </figcaption>
 </figure>
 <figure markdown>
-   ![HdGL1XB](../../assets/images/th-retirement/26.jpg){width=500}
-   ![C8lPQUj](../../assets/images/th-retirement/27.jpg){width=500}
+   ![HdGL1XB](/afk.GG/assets/images/th-retirement/26.jpg){width=500}
+   ![C8lPQUj](/afk.GG/assets/images/th-retirement/27.jpg){width=500}
    <figcaption>
       Самоидентификация НУМЛЯ!  
    </figcaption>
@@ -265,10 +265,10 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![6YhBv9p](../../assets/images/th-retirement/28.jpg)
-![PMC fan](../../assets/images/th-retirement/29.jpg)
-![67G9PDr](../../assets/images/th-retirement/30.jpg)
-![guidelines](../../assets/images/th-retirement/1.png)
+![6YhBv9p](/afk.GG/assets/images/th-retirement/28.jpg)
+![PMC fan](/afk.GG/assets/images/th-retirement/29.jpg)
+![67G9PDr](/afk.GG/assets/images/th-retirement/30.jpg)
+![guidelines](/afk.GG/assets/images/th-retirement/1.png)
 
    <figcaption>
       В итоге сделал черновик основных положений гильдии, взяв за основу текст, написанный для команды в охоте…  
@@ -279,7 +279,7 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![some](../../assets/images/th-retirement/31.jpg)
+![some](/afk.GG/assets/images/th-retirement/31.jpg)
 
    <figcaption>
       Meanwhile…  
@@ -289,7 +289,7 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![aMCEtkC](../../assets/images/th-retirement/32.jpg)
+![aMCEtkC](/afk.GG/assets/images/th-retirement/32.jpg)
 
    <figcaption>
       beginning of the end  
@@ -298,7 +298,7 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![mXF49tX](../../assets/images/th-retirement/33.jpg)
+![mXF49tX](/afk.GG/assets/images/th-retirement/33.jpg)
 
    <figcaption>
       Still loyal to Hospital  
@@ -309,8 +309,8 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![6HnmSDl](../../assets/images/th-retirement/34.jpg)
-![no response](../../assets/images/th-retirement/35.jpg)
+![6HnmSDl](/afk.GG/assets/images/th-retirement/34.jpg)
+![no response](/afk.GG/assets/images/th-retirement/35.jpg)
 
    <figcaption>
       Вот это действительно крутая штука была, жаль что тот кто занимался этим, сгорел к чертям.  
@@ -318,10 +318,10 @@ _Ставь лукаса если находишься в перманентно
 </figure>
 
 <figure markdown>
-<video width="700" controls><source src="../../../assets/vids/20220625ginfo.mp4" type="video/mp4"></video>
+<video width="700" controls><source src="..//afk.GG/assets/vids/20220625ginfo.mp4" type="video/mp4"></video>
 
-![1](../../assets/images/th-retirement/36.jpg)
-![ybRdVmS](../../assets/images/th-retirement/37.jpg)
+![1](/afk.GG/assets/images/th-retirement/36.jpg)
+![ybRdVmS](/afk.GG/assets/images/th-retirement/37.jpg)
 
    <figcaption>
       Сделал автоматизацию которая собирает результаты соги.  
@@ -335,9 +335,9 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![LFApj4f](../../assets/images/th-retirement/38.jpg)
-![kis](../../assets/images/th-retirement/39.jpg)
-![9P760fY](../../assets/images/th-retirement/40.jpg)
+![LFApj4f](/afk.GG/assets/images/th-retirement/38.jpg)
+![kis](/afk.GG/assets/images/th-retirement/39.jpg)
+![9P760fY](/afk.GG/assets/images/th-retirement/40.jpg)
 
    <figcaption>
       Реализовывать идеи на свой лад это одно, но когда реализация теряет изначальный смысл это бред.  
@@ -348,9 +348,9 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![J0oSYGp](../../assets/images/th-retirement/41.jpg)
-![dh5wgiR](../../assets/images/th-retirement/42.jpg)
-![P0j35aE](../../assets/images/th-retirement/43.jpg)
+![J0oSYGp](/afk.GG/assets/images/th-retirement/41.jpg)
+![dh5wgiR](/afk.GG/assets/images/th-retirement/42.jpg)
+![P0j35aE](/afk.GG/assets/images/th-retirement/43.jpg)
 
    <figcaption>
       Имеем что имеем, безликая роль hero
@@ -363,8 +363,8 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![aaaa](../../assets/images/th-retirement/44.jpg)
-![ZfMEDjb](../../assets/images/th-retirement/45.jpg)
+![aaaa](/afk.GG/assets/images/th-retirement/44.jpg)
+![ZfMEDjb](/afk.GG/assets/images/th-retirement/45.jpg)
 
    <figcaption>
       Ноябрь движется к концу, а описания все те же…
@@ -376,7 +376,7 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![UtMYFRn](../../assets/images/th-retirement/46.jpg)
+![UtMYFRn](/afk.GG/assets/images/th-retirement/46.jpg)
 
    <figcaption>
       Это мое последнее предложение по улучшению нашей ги.
@@ -387,7 +387,7 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![some](../../assets/images/th-retirement/47.jpg)
+![some](/afk.GG/assets/images/th-retirement/47.jpg)
 
    <figcaption>
       К тому моменту меня беспокоило только одно.
@@ -424,7 +424,7 @@ _Ставь лукаса если находишься в перманентно
 
 <figure markdown>
 
-![sss](../../assets/images/th-retirement/48.jpg)
+![sss](/afk.GG/assets/images/th-retirement/48.jpg)
 
    <figcaption>
       Я понимаю, роль снять за рулем легче, чем писать сообщения, пара кликов всего, особенно если не терпится.
@@ -433,7 +433,7 @@ _Ставь лукаса если находишься в перманентно
 
 ### Ребенок
 
-![bZK7Ghq](../../assets/images/th-retirement/49.jpg)
+![bZK7Ghq](/afk.GG/assets/images/th-retirement/49.jpg)
 
 Наверное самый яркий пример саботажа трафа это остров золота (событие с защитными камнями, цветами).  
 Резз написал здоровенный гайд по режиму,  
@@ -454,7 +454,7 @@ _Что советовал невидимый п\*\*\*\*к?_
 
 <figure markdown>
 
-![oleBbw4](../../assets/images/th-retirement/50.jpg){width=700}
+![oleBbw4](/afk.GG/assets/images/th-retirement/50.jpg){width=700}
 
    <figcaption>
       Выдержка из гайда R3ZZ'a
@@ -462,7 +462,7 @@ _Что советовал невидимый п\*\*\*\*к?_
 </figure>
 <figure markdown>
 
-| ![ru](../../assets/images/th-retirement/102.jpg){width=350} | ![mDFn2B8](../../assets/images/th-retirement/51.jpg){width=400} |
+| ![ru](/afk.GG/assets/images/th-retirement/102.jpg){width=350} | ![mDFn2B8](/afk.GG/assets/images/th-retirement/51.jpg){width=400} |
 | -------------------------------------------------------- | ------------------------------------------------------------ |
 | один из топ результатов тех островов                     | Рандом с реддита тогда же                                    |
 
@@ -477,7 +477,7 @@ _Что советовал невидимый п\*\*\*\*к?_
 Не знаю, сам ли он додумался, или кто помог, но это говно достаточно оперативно было удалено.
 
 <figure markdown>
-   ![IOG-advices](../../assets/images/th-retirement/52.jpg){ width=600 }
+   ![IOG-advices](/afk.GG/assets/images/th-retirement/52.jpg){ width=600 }
    <figcaption>
       Итоговый скриншот всех соги, в конце события по заветам капитана
    </figcaption>
@@ -494,11 +494,11 @@ _Что советовал невидимый п\*\*\*\*к?_
 
 <figure markdown>
 
-![7nLjtDW](../../assets/images/th-retirement/53.jpg)
-![wJJWjRE](../../assets/images/th-retirement/54.jpg)
-![ws](../../assets/images/th-retirement/55.jpg)
-![sss](../../assets/images/th-retirement/56.jpg)
-![dff](../../assets/images/th-retirement/57.jpg)
+![7nLjtDW](/afk.GG/assets/images/th-retirement/53.jpg)
+![wJJWjRE](/afk.GG/assets/images/th-retirement/54.jpg)
+![ws](/afk.GG/assets/images/th-retirement/55.jpg)
+![sss](/afk.GG/assets/images/th-retirement/56.jpg)
+![dff](/afk.GG/assets/images/th-retirement/57.jpg)
 
    <figcaption>
       Плата, которую я получил за свои труды.
@@ -518,7 +518,7 @@ _Что советовал невидимый п\*\*\*\*к?_
 
 <figure markdown>
 
-![to](../../assets/images/th-retirement/58.jpg)
+![to](/afk.GG/assets/images/th-retirement/58.jpg)
 
    <figcaption>
       про угрозы и передачу поста
@@ -534,13 +534,13 @@ _Пусть и было очевидно что слова его не стоя�
 
 <figure markdown>
 
-![qQxNRrV](../../assets/images/th-retirement/59.jpg)
-![Om9KF3H](../../assets/images/th-retirement/60.jpg)
-![J99dtL4](../../assets/images/th-retirement/61.jpg)
-![L44wgLB](../../assets/images/th-retirement/62.jpg)
-![LJv7bbI](../../assets/images/th-retirement/63.jpg)
-![Z0ubF2b](../../assets/images/th-retirement/64.jpg)
-![ae](../../assets/images/th-retirement/65.jpg)
+![qQxNRrV](/afk.GG/assets/images/th-retirement/59.jpg)
+![Om9KF3H](/afk.GG/assets/images/th-retirement/60.jpg)
+![J99dtL4](/afk.GG/assets/images/th-retirement/61.jpg)
+![L44wgLB](/afk.GG/assets/images/th-retirement/62.jpg)
+![LJv7bbI](/afk.GG/assets/images/th-retirement/63.jpg)
+![Z0ubF2b](/afk.GG/assets/images/th-retirement/64.jpg)
+![ae](/afk.GG/assets/images/th-retirement/65.jpg)
 
    <figcaption>
       Дальше начался какой-то сюр.
@@ -556,7 +556,7 @@ _особый сектантский прием?
 
 <figure markdown>
 
-![eOB50HZ](../../assets/images/th-retirement/66.jpg)
+![eOB50HZ](/afk.GG/assets/images/th-retirement/66.jpg)
 
    <figcaption>
       traf was like
@@ -582,7 +582,7 @@ _особый сектантский прием?
 
 такие неадекватные маняфантазии мало кто способен понять.
 
-![5DfUHjI](../../assets/images/th-retirement/67.jpg)
+![5DfUHjI](/afk.GG/assets/images/th-retirement/67.jpg)
 
 Проблемы с памятью на лицо.  
 Кто, в _здравом уме_, будет думать о мотивации законченного эго-маньяка с признаками биполярного расстройства?  
@@ -590,9 +590,9 @@ _(других объяснений этим выкидонам не нашел)
 
 <figure markdown>
 
-![idiot](../../assets/images/th-retirement/69.jpg){width=700}
-![idiot](../../assets/images/th-retirement/68.jpg){width=700}
-![idiot](../../assets/images/th-retirement/70.jpg){width=700}
+![idiot](/afk.GG/assets/images/th-retirement/69.jpg){width=700}
+![idiot](/afk.GG/assets/images/th-retirement/68.jpg){width=700}
+![idiot](/afk.GG/assets/images/th-retirement/70.jpg){width=700}
 
    <figcaption>
       Маразм крепчал.
@@ -606,13 +606,13 @@ _(других объяснений этим выкидонам не нашел)
 Хоть и грустно.
 
 <figure markdown>
-   ![](../../assets/images/th-retirement/71.jpg)  
+   ![](/afk.GG/assets/images/th-retirement/71.jpg)  
    <figcaption>
       11.11.22 отписался в порку.  
    </figcaption>
 </figure>
 <figure markdown>
-   ![Kq58r0o](../../assets/images/th-retirement/72.jpg)  
+   ![Kq58r0o](/afk.GG/assets/images/th-retirement/72.jpg)  
    <figcaption>
       Но кто-то не может угомониться…  
    </figcaption>
@@ -624,20 +624,20 @@ _(других объяснений этим выкидонам не нашел)
 Спустя _неделю тишины…_
 
 <figure markdown>
-   ![YlzSOe4](../../assets/images/th-retirement/73.jpg)  
+   ![YlzSOe4](/afk.GG/assets/images/th-retirement/73.jpg)  
    <figcaption>
       Надежды на спокойный уход не оправдались
    </figcaption>
 </figure>
 <figure markdown>
-![d1IMmKy](../../assets/images/th-retirement/74.jpg)
+![d1IMmKy](/afk.GG/assets/images/th-retirement/74.jpg)
    <figcaption>
       тихо шифером шурша…  
    </figcaption>
 </figure>
 Сейчас бы цитаты себя скидывать и от себя комментировать.
 <figure markdown>
-![mAjU1PH](../../assets/images/th-retirement/75.jpg)
+![mAjU1PH](/afk.GG/assets/images/th-retirement/75.jpg)
    <figcaption>
       Так и не понял. Но вышло самокритично😊
    </figcaption>
@@ -696,13 +696,13 @@ _Удачи._
 
 ## P.S. Who let the dog out?
 
-![ApANfv4](../../assets/images/th-retirement/76.jpeg)  
-![dog](../../assets/images/th-retirement/77.jpg)
+![ApANfv4](/afk.GG/assets/images/th-retirement/76.jpeg)  
+![dog](/afk.GG/assets/images/th-retirement/77.jpg)
 
 Ниже скрин личной переписки с хаски за **все время** пребывания в госпитале.  
 Я с ним не контактировал от слова совсем, и тут внезапно такой выкидон и столько ненависти.
 
-![husky](../../assets/images/th-retirement/78.jpg)
+![husky](/afk.GG/assets/images/th-retirement/78.jpg)
 
 Меня настолько удивила эта внезапность, не было ни единой предпосылки.  
 И слог и манера подачи настолько была похоже на траффа…  
@@ -717,7 +717,7 @@ _Удачи._
 ## Before Beginning { .upd }
 
 <figure markdown>
-   ![very beginning](../../assets/images/th-retirement/101.jpg){ width="400"}
+   ![very beginning](/afk.GG/assets/images/th-retirement/101.jpg){ width="400"}
    <figcaption>Начало конца</figcaption>
 </figure>
 
@@ -731,8 +731,8 @@ _Удачи._
 Госпиталь мог стать частью CASUALS.  
 Но получилось только прилюдно обгадиться и замести следы.
 
-![uni](../../assets/images/th-retirement/98.jpg)
-![unit](../../assets/images/th-retirement/99.jpg)
+![uni](/afk.GG/assets/images/th-retirement/98.jpg)
+![unit](/afk.GG/assets/images/th-retirement/99.jpg)
 
 Оказалось признаки помешательства и склонность выдавать желаемое за действительное имели место быть уже тогда.
 Других объяснений логике таких поступков в обозначенном контексте, при всем желании, не вижу.  
@@ -744,7 +744,7 @@ _Удачи._
 4. При всех прочих, большая часть игроков не проходила по требованиям в CASUALS. Но они идут навстречу и готовы взять всех мотивированных на результат парней. В конце концов, _вопреки распространяемым, частью админки Госпиталя, слухам_, их цель - объединить под одним крылом лучших игроков в AFK Arena, вне зависимости от кошелька.
 5. В случае благоприятного исхода, участие в руководящем совете CASUALS планировалось смотреть в зависимости от итогового количества перешедших людей[^ppl].
 6. В тоже время админка:
-    - ![idea](../../assets/images/th-retirement/100.jpg)
+    - ![idea](/afk.GG/assets/images/th-retirement/100.jpg)
     - Госпиталь делает приписку CASUALS.
     - Переводит в академку слабых и немощных
     - Добирает в освободившиеся слоты китов из CASUALS
@@ -753,7 +753,7 @@ _Удачи._
 [^ppl]: Заочно ожидалось 30-40 чел, но учитывая что в ги никто не знал об этих планах. И никаких гарантий и тем более договоренностей на этот счет не могло быть с обоих сторон.
 
 <figure markdown>
-   ![platinum mad](../../assets/gif/sane.gif){ width="500"}
+   ![platinum mad](/afk.GG/assets/gif/sane.gif){ width="500"}
    <figcaption>mfw</figcaption>
 </figure>
 
@@ -775,13 +775,13 @@ _Итоги закономерны:_
 
 <figure markdown>
 
-![afterS8](../../assets/images/th-retirement/79.jpg)
-![afters81](../../assets/images/th-retirement/80.jpg)
-![afters82](../../assets/images/th-retirement/81.jpg)
-![afters83](../../assets/images/th-retirement/82.jpg)
-![afters84](../../assets/images/th-retirement/83.jpg)
-![afters85](../../assets/images/th-retirement/84.jpg)
-![afters86](../../assets/images/th-retirement/85.jpg)
+![afterS8](/afk.GG/assets/images/th-retirement/79.jpg)
+![afters81](/afk.GG/assets/images/th-retirement/80.jpg)
+![afters82](/afk.GG/assets/images/th-retirement/81.jpg)
+![afters83](/afk.GG/assets/images/th-retirement/82.jpg)
+![afters84](/afk.GG/assets/images/th-retirement/83.jpg)
+![afters85](/afk.GG/assets/images/th-retirement/84.jpg)
+![afters86](/afk.GG/assets/images/th-retirement/85.jpg)
 
    <figcaption>
       Каждый старается найти причину и объяснение, как, находясь в зените китового жира, можно было так облажаться
@@ -792,7 +792,7 @@ _Итоги закономерны:_
 
 <figure markdown>
 
-![good advices](../../assets/images/th-retirement/86.jpg)
+![good advices](/afk.GG/assets/images/th-retirement/86.jpg)
 
    <figcaption>
    </figcaption>
@@ -800,7 +800,7 @@ _Итоги закономерны:_
 
 <figure markdown>
 
-![poop1](../../assets/images/th-retirement/88.jpg)
+![poop1](/afk.GG/assets/images/th-retirement/88.jpg)
 
    <figcaption>
       Когда очень хочется саботировать ги, но не дают
@@ -813,7 +813,7 @@ _Итоги закономерны:_
 
 <figure markdown>
 
-![who is lead](../../assets/images/th-retirement/89.jpg)
+![who is lead](/afk.GG/assets/images/th-retirement/89.jpg)
 
    <figcaption>
       "Рыба гниет с головы"
@@ -823,20 +823,20 @@ _Итоги закономерны:_
 ### Moments
 
 <figure markdown>
-   ![feels whale](../../assets/images/th-retirement/90.jpg)
+   ![feels whale](/afk.GG/assets/images/th-retirement/90.jpg)
    <figcaption>
       Киты регулярно сталкивались в гильдейском чате с таким. Почему же каждую. сезонная миграция, действительно
    </figcaption>
 </figure>
 
 <figure markdown>
-   ![idea](../../assets/images/th-retirement/91.jpg)
+   ![idea](/afk.GG/assets/images/th-retirement/91.jpg)
    <figcaption>
       Предложил сделать бота
    </figcaption>
 </figure>
 <figure markdown>
-   ![idea response](../../assets/images/th-retirement/92.jpg)
+   ![idea response](/afk.GG/assets/images/th-retirement/92.jpg)
    <figcaption>
       Ответ, ну вы поняли
    </figcaption>
@@ -846,12 +846,12 @@ _Итоги закономерны:_
 
 | GOLDENPORKA                                               | Не мания величия, наглядно                            |
 | --------------------------------------------------------- | ----------------------------------------------------- |
-| ![wtf these names](../../assets/images/th-retirement/93.jpg) | ![goldenporka](../../assets/images/th-retirement/94.jpg) |
+| ![wtf these names](/afk.GG/assets/images/th-retirement/93.jpg) | ![goldenporka](/afk.GG/assets/images/th-retirement/94.jpg) |
 
 </figure>
 
 <figure markdown>
-![miss](../../assets/images/th-retirement/95.jpg)
+![miss](/afk.GG/assets/images/th-retirement/95.jpg)
    <figcaption>
       Miss u too!
    </figcaption>
@@ -859,6 +859,6 @@ _Итоги закономерны:_
 
 ### Round
 
-| ![off1](../../assets/images/th-retirement/96.jpg) |
+| ![off1](/afk.GG/assets/images/th-retirement/96.jpg) |
 | :--------------------------------------------: |
-| ![off2](../../assets/images/th-retirement/97.jpg) |
+| ![off2](/afk.GG/assets/images/th-retirement/97.jpg) |

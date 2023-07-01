@@ -9,7 +9,7 @@ author: compiled by HOOTSMAN
 
 <figure markdown>
 
-![stats](../../assets/images/infographics/1.jpg)
+![stats](/afk.GG/assets/images/infographics/1.jpg)
 
 <figcaption>Lil' bit outdated, but still relevant!</figcaption>
 </figure>
@@ -27,7 +27,7 @@ author: compiled by HOOTSMAN
 
 <figure markdown>
 
-![gm](../../assets/images/infographics/2.jpg)
+![gm](/afk.GG/assets/images/infographics/2.jpg)
 
 <figcaption>
 mb outdated
@@ -40,7 +40,7 @@ better check [bob doc](/afk.GG/kb/links/#game-knowledge)
 
 <figure markdown>
 
-![shopval](../../assets/images/infographics/3.jpg)
+![shopval](/afk.GG/assets/images/infographics/3.jpg)
 
 <figcaption>Relevant</figcaption>
 </figure>
@@ -51,7 +51,7 @@ better check [bob doc](/afk.GG/kb/links/#game-knowledge)
 
 | outdated                          | info                               |
 | --------------------------------- | ---------------------------------- |
-| ![vipcost](../../assets/images/infographics/4.jpg){width=400} | ![costvip](../../assets/images/infographics/5.webp) {width=400} |
+| ![vipcost](/afk.GG/assets/images/infographics/4.jpg){width=400} | ![costvip](/afk.GG/assets/images/infographics/5.webp) {width=400} |
 
 <figcaption>Outdated</figcaption>
 </figure>
@@ -60,14 +60,14 @@ better check [bob doc](/afk.GG/kb/links/#game-knowledge)
 
 <figure markdown>
 
-| ![awk1](../../assets/images/infographics/6.webp) | ![awk2](../../assets/images/infographics/7.webp) |
+| ![awk1](/afk.GG/assets/images/infographics/6.webp) | ![awk2](/afk.GG/assets/images/infographics/7.webp) |
 | ------------------------- | ------------------------- |
-| ![awk3](../../assets/images/infographics/8.webp) | ![awk4](../../assets/images/infographics/9.webp) |
-| ![awk5](../../assets/images/infographics/10.webp) | ![awk6](../../assets/images/infographics/11.webp)  |
+| ![awk3](/afk.GG/assets/images/infographics/8.webp) | ![awk4](/afk.GG/assets/images/infographics/9.webp) |
+| ![awk5](/afk.GG/assets/images/infographics/10.webp) | ![awk6](/afk.GG/assets/images/infographics/11.webp)  |
 
 <figcaption>Outdated</figcaption>
 </figure>
 
 ## Furniture enchant + stats
 
-{{ read_excel('../../assets/furnstats.xlsx', engine='openpyxl', na_filter=False) }}
+{{ read_excel('../assets/furnstats.xlsx', engine='openpyxl', na_filter=False) }}
