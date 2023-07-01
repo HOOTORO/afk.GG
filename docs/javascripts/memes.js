@@ -1,3 +1,4 @@
+console.log("chlen pipencev")
 fetch("/afk.GG/memes.json")
     .then((response) => {
         if (!response.ok) {

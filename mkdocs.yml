@@ -16,6 +16,7 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   - https://requirejs.org/docs/release/2.3.6/minified/require.js
   - javascripts/avatars.js
+  # - javascripts/memes.js
 theme:
   name: material
   language: ru

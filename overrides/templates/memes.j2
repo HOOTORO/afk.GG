@@ -1,7 +1,6 @@
 {% extends "main.html" %} 
 
 {%block libs%}
- <script src="{{ 'javascripts/memes.js' | url }}"></script> 
 {%endblock%}
 
 {% block htmltitle %} 
@@ -51,5 +50,7 @@
 {% endblock %}
 
 {%block scripts%}
+
 {{super()}}
+ <script src="{{ 'javascripts/memes.js' | url }}"></script> 
 {%endblock%}
