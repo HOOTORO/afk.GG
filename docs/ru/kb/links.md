@@ -38,6 +38,13 @@ author: compiled by HOOTSMAN
 
     Гайдлист по версии реддита
 
+??? info "[AbEx Cross Server Ranks][1]"
+
+     Международный, китайский и южно-азиатский[^ns] а.к.а "тестовый"
+
+[1]: https://rank-afk-cn.lilith.com/index.html
+[^ns]: но это не точно :grin:
+
 ## ➤ Tools ◬
 
 ??? example "[Коды возмещения](https://cdkey.lilith.com/afk-global){:target="_blank" rel="noopener noreferrer"}"
