@@ -33,6 +33,7 @@ $l-foot-low: rgb(0, 160, 210);
 $l-tabs-bg: #222200aa;
 $l-tabs-fg: #{$l-text};
 $l-nav-link: #ffff;
+
 $ladmo-bg: linear-gradient(45deg, rgba(119, 101, 20, 0.491), #ffffffb5);
 $l-def-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), #32323217);
 
@@ -75,6 +76,4 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --tab-fg: #{$l-tabs-fg};
     --md-default-bg: #{$l-def-bg};
     --rnb: #{$def-rnb};
-
-    // --md-primary-bg-color: #{$light-bg};
 }

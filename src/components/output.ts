@@ -23,7 +23,6 @@ function makeOut() {
 
 function drawResourceBox(parent) {
     allRes.forEach((el) => {
-        LCD(`el => ${el}`);
         const resContainer = domElWithProperties("div", [
             { n: "class", v: "inc-res" },
         ]);

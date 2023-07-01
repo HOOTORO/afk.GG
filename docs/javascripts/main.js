@@ -51,7 +51,7 @@ const query = encodeURIComponent("Select *");
 const url = function (x) {
     return `${base}&sheet=${x}&tq=${query}`;
 };
-const sources = [
+const rSources = [
     {
         id: "cursed-realm",
         label: "Cursed Realm",
@@ -84,16 +84,14 @@ const sources = [
 const tLoadedEvent = new Event("tableready");
 $(document).on("change", "select", function (x) {
     const changedValue = $(x.target).find(":selected").val();
+    const reward = rewards.find((g) => g.mode === gMode(x.target.id) && g.rank === changedValue);
     L(`[Events]|> Changing ${x.target.id}, new value => ${changedValue}`);
     $("#" + x.target.id + " option[selected]").each(function () {
         this.removeAttribute("selected");
     });
     $(x.target).find(":selected").attr("selected", "");
     populateStorage(x.target.id, changedValue);
-    const rewrd = rewards.find((g) => g.mode === gMode(x.target.id) && g.rank === changedValue);
-    user.reward = rewrd;
-    LCD(`User =>`);
-    L(user);
+    user.reward = reward;
     user.calc();
     updateResourceBox(user.income);
 });
@@ -162,7 +160,7 @@ function drawInputs() {
     return __awaiter(this, void 0, void 0, function* () {
         let inputForm = domElWithProperties("form", [{ n: "id", v: "a-form" }]);
         modeRewards().forEach((x) => {
-            const mode = sources.find((s) => s.tableName === x.mode);
+            const mode = rSources.find((s) => s.tableName === x.mode);
             x.table
                 .then((t) => {
                 const container = domElWithProperties("div", [
@@ -187,15 +185,6 @@ function drawInputs() {
         setTimeout(() => app.appendChild(makeOut()), 2000);
     });
 }
-const LC = (x) => {
-    L(`⬇︎[COMPONENT]⬇︎\n ${x}`);
-};
-const LG = (x) => {
-    L(`⬇︎[GSHEET]⬇︎\n${x}`);
-};
-const LCD = (x) => {
-    LC(`<dataloader> -> ${x}`);
-};
 class BaseResource {
 }
 class BaseResQty extends BaseResource {
@@ -281,7 +270,7 @@ function generateAFKResObj(x) {
     return br;
 }
 const gMode = (x) => {
-    const source = sources.find((y) => y.id === x || y.label === x || y.tableName === x);
+    const source = rSources.find((y) => y.id === x || y.label === x || y.tableName === x);
     if (!source) {
         throw new Error("Unknown Source Mode");
     }
@@ -387,7 +376,6 @@ function makeOut() {
 }
 function drawResourceBox(parent) {
     allRes.forEach((el) => {
-        LCD(`el => ${el}`);
         const resContainer = domElWithProperties("div", [
             { n: "class", v: "inc-res" },
         ]);

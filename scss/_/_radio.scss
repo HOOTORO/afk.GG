@@ -2,7 +2,6 @@ $bg: #332f35;
 $fg: lighten($bg,20%);
 $borderWidth: 3px;
 
-
 .misty-group > input[type=radio][name="selector"] {
   position: absolute;
   visibility: hidden;
@@ -25,6 +24,7 @@ $borderWidth: 3px;
 .misty-group > label + input[type=radio][name="selector"]  + label {
   border-left: solid $borderWidth $fg;
 }
+
 .misty-group {
   border: solid $borderWidth $fg;
   display: inline-block;

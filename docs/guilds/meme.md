@@ -11,7 +11,7 @@ glightbox.auto_caption: false
 
         <figure markdown>
         ![](/afk.GG/assets/images/general/needmemes.jpg){width=310}
-        <figcaption>        Если чем поделиться?
+        <figcaption>        Если чем поделиться? <br>
         Не держи в себе, закинь картинку в discord.  </figcaption>
       [Закинуть мемас в :fontawesome-brands-discord:](https://discord.gg/xjJavhAvv6){ .md-button }
         </figure>

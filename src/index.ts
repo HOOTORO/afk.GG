@@ -72,7 +72,7 @@ async function drawInputs() {
     let inputForm = domElWithProperties("form", [{ n: "id", v: "a-form" }]);
 
     modeRewards().forEach((x) => {
-        const mode = sources.find((s) => s.tableName === x.mode);
+        const mode = rSources.find((s) => s.tableName === x.mode);
         x.table
             .then((t) => {
                 const container = domElWithProperties("div", [
@@ -92,7 +92,6 @@ async function drawInputs() {
                         rewards: r.rewards.filter((h) => h.amount > 0),
                     })
                 );
-                // setValFromLocalStore(x.mode);
             })
             .then(() => app.appendChild(inputForm))
             .catch((x) => L(`Promise rejected${x}`))

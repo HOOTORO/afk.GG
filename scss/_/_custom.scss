@@ -10,6 +10,30 @@ figure > img {
     width: 32px;
 }
 
+.red-font {
+    color: #eb01aa !important;
+}
+
+.green-f {
+    color: green !important;
+}
+
+.brown-f {
+    color: brown !important;
+}
+
+.cyan-f {
+    color: cyan !important;
+}
+
+em {
+    color: rgb(33, 111, 222);
+}
+
+img {
+    border-radius: 10px;  
+}
+
 a[class=glightbox] > img[class=mem] {
     overflow-y: hidden;
     max-height: 7rem;
@@ -24,7 +48,6 @@ a[class=glightbox] > img[class=mem] {
 
   a[class="glightbox"] {
         overflow-y: hidden;
-        // max-height: 5rem;
   }
   
   /* Create four equal columns that sits next to each other */
@@ -55,30 +78,6 @@ a[class=glightbox] > img[class=mem] {
       max-width: 100%;
     }
   }
-
-.red-font {
-    color: #eb01aa !important;
-}
-
-.green-f {
-    color: green !important;
-}
-
-.brown-f {
-    color: brown !important;
-}
-
-.cyan-f {
-    color: cyan !important;
-}
-
-em {
-    color: rgb(33, 111, 222);
-}
-
-img {
-    border-radius: 10px;  
-}
 
 [data-md-color-scheme=slate] .md-header__option:before {
     content: "Dark \aSide";

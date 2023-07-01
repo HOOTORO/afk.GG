@@ -65,7 +65,7 @@ const url = function (x) {
     return `${base}&sheet=${x}&tq=${query}`;
 };
 
-const sources = [
+const rSources = [
     {
         id: "cursed-realm",
         label: "Cursed Realm",

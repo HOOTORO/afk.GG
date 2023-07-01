@@ -20,7 +20,7 @@ function generateAFKResObj(x) {
 }
 
 const gMode = (x) => {
-    const source = sources.find(
+    const source = rSources.find(
         (y) => y.id === x || y.label === x || y.tableName === x
     );
     if (!source) {

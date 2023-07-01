@@ -11,11 +11,8 @@ output > div {
     text-align: center;
     font-size: 1em;
     color: var(--text);
-    //    color: #e1e3ef;
     font-weight: 400;
-    //    width: 43vw;
 }
-
 
 .range {
     width: -webkit-fill-available;
@@ -46,6 +43,9 @@ datalist {
     justify-content: space-between;
     writing-mode: horizontal-tb;
     width: -webkit-fill-available;
+    background: linear-gradient(to right, #1488ad, #3ade10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 option {
@@ -55,10 +55,4 @@ option {
 input[type="range"] {
     width: -webkit-fill-available;
     margin: 0;
-}
-
-datalist {
-    background: linear-gradient(to right, #1488ad, #3ade10);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }

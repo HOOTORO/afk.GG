@@ -10,7 +10,7 @@ fetch("/afk.GG/memes.json")
 
 function initialize(memes) {
     const memesContainer = document.getElementById("memes");
-    // let eles = [];
+    
     const smems = memes.memes.sort((a, b) => {
         return sortNumStr(a, b);
     });
@@ -70,7 +70,7 @@ function initialize(memes) {
         memesContainer.appendChild(column);
     }
 
-    // runGLBox(eles);
+    
 }
 
 function nodeAttributes(nodeName, attr) {
