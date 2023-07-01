@@ -29,6 +29,7 @@ comments: true
 [:fontawesome-brands-discord: Дополнить раздел](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
 
 </figure>
+
 ## No Mercy
 
 !!! tip inline end "Последние достижения"
@@ -99,7 +100,7 @@ comments: true
 
 !!! tip inline end "Последние достижения"
 
-    | AbEx Season | Global Rank | RU |
+    | AbEx Season | Global | RU Rank |
     |-------------|-------------|----|
     | s9          | #27         | #2 |
     | s8          | #66         | #8 |
@@ -124,7 +125,7 @@ comments: true
 
 !!! tip inline end "Последние достижения"
 
-    | AbEx Season | Global Rank | RU |
+    | AbEx Season | Global | RU Rank |
     |-------------|-------------|----|
     | s9          | #30         | #3 |
     | s8          | #31         | #2 |
@@ -149,7 +150,7 @@ comments: true
 
 !!! tip inline end "Последние достижения"
 
-    | AbEx Season | Global Rank | RU |
+    | AbEx Season | Global | RU Rank |
     |-------------|-------------|----|
     | s9          | #34         | #4 |
     | s8          | #35         | #3 |
@@ -185,7 +186,7 @@ comments: true
 
 !!! tip inline end "Последние достижения"
 
-    | AbEx Season | Global Rank | RU |
+    | AbEx Season | Global | RU Rank |
     |-------------|-------------|----|
     | s9          | #41         | #5 |
     | s8          | #50         | #6 |
@@ -210,7 +211,7 @@ comments: true
 
 !!! tip inline end "Последние достижения"
 
-    | AbEx Season | Global Rank | RU |
+    | AbEx Season | Global | RU Rank |
     |-------------|-------------|----|
     | s9          | #47         | #6 |
     | s8          | #49         | #5 |
@@ -235,7 +236,7 @@ comments: true
 
 !!! tip inline end "Последние достижения"
 
-    | AbEx Season | Global Rank | RU |
+    | AbEx Season | Global | RU Rank |
     |-------------|-------------|----|
     | s9          | #65         | #7 |
     | s8          | #61         | #7 |
@@ -260,7 +261,7 @@ comments: true
 
 !!! tip inline end "Последние достижения"
 
-    | AbEx Season | Global Rank | RU |
+    | AbEx Season | Global | RU Rank |
     |-------------|-------------|----|
     | s9          | #66         | #8 |
     | s8          | #           | #  |
@@ -433,7 +434,7 @@ comments: true
 
 !!! tip inline end "Последние достижения"
 
-    | AbEx Season | Global Rank | RU |
+    | AbEx Season | Global | RU Rank |
     |-------------|-------------|----|
     | s9          | --          | -- |
     | s8          | #43         | #4 |
@@ -462,7 +463,7 @@ comments: true
 
 !!! tip inline end "Последние достижения"
 
-    | AbEx Season | Global Rank | RU |
+    | AbEx Season | Global | RU Rank |
     |-------------|-------------|----|
     | s9          | --          | -- |
     | s8          | --          | -- |
