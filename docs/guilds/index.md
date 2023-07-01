@@ -449,7 +449,13 @@ comments: true
 - GM: _Treffej_
 - Discord: [The Hospital][2]{:target="\_blank" rel="noopener noreferrer"}
   - Server Owner: David Blane
-  
+
+<br>
+<br>
+<br>
+
+***
+
 !!! quote "![a][av0]{.ava} Anon"
 
     Некогда сильнейшая гильдия ру сообщества, показывающая отличные результаты в бездне и прочих режимах игры
@@ -478,6 +484,12 @@ comments: true
 - GM: _HelPy/Lycoris_
 - Discord: [The Hospital][2]{:target="\_blank" rel="noopener noreferrer"}
   - Server Owner: David Blane
+
+<br>
+<br>
+<br>
+
+***
 
 !!! quote "![a][av0]{.ava} Anon"
 
