@@ -1,6 +1,5 @@
 #!/bin/zsh
 
-
 src=$(ls ~/HOOTSMAN/up/memes/)
 dest=docs/assets/images/meme
 

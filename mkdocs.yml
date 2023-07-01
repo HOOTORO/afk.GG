@@ -4,7 +4,7 @@ site_url: https://hootsdev.github.io/afk.GG/
 
 repo_name: afk.GG
 repo_url: https://github.com/Hootsdev/afk.GG
-# edit_uri: blob/main/docs/
+edit_uri: blob/main/docs/
 
 copyright: >
     afk.GG is an 'AFK Arena' fansite, and is not affiliated with Lilith Games in any way.<br>
@@ -24,9 +24,6 @@ theme:
       repo: fontawesome/brands/git-alt
     logo: assets/logo2.png
     custom_dir: overrides
-    # Good ones fonts:
-    # text: Roboto Flex, Open Sans, Google Sans
-    # code: Fira Mono
     font:
         text: Open Sans
         code: Average Sans
@@ -69,18 +66,6 @@ plugins:
           allow_missing_files: False
     - social:
           cards: !ENV [CI, true]
-
-##### TODO: add eng lang support
-# - material-relative-language-selector
-# - mdpo
-# - i18n:
-#     docs_structure: suffix
-#     default_language: ru
-#     languages:
-#         ru:
-#             name: Russian
-#             build: true
-#             site_name: "AFK. Все что пожелаешь узнать."
 
 hooks:
     - scripts/hooks.py
@@ -176,5 +161,3 @@ nav:
                 - blog/nm-respect.md
                 - blog/th-retirement.md
           - AFK Stats: afk/stats.md
-#   - Drafts:
-#     - hero.md
