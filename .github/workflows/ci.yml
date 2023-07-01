@@ -13,12 +13,12 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-            python-version: 3.x
+          python-version: 3.x
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.4.7
         with:
-            source: scss/main.scss 
-            destination:  docs/stylesheets/main.css 
+          source: scss/main.scss 
+          destination:  ./docs/stylesheets/main.css 
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v3
         with:
