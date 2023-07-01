@@ -96,6 +96,7 @@
     background-color: rgba(235, 5, 5);
     -webkit-mask-image: var(--md-admonition-icon--sh-luv);
     mask-image: var(--md-admonition-icon--sh-luv);
+    animation: heart 1000ms infinite;
 }
 
 .mdx-hero__content {
