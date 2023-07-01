@@ -114,7 +114,7 @@ comments: true
 - Направленность: Бездна/AbEx
 - GM: _Winter_
 - Discord:
-  - Server Owner:
+  - Server Owner: EddyFord
 
 ***
 <br>
