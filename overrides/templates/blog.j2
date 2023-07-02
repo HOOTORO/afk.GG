@@ -7,19 +7,50 @@
 {%block styles%}
   {{super()}}
   <style>
-    .authored > code {
-        display: block;
+    .authored {
+        display: flex;
         border-radius: 10px;
-        font-family: 'Marvel' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'FantasqueSansM Nerd Font', 'Marvel' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
         padding: 10px;
         }
+        time {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+          @media screen and (max-width: 700px) {
+            .authored {
+              flex-direction: column;
+            }
+          }
+          .av-wrapper {
+            display: inline-flex;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
   </style>
 {%endblock%}
 
 {% block tabs %}
   {{ super() }}
 {% endblock %}
+
+{% macro renderAva(user, class='ava') -%}
+{% if user|wordcount > 1 %}
+  {% set filename = user.split(",")[0] %}
+{% else %}
+  {% set filename = user %}
+{% endif %}
+<div class="av-wrapper">
+  <img alt="{{ user }}" class="{{ class }}" src="/afk.GG/assets/avatars/{{ filename }}.webp">
+  <strong>
+    <em>
+          [ {{ user }} ]
+    </em>
+  </strong>
+</div>
+        {{ caller() }}
+{% endmacro %}
 
 
 {% block content %}
@@ -33,15 +64,23 @@
   </blockquote>
   {{ super() }} 
   {% if page.meta and page.meta.author %}
-      <span class="authored">
-        <code>
-                ✎ Written by 🡺 {{ page.meta.author }}
-                {% if page.meta and page.meta.date %}
-                    <span class="timeago publdate" datetime="{{ page.meta.date }}">
-                        Дата публикации: <code>{{ page.meta.date }}</code>
-                    </span>
-                {% endif %}
-        </code>
-      </span>
+      <div class="authored">
+        🖋️ by 🡺 
+         {% call renderAva(page.meta.author) %}
+         {% endcall %}
+                {% if page.meta.date %}
+                  <span>🆕 ⏳:<time class="publdate" datetime="{{ page.meta.date }}">
+                          {{ page.meta.date }}
+                          </time>
+                          </span>
+                      {% if page.meta.updated %}
+                      <span>
+                          🆙 ⌛️:<time class="updated" datetime="{{ page.meta.updated }}">
+                              |>{{ (page.meta.updated - page.meta.date).days }} days ago
+                          </time>
+                          </span>
+                      {% endif %}
+                {% endif %}                
+      </div>
   {% endif %}
 {% endblock %}

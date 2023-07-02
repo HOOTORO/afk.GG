@@ -7,7 +7,9 @@ figure > img {
 }
 
 .ava {
-    width: 32px;
+    width: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .red-font {
@@ -79,9 +81,6 @@ a[class=glightbox] > img[class=mem] {
     }
   }
 
-
-
-
 .new::after {
     content: "new!";
     font-size: small;
@@ -94,13 +93,6 @@ a[class=glightbox] > img[class=mem] {
     font-size: small;
     color: red;
     vertical-align: super;
-}
-
-.publdate {
-    text-align: center;
-    display: block;
-    -webkit-text-stroke: rgb(0, 227, 255);
-    font-style: oblique;
 }
 
 .flbox {

@@ -3,8 +3,10 @@ title: HOOT-o-ROCK
 description: >- 
   Добро пожаловать в хуторок Льва Николаевича!  <br>
     Персональный блог завсегдатая <del>уборной с телефоном</del> AFK Arena.
-author: HOOTSMAN
+author: HOOTSMAN, Лев Николаевич
 template: templates/blog.j2
+updated: 2023-12-12
+date: 2023-11-11
 ---
 !!! warning DISCLAIMER
     Все персонажи и события вымышленны, любые места случайны и предсказуемы.  
