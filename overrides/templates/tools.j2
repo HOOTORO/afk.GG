@@ -3,8 +3,7 @@
 {% endblock %}
 {%block libs%}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
-<script type="text/javascript" src="{{ 'javascripts/main.js' | url }}"></script>
+<script type="module" src="{{ 'javascripts/ts/main.js' | url }}"></script>
 {%endblock%}
 {% block tabs %} {{ super() }}
 {% endblock %}
@@ -20,6 +19,6 @@
 <!-- Add scripts that need to run before here -->
 {{ super() }}
 
-
+<script>console.log("tu pidor")</script>
 <!-- Add scripts that need to run afterwards here -->
 {% endblock %}

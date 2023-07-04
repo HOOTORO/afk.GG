@@ -1,0 +1,127 @@
+
+@mixin box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+:root {
+  --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
+  --md-shadow-z7: 0 0.2rem 0.9rem hsla(0, 0%, 3%, 0.229), 0 0 0 0.1rem #00000016;
+}
+
+::selection {
+  background-color: hsl(310, 100%, 65%);
+  color: hsl(230, 30%, 15%);
+  -webkit-text-fill-color: hsl(230, 30%, 15%);
+}
+
+
+
+.md-typeset .admonition,
+.md-typeset details {
+  box-shadow: var(--md-shadow-z7);
+}
+
+.md-grid {
+  max-width: 1440px;
+}
+
+.md-tabs__link {
+  font-family: "Jura", sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  text-rendering: optimizeLegibility;
+  color: var(--nav-link);
+}
+
+.md-button {
+padding: 10px 17px 7px 17px !important;
+margin-left: 10px;
+font-size: 14px !important;
+}
+
+.md-tabs {
+  display: flex;
+  color: var(--md-default-bg);
+  background-color: var(--tab-bg);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.mdx-container {
+  margin: 100px;
+}
+
+.md-header__option:before {
+font-family: 'Marvel','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+white-space: pre;
+font-weight: 900;
+font-size: 16px;
+padding: 10px 0;
+}
+
+.glightbox,
+.glightbox img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.md-typeset .admonition.sh-luv,
+.md-typeset details.sh-luv {
+  border-color: rgb(235, 5, 5);
+}
+
+.md-typeset .sh-luv > .admonition-title,
+.md-typeset .sh-luv > summary {
+  background-color: rgba(235, 5, 5, 0.2);
+}
+
+.md-typeset .sh-luv > .admonition-title::before,
+.md-typeset .sh-luv > summary::before {
+  background-color: rgba(235, 5, 5);
+  -webkit-mask-image: var(--md-admonition-icon--sh-luv);
+  mask-image: var(--md-admonition-icon--sh-luv);
+  animation: heart 1000ms infinite;
+}
+
+.mdx-hero__content {
+  display: flex;
+  justify-content: space-between;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+.md-sidebar__inner {
+  background: var(--md-default-bg) !important;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.md-nav__list {
+  padding: 3px;
+}
+
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  top: 10px;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:focus,
+.md-tabs__link:hover {
+  color: #00eaff;
+}
+
+
+[data-md-color-scheme=slate] .md-header__option:before {
+content: "Dark \aSide";
+}
+[data-md-color-scheme=default] .md-header__option:before {
+content: "Jedi \aSide";
+}
+[data-md-color-scheme=dracula] .md-header__option:before {
+content: "Dracula \aSide";
+}

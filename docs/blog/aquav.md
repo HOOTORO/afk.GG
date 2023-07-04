@@ -7,16 +7,17 @@ author: HOOTSMAN, Лев Николаевич
 template: templates/blog.j2
 comments: true
 ---
-!!! warning "DISCLAIMER"
 
-    Что автор знал про Аквилон до начала работы над этим текстом?  
-    >Это вроде они мемные видео после бездны делают и главный у них, рукалицо или вроде того, любит на публику играть со смешными постами, верно?.  
-    
-    Так вот 2 истории, и если первая история лаконична и ясна (_а кто-то скажет что стара как мир, и будет прав в чем-то_).  
-    То во второй черт ногу сломал, но ваш слуга постарался разобраться насколько это возможно, в тонкостях этой петрушки.  
-    Текст историй приведен практически _as-is_ с минимально необходимой редактурой.  
-    После каждой истории оставил скромное мнение, не претендующее на объективность.  
-    Наводку оставлю [тут для истории][origin]{:target="_blank" rel="noopener noreferrer"} 
+/// warning | "DISCLAIMER"
+Что автор знал про Аквилон до начала работы над этим текстом?  
+>Это вроде они мемные видео после бездны делают и главный у них, рукалицо или вроде того, любит на публику играть со смешными постами, верно?.  
+
+Так вот 2 истории, и если первая история лаконична и ясна (_а кто-то скажет что стара как мир, и будет прав в чем-то_).  
+То во второй черт ногу сломал, но ваш слуга постарался разобраться насколько это возможно, в тонкостях этой петрушки.  
+Текст историй приведен практически _as-is_ с минимально необходимой редактурой.  
+После каждой истории оставил скромное мнение, не претендующее на объективность.  
+Наводку оставлю [тут для истории][origin]{:target="_blank" rel="noopener noreferrer"} 
+///
 
 ## 1. Подарок
 
@@ -24,11 +25,11 @@ comments: true
 
 <figure markdown>
 
-|                    Хроника событий                     |                        _Привет_                        |
-|:------------------------------------------------------:|:------------------------------------------------------:|
+|                     Хроника событий                      |                         _Привет_                         |
+|:--------------------------------------------------------:|:--------------------------------------------------------:|
 | ![privet](/afk.GG/assets/images/aquavon/rm/image-10.jpg) | ![privet](/afk.GG/assets/images/aquavon/rm/image-11.jpg) |
 |  ![poka](/afk.GG/assets/images/aquavon/rm/image-12.jpg)  |  ![poka](/afk.GG/assets/images/aquavon/rm/image-13.jpg)  |
-|                                                        |                       **_Пока_**                       |
+|                                                          |                        **_Пока_**                        |
 
 ![Владелец аккаунта, он же privetpoka](/afk.GG/assets/images/aquavon/rm/image-14.jpg)
 
@@ -268,8 +269,8 @@ comments: true
       <figcaption>В это же время вроде появился вариант нормального урегулирования вопроса. Но...</figcaption>
     </figure>
 
-    | После этого успеваю привязать свой гугл к аккаунту.   | pohoyoo все же уболтал _Elitsire_ поменять пароли.    |
-    |-------------------------------------------------------|-------------------------------------------------------|
+    | После этого успеваю привязать свой гугл к аккаунту.     | pohoyoo все же уболтал _Elitsire_ поменять пароли.      |
+    |---------------------------------------------------------|---------------------------------------------------------|
     | ![Alt text](/afk.GG/assets/images/aquavon/image-35.jpg) | ![Alt text](/afk.GG/assets/images/aquavon/image-36.jpg) |
 
     Источник из совета:
@@ -409,8 +410,6 @@ comments: true
 [1]: /afk.GG/assets/images/aquavon/image-15.jpg
 [2]: /afk.GG/assets/images/aquavon/image-16.jpg
 [3]: /afk.GG/assets/images/aquavon/image-17.jpg
-[4]: /afk.GG/assets/avatars/assmodeus.webp
-[5]: /afk.GG/assets/avatars/deliav.png
 [6]: /afk.GG/assets/images/aquavon/image-18.jpg
 [7]: /afk.GG/assets/images/aquavon/image-19.jpg
 [8]: https://www.consultant.ru/document/cons_doc_LAW_10699/4641cfe1bdfab945ead3ae228d36c3e8141dd9f1/
@@ -418,7 +417,9 @@ comments: true
 [10]: https://www.consultant.ru/document/cons_doc_LAW_10699/598fbbd993948ff493e853c0845161561b01f0a5/
 [11]: https://www.consultant.ru/document/cons_doc_LAW_10699/d260e55e06d1e6bc720d2e591a8383a43b1a5eed/
 [12]: https://www.consultant.ru/document/cons_doc_LAW_10699/c193654ae5c3bd5b02d92ade18796cd8864ec353/
-[13]: /afk.GG/assets/avatars/av_small.jpg
+[13]: /afk.GG/assets/avatars/hootsman.webp
+[4]: /afk.GG/assets/avatars/assmodeus.webp
+[5]: /afk.GG/assets/avatars/deliav.webp
 [16]: /afk.GG/assets/avatars/moon.webp
 [17]: /afk.GG/assets/avatars/sir.webp
 [14]: https://www.consultant.ru/document/cons_doc_LAW_10699/8727611b42df79f2b3ef8d2f3b68fea711ed0c7a/

@@ -1,0 +1,38 @@
+@import "../extensions/admonition", "../palette/dracula";
+
+
+
+@media screen and (min-width: 45em) {
+  .md-typeset .inline {
+    margin-bottom: 0.8rem;
+    margin-top: 0;
+    max-width: 20.7rem;
+    width: fit-content;
+  }
+}
+
+.quote > p.admonition-title {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.quote > p.admonition-title > a {
+  margin-right: 15px;
+}
+
+.info > p.admonition img {
+}
+
+li > a > img {
+  border-radius: 0;
+}
+
+// [data-md-color-scheme="slate"] .admonition-title{
+//   background-color: var(--md-admonition-bg-color--info) !important;
+//   border-color: var(--md-admonition-icon-color--info) !important;
+// }
+
+.hero-admo {
+  background-color: #111217;
+}

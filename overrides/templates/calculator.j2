@@ -1,0 +1,79 @@
+{% extends "main.html" %}
+
+{% macro input(name, id=name.lower().replace(' ', '-'), value='', legend='', type='text', min=0, max=100, size=20,
+opts=[], nonval=[], icon=[]) -%}
+{% if nonval %}
+{% set atrbs = nonval|join(" ")%}
+{% endif %}
+{% if type == "select" %}
+<select name="{{ name }}" id="{{ id }}">
+  {% for o in opts %}
+  <option value="{{ o }}">{{ o }}</option>
+  {% endfor %}
+</select>
+<label for="{{ id }}">{{ name }}</label>
+{% elif type == "checkbox" -%}
+<fieldset>
+  <legend>{{ legend }}</legend>
+  {% for ch in opts -%}
+  <div>
+    <input type="{{ type }}" name="{{ ch }}" id="{{ ch }}" {{ atrbs|e }}>
+    <label for="{{ ch }}">
+      {% if icon and loop.index0 < icon|length %} <img alt="{{ icon[loop.index0] }}"
+        src="/afk.GG/assets/icons/s/{{ icon[loop.index0] }}" width=40>
+        {% else %}
+        {{ ch }}
+        {% endif %}
+    </label>
+  </div>
+  {% endfor %}
+</fieldset>
+{% else %}
+<input type="{{ type }}" name="{{ name }}" value="{{ value|e }}" size="{{ size }}" id="{{ id }}" min="{{ min }}"
+  max="{{ max }}" {{ atrbs|e }}>
+{% if icon %}
+{% endif %}
+<label for="{{ id }}">
+  <img alt="{{ icon[0] }}" src="/afk.GG/assets/icons/s/{{ icon[0] }}" width="62">
+  {{ name }}
+</label>
+{% endif %}
+{%- endmacro %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+{% block libs %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="module" src="{{ 'javascripts/ts/dust.js' | url }}"></script>
+<script type="module" src="{{ 'javascripts/ts/types.js' | url }}"></script>
+{%endblock%}
+{% block tabs %}
+{{ super() }}
+{% endblock %}
+<!-- Content -->
+{% block content %}
+{{ super() }}
+<div id="dust-calc">
+  <form id="dust-input">
+    {{ input(name="",id="b", type="checkbox", legend="Set options", opts=["StoreDeal", "Misty Valley"],
+    icon=["dust-store.png"]) }}
+    <p>{{ input(name="", id="a", type="number", value="0",max=2, icon=["refresh.png"]) }}</p>
+    <p>{{ input(name="",id="c", type="number", value="0",max=4, icon=["mc.png"]) }}</p>
+    <p>{{ input(name="", id="d", type="number", value="0",max=12, icon=["fr.png"]) }}</p>
+    {# <p>{{ input(name="Base Income", id="z", type="number", value="1167", nonval=["readonly"]) }} per day</p> #}
+    <output id="total" for="a c d">
+    </output>
+  </form>
+</div>
+<!---->
+{{ content }}
+{% endblock %}
+{% block scripts %}
+<!-- Add scripts that need to run before here -->
+{{ super() }}
+<!-- Add scripts that need to run afterwards here -->
+<script>
+  console.log("tu pidor");
+</script>
+{% endblock %}

@@ -1,0 +1,94 @@
+@import "../palette/colors";
+
+#a-form {
+    display: flex;
+    border: 1px solid var(--input-bd-color);
+    border-radius: 10px;
+    flex-direction: row;
+    margin: 5px;
+    flex-wrap: wrap;
+    max-height: fit-content;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--containers-bg);
+}
+
+#result {
+    padding-bottom: 10px;
+    margin: 5px;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background-color: var(--containers-bg);
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+#result:before {
+    position: sticky;
+    content: "Total Income";
+    right: 90%;
+    margin: 0;
+    color: orange;
+    background: linear-gradient(190deg, #700bad, #200bad);
+    padding: 5px; //0 0 5px;
+    border: 1px solid #500bad;
+    border-bottom-right-radius: 10px;
+    font-weight: 900;
+}
+
+@media (max-width: 900px) {
+    #a-form {
+        display: inline-flex;
+        max-height: unset;
+        height: 400px;
+        width: 200px;
+    }
+
+    #app {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media (max-width: 900px) {
+  output.result {
+        display: inline-flex;
+        flex-direction: row;
+    }
+}
+
+#result > div {
+    padding: 2px 10px;
+}
+
+
+span {
+    color: var(--text);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.select-container, .inc-res {
+    display: inline-flex;
+    max-width: fit-content;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+span > img {
+    display: block;
+    height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.select-container > h4 {
+    margin: 0;
+}

@@ -18,5 +18,6 @@ description: >-
 
 ## Посчитать
 
-- [Income Value](../tools/income.md) Позволяет прикинуть приход ресурсов при указании средних значений в режимах.
-- [Diamond Values](../tools/diaval.md) Shop values tables
+- [Income Value](../game/income.md) Позволяет прикинуть приход ресурсов при указании средних значений в режимах.
+- [Dust Income](../game/lvldust.md) Считает инкам пыли в зависимости от указанных параметров
+- [Diamond Values](../game/diaval.md) Shop values tables

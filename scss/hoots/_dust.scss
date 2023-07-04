@@ -1,0 +1,80 @@
+@import "../palette/colors";
+@import "../palette/miss";
+
+@mixin box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@mixin border-rad {
+  border-radius: 10px;
+}
+
+#dust-calc,
+#dust-input * {
+  @include box-sizing();
+  @include border-rad();
+}
+
+#dust-calc {
+  padding: 15px;
+  background-color: rgba(13, 14, 15, 0.46);
+}
+
+#dust-input {
+  flex-direction: row;
+  display: flex;
+  margin-top: 5px;
+  padding: 5px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-width: 20%;
+
+  * {
+    margin: 5px;
+  }
+
+  img {
+    border-radius: 0 !important;
+  }
+
+  p {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  input[type="number"] {
+    // display: -ms-flexbox;
+    height: max-content;
+    padding: 10px;
+    margin: auto;
+    border: 2px inset cornflowerblue;
+    background-color: $l-tabs-bg;
+  }
+
+  input::-webkit-inner-spin-button {
+    appearance: auto;
+    display: block;
+    position: relative;
+    cursor: default;
+    height: 2.5em;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    -webkit-user-select: auto;
+  }
+
+  output {
+    display: flex;
+    border-radius: 15px;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 20px;
+    background: $din-color;
+  }
+}

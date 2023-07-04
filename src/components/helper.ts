@@ -1,107 +1,111 @@
-function generateAFKResObj(x) {
-    const gid = x.toLowerCase().replace(/ /g, "-"),
-        short = x
-            .split(" ")
-            .map((v, i) => {
-                if (i > 0) {
-                    return v.charAt(0).toLowerCase();
-                } else {
-                    return v.toLowerCase().substring(0, 4);
-                }
-            })
-            .join("");
-    const br: BaseResQty = {
-        type: gid,
-        label: short,
-        img: `/afk.GG/assets/icons/s/${short}.png`,
-        amount: 0,
-    };
-    return br;
+import { bres } from "../constants.js";
+import { BaseResQty, User, prop } from "../types.js";
+import { updateResourceBox } from "./output.js";
+
+function generateAFKResObj(x: string) {
+  const gid = x.toLowerCase().replace(/ /g, "-"),
+    short = x
+      .split(" ")
+      .map((v, i) => {
+        if (i > 0) {
+          return v.charAt(0).toLowerCase();
+        } else {
+          return v.toLowerCase().substring(0, 4);
+        }
+      })
+      .join("");
+  const br: BaseResQty = {
+    type: gid as bres,
+    label: short,
+    img: `/afk.GG/assets/icons/s/${short}.png`,
+    amount: 0,
+  };
+  return br;
 }
 
-const gMode = (x) => {
-    const source = rSources.find(
-        (y) => y.id === x || y.label === x || y.tableName === x
-    );
-    if (!source) {
-        throw new Error("Unknown Source Mode");
-    }
-    return Object.values(GameMode).find(
-        (y) => (y as string) === source.tableName
-    );
-};
-function setApp(key) {
-    const storedVal = localStorage.getItem(key);
-    $(`#${key} option[value="${storedVal}"]`).first().attr("selected", "");
+function setApp(key: string) {
+  const storedVal = localStorage.getItem(key);
+  $(`#${key} option[value="${storedVal}"]`).first().attr("selected", "");
 }
 
-function populateStorage(key, value) {
-    if (key && value) {
-        localStorage.setItem(key, value);
-        setApp(key);
-    }
-}
-
-function setAttributes(el, attrs) {
-    for (let key in attrs) {
-        el.setAttribute(key, attrs[key]);
-    }
+function populateStorage(key: string, value: string) {
+  if (key && value) {
+    localStorage.setItem(key, value);
+    setApp(key);
+  }
 }
 
 function chainDomElement(tags: string[]) {
-    let parentEl = document.createElement(tags[0]);
-    tags.forEach((tag) => parentEl.appendChild(document.createElement(tag)));
-    return parentEl;
+  let parentEl = document.createElement(tags[0]);
+  tags.forEach((tag) => parentEl.appendChild(document.createElement(tag)));
+  return parentEl;
 }
 
 function domElWithProperties(tag: string, props: prop[]) {
-    const doc = document.createElement(tag);
-    props.forEach((v) => doc.setAttribute(v.n, v.v));
-    return doc;
+  const doc = document.createElement(tag);
+  props.forEach((v) => doc.setAttribute(v.n, v.v));
+  return doc;
 }
 function weekLabels(n: number, stops: { n: number; desc: string }[]) {
-    let html: string = "";
-    for (let i = 1; i <= n; i++) {
-        if (stops.some((v) => v.n === i)) {
-            html += `<option value="${i.toString()}" label="${
-                stops.find((v) => v.n === i)?.desc
-            }"></option>`;
-        } else {
-            html += `<option value="${i.toString()}" label=""></option>`;
-        }
+  let html: string = "";
+  for (let i = 1; i <= n; i++) {
+    if (stops.some((v) => v.n === i)) {
+      html += `<option value="${i.toString()}" label="${
+        stops.find((v) => v.n === i)?.desc
+      }"></option>`;
+    } else {
+      html += `<option value="${i.toString()}" label=""></option>`;
     }
-    return html;
+  }
+  return html;
 }
 
-function rangeSlide(value) {
-    document.getElementById("rangeValue").innerHTML = value + " weeks";
-    $(this).attr("value", value.toString());
-    populateStorage("rangeValue", value);
-    updateResourceBox(user.income, value);
+function rangeSlide(value: string, user: User) {
+  document.getElementById("rangeValue").innerHTML = value + " weeks";
+  $(this).attr("value", value.toString());
+  populateStorage("rangeValue", value);
+  updateResourceBox(user.income, parseInt(value));
 }
 
 function radioGroups(
-    opts: { id: number; res: { type: string; amount: number }[] }[]
+  opts: { id: number; res: { type: string; amount: number }[] }[]
 ) {
-    const container = document.createElement("div");
-    container.id = "mv";
-    for (let row of opts) {
-        const form = document.createElement("form"),
-            wrap = document.createElement("div");
+  const container = document.createElement("div");
+  container.id = "mv";
+  for (let row of opts) {
+    const form = document.createElement("form"),
+      wrap = document.createElement("div");
 
-        form.id = `misty-row-${row.id}`;
-        wrap.className = "misty-group";
-        for (let choice of row.res) {
-            const input = `<input type="radio" id="misty-ch-${row.id}-${choice.type}" name="selector">
+    form.id = `misty-row-${row.id}`;
+    wrap.className = "misty-group";
+    for (let choice of row.res) {
+      const input = `<input type="radio" id="misty-ch-${row.id}-${choice.type}" name="selector">
                             <label for="misty-ch-${row.id}-${choice.type}">
                                 ${choice.amount}
                                 <img src="/afk.GG/assets/icons/s/${choice.type}.png" width="24"></label>
                             </label>`;
-            wrap.innerHTML += input;
-        }
-        container.appendChild(form.appendChild(wrap));
+      wrap.innerHTML += input;
     }
-    return container;
+    container.appendChild(form.appendChild(wrap));
+  }
+  return container;
+}
+function makeSelect(name: string, options: string[] | number[]) {
+  const list = document.createElement("select");
+  list.id = name;
+  const storedValue = localStorage.getItem(list.id);
+  for (let i = 0; i < options.length; i++) {
+    const element = options[i];
+    let opt = document.createElement("option");
+    opt.innerText = element.toString();
+    opt.setAttribute("value", element.toString());
+    if ((storedValue && storedValue === element) || (!storedValue && i === 0)) {
+      opt.setAttribute("selected", "");
+    }
+    list.appendChild(opt);
+  }
+
+  return list;
 }
 
 const radio = `
@@ -121,3 +125,15 @@ const radio = `
    </form>
 
 `;
+
+export {
+  chainDomElement,
+  domElWithProperties,
+  generateAFKResObj,
+  makeSelect,
+  populateStorage,
+  radioGroups,
+  rangeSlide,
+  setApp,
+  weekLabels,
+};

@@ -15,10 +15,10 @@
     }
 
     /* Hide main content for now */
-    .md-content {
+  /*  .md-content {
         display: none;
     }
-
+/*
     /* Hide table of contents */
     @media screen and (min-width: 60em) {
         .md-sidebar--secondary {
@@ -41,12 +41,30 @@
         background-size: cover;
         opacity: 1;
     }
+    .admonition {
+      position: absolute;
+      max-width: 50%;
+      right: 30px;
+      background-color: rgba(29, 29, 29, 0.604) !important;
+    }
+    p.admonition-title {
+      color: bisque;
+      background-color: rgba(0, 0, 0, 0.836) !important;
+    }
+    .md-source-file {
+      position: absolute;
+      bottom: 10px;
+    }
+    .md-content__inner:before {
+      display: none;
+}
 
 </style>
 {% endblock %}
 <!-- Content -->
 {% block content %}
-{{ content }}
+{{ super() }}
+{# {{ page.content }} #}
 {% endblock %}
 
 <!-- Application footer -->

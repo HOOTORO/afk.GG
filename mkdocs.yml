@@ -12,11 +12,12 @@ copyright: >
 
 extra_css:
   - stylesheets/main.css
+  - stylesheets/extra-a2b15a354f.css
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-  - https://requirejs.org/docs/release/2.3.6/minified/require.js
-  - javascripts/avatars.js
+  # - javascripts/avatars.js
   # - javascripts/memes.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
 theme:
   name: material
   language: ru
@@ -32,16 +33,27 @@ theme:
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Switch to dark mode
+        name: Switch to dracula mode
       primary: orange
-      accent: cyan
+      accent: lime
     - scheme: slate
       toggle:
-        icon: material/weather-sunny
+        icon: material/lambda
         name: Switch to light mode
       primary: deep purple
-      accent: amber
+      accent: lime
+    - scheme: dracula
+      toggle: 
+        icon: material/bat
+        name: Switch to dark mode
+      primary: deep purple
+      accent: deep purple
   features:
+    - search.share
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
     - header.autohide
     - navigation.instant
     - navigation.tracking
@@ -66,6 +78,9 @@ plugins:
       allow_missing_files: False
   - social:
       cards: !ENV [CI, true]
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+
 
 hooks:
   - scripts/hooks.py
@@ -88,41 +103,96 @@ extra:
       - manage
 
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - tables
+  - markdown.extensions.toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: ""
+  - markdown.extensions.admonition:
+  - markdown.extensions.smarty:
+      smart_quotes: false
+  - pymdownx.betterem:
+  # - pumdownx.extra
+  - markdown.extensions.attr_list:
+  - markdown.extensions.def_list:
+  - markdown.extensions.tables:
+  - markdown.extensions.abbr:
+  - markdown.extensions.footnotes:
+  - markdown.extensions.md_in_html:
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shorthand: true
+      social_url_shortener: true
+      user: hootsdev
+      repo: afk.GG
+      normalize_issue_symbols: true
+  - pymdownx.tilde:
+  - pymdownx.caret:
+  - pymdownx.smartsymbols:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.escapeall:
+      hardbreak: True
+      nbsp: True
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.progressbar:
   - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+        case: lower
       permalink: true
       toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
       smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight:
-      anchor_linenums: true
-      use_pygments: true
-      auto_title: true
-      linenums_style: pymdownx-inline
-      linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.mark:
+  - pymdownx.striphtml:
+  - pymdownx.keys:
+      separator: "\uff0b"
+  - pymdownx.details:
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+  - pymdownx.saneheaders:
+  - pymdownx.blocks.admonition:
+      types:
+      - new
+      - settings
+      - note
+      - abstract
+      - info
+      - tip
+      - success
+      - question
+      - warning
+      - failure
+      - danger
+      - bug
+      - example
+      - quote
+  - pymdownx.blocks.details:
+  - pymdownx.blocks.html:
+  - pymdownx.blocks.definition:
+  - pymdownx.blocks.tab:
+      alternate_style: True
+
+  # - pymdownx.highlight:
+  #     anchor_linenums: true
+  #     use_pygments: true
+  #     auto_title: true
+  #     linenums_style: pymdownx-inline
+  #     linenums: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.keys
+  # - pymdownx.mark
+  # - pymdownx.smartsymbols
+  - pymdownx.superfences
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  # - pymdownx.tilde
   - pymdownx.critic
   - meta
   - pymdownx.snippets:
@@ -130,6 +200,9 @@ markdown_extensions:
       url_download: false
       auto_append:
         - includes/abbr.md
+  # - tools.collapse_code:
+  #     expand_text: ''
+  #     collapse_text: ''
 
 nav:
   - Главная: index.md
@@ -140,9 +213,10 @@ nav:
           - Инфографика: kb/infographics.md
           - TRESCAMBLE!: kb/trescamble.md
       - Tools:
-          - Income: tools/income.md
-          - Dia Values: tools/diaval.md
-          - Tree Estimator: tools/calc.md
+          - Income: game/income.md
+          - Dust/Level: game/lvldust.md
+          - Dia Values: game/diaval.md
+          - Tree Estimator: game/calc.md
   - Сообщество:
       - guilds/index.md
       - guilds/meme.md
@@ -162,3 +236,4 @@ nav:
           - blog/th-retirement.md
       - AFK:
           - Результаты ПМ/КК: afk/stats.md
+          - Isle of Gold: afk/iog.md

@@ -379,4 +379,4 @@ comments: true
 [1]: https://discord.gg/nom3rcy
 [2]: https://discord.gg/CGuZXF9hys
 [av1]: ../assets/avatars/hootsman.webp
-[av0]: ../assets/avatars/anon.webp
+[av0]: ../assets/avatars/anon.png

@@ -1,6 +1,7 @@
 {
   "name": "afk.GG",
   "version": "0.5",
+  "type": "module",
   "keywords": [
     "AFK Arena",
     "Lilith games",

@@ -1,0 +1,37 @@
+.discord {
+  color: blueviolet;
+  animation: discord 2000ms infinite;
+}
+
+.twemoji {
+  margin-left: 10px;
+  margin-right: 10px;
+  scale: 1.5;
+}
+@keyframes discord {
+  0%,
+  20% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(0.75);
+  }
+}
+
+@keyframes heart {
+  0%,
+  40%,
+  80%,
+  100% {
+      transform: scale(1);
+  }
+  20%,
+  60% {
+      transform: scale(1.15);
+  }
+}
+
+.heart {
+  color: red;
+  animation: heart 1000ms infinite;
+}

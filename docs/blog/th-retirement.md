@@ -318,7 +318,7 @@ _Ставь лукаса если находишься в перманентно
 </figure>
 
 <figure markdown>
-<video width="700" controls><source src="..//afk.GG/assets/vids/20220625ginfo.mp4" type="video/mp4"></video>
+<video width="700" controls><source src="/afk.GG/assets/vids/20220625ginfo.mp4" type="video/mp4"></video>
 
 ![1](/afk.GG/assets/images/th-retirement/36.jpg)
 ![ybRdVmS](/afk.GG/assets/images/th-retirement/37.jpg)
