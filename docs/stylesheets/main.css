@@ -205,7 +205,7 @@
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
   --md-code-bg-color: #333333;
-  --md-code-fg-color: #141419;
+  --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
   --md-footer-fg-color: snow;
@@ -772,7 +772,7 @@
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
   --md-code-bg-color: #333333;
-  --md-code-fg-color: #141419;
+  --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
   --md-footer-fg-color: snow;
@@ -1390,7 +1390,7 @@ span > img {
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
   --md-code-bg-color: #333333;
-  --md-code-fg-color: #141419;
+  --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
   --md-footer-fg-color: snow;
@@ -1975,7 +1975,7 @@ select::-ms-expand {
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
   --md-code-bg-color: #333333;
-  --md-code-fg-color: #141419;
+  --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
   --md-footer-fg-color: snow;
@@ -2564,7 +2564,7 @@ input[type=range] {
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
   --md-code-bg-color: #333333;
-  --md-code-fg-color: #141419;
+  --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
   --md-footer-fg-color: snow;
@@ -3296,7 +3296,7 @@ tfoot td {
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
   --md-code-bg-color: #333333;
-  --md-code-fg-color: #141419;
+  --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
   --md-footer-fg-color: snow;
