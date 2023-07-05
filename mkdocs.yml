@@ -16,6 +16,7 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   # - javascripts/avatars.js
   # - javascripts/memes.js
+  # - javascripts/main.js
   # - https://polyfill.io/v3/polyfill.min.js?features=es6
 theme:
   name: material
@@ -57,7 +58,7 @@ theme:
     - content.code.copy
     - content.code.annotate
     - header.autohide
-    - navigation.instant
+    # - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.top
@@ -215,8 +216,8 @@ nav:
           - Инфографика: kb/infographics.md
           - TRESCAMBLE!: kb/trescamble.md
       - Tools:
-          - Income: game/income.md
-          - Dust/Level: game/lvldust.md
+          - game/income.md
+          - game/lvldust.md
           - Dia Values: game/diaval.md
           - Tree Estimator: game/calc.md
   - Сообщество:

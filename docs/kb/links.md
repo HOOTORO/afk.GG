@@ -80,11 +80,18 @@ author: compiled by HOOTSMAN
 
 ## ➤ Videos
 
-??? abstract "Hero Trials"
+/// details | bilibili
+    type: abstract
+[Bilibili search request for Hero Trials][1]{:target="_blank" rel="noopener noreferrer"}
+Поиск испытаний гильдии, в запросе на китайском 'afk arena guild trial'
 
-    [Bilibili search request](https://search.bilibili.com/all?keyword=%E5%89%91%E4%B8%8E%E8%BF%9C%E5%BE%81%20%E5%85%AC%E4%BC%9A%E8%AF%95%E7%82%BC&from_source=webtop_search&spm_id_from=333.788&search_source=5){:target="_blank" rel="noopener noreferrer"}
+[Bilibili search request for Abyssal Expedition][2]{:target="_blank" rel="noopener noreferrer"}
+Поиск видео по бездне, текст в запросе AE 團隊遠征
 
-    Поиск испытаний гильдии, в ссылке на китайском указан запрос 'afk arena guild trial'
+[Bilibili search request for Hunting Fields][3]{:target="_blank" rel="noopener noreferrer"}
+По Охотничьи Угодьям, текст в запросе HF 众神猎场
+
+///
 
 ??? abstract "[cr, camp and more](https://www.youtube.com/channel/UCqXC4sY0uLHke70krnOuBmA)"
 
@@ -111,3 +118,7 @@ author: compiled by HOOTSMAN
 ??? tip "[AFK Arena Assets](https://drive.google.com/drive/u/0/folders/1j7Hi-HoKdNjYJIJyq-UEGtIQSgv_tdCo){:target="_blank" rel="noopener noreferrer"}"
 
     Внутриигровые картинки, анимации и прочее. Может быть полезным для создателей контента.
+
+[1]: https://search.bilibili.com/all?keyword=%E5%89%91%E4%B8%8E%E8%BF%9C%E5%BE%81%20%E5%85%AC%E4%BC%9A%E8%AF%95%E7%82%BC&from_source=webtop_search&spm_id_from=333.788&search_source=5
+[2]: https://search.bilibili.com/all?keyword=AE+%E5%9C%98%E9%9A%8A%E9%81%A0%E5%BE%81&from_source=webtop_search&spm_id_from=333.788&search_source=5
+[3]: https://search.bilibili.com/all?keyword=HF+%E4%BC%97%E7%A5%9E%E7%8C%8E%E5%9C%BA&from_source=webtop_search&spm_id_from=333.788&search_source=5

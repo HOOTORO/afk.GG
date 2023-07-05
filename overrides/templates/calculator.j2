@@ -1,5 +1,10 @@
 {% extends "main.html" %}
 
+
+{% block htmltitle %} 
+  {{ super() }} 
+{% endblock %}
+
 {% macro input(name, id=name.lower().replace(' ', '-'), value='', legend='', type='text', min=0, max=100, size=20,
 opts=[], nonval=[], icon=[]) -%}
 {% if nonval %}
@@ -44,6 +49,7 @@ opts=[], nonval=[], icon=[]) -%}
 {{ super() }}
 {% endblock %}
 {% block libs %}
+{{ super() }}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="module" src="{{ 'javascripts/ts/dust.js' | url }}"></script>
 <script type="module" src="{{ 'javascripts/ts/types.js' | url }}"></script>
@@ -53,7 +59,7 @@ opts=[], nonval=[], icon=[]) -%}
 {% endblock %}
 <!-- Content -->
 {% block content %}
-{{ super() }}
+{% include "templates/metacontent.j2" %}
 <div id="dust-calc">
   <form id="dust-input">
     {{ input(name="",id="b", type="checkbox", legend="Set options", opts=["StoreDeal", "Misty Valley"],
@@ -67,6 +73,7 @@ opts=[], nonval=[], icon=[]) -%}
   </form>
 </div>
 <!---->
+{{ super() }}
 {{ content }}
 {% endblock %}
 {% block scripts %}
@@ -74,6 +81,6 @@ opts=[], nonval=[], icon=[]) -%}
 {{ super() }}
 <!-- Add scripts that need to run afterwards here -->
 <script>
-  console.log("tu pidor");
+  console.log("Enter Dustman");
 </script>
 {% endblock %}

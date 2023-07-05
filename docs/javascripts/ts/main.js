@@ -29,6 +29,7 @@ function initUser() {
 }
 function startApp() {
     L("launch app...");
+    app.appendChild(makeOut());
     drawInputs().catch((x) => L(`Promise rejected => ${x}`));
     L("app started");
 }
@@ -55,10 +56,6 @@ async function drawInputs() {
             }, 2000);
         });
     });
-    setTimeout(() => {
-        app.appendChild(makeOut());
-        console.log("draw done");
-    }, 2000);
 }
 app.addEventListener("change", (x) => {
     const tg = x.target;

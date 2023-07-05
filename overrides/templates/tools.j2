@@ -1,19 +1,28 @@
 {% extends "main.html" %}
+
+{% block htmltitle %} 
+  {{ super() }} 
+{% endblock %}
+
 {% block styles %} {{ super() }}
 {% endblock %}
 {%block libs%}
+{{ super()  }}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="module" src="{{ 'javascripts/ts/main.js' | url }}"></script>
 {%endblock%}
 {% block tabs %} {{ super() }}
 {% endblock %}
+
+{% block header %}
+{{ super() }}
+{% endblock %}
+
 <!-- Content -->
 {% block content %}
+{% include "templates/metacontent.j2" %}
 {{ super() }}
-<div id="app">
-</div>
 <!---->
-{{ content }}
 {% endblock %}
 {% block scripts %}
 <!-- Add scripts that need to run before here -->
