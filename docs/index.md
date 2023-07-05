@@ -10,7 +10,7 @@ description: >-
 footer: hide
 ---
 
-//// admonition | Updates
+//// details | Updates
     type: new
 
 - [x] Сделал [калькулятор](./game/lvldust.md) для расчет инкама пыли
