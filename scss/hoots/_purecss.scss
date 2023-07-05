@@ -15,8 +15,8 @@ blockquote:before {
     border-radius: 10px;
 }
 
-h4 {
-    margin: 1em;
+.md-typeset #a-form h4 {
+    margin: 1px;
 }
 
 /* <select> styles */
@@ -31,7 +31,7 @@ select {
     width: 9em;
     height: 2em;
     padding: 5px;
-    margin: 1em;
+    margin: 10px;
     text-align: center;
     background: url(../assets/svg/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em,
     linear-gradient(to left, $glass-icon 2em, $glass 3em);

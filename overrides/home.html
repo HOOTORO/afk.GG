@@ -4,99 +4,90 @@
 {% block tabs %} {{ super() }}
 <!-- Additional styles for landing page -->
 <style>
-    /* Application header should be static for the landing page */
-    .md-header {
-        position: initial;
-    }
+  /* Application header should be static for the landing page */
+  .md-header {
+    position: initial;
+  }
 
-    /* Remove spacing, as we cannot hide it completely */
-    .md-main__inner {
-        margin: 0;
-    }
+  /* Remove spacing, as we cannot hide it completely */
+  .md-main__inner {
+    margin: 0;
+  }
 
-    /* Hide main content for now */
-  /*  .md-content {
-        display: none;
-    }
-/*
     /* Hide table of contents */
-    @media screen and (min-width: 60em) {
-        .md-sidebar--secondary {
-            display: none;
-        }
-    }
-
-    /* Hide navigation */
-    @media screen and (min-width: 76.25em) {
-        .md-sidebar--primary {
-            display: none;
-        }
-    }
-
-    .md-container {
-        background-image: url("{{ 'assets/bg.jpg' | url }}");
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 1;
-    }
-    .admonition {
-      position: absolute;
-      max-width: 50%;
-      right: 30px;
-      background-color: rgba(29, 29, 29, 0.604) !important;
-    }
-    p.admonition-title {
-      color: bisque;
-      background-color: rgba(0, 0, 0, 0.836) !important;
-    }
-    .md-source-file {
-      position: absolute;
-      bottom: 10px;
-    }
-    .md-content__inner:before {
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
       display: none;
-}
+    }
+  }
 
+  /* Hide navigation */
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+
+  .md-container {
+    background-image: url("{{ 'assets/bg.jpg' | url }}");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+  .admonition {
+    position: absolute;
+    max-width: 50%;
+    right: 30px;
+    background-color: rgba(29, 29, 29, 0.604) !important;
+  }
+  p.admonition-title {
+    color: bisque;
+    background-color: rgba(0, 0, 0, 0.836) !important;
+  }
+  .md-source-file {
+    position: absolute;
+    bottom: 10px;
+  }
+  .md-content__inner:before {
+    display: none;
+  }
 </style>
 {% endblock %}
 <!-- Content -->
-{% block content %}
-{{ super() }}
-{# {{ page.content }} #}
-{% endblock %}
+{% block content %} {{ super() }} {% endblock %}
 
 <!-- Application footer -->
 {% block footer %}
 <section class="mdx-container">
-    <div class="md-grid md-typeset">
-        <div class="mdx-hero">
-            <!-- Hero content -->
-            <h1>About our beloved idle gachagame.</h1>
-            <div class="mdx-hero__content">
-                <div class="cont">
-                    <p>
-                        Get ready to dive into idless afk...
-                    </p>
-                    <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
-                        class="md-button md-button--primary">
-                        Take A Look
-                    </a>
-                </div>
-                <div class="cont">
-        
-                    <p>
-                        or if you're looking for Better Discord Themes...
-                    </p>
-                    <a href="{{ 'https://hootsdev.github.io/Disco.th/' | url }}"
-                        title="Looking for BetterDiscord Themes?" class="md-button">
-                        Check this out!
-                    </a>
-
-                </div>
-            </div>
+  <div class="md-grid md-typeset">
+    <div class="mdx-hero">
+      <!-- Hero content -->
+      <h1>About our beloved idle gachagame.</h1>
+      <div class="mdx-hero__content">
+        <div class="cont">
+          <p>Get ready to dive into idless afk...</p>
+          <a
+            href="{{ page.next_page.url | url }}"
+            title="{{ page.next_page.title | e }}"
+            class="md-button md-button--primary"
+          >
+            Take A Look
+          </a>
         </div>
+        <div class="cont">
+          <p>or if you're looking for Better Discord Themes...</p>
+          <a
+            href="{{ 'https://hootsdev.github.io/Disco.th/' | url }}"
+            title="Looking for BetterDiscord Themes?"
+            class="md-button"
+          >
+            Check this out!
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 {% endblock %}

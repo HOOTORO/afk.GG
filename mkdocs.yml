@@ -1,4 +1,3 @@
-# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: AFK. Все что желаешь знать.
 site_url: https://hootsdev.github.io/afk.GG/
 
@@ -12,23 +11,26 @@ copyright: >
 
 extra_css:
   - stylesheets/main.css
-  - stylesheets/extra-a2b15a354f.css
+  - stylesheets/extra.css
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   # - javascripts/avatars.js
   # - javascripts/memes.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
 theme:
   name: material
   language: ru
   favicon: favicon.jpg
+  logo: assets/logo2.png
   icon:
     repo: fontawesome/brands/git-alt
-  logo: assets/logo2.png
   custom_dir: overrides
   font:
-    text: Open Sans
-    code: Average Sans
+    # Palanquin Dark
+    # Fenix
+    # Fira Code
+    text: Palanquin Dark
+    code: Fira Code
   palette:
     - scheme: default
       toggle:
@@ -103,58 +105,72 @@ extra:
       - manage
 
 markdown_extensions:
-  - markdown.extensions.toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-      permalink: ""
-  - markdown.extensions.admonition:
-  - markdown.extensions.smarty:
+  # - markdown.extensions.toc:
+  #     slugify: !!python/object/apply:pymdownx.slugs.slugify 
+  #       kwds: 
+  #         case: lower
+  #     permalink: ""
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      permalink: true
+      toc_depth: 3
+  - admonition
+  - smarty:
       smart_quotes: false
+  - attr_list
+  - def_list
+  - tables
+  - abbr
+  - footnotes
+  - md_in_html
+  - meta
+  # - pymdownx.magiclink:
+  #     repo_url_shortener: true
+  #     repo_url_shorthand: true
+  #     social_url_shorthand: true
+  #     social_url_shortener: true
+  #     user: hootsdev
+  #     repo: afk.GG
+  #     normalize_issue_symbols: false
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.smartsymbols
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.progressbar
+  - pymdownx.striphtml
+  - pymdownx.saneheaders
+  - pymdownx.critic:
+      mode: view
   - pymdownx.betterem:
-  # - pumdownx.extra
-  - markdown.extensions.attr_list:
-  - markdown.extensions.def_list:
-  - markdown.extensions.tables:
-  - markdown.extensions.abbr:
-  - markdown.extensions.footnotes:
-  - markdown.extensions.md_in_html:
-  - pymdownx.magiclink:
-      repo_url_shortener: true
-      repo_url_shorthand: true
-      social_url_shorthand: true
-      social_url_shortener: true
-      user: hootsdev
-      repo: afk.GG
-      normalize_issue_symbols: true
-  - pymdownx.tilde:
-  - pymdownx.caret:
-  - pymdownx.smartsymbols:
+      smart_enable: all
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys:
+      separator: "\uff0b"
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      pygments_lang_class: true
+      auto_title: true
+      linenums_style: pymdownx-inline
+      linenums: true
+      line_spans: __span
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.escapeall:
-      hardbreak: True
-      nbsp: True
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.progressbar:
-  - toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-        case: lower
-      permalink: true
-      toc_depth: 3
+      hardbreak: true
+      nbsp: true
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.mark:
-  - pymdownx.striphtml:
-  - pymdownx.keys:
-      separator: "\uff0b"
-  - pymdownx.details:
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.saneheaders:
   - pymdownx.blocks.admonition:
       types:
       - new
@@ -175,31 +191,18 @@ markdown_extensions:
   - pymdownx.blocks.html:
   - pymdownx.blocks.definition:
   - pymdownx.blocks.tab:
-      alternate_style: True
-
-  # - pymdownx.highlight:
-  #     anchor_linenums: true
-  #     use_pygments: true
-  #     auto_title: true
-  #     linenums_style: pymdownx-inline
-  #     linenums: true
-  # - pymdownx.inlinehilite
-  # - pymdownx.keys
-  # - pymdownx.mark
-  # - pymdownx.smartsymbols
-  - pymdownx.superfences
-  # - pymdownx.tabbed:
-  #     alternate_style: true
-  # - pymdownx.tasklist:
-  #     custom_checkbox: true
-  # - pymdownx.tilde
-  - pymdownx.critic
-  - meta
+      alternate_style: true
   - pymdownx.snippets:
       check_paths: true
       url_download: false
       auto_append:
         - includes/abbr.md
+  # - pymdownx.keys
+  # - pymdownx.smartsymbols
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
   # - tools.collapse_code:
   #     expand_text: ''
   #     collapse_text: ''

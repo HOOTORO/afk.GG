@@ -82,7 +82,7 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
   --md-typeset-kbd-border-color: #{shade(hsla(0, 100%, 100%, 1), 28%)};
   --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
 
-  [data-md-color-scheme="default"] {
+  &[data-md-color-scheme="default"] {
     --md-footer-bg-color--dark: #{$l-foot-low};
     --input-bd-color: #{$lin-color};
     --theme-label: #{$lLabel};
@@ -119,7 +119,7 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --md-default-bg: #{$d-def-bg};
     --theme-label: #{$dLabel};
     --rnb: #{$def-rnb};
-    --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
+    // --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
     --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
     --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
     --md-code-special-bg-color: #{lighten(hsl(232, 15%, 15%), 5%)};
@@ -299,7 +299,7 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
 
     --md-primary-code-bg-color:         #{mix($drac-bg, nth($colors, 1), 85%)};
     --md-primary-fg-color:              hsla(#{hex2hsl(nth($colors, 1))}, 1);
-    --md-primary-fg-color--transparent: hsla(#{hex2hsl(nth($colors, 1))}, 0.1);
+    --md-primary-fg-color--transparent: hsla(#{hex2hsl(nth($colors, 1))}, 1);
     --md-primary-fg-color--light:       hsla(#{hex2hsl(nth($colors, 2))}, 1);
     --md-primary-fg-color--dark:        hsla(#{hex2hsl(nth($colors, 3))}, 1);
     --md-primary-bg-color:              var(--md-default-bg-color);

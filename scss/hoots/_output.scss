@@ -10,7 +10,7 @@
     max-height: fit-content;
     align-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: var(--containers-bg);
 }
 
@@ -44,7 +44,6 @@
     #a-form {
         display: inline-flex;
         max-height: unset;
-        height: 400px;
         width: 200px;
     }
 
