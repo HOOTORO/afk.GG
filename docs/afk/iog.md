@@ -27,7 +27,7 @@ author: HOOTSMAN, Лев Николаевич
 
 ///
 
-/// details | Посмотреть весь лог
+/// details | Посмотреть полный лог
     type: settings
 
 <figure markdown>

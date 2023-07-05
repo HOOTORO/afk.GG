@@ -5,8 +5,6 @@ description: >-
     Персональный блог завсегдатая <del>уборной с телефоном</del> AFK Arena.
 author: HOOTSMAN, Лев Николаевич
 template: templates/blog.j2
-updated: 2023-12-12
-date: 2023-11-11
 ---
 !!! warning DISCLAIMER
     Все персонажи и события вымышленны, любые места случайны и предсказуемы.  
@@ -29,7 +27,10 @@ date: 2023-11-11
 
 ***
 
-- [memes](../guilds/meme.md) **переехали** в раздел [сообщества](../guilds/index.md)!.
+Развел с информацией по игровым активностям
+
+- [Статистика ПМ/КК](../afk/stats.md)
+- [Острова Золота](../afk/iog.md) Результаты эвента.
 
 [1]: https://ru.wikipedia.org/wiki/Бред_преследования
 [2]: https://ru.wikipedia.org/wiki/Бред_величия

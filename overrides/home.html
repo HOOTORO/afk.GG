@@ -14,7 +14,7 @@
     margin: 0;
   }
 
-    /* Hide table of contents */
+  /* Hide table of contents */
   @media screen and (min-width: 60em) {
     .md-sidebar--secondary {
       display: none;
@@ -36,15 +36,16 @@
     background-size: cover;
     opacity: 1;
   }
-  .admonition {
+
+  .md-typeset .admonition,
+  .md-typeset details {
     position: absolute;
-    max-width: 50%;
-    right: 30px;
-    background-color: rgba(29, 29, 29, 0.604) !important;
+    left: 30px;
+    background-color: rgba(29, 29, 29, 0.777) !important;
   }
-  p.admonition-title {
+  summary {
     color: bisque;
-    background-color: rgba(0, 0, 0, 0.836) !important;
+    background-color: rgba(0, 0, 0, 0.777) !important;
   }
   .md-source-file {
     position: absolute;

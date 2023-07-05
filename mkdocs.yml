@@ -28,9 +28,9 @@ theme:
   font:
     # Palanquin Dark
     # Fenix
-    # Fira Code
+    # Fira Sans Extra Condensed
     text: Palanquin Dark
-    code: Fira Code
+    code: Fira Mono
   palette:
     - scheme: default
       toggle:
@@ -162,7 +162,6 @@ markdown_extensions:
       line_spans: __span
   - pymdownx.tasklist:
       custom_checkbox: true
-      clickable_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
