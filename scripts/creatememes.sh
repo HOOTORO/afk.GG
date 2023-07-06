@@ -4,8 +4,6 @@ src=$(ls ~/HOOTSMAN/up/memes/)
 dest=docs/assets/images/meme
 
 fcnt=$(find $dest -maxdepth 1 -exec echo \; | wc -l | xargs)
-memes=$(ls docs/assets/images/meme)
-
 
 for nm in ~/HOOTSMAN/up/memes/*
 do
@@ -16,4 +14,3 @@ if [[ "$nm:e" == "png" ]] then
     fcnt=$(( $fcnt+1 ))
 fi
 done
-echo -e $memes | jq -R . | jq -s '{"memes": .}' > docs/memes.json

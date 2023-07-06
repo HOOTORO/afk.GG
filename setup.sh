@@ -7,4 +7,6 @@ brew install pngquant
 
 pip install -r requirements.txt
 
+export ENABLED_GIT_REVISION_DATE=false
+
 # disable_hook=1   

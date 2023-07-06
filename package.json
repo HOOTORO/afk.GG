@@ -11,11 +11,11 @@
     "name": "HOLYDOOM HOOTSMAN"
   },
   "scripts": {
-    "SASS:build": "sass --no-source-map scss/main.scss docs/stylesheets/main.css",
-    "RE:build": "tsc --build && mkdocs build",
-    "serve": "tsc --build && mkdocs serve",
-    "watch:scss": "sass --watch scss/extra.scss docs/stylesheets/main.css",
-    "serve.th": "tsc --build && tsc --watch & sass --no-source-map scss/main.scss docs/stylesheets/main.css && sass --watch scss/main.scss docs/stylesheets/main.css & mkdocs serve --watch-theme"
+    "SASS:build": "sass --no-source-map docs/src/scss/main.scss docs/theme/css/main.css",
+    "SASS:watch": "sass --watch docs/src/scss/main.scss docs/theme/css/main.css",
+    "RE:build": "tsc --build && npm run -s SASS:build && mkdocs build",
+    "RE:serve": "mkdocs serve --watch-theme",
+    "SERVE.THIS": "npm run -s RE:build && tsc --watch & npm run -s SASS:watch & npm run -s RE:serve"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.16",

@@ -7,14 +7,11 @@
     "removeComments": true,
     "sourceMap": false,
     "rootDir": "src",
-    "outDir": "docs/javascripts/ts",
-    // "outFile": "docs/javascripts/main.js",
-    // "allowJs": true,
-    // "noEmit": true,
+    "outDir": "docs/theme/js/ts",
     "target": "ESNext"
   },
   "include": [
     "src/**/*",
-    "scss"
+    "docs/src/scss/*"
   ]
 }

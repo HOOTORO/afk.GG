@@ -1,41 +1,30 @@
 site_name: AFK. Все что желаешь знать.
 site_url: https://hootsdev.github.io/afk.GG/
-
+site_description:  afk.GG is an 'AFK Arena' game fansite, and is not affiliated with Lilith Games in any way.
+# dev_addr: "192.168.1.10:8000"
 repo_name: afk.GG
 repo_url: https://github.com/Hootsdev/afk.GG
-edit_uri: blob/main/docs/
+edit_uri: tree/master/docs/src/
 
 copyright: >
-  afk.GG is an 'AFK Arena' fansite, and is not affiliated with Lilith Games in any way.<br>
   Copyright &copy; 2023, Лев Николаевич HOOTSMAN – <a href="#__consent">Change cookie settings</a><br>
 
-extra_css:
-  - stylesheets/main.css
-  - stylesheets/extra.css
-extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-  # - javascripts/avatars.js
-  # - javascripts/memes.js
-  # - javascripts/main.js
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
+docs_dir: docs/src/md
 theme:
+  custom_dir: docs/theme
   name: material
   language: ru
-  favicon: favicon.jpg
+  favicon: favicon.ico
   logo: assets/logo2.png
   icon:
     repo: fontawesome/brands/git-alt
-  custom_dir: overrides
   font:
-    # Palanquin Dark
-    # Fenix
-    # Fira Sans Extra Condensed
     text: Palanquin Dark
     code: Fira Mono
   palette:
     - scheme: default
       toggle:
-        icon: material/weather-night
+        icon: material/toggle-switch
         name: Switch to dracula mode
       primary: orange
       accent: lime
@@ -65,6 +54,45 @@ theme:
     - navigation.footer
     - navigation.sections
 
+nav:
+  - index.md
+  - База знаний:
+      - kb/index.md
+      - Game Mechanics:
+          - kb/links.md
+          - kb/trescamble.md
+          - kb/infographics.md
+          - kb/tables.md
+      - Tools:
+          - lib/income.md
+          - lib/dust.md
+  - Сообщество:
+      - guilds/index.md
+      - guilds/meme.md
+      - СНГ Топ:
+          - guilds/abex.md
+          - guilds/hf.md
+      - Discord:
+          - guilds/disru.md
+          - guilds/disen.md
+  - Хуторок Льва Николаевича:
+      - blog/index.md
+      - Блог:
+          - blog/aqual.md
+          - blog/dogdream.md
+          - blog/makerugreatagain.md
+          - blog/nm-respect.md
+          - blog/th-retirement.md
+      - AFK:
+          - game/stats.md
+          - game/iog.md
+
+extra_css:
+  - css/main.css
+  - css/extra.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+
 plugins:
   - search:
       lang: ru
@@ -82,35 +110,29 @@ plugins:
   - social:
       cards: !ENV [CI, true]
   - git-revision-date-localized:
+      # enabled: !ENV [ENABLED_GIT_REVISION_DATE, true]
+      strict: false
       fallback_to_build_date: true
+      enable_creation_date: true
+      timezone: Europe/Moscow
+      locale: ru
+  - git-authors:
+      # enabled: !ENV [ENABLED_GIT_AUTHORS, True]
+      show_contribution: true
+      show_line_count: true
+      count_empty_lines: true
+  # - git-committers:
+  #     enabled: false
+  #     repository: Hootsdev/afk.GG
+  #     branch: master
+  #     token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
 
 
 hooks:
   - scripts/hooks.py
 
-extra:
-  social:
-    - icon: fontawesome/brands/discord
-      link: https://discordid.netlify.app/?id=88370628763078656
-      name: HOOTSMAN
-  homepage: https://hootsdev.github.io/afk.GG
-  consent:
-    title: Cookie consent
-    description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-    actions:
-      - accept
-      - manage
 
 markdown_extensions:
-  # - markdown.extensions.toc:
-  #     slugify: !!python/object/apply:pymdownx.slugs.slugify 
-  #       kwds: 
-  #         case: lower
-  #     permalink: ""
   - toc:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
@@ -118,8 +140,6 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
   - admonition
-  - smarty:
-      smart_quotes: false
   - attr_list
   - def_list
   - tables
@@ -127,14 +147,8 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - meta
-  # - pymdownx.magiclink:
-  #     repo_url_shortener: true
-  #     repo_url_shorthand: true
-  #     social_url_shorthand: true
-  #     social_url_shortener: true
-  #     user: hootsdev
-  #     repo: afk.GG
-  #     normalize_issue_symbols: false
+  - smarty:
+      smart_quotes: false
   - pymdownx.tilde
   - pymdownx.caret
   - pymdownx.smartsymbols
@@ -193,50 +207,28 @@ markdown_extensions:
   - pymdownx.blocks.tab:
       alternate_style: true
   - pymdownx.snippets:
-      check_paths: true
-      url_download: false
+      base_path:
+      - docs/src/.dict
       auto_append:
-        - includes/abbr.md
-  # - pymdownx.keys
-  # - pymdownx.smartsymbols
-  # - pymdownx.tabbed:
-  #     alternate_style: true
-  # - pymdownx.tasklist:
-  #     custom_checkbox: true
+      - abbr.md
+      check_paths: true
   # - tools.collapse_code:
   #     expand_text: ''
   #     collapse_text: ''
 
-nav:
-  - Главная: index.md
-  - База знаний:
-      - kb/index.md
-      - Game Mechanics:
-          - Полезные ресурсы: kb/links.md
-          - Инфографика: kb/infographics.md
-          - TRESCAMBLE!: kb/trescamble.md
-      - Tools:
-          - game/income.md
-          - game/lvldust.md
-          - Dia Values: game/diaval.md
-          - Tree Estimator: game/calc.md
-  - Сообщество:
-      - guilds/index.md
-      - guilds/meme.md
-      - СНГ Топ:
-          - AbEx/Бездна: guilds/abex.md
-          - HF/Охотничьи угодья: guilds/hf.md
-      - Discord:
-          - (RU) Made in USSR: guilds/disru.md
-          - (EN) International: guilds/disen.md
-  - Хуторок Льва Николаевича:
-      - blog/index.md
-      - Блог:
-          - blog/aquav.md
-          - blog/dogdream.md
-          - blog/makerugreatagain.md
-          - blog/nm-respect.md
-          - blog/th-retirement.md
-      - AFK:
-          - Результаты ПМ/КК: afk/stats.md
-          - Isle of Gold: afk/iog.md
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discordid.netlify.app/?id=88370628763078656
+      name: HOOTSMAN
+  homepage: https://hootsdev.github.io/afk.GG
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage

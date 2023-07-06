@@ -87,8 +87,14 @@ app.addEventListener("change", (x: InputEvent) => {
   if (tg instanceof HTMLInputElement && tg.type === "range") {
     rangeSlide(tg.value, user);
   } else if (user) {
-    const weeks = localStorage.getItem("rangeValue");
-    updateResourceBox(user.income, parseInt(weeks));
+    const weeks = parseInt(localStorage.getItem("rangeValue"));
+    if (weeks > 0) {
+      updateResourceBox(user.income, weeks);
+    } else {
+      updateResourceBox(user.income);
+    }
+    // const weeks = localStorage.getItem("rangeValue");
+    // updateResourceBox(user.income, parseInt(weeks));
   }
 });
 

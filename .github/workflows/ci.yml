@@ -9,18 +9,22 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+        id-token: write
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
       - name: Make destination directory for compiled CSS
-        run: mkdir -vp docs/stylesheets
+        run: mkdir -vp docs/theme/css
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.4.7
         with:
-          source: scss/main.scss 
-          destination:  docs/stylesheets/main.css 
+          source: docs/src/scss/main.scss
+          destination: docs/theme/css/main.css
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v3
         with:
@@ -34,6 +38,8 @@ jobs:
       - run: pip install mkdocs-redirects
       - run: pip install mkdocs-table-reader-plugin
       - run: pip install mkdocs-git-revision-date-localized-plugin
+      - run: pip install mkdocs-git-authors-plugin
+      - run: pip install mkdocs-git-committers-plugin
       - run: pip install openpyxl
       - run: pip install requests     
       - run: pip install pyarrow

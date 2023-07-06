@@ -39,7 +39,7 @@ function drawResourceBox(parent: Element) {
 
 function getResImg(src: string) {
   const img = document.createElement("img");
-  img.src = `/afk.GG/assets/icons/s/${src}.png`;
+  img.src = `../../assets/icons/s/${src}.png`;
   img.width = iconSize;
   return img;
 }

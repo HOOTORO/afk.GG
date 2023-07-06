@@ -17,7 +17,7 @@ function generateAFKResObj(x: string) {
   const br: BaseResQty = {
     type: gid as bres,
     label: short,
-    img: `/afk.GG/assets/icons/s/${short}.png`,
+    img: `../assets/icons/s/${short}.png`,
     amount: 0,
   };
   return br;
@@ -62,7 +62,7 @@ function weekLabels(n: number, stops: { n: number; desc: string }[]) {
 
 function rangeSlide(value: string, user: User) {
   document.getElementById("rangeValue").innerHTML = value + " weeks";
-  $(this).attr("value", value.toString());
+  $(this).attr("value", value?.toString());
   populateStorage("rangeValue", value);
   updateResourceBox(user.income, parseInt(value));
 }
@@ -82,7 +82,7 @@ function radioGroups(
       const input = `<input type="radio" id="misty-ch-${row.id}-${choice.type}" name="selector">
                             <label for="misty-ch-${row.id}-${choice.type}">
                                 ${choice.amount}
-                                <img src="/afk.GG/assets/icons/s/${choice.type}.png" width="24"></label>
+                                <img src="../assets/icons/s/${choice.type}.png" width="24"></label>
                             </label>`;
       wrap.innerHTML += input;
     }
