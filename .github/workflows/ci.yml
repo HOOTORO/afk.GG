@@ -32,6 +32,9 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+      - run: |
+          git remote add gh-token "https://${{ secrets.GH_TOKEN }}@github.com/Hootsdev/afk.GG.git.git"
+          git fetch gh-token && git fetch gh-token gh-pages:gh-pages
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-minify-plugin
       - run: pip install mkdocs-glightbox
