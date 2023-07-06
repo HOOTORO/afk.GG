@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MKDOCS_GIT_COMMITTERS_APIKEY1 }}
           fetch-depth: 0
       - uses: actions/setup-python@v4
         with:
