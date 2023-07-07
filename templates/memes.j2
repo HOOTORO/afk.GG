@@ -26,15 +26,7 @@
 
 {% block content %}
 
-  {% if not "\x3ch1" in page.content %}
-    <h1 class="red-font">{{ page.title | d(config.site_name, true)}}</h1>
-  {% endif %}
-  <blockquote>
-    <cite>
-      {{ page.meta.description }}
-    </cite>
-  </blockquote>
-  {{ super() }}
+{{ super() }}
   {% if page.meta and page.meta.author %}
     <span class="authored">
       <code>✎ Written by 🡺 {{ page.meta.author }}</code>
@@ -43,6 +35,6 @@
 {% endblock %}
 
 {% block scripts %}
-  <script src="{{ 'javascripts/memes.js' | url }}"></script>
+  <script src="{{ 'js/memes.js' | url }}"></script>
   {{ super() }}
 {% endblock %}

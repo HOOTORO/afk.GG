@@ -54,14 +54,6 @@
 
 
 {% block content %}
-  {% if not "\x3ch1" in page.content %}
-  <h1 class="red-font">{{ page.title | d(config.site_name, true)}}</h1>
-  {% endif %}
-  <blockquote>
-    <cite>
-        {{ page.meta.description }}
-    </cite>
-  </blockquote>
   {{ super() }} 
   {% if page.meta and page.meta.author %}
       <div class="authored">
