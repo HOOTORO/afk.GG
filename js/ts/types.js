@@ -1,5 +1,5 @@
 import { generateAFKResObj, rangeSlide } from "./components/helper.js";
-import { AfkArena, ValueModes, allRes, sheetId } from "./constants.js";
+import { AbEx, AfkArena, ValueModes, allRes, sheetId, } from "./constants.js";
 import { rewards } from "./components/dataloader.js";
 class DustChest {
     amount;
@@ -70,4 +70,48 @@ class User {
         });
     }
 }
-export { User, DustChest, BaseResource, BaseResQty };
+class Militia {
+    baseIncome;
+    _viewers;
+    constructor(plebs) {
+        this.viewers = plebs;
+        this.baseIncome = 4;
+    }
+    set viewers(n) {
+        this._viewers = n;
+    }
+    get viewers() {
+        return this._viewers;
+    }
+    actualIncome() {
+        return (this.baseIncome +
+            (this.baseIncome * this.viewers * AbEx.viewerMultiplier) / 100);
+    }
+    starIncome() {
+        return this.actualIncome() / AbEx.starFasterRecoveryMod;
+    }
+    star() {
+        return new Expeditor(this, true);
+    }
+    regular() {
+        return new Expeditor(this, false);
+    }
+}
+class Expeditor {
+    guild;
+    starStatus;
+    currentFood;
+    constructor(militia, star, food = 0) {
+        this.guild = militia;
+        this.starStatus = star;
+    }
+    income() {
+        return this.starStatus
+            ? this.guild.starIncome()
+            : this.guild.actualIncome();
+    }
+    totalFood() {
+        return this.currentFood + AbEx.hoursLeft() * this.income();
+    }
+}
+export { User, DustChest, BaseResource, BaseResQty, Militia, Expeditor, };

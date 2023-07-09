@@ -109,4 +109,18 @@ const radio = `
    </form>
 
 `;
-export { chainDomElement, domElWithProperties, generateAFKResObj, makeSelect, populateStorage, radioGroups, rangeSlide, setApp, weekLabels, };
+function numIn(name, id, min, max, size, icon, width) {
+    const lb = domElWithProperties("label", [{ n: "for", v: `${id}` }]);
+    const img = `<img alt="${name}" src="${icon}" width="${width}">`;
+    lb.innerHTML = img;
+    return domElWithProperties("input", [
+        { n: "type", v: "number" },
+        { n: "value", v: "0" },
+        { n: "min", v: `${min}` },
+        { n: "max", v: `${max}` },
+        { n: "name", v: `${name}` },
+        { n: "size", v: `${size}` },
+        { n: "id", v: `${id}` },
+    ]).appendChild(lb);
+}
+export { chainDomElement, domElWithProperties, generateAFKResObj, makeSelect, populateStorage, radioGroups, rangeSlide, setApp, weekLabels, numIn, };

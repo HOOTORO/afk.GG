@@ -33,6 +33,41 @@ class AfkArena {
         return (base.dust() + firstReward.dust()) / Period.month;
     }
 }
+class AbEx {
+    static now = new Date();
+    static abexDurationDays = 18;
+    static silentDay = 1;
+    static baseIncome = 4;
+    static viewerMultiplier = 1.2;
+    static starFasterRecoveryMod = 0.9;
+    static start() {
+        return new Date(2023, 6, 8, 3, 0, 0);
+    }
+    static leftToStart() {
+        return new Date(this.start().getTime() - this.now.getTime());
+    }
+    static left() {
+        return new Date(this.start().getUTCFullYear(), this.start().getMonth(), this.start().getDate() + this.abexDurationDays, this.start().getHours(), this.start().getMinutes());
+    }
+    static silentHoursIn() {
+        return new Date(this.left().getUTCFullYear(), this.left().getMonth(), this.left().getDate() - this.silentDay, this.left().getHours(), this.left().getMinutes());
+    }
+    static hoursLeft() {
+        return ((this.silentHoursIn().getTime() - this.now.getTime()) / 1000 / 60 / 60);
+    }
+    static actualIncome(viewers, star) {
+        const recoveryBonus = (viewers * this.viewerMultiplier) / 100;
+        let res = this.baseIncome + this.baseIncome * recoveryBonus;
+        if (star) {
+            res = res / this.starFasterRecoveryMod;
+        }
+        return res;
+    }
+}
+class Boss {
+    static foodCost = 48;
+    static retry = 4;
+}
 class ValueModes extends AfkArena {
     static rSources = [
         {
@@ -120,4 +155,4 @@ const query = encodeURIComponent("Select *");
 const url = function (x) {
     return `${base}&sheet=${x}&tq=${query}`;
 };
-export { AfkArena, GameMode, allRes, base, iconSize, leftover, query, sheetId, url, userFields, verb, xh, Period, ValueModes, };
+export { AfkArena, GameMode, allRes, base, iconSize, leftover, query, sheetId, url, userFields, verb, xh, Period, ValueModes, AbEx, Boss, };

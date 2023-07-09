@@ -13,7 +13,7 @@
   .authored>code {
     display: block;
     border-radius: 10px;
-    font-family: 'Marvel', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Fenix', 'Marvel', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding: 10px;
   }
@@ -21,20 +21,20 @@
 {%endblock%}
 
 {% block tabs %}
-  {{ super() }}
+{{ super() }}
 {% endblock %}
 
 {% block content %}
 
 {{ super() }}
-  {% if page.meta and page.meta.author %}
-    <span class="authored">
-      <code>✎ Written by 🡺 {{ page.meta.author }}</code>
-    </span>
-  {% endif %}
+{% if page.meta and page.meta.author %}
+<span class="authored">
+  <code>✎ Written by 🡺 {{ page.meta.author }}</code>
+</span>
+{% endif %}
 {% endblock %}
 
 {% block scripts %}
-  <script src="{{ 'js/memes.js' | url }}"></script>
-  {{ super() }}
+{{ super() }}
+<script type="module" src="{{ 'js/ts/memes.js' | url }}"></script>
 {% endblock %}
