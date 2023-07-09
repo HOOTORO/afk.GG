@@ -51,13 +51,11 @@ function updateAbex() {
   let atl = totalFood / Boss.foodCost;
   let rtyLeft = (totalFood % Boss.foodCost) / Boss.retry;
 
-  document.getElementById("total-food").innerText = totalFood
-    .toFixed(2)
-    .toString();
-  document.getElementById("attacks-left").innerText = atl.toFixed(2).toString();
-  document.getElementById("retry-breakpoint").innerText = rtyLeft
-    .toFixed(2)
-    .toString();
+  document.getElementById("total-food").innerText =
+    Math.floor(totalFood).toString();
+  document.getElementById("attacks-left").innerText =
+    Math.floor(atl).toString();
+  document.getElementById("retry-breakpoint").innerText = rtyLeft.toFixed(1);
 }
 function initForm(n: HTMLElement) {
   const inputFields = [
