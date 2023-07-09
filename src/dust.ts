@@ -7,10 +7,6 @@ const f = document.getElementById("dust-input") as HTMLFormElement,
   fastRewards = document.getElementById("d") as HTMLInputElement,
   checks = Object.values(document.querySelectorAll("input[type='checkbox']"));
 
-// const up = (document
-//   .getElementsByClassName("md-source-file")
-//   .item(0).textContent = "");
-
 window.onload = CountDust;
 f.oninput = lo;
 

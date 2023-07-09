@@ -18,6 +18,6 @@ template: main.html
 
 ## Посчитать
 
-- [Income Value](../lib/income.md) Позволяет прикинуть приход ресурсов при указании средних значений в режимах.
-- [Dust Income](../lib/dust.md) Считает инкам пыли в зависимости от указанных параметров
-- [Diamond Values](./tables.md) Shop values tables
+- [Income Value](income.md) Позволяет прикинуть приход ресурсов при указании средних значений в режимах.
+- [Dust Income](dust.md) Считает инкам пыли в зависимости от указанных параметров
+- [Diamond Values](tables.md) Shop values tables

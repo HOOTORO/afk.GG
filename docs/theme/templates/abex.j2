@@ -1,0 +1,36 @@
+{% extends "main.html" %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{%block libs%}
+{{ super() }}
+<script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}"></script>
+{%endblock%}
+
+{% block tabs %}
+{{ super() }}
+{% endblock %}
+<!-- Content -->
+{% block content %}
+{{ super() }}
+<div id="start"></div>
+<div id="silent"></div>
+<div id="left"></div>
+<!---->
+{% endblock %}
+{% block scripts %}
+<!-- Add scripts that need to run before here -->
+{{ super() }}
+
+<script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}">
+  document$.subscribe(() => {
+
+    const abexStart = new Date(2023, 6, 8, 3)
+    startTimer(abexStart)
+  })
+</script>
+
+<!-- Add scripts that need to run afterwards here -->
+{% endblock %}

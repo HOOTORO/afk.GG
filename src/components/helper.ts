@@ -126,6 +126,29 @@ const radio = `
 
 `;
 
+function numIn(
+  name: string,
+  id: string,
+  min?: number,
+  max?: number,
+  size?: number,
+  icon?: string,
+  width?: number
+) {
+  const lb = domElWithProperties("label", [{ n: "for", v: `${id}` }]);
+  const img = `<img alt="${name}" src="${icon}" width="${width}">`;
+  lb.innerHTML = img;
+  return domElWithProperties("input", [
+    { n: "type", v: "number" },
+    { n: "value", v: "0" },
+    { n: "min", v: `${min}` },
+    { n: "max", v: `${max}` },
+    { n: "name", v: `${name}` },
+    { n: "size", v: `${size}` },
+    { n: "id", v: `${id}` },
+  ]).appendChild(lb);
+}
+
 export {
   chainDomElement,
   domElWithProperties,
@@ -136,4 +159,5 @@ export {
   rangeSlide,
   setApp,
   weekLabels,
+  numIn,
 };

@@ -1,7 +1,7 @@
 site_name: AFK. Все что желаешь знать.
 site_url: https://hootsdev.github.io/afk.GG/
-site_description:  afk.GG is an 'AFK Arena' game fansite, and is not affiliated with Lilith Games in any way.
-# dev_addr: "192.168.1.10:8000"
+site_description: afk.GG is an 'AFK Arena' game fansite, and is not affiliated with Lilith Games in any way.
+dev_addr: "192.168.1.4:8000"
 repo_name: afk.GG
 repo_url: https://github.com/Hootsdev/afk.GG
 edit_uri: tree/master/docs/src/
@@ -35,7 +35,7 @@ theme:
       primary: deep purple
       accent: lime
     - scheme: dracula
-      toggle: 
+      toggle:
         icon: material/bat
         name: Switch to dark mode
       primary: deep purple
@@ -64,8 +64,9 @@ nav:
           - kb/infographics.md
           - kb/tables.md
       - Tools:
-          - lib/income.md
-          - lib/dust.md
+          - kb/abex.md
+          - kb/income.md
+          - kb/dust.md
   - Сообщество:
       - guilds/index.md
       - guilds/meme.md
@@ -127,10 +128,8 @@ plugins:
   #     branch: master
   #     token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
 
-
 hooks:
   - scripts/hooks.py
-
 
 markdown_extensions:
   - toc:
@@ -187,20 +186,20 @@ markdown_extensions:
       generic: true
   - pymdownx.blocks.admonition:
       types:
-      - new
-      - settings
-      - note
-      - abstract
-      - info
-      - tip
-      - success
-      - question
-      - warning
-      - failure
-      - danger
-      - bug
-      - example
-      - quote
+        - new
+        - settings
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
   - pymdownx.blocks.details:
   - pymdownx.blocks.html:
   - pymdownx.blocks.definition:
@@ -208,9 +207,9 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.snippets:
       base_path:
-      - docs/src/.dict
+        - docs/src/.dict
       auto_append:
-      - abbr.md
+        - abbr.md
       check_paths: true
   # - tools.collapse_code:
   #     expand_text: ''
