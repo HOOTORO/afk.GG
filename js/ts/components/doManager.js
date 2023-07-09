@@ -65,9 +65,6 @@ function buildElement(el, properties, labelText) {
     }
 }
 function buildProperty(k, val) {
-    const enm = Object.entries(tagAttrs).find((x) => {
-        return x[0] === k || x[1] === k;
-    });
     return { n: k, v: val };
 }
 function processSpecialProp(p) {

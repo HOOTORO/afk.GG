@@ -44,7 +44,9 @@
 }
 
 .mdx-container {
-  margin: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .md-header__option:before {
@@ -86,6 +88,7 @@
   display: flex;
   justify-content: space-between;
   -webkit-font-smoothing: subpixel-antialiased;
+  text-align: center;
 }
 
 .md-sidebar__inner {
@@ -181,6 +184,7 @@
   --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
 }
 :root > *[data-md-color-scheme=default] {
+  --md-default-fg-color--light: #999999;
   --md-footer-bg-color--dark: rgb(0, 160, 210);
   --input-bd-color: rgb(255, 0, 0);
   --theme-label: Jedi;
@@ -218,12 +222,12 @@
   --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
   --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
   --md-code-special-bg-color: #2b2d3b;
-  --md-default-bg-color--trans: hsla(232,15%,15%, 0);
+  --md-default-bg-color--trans: hsla(232, 15%, 15%, 0);
   --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
   --md-typeset-kbd-border-color: #1a1c24;
   --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);
   --md-admonition-fg-color: var(--md-default-fg-color);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-bg-color: #121219;
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
@@ -261,7 +265,7 @@
   --md-default-fg-color--lightest: rgba(248, 248, 242, 0.07);
   --md-default-autocomplete-fg-color: rgba(248, 248, 242, 0.4);
   --md-shadow-z2: 0 0.2rem 0.5rem hsla(0, 0%, 0%, 0.3),
-                                       0 0 0.05rem hsla(0, 0%, 0%, 0.2);
+    0 0 0.05rem hsla(0, 0%, 0%, 0.2);
   --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-default-bg-color--light: rgba(50, 52, 67, 0.7);
   --md-default-bg-color--lighter: rgba(50, 52, 67, 0.3);
@@ -277,7 +281,7 @@
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
   --md-admonition-bg-color--info: rgba(170, 0, 255, 0.1);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
   --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
   --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
@@ -748,6 +752,7 @@
   --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
 }
 :root > *[data-md-color-scheme=default] {
+  --md-default-fg-color--light: #999999;
   --md-footer-bg-color--dark: rgb(0, 160, 210);
   --input-bd-color: rgb(255, 0, 0);
   --theme-label: Jedi;
@@ -785,12 +790,12 @@
   --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
   --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
   --md-code-special-bg-color: #2b2d3b;
-  --md-default-bg-color--trans: hsla(232,15%,15%, 0);
+  --md-default-bg-color--trans: hsla(232, 15%, 15%, 0);
   --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
   --md-typeset-kbd-border-color: #1a1c24;
   --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);
   --md-admonition-fg-color: var(--md-default-fg-color);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-bg-color: #121219;
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
@@ -828,7 +833,7 @@
   --md-default-fg-color--lightest: rgba(248, 248, 242, 0.07);
   --md-default-autocomplete-fg-color: rgba(248, 248, 242, 0.4);
   --md-shadow-z2: 0 0.2rem 0.5rem hsla(0, 0%, 0%, 0.3),
-                                       0 0 0.05rem hsla(0, 0%, 0%, 0.2);
+    0 0 0.05rem hsla(0, 0%, 0%, 0.2);
   --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-default-bg-color--light: rgba(50, 52, 67, 0.7);
   --md-default-bg-color--lighter: rgba(50, 52, 67, 0.3);
@@ -844,7 +849,7 @@
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
   --md-admonition-bg-color--info: rgba(170, 0, 255, 0.1);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
   --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
   --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
@@ -1366,6 +1371,7 @@ span > img {
   --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
 }
 :root > *[data-md-color-scheme=default] {
+  --md-default-fg-color--light: #999999;
   --md-footer-bg-color--dark: rgb(0, 160, 210);
   --input-bd-color: rgb(255, 0, 0);
   --theme-label: Jedi;
@@ -1403,12 +1409,12 @@ span > img {
   --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
   --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
   --md-code-special-bg-color: #2b2d3b;
-  --md-default-bg-color--trans: hsla(232,15%,15%, 0);
+  --md-default-bg-color--trans: hsla(232, 15%, 15%, 0);
   --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
   --md-typeset-kbd-border-color: #1a1c24;
   --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);
   --md-admonition-fg-color: var(--md-default-fg-color);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-bg-color: #121219;
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
@@ -1446,7 +1452,7 @@ span > img {
   --md-default-fg-color--lightest: rgba(248, 248, 242, 0.07);
   --md-default-autocomplete-fg-color: rgba(248, 248, 242, 0.4);
   --md-shadow-z2: 0 0.2rem 0.5rem hsla(0, 0%, 0%, 0.3),
-                                       0 0 0.05rem hsla(0, 0%, 0%, 0.2);
+    0 0 0.05rem hsla(0, 0%, 0%, 0.2);
   --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-default-bg-color--light: rgba(50, 52, 67, 0.7);
   --md-default-bg-color--lighter: rgba(50, 52, 67, 0.3);
@@ -1462,7 +1468,7 @@ span > img {
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
   --md-admonition-bg-color--info: rgba(170, 0, 255, 0.1);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
   --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
   --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
@@ -1951,6 +1957,7 @@ select::-ms-expand {
   --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
 }
 :root > *[data-md-color-scheme=default] {
+  --md-default-fg-color--light: #999999;
   --md-footer-bg-color--dark: rgb(0, 160, 210);
   --input-bd-color: rgb(255, 0, 0);
   --theme-label: Jedi;
@@ -1988,12 +1995,12 @@ select::-ms-expand {
   --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
   --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
   --md-code-special-bg-color: #2b2d3b;
-  --md-default-bg-color--trans: hsla(232,15%,15%, 0);
+  --md-default-bg-color--trans: hsla(232, 15%, 15%, 0);
   --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
   --md-typeset-kbd-border-color: #1a1c24;
   --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);
   --md-admonition-fg-color: var(--md-default-fg-color);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-bg-color: #121219;
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
@@ -2031,7 +2038,7 @@ select::-ms-expand {
   --md-default-fg-color--lightest: rgba(248, 248, 242, 0.07);
   --md-default-autocomplete-fg-color: rgba(248, 248, 242, 0.4);
   --md-shadow-z2: 0 0.2rem 0.5rem hsla(0, 0%, 0%, 0.3),
-                                       0 0 0.05rem hsla(0, 0%, 0%, 0.2);
+    0 0 0.05rem hsla(0, 0%, 0%, 0.2);
   --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-default-bg-color--light: rgba(50, 52, 67, 0.7);
   --md-default-bg-color--lighter: rgba(50, 52, 67, 0.3);
@@ -2047,7 +2054,7 @@ select::-ms-expand {
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
   --md-admonition-bg-color--info: rgba(170, 0, 255, 0.1);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
   --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
   --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
@@ -2540,6 +2547,7 @@ input[type=range] {
   --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
 }
 :root > *[data-md-color-scheme=default] {
+  --md-default-fg-color--light: #999999;
   --md-footer-bg-color--dark: rgb(0, 160, 210);
   --input-bd-color: rgb(255, 0, 0);
   --theme-label: Jedi;
@@ -2577,12 +2585,12 @@ input[type=range] {
   --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
   --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
   --md-code-special-bg-color: #2b2d3b;
-  --md-default-bg-color--trans: hsla(232,15%,15%, 0);
+  --md-default-bg-color--trans: hsla(232, 15%, 15%, 0);
   --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
   --md-typeset-kbd-border-color: #1a1c24;
   --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);
   --md-admonition-fg-color: var(--md-default-fg-color);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-bg-color: #121219;
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
@@ -2620,7 +2628,7 @@ input[type=range] {
   --md-default-fg-color--lightest: rgba(248, 248, 242, 0.07);
   --md-default-autocomplete-fg-color: rgba(248, 248, 242, 0.4);
   --md-shadow-z2: 0 0.2rem 0.5rem hsla(0, 0%, 0%, 0.3),
-                                       0 0 0.05rem hsla(0, 0%, 0%, 0.2);
+    0 0 0.05rem hsla(0, 0%, 0%, 0.2);
   --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-default-bg-color--light: rgba(50, 52, 67, 0.7);
   --md-default-bg-color--lighter: rgba(50, 52, 67, 0.3);
@@ -2636,7 +2644,7 @@ input[type=range] {
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
   --md-admonition-bg-color--info: rgba(170, 0, 255, 0.1);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
   --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
   --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
@@ -3272,6 +3280,7 @@ tfoot td {
   --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
 }
 :root > *[data-md-color-scheme=default] {
+  --md-default-fg-color--light: #999999;
   --md-footer-bg-color--dark: rgb(0, 160, 210);
   --input-bd-color: rgb(255, 0, 0);
   --theme-label: Jedi;
@@ -3309,12 +3318,12 @@ tfoot td {
   --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
   --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
   --md-code-special-bg-color: #2b2d3b;
-  --md-default-bg-color--trans: hsla(232,15%,15%, 0);
+  --md-default-bg-color--trans: hsla(232, 15%, 15%, 0);
   --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
   --md-typeset-kbd-border-color: #1a1c24;
   --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);
   --md-admonition-fg-color: var(--md-default-fg-color);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-bg-color: #121219;
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
@@ -3352,7 +3361,7 @@ tfoot td {
   --md-default-fg-color--lightest: rgba(248, 248, 242, 0.07);
   --md-default-autocomplete-fg-color: rgba(248, 248, 242, 0.4);
   --md-shadow-z2: 0 0.2rem 0.5rem hsla(0, 0%, 0%, 0.3),
-                                       0 0 0.05rem hsla(0, 0%, 0%, 0.2);
+    0 0 0.05rem hsla(0, 0%, 0%, 0.2);
   --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-default-bg-color--light: rgba(50, 52, 67, 0.7);
   --md-default-bg-color--lighter: rgba(50, 52, 67, 0.3);
@@ -3368,7 +3377,7 @@ tfoot td {
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
   --md-admonition-bg-color--info: rgba(170, 0, 255, 0.1);
-  --md-admonition-fg-color: hsla(232,75%,95%,1);
+  --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
   --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
   --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
   --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
@@ -4184,6 +4193,20 @@ li > a > img {
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(0, 238, 255);
 }
 
+#main-event {
+  position: relative;
+  display: flex;
+  width: -webkit-fill-available;
+  flex-direction: column;
+  flex-flow: column wrap;
+  margin: 1em 0;
+  align-items: center;
+  background-color: rgba(90, 90, 220, 0.328);
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 1px 1px 2px red, 0 0.5px 1em blue, 0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
+}
+
 #abex-form {
   position: relative;
   display: flex;
@@ -4207,10 +4230,12 @@ li > a > img {
   margin: 10px;
   border-radius: 10px;
   text-align: end;
+  background-color: aliceblue;
 }
 
 .labeled-container > input[type*=checkbox] {
   margin: 15px;
+  background-color: aliceblue;
 }
 
 .outbox {
@@ -4226,6 +4251,24 @@ li > a > img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.main-e-label {
+  display: flex;
+  background-color: blueviolet;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 1px 1px 2px red, 0 0.5px 1em blue, 0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
+  border: 0.5px outset orange;
 }
 
 /* Normal colors */

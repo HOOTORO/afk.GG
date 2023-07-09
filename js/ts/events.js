@@ -27,5 +27,5 @@ $(window).on("hashchange", "body", function (x) {
 });
 $(document).on("change", "input[type='number']", function (x) {
     $(this).val(x.target.value);
-    console.log("change number triggeredd");
+    console.log("change number triggered");
 });

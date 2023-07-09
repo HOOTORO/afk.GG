@@ -4,15 +4,13 @@ import { AbEx, Boss } from "../constants.js";
 import { Expeditor, Militia } from "../types.js";
 t.default(AbEx.start(), "start", "Старт", "В процессе");
 t.default(AbEx.silentHoursIn(), "silent", "Тихий час", "Наступил");
-t.default(AbEx.left(), "left", "Финиш", "Ceзон<br>завершен");
+t.default(AbEx.left(), "left", "Финиш", "Сезон<br>завершен");
 const app = document.getElementById("rem-food");
 const mil = new Militia(10);
 const expeditor = new Expeditor(mil, false);
-console.log("HI APPPIDOR");
 initForm(app);
+window.onload = updateAbex;
 app.addEventListener("change", (e) => {
-    console.log(`APP CHANGE PEEDOOR -> `);
-    console.log(e);
     if (e.target instanceof HTMLInputElement) {
         inputChange(e.target);
         updateAbex();
@@ -75,7 +73,6 @@ function initForm(n) {
     const outputFields = ["Total Food", "Attacks left", "Retry Breakpoint"];
     const out = createElem(DElem.Div, buildProperty(ElProps.Class, "outbox"));
     const form = createElem(DElem.Form, buildProperty("id", "abex-form"));
-    console.log(form);
     for (const field of inputFields) {
         form.appendChild(buildElement(field.n, field.props, field.v));
     }
@@ -90,7 +87,6 @@ function getLimits(n, viewers, star) {
     return n + timeLeft * AbEx.actualIncome(viewers, star);
 }
 function inputChange(e) {
-    console.log(`TYPEEDOR ${e.type}, \n\ttarget: ${e.checked}\n\t value: ${e.value}`);
     if (e.type === "checkbox") {
         e.checked ? e.setAttribute("checked", "") : e.removeAttribute("checked");
     }
