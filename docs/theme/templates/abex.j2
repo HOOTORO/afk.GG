@@ -6,6 +6,7 @@
 
 {%block libs%}
 {{ super() }}
+<script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script>
 <script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}"></script>
 {%endblock%}
 
@@ -14,10 +15,17 @@
 {% endblock %}
 <!-- Content -->
 {% block content %}
+
+<div id="main-event">
+  <h1>Abyssal Expedition #10</h1>
+  <div class="main-container">
+    <span id="start"></span>
+    <span id="silent"></span>
+    <span id="left"></span>
+  </div>
+</div>
 {{ super() }}
-<div id="start"></div>
-<div id="silent"></div>
-<div id="left"></div>
+
 <!---->
 {% endblock %}
 {% block scripts %}
@@ -25,6 +33,13 @@
 {{ super() }}
 
 <script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}">
+  document$.subscribe(() => {
+
+    const abexStart = new Date(2023, 6, 8, 3)
+    startTimer(abexStart)
+  })
+</script>
+<script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}">
   document$.subscribe(() => {
 
     const abexStart = new Date(2023, 6, 8, 3)

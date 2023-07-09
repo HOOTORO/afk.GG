@@ -1,3 +1,19 @@
+#main-event {
+  position: relative;
+
+  display: flex;
+  width: -webkit-fill-available;
+  flex-direction: column;
+  flex-flow: column wrap;
+  margin: 1em 0;
+  align-items: center;
+  background-color: rgba(90, 90, 220, 0.328);
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
+    0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
+}
+
 #abex-form {
   position: relative;
   display: flex;
@@ -20,10 +36,12 @@
   margin: 10px;
   border-radius: 10px;
   text-align: end;
+  background-color: aliceblue;
 }
 
 .labeled-container > input[type*="checkbox"] {
   margin: 15px;
+  background-color: aliceblue;
 }
 .outbox {
   width: max-content;
@@ -38,4 +56,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.main-e-label {
+  display: flex;
+  background-color: blueviolet;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
+    0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
+  border: 0.5px outset orange;
 }

@@ -24,7 +24,8 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch
+        icon: kappa
+        # icon: material/toggle-switch
         name: Switch to dracula mode
       primary: orange
       accent: lime

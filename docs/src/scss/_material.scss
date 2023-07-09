@@ -1,10 +1,8 @@
-
 @mixin box-sizing {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-
 
 :root {
   --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
@@ -35,9 +33,9 @@
 }
 
 .md-button {
-padding: 10px 17px 7px 17px !important;
-margin-left: 10px;
-font-size: 14px !important;
+  padding: 10px 17px 7px 17px !important;
+  margin-left: 10px;
+  font-size: 14px !important;
 }
 
 .md-tabs {
@@ -48,15 +46,18 @@ font-size: 14px !important;
 }
 
 .mdx-container {
-  margin: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .md-header__option:before {
-font-family: 'Marvel','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-white-space: pre;
-font-weight: 900;
-font-size: 16px;
-padding: 10px 0;
+  font-family: "Marvel", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  white-space: pre;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 10px 0;
 }
 
 .glightbox,
@@ -90,8 +91,8 @@ padding: 10px 0;
   display: flex;
   justify-content: space-between;
   -webkit-font-smoothing: subpixel-antialiased;
+  text-align: center;
 }
-
 
 .md-sidebar__inner {
   background: var(--md-default-bg) !important;
@@ -113,13 +114,12 @@ padding: 10px 0;
   color: #00eaff;
 }
 
-
-[data-md-color-scheme=slate] .md-header__option:before {
-content: "Dark \aSide";
+[data-md-color-scheme="slate"] .md-header__option:before {
+  content: "Dark \aSide";
 }
-[data-md-color-scheme=default] .md-header__option:before {
-content: "Jedi \aSide";
+[data-md-color-scheme="default"] .md-header__option:before {
+  content: "Jedi \aSide";
 }
-[data-md-color-scheme=dracula] .md-header__option:before {
-content: "Dracula \aSide";
+[data-md-color-scheme="dracula"] .md-header__option:before {
+  content: "Dracula \aSide";
 }

@@ -20,6 +20,8 @@ const expeditor = new Expeditor(mil, false);
 
 initForm(app);
 
+window.onload = updateAbex;
+
 app.addEventListener("change", (e) => {
   if (e.target instanceof HTMLInputElement) {
     inputChange(e.target);

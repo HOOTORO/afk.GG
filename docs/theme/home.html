@@ -8,7 +8,10 @@
   .md-header {
     position: initial;
   }
-
+  .md-main,
+  .md-content {
+    align-self: center;
+  }
   /* Remove spacing, as we cannot hide it completely */
   .md-main__inner {
     margin: 0;
@@ -31,23 +34,17 @@
   .md-container {
     background-image: url("{{ '../assets/bg.jpg' | url }}");
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
   }
-
-  .md-typeset .new {
-    top: 35%;
-    left: 30px;
-  }
-  .md-typeset .example {
-    top: 35%;
-    right: 30px;
+  .md-sidebar,
+  .md-sidebar--secondary {
+    display: none !important;
   }
   .md-typeset details {
-    position: absolute;
-    max-width: 70%;
     background-color: rgba(29, 29, 29, 0.777) !important;
   }
 
@@ -55,49 +52,18 @@
     color: bisque;
     background-color: rgba(0, 0, 0, 0.777) !important;
   }
+
   [data-md-color-scheme="default"] .md-typeset .admonition,
   .md-typeset details {
     color: azure;
   }
-  .md-source-file {
-    position: absolute;
-    bottom: 10px;
-  }
+
   .md-content__inner:before {
     display: none;
   }
-
-  #main-event {
+  .md-source-file {
     position: absolute;
-    display: flex;
-    width: -webkit-fill-available;
-    margin-right: 50px;
-    margin-left: 50px;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(90, 90, 220, 0.328);
-    border-radius: 10px;
-    padding: 14px;
-    box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
-      0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
-  }
-  .main-container {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    padding-bottom: 20px;
-  }
-
-  .main-e-label {
-    display: flex;
-    background-color: blueviolet;
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 10px;
-    justify-content: center;
-    box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
-      0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
-    border: 0.5px outset orange;
+    bottom: 0;
   }
 </style>
 {% endblock %} {% block libs %}
@@ -106,7 +72,7 @@
 <!-- Content -->
 {% block content %}
 <div id="main-event">
-  <h1>Abyssal Expedition #10 season, time!</h1>
+  <h1>Abyssal Expedition #10</h1>
   <div class="main-container">
     <span id="start"></span>
     <span id="silent"></span>
@@ -150,14 +116,6 @@
 {% endblock %} {% block scripts %}
 <!-- Add scripts that need to run before here -->
 {{ super() }}
-
-<script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}">
-  document$.subscribe(() => {
-
-    const abexStart = new Date(2023, 6, 8, 3)
-    startTimer(abexStart)
-  })
-</script>
 
 <!-- Add scripts that need to run afterwards here -->
 {% endblock %}
