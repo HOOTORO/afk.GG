@@ -93,8 +93,6 @@ app.addEventListener("change", (x: InputEvent) => {
     } else {
       updateResourceBox(user.income);
     }
-    // const weeks = localStorage.getItem("rangeValue");
-    // updateResourceBox(user.income, parseInt(weeks));
   }
 });
 

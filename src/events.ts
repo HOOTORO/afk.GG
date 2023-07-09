@@ -38,7 +38,5 @@ $(window).on("hashchange", "body", function (x) {
 
 $(document).on("change", "input[type='number']", function (x) {
   $(this).val(x.target.value);
-  console.log("change number triggeredd");
-  // rangeSlide(x.target.value, user);
-  // updateResourceBox(user.income, x.target.value);
+  console.log("change number triggered");
 });

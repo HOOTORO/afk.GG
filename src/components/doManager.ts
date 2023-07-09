@@ -86,10 +86,6 @@ function buildElement(el: htmlTags, properties?: prop[], labelText?: string) {
 }
 
 function buildProperty(k: string, val: string) {
-  const enm = Object.entries(tagAttrs).find((x) => {
-    return x[0] === k || x[1] === k;
-  });
-
   return { n: k, v: val } as prop;
 }
 

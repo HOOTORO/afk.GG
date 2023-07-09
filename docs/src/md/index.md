@@ -39,7 +39,7 @@ template: home.html
 
 ////
 
-//// details | AbEx Season 10
+//// details | Boss Attack Calculator
     type: example
 Калькулятор атак по ласт боссу.  
 Указываете количество зрителей и текущую стамину,  
