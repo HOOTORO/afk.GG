@@ -1,6 +1,11 @@
-import { bres } from "../constants.js";
+import { bres, verb } from "../constants.js";
 import { BaseResQty, User, prop } from "../types.js";
 import { updateResourceBox } from "./output.js";
+export const xLog = (x: string) => {
+  if (verb) {
+    console.log(x);
+  }
+};
 
 function generateAFKResObj(x: string) {
   const gid = x.toLowerCase().replace(/ /g, "-"),

@@ -6,19 +6,14 @@ import {
   populateStorage,
   rangeSlide,
   setApp,
+  xLog,
 } from "./components/helper.js";
 import { makeOut, updateResourceBox } from "./components/output.js";
 import { ValueModes, userFields, verb } from "./constants.js";
 import { Gsheet, RankReward, User } from "./types.js";
 
-export const L = (x: string) => {
-  if (verb) {
-    console.log(x);
-  }
-};
-
-L(`[Extended log] => ${verb}`);
-L(`Looking for entry tag...`);
+xLog(`[Extended log] => ${verb}`);
+xLog(`Looking for entry tag...`);
 export const app = document.getElementById("app");
 
 const user: User = new User("1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY");
@@ -26,7 +21,7 @@ initUser();
 startApp();
 
 function initUser() {
-  L(`Init user...`);
+  xLog(`Init user...`);
   for (let inputField of userFields) {
     if (!localStorage.getItem(inputField.name)) {
       const selected = $(inputField.name).find(":selected").get(0);
@@ -38,10 +33,10 @@ function initUser() {
 }
 
 function startApp() {
-  L("launch app...");
+  xLog("launch app...");
   app.appendChild(makeOut());
-  drawInputs().catch((x) => L(`Promise rejected => ${x}`));
-  L("app started");
+  drawInputs().catch((x) => xLog(`Promise rejected => ${x}`));
+  xLog("app started");
 }
 
 async function drawInputs() {
@@ -64,7 +59,7 @@ async function drawInputs() {
         loadRewards(x.mode, t);
       })
       .then(() => app.appendChild(inputForm))
-      .catch((x: PromiseRejectedResult) => L(`Promise rejected${x.status}`))
+      .catch((x: PromiseRejectedResult) => xLog(`Promise rejected${x.status}`))
       .finally(() => {
         setTimeout(() => {
           app.dispatchEvent(new InputEvent("change"));

@@ -1,6 +1,5 @@
 import { AfkArena, Period } from "./constants.js";
 
-console.log("dust load!");
 const f = document.getElementById("dust-input") as HTMLFormElement,
   shopRefresh = document.getElementById("a") as HTMLInputElement,
   monthlyCard = document.getElementById("c") as HTMLInputElement,

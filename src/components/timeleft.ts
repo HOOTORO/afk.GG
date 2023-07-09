@@ -93,7 +93,6 @@ function formatTime(time: number) {
 function setRemainingPathColor(timeLeft: number, el: string) {
   const { alert, warning, info } = COLOR_CODES;
   const hLeft = timeLeft / 1000 / 60 / 60;
-  console.log(hLeft);
 
   if (hLeft <= alert.threshold) {
     document
