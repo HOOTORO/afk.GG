@@ -19,7 +19,7 @@ theme:
   icon:
     repo: fontawesome/brands/git-alt
   font:
-    text: Palanquin Dark
+    text: Play
     code: Fira Mono
   palette:
     - scheme: default
