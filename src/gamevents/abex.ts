@@ -37,9 +37,8 @@ function updateAbex() {
   mil.viewers = parseInt(
     document.getElementById("mil-specs").getAttribute("value")
   );
-  expeditor.starStatus = document.getElementById("mil-sod").checked
-    ? true
-    : false;
+  const sod = document.getElementById("mil-sod") as HTMLInputElement;
+  expeditor.starStatus = sod.checked ? true : false;
   expeditor.currentFood = parseInt(
     document.getElementById("ex-food").getAttribute("value")
   );
