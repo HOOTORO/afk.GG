@@ -1,5 +1,4 @@
 import { AfkArena, Period } from "./constants.js";
-console.log("dust load!");
 const f = document.getElementById("dust-input"), shopRefresh = document.getElementById("a"), monthlyCard = document.getElementById("c"), fastRewards = document.getElementById("d"), checks = Object.values(document.querySelectorAll("input[type='checkbox']"));
 window.onload = CountDust;
 f.oninput = lo;

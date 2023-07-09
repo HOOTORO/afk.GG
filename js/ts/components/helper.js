@@ -1,4 +1,10 @@
+import { verb } from "../constants.js";
 import { updateResourceBox } from "./output.js";
+export const xLog = (x) => {
+    if (verb) {
+        console.log(x);
+    }
+};
 function generateAFKResObj(x) {
     const gid = x.toLowerCase().replace(/ /g, "-"), short = x
         .split(" ")

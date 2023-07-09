@@ -1,6 +1,6 @@
 const FULL_DASH_ARRAY = 283;
-const WARNING_THRESHOLD = 10;
-const ALERT_THRESHOLD = 5;
+const WARNING_THRESHOLD = 96;
+const ALERT_THRESHOLD = 24;
 const COLOR_CODES = {
     info: {
         color: "green",
@@ -14,7 +14,7 @@ const COLOR_CODES = {
         threshold: ALERT_THRESHOLD,
     },
 };
-const TIME_LIMIT = 200000;
+let TIME_LIMIT = 2000;
 let remainingPathColor = COLOR_CODES.info.color;
 let temp = `
 <div class="base-timer">
@@ -40,7 +40,8 @@ let temp = `
 function onTimesUp(ti) {
     clearInterval(ti);
 }
-export default function startTimer(goal, el, tn, sla) {
+export default function startTimer(countFrom, goal, el, tn, sla) {
+    TIME_LIMIT = goal.getTime() - countFrom.getTime();
     const now = new Date();
     let timePassed = 0;
     let timeLeft = now.getTime();
@@ -73,7 +74,8 @@ function formatTime(time) {
 }
 function setRemainingPathColor(timeLeft, el) {
     const { alert, warning, info } = COLOR_CODES;
-    if (timeLeft <= alert.threshold) {
+    const hLeft = timeLeft / 1000 / 60 / 60;
+    if (hLeft <= alert.threshold) {
         document
             .getElementById(`${el}-base-timer-path-remaining`)
             .classList.remove(warning.color);
@@ -81,7 +83,7 @@ function setRemainingPathColor(timeLeft, el) {
             .getElementById(`${el}-base-timer-path-remaining`)
             .classList.add(alert.color);
     }
-    else if (timeLeft <= warning.threshold) {
+    else if (hLeft <= warning.threshold) {
         document
             .getElementById(`${el}-base-timer-path-remaining`)
             .classList.remove(info.color);

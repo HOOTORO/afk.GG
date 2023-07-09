@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 
-{% block htmltitle %} 
-  {{ super() }} 
+{% block htmltitle %}
+{{ super() }}
 {% endblock %}
 
 {% macro input(name, id=name.lower().replace(' ', '-'), value='', legend='', type='text', min=0, max=100, size=20,
@@ -80,7 +80,4 @@ opts=[], nonval=[], icon=[]) -%}
 <!-- Add scripts that need to run before here -->
 {{ super() }}
 <!-- Add scripts that need to run afterwards here -->
-<script>
-  console.log("Enter Dustman");
-</script>
 {% endblock %}

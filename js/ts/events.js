@@ -23,7 +23,6 @@ $(document).on("mousemove", "input[type='range']", function (x) {
 });
 $(window).on("hashchange", "body", function (x) {
     console.log("WE CHANGE PAGE ");
-    console.log(x);
 });
 $(document).on("change", "input[type='number']", function (x) {
     $(this).val(x.target.value);

@@ -2,9 +2,9 @@ import { buildElement, buildProperty, createElem, DElem, ElProps, genId, } from 
 import * as t from "../components/timeleft.js";
 import { AbEx, Boss } from "../constants.js";
 import { Expeditor, Militia } from "../types.js";
-t.default(AbEx.start(), "start", "Старт", "В процессе");
-t.default(AbEx.silentHoursIn(), "silent", "Тихий час", "Наступил");
-t.default(AbEx.left(), "left", "Финиш", "Сезон<br>завершен");
+t.default(AbEx.now, AbEx.start(), "start", "Старт", "В процессе");
+t.default(AbEx.start(), AbEx.silentHoursIn(), "silent", "Тихий час", "Наступил");
+t.default(AbEx.start(), AbEx.left(), "left", "Финиш", "Сезон<br>завершен");
 const app = document.getElementById("rem-food");
 const mil = new Militia(10);
 const expeditor = new Expeditor(mil, false);

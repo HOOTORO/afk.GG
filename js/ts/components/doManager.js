@@ -76,7 +76,6 @@ function processSpecialProp(p) {
                 buildProperty(tagAttrs.Src, p.v),
                 buildProperty(tagAttrs.Width, iconSize.toString()),
             ]);
-            console.log(img);
             y.parentNode.insertBefore(img, y);
         };
     }
