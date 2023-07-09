@@ -129,3 +129,30 @@ function inputChange(e: HTMLInputElement) {
     e.setAttribute("value", e.value);
   }
 }
+
+function updateProgressBar() {
+  let totalHours = AbEx.abexDurationDays * 24;
+  let timepassed = totalHours - AbEx.hoursLeft();
+  let percent = (timepassed / totalHours) * 100;
+  const bar = document.getElementsByClassName("abex-progress").item(0);
+  if (bar) {
+    const style = bar.getElementsByClassName("progress-bar").item(0);
+    const label = bar.getElementsByClassName("progress-label").item(0);
+    style.setAttribute("style", `width:${percent.toFixed(2)}%`);
+    label.innerHTML = `${percent.toFixed(2)}% done`;
+    for (const item of bar.classList) {
+      if (item.startsWith("progress-")) {
+        bar.removeAttribute(item);
+
+        bar.setAttribute(
+          "class",
+          `progress progress-${((percent / 10) * 10).toFixed(
+            0
+          )}plus candystripe candystripe-animate abex-progress`
+        );
+      }
+    }
+  }
+}
+
+export { updateProgressBar };

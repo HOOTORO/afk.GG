@@ -1,21 +1,25 @@
-{% extends "base.html" %} 
-{% block styles %} 
+{% extends "base.html" %}
+{% block styles %}
 {{ super() }}
 <link rel="stylesheet" href="{{ 'css/main.css' | url }}" />
 {% endblock %}
- {% block htmltitle %}
+{% block htmltitle %}
 <title>afk.GG</title>
 {% endblock %}
+{% block announce %}{% include "announce.j2" ignore missing %}{% endblock %}
+
 {% block content %}
 {% include "templates/metacontent.j2" %}
-{{ page.content }}
+{{page.content }}
 {% endblock %}
+
 {% block scripts %}
 <!-- Add scripts that need to run before here -->
 {{ super() }}
 <!-- Add scripts that need to run afterwards here -->
 {% endblock %}
+
 {% block footer %}
 {{ super() }}
-{{ page.footer }}
+{{page.footer }}
 {% endblock %}

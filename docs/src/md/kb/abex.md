@@ -7,13 +7,15 @@ template: templates/abex.j2
 
 ## Boss Attack Calculator
 
-//// tip | Hollywood!
+//// tip | Don't miss a thing!
 Калькулятор атак по ласт боссу.  
 Указываете количество зрителей и текущую стамину,  
 он считает сколько атак можно сделать без потери атаки и сколько ретраев можно сделать.  
 
 /// html | div#rem-food
 ///
+
+[=86% "86% almost done!"]{: .candystripe .candystripe-animate .abex-progress}
 
 Удачи всем!
 ////
