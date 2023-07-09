@@ -1,6 +1,6 @@
 const FULL_DASH_ARRAY = 283;
-const WARNING_THRESHOLD = 10;
-const ALERT_THRESHOLD = 5;
+const WARNING_THRESHOLD = 96;
+const ALERT_THRESHOLD = 24;
 
 const COLOR_CODES = {
   info: {
@@ -16,7 +16,7 @@ const COLOR_CODES = {
   },
 };
 
-const TIME_LIMIT = 200000;
+let TIME_LIMIT = 2000;
 let remainingPathColor = COLOR_CODES.info.color;
 
 let temp = `
@@ -46,11 +46,13 @@ function onTimesUp(ti: string | number | NodeJS.Timeout) {
 }
 
 export default function startTimer(
+  countFrom: Date,
   goal: Date,
   el: string,
   tn: string,
   sla: string
 ) {
+  TIME_LIMIT = goal.getTime() - countFrom.getTime();
   const now = new Date();
   let timePassed = 0;
   let timeLeft = now.getTime();
@@ -90,14 +92,17 @@ function formatTime(time: number) {
 
 function setRemainingPathColor(timeLeft: number, el: string) {
   const { alert, warning, info } = COLOR_CODES;
-  if (timeLeft <= alert.threshold) {
+  const hLeft = timeLeft / 1000 / 60 / 60;
+  console.log(hLeft);
+
+  if (hLeft <= alert.threshold) {
     document
       .getElementById(`${el}-base-timer-path-remaining`)
       .classList.remove(warning.color);
     document
       .getElementById(`${el}-base-timer-path-remaining`)
       .classList.add(alert.color);
-  } else if (timeLeft <= warning.threshold) {
+  } else if (hLeft <= warning.threshold) {
     document
       .getElementById(`${el}-base-timer-path-remaining`)
       .classList.remove(info.color);
