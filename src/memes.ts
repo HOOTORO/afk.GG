@@ -31,12 +31,18 @@ function initialize(memes: { memes: any }) {
       if (i * rowsPerCol + j >= sortedMems.length) {
         break;
       }
+      let memurl = sortedMems[i * rowsPerCol + j] as string;
+      const src = (x: string) => {
+        if (x.startsWith("http")) {
+          return memurl;
+        } else {
+          return `/afk.GG/assets/images/meme/${sortedMems[i * rowsPerCol + j]}`;
+        }
+      };
       const image = nodeAttributes("img", [
           {
             key: "src",
-            value: `/afk.GG/assets/images/meme/${
-              sortedMems[i * rowsPerCol + j]
-            }`,
+            value: src(memurl),
           },
           { key: "alt", value: `meme-${i * rowsPerCol + j}` },
           { key: "class", value: "mem" },
@@ -49,9 +55,7 @@ function initialize(memes: { memes: any }) {
           { key: "class", value: "glightbox" },
           {
             key: "href",
-            value: `/afk.GG/assets/images/meme/${
-              sortedMems[i * rowsPerCol + j]
-            }`,
+            value: src(memurl),
           },
           { key: "data-type", value: "image" },
           { key: "data-width", value: "200px" },
