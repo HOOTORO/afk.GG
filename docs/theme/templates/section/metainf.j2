@@ -7,6 +7,7 @@
         <em>
 
           {% include "templates/section/gauthors.j2" %}
+          {% include "templates/section/gdates.j2" %}
           {# git_page_authors | default("enable mkdocs-git-authors-plugin")
           {% if page.meta and page.meta.author %}
             <br>
@@ -18,7 +19,6 @@
   </div>
 {% endif %}
 
-{% include "templates/section/gdates.j2" %}
 
 {% if page.meta.date and false %}
   <span>orig:<time class="publdate" datetime="{{ page.meta.date }}">

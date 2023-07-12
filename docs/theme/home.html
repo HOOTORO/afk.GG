@@ -74,9 +74,23 @@
   .md-content__inner:before {
     display: none;
   }
+
+  .md-source-file {
+    position: absolute;
+    text-align: center;
+    background-color: rgb(4 28 31 / 56%);
+    border-radius: 10px;
+    bottom: 20px;
+    width: 45vw;
+  }
+
+  .md-source-file>* {
+    -webkit-text-stroke-color: black;
+  }
 </style>
-{% endblock %} {% block libs %}
-<script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script>
+{% endblock %}
+{% block libs %}
+<!-- <script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script> -->
 {% endblock %}
 <!-- Content -->
 {% block content %}
@@ -120,6 +134,10 @@
 {% endblock %}
 {% block scripts %}
 <!-- Add scripts that need to run before here -->
+<script type="module">
+  import * as ab from "./js/ts/gamevents/abex.js"
+  ab.default()
+</script>
 {{ super() }}
 
 <!-- Add scripts that need to run afterwards here -->

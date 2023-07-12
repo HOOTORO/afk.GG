@@ -23,4 +23,4 @@ glightbox.auto_caption: false
 
 |                        Видео                                                      мемасы                        |
 |:---------------------------------------------------------------------------------------------------------------:|
-| <video width="320" height="240" controls><source src="/afk.GG/assets/vids/phil.webm" type="video/webm"></video> |
+| <video width="320" height="240" controls><source src="https://cdn.discordapp.com/attachments/1128503638470447154/1128503813117051030/phil.webm"" type="video/webm"></video> |

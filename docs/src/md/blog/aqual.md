@@ -191,9 +191,11 @@ _Сир_ уже думает, что существует Коалиция "АН
 
 <center>
     <video width="320" height="240" controls>
-        <source src="/afk.GG/assets/vids/assmodeus.webm" type="video/webm">
+        <source src="https://cdn.discordapp.com/attachments/1128503638470447154/1128503812596969533/assmodeus.webm" type="video/webm">
     </video>  
 </center>
+
+<!-- ![aa](https://cdn.discordapp.com/attachments/1128503638470447154/1128503812596969533/assmodeus.webm) -->
 
 В войсе помимо меня был Сир и зам Бореас, поднялась тема бездны, хотел отыграть в Ethernum, но Сир в приказном порядке говорит отыграть в Акве, мол, "вы получили аккаунты благодаря Акве, вы мне обязаны", после чего состоится такой диалог:
 >-Если что, Ингвар выкупит акк, если ты продолжишь делать мозги. Если хватит тебе совести.  
@@ -481,3 +483,5 @@ _Пох_: "Мы же договаривались"[^deal].
 [l15]: https://media.discordapp.net/attachments/976976670345035796/1128349389287608383/image-14.jpg
 [notgay]: https://media.discordapp.net/attachments/976976670345035796/1128351848147976283/image-15.png
 [moo]: https://media.discordapp.net/attachments/976976670345035796/1128349697761869835/image-0.jpg
+
+[vias]: https://cdn.discordapp.com/attachments/1128503638470447154/1128503812596969533/assmodeus.webm

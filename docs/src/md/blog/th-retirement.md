@@ -318,7 +318,7 @@ _Ставь лукаса если находишься в перманентно
 </figure>
 
 <figure markdown>
-<video width="700" controls><source src="../../assets/vids/20220625ginfo.mp4" type="video/mp4"></video>
+<video width="700" controls><source src="https://cdn.discordapp.com/attachments/1128503638470447154/1128503811976216628/20220625ginfo.mp4" type="video/mp4"></video>
 
 ![1](../assets/images/th-retirement/36.jpg)
 ![ybRdVmS](../assets/images/th-retirement/37.jpg)

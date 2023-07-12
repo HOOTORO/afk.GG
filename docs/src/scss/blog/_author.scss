@@ -18,6 +18,7 @@
   em {
     font-style: oblique;
     flex-wrap: wrap;
+    font-size: 0.8rem;
 
     pre {
       margin-left: 30px;
@@ -34,7 +35,7 @@
     border-radius: 10px;
     margin: 5px;
     background-color: var(--md-code-bg-color);
-    -webkit-text-stroke: medium rgba(0, 219, 255, 1);
+    -webkit-text-stroke: thin rgba(0, 219, 255, 1);
     -webkit-font-smoothing: subpixel-antialiased;
   }
 }

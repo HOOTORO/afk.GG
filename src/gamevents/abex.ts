@@ -10,30 +10,36 @@ import * as t from "../components/timeleft.js";
 import { AbEx, Boss } from "../constants.js";
 import { Expeditor, Militia } from "../types.js";
 
-t.default(AbEx.now, AbEx.start(), "start", "Старт", "В процессе");
-t.default(
-  AbEx.start(),
-  AbEx.silentHoursIn(),
-  "silent",
-  "Тихий час",
-  "Наступил"
-);
-t.default(AbEx.start(), AbEx.left(), "left", "Финиш", "Сезон<br>завершен");
+export default function runAbExTimers() {
+  t.default(AbEx.now, AbEx.start(), "start", "Старт", "В процессе");
+  t.default(
+    AbEx.start(),
+    AbEx.silentHoursIn(),
+    "silent",
+    "Тихий час",
+    "Наступил"
+  );
+  t.default(AbEx.start(), AbEx.left(), "left", "Финиш", "Сезон<br>завершен");
+}
 
 const app = document.getElementById("rem-food");
 const mil = new Militia(10);
 const expeditor = new Expeditor(mil, false);
+runAbExTimers();
 
-initForm(app);
+if (!app) {
+  console.log(`no apptag, return`);
+} else {
+  initForm(app);
+  window.onload = updateAbex;
 
-window.onload = updateAbex;
-
-app.addEventListener("change", (e) => {
-  if (e.target instanceof HTMLInputElement) {
-    inputChange(e.target);
-    updateAbex();
-  }
-});
+  app.addEventListener("change", (e) => {
+    if (e.target instanceof HTMLInputElement) {
+      inputChange(e.target);
+      updateAbex();
+    }
+  });
+}
 
 function updateAbex() {
   // updatevaluers
