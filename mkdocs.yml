@@ -112,6 +112,8 @@ plugins:
       auto_caption: false
       zoomable: true
       width: "100%"
+      skip_classes:
+        - "skip-lb"
   - table-reader:
       allow_missing_files: False
   - social:
