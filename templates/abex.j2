@@ -1,51 +1,38 @@
+
+
 {% extends "main.html" %}
 
-{% block styles %}
-{{ super() }}
-{% endblock %}
+{% from 'templates/macro/input.j2' import input with context %}
 
-{%block libs%}
-{{ super() }}
-<script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script>
-<script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}"></script>
-{%endblock%}
+{% block styles %}
+
+  {{ super() }}
+{% endblock styles %}
+
+{% block libs %}
+
+  {{ super() }}
+  <script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script>
+  <script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}"></script>
+{% endblock libs %}
 
 {% block tabs %}
-{{ super() }}
-{% endblock %}
+
+  {{ super() }}
+{% endblock tabs %}
 <!-- Content -->
+
 {% block content %}
 
-<div id="main-event">
-  <h1>Abyssal Expedition #10</h1>
-  <div class="main-container">
-    <span id="start"></span>
-    <span id="silent"></span>
-    <span id="left"></span>
+  {{ super() }}
+  <div id="main-event">
+    <h1>
+      Abyssal Expedition #10
+    </h1>
+    <div class="main-container">
+      <span id="start"></span>
+      <span id="silent"></span>
+      <span id="left"></span>
+    </div>
   </div>
-</div>
-{{ super() }}
-
-<!---->
-{% endblock %}
-{% block scripts %}
-<!-- Add scripts that need to run before here -->
-{{ super() }}
-
-<script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}">
-  document$.subscribe(() => {
-
-    const abexStart = new Date(2023, 6, 8, 3)
-    startTimer(abexStart)
-  })
-</script>
-<script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}">
-  document$.subscribe(() => {
-
-    const abexStart = new Date(2023, 6, 8, 3)
-    startTimer(abexStart)
-  })
-</script>
-
-<!-- Add scripts that need to run afterwards here -->
-{% endblock %}
+{% endblock content %}

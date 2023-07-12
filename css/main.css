@@ -18,10 +18,6 @@
   box-shadow: var(--md-shadow-z7);
 }
 
-.md-grid {
-  max-width: 1440px;
-}
-
 .md-banner {
   text-align: center;
 }
@@ -212,7 +208,7 @@
   --containers-bg: rgba(44, 49, 61, 0.2392156863);
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
-  --md-code-bg-color: #333333;
+  --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
@@ -780,7 +776,7 @@
   --containers-bg: rgba(44, 49, 61, 0.2392156863);
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
-  --md-code-bg-color: #333333;
+  --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
@@ -1296,7 +1292,8 @@ span {
   margin-left: auto;
 }
 
-.select-container, .inc-res {
+.select-container,
+.inc-res {
   display: inline-flex;
   max-width: fit-content;
   align-items: center;
@@ -1399,7 +1396,7 @@ span > img {
   --containers-bg: rgba(44, 49, 61, 0.2392156863);
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
-  --md-code-bg-color: #333333;
+  --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
@@ -1985,7 +1982,7 @@ select::-ms-expand {
   --containers-bg: rgba(44, 49, 61, 0.2392156863);
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
-  --md-code-bg-color: #333333;
+  --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
@@ -2575,7 +2572,7 @@ input[type=range] {
   --containers-bg: rgba(44, 49, 61, 0.2392156863);
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
-  --md-code-bg-color: #333333;
+  --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
@@ -3029,12 +3026,6 @@ figure > img {
   border-radius: 10px;
 }
 
-.ava {
-  width: 24px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 .red-font {
   color: #eb01aa !important;
 }
@@ -3059,11 +3050,19 @@ img {
   border-radius: 10px;
 }
 
-a[class=glightbox] > img[class=mem] {
-  overflow-y: hidden;
+.md-typeset img,
+.md-typeset svg,
+.md-typeset video {
+  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+}
+
+#memes img {
   max-height: 7rem;
+  overflow-y: hidden;
+  margin: 5px;
   box-shadow: 0px 0px 5px 6px rgba(40, 192, 211, 0.38);
-  margin: 15px;
 }
 
 #memes {
@@ -3071,9 +3070,14 @@ a[class=glightbox] > img[class=mem] {
   flex-wrap: wrap;
   padding: 0 4px;
 }
-
-a[class=glightbox] {
-  overflow-y: hidden;
+#memes p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#memes p * {
+  width: 200px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -3130,7 +3134,7 @@ h1 {
 }
 
 h2 {
-  text-shadow: #FC0 1px 0 10px;
+  text-shadow: #fc0 1px 0 10px;
 }
 
 .md-typeset table:not([class]) {
@@ -3308,7 +3312,7 @@ tfoot td {
   --containers-bg: rgba(44, 49, 61, 0.2392156863);
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: snow;
-  --md-code-bg-color: #333333;
+  --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
   --select-font-color: white;
   --md-footer-bg-color: #141419;
@@ -4140,8 +4144,8 @@ li > a > img {
 
 .base-timer {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 .base-timer__svg {
@@ -4183,8 +4187,8 @@ li > a > img {
 
 .base-timer-label {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   top: 0;
   color: rgb(0, 255, 252);
   display: flex;
@@ -4193,7 +4197,7 @@ li > a > img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 18px;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(0, 238, 255);
 }
 
@@ -5173,3 +5177,5 @@ diagram-div {
 .md-typeset [id]:target .headerlink {
   background-color: var(--md-accent-fg-color);
 }
+
+/*# sourceMappingURL=main.css.map */

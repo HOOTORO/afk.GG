@@ -1,0 +1,51 @@
+.ava {
+  width: 32px;
+  box-shadow: 1px 1px 5px 1px cyan, -1px -1px 5px 1px lime;
+}
+
+.authors,
+.labeled {
+  font-size: medium;
+  text-transform: uppercase;
+}
+
+.authored {
+  text-align: right;
+  position: relative;
+  margin-left: auto;
+  margin-right: 20vw;
+}
+.authored em {
+  font-style: oblique;
+  flex-wrap: wrap;
+}
+.authored em pre {
+  margin-left: 30px;
+}
+.authored em .av-wrapper {
+  display: inline-flex;
+}
+.authored code {
+  display: inline-block;
+  color: rgba(0, 191, 250, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: var(--md-code-bg-color);
+  -webkit-text-stroke: medium rgb(0, 219, 255);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+time {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .authored {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=blog.css.map */

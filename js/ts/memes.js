@@ -1,12 +1,18 @@
-fetch("/afk.GG/memes.json")
-    .then((response) => {
-    if (!response.ok) {
-        throw new Error(`HTTP error: ${response.status}`);
-    }
-    return response.json();
-})
-    .then((json) => initialize(json))
-    .catch((err) => console.error(`Fetch problem: ${err.message}`));
+export default async function memesRender() {
+    const m = Promise.resolve(fetch("/afk.GG/memes.json")
+        .then((response) => {
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+        return response.json();
+    })
+        .then((json) => initialize(json))
+        .then((x) => {
+        return x;
+    })
+        .catch((err) => console.error(`Fetch problem: ${err.message}`)));
+    return m;
+}
 function initialize(memes) {
     const memesContainer = document.getElementById("memes");
     const sortedMems = memes.memes.toSorted((a, b) => {
@@ -17,6 +23,7 @@ function initialize(memes) {
                       Memes found: ${sortedMems.length}
                       N columns:  ${colNum}
                       Overall: ${rowsPerCol} rows, with ${leftover} leftover`);
+    const elements = [];
     for (let i = 0; i < colNum; i++) {
         const column = nodeAttributes("div", [{ key: "class", value: "column" }]);
         for (let j = 0; j < rowsPerCol; j++) {
@@ -33,39 +40,32 @@ function initialize(memes) {
                 }
             };
             const image = nodeAttributes("img", [
+                { key: "alt", value: `` },
                 {
                     key: "src",
                     value: src(memurl),
                 },
-                { key: "alt", value: `meme-${i * rowsPerCol + j}` },
-                { key: "class", value: "mem" },
-                {
-                    key: "style",
-                    value: "width: 300px; height: 300px; object-fit: cover;",
-                },
             ]), glBox = nodeAttributes("a", [
-                { key: "class", value: "glightbox" },
+                { key: "class", value: "glightbox2" },
                 {
                     key: "href",
                     value: src(memurl),
                 },
                 { key: "data-type", value: "image" },
-                { key: "data-width", value: "200px" },
-                { key: "data-height", value: "300px" },
-                {
-                    key: "data-sizes",
-                    value: "(max-width: 600px) 480px, 800px",
-                },
-                { key: "data-title", value: `meme-${i * rowsPerCol + j}` },
+                { key: "data-width", value: "25%" },
+                { key: "data-height", value: "auto" },
                 { key: "data-desc-position", value: "bottom" },
-                { key: "ata-zoomable", value: "true" },
-                { key: "data-draggable", value: "false" },
             ]);
+            elements.push({
+                href: src(memurl),
+                type: "image",
+            });
             glBox.appendChild(image);
             column.appendChild(glBox);
         }
         memesContainer.appendChild(column);
     }
+    return elements;
 }
 function nodeAttributes(nodeName, attr) {
     let d = document.createElement(nodeName);

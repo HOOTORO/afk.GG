@@ -1,0 +1,50 @@
+{% macro input(name, id=name.lower().replace(' ', '-'), value='', legend='', type='text', min=0, max=100, size=20,
+  opts=[], nonval=[], icon=[]) -%}
+  {% if nonval %}
+    {% set atrbs = nonval|join(" ") %}
+  {% endif %}
+  {% if type == "select" %}
+    <select name="{{ name }}" id="{{ id }}">
+      {% for o in opts %}
+        <option value="{{ o }}">
+          {{ o }}
+        </option>
+      {% endfor %}
+    </select>
+    <label for="{{ id }}">
+      {{ name }}
+    </label>
+  {% elif type == "checkbox" -%}
+    <fieldset>
+      <legend>
+        {{ legend }}
+      </legend>
+      {% for ch in opts -%}
+        <div>
+          <input type="{{ type }}" name="{{ ch }}" id="{{ ch }}" {{ atrbs|e }}>
+          <label for="{{ ch }}">
+            {% if icon and loop.index0 < icon|length %}
+              <img alt="{{ icon[loop.index0] }}"
+                   src="../../assets/icons/s/{{ icon[loop.index0]|lower }}"
+                   width="40"
+                   height="auto">
+            {% else %}
+              {{ ch }}
+            {% endif %}
+          </label>
+        </div>
+      {% endfor %}
+    </fieldset>
+  {% else %}
+    <input type="{{ type }}" name="{{ name }}" value="{{ value|e }}" size="{{ size }}" id="{{ id }}" min="{{ min }}" max="{{ max }}" {{ atrbs|e }}>
+    {% if icon %}
+    {% endif %}
+    <label for="{{ id }}">
+      <img alt="{{ icon[0] }}"
+           src="../../assets/icons/s/{{ icon[0]|lower }}"
+           width="62"
+           height="auto">
+      {{ name }}
+    </label>
+  {% endif %}
+{%- endmacro %}
