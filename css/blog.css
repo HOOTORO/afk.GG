@@ -18,6 +18,7 @@
 .authored em {
   font-style: oblique;
   flex-wrap: wrap;
+  font-size: 0.8rem;
 }
 .authored em pre {
   margin-left: 30px;
@@ -33,7 +34,7 @@
   border-radius: 10px;
   margin: 5px;
   background-color: var(--md-code-bg-color);
-  -webkit-text-stroke: medium rgb(0, 219, 255);
+  -webkit-text-stroke: thin rgb(0, 219, 255);
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
