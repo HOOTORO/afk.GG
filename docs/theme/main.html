@@ -1,25 +1,38 @@
 {% extends "base.html" %}
+
 {% block styles %}
+
 {{ super() }}
+<link href="https://fonts.cdnfonts.com/css/twilio-sans-mono" rel="stylesheet">
 <link rel="stylesheet" href="{{ 'css/main.css' | url }}" />
-{% endblock %}
+{% endblock styles %}
+
 {% block htmltitle %}
+
 <title>afk.GG</title>
-{% endblock %}
-{% block announce %}{% include "announce.j2" ignore missing %}{% endblock %}
+{% endblock htmltitle %}
+
+{% block announce %}
+
+{% include "templates/section/announcement.j2" ignore missing %}
+{% endblock announce %}
 
 {% block content %}
-{% include "templates/metacontent.j2" %}
-{{page.content }}
-{% endblock %}
+
+{% include "templates/section/title.j2" %}
+{{ page.content }}
+
+{% endblock content %}
 
 {% block scripts %}
+
 <!-- Add scripts that need to run before here -->
 {{ super() }}
 <!-- Add scripts that need to run afterwards here -->
-{% endblock %}
+{% endblock scripts %}
 
 {% block footer %}
+
 {{ super() }}
-{{page.footer }}
-{% endblock %}
+{{ page.footer }}
+{% endblock footer %}

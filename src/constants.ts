@@ -40,13 +40,13 @@ class AfkArena {
 
 class AbEx {
   static now = new Date();
-  static abexDurationDays = 18;
+  static abexDurationDays = 19;
   static silentDay = 1;
   static baseIncome = 4;
   static viewerMultiplier = 1.2;
   static starFasterRecoveryMod = 0.9;
   static start() {
-    return new Date(2023, 6, 8, 3, 0, 0);
+    return new Date(2023, 6, 5, 3, 0, 0);
   }
   static leftToStart() {
     return new Date(this.start().getTime() - this.now.getTime());
@@ -206,8 +206,12 @@ const url = function (x: string) {
 };
 
 export {
+  AbEx,
   AfkArena,
+  Boss,
   GameMode,
+  Period,
+  ValueModes,
   allRes,
   base,
   bres,
@@ -220,8 +224,4 @@ export {
   userFields,
   verb,
   xh,
-  Period,
-  ValueModes,
-  AbEx,
-  Boss,
 };

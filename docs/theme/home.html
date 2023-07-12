@@ -1,20 +1,30 @@
 {% extends "base.html" %}
 
 <!-- Render hero under tabs -->
-{% block tabs %} {{ super() }}
+{% block tabs %}
+{{ super() }}
 <!-- Additional styles for landing page -->
 <style>
   /* Application header should be static for the landing page */
   .md-header {
     position: initial;
   }
+
+
   .md-main,
   .md-content {
-    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 50%;
   }
+
   /* Remove spacing, as we cannot hide it completely */
   .md-main__inner {
-    margin: 0;
+    margin: 0 !important;
+  }
+
+  .md-sidebar {
+    display: none !important;
   }
 
   /* Hide table of contents */
@@ -40,10 +50,13 @@
     background-size: cover;
     opacity: 1;
   }
+
   .md-sidebar,
   .md-sidebar--secondary {
-    display: none !important;
+    visibility: hidden;
+
   }
+
   .md-typeset details {
     background-color: rgba(29, 29, 29, 0.777) !important;
   }
@@ -61,10 +74,6 @@
   .md-content__inner:before {
     display: none;
   }
-  .md-source-file {
-    position: absolute;
-    bottom: 0;
-  }
 </style>
 {% endblock %} {% block libs %}
 <script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script>
@@ -79,7 +88,8 @@
     <span id="left"></span>
   </div>
 </div>
-{{ super() }} {% endblock %}
+{{ super() }}
+{% endblock %}
 
 <!-- Application footer -->
 {% block footer %}
@@ -91,21 +101,15 @@
       <div class="mdx-hero__content">
         <div class="cont">
           <p>Get ready to dive into idless afk...</p>
-          <a
-            href="{{ page.next_page.url | url }}"
-            title="{{ page.next_page.title | e }}"
-            class="md-button md-button--primary"
-          >
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+            class="md-button md-button--primary">
             Take A Look
           </a>
         </div>
         <div class="cont">
           <p>or if you're looking for Better Discord Themes...</p>
-          <a
-            href="{{ 'https://hootsdev.github.io/Disco.th/' | url }}"
-            title="Looking for BetterDiscord Themes?"
-            class="md-button"
-          >
+          <a href="{{ 'https://hootsdev.github.io/Disco.th/' | url }}" title="Looking for BetterDiscord Themes?"
+            class="md-button">
             Check this out!
           </a>
         </div>
@@ -113,7 +117,8 @@
     </div>
   </div>
 </section>
-{% endblock %} {% block scripts %}
+{% endblock %}
+{% block scripts %}
 <!-- Add scripts that need to run before here -->
 {{ super() }}
 

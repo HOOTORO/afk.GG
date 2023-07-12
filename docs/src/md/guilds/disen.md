@@ -1,11 +1,9 @@
 ---
-title: AFK Community Discord servers
+title: EN servers
 description: >
-  English speaking servers
+  AFK Community English speaking servers
 template: main.html
 ---
-
-# Список серверов англоговорящей части сообщества
 
 ## [Crowd Sourcing](https://discord.gg/EYtHQVWSyn){:target="_blank" rel="noopener noreferrer"}
 

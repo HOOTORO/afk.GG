@@ -1,7 +1,7 @@
 .base-timer {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 .base-timer__svg {
@@ -43,8 +43,8 @@
 
 .base-timer-label {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   top: 0;
   color: rgb(0 255 252);
   display: flex;
@@ -53,6 +53,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 18px;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(0, 238, 255);
 }

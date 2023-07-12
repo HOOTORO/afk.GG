@@ -1,0 +1,33 @@
+{% from 'templates/macro/avatar.j2' import renderAva with context %}
+
+{% if git_page_authors %}
+  <div class="md-source-date">
+    <div class="authored">
+      <strong>
+        <em>
+
+          {% include "templates/section/gauthors.j2" %}
+          {# git_page_authors | default("enable mkdocs-git-authors-plugin")
+          {% if page.meta and page.meta.author %}
+            <br>
+            Original text  by [{{ page.meta.author }}]
+          {% endif %} #}
+        </em>
+      </strong>
+    </div>
+  </div>
+{% endif %}
+
+{% include "templates/section/gdates.j2" %}
+
+{% if page.meta.date and false %}
+  <span>orig:<time class="publdate" datetime="{{ page.meta.date }}">
+    {{ page.meta.date }}
+  </time>
+  {% if page.meta.updated %}
+    <span>upd:<time class="updated" datetime="{{ page.meta.updated }}">
+      |>{{ (page.meta.updated - page.meta.date).days }} days ago
+    </time>
+  </span>
+{% endif %}
+{% endif %}

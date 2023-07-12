@@ -1,98 +1,105 @@
 @import "../palette/colors";
-@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 figure > img {
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.ava {
-    width: 24px;
-    margin-left: 5px;
-    margin-right: 5px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .red-font {
-    color: #eb01aa !important;
+  color: #eb01aa !important;
 }
 
 .green-f {
-    color: green !important;
+  color: green !important;
 }
 
 .brown-f {
-    color: brown !important;
+  color: brown !important;
 }
 
 .cyan-f {
-    color: cyan !important;
+  color: cyan !important;
 }
 
 em {
-    color: rgb(33, 111, 222);
+  color: rgb(33, 111, 222);
 }
 
 img {
-    border-radius: 10px;  
+  border-radius: 10px;
+}
+.md-typeset img,
+.md-typeset svg,
+.md-typeset video {
+  object-fit: cover;
+  height: auto;
+  max-width: 100%;
 }
 
-a[class=glightbox] > img[class=mem] {
-    overflow-y: hidden;
-    max-height: 7rem;
-    box-shadow: 0px 0px 5px 6px rgb(40 192 211 / 38%);
-    margin: 15px;
+#memes img {
+  max-height: 7rem;
+  overflow-y: hidden;
+  margin: 5px;
+  box-shadow: 0px 0px 5px 6px rgb(40 192 211 / 38%);
 }
 #memes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+  p {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    justify-content: space-between;
+    align-items: center;
+    * {
+      width: 200px;
+    }
   }
+}
 
-  a[class="glightbox"] {
-        overflow-y: hidden;
-  }
-  
-  /* Create four equal columns that sits next to each other */
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
   .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+}
 
 .new::after {
-    content: "new!";
-    font-size: small;
-    color: red;
-    vertical-align: super;
+  content: "new!";
+  font-size: small;
+  color: red;
+  vertical-align: super;
 }
 
 .upd::after {
-    content: "upd!";
-    font-size: small;
-    color: red;
-    vertical-align: super;
+  content: "upd!";
+  font-size: small;
+  color: red;
+  vertical-align: super;
 }
 
 .flbox {
@@ -103,11 +110,10 @@ a[class=glightbox] > img[class=mem] {
   justify-content: space-evenly;
 }
 
-
 h1 {
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 h2 {
-    text-shadow: #FC0 1px 0 10px;
+  text-shadow: #fc0 1px 0 10px;
 }

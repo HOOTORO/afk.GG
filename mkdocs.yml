@@ -21,8 +21,8 @@ theme:
     edit: material/pencil
     view: material/eye
   font:
-    text: Exo 2
-    code: Fira Mono
+    text: Overpass
+    code: Twilio Sans Mono
   palette:
     - scheme: default
       toggle:
@@ -45,7 +45,7 @@ theme:
       accent: deep purple
   features:
     - announce.dismiss
-    - content.action.edit
+    # - content.action.edit
     - content.code.copy
     - content.code.annotate
     - search.share
@@ -75,7 +75,7 @@ nav:
   - Сообщество:
       - guilds/index.md
       - guilds/meme.md
-      - СНГ Топ:
+      - СНГ:
           - guilds/abex.md
           - guilds/hf.md
       - Discord:
@@ -111,27 +111,30 @@ plugins:
       loop: true
       auto_caption: false
       zoomable: true
+      width: "100%"
   - table-reader:
       allow_missing_files: False
   - social:
       cards: !ENV [CI, true]
   - git-revision-date-localized:
-      # enabled: !ENV [ENABLED_GIT_REVISION_DATE, true]
-      strict: false
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, true]
+      strict: true
       fallback_to_build_date: true
       enable_creation_date: true
       timezone: Europe/Moscow
       locale: ru
   - git-authors:
-      # enabled: !ENV [ENABLED_GIT_AUTHORS, True]
+      enabled: !ENV [ENABLED_GIT_AUTHOR, true]
       show_contribution: true
       show_line_count: true
-      count_empty_lines: true
+      show_email_address: false
+      fallback_to_empty: true
+      sort_authors_by: name
+      strict: false
   - tags:
       enabled: !ENV [CI, false]
       tags_file: tags.md
   # - git-committers:
-  #     enabled: false
   #     repository: Hootsdev/afk.GG
   #     branch: master
   #     token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]

@@ -1,0 +1,19 @@
+{
+  "blank_line_after_tag": "load,extends,include",
+  "blank_line_before_tag": "block,load,extends,include",
+  "custom_blocks": "block",
+  "extension": "*.j2",
+  "format_attribute_template_tags": true,
+  "format_css": true,
+  "css": {
+    "indent_size": 5
+  },
+  "format_js": true,
+  "js": {
+    "indent_size": 5
+  },
+  "ignore": "T003",
+  "line_break_after_multiline_tag": "false",
+  "profile": "jinja",
+  "use_gitignore": true
+}

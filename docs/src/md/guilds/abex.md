@@ -4,9 +4,9 @@ description: >
   СНГ и глобал топы
 template: main.html
 ---
-# AbEx Rankings
+## AbEx Rankings
 
-## Season 9
+### Season 9
 
 ![res](../assets/images/top/aes9rurank.jpg)
 

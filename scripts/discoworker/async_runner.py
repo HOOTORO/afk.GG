@@ -11,7 +11,7 @@ def env(k):
     else:
         return  ""
 
-class MemeScapper(discord.Client):
+class MemeScrapper(discord.Client):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -27,28 +27,23 @@ class MemeScapper(discord.Client):
         try:
             await self.wait_until_ready()
             channel = self.get_channel(int(env("memesch")))  # channel ID goes here
-            print(f'1.   Channel => {channel.name}')
-            
+            log_channel = self.get_channel(int(env("logchan")))
             while not self.is_closed():
-                self.imageLinks = []
+                self.imageLinks:str = []
                 async for message in channel.history(limit=200):
                     if len(message.attachments) > 0:
                         for a in message.attachments:
                             self.imageLinks.append(a.url)
                 await self.close()
-                    # await channel.send(msg)
-                    # await asyncio.sleep(2)  # task runs every 60 seconds
         except Exception:
-            await channel.send("ZERO IMAGES DESU")
+            await log_channel.send("memes fetch failed, something went wrong")
             await self.close()
 
 
 
-def getMemes():
+def get_memes():
     intents = discord.Intents.default()
     intents.members = True
-
-    client = MemeScapper(intents=intents)
+    client = MemeScrapper(intents=intents)
     client.run(env("disbotok"))
-    # print(f'imsgs => {client.imageLinks}')
     return client.imageLinks

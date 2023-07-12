@@ -15,7 +15,7 @@ template: templates/abex.j2
 /// html | div#rem-food
 ///
 
-[=86% "86% almost done!"]{: .candystripe .candystripe-animate .abex-progress}
+[=100% "over9999%"]{: .candystripe .candystripe-animate .abex-progress}
 
 Удачи всем!
 ////
