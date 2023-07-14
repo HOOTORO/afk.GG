@@ -1,8 +1,8 @@
 import { rewards } from "./components/dataloader.js";
 import { populateStorage, rangeSlide } from "./components/helper.js";
 import { updateResourceBox } from "./components/output.js";
-import { ValueModes } from "./constants.js";
 import { user } from "./main.js";
+import { ValueModes } from "./model/constants.js";
 export const tLoadedEvent = new Event("tableready");
 $(document).on("change", "select", function (x) {
     const changedValue = $(x.target).find(":selected").val();

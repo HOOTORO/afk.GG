@@ -1,4 +1,4 @@
-import { url } from "../constants.js";
+import { url } from "../model/constants.js";
 async function fetchTableData(tableName) {
     const response = await fetch(url(tableName));
     const text = await response.text();

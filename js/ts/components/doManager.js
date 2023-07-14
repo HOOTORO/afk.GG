@@ -1,4 +1,4 @@
-import { iconSize } from "../constants.js";
+import { iconSize } from "../model/constants.js";
 var htmlTags;
 (function (htmlTags) {
     htmlTags["Input"] = "input";
@@ -85,5 +85,4 @@ function processSpecialProp(p) {
         };
     }
 }
-export { buildElement, buildProperty };
-export { createElem, tagAttrs as ElProps, htmlTags as DElem, createWithLabel, genId, };
+export { htmlTags as DElem, tagAttrs as ElProps, buildElement, buildProperty, createElem, createWithLabel, genId, };

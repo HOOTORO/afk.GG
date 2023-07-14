@@ -32,15 +32,15 @@
   <div id="dust-calc">
     <form id="dust-input">
       {{ input(name="",id="b", type="checkbox", legend="Set options", opts=["StoreDeal", "Misty Valley"],
-            icon=["dust-store.png"]) }}
+            icon=["icons/s/dust-store.png"]) }}
       <p>
-        {{ input(name="", id="a", type="number", value="0",max=99, icon=["refresh.png"]) }}
+        {{ input(name="", id="a", type="number", value="0",max=99, icon=["icons/s/refresh.png"]) }}
       </p>
       <p>
-        {{ input(name="",id="c", type="number", value="0",max=4, icon=["mc.png"]) }}
+        {{ input(name="",id="c", type="number", value="0",max=4, icon=["icons/s/mc.png"]) }}
       </p>
       <p>
-        {{ input(name="", id="d", type="number", value="0",max=20, icon=["fr.png"]) }}
+        {{ input(name="", id="d", type="number", value="0",max=20, icon=["icons/s/fr.png"]) }}
       </p>
       {# <p>{{ input(name="Base Income", id="z", type="number", value="1167", nonval=["readonly"]) }} per day</p> #}
       <output id="total" for="a c d">

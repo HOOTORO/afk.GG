@@ -1,5 +1,5 @@
-import { allRes, iconSize, leftover, xh } from "../constants.js";
-import { weekLabels, domElWithProperties } from "./helper.js";
+import { allRes, iconSize, leftover, xh } from "../model/constants.js";
+import { createElementN, weekLabels } from "./helper.js";
 function makeOut() {
     const out = document.createElement("div"), output = document.createElement("output"), datalist = xh +
         weekLabels(52, [
@@ -20,10 +20,10 @@ function makeOut() {
 }
 function drawResourceBox(parent) {
     allRes.forEach((el) => {
-        const resContainer = domElWithProperties("div", [
-            { n: "class", v: "inc-res" },
-        ]);
-        const rr = domElWithProperties("span", [{ n: "id", v: el }]);
+        const resContainer = createElementN("div", {
+            class: "inc-res",
+        });
+        const rr = createElementN("span", { id: el });
         resContainer.appendChild(getResImg(el));
         resContainer.appendChild(rr);
         parent.appendChild(resContainer);

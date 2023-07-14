@@ -1,4 +1,4 @@
-import { verb } from "../constants.js";
+import { verb } from "../model/constants.js";
 import { updateResourceBox } from "./output.js";
 export const xLog = (x) => {
     if (verb) {
@@ -35,16 +35,6 @@ function populateStorage(key, value) {
         setApp(key);
     }
 }
-function chainDomElement(tags) {
-    let parentEl = document.createElement(tags[0]);
-    tags.forEach((tag) => parentEl.appendChild(document.createElement(tag)));
-    return parentEl;
-}
-function domElWithProperties(tag, props) {
-    const doc = document.createElement(tag);
-    props.forEach((v) => doc.setAttribute(v.n, v.v));
-    return doc;
-}
 function weekLabels(n, stops) {
     let html = "";
     for (let i = 1; i <= n; i++) {
@@ -73,8 +63,8 @@ function radioGroups(opts) {
         for (let choice of row.res) {
             const input = `<input type="radio" id="misty-ch-${row.id}-${choice.type}" name="selector">
                             <label for="misty-ch-${row.id}-${choice.type}">
-                                ${choice.amount}
-                                <img src="../assets/icons/s/${choice.type}.png" width="24"></label>
+                            ${choice.amount}
+                            <img src="../assets/icons/s/${choice.type}.png" width="24"></label>
                             </label>`;
             wrap.innerHTML += input;
         }
@@ -82,51 +72,74 @@ function radioGroups(opts) {
     }
     return container;
 }
-function makeSelect(name, options) {
+function createSelectList(name, options) {
     const list = document.createElement("select");
     list.id = name;
-    const storedValue = localStorage.getItem(list.id);
-    for (let i = 0; i < options.length; i++) {
-        const element = options[i];
-        let opt = document.createElement("option");
-        opt.innerText = element.toString();
-        opt.setAttribute("value", element.toString());
-        if ((storedValue && storedValue === element) || (!storedValue && i === 0)) {
-            opt.setAttribute("selected", "");
-        }
-        list.appendChild(opt);
+    for (const opt of options) {
+        list.appendChild(createElementN("option", { value: opt.toString() }, opt.toString()));
+    }
+    const localVal = storedValue(name);
+    if (localVal && options.findIndex((x) => x === localVal) !== -1) {
+        list.options.item(options.findIndex((x) => x === localVal)).selected = true;
+    }
+    else {
+        list.options.item(0).setAttribute("selected", "");
     }
     return list;
 }
-const radio = `
-<form>
- <div class="misty-group">
-<input type="radio" id="option-one" name="selector"><label for="option-one">One</label>
-   <input type="radio" id="option-two" name="selector"><label for="option-two">Two</label>
-   <input type="radio" id="option-three" name="selector"><label for="option-three"><img src="https://uberstrategist.com/wp-content/uploads/2023/04/unnamed-20.png" width="24"></label>
-  </div>
-   </form>
-<form>
-   <div class="misty-group">
-<input type="radio" id="option-one1" name="selector"><label for="option-one1">One</label>
-     <input type="radio" id="option-two1" name="selector"><label for="option-two1">Two</label>
-     <input type="radio" id="option-three1" name="selector"><label for="option-three1"><img src="https://uberstrategist.com/wp-content/uploads/2023/04/unnamed-20.png" width="24"></label>
-  </div>
-   </form>
-
-`;
-function numIn(name, id, min, max, size, icon, width) {
-    const lb = domElWithProperties("label", [{ n: "for", v: `${id}` }]);
-    const img = `<img alt="${name}" src="${icon}" width="${width}">`;
-    lb.innerHTML = img;
-    return domElWithProperties("input", [
-        { n: "type", v: "number" },
-        { n: "value", v: "0" },
-        { n: "min", v: `${min}` },
-        { n: "max", v: `${max}` },
-        { n: "name", v: `${name}` },
-        { n: "size", v: `${size}` },
-        { n: "id", v: `${id}` },
-    ]).appendChild(lb);
+function createInput(t = "text", label = `Provide ${t}`, img, attrs) {
+    const labelE = createElementN("label");
+    labelE.innerHTML = label;
+    if (attrs && attrs["id"]) {
+        labelE.setAttribute("for", attrs["id"]);
+        labelE.setAttribute("id", `${attrs["id"]}__label`);
+    }
+    if (img) {
+        labelE.appendChild(createElementN("img", { src: img }));
+    }
+    if (!attrs) {
+        attrs = {};
+    }
+    attrs["type"] = t;
+    const val = storedValue(attrs["id"]);
+    if (val) {
+        attrs["value"] = val.toString();
+    }
+    labelE.appendChild(createElementN("input", attrs));
+    return labelE;
 }
-export { chainDomElement, domElWithProperties, generateAFKResObj, makeSelect, populateStorage, radioGroups, rangeSlide, setApp, weekLabels, numIn, };
+export { chainDomElement, createElementN, createInput, createSelectList, generateAFKResObj, populateStorage, radioGroups, rangeSlide, setApp, weekLabels, };
+function createElementN(tag, props, inner) {
+    const doc = document.createElement(tag);
+    if (props) {
+        Object.entries(props).forEach((k) => {
+            doc.setAttribute(k[0], k[1]);
+        });
+    }
+    if (inner) {
+        doc.innerHTML = inner;
+    }
+    return doc;
+}
+function chainDomElement(tags) {
+    let parentEl = document.createElement(tags[0]);
+    tags.forEach((tag) => parentEl.appendChild(document.createElement(tag)));
+    return parentEl;
+}
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+function storedValue(inputId, value) {
+    if (value) {
+        try {
+            localStorage.setItem(inputId, value);
+        }
+        catch (e) {
+            console.log(`save error ${e}`);
+            return false;
+        }
+        return true;
+    }
+    const v = localStorage.getItem(inputId);
+    return v ? v : false;
+}

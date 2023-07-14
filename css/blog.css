@@ -7,6 +7,7 @@
 .labeled {
   font-size: medium;
   text-transform: uppercase;
+  text-decoration: underline solid blueviolet;
 }
 
 .authored {
@@ -32,7 +33,7 @@
   font-size: 14px;
   font-weight: 400;
   border-radius: 10px;
-  margin: 5px;
+  padding: 3px;
   background-color: var(--md-code-bg-color);
   -webkit-text-stroke: thin rgb(0, 219, 255);
   -webkit-font-smoothing: subpixel-antialiased;

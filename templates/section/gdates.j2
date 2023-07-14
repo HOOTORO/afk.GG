@@ -11,8 +11,8 @@
 
 <!-- This section adds support for localized revision dates -->
 {% if page.meta.git_revision_date_localized %}
-  Last update: {{ page.meta.git_revision_date_localized }}
+  {{ page.meta.git_revision_date_localized }} <| updated 
 {% endif %}
 {% if page.meta.git_created_date_localized %}
-  Created: {{ page.meta.git_created_date_localized }}
+  {{ page.meta.git_created_date_localized }} <| created
 {% endif %}

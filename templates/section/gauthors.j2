@@ -20,21 +20,21 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/content.html -
 
 {% if git_info %}
   <div class="authors labeled">
-    Authors:
+    Authors
   </div>
   {%- for author in git_info.get('page_authors') -%}
  
  
     <div>
       <code>
-        |> ({{ author.contribution }}) |
+        {{ author.contribution }} <|
         {% if author.name.startswith("Not") %}
           Community
         {% else %}
           {{ author.name }}
         {% endif %}
-        At: {{ author.last_date }} 🞧
-        {# <a href="{{ author.email }}" title="{{ author.name }}" />,- {{ author.lines }} #}
+        {#At: {{ author.last_date }} 🞧
+          <a href="{{ author.email }}" title="{{ author.name }}" />,- {{ author.lines }} #}
       </code>
     </div>
   {%- endfor -%}

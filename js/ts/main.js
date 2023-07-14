@@ -1,9 +1,9 @@
 import { loadRewards, modeRewards, rewards } from "./components/dataloader.js";
 import { columnData } from "./components/gsheets.js";
-import { domElWithProperties, makeSelect, populateStorage, rangeSlide, setApp, xLog, } from "./components/helper.js";
+import { createElementN, createSelectList, populateStorage, rangeSlide, setApp, xLog, } from "./components/helper.js";
 import { makeOut, updateResourceBox } from "./components/output.js";
-import { ValueModes, userFields, verb } from "./constants.js";
-import { User } from "./types.js";
+import { ValueModes, userFields, verb } from "./model/constants.js";
+import { User } from "./model/types.js";
 xLog(`[Extended log] => ${verb}`);
 xLog(`Looking for entry tag...`);
 export const app = document.getElementById("app");
@@ -29,14 +29,14 @@ function startApp() {
     xLog("app started");
 }
 async function drawInputs() {
-    let inputForm = domElWithProperties("form", [{ n: "id", v: "a-form" }]);
+    let inputForm = createElementN("form", { id: "a-form" });
     modeRewards().forEach((x) => {
         const mode = ValueModes.emuns().find((s) => s.table === x.mode);
         x.table
             .then((t) => {
-            const container = domElWithProperties("div", [
-                { n: "class", v: "select-container" },
-            ]), label = document.createElement("h4"), s = makeSelect(mode.id, columnData(0, t));
+            const container = createElementN("div", {
+                class: "select-container",
+            }), label = document.createElement("h4"), s = createSelectList(mode.id, columnData(0, t));
             label.innerText = mode.id;
             container.appendChild(s);
             container.insertBefore(label, s);

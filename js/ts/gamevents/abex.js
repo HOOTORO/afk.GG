@@ -1,7 +1,7 @@
 import { buildElement, buildProperty, createElem, DElem, ElProps, genId, } from "../components/doManager.js";
 import * as t from "../components/timeleft.js";
-import { AbEx, Boss } from "../constants.js";
-import { Expeditor, Militia } from "../types.js";
+import { AbEx, Boss } from "../model/constants.js";
+import { Expeditor, Militia } from "../model/types.js";
 export default function runAbExTimers() {
     t.default(AbEx.now, AbEx.start(), "start", "Старт", "В процессе");
     t.default(AbEx.start(), AbEx.silentHoursIn(), "silent", "Тихий час", "Наступил");
@@ -50,7 +50,7 @@ function initForm(n) {
                 buildProperty("max", "9999"),
                 buildProperty("size", "20"),
                 buildProperty("value", "0"),
-                buildProperty("icon", "/afk.GG/assets/icons/ae/img_stamina_icon_big.png"),
+                buildProperty("icon", "/afk.GG/assets/ae/img_stamina_icon_big.png"),
             ],
         },
         {

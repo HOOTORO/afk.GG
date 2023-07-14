@@ -1,4 +1,4 @@
-import { GameMode, ValueModes } from "../constants.js";
+import { GameMode, ValueModes } from "../model/constants.js";
 import { fetchTableData } from "./gsheets.js";
 let rewards = [];
 function getRewards() {
@@ -30,4 +30,4 @@ function loadRewards(gm, gt) {
     });
     return rewards;
 }
-export { loadRewards, modeRewards, getRewards, rewards };
+export { getRewards, loadRewards, modeRewards, rewards };

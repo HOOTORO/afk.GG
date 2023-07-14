@@ -1,4 +1,4 @@
-import { DustChest } from "./types.js";
+import { DustChest } from "./model/types.js";
 class Period {
     static hour = 1;
     static day = 24 * this.hour;
