@@ -5,15 +5,29 @@ description: >-
 template: templates/abex.j2
 ---
 
-## Boss Attack Calculator
+## Team Test Report
+
+/// html | div#attack-app
+///
+
+/// details | Team management
+    type: settings
+    open: True
+
+/// html | div#team-set
+///
+
+///
+
+## Attack Remain Calculator
+
+/// html | div#rem-food
+///
 
 //// tip | Don't miss a thing!
 Калькулятор атак по ласт боссу.  
 Указываете количество зрителей и текущую стамину,  
 он считает сколько атак можно сделать без потери атаки и сколько ретраев можно сделать.  
-
-/// html | div#rem-food
-///
 
 [=100% "over9999%"]{: .candystripe .candystripe-animate .abex-progress}
 
@@ -22,17 +36,17 @@ template: templates/abex.j2
 
 ## Relics
 
-=== "All"
+=== "![all](/afk.GG/assets/icons/tree/hero_tag_all.png){width=24 .skip-lb}"
     ![a][rela]
-=== "![Rangers](../../assets/icons/tree/tree-agi.png){width=24 .skip-lb } "
+=== "![Rangers](/afk.GG/assets/icons/tree/tree-ranger.png){width=24 .skip-lb}"
     ![c][relcel]
-=== "![Support](../../assets/icons/tree/tree-sup.png){width=24 .skip-lb}"
+=== "![Support](/afk.GG/assets/icons/tree/tree-support.png){width=24 .skip-lb}"
     ![su][relsup]
-=== "![Mages](../../assets/icons/tree/treemag.png){width=24 .skip-lb}"
+=== "![Mages](/afk.GG/assets/icons/tree/tree-mage.png){width=24 .skip-lb}"
     ![sr][relsor]
-=== "![Tank](../../assets/icons/tree/tree-tank.png){width=24 .skip-lb}"
+=== "![Tank](/afk.GG/assets/icons/tree/tree-tank.png){width=24 .skip-lb}"
     ![rt][reltan]
-=== "![Warrior ](../../assets/icons/tree/tree-might.png){width=24 .skip-lb}"
+=== "![Warrior ](/afk.GG/assets/icons/tree/tree-might.png){width=24 .skip-lb}"
     ![rw][relwar]
 
 ## Old reddit guide for newcomers

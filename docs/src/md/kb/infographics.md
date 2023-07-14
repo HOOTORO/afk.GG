@@ -49,8 +49,8 @@ better check [bob49 document](links.md#-game-knowledge-)
 
 <figure markdown>
 
-| outdated                          | info                               |
-| --------------------------------- | ---------------------------------- |
+| outdated                 | info                      |
+|--------------------------|---------------------------|
 | ![VipCost][6]{width=400} | ![CostVip][5] {width=400} |
 
 <figcaption>Outdated</figcaption>
@@ -61,12 +61,20 @@ better check [bob49 document](links.md#-game-knowledge-)
 <figure markdown>
 
 | ![awk1][awk1] | ![awk2][awk2] |
-| ------------------------- | ------------------------- |
-| ![awk3][awk3]| ![awk4][awk4] |
-| ![awk5][awk5]| ![awk6][awk6] |
+|---------------|---------------|
+| ![awk3][awk3] | ![awk4][awk4] |
+| ![awk5][awk5] | ![awk6][awk6] |
 
 <figcaption>Outdated</figcaption>
 </figure>
+
+## Resources Val. | v.Л.Н
+
+![aaa][storevalue]
+
+## $ value | v.Л.Н
+
+![bbb][whalevalue]
 
 [1]: https://cdn.discordapp.com/attachments/976976670345035796/1126464488749682819/1.jpg
 [2]: https://cdn.discordapp.com/attachments/976976670345035796/1126463949114708009/image.png

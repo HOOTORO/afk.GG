@@ -28,6 +28,7 @@ template: home.html
     - [ ] Продолжить чистить репозиторий (artifact 93mb)
     - [ ] Сделать collapsible блоки
     - [ ] Разобраться с git-commiters плагином
+    - [ ] Сделать иконки боссов в статистике
 
 === "Change log"
 

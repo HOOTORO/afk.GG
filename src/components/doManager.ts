@@ -57,12 +57,6 @@ function genId(s: string) {
   return s.toLowerCase().replaceAll(" ", "-");
 }
 
-// const d =
-// properties && properties.length > 0
-// ? { tag: el, props: properties }
-// : ({ tag: el } as DElement);
-// return create(d.tag, d.props);
-// }
 
 function buildElement(el: htmlTags, properties?: prop[], labelText?: string) {
   const container = createElem(htmlTags.Div);

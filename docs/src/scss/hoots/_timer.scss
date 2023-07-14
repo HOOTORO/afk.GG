@@ -1,9 +1,13 @@
 .base-timer {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
+  background-color: rgba(12, 10, 10, 0.58);
+  background-image: url("../assets/ae/time.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
 }
-
 .base-timer__svg {
   transform: scaleX(-1);
 }
@@ -43,16 +47,18 @@
 
 .base-timer-label {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   top: 0;
-  color: rgb(0 255 252);
+  font-weight: bold;
+  color: rgba(18, 17, 17, 0.889);
   display: flex;
   flex-wrap: wrap;
+  -webkit-text-stroke: thin rgba(255, 0, 30, 0.764);
   word-wrap: break-word;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 19px;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(0, 238, 255);
 }

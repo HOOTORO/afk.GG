@@ -1,6 +1,6 @@
 import { allRes, iconSize, leftover, xh } from "../constants.js";
 import { BaseResQty } from "../types.js";
-import { weekLabels, domElWithProperties } from "./helper.js";
+import { createElementN, weekLabels } from "./helper.js";
 
 function makeOut() {
   const out = document.createElement("div"),
@@ -27,10 +27,10 @@ function makeOut() {
 
 function drawResourceBox(parent: Element) {
   allRes.forEach((el: string) => {
-    const resContainer = domElWithProperties("div", [
-      { n: "class", v: "inc-res" },
-    ]);
-    const rr = domElWithProperties("span", [{ n: "id", v: el }]);
+    const resContainer = createElementN("div", {
+      class: "inc-res",
+    });
+    const rr = createElementN("span", { id: el });
     resContainer.appendChild(getResImg(el));
     resContainer.appendChild(rr);
     parent.appendChild(resContainer);

@@ -1,8 +1,8 @@
 import { loadRewards, modeRewards, rewards } from "./components/dataloader.js";
 import { columnData } from "./components/gsheets.js";
 import {
-  domElWithProperties,
-  makeSelect,
+  createElementN,
+  createSelectList,
   populateStorage,
   rangeSlide,
   setApp,
@@ -40,17 +40,17 @@ function startApp() {
 }
 
 async function drawInputs() {
-  let inputForm = domElWithProperties("form", [{ n: "id", v: "a-form" }]);
+  let inputForm = createElementN("form", { id: "a-form" });
 
   modeRewards().forEach((x) => {
     const mode = ValueModes.emuns().find((s) => s.table === x.mode);
     x.table
       .then((t: Gsheet) => {
-        const container = domElWithProperties("div", [
-            { n: "class", v: "select-container" },
-          ]),
+        const container = createElementN("div", {
+            class: "select-container",
+          }),
           label = document.createElement("h4"),
-          s = makeSelect(mode.id, columnData(0, t));
+          s = createSelectList(mode.id, columnData(0, t));
 
         label.innerText = mode.id;
         container.appendChild(s);

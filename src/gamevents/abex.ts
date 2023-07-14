@@ -75,10 +75,7 @@ function initForm(n: HTMLElement) {
         buildProperty("max", "9999"),
         buildProperty("size", "20"),
         buildProperty("value", "0"),
-        buildProperty(
-          "icon",
-          "/afk.GG/assets/icons/ae/img_stamina_icon_big.png"
-        ),
+        buildProperty("icon", "/afk.GG/assets/ae/img_stamina_icon_big.png"),
       ],
     },
     {

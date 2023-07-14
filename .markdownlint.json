@@ -1,6 +1,11 @@
 {
+  "markdownlint.ignore": ".gitignore",
+  "MD011": false,
   "MD013": false,
-  "MD053": false,
   "MD025": false,
-  "MD033": false
+  "MD033": false,
+  "MD042": false,
+  "MD051": false,
+  "MD052": false,
+  "MD053": false
 }

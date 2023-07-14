@@ -89,8 +89,9 @@ nav:
           - blog/makerugreatagain.md
           - blog/nm-respect.md
           - blog/th-retirement.md
-      - AFK:
-          - game/stats.md
+      - AFK Statistics:
+          - game/modes.md
+          - game/drop.md
           - game/iog.md
 
 extra_css:
@@ -226,6 +227,8 @@ markdown_extensions:
         - docs/src/.dict
       auto_append:
         - abbr.md
+        - links.md
+        - urls.md
       check_paths: true
   # - tools.collapse_code:
   #     expand_text: ""
