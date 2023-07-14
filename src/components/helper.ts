@@ -1,5 +1,5 @@
-import { bres, verb } from "../constants.js";
-import { BaseResQty, User } from "../types.js";
+import { bres, verb } from "../model/constants.js";
+import { BaseResQty, User } from "../model/types.js";
 import { updateResourceBox } from "./output.js";
 export const xLog = (x: string) => {
   if (verb) {

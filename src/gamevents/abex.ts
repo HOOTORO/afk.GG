@@ -7,8 +7,8 @@ import {
   genId,
 } from "../components/doManager.js";
 import * as t from "../components/timeleft.js";
-import { AbEx, Boss } from "../constants.js";
-import { Expeditor, Militia } from "../types.js";
+import { AbEx, Boss } from "../model/constants.js";
+import { Expeditor, Militia } from "../model/types.js";
 
 export default function runAbExTimers() {
   t.default(AbEx.now, AbEx.start(), "start", "Старт", "В процессе");

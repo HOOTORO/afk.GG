@@ -1,5 +1,5 @@
-import { GameMode, ValueModes } from "../constants.js";
-import { Gsheet, BaseResQty, RankReward } from "../types.js";
+import { GameMode, ValueModes } from "../model/constants.js";
+import { BaseResQty, Gsheet, RankReward } from "../model/types.js";
 import { fetchTableData } from "./gsheets.js";
 
 let rewards: RankReward[] = [];
@@ -38,4 +38,4 @@ function loadRewards(gm: GameMode, gt: Gsheet) {
   return rewards;
 }
 
-export { loadRewards, modeRewards, getRewards, rewards };
+export { getRewards, loadRewards, modeRewards, rewards };

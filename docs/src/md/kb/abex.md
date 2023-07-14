@@ -7,6 +7,23 @@ template: templates/abex.j2
 
 ## Team Test Report
 
+//// warning | Development in progress
+
+Половина AbEx осталась позади, так что вывел на общее пользование эту функцию в пре-альфа-даже-не-в-раннем-доступе версии, пока она еще актуальна.
+При этом более половины от запланированного еще не реализовано.
+На данный момент вы можете выбрать команду, добавить результаты теста и экспортировать следующие данные: члены команды, урон питомца и комментарий.
+Наверняка есть баги, если вы их нашли или у вас есть идеи/пожелания, вы можете оставить отзыв здесь. [:fontawesome-brands-discord: Обратная связь](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+
+/// details | English description
+    type: example
+
+As half AbEx passed, introducing this feature in pre-alpha-not-even-early-access-state-version while it relevant.
+That said, more than a half from planned not developed yet.
+As of now you can choose team add test results and export following data: team members, pet damage and comment.
+There are a bugs for sure, if you found one or have ideas/feature request you can leave feedback here [:fontawesome-brands-discord: Submit Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+///
+////
+
 /// html | div#attack-app
 ///
 

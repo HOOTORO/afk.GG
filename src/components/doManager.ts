@@ -1,5 +1,5 @@
-import { iconSize } from "../constants.js";
-import { prop } from "../types.js";
+import { iconSize } from "../model/constants.js";
+import { prop } from "../model/types.js";
 
 enum htmlTags {
   Input = "input",
@@ -57,7 +57,6 @@ function genId(s: string) {
   return s.toLowerCase().replaceAll(" ", "-");
 }
 
-
 function buildElement(el: htmlTags, properties?: prop[], labelText?: string) {
   const container = createElem(htmlTags.Div);
   const doc = document.createElement(el);
@@ -101,12 +100,13 @@ function processSpecialProp(p: prop) {
   }
 }
 
-export { buildElement, buildProperty };
 export {
-  createElem,
-  tagAttrs as ElProps,
   htmlTags as DElem,
+  DElement,
+  tagAttrs as ElProps,
+  buildElement,
+  buildProperty,
+  createElem,
   createWithLabel,
   genId,
-  DElement,
 };

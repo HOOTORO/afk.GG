@@ -1,4 +1,4 @@
-import { AfkArena, Period } from "./constants.js";
+import { AfkArena, Period } from "./model/constants.js";
 
 const f = document.getElementById("dust-input") as HTMLFormElement,
   shopRefresh = document.getElementById("a") as HTMLInputElement,

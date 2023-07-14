@@ -1,9 +1,10 @@
+import { exportToCsv } from "../components/ csvexport.js";
 import {
   createElementN,
   createInput,
   createSelectList,
 } from "../components/helper.js";
-import { Beasts, Hero, Heroes, Team } from "../teams.js";
+import { Beasts, Hero, Heroes, Team } from "../model/teams.js";
 import { Ascension, Engravings, Furniture, Signature } from "./abexvars.js";
 
 let MetaTeam = new Team([]);
@@ -76,7 +77,21 @@ const treeDiv = createElementN(
   { class: `${formId}-inputs` },
   "Elder Tree:"
 );
-const petselect = createSelectList("team-pet-select", Object.keys(Beasts));
+const petselect = createSelectList(
+  "team-pet-select",
+  Beasts.map((x) => x.name)
+);
+
+MetaTeam.pet = Beasts.find(
+  (x) => (x.name = petselect.selectedOptions.item(0).value)
+);
+petselect.addEventListener("change", (x: InputEvent) => {
+  const tg = x.target as HTMLSelectElement;
+  const op = tg.value;
+  tg.querySelector("option[selected]").removeAttribute("selected");
+  tg.querySelector(`option[value*="${op}"]`).setAttribute("selected", "");
+  MetaTeam.pet = Beasts.find((x) => x.name === op);
+});
 
 pet.appendChild(petselect);
 tree.forEach((x) => {
@@ -103,6 +118,16 @@ const fields: [string, string[]][] = [
 ];
 // <button type="button" class="md-button" id="submit-hero">Добавить в команду</button>
 // <button type="button" class="md-button" id="clear-heroes">Очистить форму</button>
+const xport = createElementN(
+  "button",
+  {
+    type: "button",
+    class: "md-button",
+    id: "export-csv",
+  },
+  "Export Data"
+);
+
 const sub = createElementN(
   "button",
   {
@@ -127,18 +152,37 @@ sub.addEventListener("click", (e) => {
   addMemember();
 });
 
+xport.addEventListener("click", (e) => {
+  exportToCsv(
+    "data.csv",
+    MetaTeam.damage.map((x) => [
+      MetaTeam.Heroes()
+        .map((y) => y.short)
+        .join("|"),
+      MetaTeam.pet.name,
+      x[0],
+      x[1],
+    ]),
+    ["Team", "Pet", "Damage", "Comment"]
+  );
+});
+
 addAttack.addEventListener("click", (e) => {
   console.log(e);
   console.log(`dps => ${$("#dps").val()} \ncomment => ${$("#comm").val()}`);
   const text = `
   <tr>
     <td>${MetaTeam.Heroes()
-      .map((x) => x.name)
+      .map((x) => x.short)
       .join("|")}</td>
     <td>${$("#dps").val()}</td>
     <td>${$("#comm").val()}</td>
   </tr>
   `;
+  MetaTeam.makeAttack(
+    parseInt($("#dps").val().toString()),
+    $("#comm").val().toString()
+  );
   jQuery(text).appendTo("#dps-table");
 });
 
@@ -157,6 +201,8 @@ fields.forEach((v) => {
     const op = tg.value;
     tg.querySelector("option[selected]").removeAttribute("selected");
     tg.querySelector(`option[value*="${op}"]`).setAttribute("selected", "");
+    if (tg.getAttribute("aaaa")) {
+    }
   });
 });
 
@@ -164,6 +210,7 @@ const controlBtnContainer = createElementN("div", { class: "control btn" });
 
 controlBtnContainer.appendChild(sub);
 controlBtnContainer.appendChild(clear);
+controlBtnContainer.appendChild(xport);
 heroForm.appendChild(controlBtnContainer);
 
 jQuery(
@@ -219,10 +266,10 @@ export function addMemember() {
     MetaTeam._len < 5
   ) {
     const pos = MetaTeam._len + 1;
-    MetaTeam.setHero(pos, current);
+    MetaTeam.setHero(pos, current as Hero);
     const parent = document.querySelector(".team-formation ol");
     const li = document.createElement("li");
-    const hero = heroF(current, pos);
+    const hero = heroF(current as Hero, pos);
     li.appendChild(hero);
     parent.appendChild(li);
   } else {
@@ -249,11 +296,15 @@ function getSelectedById(id: string) {
 }
 
 function getCurrentHero() {
+  const h = Heroes.find(
+    (x) => x.name === getSelectedById("team-member-hero-select")
+  );
   return {
     name: getSelectedById("team-member-hero-select"),
+    short: h.short,
     asc: getSelectedById("team-member-asc-select"),
     si: getSelectedById("team-member-si-select"),
     fu: getSelectedById("team-member-fu-select"),
     eng: getSelectedById("team-member-eng-select"),
-  } as Hero;
+  };
 }

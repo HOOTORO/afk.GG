@@ -1,9 +1,9 @@
 import { rewards } from "./components/dataloader.js";
 import { populateStorage, rangeSlide } from "./components/helper.js";
 import { updateResourceBox } from "./components/output.js";
-import { ValueModes } from "./constants.js";
 import { user } from "./main.js";
-import { RankReward } from "./types.js";
+import { ValueModes } from "./model/constants.js";
+import { RankReward } from "./model/types.js";
 
 export const tLoadedEvent = new Event("tableready");
 

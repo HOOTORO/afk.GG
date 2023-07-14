@@ -9,8 +9,8 @@ import {
   xLog,
 } from "./components/helper.js";
 import { makeOut, updateResourceBox } from "./components/output.js";
-import { ValueModes, userFields, verb } from "./constants.js";
-import { Gsheet, RankReward, User } from "./types.js";
+import { ValueModes, userFields, verb } from "./model/constants.js";
+import { Gsheet, RankReward, User } from "./model/types.js";
 
 xLog(`[Extended log] => ${verb}`);
 xLog(`Looking for entry tag...`);

@@ -1,5 +1,5 @@
-import { allRes, iconSize, leftover, xh } from "../constants.js";
-import { BaseResQty } from "../types.js";
+import { allRes, iconSize, leftover, xh } from "../model/constants.js";
+import { BaseResQty } from "../model/types.js";
 import { createElementN, weekLabels } from "./helper.js";
 
 function makeOut() {

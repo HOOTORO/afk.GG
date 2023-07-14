@@ -1,4 +1,5 @@
-import { generateAFKResObj, rangeSlide } from "./components/helper.js";
+import { rewards } from "../components/dataloader.js";
+import { generateAFKResObj, rangeSlide } from "../components/helper.js";
 import {
   AbEx,
   AfkArena,
@@ -7,7 +8,6 @@ import {
   bres,
   sheetId,
 } from "./constants.js";
-import { rewards } from "./components/dataloader.js";
 
 type prop = { n: string; v: string };
 
@@ -145,13 +145,13 @@ class Expeditor {
   }
 }
 export {
-  User,
-  DustChest,
-  BaseResource,
   BaseResQty,
-  Gsheet,
-  prop,
-  RankReward,
-  Militia,
+  BaseResource,
+  DustChest,
   Expeditor,
+  Gsheet,
+  Militia,
+  RankReward,
+  User,
+  prop,
 };

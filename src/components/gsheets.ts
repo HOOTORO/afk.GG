@@ -1,5 +1,5 @@
-import { url } from "../constants.js";
-import { Gsheet } from "../types.js";
+import { url } from "../model/constants.js";
+import { Gsheet } from "../model/types.js";
 
 async function fetchTableData(tableName: string): Promise<Gsheet> {
   const response = await fetch(url(tableName));

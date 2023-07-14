@@ -17,3 +17,59 @@
   "profile": "jinja",
   "use_gitignore": true
 }
+
+
+// const aBelka = new Team(
+//   [Heroes.ABelinda, Heroes.Palma, Heroes.Rosa, Heroes.Daimon, Heroes.Edwin],
+//   Beasts.Tali,
+//   "Test Clawlossus"
+//   // 11400,
+//   // 11450,
+//   // 10564,
+//   // 9031,
+//   // 9131,
+//   // 10335,
+//   // 9708,
+//   // 11352
+// );
+
+// const RemBo = new Team(
+//   [Heroes.Antandra, Heroes.Rem, Heroes.ASose, Heroes.Twins, Heroes.Mortas],
+//   Beasts.Lion
+//   // "Test Clawlossus",
+//   // 10439,
+//   // 9298,
+//   // 9956,
+//   // 9281,
+//   // 9190,
+//   // 9119,
+//   // 9677
+// );
+
+// const Anateam = new Team(
+//   [Heroes.Nastya, Heroes.Joan, Heroes.Cap, Heroes.Saru, Heroes.Estra],
+//   Beasts.Owl,
+//   "Test Clawlossus"
+//   // 6530
+// );
+
+// const Trash = new Team(
+//   [Heroes.Trish, Heroes.Nevanty, Heroes.Alb, Heroes.Baden, Heroes.Tasi],
+//   Beasts.Moth,
+//   "Test Clawlossus"
+//   // 6028,
+//   // 4593,
+//   // 5500
+// );
+
+// aBelka.makeAttack(11487, "bel no boots, daemon no gl no helm");
+// aBelka.makeAttack(9087);
+// aBelka.makeAttack(10754);
+// aBelka.makeAttack(10287);
+// aBelka.makeAttack(10927);
+// aBelka.makeAttack(10317);
+// aBelka.makeAttack(11329);
+// aBelka.makeAttack(9132);
+// aBelka.makeAttack(10133);
+
+// console.log(aBelka);
