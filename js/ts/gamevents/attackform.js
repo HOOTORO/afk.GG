@@ -1,6 +1,7 @@
 import { exportToCsv } from "../components/ csvexport.js";
 import { createElementN, createInput, createSelectList, } from "../components/helper.js";
-import { Beasts, Heroes, Team } from "../model/teams.js";
+import { Beasts, Heroes } from "../model/afk.js";
+import { Team } from "../model/teams.js";
 import { Ascension, Engravings, Furniture, Signature } from "./abexvars.js";
 let MetaTeam = new Team([]);
 const formId = "team-set";
