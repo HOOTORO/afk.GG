@@ -4,7 +4,8 @@ import {
   createInput,
   createSelectList,
 } from "../components/helper.js";
-import { Beasts, Hero, Heroes, Team } from "../model/teams.js";
+import { Beasts, Heroes } from "../model/afk.js";
+import { Hero, Team } from "../model/teams.js";
 import { Ascension, Engravings, Furniture, Signature } from "./abexvars.js";
 
 let MetaTeam = new Team([]);

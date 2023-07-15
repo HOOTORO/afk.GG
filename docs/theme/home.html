@@ -57,6 +57,16 @@
 
   }
 
+  .md-typeset .md-button {
+    display: block;
+    width: 100%;
+  }
+
+  .md-typeset .h4 {
+    display: block;
+    width: 200%;
+  }
+
   .md-typeset details {
     background-color: rgba(29, 29, 29, 0.777) !important;
   }
@@ -90,7 +100,6 @@
 </style>
 {% endblock %}
 {% block libs %}
-<!-- <script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script> -->
 {% endblock %}
 <!-- Content -->
 {% block content %}
@@ -111,21 +120,17 @@
   <div class="md-grid md-typeset">
     <div class="mdx-hero">
       <!-- Hero content -->
-      <h1>About our beloved idle gachagame.</h1>
+      <h1>Your New Favourite Site</h1>
+      <h2>About beloved idle gachagame.</h2>
+      <h3>Get ready to ...</h3>
       <div class="mdx-hero__content">
         <div class="cont">
-          <p>Get ready to dive into idless afk...</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
-            class="md-button md-button--primary">
-            Take A Look
-          </a>
-        </div>
-        <div class="cont">
-          <p>or if you're looking for Better Discord Themes...</p>
-          <a href="{{ 'https://hootsdev.github.io/Disco.th/' | url }}" title="Looking for BetterDiscord Themes?"
-            class="md-button">
-            Check this out!
-          </a>
+          <h4>
+            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+              class="md-button md-button--secondary">
+              Dive into idless afk
+            </a>
+          </h4>
         </div>
       </div>
     </div>

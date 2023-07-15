@@ -1,6 +1,6 @@
 import { based, classes, races } from "./afk.js";
 
-type Pet = { name: string; short?: string; lvl?: number };
+type Pet = { name: string; short?: string; lvl?: number; icon?: string };
 
 type baseType = "str" | "agi" | "int";
 
@@ -32,6 +32,7 @@ type Hero = {
   si?: Sig;
   fu?: Furn;
   eng?: Engrv;
+  icon?: string;
 };
 
 // class Hero extends HeroPortrait {
@@ -112,179 +113,4 @@ export class Team {
   }
 }
 
-const Beasts = [
-  {
-    name: "Rock Lizard",
-    short: "Rick",
-  },
-  {
-    name: "Talismane",
-    short: "Tal",
-  },
-  {
-    name: "Moth",
-    short: "Mo",
-  },
-  {
-    name: "Fox Fatale",
-    short: "Fox",
-  },
-  {
-    name: "Winged Lion",
-    short: "Lion",
-  },
-  {
-    name: "Flutter Owl",
-    short: "Owl",
-  },
-  {
-    name: "Seal",
-    short: "Sel",
-  },
-  {
-    name: "Souflee",
-    short: "Cake",
-  },
-  {
-    name: "Deer",
-    short: "Dir",
-  },
-  {
-    name: "Blade Lizard",
-    short: "Blade",
-  },
-  {
-    name: "Red Fat",
-    short: "RFat",
-  },
-  {
-    name: "White Snow Fat",
-    short: "WFat",
-  },
-  {
-    name: "Vesperio",
-    short: "Vesp",
-  },
-];
-
-const Heroes = [
-  {
-    name: "Awk.Belinda",
-    short: "ABel",
-  },
-  {
-    name: "Palmer",
-    short: "Pal",
-  },
-
-  {
-    name: "Rosaline",
-    short: "Rosa",
-  },
-  {
-    name: "Daimon",
-    short: "Dima",
-  },
-  {
-    name: "Edwin",
-    short: "Ed",
-  },
-  {
-    name: "Rem",
-    short: "Rem",
-  },
-  {
-    name: "Antandra",
-    short: "Anta",
-  },
-  {
-    name: "Awk.Solise",
-    short: "ASsose",
-  },
-  {
-    name: "Ellaja & Laija",
-    short: "Twins",
-  },
-  {
-    name: "Mortas",
-    short: "Mort",
-  },
-  {
-    name: "Grezhul",
-    short: "Grez",
-  },
-  {
-    name: "Trisha",
-    short: "Trsh",
-  },
-  {
-    name: "Albedo",
-    short: "Alb",
-  },
-  {
-    name: "Tasi",
-    short: "SHTazi",
-  },
-  {
-    name: "Awk.Safiya",
-    short: "ASafy",
-  },
-  {
-    name: "Zolrath",
-    short: "Zol",
-  },
-  {
-    name: "Baden",
-    short: "Bad",
-  },
-  {
-    name: "Awk.Baden",
-    short: "ABad",
-  },
-  {
-    name: "Awk.Athalia",
-    short: "A.At",
-  },
-  {
-    name: "Anasta",
-    short: "Ana",
-  },
-  {
-    name: "Silas",
-    short: "Sil",
-  },
-  {
-    name: "Hodgkin",
-    short: "Cap",
-  },
-  {
-    name: "Nevanti",
-    short: "Neva",
-  },
-  {
-    name: "Estrilda",
-    short: "Est",
-  },
-  {
-    name: "Joan of D'Arc",
-    short: "Jon",
-  },
-  {
-    name: "Saurus",
-    short: "Saru",
-  },
-  {
-    name: "Veithael",
-    short: "Vite",
-  },
-  {
-    name: "Daemia",
-    short: "Dam",
-  },
-  {
-    name: "Maetria",
-    short: "Mae",
-  },
-] as Hero[];
-
-export { Ascension, Beasts, Engrv, Furn, Hero, Heroes, Pet, Sig };
+export { Ascension, Engrv, Furn, Hero, Pet, Sig };
