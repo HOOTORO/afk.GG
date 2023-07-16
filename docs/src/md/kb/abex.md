@@ -5,7 +5,7 @@ description: >-
 template: templates/abex.j2
 ---
 
-## Team Test Report
+## Abex Apps
 
 //// warning | Development in progress
 
@@ -22,33 +22,33 @@ That said, more than a half from planned not developed yet.
 As of now you can choose team add test results and export following data: team members, pet damage and comment.
 There are a bugs for sure, if you found one or have ideas/feature request you can leave feedback here [:fontawesome-brands-discord: Submit Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
 ///
-////
 
-/// html | div#attack-app
-///
+=== "Run Test Form"
+    /// html | div#attack-app
+    ///
 
-/// details | Team management
-    type: settings
-    open: True
+    //// details | Team management
+        type: settings
+        open: False
 
-/// html | div#team-set
-///
+    /// html | div#team-set
+    ///
+    ////
 
-///
+=== "Attack Remain Calculator"
+    /// html | div#rem-food
+    ///
 
-## Attack Remain Calculator
+    //// tip | Don't miss a thing!
+    Калькулятор атак по ласт боссу.  
+    Указываете количество зрителей и текущую стамину,  
+    он считает сколько атак можно сделать без потери атаки и сколько ретраев можно сделать.  
 
-/// html | div#rem-food
-///
+    [=100% "over9999%"]{: .candystripe .candystripe-animate .abex-progress}
 
-//// tip | Don't miss a thing!
-Калькулятор атак по ласт боссу.  
-Указываете количество зрителей и текущую стамину,  
-он считает сколько атак можно сделать без потери атаки и сколько ретраев можно сделать.  
+    Удачи всем!
+    ////
 
-[=100% "over9999%"]{: .candystripe .candystripe-animate .abex-progress}
-
-Удачи всем!
 ////
 
 ## Relics

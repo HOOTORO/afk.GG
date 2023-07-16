@@ -169,6 +169,7 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
   // Dark mode color changes
   &[data-md-color-scheme="dracula"] {
     // Default color shades
+    --text: #{$l-text};
     --md-default-fg-color: #{transparentize($drac-fg, 0.13)};
     --md-default-fg-color--light: #{transparentize($drac-fg, 0.46)};
     --md-default-fg-color--lighter: #{transparentize($drac-fg, 0.84)};

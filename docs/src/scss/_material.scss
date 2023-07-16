@@ -24,6 +24,11 @@
   // max-width: 100%;
 }
 
+.md-button {
+  padding: 10px !important;
+  margin-left: 10px;
+  font-size: 14px !important;
+}
 .md-banner {
   text-align: center;
 }
@@ -36,11 +41,11 @@
   color: var(--nav-link);
 }
 
-.md-button {
-  padding: 10px 17px 7px 17px !important;
-  margin-left: 10px;
-  font-size: 14px !important;
-}
+// .md-button {
+//   padding: 10px 17px 7px 17px !important;
+//   margin-left: 10px;
+//   font-size: 14px !important;
+// }
 
 .md-tabs {
   display: flex;

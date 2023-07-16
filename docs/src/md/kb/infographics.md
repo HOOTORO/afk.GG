@@ -36,34 +36,40 @@ mb outdated
 
 better check [bob49 document](links.md#-game-knowledge-)
 
-## SHOP VALUES
+## Spender's Values
 
-<figure markdown>
+=== "SHOP VALUES"
+    <figure markdown>
+    ![shop value][4]
+    <figcaption>Relevant</figcaption>
+    </figure>
+=== "VIP COST"
+    <figure markdown>
 
-![shop value][4]
-
-<figcaption>Relevant</figcaption>
-</figure>
-
-## VIP COST
-
-<figure markdown>
-
-| outdated                 | info                      |
-|--------------------------|---------------------------|
-| ![VipCost][6]{width=400} | ![CostVip][5] {width=400} |
-
-<figcaption>Outdated</figcaption>
-</figure>
+    | outdated                 | info                      |
+    |--------------------------|---------------------------|
+    | ![VipCost][6]{width=400} | ![CostVip][5] {width=300} |
+    <figcaption>Outdated</figcaption>
+    </figure>
+=== "Deals value | v.Л.Н"
+    ![bbb][whalevalue]
 
 ## Awk. Heroes
 
 <figure markdown>
 
-| ![awk1][awk1] | ![awk2][awk2] |
-|---------------|---------------|
-| ![awk3][awk3] | ![awk4][awk4] |
-| ![awk5][awk5] | ![awk6][awk6] |
+=== "Priority Guide"
+    ![awk1][awk1]
+=== "Belinda"
+    ![awk2][awk2]
+=== "Brutus"
+    ![awk3][awk3]
+=== "Solise"
+    ![awk4][awk4]
+=== "Baden"
+    ![awk5][awk5]
+=== "Thane"
+    ![awk6][awk6]
 
 <figcaption>Outdated</figcaption>
 </figure>
@@ -72,9 +78,9 @@ better check [bob49 document](links.md#-game-knowledge-)
 
 ![aaa][storevalue]
 
-## $ value | v.Л.Н
+## Elder Tree
 
-![bbb][whalevalue]
+![f][fdroplets]
 
 [1]: https://cdn.discordapp.com/attachments/976976670345035796/1126464488749682819/1.jpg
 [2]: https://cdn.discordapp.com/attachments/976976670345035796/1126463949114708009/image.png

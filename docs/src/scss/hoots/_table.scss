@@ -1,7 +1,8 @@
 .md-typeset table:not([class]) {
   display: table;
 }
-.md-typeset table:not([class]) td:not([align]), .md-typeset table:not([class]) th:not([align]) {
+.md-typeset table:not([class]) td:not([align]),
+.md-typeset table:not([class]) th:not([align]) {
   text-align: center;
 }
 
@@ -27,6 +28,8 @@ table th,
 tbody td {
   padding: 10px 10px !important;
   vertical-align: top !important;
+  min-width: none;
+  word-break: break-word;
 }
 
 tr:nth-child(even) {
@@ -47,6 +50,16 @@ th {
   padding-left: 0;
   margin-bottom: 1px;
   vertical-align: top;
+}
+
+.md-typeset table:not([class]) th {
+  min-width: 100px;
+}
+
+@media (max-width: 900px) {
+  .md-typeset table:not([class]) th {
+    min-width: 75px;
+  }
 }
 
 // thead {

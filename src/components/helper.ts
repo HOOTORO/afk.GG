@@ -105,7 +105,8 @@ function createInput(
   t = "text",
   label = `Provide ${t}`,
   img?: string,
-  attrs?: tagAttr
+  attrs?: tagAttr,
+  parent?: HTMLElement
 ) {
   const labelE = createElementN("label");
   labelE.innerHTML = label;
@@ -125,8 +126,14 @@ function createInput(
   if (val) {
     attrs["value"] = val.toString();
   }
-  labelE.appendChild(createElementN("input", attrs));
-  return labelE;
+  if (parent) {
+    parent.appendChild(createElementN("input", attrs));
+    parent.appendChild(labelE);
+    return parent;
+  } else {
+    labelE.appendChild(createElementN("input", attrs));
+    return labelE;
+  }
 }
 
 export {
@@ -140,6 +147,7 @@ export {
   rangeSlide,
   setApp,
   weekLabels,
+  storedValue,
 };
 
 function createElementN(tag: string, props?: tagAttr, inner?: string) {

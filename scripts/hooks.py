@@ -1,4 +1,3 @@
-import json
 import os
 
 import discoworker.async_runner as dar
@@ -7,19 +6,15 @@ import pandas as pd
 
 
 def on_startup(**kwargs) -> None:
-    meme_src = "docs/theme/assets/images/meme"
-    meme_target = "docs/src/md/memes.json"
     meme_md = "docs/src/.dict/memlink.md"
+    meme_src = "docs/theme/assets/images/meme"
     mkdocs_dir="docs/src/md/tbl"
-    spreadsheet_id = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY" # values
+    spreadsheet_id = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY"
     files = []
     
     files = dar.get_memes()
     if os.path.isdir(meme_src):
         files += os.listdir(meme_src)
-        with open(meme_target, 'w') as outfile:
-            json.dump(files, outfile)
-    
     if not os.path.isdir(mkdocs_dir):
         os.makedirs(mkdocs_dir)
     
