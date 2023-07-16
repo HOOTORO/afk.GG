@@ -15,12 +15,12 @@ jobs:
         with:
           python-version: 3.x
       - name: Make destination directory for compiled CSS
-        run: mkdir -vp docs/stylesheets
+        run: mkdir -vp docs/theme/css
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.4.7
         with:
-          source: scss/main.scss
-          destination: docs/stylesheets/main.css
+          source: docs/src/scss/main.scss
+          destination: docs/theme/css/main.css
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v3
         with:
