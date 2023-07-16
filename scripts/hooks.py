@@ -6,18 +6,18 @@ import pandas as pd
 
 
 def on_startup(**kwargs) -> None:
+
     meme_md = "docs/src/.dict/memlink.md"
     meme_src = "docs/theme/assets/images/meme"
-    mkdocs_dir="docs/src/md/tbl"
+    mkdocs_dir = "docs/src/md/tbl"
     spreadsheet_id = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY"
     files = []
-    
     files = dar.get_memes()
     if os.path.isdir(meme_src):
         files += os.listdir(meme_src)
     if not os.path.isdir(mkdocs_dir):
         os.makedirs(mkdocs_dir)
-    
+
     with open(meme_md, 'w') as tmpl:
         tmpl.write("/// html | div#memes\n\n")
         for m in files:
