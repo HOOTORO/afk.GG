@@ -87,7 +87,7 @@ function createSelectList(name, options) {
     }
     return list;
 }
-function createInput(t = "text", label = `Provide ${t}`, img, attrs) {
+function createInput(t = "text", label = `Provide ${t}`, img, attrs, parent) {
     const labelE = createElementN("label");
     labelE.innerHTML = label;
     if (attrs && attrs["id"]) {
@@ -105,10 +105,17 @@ function createInput(t = "text", label = `Provide ${t}`, img, attrs) {
     if (val) {
         attrs["value"] = val.toString();
     }
-    labelE.appendChild(createElementN("input", attrs));
-    return labelE;
+    if (parent) {
+        parent.appendChild(createElementN("input", attrs));
+        parent.appendChild(labelE);
+        return parent;
+    }
+    else {
+        labelE.appendChild(createElementN("input", attrs));
+        return labelE;
+    }
 }
-export { chainDomElement, createElementN, createInput, createSelectList, generateAFKResObj, populateStorage, radioGroups, rangeSlide, setApp, weekLabels, };
+export { chainDomElement, createElementN, createInput, createSelectList, generateAFKResObj, populateStorage, radioGroups, rangeSlide, setApp, weekLabels, storedValue, };
 function createElementN(tag, props, inner) {
     const doc = document.createElement(tag);
     if (props) {

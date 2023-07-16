@@ -1,3 +1,5 @@
+import { storedValue } from "../components/helper.js";
+import { treeBranches } from "./afk.js";
 class HeroPortrait {
     name;
     based;
@@ -12,25 +14,40 @@ class HeroPortrait {
     }
 }
 export class Team {
+    heroes;
     pet;
     target;
-    _len;
+    eldrerTree;
+    _max;
     damage;
-    constructor(team, p, t) {
+    constructor(p, t, ...team) {
+        this._max = 5;
         this.pet = p;
         this.target = t;
-        this._len = team.length;
-        team.forEach((v, i) => {
-            this[i] = v;
-        });
-    }
-    setHero(x, h) {
-        if (x < 6) {
-            this[x] = h;
-            this._len = x;
+        this.heroes = [];
+        this.eldrerTree = new Map();
+        for (const br of treeBranches) {
+            if (storedValue(br)) {
+                this.eldrerTree.set(br, parseInt(storedValue(br).toString()));
+            }
+        }
+        if (team.length >= this._max) {
+            throw Error("Only 5 team members max");
         }
         else {
-            console.log("Hero position out  of range");
+            team.forEach((v, i) => {
+                this.heroes.push([i, v]);
+            });
+        }
+    }
+    addToTeam(h) {
+        if (this.heroes?.length < 5) {
+            this.heroes.push([this.heroes.length, h]);
+            return true;
+        }
+        else {
+            console.log("Team is full!");
+            return false;
         }
     }
     makeAttack(dmg, c) {
@@ -39,17 +56,31 @@ export class Team {
         }
         this.damage.push([dmg, c]);
     }
-    removeHero(position) {
-        this[position] = null;
-        this._len--;
+    removeHero(h) {
+        if (typeof h === "string") {
+            const idx = this.heroes.findIndex((x) => x[1].name.includes(h) || x[1].short.includes(h));
+            if (idx > -1) {
+                this.heroes.splice(idx, 1);
+            }
+        }
+        if (typeof h === "number") {
+            this.heroes.splice(h, 1);
+        }
+        if (typeof h === "object") {
+            const idx = this.heroes.findIndex((x) => x[1].name === h.name);
+            if (idx > -1) {
+                this.heroes.splice(idx, 1);
+            }
+        }
     }
     Heroes() {
-        let i = 0;
-        let result = [];
-        while (i < this._len) {
-            i++;
-            result.push(this[i]);
-        }
-        return result;
+        return this.heroes.map((x) => x[1]);
+    }
+    setElderTree(t, lvl) {
+        this.eldrerTree.set(t, lvl);
+        storedValue(t, lvl.toString());
+    }
+    TreeString() {
+        return `MI:${this.eldrerTree.get("might")} | TA:${this.eldrerTree.get("tank")} | RA:${this.eldrerTree.get("ranger")} | SU:${this.eldrerTree.get("support")} | MA:${this.eldrerTree.get("mage")}`;
     }
 }

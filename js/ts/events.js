@@ -21,10 +21,6 @@ $(document).on("mousemove", "input[type='range']", function (x) {
     rangeSlide(x.target.value, user);
     updateResourceBox(user.income, x.target.value);
 });
-$(window).on("hashchange", "body", function (x) {
-    console.log("WE CHANGE PAGE ");
-});
 $(document).on("change", "input[type='number']", function (x) {
     $(this).val(x.target.value);
-    console.log("change number triggered");
 });
