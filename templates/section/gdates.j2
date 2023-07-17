@@ -1,18 +1,12 @@
-
-
-{% if page.meta.source %}
-  <div class="source-links">
-    {% for filename in page.meta.source %}
-      <span class="label label-primary">{{ filename }}</span>
-    {% endfor %}
-  </div>
-{% endif %}
-
-
 <!-- This section adds support for localized revision dates -->
-{% if page.meta.git_revision_date_localized %}
-  {{ page.meta.git_revision_date_localized }} <| updated 
+
+{% if page.meta.git_creation_date_localized_raw_datetime %}
+<td rowspan="9">
+  {{ page.meta.git_creation_date_localized_raw_datetime }}
+</td>
 {% endif %}
-{% if page.meta.git_created_date_localized %}
-  {{ page.meta.git_created_date_localized }} <| created
+{% if page.meta.git_revision_date_localized_raw_datetime %}
+<td rowspan="9">
+  {{ page.meta.git_revision_date_localized_raw_datetime }}
+</td>
 {% endif %}
