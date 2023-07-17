@@ -12,11 +12,11 @@
 }
 
 table {
-  font-size: 15px;
-  overflow: hidden !important;
   margin: 20px auto;
-  border-radius: 0.6rem !important;
+  overflow: hidden !important;
+  font-size: 15px;
   border-bottom: 2px solid #00cccc;
+  border-radius: 0.6rem !important;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
     0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
 }
@@ -28,10 +28,10 @@ table tr:hover td {
 
 table th,
 tbody td {
-  padding: 0 !important;
-  word-break: break-word;
   min-width: 0;
   max-width: 0;
+  padding: 0 !important;
+  word-break: break-word;
 }
 
 tr:nth-child(even) {
@@ -44,13 +44,13 @@ tr td:first-of-type {
 }
 
 tr td:last-of-type {
-  font-style: oblique;
   font-weight: 600;
+  font-style: oblique;
 }
 
 th {
-  padding-left: 0;
   margin-bottom: 1px;
+  padding-left: 0;
   vertical-align: middle;
 }
 
@@ -67,9 +67,9 @@ th {
 thead th,
 tfoot td {
   padding: 6px !important;
-  background-color: #bada55;
   color: #400bad;
   text-transform: uppercase;
+  background-color: #bada55;
 }
 
 .meta-table {
@@ -79,8 +79,8 @@ tfoot td {
   text-align: center;
   transform: scale(0.7);
   thead {
-    padding: 2px;
     height: min-content;
+    padding: 2px;
   }
   td {
     vertical-align: middle;

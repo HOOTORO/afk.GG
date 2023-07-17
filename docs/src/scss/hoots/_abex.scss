@@ -1,14 +1,14 @@
+/* stylelint-disable color-named */
 #main-event {
   position: relative;
-
   display: flex;
-  width: -webkit-fill-available;
   flex-direction: column;
-  margin: 1em 0;
   align-items: center;
+  width: fill-available;
+  margin: 1em 0;
+  padding: 14px;
   background-color: rgba(90, 90, 220, 0.328);
   border-radius: 10px;
-  padding: 14px;
   box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
     0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
 }
@@ -17,25 +17,25 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
 }
 .labeled-container {
-  padding: 11px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  padding: 11px;
 }
 
 .labeled-container > input[type*="number"] {
-  color: black;
   width: 50px;
   height: 25px;
   margin: 10px;
-  border-radius: 10px;
+  color: black;
   text-align: end;
   background-color: aliceblue;
+  border-radius: 10px;
 }
 
 .labeled-container > input[type*="checkbox"] {
@@ -43,37 +43,37 @@
   background-color: aliceblue;
 }
 .outbox {
-  width: max-content;
   display: flex;
   flex-direction: row;
-  align-items: center;
   align-content: flex-start;
+  align-items: center;
+  width: max-content;
 }
 
 #rem-food {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .main-container {
   display: flex;
-  width: 100%;
   flex-direction: row;
+  width: 100%;
   padding-bottom: 20px;
 }
 
 .main-e-label {
   display: flex;
-  background-color: blueviolet;
+  justify-content: center;
   width: 100%;
   margin-top: 20px;
+  background-color: blueviolet;
+  border: 0.5px outset orange;
   border-radius: 10px;
-  justify-content: center;
   box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
     0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
-  border: 0.5px outset orange;
 }
 
 #attack-app {
@@ -81,17 +81,17 @@
 }
 
 .member {
-  background-color: gray;
-  border-radius: 10px;
   margin-left: 10px;
   padding: 2px 5px 0;
+  background-color: gray;
+  border-radius: 10px;
 }
 
 .team-set-inputs {
   display: inline-block;
   width: 100%;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 // new style
@@ -99,25 +99,25 @@
   position: relative;
 
   label {
-    max-width: 100%;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    max-width: 100%;
   }
   > label {
     display: inline-flex;
-    max-width: 300px;
+    flex-wrap: nowrap;
     align-content: center;
     align-items: center;
-    flex-wrap: nowrap;
     width: 100px;
+    max-width: 300px;
 
     &::after {
-      content: "     ";
       margin-right: 10px !important;
+      content: "     ";
     }
   }
 
@@ -127,22 +127,24 @@
     margin-left: 0;
   }
   input[type="number"] {
-    -moz-appearance: textfield;
     width: 100px;
     height: 40px;
-    border-radius: 10px;
-    line-height: 2;
-    color: var(--text);
-    padding: 0;
     margin: 0;
     margin-left: 10px;
+    padding: 0;
     padding-left: 7px;
+    color: var(--text);
+    line-height: 2;
     border: 1px solid rgba(114, 114, 114, 0.4470588235);
+    border-radius: 10px;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -moz-appearance: textfield;
 
     &::-webkit-inner-spin-button,
     &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
       margin: 0;
+      /* stylelint-disable-next-line property-no-vendor-prefix */
+      -webkit-appearance: none;
     }
 
     &:focus {
@@ -152,35 +154,30 @@
 
   .team-set-nav {
     position: relative;
-    height: 33px;
     bottom: 44px;
     left: 50px;
+    height: 33px;
   }
 
   .team-set-button {
     position: relative;
-    cursor: pointer;
-    border-left: 1px solid #eee;
     width: 20px;
-    text-align: center;
     color: var(--text);
     font-size: 13px;
     font-family: "Trebuchet MS", Helvetica, sans-serif !important;
     line-height: 1.7;
-    -webkit-transform: translateX(-100%);
+    text-align: center;
+    border-left: 1px solid #eeeeee;
     transform: translateX(-100%);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
+    cursor: pointer;
     user-select: none;
 
     &.team-set-up {
       position: absolute;
-      height: 20px;
       top: 5px;
       left: 5px;
-      border-bottom: 1px solid #eee;
+      height: 20px;
+      border-bottom: 1px solid #eeeeee;
     }
 
     &.team-set-down {
@@ -195,24 +192,20 @@
 ///attacks
 
 .attack-inputs {
-  // background: linear-gradient(100deg, #402, #006);
-  padding: 2em;
-  min-height: 6vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-height: 6vh;
+  padding: 2em;
   background-position: 50% 50%;
-  // animation: background-move 10s linear infinite;
-  // background-size: 100vw auto, 100% 100%;
-  // background-size: unquote("max(100vw, 30em)") auto, 100% 100%;
 }
 
 .attack-inputs {
-  width: 100%;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  z-index: 2;
+  width: 100%;
 
   @supports (mix-blend-mode: darken) {
     position: relative;
@@ -220,52 +213,44 @@
 
     &__label {
       position: absolute;
-      left: 3em;
       top: -0.28em;
-      background: #000;
+      left: 3em;
+      background: #000000;
     }
   }
 
   &__label {
-    padding: 0 0.5em;
     margin-bottom: 0.5em;
-    text-transform: uppercase;
+    padding: 0 0.5em;
+    color: #ccccdd;
+    color: rgba(255, 220, 255, 0.6);
     font-size: 0.875em;
     letter-spacing: 0.1em;
-    color: #ccd;
-    color: rgba(255, 220, 255, 0.6);
+    text-transform: uppercase;
     cursor: pointer;
   }
 
   &__input {
-    color: #fff;
+    width: 80%;
+    height: calc(1em + 0.6em + 0.5em);
+    margin: 5px;
+    padding: 0.8em 1em;
+    color: #ffffff;
     font-size: 1.25rem;
     line-height: 1;
-    border-style: none;
-    outline: none;
-    // height calc line-height + (vertical-padding * 2) + (vertical-border * 2)
-    height: calc(1em + 0.6em + 0.5em);
-    width: 80%;
-    padding: 0.8em 1em;
-    border: 0.25em solid transparent;
-    background-image: linear-gradient(#000, #000),
-      linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    border-radius: 1.8em;
+    background-image: linear-gradient(#000000, #000000),
+      linear-gradient(120deg, #ff0099 0%, #00ffff 50%, #99ff00 100%);
     background-size: 200% 100%;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: 0.25em solid transparent;
+    border-style: groove;
+    border-radius: 1.8em;
+    outline: none;
     transition: background-position 0.8s ease-out;
-
-    &:hover {
-      background-position: 100% 0;
-    }
-
-    &:focus {
-      outline: 2px dashed #ad2b89;
-      outline-offset: 0.5em;
-    }
   }
 }
+
 .pet-sele,
 .hero-selection {
   ul {
@@ -281,54 +266,53 @@
   }
 
   label {
-    border: 0 solid #7368684c;
-    padding: 5px;
-    display: block;
     position: relative;
+    display: block;
     margin: 5px;
+    padding: 5px;
+    border: 0 solid #7368684c;
     cursor: pointer;
 
     img {
-      height: 50px !important;
       width: 50px !important;
-      transition-duration: 0.2s !important;
+      height: 50px !important;
       transform-origin: 70% 70% !important;
+      transition-duration: 0.2s !important;
     }
 
     &::before {
-      background-color: white;
-      color: white;
-      content: " ";
-      display: block;
-      border-radius: 50%;
-      border: 1px solid grey;
       position: absolute;
       top: 10px;
       left: 10px;
+      display: block;
       width: 25px;
       height: 25px;
-      text-align: center;
+      color: white;
       line-height: 28px;
-      transition-duration: 0.4s;
+      text-align: center;
+      background-color: white;
+      border: 1px solid grey;
+      border-radius: 50%;
       transform: scale(0);
+      transition-duration: 0.4s;
+      content: " ";
     }
   }
 
   :checked + label {
-    border-color: #ddd;
+    border-color: #dddddd;
   }
 
   :checked + label:before {
-    content: "✓";
+    z-index: 100;
     background-color: rgba(1, 170, 63, 0.751);
     transform: scale(1.5);
-    z-index: 100;
+    content: "✓";
   }
 
   :checked + label img {
+    box-shadow: 0 0 5px #333333;
     transform: scale(0.9);
-    box-shadow: 0 0 5px #333;
-    // z-index: -1;
   }
 }
 #comm__label,

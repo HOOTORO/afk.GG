@@ -38,13 +38,14 @@
     ],
     "unit-allowed-list": [
       "px",
-      "em",
       "deg",
       "ms",
       "%",
-      "mm",
+      "vw",
       "vh",
       "dppx",
+      "em",
+      "rem",
       "s"
     ],
     "value-keyword-case": "lower",

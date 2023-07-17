@@ -13,9 +13,9 @@
 }
 
 .base-timer__circle {
+  background-color: rgba(0, 255, 255, 0.87);
   fill: none;
   stroke: none;
-  background-color: rgba(0, 255, 255, 0.87);
 }
 
 .base-timer__path-elapsed {
@@ -30,7 +30,7 @@
   transform-origin: center;
   transition: 1s linear all;
   fill-rule: nonzero;
-  stroke: currentColor;
+  stroke: currentcolor;
 }
 
 .base-timer__path-remaining.green {
@@ -47,18 +47,18 @@
 
 .base-timer-label {
   position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 110px;
   height: 110px;
-  top: 0;
-  font-weight: bold;
   color: rgba(18, 17, 17, 0.889);
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-text-stroke: thin rgba(255, 0, 30, 0.764);
-  word-wrap: break-word;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-weight: 700;
   font-size: 19px;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(0, 238, 255);
+  word-wrap: break-word;
+  -webkit-text-stroke: thin rgba(255, 0, 30, 0.764);
 }

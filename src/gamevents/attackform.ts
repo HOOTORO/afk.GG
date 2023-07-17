@@ -42,9 +42,9 @@ atkContainer.addEventListener("change", (x: InputEvent) => {
 let table = `
 <table id="dps-table" style="width:100%">
 <tr>
-<th style='width:40%'>Team</th>
+<th style='width:65%'>Team</th>
 <th>Pet</th>
-<th style='width:40%'>Elder Tree</th>
+<th style='width:50%'>Elder Tree</th>
 <th>Damage</th>
 <th>Comment</th>
 </tr>
