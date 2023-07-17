@@ -12,6 +12,8 @@
 }
 
 table {
+  font-size: 15px;
+  overflow: hidden !important;
   margin: 20px auto;
   border-radius: 0.6rem !important;
   border-bottom: 2px solid #00cccc;
@@ -26,10 +28,10 @@ table tr:hover td {
 
 table th,
 tbody td {
-  padding: 10px 10px !important;
-  vertical-align: top !important;
-  min-width: none;
+  padding: 0 !important;
   word-break: break-word;
+  min-width: 0;
+  max-width: 0;
 }
 
 tr:nth-child(even) {
@@ -49,7 +51,7 @@ tr td:last-of-type {
 th {
   padding-left: 0;
   margin-bottom: 1px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .md-typeset table:not([class]) th {
@@ -62,14 +64,29 @@ th {
   }
 }
 
-// thead {
-//     text-decoration: underline solid blueviolet 0.5px;
-// }
-
 thead th,
 tfoot td {
-  padding: 6px;
+  padding: 6px !important;
   background-color: #bada55;
   color: #400bad;
   text-transform: uppercase;
+}
+
+.meta-table {
+  display: table;
+  width: 90%;
+  margin: 0;
+  text-align: center;
+  transform: scale(0.7);
+  thead {
+    padding: 2px;
+    height: min-content;
+  }
+  td {
+    vertical-align: middle;
+  }
+}
+
+#team-attacks-form {
+  width: 100%;
 }

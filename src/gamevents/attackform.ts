@@ -15,20 +15,20 @@ const petSelectId = "pet-sele";
 
 const heroForm = document.getElementById(formId);
 
-const aClsAtack = "attack-inputs";
-const atkContainer = createElementN("div", { class: aClsAtack });
+const aClsAttack = "attack-inputs";
+const atkContainer = createElementN("div", { class: aClsAttack });
 const attackForm = createElementN("form", { id: "team-attacks-form" });
 atkContainer.appendChild(attackForm);
 atkContainer.appendChild(
   createInput("number", "Damage, B", "", {
-    class: `${aClsAtack}__input`,
+    class: `${aClsAttack}__input`,
     name: "Damage",
     id: "dps",
   })
 );
 atkContainer.appendChild(
   createInput("text", "Comment", "", {
-    class: `${aClsAtack}__input`,
+    class: `${aClsAttack}__input`,
     name: "Comment",
     id: "comm",
   })
@@ -42,9 +42,9 @@ atkContainer.addEventListener("change", (x: InputEvent) => {
 let table = `
 <table id="dps-table" style="width:100%">
 <tr>
-<th>Team</th>
+<th style='width:40%'>Team</th>
 <th>Pet</th>
-<th>Elder Tree</th>
+<th style='width:40%'>Elder Tree</th>
 <th>Damage</th>
 <th>Comment</th>
 </tr>
@@ -62,7 +62,7 @@ const addAttack = createElementN(
   "Add Dmg"
 );
 
-const xport = createElementN(
+const csvExport = createElementN(
   "button",
   {
     type: "button",
@@ -72,9 +72,9 @@ const xport = createElementN(
   "Export Data"
 );
 btnContainer.appendChild(addAttack);
-btnContainer.appendChild(xport);
+btnContainer.appendChild(csvExport);
 
-xport.addEventListener("click", (e) => {
+csvExport.addEventListener("click", (e) => {
   exportToCsv(
     "data.csv",
     MetaTeam.damage.map((x) => [
@@ -99,8 +99,6 @@ attackForm.appendChild(
 jQuery(atkContainer).appendTo("#attack-app");
 jQuery(table).appendTo("#bat-stat");
 
-// atkContainer.appendChild(addAttack);
-// atkContainer.appendChild(xport);
 atkContainer.appendChild(btnContainer);
 const treeDiv = createElementN("div", { class: `${formId}-inputs` });
 
@@ -140,11 +138,12 @@ addAttack.addEventListener("click", (e) => {
   jQuery(text).appendTo("#dps-table");
 });
 
-const petCheckBoxes = checkBoxSelector(petSelectId, Beasts, petclick);
-const heroselector = checkBoxSelector(heroSelectId, Heroes, heroclick);
+const petCheckBoxes = checkBoxSelector(petSelectId, Beasts, petClick);
+const heroselector = checkBoxSelector(heroSelectId, Heroes, heroClick);
 heroselector.addEventListener("click", (x) => {
   const tg = x.target as HTMLInputElement;
-  if (MetaTeam.Heroes().length >= 5 && !tg.offsetParent.control.checked) {
+  const offElement = tg.offsetParent;
+  if (MetaTeam.Heroes().length >= 5 && !offElement.control.checked) {
     x.preventDefault();
     x.stopPropagation();
     x.stopImmediatePropagation();
@@ -160,7 +159,7 @@ heroForm.appendChild(petCheckBoxes);
 heroForm.appendChild(createElementN("h2", {}, "Choose Team"));
 heroForm.appendChild(heroselector);
 
-function heroclick(e: InputEvent) {
+function heroClick(e: InputEvent) {
   const tg = e.target as HTMLInputElement;
   const clickedHero = Heroes.find((x) => x.name.includes(tg.id.substring(7)));
   if (tg.checked) {
@@ -169,7 +168,7 @@ function heroclick(e: InputEvent) {
     MetaTeam.removeHero(clickedHero);
   }
 }
-function petclick(e: InputEvent) {
+function petClick(e: InputEvent) {
   const tg = e.target as HTMLInputElement;
   const petGroup = document.querySelectorAll(`.${petSelectId} input`);
   const clickedPet = Beasts.find((x) => x.name.includes(tg.id.substring(7)));
@@ -181,7 +180,11 @@ function petclick(e: InputEvent) {
 function checkBoxSelector(
   id: string,
   data: AfkObject[],
-  fn,
+  fn: {
+    (e: InputEvent): void;
+    (e: InputEvent): void;
+    (this: GlobalEventHandlers, ev: Event): any;
+  },
   type = "checkbox"
 ) {
   const container = createElementN("div", { class: id });
@@ -233,7 +236,7 @@ jQuery(`#${formId} label`).each(function () {
   });
 
   btnDown.on("click", function () {
-    var oldValue = parseFloat(input.val().toString());
+    let oldValue = parseFloat(input.val().toString());
     if (oldValue <= min) {
       var newVal = oldValue;
     } else {

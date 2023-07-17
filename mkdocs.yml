@@ -140,7 +140,7 @@ plugins:
   # - git-committers:
   #     repository: Hootsdev/afk.GG
   #     branch: master
-  #     token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
+  #     token: !!python/object/apply:os.getenv ["GIT_API_KEY_HOOTSDEV"]
 
 hooks:
   - scripts/hooks.py

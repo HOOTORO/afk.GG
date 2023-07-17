@@ -1,7 +1,7 @@
 {
   "extends": [
-    "stylelint-config-recommended",
-    "stylelint-config-rational-order"
+    "stylelint-config-rational-order",
+    "stylelint-config-prettier"
   ],
   "plugins": [
     "stylelint-order",
@@ -13,9 +13,14 @@
     "at-rule-no-vendor-prefix": true,
     "color-hex-length": "long",
     "color-named": "never",
-    "comment-empty-line-before": ["always", {
-      "ignore": ["stylelint-commands"]
-    }],
+    "comment-empty-line-before": [
+      "always",
+      {
+        "ignore": [
+          "stylelint-commands"
+        ]
+      }
+    ],
     "font-family-name-quotes": "always-where-recommended",
     "font-weight-notation": "numeric",
     "function-url-quotes": "always",
@@ -23,17 +28,40 @@
     "no-unknown-animations": true,
     "property-no-vendor-prefix": true,
     "selector-class-pattern": "^[a-z0-9]+(-[a-z0-9]+)*(__[a-z]+)?(--[a-z]+)?$",
-    "selector-type-no-unknown": [true, {"ignore": ["custom-elements"]}],
-    "unit-allowed-list": ["px", "em", "deg", "ms", "%", "mm", "vh", "dppx", "s"],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": [
+          "custom-elements"
+        ]
+      }
+    ],
+    "unit-allowed-list": [
+      "px",
+      "em",
+      "deg",
+      "ms",
+      "%",
+      "mm",
+      "vh",
+      "dppx",
+      "s"
+    ],
     "value-keyword-case": "lower",
     "value-no-vendor-prefix": true,
     "function-no-unknown": null,
-    "annotation-no-unknown": [true, {"ignoreAnnotations": ["default"]}]
+    "annotation-no-unknown": [
+      true,
+      {
+        "ignoreAnnotations": [
+          "default"
+        ]
+      }
+    ]
   },
-    "ignoreFiles": [
+  "ignoreFiles": [
     "**/*.js",
     "**/*.jsx",
-    "docs/src/.dict/abbr.md"
     "docs/theme/css/main.css"
   ]
 }

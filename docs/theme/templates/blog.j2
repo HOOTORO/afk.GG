@@ -1,32 +1,34 @@
-
 {% extends "main.html" %}
 
 {% block htmltitle %}
 
-  {{ super() }}
-  <link rel="stylesheet" href="{{ 'css/blog.css' | url }}" />
+{{ super() }}
+<link rel="stylesheet" href="{{ 'css/blog.css' | url }}" />
 {% endblock htmltitle %}
 
 {% block styles %}
 
-  {{ super() }}
+{{ super() }}
 
 {% endblock styles %}
 
 {% block tabs %}
 
-  {{ super() }}
+{{ super() }}
+
 {% endblock tabs %}
+
+{% block site_nav %}
+{{ super() }}
+{% endblock site_nav %}
 
 {% block content %}
 
-  {{ super() }}
+{{ super() }}
 {% endblock content %}
 
 {% block footer %}
 
-  {% include "templates/section/metainf.j2" %}
-
-  {{ super() }}
+{{ super() }}
 
 {% endblock footer %}

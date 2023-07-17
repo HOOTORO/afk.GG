@@ -94,8 +94,17 @@
     width: 45vw;
   }
 
+  .git-revision-date-localized-plugin,
+  .git-revision-date-localized-plugin-date {
+    color: bisque;
+  }
+
   .md-source-file>* {
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: rgba(135, 135, 135, 0.997);
+  }
+
+  code {
+    background-color: blueviolet;
   }
 </style>
 {% endblock %}
@@ -111,7 +120,23 @@
     <span id="left"></span>
   </div>
 </div>
-{{ super() }}
+{% if page.meta.git_site_revision_date_localized %}
+<div class="md-source-file">
+  <small>
+    <!-- mkdocs-git-revision-date-localized-plugin -->
+    Последнее обновление:
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">
+      {{ page.meta.git_site_revision_date_localized }}
+    </span>
+    <br>
+    Дата создания:
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">
+      {{ page.meta.git_creation_date_localized }}
+    </span>
+    <!-- mkdocs-git-revision-date-plugin -->
+  </small>
+</div>
+{% endif %}
 {% endblock %}
 
 <!-- Application footer -->

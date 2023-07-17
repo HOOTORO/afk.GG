@@ -10,44 +10,7 @@
   text-decoration: underline solid blueviolet;
 }
 
-.authored {
-  text-align: right;
-  position: relative;
-  margin-left: auto;
-  margin-right: 20vw;
-
-  em {
-    font-style: oblique;
-    flex-wrap: wrap;
-    font-size: 0.8rem;
-
-    pre {
-      margin-left: 30px;
-    }
-    .av-wrapper {
-      display: inline-flex;
-    }
-  }
-  code {
-    display: inline-block;
-    color: rgba(0, 191, 250, 0.7);
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 10px;
-    padding: 3px;
-    background-color: var(--md-code-bg-color);
-    -webkit-text-stroke: thin rgba(0, 219, 255, 1);
-    -webkit-font-smoothing: subpixel-antialiased;
-  }
-}
-
 time {
   padding-left: 10px;
   padding-right: 10px;
-}
-
-@media screen and (max-width: 700px) {
-  .authored {
-    flex-direction: column;
-  }
 }

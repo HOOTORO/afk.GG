@@ -22,4 +22,4 @@ template: main.html
 
 ## Furniture enchant + stats
 
-{{ read_excel('../../../theme/assets/tables/furniture.xlsx', engine='openpyxl', na_filter=False) }}
+{{ read_excel('../../../theme/assets/tables/furniture.xlsx', engine='openpyxl', na_filter=False, colalign=("center",)) }}

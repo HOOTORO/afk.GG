@@ -8,9 +8,43 @@
 *[Q&A]: aнгл. Questions & Answer. Секция вопросов и ответов
 *[F2P]: англ. Free To Play. Игрок, не закинувший в игру ни копейки
 *[low_spender]: Игрок с минильным донатом
+*[Dolphin]: Игрок с минильным донатом
 *[PTS]: сокр. от Points, Очки, Поинты
 *[кап]: Максимально доступное значение
 *[WR]: англ. Win Rate. Соотношение побед к поражениям
+*[HP]: англ. Health Points - очки здоровья
+*[GB]: Фракция - Graveborn (Одна из двух, указана в единственном числе)
+*[LB]: Фракция - Lightbearers
+*[WD]: Фракция - Wilders
+*[ML]: Фракция - Maulers
+*[CSL]: Фракция - Celestials
+*[HG]: Фракция - Hypogeans
+*[DIM]: Dimansional - (Одна из двух, указана в единственном числе)
+*[AE]: Abyssal Expedition, Экспедиция в бездну
+*[AbEx]: Abyssal Expedition, Экспедиция в бездну
+*[AS]: Attack Speed - Каждое очко этого атрибута увеличивает скорость анимации и частоту атак на 1%
+*[CDR]: Crit Damage Resistance
+*[CDA]: Crit Damage Amplification
+*[CBR]: Crit. Block Rate
+*[ACC]: Accuracy
+*[RH]: Recieved Healing
+*[PP]: Physical Pierce
+*[MP]: Magic Pierce
+*[TY]: Tenacity
+*[IS]: Insight
+*[DEF]: Defense Rating
+*[ATK]: Attack Rating
+*[CRIT]: Crit Rate
+*[PRF]: Proficiency
+*[DISS]: Dissolve
+*[ME]: Magic Efficiency
+*[MS]: Magic Suppression
+*[HASTE]: Атрибут определяющий как быстро и с какой частотой горей может атаковать и использовать скиллы. Высокий показатель увеличивает скорость анимации атак/навыков и позволяет использовать их чаще.
+*[RPS]: Recovery Per Second
+*[MR]: Magic Resist
+*[PR]: Physical Resist
+*[LL]: Life Leech
+*[DODGE]: Dodge
 
 <!-- Peoples -->
 

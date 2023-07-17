@@ -9,16 +9,28 @@ template: main.html
 
 <figure markdown>
 
-![stats][1]
+![stats][ig1]
 
 <figcaption>Lil' bit outdated, but still relevant!</figcaption>
 </figure>
 
-## Cero Pet Guide
+## Isle of Gold
+
+by R3ZZ
+
+<!-- prettier-ignore -->
+=== "#1"
+    ![1][iog1]
+=== "#2"
+    ![2][iog2]
+
+## Pet Guide
+
+by Cero
 
 <figure markdown>
 
-![cero][3]
+![cero][ig3]
 
 <figcaption>Updated 2023-06-23</figcaption>
 </figure>
@@ -27,7 +39,7 @@ template: main.html
 
 <figure markdown>
 
-![gm][2]
+![gm][ig2]
 
 <figcaption>
 mb outdated
@@ -39,58 +51,41 @@ better check [bob49 document](links.md#-game-knowledge-)
 ## Spender's Values
 
 === "SHOP VALUES"
-    <figure markdown>
-    ![shop value][4]
-    <figcaption>Relevant</figcaption>
-    </figure>
-=== "VIP COST"
-    <figure markdown>
 
-    | outdated                 | info                      |
-    |--------------------------|---------------------------|
-    | ![VipCost][6]{width=400} | ![CostVip][5] {width=300} |
-    <figcaption>Outdated</figcaption>
-    </figure>
+<figure markdown>
+![shop value][ig4]
+<figcaption>Relevant</figcaption>
+</figure>
+<!-- prettier-ignore -->
+=== "VIP COST"
+    ![VipCost][ig6]{width=400} ![CostVip][ig5]{width=300}
 === "Deals value | v.Л.Н"
     ![bbb][whalevalue]
 
 ## Awk. Heroes
 
-<figure markdown>
+Outdated
 
+<!-- prettier-ignore -->
 === "Priority Guide"
-    ![awk1][awk1]
+    ![awk1][aawk1]
 === "Belinda"
-    ![awk2][awk2]
+    ![awk2][aawk2]
 === "Brutus"
-    ![awk3][awk3]
+    ![awk3][aawk3]
 === "Solise"
-    ![awk4][awk4]
+    ![awk4][aawk4]
 === "Baden"
-    ![awk5][awk5]
+    ![awk5][aawk5]
 === "Thane"
-    ![awk6][awk6]
+    ![awk6][aawk6]
 
-<figcaption>Outdated</figcaption>
-</figure>
+## Resources Val
 
-## Resources Val. | v.Л.Н
+v.Л.Н
 
 ![aaa][storevalue]
 
 ## Elder Tree
 
 ![f][fdroplets]
-
-[1]: https://cdn.discordapp.com/attachments/976976670345035796/1126464488749682819/1.jpg
-[2]: https://cdn.discordapp.com/attachments/976976670345035796/1126463949114708009/image.png
-[3]: https://cdn.discordapp.com/attachments/1000585139857915984/1120774910969643068/2023-06-20_-_Pet_Guide.png
-[4]: https://cdn.discordapp.com/attachments/976976670345035796/1126464976866001018/3.jpg
-[5]: https://cdn.discordapp.com/attachments/976976670345035796/1126465339807514654/5.webp
-[6]: https://cdn.discordapp.com/attachments/976976670345035796/1126465643592560740/4.jpg
-[awk1]: https://cdn.discordapp.com/attachments/976976670345035796/1126466252286726213/6.webp
-[awk2]: https://cdn.discordapp.com/attachments/976976670345035796/1126466252655820820/7.webp
-[awk3]: https://cdn.discordapp.com/attachments/976976670345035796/1126466253113012235/8.webp
-[awk4]: https://cdn.discordapp.com/attachments/976976670345035796/1126466253477908491/9.webp
-[awk5]: https://cdn.discordapp.com/attachments/976976670345035796/1126466253876363354/10.webp
-[awk6]: https://cdn.discordapp.com/attachments/976976670345035796/1126466254589407314/11.webp

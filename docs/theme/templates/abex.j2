@@ -1,40 +1,37 @@
-
-
 {% extends "main.html" %}
 
 {% from 'templates/macro/input.j2' import input with context %}
 
 {% block styles %}
 
-  {{ super() }}
+{{ super() }}
 {% endblock styles %}
 
 {% block libs %}
 
-  {{ super() }}
-  <script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script>
-  <script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}"></script>
-  <script type="module" src="{{ 'js/ts/gamevents/attackform.js' | url }}"></script>
+{{ super() }}
+<script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script>
+<script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}"></script>
+<script type="module" src="{{ 'js/ts/gamevents/attackform.js' | url }}"></script>
 
 {% endblock libs %}
 
 {% block tabs %}
 
-  {{ super() }}
+{{ super() }}
 {% endblock tabs %}
 <!-- Content -->
 
 {% block content %}
-{% include 'templates/section/attackform.j2' %}
-  {{ super() }}
-  <div id="main-event">
-    <h1>
-      Abyssal Expedition #10
-    </h1>
-    <div class="main-container">
-      <span id="start"></span>
-      <span id="silent"></span>
-      <span id="left"></span>
-    </div>
+{{ super() }}
+<div id="main-event">
+  <h1>
+    Abyssal Expedition #10
+  </h1>
+  <div class="main-container">
+    <span id="start"></span>
+    <span id="silent"></span>
+    <span id="left"></span>
   </div>
+</div>
 {% endblock content %}
