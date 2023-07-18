@@ -178,8 +178,8 @@ const Heroes = [
   // },
   // { name: "Khazard", short: "Khaz", icon: "/afk.GG/assets/portraits/IceD.jpg" },
   // { name: "JOKER", short: "JK.", icon: "/afk.GG/assets/portraits/JK.jpg" },
-  // { name: "Kalene", short: "Kale", icon: "/afk.GG/assets/portraits/Karen.jpg" },
-  // { name: "Mehira", short: "LUST", icon: "/afk.GG/assets/portraits/LUST.jpg" },
+  { name: "Kalene", short: "Kale", icon: "/afk.GG/assets/portraits/Karen.jpg" },
+  { name: "Mehira", short: "LUST", icon: "/afk.GG/assets/portraits/LUST.jpg" },
   // {
   //   name: "Gwyneth",
   //   short: "Gwy",
@@ -228,8 +228,8 @@ const Heroes = [
     icon: "/afk.GG/assets/portraits/NunAssassin.jpg",
   },
   { name: "Drez", short: "Drz", icon: "/afk.GG/assets/portraits/OA.jpg" },
-  // { name: "Vurk", short: "Vrk", icon: "/afk.GG/assets/portraits/Mouse.jpg" },
-  // { name: "Oden", short: "Oden", icon: "/afk.GG/assets/portraits/Mystic.jpg" },
+  { name: "Vurk", short: "Vrk", icon: "/afk.GG/assets/portraits/Mouse.jpg" },
+  { name: "Oden", short: "Oden", icon: "/afk.GG/assets/portraits/Mystic.jpg" },
   // { name: "Safiya", short: "Saf", icon: "/afk.GG/assets/portraits/NOD.jpg" },
   // { name: "Solise", short: "Sose", icon: "/afk.GG/assets/portraits/NT.jpg" },
   // {
@@ -310,11 +310,11 @@ const Heroes = [
   { name: "Sonia", short: "Soni", icon: "/afk.GG/assets/portraits/Sonia.jpg" },
   { name: "Flora", short: "Flo", icon: "/afk.GG/assets/portraits/Spring.jpg" },
   // { name: "Pipa", short: "Pip", icon: "/afk.GG/assets/portraits/SSR.jpg" },
-  // {
-  //   name: "Theshku",
-  //   short: "Snak",
-  //   icon: "/afk.GG/assets/portraits/SnakeMan.jpg",
-  // },
+  {
+    name: "Theshku",
+    short: "Snak",
+    icon: "/afk.GG/assets/portraits/SnakeMan.jpg",
+  },
   // { name: "Granit", short: "Gran", icon: "/afk.GG/assets/portraits/Stone.jpg" },
   // { name: "Ulmus", short: "Wood", icon: "/afk.GG/assets/portraits/TD.jpg" },
   // { name: "Seirus", short: "Seir", icon: "/afk.GG/assets/portraits/TH.jpg" },
@@ -395,6 +395,38 @@ const Heroes = [
   { name: "Albedo", short: "Alb", icon: "/afk.GG/assets/portraits/Yalbed.jpg" },
   { name: "Raine", short: "Rai", icon: "/afk.GG/assets/portraits/nBH.jpg" },
   { name: "Edwin", short: "Ed", icon: "/afk.GG/assets/portraits/edwin.jpg" },
+  {
+    name: "Awk.Athalia",
+    short: "AAtha",
+    icon: "/afk.GG/assets/portraits/athalia_aw.jpg",
+  },
+  {
+    name: "Crassio",
+    short: "Cras",
+    icon: "/afk.GG/assets/portraits/crassio.jpg",
+  },
+  { name: "Daemia", short: "Dae", icon: "/afk.GG/assets/portraits/daemia.jpg" },
+  { name: "Rem", short: "Rem", icon: "/afk.GG/assets/portraits/rem.jpg" },
+  {
+    name: "Ginneas",
+    short: "Gin",
+    icon: "/afk.GG/assets/portraits/ginneas.jpg",
+  },
+  {
+    name: "Maetria",
+    short: "Emi",
+    icon: "/afk.GG/assets/portraits/maetria_aw.jpg",
+  },
+  {
+    name: "Olgath",
+    short: "Olga",
+    icon: "/afk.GG/assets/portraits/olgath.jpg",
+  },
+  {
+    name: "Trishea",
+    short: "Trish",
+    icon: "/afk.GG/assets/portraits/trishea.jpg",
+  },
 ] as Hero[];
 
 const Beasts = [
