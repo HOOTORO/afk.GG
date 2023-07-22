@@ -44,8 +44,9 @@ class MemeScrapper(discord.Client):
 
 
 def get_memes():
+    print(env("SECTEST"))
     intents = discord.Intents.default()
     intents.members = True
     client = MemeScrapper(intents=intents)
-    client.run(env("disbotok"))
+    client.run(env("DISBOTOK"))
     return client.imageLinks
