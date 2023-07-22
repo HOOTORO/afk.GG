@@ -13,6 +13,7 @@
 <script type="module" src="{{ 'js/ts/gamevents/abex.js' | url }}"></script>
 <script type="module" src="{{ 'js/ts/components/timeleft.js' | url }}"></script>
 <script type="module" src="{{ 'js/ts/gamevents/attackform.js' | url }}"></script>
+<script type="module" src="{{ 'js/ts/gamevents/relic.js' | url }}"></script>
 
 {% endblock libs %}
 
@@ -25,3 +26,13 @@
 {% block content %}
 {{ super() }}
 {% endblock content %}
+{% block scripts %}
+{{ super() }}
+<script type="module">
+  import * as ab from "../../js/ts/gamevents/abex.js"
+  import { loadBag, runRelic } from "../../js/ts/gamevents/relic.js"
+  ab.default()
+  runRelic()
+  loadBag();
+</script>
+{% endblock scripts %}

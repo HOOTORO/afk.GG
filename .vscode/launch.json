@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Reinw Debug",
+      "type": "chrome",
+      "request": "launch",
+      "runtimeArgs": [
+        "--disable-features=Translate",
+        "--incognito"
+      ],
+      "url": "http://reinw/",
+      "webRoot": "${workspaceFolder}",
+      "smartStep": true,
+      "cleanUp": "wholeBrowser",
+      "pauseForSourceMap": false,
+      // "preLaunchTask": {
+      //   "type": "npm",
+      //   "script": "SERVE.THIS",
+      // }
+    },
+    {
+      "type": "chrome",
+      "name": "reinw/",
+      "request": "launch",
+      "url": "http://reinw/",
+    }
+  ]
+}

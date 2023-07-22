@@ -1,7 +1,7 @@
 import { bres, verb } from "../model/constants.js";
 import { BaseResQty, User } from "../model/types.js";
 import { updateResourceBox } from "./output.js";
-export const xLog = (x: string) => {
+export const qLog = (x: string) => {
   if (verb) {
     console.log(x);
   }
@@ -136,6 +136,13 @@ function createInput(
   }
 }
 
+function savedObj(str: string, def: any) {
+  if (storedValue(str)) {
+    return JSON.parse(storedValue(str).toString());
+  }
+  return def;
+}
+
 export {
   chainDomElement,
   createElementN,
@@ -145,9 +152,10 @@ export {
   populateStorage,
   radioGroups,
   rangeSlide,
+  savedObj,
   setApp,
-  weekLabels,
   storedValue,
+  weekLabels,
 };
 
 function createElementN(tag: string, props?: tagAttr, inner?: string) {

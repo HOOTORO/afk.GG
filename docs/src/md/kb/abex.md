@@ -23,6 +23,14 @@ As of now you can choose team add test results and export following data: team m
 There are a bugs for sure, if you found one or have ideas/feature request you can leave feedback here [:fontawesome-brands-discord: Submit Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
 ///
 
+=== "Relic Estimate"
+    /// html | div#relic-app
+    ///
+
+=== "Bag"
+    /// html | div#relic-bag
+    ///
+
 === "Run Test Form"
     /// html | div#attack-app
     ///

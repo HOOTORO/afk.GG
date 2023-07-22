@@ -230,9 +230,6 @@ markdown_extensions:
         - links.md
         - urls.md
       check_paths: true
-  # - tools.collapse_code:
-  #     expand_text: ""
-  #     collapse_text: ""
 
 extra:
   social:
@@ -250,10 +247,3 @@ extra:
     actions:
       - accept
       - manage
-  # alternate:
-  #   - name: Russian
-  #     link: /ru/
-  #     lang: ru
-  #   - name: English
-  #     link: /en/
-  #     lang: en

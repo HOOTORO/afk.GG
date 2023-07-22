@@ -324,3 +324,87 @@
 #dps-table {
   width: 10vw;
 }
+
+#relic-app {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .relic {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+  > span {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 3px;
+  }
+  .ui-input,
+  .relic-type {
+    width: 10em;
+    font-size: larger;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px rgb(179, 0, 255), 0 2px 1em rgb(0, 217, 255),
+      0 0 0.2em rgb(98, 0, 255);
+    stroke: #00ffff;
+    -webkit-text-stroke: #00ffff;
+
+    img {
+      -webkit-user-drag: none;
+    }
+
+    > * {
+      cursor: pointer;
+    }
+
+    input[type="number"] {
+      max-width: 5em;
+      border-radius: 5px;
+    }
+  }
+
+  .ui-input {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      display: inline-flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  .goal {
+    background-color: #0015ff49;
+    background-size: 150%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px red, 0 0.5px 1em blue;
+  }
+
+  output {
+    display: inline-flex;
+    min-width: 250px;
+  }
+}
+
+#relic-bag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  input {
+    width: 42px;
+  }
+  > * {
+    margin: 10px;
+  }
+}

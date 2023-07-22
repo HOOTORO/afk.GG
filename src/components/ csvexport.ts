@@ -1,6 +1,6 @@
 export const exportToCsv = (
   filename: string,
-  rows: object[],
+  rows: string[][],
   headers?: string[]
 ): void => {
   if (!rows || !rows.length) {
@@ -10,34 +10,20 @@ export const exportToCsv = (
 
   const keys: string[] = Object.keys(rows[0]);
 
-  let columHearders: string[];
+  let columHeaders: string[];
 
   if (headers) {
-    columHearders = headers;
+    columHeaders = headers;
   } else {
-    columHearders = keys;
+    columHeaders = keys;
   }
-
   const csvContent =
     "sep=,\n" +
-    columHearders.join(separator) +
+    columHeaders.join(separator) +
     "\n" +
     rows
       .map((row) => {
-        return keys
-          .map((k) => {
-            let cell = row[k] === null || row[k] === undefined ? "" : row[k];
-
-            cell =
-              cell instanceof Date
-                ? cell.toLocaleString()
-                : cell.toString().replace(/"/g, '""');
-            if (cell.search(/("|,|\n)/g) >= 0) {
-              cell = `"${cell}"`;
-            }
-            return cell;
-          })
-          .join(separator);
+        return row.join(separator);
       })
       .join("\n");
 

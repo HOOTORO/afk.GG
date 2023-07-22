@@ -48,19 +48,6 @@ type Hero = {
   icon?: string;
 };
 
-// class Hero extends HeroPortrait {
-//   asc: string;
-//   si: string;
-//   fu: string;
-//   eng: string;
-//   /**
-//    *
-//    */
-//   constructor() {
-//     super();
-//   }
-// }
-
 type Ascension =
   | "E"
   | "E+"

@@ -4,16 +4,16 @@ import {
   createElementN,
   createSelectList,
   populateStorage,
+  qLog,
   rangeSlide,
   setApp,
-  xLog,
 } from "./components/helper.js";
 import { makeOut, updateResourceBox } from "./components/output.js";
 import { ValueModes, userFields, verb } from "./model/constants.js";
 import { Gsheet, RankReward, User } from "./model/types.js";
 
-xLog(`[Extended log] => ${verb}`);
-xLog(`Looking for entry tag...`);
+qLog(`[Extended log] => ${verb}`);
+qLog(`Looking for entry tag...`);
 export const app = document.getElementById("app");
 
 const user: User = new User("1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY");
@@ -21,7 +21,7 @@ initUser();
 startApp();
 
 function initUser() {
-  xLog(`Init user...`);
+  qLog(`Init user...`);
   for (let inputField of userFields) {
     if (!localStorage.getItem(inputField.name)) {
       const selected = $(inputField.name).find(":selected").get(0);
@@ -33,10 +33,10 @@ function initUser() {
 }
 
 function startApp() {
-  xLog("launch app...");
+  qLog("launch app...");
   app.appendChild(makeOut());
-  drawInputs().catch((x) => xLog(`Promise rejected => ${x}`));
-  xLog("app started");
+  drawInputs().catch((x) => qLog(`Promise rejected => ${x}`));
+  qLog("app started");
 }
 
 async function drawInputs() {
@@ -59,7 +59,7 @@ async function drawInputs() {
         loadRewards(x.mode, t);
       })
       .then(() => app.appendChild(inputForm))
-      .catch((x: PromiseRejectedResult) => xLog(`Promise rejected${x.status}`))
+      .catch((x: PromiseRejectedResult) => qLog(`Promise rejected${x.status}`))
       .finally(() => {
         setTimeout(() => {
           app.dispatchEvent(new InputEvent("change"));

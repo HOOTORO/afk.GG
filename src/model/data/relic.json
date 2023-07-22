@@ -1,0 +1,722 @@
+[
+  {
+    "id": 1,
+    "name": "1205",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1205.png",
+    "cost": 1200,
+    "recipe": [0]
+  },
+  {
+    "id": 3,
+    "name": "1106",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1106.png",
+    "cost": 2100,
+    "recipe": [0]
+  },
+  {
+    "id": 9,
+    "name": "1201",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1201.png",
+    "cost": 2760,
+    "recipe": [0]
+  },
+  {
+    "id": 7,
+    "name": "1202",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1202.png",
+    "cost": 1620,
+    "recipe": [0]
+  },
+  {
+    "id": 6,
+    "name": "1203",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1203.png",
+    "cost": 2160,
+    "recipe": [0]
+  },
+  {
+    "id": 5,
+    "name": "1204",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1204.png",
+    "cost": 1680,
+    "recipe": [0]
+  },
+  {
+    "id": 4,
+    "name": "1105",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1105.png",
+    "cost": 2880,
+    "recipe": [0]
+  },
+  {
+    "id": 8,
+    "name": "1206",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1206.png",
+    "cost": 2220,
+    "recipe": [0]
+  },
+  {
+    "id": 2,
+    "name": "2104",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_2104.png",
+    "cost": 1980,
+    "recipe": [0]
+  },
+  {
+    "id": 10,
+    "name": "1304",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1304.png",
+    "cost": 2400,
+    "recipe": [0]
+  },
+  {
+    "id": 12,
+    "name": "1305",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1305.png",
+    "cost": 2820,
+    "recipe": [0]
+  },
+  {
+    "id": 11,
+    "name": "1306",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1306.png",
+    "cost": 1500,
+    "recipe": [0]
+  },
+  {
+    "id": 13,
+    "name": "1404",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1404.png",
+    "cost": 1140,
+    "recipe": [0]
+  },
+  {
+    "id": 15,
+    "name": "1405",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1405.png",
+    "cost": 1800,
+    "recipe": [0]
+  },
+  {
+    "id": 14,
+    "name": "1406",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1406.png",
+    "cost": 1980,
+    "recipe": [0]
+  },
+  {
+    "id": 16,
+    "name": "1504",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1504.png",
+    "cost": 1560,
+    "recipe": [0]
+  },
+  {
+    "id": 18,
+    "name": "1505",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1505.png",
+    "cost": 2160,
+    "recipe": [0]
+  },
+  {
+    "id": 17,
+    "name": "1506",
+    "tier": 10,
+    "icon": "/afk.GG/assets/ae/relic/10/bg_relic_1-relic_1506.png",
+    "cost": 2400,
+    "recipe": [0]
+  },
+  {
+    "id": 19,
+    "name": "1106 - Eye of Valor",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_1106.png",
+    "cost": 1500,
+    "recipe": [3, 3]
+  },
+  {
+    "id": 20,
+    "name": "1206 - Eye of Determination",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_1206.png",
+    "cost": 1380,
+    "recipe": [8, 8]
+  },
+  {
+    "id": 21,
+    "name": "1306- ",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_1306.png",
+    "cost": 1860,
+    "recipe": [11, 11]
+  },
+  {
+    "id": 22,
+    "name": "1406",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_1406.png",
+    "cost": 1320,
+    "recipe": [14, 14]
+  },
+  {
+    "id": 23,
+    "name": "1506",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_1506.png",
+    "cost": 1020,
+    "recipe": [17, 17]
+  },
+  {
+    "id": 24,
+    "name": "2104",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2104.png",
+    "cost": 900,
+    "recipe": [2, 1, 13]
+  },
+  {
+    "id": 25,
+    "name": "2105",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2105.png",
+    "cost": 360,
+    "recipe": [4, 6, 10]
+  },
+  {
+    "id": 26,
+    "name": "2201",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2201.png",
+    "cost": 120,
+    "recipe": [9, 6, 18]
+  },
+  {
+    "id": 27,
+    "name": "2202",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2202.png",
+    "cost": 1680,
+    "recipe": [7, 7]
+  },
+  {
+    "id": 28,
+    "name": "2203",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2203.png",
+    "cost": 1210,
+    "recipe": [6, 10]
+  },
+  {
+    "id": 29,
+    "name": "2204",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2204.png",
+    "cost": 2760,
+    "recipe": [5, 18]
+  },
+  {
+    "id": 30,
+    "name": "2205",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2205.png",
+    "cost": 2040,
+    "recipe": [1, 2]
+  },
+  {
+    "id": 31,
+    "name": "2304",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2304.png",
+    "cost": 2040,
+    "recipe": [10, 18]
+  },
+  {
+    "id": 32,
+    "name": "2305",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2305.png",
+    "cost": 3240,
+    "recipe": [12, 13]
+  },
+  {
+    "id": 33,
+    "name": "2404",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2404.png",
+    "cost": 540,
+    "recipe": [13, 13, 13]
+  },
+  {
+    "id": 34,
+    "name": "2405",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2405.png",
+    "cost": 1440,
+    "recipe": [15, 15, 16]
+  },
+  {
+    "id": 35,
+    "name": "2504",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2504.png",
+    "cost": 1680,
+    "recipe": [16, 16, 15]
+  },
+  {
+    "id": 36,
+    "name": "2505",
+    "tier": 20,
+    "icon": "/afk.GG/assets/ae/relic/20/bg_relic_2-relic_2505.png",
+    "cost": 1020,
+    "recipe": [18, 13, 5]
+  },
+  {
+    "id": 37,
+    "name": "1106",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_1106.png",
+    "cost": 2400,
+    "recipe": [19, 19]
+  },
+  {
+    "id": 38,
+    "name": "1206",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_1206.png",
+    "cost": 2160,
+    "recipe": [20, 20]
+  },
+  {
+    "id": 39,
+    "name": "1306",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_1306.png",
+    "cost": 2280,
+    "recipe": [21, 21]
+  },
+  {
+    "id": 40,
+    "name": "1406",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_1406.png",
+    "cost": 5040,
+    "recipe": [22, 22]
+  },
+  {
+    "id": 41,
+    "name": "1506",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_1506.png",
+    "cost": 3960,
+    "recipe": [23, 23]
+  },
+  {
+    "id": 42,
+    "name": "3104",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3104.png",
+    "cost": 3060,
+    "recipe": [24, 30]
+  },
+  {
+    "id": 43,
+    "name": "3105",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3105.png",
+    "cost": 4080,
+    "recipe": [25, 27, 36]
+  },
+  {
+    "id": 44,
+    "name": "3201",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3201.png",
+    "cost": 1430,
+    "recipe": [26, 26, 28]
+  },
+  {
+    "id": 45,
+    "name": "3202",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3202.png",
+    "cost": 2880,
+    "recipe": [27, 29]
+  },
+  {
+    "id": 46,
+    "name": "3203",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3203.png",
+    "cost": 1740,
+    "recipe": [28, 26, 9]
+  },
+  {
+    "id": 47,
+    "name": "3204",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3204.png",
+    "cost": 4200,
+    "recipe": [29, 29, 36]
+  },
+  {
+    "id": 48,
+    "name": "3205",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3205.png",
+    "cost": 5760,
+    "recipe": [24, 30]
+  },
+  {
+    "id": 49,
+    "name": "3304",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3304.png",
+    "cost": 2270,
+    "recipe": [31, 28, 33]
+  },
+  {
+    "id": 50,
+    "name": "3305",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3305.png",
+    "cost": 9600,
+    "recipe": [32, 36]
+  },
+  {
+    "id": 51,
+    "name": "3404",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3404.png",
+    "cost": 1320,
+    "recipe": [33, 33, 33]
+  },
+  {
+    "id": 52,
+    "name": "3405",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3405.png",
+    "cost": 6120,
+    "recipe": [34, 22]
+  },
+  {
+    "id": 53,
+    "name": "3504",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3504.png",
+    "cost": 4440,
+    "recipe": [35, 34, 16]
+  },
+  {
+    "id": 54,
+    "name": "3505",
+    "tier": 30,
+    "icon": "/afk.GG/assets/ae/relic/30/bg_relic_3-relic_3505.png",
+    "cost": 4200,
+    "recipe": [36, 25]
+  },
+  {
+    "id": 55,
+    "name": "1106",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_1106.png",
+    "cost": 24600,
+    "recipe": [37, 37, 37]
+  },
+  {
+    "id": 56,
+    "name": "1206",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_1206.png",
+    "cost": 24600,
+    "recipe": [38, 38, 38]
+  },
+  {
+    "id": 57,
+    "name": "1306",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_1306.png",
+    "cost": 36000,
+    "recipe": [39, 39, 39]
+  },
+  {
+    "id": 58,
+    "name": "1406",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_1406.png",
+    "cost": 25200,
+    "recipe": [40, 40, 40]
+  },
+  {
+    "id": 59,
+    "name": "1506",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_1506.png",
+    "cost": 25200,
+    "recipe": [41, 41, 41]
+  },
+  {
+    "id": 60,
+    "name": "4104",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4104.png",
+    "cost": 9600,
+    "recipe": [42, 48, 51]
+  },
+  {
+    "id": 61,
+    "name": "4105",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4105.png",
+    "cost": 12000,
+    "recipe": [43, 45, 54, 50]
+  },
+  {
+    "id": 62,
+    "name": "4201",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4201.png",
+    "cost": 2400,
+    "recipe": [46, 46, 44, 44]
+  },
+  {
+    "id": 63,
+    "name": "4202",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4202.png",
+    "cost": 15000,
+    "recipe": [45, 47]
+  },
+  {
+    "id": 64,
+    "name": "4203",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4203.png",
+    "cost": 2400,
+    "recipe": [46, 46, 44, 26]
+  },
+  {
+    "id": 65,
+    "name": "4204",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4204.png",
+    "cost": 31200,
+    "recipe": [47, 47, 54]
+  },
+  {
+    "id": 66,
+    "name": "4205",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4205.png",
+    "cost": 12600,
+    "recipe": [48, 42, 51]
+  },
+  {
+    "id": 67,
+    "name": "4304",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4304.png",
+    "cost": 16800,
+    "recipe": [49, 49, 46, 51]
+  },
+  {
+    "id": 68,
+    "name": "4305",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4305.png",
+    "cost": 30600,
+    "recipe": [50, 54, 49]
+  },
+  {
+    "id": 69,
+    "name": "4404",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4404.png",
+    "cost": 10200,
+    "recipe": [51, 51, 53]
+  },
+  {
+    "id": 70,
+    "name": "4405",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4405.png",
+    "cost": 15000,
+    "recipe": [52, 40, 47]
+  },
+  {
+    "id": 71,
+    "name": "4504",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4504.png",
+    "cost": 18000,
+    "recipe": [53, 52, 42, 35]
+  },
+  {
+    "id": 72,
+    "name": "4505",
+    "tier": 40,
+    "icon": "/afk.GG/assets/ae/relic/40/bg_relic_4-relic_4505.png",
+    "cost": 17400,
+    "recipe": [50, 43, 54]
+  },
+  {
+    "id": 73,
+    "name": "1106",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_1106.png",
+    "cost": 156000,
+    "recipe": [55, 55, 55]
+  },
+  {
+    "id": 74,
+    "name": "1206",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_1206.png",
+    "cost": 132000,
+    "recipe": [56, 56, 56]
+  },
+  {
+    "id": 75,
+    "name": "1306",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_1306.png",
+    "cost": 114000,
+    "recipe": [57, 57, 57]
+  },
+  {
+    "id": 76,
+    "name": "1406",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_1406.png",
+    "cost": 96000,
+    "recipe": [58, 58, 58]
+  },
+  {
+    "id": 77,
+    "name": "1506",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_1506.png",
+    "cost": 132000,
+    "recipe": [59, 59, 59]
+  },
+  {
+    "id": 78,
+    "name": "5104",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5104.png",
+    "cost": 21600,
+    "recipe": [60, 66, 69]
+  },
+  {
+    "id": 79,
+    "name": "5105",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5105.png",
+    "cost": 58200,
+    "recipe": [61, 63, 72, 68]
+  },
+  {
+    "id": 80,
+    "name": "5201",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5201.png",
+    "cost": 48000,
+    "recipe": [62, 62, 64, 64]
+  },
+  {
+    "id": 81,
+    "name": "5202",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5202.png",
+    "cost": 61200,
+    "recipe": [65, 63]
+  },
+  {
+    "id": 82,
+    "name": "5203",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5203.png",
+    "cost": 50400,
+    "recipe": [64, 64, 62, 44]
+  },
+  {
+    "id": 83,
+    "name": "5204",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5204.png",
+    "cost": 75000,
+    "recipe": [65, 72]
+  },
+  {
+    "id": 84,
+    "name": "5205",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5205.png",
+    "cost": 69600,
+    "recipe": [66, 60, 69]
+  },
+  {
+    "id": 85,
+    "name": "5304",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5304.png",
+    "cost": 100200,
+    "recipe": [67, 64, 69]
+  },
+  {
+    "id": 86,
+    "name": "5305",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5305.png",
+    "cost": 159600,
+    "recipe": [68, 72, 67]
+  },
+  {
+    "id": 87,
+    "name": "5404",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5404.png",
+    "cost": 5400,
+    "recipe": [69, 71, 66]
+  },
+  {
+    "id": 88,
+    "name": "5405",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5405.png",
+    "cost": 36000,
+    "recipe": [70, 65, 65]
+  },
+  {
+    "id": 89,
+    "name": "5504",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5504.png",
+    "cost": 51000,
+    "recipe": [70, 71, 53, 60]
+  },
+  {
+    "id": 90,
+    "name": "5505",
+    "tier": 50,
+    "icon": "/afk.GG/assets/ae/relic/50/bg_relic_5-relic_5505.png",
+    "cost": 9000,
+    "recipe": [72, 68, 61]
+  }
+]

@@ -1,5 +1,20 @@
 import { DustChest } from "./types.js";
 
+// document.getElementById("body").use(cors());
+
+// const fetchJSON = async (name: string) => {
+//   const response = await fetch(`data/${name}.json`);
+//   const data = await response
+//     .json()
+//     .then(function (result) {
+//       return result;
+//     })
+//     .catch(function (error) {
+//       return error;
+//     });
+//   console.log(data);
+//   return data;
+// };
 class Period {
   static hour = 1;
   static day = 24 * this.hour;
@@ -46,7 +61,7 @@ class AbEx {
   static viewerMultiplier = 1.2;
   static starFasterRecoveryMod = 0.9;
   static start() {
-    return new Date(2023, 6, 5, 3, 0, 0);
+    return new Date(2023, 6, 5, 0, 0, 0, 0);
   }
   static leftToStart() {
     return new Date(this.start().getTime() - this.now.getTime());
@@ -54,20 +69,20 @@ class AbEx {
   static left() {
     return new Date(
       this.start().getUTCFullYear(),
-      this.start().getMonth(),
-      this.start().getDate() + this.abexDurationDays,
-      this.start().getHours(),
-      this.start().getMinutes()
+      this.start().getUTCMonth(),
+      this.start().getUTCDate() + this.abexDurationDays,
+      this.start().getUTCHours(),
+      this.start().getUTCMinutes()
     );
   }
 
   static silentHoursIn() {
     return new Date(
       this.left().getUTCFullYear(),
-      this.left().getMonth(),
-      this.left().getDate() - this.silentDay,
-      this.left().getHours(),
-      this.left().getMinutes()
+      this.left().getUTCMonth(),
+      this.left().getUTCDate() - this.silentDay,
+      this.left().getUTCHours(),
+      this.left().getUTCMinutes()
     );
   }
   static hoursLeft() {
@@ -171,11 +186,8 @@ const allRes = [
 ];
 
 enum GameMode {
-  // CR = "Cursed Realm",
   CR = "CR",
-  // TS = "Treasure Scramble",
   TS = "TS",
-  // NC = "Nightmare Corridor",
   NC = "NC",
   all = "all",
 }
@@ -225,3 +237,13 @@ export {
   verb,
   xh,
 };
+
+// export function getJsonString(filename: string) {
+//   try {
+//     const jsonString = fetchJSON(); // fs.readFileSync(`./data/${filename}.json`, "utf-8");
+//     const jsonData = JSON.parse(jsonString);
+//     return jsonData;
+//   } catch (err) {
+//     console.error(err);
+//   }
+// }
