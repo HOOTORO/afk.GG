@@ -11,8 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set env
+      - name: Set py scripts folder
         run: echo "PYTHONPATH=:/home/runner/work/afk.GG/afk.GG/scripts/" >> $GITHUB_ENV
+      - name: Set bot token
+        run: echo "DISBOTOK=env.DISBOTOK" >> $GITHUB_ENV
       - name: Test
         run: echo $PYTHONPATH
       - uses: actions/setup-python@v4
@@ -45,4 +47,7 @@ jobs:
       - run: pip install requests
       - run: pip install pyarrow
       - run: pip install pillow cairosvg
-      - run: mkdocs gh-deploy --force
+      - name: Deploy to gh
+        env:
+          DISBOTOK: ${{ secrets.DISBOTOK }}
+        run: mkdocs gh-deploy --force
