@@ -1,15 +1,17 @@
 import os
 
 import discord
-from dotenv import load_dotenv
 
-load_dotenv()
 
 def env(k):
     if os.getenv(k):
         return os.getenv(k)
     else:
         return  ""
+    
+if env("LOCAL_BUILD"):
+    from dotenv import load_dotenv
+    load_dotenv()
 
 class MemeScrapper(discord.Client):
     def __init__(self, *args, **kwargs):
@@ -26,8 +28,8 @@ class MemeScrapper(discord.Client):
     async def my_background_task(self):
         try:
             await self.wait_until_ready()
-            channel = self.get_channel(int(env("memesch")))  # channel ID goes here
-            log_channel = self.get_channel(int(env("logchan")))
+            channel = self.get_channel(int(env("MEMESCH")))  # channel ID goes here
+            log_channel = self.get_channel(int(env("LOGCHAN")))
             while not self.is_closed():
                 self.imageLinks:str = []
                 async for message in channel.history(limit=200):
