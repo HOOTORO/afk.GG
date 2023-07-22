@@ -4,31 +4,19 @@ export const exportToCsv = (filename, rows, headers) => {
     }
     const separator = ",";
     const keys = Object.keys(rows[0]);
-    let columHearders;
+    let columHeaders;
     if (headers) {
-        columHearders = headers;
+        columHeaders = headers;
     }
     else {
-        columHearders = keys;
+        columHeaders = keys;
     }
     const csvContent = "sep=,\n" +
-        columHearders.join(separator) +
+        columHeaders.join(separator) +
         "\n" +
         rows
             .map((row) => {
-            return keys
-                .map((k) => {
-                let cell = row[k] === null || row[k] === undefined ? "" : row[k];
-                cell =
-                    cell instanceof Date
-                        ? cell.toLocaleString()
-                        : cell.toString().replace(/"/g, '""');
-                if (cell.search(/("|,|\n)/g) >= 0) {
-                    cell = `"${cell}"`;
-                }
-                return cell;
-            })
-                .join(separator);
+            return row.join(separator);
         })
             .join("\n");
     const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });

@@ -41,16 +41,16 @@ class AbEx {
     static viewerMultiplier = 1.2;
     static starFasterRecoveryMod = 0.9;
     static start() {
-        return new Date(2023, 6, 5, 3, 0, 0);
+        return new Date(2023, 6, 5, 0, 0, 0, 0);
     }
     static leftToStart() {
         return new Date(this.start().getTime() - this.now.getTime());
     }
     static left() {
-        return new Date(this.start().getUTCFullYear(), this.start().getMonth(), this.start().getDate() + this.abexDurationDays, this.start().getHours(), this.start().getMinutes());
+        return new Date(this.start().getUTCFullYear(), this.start().getUTCMonth(), this.start().getUTCDate() + this.abexDurationDays, this.start().getUTCHours(), this.start().getUTCMinutes());
     }
     static silentHoursIn() {
-        return new Date(this.left().getUTCFullYear(), this.left().getMonth(), this.left().getDate() - this.silentDay, this.left().getHours(), this.left().getMinutes());
+        return new Date(this.left().getUTCFullYear(), this.left().getUTCMonth(), this.left().getUTCDate() - this.silentDay, this.left().getUTCHours(), this.left().getUTCMinutes());
     }
     static hoursLeft() {
         return ((this.silentHoursIn().getTime() - this.now.getTime()) / 1000 / 60 / 60);

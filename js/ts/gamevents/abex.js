@@ -9,10 +9,10 @@ export default function runAbExTimers() {
 }
 const app = document.getElementById("rem-food");
 const mil = new Militia(10);
-const expeditor = new Expeditor(mil, false);
+export const expeditor = new Expeditor(mil, false);
 runAbExTimers();
 if (!app) {
-    console.log(`no apptag, return`);
+    console.log(`no app tag, return`);
 }
 else {
     initForm(app);
@@ -28,7 +28,7 @@ function updateAbex() {
     mil.viewers = parseInt(document.getElementById("mil-specs").getAttribute("value"));
     const sod = document.getElementById("mil-sod");
     expeditor.starStatus = sod.checked ? true : false;
-    expeditor.currentFood = parseInt(document.getElementById("ex-food").getAttribute("value"));
+    expeditor._stamina = parseInt(document.getElementById("ex-food").getAttribute("value"));
     let totalFood = expeditor.totalFood();
     let atl = totalFood / Boss.foodCost;
     let rtyLeft = (totalFood % Boss.foodCost) / Boss.retry;
@@ -88,10 +88,6 @@ function initForm(n) {
     n.appendChild(form);
     n.appendChild(out);
 }
-function getLimits(n, viewers, star) {
-    const timeLeft = AbEx.hoursLeft();
-    return n + timeLeft * AbEx.actualIncome(viewers, star);
-}
 function inputChange(e) {
     if (e.type === "checkbox") {
         e.checked ? e.setAttribute("checked", "") : e.removeAttribute("checked");
@@ -102,8 +98,8 @@ function inputChange(e) {
 }
 function updateProgressBar() {
     let totalHours = AbEx.abexDurationDays * 24;
-    let timepassed = totalHours - AbEx.hoursLeft();
-    let percent = (timepassed / totalHours) * 100;
+    let timePassed = totalHours - AbEx.hoursLeft();
+    let percent = (timePassed / totalHours) * 100;
     const bar = document.getElementsByClassName("abex-progress").item(0);
     if (bar) {
         const style = bar.getElementsByClassName("progress-bar").item(0);

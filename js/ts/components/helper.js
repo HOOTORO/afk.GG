@@ -1,6 +1,6 @@
 import { verb } from "../model/constants.js";
 import { updateResourceBox } from "./output.js";
-export const xLog = (x) => {
+export const qLog = (x) => {
     if (verb) {
         console.log(x);
     }
@@ -115,7 +115,13 @@ function createInput(t = "text", label = `Provide ${t}`, img, attrs, parent) {
         return labelE;
     }
 }
-export { chainDomElement, createElementN, createInput, createSelectList, generateAFKResObj, populateStorage, radioGroups, rangeSlide, setApp, weekLabels, storedValue, };
+function savedObj(str, def) {
+    if (storedValue(str)) {
+        return JSON.parse(storedValue(str).toString());
+    }
+    return def;
+}
+export { chainDomElement, createElementN, createInput, createSelectList, generateAFKResObj, populateStorage, radioGroups, rangeSlide, savedObj, setApp, storedValue, weekLabels, };
 function createElementN(tag, props, inner) {
     const doc = document.createElement(tag);
     if (props) {

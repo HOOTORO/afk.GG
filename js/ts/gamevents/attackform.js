@@ -50,15 +50,22 @@ const csvExport = createElementN("button", {
 btnContainer.appendChild(addAttack);
 btnContainer.appendChild(csvExport);
 csvExport.addEventListener("click", (e) => {
-    exportToCsv("data.csv", MetaTeam.damage.map((x) => [
+    const o = MetaTeam.damage.map((x) => [
         MetaTeam.Heroes()
             .map((y) => y.short)
             .join("|"),
         MetaTeam.pet.name,
         MetaTeam.TreeString(),
-        x[0],
-        x[1],
-    ]), ["Team", "Pet", "Elder Tree", "Damage", "Comment"]);
+        x[0].toString(),
+        x[1].toString(),
+    ]);
+    exportToCsv("data.csv", o, [
+        "Team",
+        "Pet",
+        "Elder Tree",
+        "Damage",
+        "Comment",
+    ]);
 });
 attackForm.appendChild(createElementN("output", {
     name: "battle-stat",
@@ -99,7 +106,8 @@ const heroselector = checkBoxSelector(heroSelectId, Heroes, heroClick);
 heroselector.addEventListener("click", (x) => {
     const tg = x.target;
     const offElement = tg.offsetParent;
-    if (MetaTeam.Heroes().length >= 5 && !offElement.control.checked) {
+    const inp = offElement?.control;
+    if (MetaTeam.Heroes().length >= 5 && !inp.checked) {
         x.preventDefault();
         x.stopPropagation();
         x.stopImmediatePropagation();
