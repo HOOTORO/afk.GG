@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Set env
+        run: echo "PYTHONPATH='${PYTHONPATH}:/home/runner/work/afk.GG/afk.GG/scripts/'" >> $GITHUB_ENV
+      - name: Test
+        run: echo $PYTHONPATH
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
