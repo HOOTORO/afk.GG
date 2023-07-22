@@ -48,4 +48,5 @@ jobs:
       - name: Deploy to gh
         env:
           DISBOTOK: ${{ secrets.DISBOTOK }}
+          SECTEST: ${{ secrets.SECTEST }}
         run: mkdocs gh-deploy --force
