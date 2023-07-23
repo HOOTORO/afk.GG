@@ -49,4 +49,6 @@ jobs:
         env:
           DISBOTOK: ${{ secrets.DISBOTOK }}
           SECTEST: ${{ secrets.SECTEST }}
+          MEMESCH: ${{ vars.MEMESCH }}
+          LOGCHAN: ${{ vars.LOGCHAN }}
         run: mkdocs gh-deploy --force
