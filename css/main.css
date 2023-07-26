@@ -5333,6 +5333,8 @@ summary > .md-button {
   border-left: 1px solid #eeeeee;
   transform: translateX(-100%);
   cursor: pointer;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
   user-select: none;
 }
 #team-set .team-set-button.team-set-up {
@@ -5517,6 +5519,7 @@ summary > .md-button {
 #relic-app .ui-input img,
 #relic-app .relic-type img {
   -webkit-user-drag: none;
+  -webkit-user-select: none;
 }
 .user-bag .ui-input > span,
 .user-bag .relic-type > span,
