@@ -125,6 +125,8 @@
     width: 30px;
     height: auto;
     margin-left: 0;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
   }
   input[type="number"] {
     width: 100px;
@@ -335,36 +337,24 @@
 
   input[type="number"],
   code {
-    max-width: 6em;
-    margin-left: 5%;
+    max-width: 5em;
     color: #000000;
     border-radius: 5px;
   }
 
-  .relic {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10px;
-  }
-
-  > span {
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: stretch;
-    margin: 1px;
-    margin-top: 10px;
-  }
-
   .ui-input,
   .relic-type {
-    width: 10em;
+    width: 20em;
+    margin: 5px;
     font-size: larger;
+    font-family: "Twilio Sans Mono";
     text-align: center;
     text-transform: capitalize;
     text-shadow: 1px 1px 2px rgb(179, 0, 255), 0 2px 1em rgb(0, 217, 255),
       0 0 0.2em rgb(98, 0, 255);
+    background-color: #3d2e4b48;
+    border: 2px outset #3030347d;
+    border-radius: 10px;
     stroke: #00ffff;
     -webkit-text-stroke: #00ffff;
 
@@ -372,7 +362,19 @@
       -webkit-user-drag: none;
     }
 
-    > * {
+    > span {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .relic {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 7em;
+      margin-top: 10px;
+      margin-bottom: 10px;
       cursor: pointer;
     }
   }
@@ -398,7 +400,16 @@
   }
 
   output {
-    display: inline-flex;
+    display: flex;
     min-width: 250px;
   }
+}
+
+.user-bag > span {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  max-width: 5em;
+  margin: 1px;
 }

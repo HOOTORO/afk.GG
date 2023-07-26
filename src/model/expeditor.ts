@@ -6,6 +6,7 @@ import {
   storedValue,
 } from "../components/helper.js";
 import { SellPriceMod as SellCoef } from "../gamevents/abexvars.js";
+import { Preferences } from "../settings.js";
 import {
   Branch,
   RelicManager,
@@ -116,7 +117,7 @@ class Expeditor {
     );
   }
 
-  RepresentYourSelf() {
+  calculateEstimates() {
     const essPerHour: number = this.EPH();
     const goals = this.goalRelics();
     let totalEssRequired: number = this._essence * -1;
@@ -127,15 +128,11 @@ class Expeditor {
     }
     let timeleft = totalEssRequired / essPerHour;
     const bag = this.bagCheck(goals);
-    // const actualLeft = isEmpty(KeepArr)
-    //   ? goals
-    //   : difference(
-    //       goals.map((x) => x.id),
-    //       KeepArr
-    //     );
-    totalEssRequired -= safeReduceSum(
-      bag.sell.map((x) => RelicManager.price(x) * x.qty * SellCoef)
-    );
+    if (bag.sell.length > 0) {
+      totalEssRequired -= safeReduceSum(
+        bag.sell.map((x) => RelicManager.price(x) * x.qty * SellCoef)
+      );
+    }
     timeleft = totalEssRequired / (essPerHour + this.townsLootValue(goals));
 
     timeleft = timeleft <= 0 || Number.isNaN(timeleft) ? 0 : timeleft;
@@ -149,16 +146,14 @@ class Expeditor {
       totalEssRequired.toString(),
       timeleft.toFixed(2),
       bag.items.toString(),
-      "✅ " +
-        Renderer.imgArray(
-          bag.keep.map((v) => v.icon),
-          24
-        ),
-      "♻️ " +
-        Renderer.imgArray(
-          bag.sell.map((v) => v.icon),
-          24
-        ),
+      Renderer.imgArray(
+        bag.keep.map((v) => v.icon),
+        Preferences.IconSmall
+      ),
+      Renderer.imgArray(
+        bag.sell.map((v) => v.icon),
+        Preferences.IconSize
+      ),
       this.goalImages(),
     ];
   }

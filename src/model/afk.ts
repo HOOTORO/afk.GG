@@ -1517,7 +1517,7 @@ class Renderer {
         "span",
         {},
         `
-      <img src=${x.icon} alt=${x.name} width=42></img>
+      <img src=${x.icon} alt=${x.name} width=52></img>
       <code><u>id</u>: ${x.id}</code>
       <code><strong>price</strong>:<br> ${RelicManager.price(x)}</code>
       <code><em>recipe</em>: ${x.recipe.join("/")}</code>

@@ -9,7 +9,7 @@ import { AfkObject, Team } from "../model/teams.js";
 
 let MetaTeam = new Team();
 
-const formId = "team-set"; //team-set-num-in
+const formId = "team-set";
 const heroSelectId = "hero-selection";
 const petSelectId = "pet-sele";
 
@@ -41,6 +41,7 @@ atkContainer.addEventListener("change", (x: InputEvent) => {
 
 let table = `
 <table id="dps-table" style="width:100%">
+<thead>
 <tr>
 <th style='width:65%'>Team</th>
 <th>Pet</th>
@@ -48,6 +49,9 @@ let table = `
 <th>Damage</th>
 <th>Comment</th>
 </tr>
+</thead>
+<tbody>
+</tbody>
 </table>
 `;
 
@@ -138,7 +142,7 @@ addAttack.addEventListener("click", (e) => {
     parseInt($("#dps").val().toString()),
     $("#comm").val().toString()
   );
-  jQuery(text).appendTo("#dps-table");
+  jQuery(text).appendTo("#dps-table > tbody");
 });
 
 const petCheckBoxes = checkBoxSelector(petSelectId, Beasts, petClick);

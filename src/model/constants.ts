@@ -19,8 +19,7 @@ import { DustChest } from "./types.js";
 const relicEstimateTable = `
   <thead>
     <tr>
-      <th align="center" width=30%>Expeditor</th>
-      <th align="center">Data</th>
+      <th align="center" colspan=2>Expeditor Data</th>
     </tr>
   </thead>
   <tbody>
@@ -51,24 +50,15 @@ const relicEstimateTable = `
         <td align="center">$tg</td>
       </tr>
       <tr>
-        <td align="center">KEEP</td>
+        <td align="center">KEEP✅ </td>
         <td align="left">$need</td>
       </tr>
       <tr>
-        <td align="center">SELL</td>
+        <td align="center">SELL♻️</td>
         <td align="right">$toSell</td>
       </tr>
   </tbody>
-  <tfoot>
-    <tr>
-      <td align="center" colspan=2>
-        <sup>*</sup>
-          Resulting number takes into account 
-          <br>
-           [<strong>entered</strong> ess.| <strong>Income</strong> | <strong>SELL</strong> | town based avg. <strong>relic drop</strong><sup id="sp1"><a href="#fn1">1</a></sup>] 
-      </td>
-    </tr>
-  </tfoot>
+
 `;
 class Period {
   static hour = 1;

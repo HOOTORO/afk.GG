@@ -9,29 +9,38 @@ template: templates/abex.j2
 
 //// warning | Development in progress [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
 
-Половина AbEx осталась позади, так что вывел на общее пользование эту функцию в пре-альфа-даже-не-в-раннем-доступе версии, пока она еще актуальна.
-При этом более половины от запланированного еще не реализовано.
-На данный момент вы можете выбрать команду, добавить результаты теста и экспортировать следующие данные: члены команды, урон питомца и комментарий.
-Наверняка есть баги, если вы их нашли или у вас есть идеи/пожелания, можете оставить отзыв в дискорде (кнопка Feedback).  
+There are a bugs for sure, if you found one or have ideas/feature request click "Feedback".
 
-/// details | English description
-    type: example
+---
 
-As half AbEx passed, introducing this feature in pre-alpha-not-even-early-access-state-version while it relevant.
-That said, more than a half from planned not developed yet.
-As of now you can choose team add test results and export following data: team members, pet damage and comment.
-There are a bugs for sure, if you found one or have ideas/feature request click "feedback"
-///
+Возможны баги, при обнаружении, а так же с идеями/предложениями, обращаться в дискорде (кнопка Feedback).  
 
 === "Relic Estimate"
+    /// warning | CAUTION
+    Calculates estimate for a given goal, based on towns/essence and loot.  
+    There are can be inaccuracies in see detail in the "bag" section.  
+    Overall should be pretty accurate as it takes into account [ **entered** ess.| **Income** | **SELL** | town based avg. **value of dropping relics**<sup id="sp1"><a href="#fn1">1</a></sup>]
+    ///
     /// html | div#relic-app
     ///
 
 === "Bag"
+    /// info | Description
+    Some relic recipes can be incorrect, it shouldn't be problem since on each tier prices not differs much.  
+    Just in case left for first time additional info under each relic:  
+
+    - id: number used as ref in recipes
+    - price: build cost only.
+    - recipe: required relics
+    let me know if found any.
+    ///
     /// html | div#relic-bag
     ///
 
 === "Run Test Form"
+    /// info | Description
+    Setup team, add attack data and export to csv.
+    ///
     /// html | div#attack-app
     ///
 
@@ -44,6 +53,9 @@ There are a bugs for sure, if you found one or have ideas/feature request click 
     ////
 
 === "Attack Remain Calculator"
+    /// info | Description
+    Calculates how many attacks on boss can be done + retries.
+    ///
     /// html | div#rem-food
     ///
 

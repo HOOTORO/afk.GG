@@ -22,7 +22,12 @@ li > a > img {
   border-radius: 0;
 }
 
-.admonition-title {
-  display: flex;
-  justify-content: space-between;
+summary > .md-button {
+  right: 10vw !important;
+}
+
+.admonition-title > .md-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }

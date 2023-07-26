@@ -597,7 +597,7 @@ body[data-md-prefers-color-scheme="true"] .md-icon .unknown-mode {
 [data-md-color-scheme="dracula"] .md-typeset .admonition,
 [data-md-color-scheme="dracula"] .md-typeset details {
   border-color: var(--md-admonition-icon-color--note);
-  box-shadow: var(--md-shadow-z2);
+  box-shadow: var(--md-shadow-z7);
 }
 [data-md-color-scheme="dracula"] .md-typeset .admonition > .admonition-title,
 [data-md-color-scheme="dracula"] .md-typeset details > .admonition-title,
@@ -1644,7 +1644,7 @@ mjx-container:not([display]) {
   padding-left: 0.6rem;
 }
 [data-md-color-scheme="dracula"] .md-typeset table:not([class]) {
-  box-shadow: var(--md-shadow-z2);
+  box-shadow: var(--md-shadow-z7);
 }
 [data-md-color-scheme="dracula"] .md-typeset table:not([class]) tr:hover {
   background-color: rgba(0, 0, 0, 0.08);

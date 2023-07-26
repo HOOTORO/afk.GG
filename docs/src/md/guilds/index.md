@@ -10,7 +10,7 @@ comments: true
 ---
 
 <!-- prettier-ignore -->
-/// details | О разделе
+/// details | О разделе [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
     type: info
 
 В игре достаточно большое и разнообразное СНГ сообщество.  
@@ -24,15 +24,6 @@ comments: true
 
 По его мотивам решил создать раздел собранной информации о гильдиях.  
 Любой вклад в развитие раздела приветствуется и по факту реклама гильдии.
-
-<figure markdown>
-
-> Нашли неточность?  
-> Хотите добавить свою ги в список?  
-> Или поделиться обзором своей гильдии?  
-> [:fontawesome-brands-discord: Дополнить раздел](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
-
-</figure>
 ///
 
 ## No Mercy

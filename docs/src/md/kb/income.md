@@ -8,7 +8,7 @@ template: templates/tools.j2
 /// html | div#app
 ///
 
-/// warning | "ATTENTION! _Please_"
+/// warning | ATTENTION! _Please_ [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
 Раздел находится в _разработке_, в данный момент считает **только** суммарный профит с указанных режимов.  
 В _планах_:
 

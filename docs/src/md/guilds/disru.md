@@ -4,11 +4,10 @@ description: Russians. Сервера дискорда для носителей
 template: main.html
 ---
 
-/// info | Информация
+/// info | Информация [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
 Пополнению списка всегда открыты двери!  
 Что бы сервер оказался в этом списке напишите мне в личку, с удовольствием добавлю.  
 Только убедитесь что приглашение/ссылка на сервер рабочая!  
-Ссылка на мой дис нижнем правом углу.
 ///
 
 ## [NoMercy](https://discord.gg/nom3rcy){:target="_blank" rel="noopener noreferrer"}

@@ -10,20 +10,20 @@ $new-admonitions: (
   new: $drac-yellow $clr-yellow-a700 "@mdi/svg/svg/alert-decagram.svg"
 ) !default;
 
-  $old-admonitions: (
-    note:                       $drac-dark-yellow,
-    abstract:                   $drac-cyan,
-    info:                       $drac-light-blue,
-    tip:                        $drac-teal,
-    success:                    $drac-green,
-    question:                   $drac-light-green,
-    warning:                    $drac-orange,
-    failure:                    $drac-dark-red,
-    danger:                     $drac-red,
-    bug:                        $drac-dark-pink,
-    example:                    $drac-purple,
-    quote:                      $drac-grey
-  ) !default;
+$old-admonitions: (
+  note: $drac-dark-yellow,
+  abstract: $drac-cyan,
+  info: $drac-light-blue,
+  tip: $drac-teal,
+  success: $drac-green,
+  question: $drac-light-green,
+  warning: $drac-orange,
+  failure: $drac-dark-red,
+  danger: $drac-red,
+  bug: $drac-dark-pink,
+  example: $drac-purple,
+  quote: $drac-grey,
+) !default;
 
 /* Style new admonitions with dark or light colors */
 :root > * {
@@ -43,7 +43,9 @@ $new-admonitions: (
     --md-admonition-icon-color--#{$name}: #{$tint2};
 
     &[data-md-color-scheme="dracula"] {
-      --md-admonition-bg-color--#{$name}: var(--md-default-bg-color--ultra-dark);
+      --md-admonition-bg-color--#{$name}: var(
+        --md-default-bg-color--ultra-dark
+      );
       --md-admonition-icon-color--#{$name}: #{$tint};
     }
   }
@@ -68,14 +70,12 @@ $new-admonitions: (
     }
   }
 
-  box-shadow: var(--md-shadow-z2);
+  box-shadow: var(--md-shadow-z7);
 }
 
 /* Style existing admonitions with dark mode colors */
 [data-md-color-scheme="dracula"] {
-
   @each $names, $prop in $old-admonitions {
-
     $name: nth($names, 1);
 
     // Define base class
@@ -111,7 +111,7 @@ $new-admonitions: (
 @each $names, $prop in $new-admonitions {
   $name: nth($names, 1);
 
-    // Define base class
+  // Define base class
   .md-typeset .admonition.#{$name} {
     border-color: var(--md-admonition-icon-color--#{$name});
 
@@ -143,4 +143,3 @@ $new-admonitions: (
     }
   }
 }
-

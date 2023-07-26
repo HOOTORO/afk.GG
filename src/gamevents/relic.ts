@@ -91,7 +91,7 @@ export function runRelic() {
 
   const expLabel = createElementN("span", {
       class: "ui-output",
-      style: "width:50%",
+      style: "width:100%",
     }),
     out = createElementN("output", { id: "expeditor-data" }),
     resultTable = createElementN("table", {
@@ -113,7 +113,7 @@ export function runRelic() {
 }
 
 function updateOut() {
-  const data = expeditor.RepresentYourSelf();
+  const data = expeditor.calculateEstimates();
   document.getElementById("final-table").innerHTML = relicEstimateTable
     .replace("$inc", data[0])
     .replace("$gc", data[1])
@@ -172,7 +172,7 @@ function CoreRelicInfo(r: CoreSlot[]) {
     const lb = createElementN(
       "span",
       {},
-      `🢁 equip 🢁 <img src="/afk.GG/assets/icons/tree/tree-${v}.png" width=32> 🡻 goal 🡻`
+      `<| equip <img src="/afk.GG/assets/icons/tree/tree-${v}.png"> goal |>`
     );
     const goal = createElementN("div", { class: `goal relic ${v}` }, goalstr);
     container.appendChild(relicTree);

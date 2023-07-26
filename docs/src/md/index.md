@@ -10,13 +10,15 @@ footer: hide
 template: home.html
 ---
 
-//// details | Updates
+//// details | Updates 
     type: new
 
 === "Новшества"
 
-    - [x] [Калькулятор стамины/ретраев](kb/abex.md)  для AbEx
-    - [x] Блокнот для тестов
+    - [x] [Результаты СНГ AbEx S10](guilds/abex.md).
+    - [x] [Расчет времени ожидания ранга](kb/abex.md)  для AbEx.
+    - [x] [Калькулятор стамины/ретраев](kb/abex.md)  для AbEx.
+    - [x] [Блокнот для тестов](kb/abex.md) AbEx и не только.
     - [x] Welcome home! ![](/afk.GG/assets/kappa.webp){width=24 .skip-lb}
 
 === "В планах"
