@@ -6,7 +6,7 @@ description: >-
 author: HOOTSMAN, Лев Николаевич
 template: templates/blog.j2
 ---
-//// warning | DISCLAIMER
+//// warning | DISCLAIMER [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
 Все персонажи и события вымышленны, любые места случайны и предсказуемы.  
 Любое сходство субъектов данных текстов с реальными, адекватными или красивыми людьми — это обыкновенное чудо.  
 
