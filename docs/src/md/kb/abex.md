@@ -18,7 +18,7 @@ There are a bugs for sure, if you found one or have ideas/feature request click 
 === "Relic Estimate"
     /// warning | CAUTION
     Calculates estimate for a given goal, based on towns/essence and loot.  
-    There are can be inaccuracies in see detail in the "bag" section.  
+    There are can be minor inaccuracies, see detail in the "bag" section.  
     Overall should be pretty accurate as it takes into account [ **entered** ess.| **Income** | **SELL** | town based avg. **value of dropping relics**<sup id="sp1"><a href="#fn1">1</a></sup>]
     ///
     /// html | div#relic-app
