@@ -172,6 +172,8 @@
     border-left: 1px solid #eeeeee;
     transform: translateX(-100%);
     cursor: pointer;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
     user-select: none;
 
     &.team-set-up {
@@ -360,6 +362,7 @@
 
     img {
       -webkit-user-drag: none;
+      -webkit-user-select: none;
     }
 
     > span {
