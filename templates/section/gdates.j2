@@ -1,0 +1,12 @@
+<!-- This section adds support for localized revision dates -->
+
+{% if page.meta.git_creation_date_localized_raw_datetime %}
+<td rowspan="9" style="vertical-align:middle">
+  {{ page.meta.git_creation_date_localized_raw_datetime }}
+</td>
+{% endif %}
+{% if page.meta.git_revision_date_localized_raw_datetime %}
+<td rowspan="9" style="vertical-align:middle">
+  {{ page.meta.git_revision_date_localized_raw_datetime }}
+</td>
+{% endif %}

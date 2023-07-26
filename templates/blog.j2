@@ -1,0 +1,34 @@
+{% extends "main.html" %}
+
+{% block htmltitle %}
+
+{{ super() }}
+<link rel="stylesheet" href="{{ 'css/blog.css' | url }}" />
+{% endblock htmltitle %}
+
+{% block styles %}
+
+{{ super() }}
+
+{% endblock styles %}
+
+{% block tabs %}
+
+{{ super() }}
+
+{% endblock tabs %}
+
+{% block site_nav %}
+{{ super() }}
+{% endblock site_nav %}
+
+{% block content %}
+
+{{ super() }}
+{% endblock content %}
+
+{% block footer %}
+
+{{ super() }}
+
+{% endblock footer %}

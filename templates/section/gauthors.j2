@@ -1,0 +1,34 @@
+<!-- Overwrites content.html base mkdocs theme, taken from 
+https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/content.html -->
+
+{% if page.meta.source %}
+<div class="source-links">
+  {% for filename in page.meta.source %}
+  <span class="label label-primary">{{ filename }}</span>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if git_info %}
+{%- for author in git_info.get('page_authors') -%}
+
+<tr>
+  <td>
+    {% if author.name.startswith("Not") %}
+    Community
+    {% else %}
+    {{ author.name }}
+    {% endif %}
+  </td>
+  <td>
+    <code>
+        {{ author.contribution }}
+      </code>
+  </td>
+  {% if loop.index == 1 %}
+  {% include "templates/section/gdates.j2" %}
+  {% endif %}
+
+</tr>
+{%- endfor -%}
+{% endif %}
