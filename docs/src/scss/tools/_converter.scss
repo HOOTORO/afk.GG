@@ -1,4 +1,4 @@
-////
+/* stylelint-disable-next-line CssSyntaxError */
 /// Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
 ///
 /// Permission is hereby granted, free of charge, to any person obtaining a
@@ -30,9 +30,7 @@
 /// Convert color in HEX to HSL
 ///
 @function hex2hsl($color) {
-  @return
-    round(hue($color)),
-    round(saturation($color)),
+  @return round(hue($color)), round(saturation($color)),
     round(lightness($color));
 }
 
@@ -59,7 +57,7 @@
 @function px2rem($size, $base: 20px) {
   @if unit($size) == px {
     @if unit($base) == px {
-      @return math.div($size, $base) * 1.0rem;
+      @return math.div($size, $base) * 1rem;
     } @else {
       @error "Invalid base: #{$base} - unit must be 'px'";
     }

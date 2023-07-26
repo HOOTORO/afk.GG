@@ -148,10 +148,14 @@ export {
   createElementN,
   createInput,
   createSelectList,
+  difference,
   generateAFKResObj,
+  isEmpty,
+  isDefault,
   populateStorage,
   radioGroups,
   rangeSlide,
+  safeReduceSum,
   savedObj,
   setApp,
   storedValue,
@@ -186,7 +190,8 @@ function getRandomInt(max: number) {
 function storedValue(inputId: string, value?: any): boolean | string {
   if (value) {
     try {
-      localStorage.setItem(inputId, value);
+      const str = JSON.stringify(value);
+      localStorage.setItem(inputId, str);
     } catch (e) {
       console.log(`save error ${e}`);
       return false;
@@ -195,4 +200,30 @@ function storedValue(inputId: string, value?: any): boolean | string {
   }
   const v = localStorage.getItem(inputId);
   return v ? v : false;
+}
+
+function isEmpty(obj: Record<string, any>): boolean {
+  return (
+    Object.keys(obj).length === 0 &&
+    Object.values(obj).every((x) => x === null || x === 0)
+  );
+}
+
+function isDefault(obj: Record<string, any>): boolean {
+  return Object.values(obj).every((x) => x === null || x === 0);
+}
+
+function safeReduceSum(n: Array<any>) {
+  if (!isEmpty(n)) {
+    return n.reduce((a, b) => a + b);
+  }
+}
+
+function difference(a: number[], b: number[]) {
+  return [
+    ...b.reduce(
+      (acc, v) => acc.set(v, (acc.get(v) || 0) - 1),
+      a.reduce((acc, v) => acc.set(v, (acc.get(v) || 0) + 1), new Map())
+    ),
+  ].reduce((acc, [v, count]) => acc.concat(Array(Math.abs(count)).fill(v)), []);
 }

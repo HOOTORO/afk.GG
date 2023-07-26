@@ -1,26 +1,51 @@
-$drac-fg: hsl(60, 30%, 96%);
-$drac-bg: hsl(231, 15%, 18%);
-$drac-highlight: hsl(66, 94%, 73%);
-$drac-selection: hsl(231, 25%, 25%);
-$drac-blue: hsl(225, 27%, 51%);
-$drac-cyan: hsl(191, 97%, 77%);
-$drac-green: hsl(135, 94%, 65%);
-$drac-orange: hsl(31, 100%, 71%);
-$drac-pink: hsl(326, 100%, 74%);
-$drac-purple: hsl(265, 89%, 78%);
-$drac-red: hsl(0, 100%, 67%);
-$drac-yellow: hsl(65, 92%, 76%);
+$mos-def-fg: hsl(0, 0%, 0%);
+$mos-def-bg: rgb(228, 255, 119);
+$mos-def-highlight: hsl(51, 100%, 67%);
+$mos-def-selection: #280808;
+$mos-def-blue: hsl(225, 27%, 51%);
+$mos-def-cyan: hsl(191, 99%, 35%);
+$mos-def-green: hsl(135, 94%, 65%);
+$mos-def-orange: hsl(31, 100%, 71%);
+$mos-def-pink: hsl(326, 100%, 74%);
+$mos-def-purple: hsl(265, 89%, 78%);
+$mos-def-red: hsl(0, 100%, 67%);
+$mos-def-yellow: hsl(65, 100%, 66%);
 
 /* Non-standard Dracula colors */
-$drac-grey: hsl(225, 8%, 51%);
-$drac-teal: hsl(161, 97%, 77%);
-$drac-light-blue: hsl(190, 94%, 87%);
-$drac-light-green: hsl(135, 92%, 79%);
-$drac-dark-pink: hsl(325, 100%, 64%);
-$drac-dark-red: hsl(0, 100%, 59%);
-$drac-dark-yellow: hsl(51, 94%, 73%);
+$mos-def-grey: hsl(225, 8%, 51%);
+$mos-def-teal: hsl(161, 97%, 77%);
+$mos-def-light-blue: hsl(190, 94%, 87%);
+$mos-def-light-green: hsl(135, 92%, 79%);
+$mos-def-dark-pink: hsl(325, 100%, 64%);
+$mos-def-dark-red: hsl(0, 100%, 59%);
+$mos-def-dark-yellow: hsl(51, 94%, 73%);
 
-$drac-default-bg: lighten($drac-bg, 5%);
+$mos-def-text: #373737;
+$mos-def-default-bg: lighten($mos-def-bg, 18%);
+$mos-def-tabs-bg: #2222008d;
+$mos-def-sel-text: #280808;
+$mos-def-foot-bg: hsl(39, 77%, 83%);
+$mos-def-foot-fg: #1d1810;
+$mos-def-foot-low: rgb(0, 160, 210);
+$mos-def-tabs-fg: $mos-def-text;
+$mos-def-nav-link: #ffffffff;
+$mos-def-2-bg: #cdcdaf;
+
+$mos-def-admo-bg: linear-gradient(45deg, rgba(119, 101, 20, 0.739), #bf8556b5);
+$mos-def-def-bg: linear-gradient(45deg, rgba(222, 222, 222, 0.383), #63636317);
+$mos-def-gradient: linear-gradient(
+  225deg,
+  #ffffffb5,
+  rgba(165, 144, 48, 0.621)
+);
+$mos-def-rnb: linear-gradient(
+  180deg,
+  #684dba,
+  #3aebcb,
+  #7beb3a,
+  #eba73a,
+  #dd58d2
+);
 
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);

@@ -1,10 +1,15 @@
 /* Dark mode changes */
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"],
 [data-md-color-scheme="dracula"] {
   .md-typeset table:not([class]) {
+    display: table;
+    overflow: hidden !important;
+    border-radius: 7px;
     box-shadow: var(--md-shadow-z2);
 
     tr:hover {
-      background-color: rgba(0,0,0,.08);
+      background-color: rgba(0, 0, 0, 0.08);
     }
 
     th {
@@ -14,7 +19,41 @@
     }
 
     td {
+      background-color: var(--md-default-fg-color--lightest);
       border-top: px2rem(1px) solid var(--md-default-fg-color--lighter);
     }
+
+    tr:nth-child(even) {
+      background-color: var(--md-default-bg-color--darker);
+    }
+
+    sup {
+      color: #bada55 !important;
+      font-size: 10px;
+    }
+  }
+  .md-typeset__table {
+    display: table !important;
+    width: 100% !important;
+  }
+
+  .meta-table {
+    th {
+      border-bottom: px2rem(1px) solid var(--md-primary-fg-color);
+    }
+
+    td {
+      border-top: px2rem(1px) solid var(--md-default-fg-color--lighter);
+    }
+    th,
+    td {
+      padding-right: 4px;
+      padding-left: 4px;
+      border-left: px2rem(1px) solid var(--md-default-autocomplete-fg-color);
+    }
+  }
+  tbody td[colspan="2"] {
+    color: #ff00ff;
+    font-weight: 600;
   }
 }

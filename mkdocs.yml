@@ -134,9 +134,9 @@ plugins:
       fallback_to_empty: true
       sort_authors_by: name
       strict: false
-  - tags:
-      enabled: !ENV [CI, false]
-      tags_file: tags.md
+  # - tags:
+  #     enabled: !ENV [CI, false]
+  #     tags_file: tags.md
   # - git-committers:
   #     repository: Hootsdev/afk.GG
   #     branch: master

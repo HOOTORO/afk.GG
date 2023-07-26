@@ -8,7 +8,8 @@ import {
 } from "../components/doManager.js";
 import * as t from "../components/timeleft.js";
 import { AbEx, Boss } from "../model/constants.js";
-import { Expeditor, Militia } from "../model/types.js";
+import { Expeditor } from "../model/expeditor.js";
+import { Militia } from "../model/types.js";
 
 export default function runAbExTimers() {
   t.default(AbEx.now, AbEx.start(), "start", "Старт", "В процессе");
@@ -48,7 +49,7 @@ function updateAbex() {
   );
   const sod = document.getElementById("mil-sod") as HTMLInputElement;
   expeditor.starStatus = sod.checked ? true : false;
-  expeditor._stamina = parseInt(
+  expeditor.stamina = parseInt(
     document.getElementById("ex-food").getAttribute("value")
   );
 

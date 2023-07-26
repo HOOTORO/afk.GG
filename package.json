@@ -12,7 +12,7 @@
   },
   "scripts": {
     "SASS:build": "sass --no-source-map docs/src/scss:docs/theme/css/",
-    "SASS:watch": "sass --watch docs/src/scss/:docs/theme/css/",
+    "SASS:watch": "sass --no-source-map --watch docs/src/scss/:docs/theme/css/",
     "RE:build": "tsc --build && npm run -s SASS:build && mkdocs build",
     "RE:serve": "mkdocs serve --watch-theme",
     "SERVE.THIS": "tsc --watch & npm run -s SASS:watch & npm run -s RE:serve",

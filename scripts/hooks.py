@@ -1,8 +1,19 @@
 import os
+import sys
 
 import discoworker.async_runner as dar
 import numpy as np
 import pandas as pd
+
+# /Users/reinweise/HOOTSMAN/vscode/afk.GG/scripts/
+
+# current_path = os.path.abspath('scripts/')
+# os.environ.setdefault("PYTHONPATH", ":"+current_path)
+
+# print(os.getenv("PYTHONPATH"))
+
+
+# from .discoworker import async_runner
 
 
 def on_startup(**kwargs) -> None:

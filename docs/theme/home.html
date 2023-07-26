@@ -23,6 +23,7 @@
     margin: 0 !important;
   }
 
+  #main-event,
   .md-sidebar {
     display: none !important;
   }
@@ -57,14 +58,32 @@
 
   }
 
+  #main-event,
+  .md-tabs,
+  details,
+  .md-button {
+    backdrop-filter: blur(50px);
+  }
+
   .md-typeset .md-button {
+    width: auto;
     display: block;
-    width: 100%;
+    /* -webkit-text-stroke: 1px #7700b8de; */
+    -webkit-text-stroke: 1px #7700b8de;
+    outline: thin solid black;
   }
 
   .md-typeset .h4 {
     display: block;
     width: 200%;
+  }
+
+  .mdx-hero__content {
+    display: flex;
+    justify-content: space-between;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+    flex-direction: column;
   }
 
   .md-typeset details {
@@ -85,24 +104,6 @@
     display: none;
   }
 
-  .md-source-file {
-    position: absolute;
-    text-align: center;
-    background-color: rgb(4 28 31 / 56%);
-    border-radius: 10px;
-    bottom: 20px;
-    width: 45vw;
-  }
-
-  .git-revision-date-localized-plugin,
-  .git-revision-date-localized-plugin-date {
-    color: bisque;
-  }
-
-  .md-source-file>* {
-    -webkit-text-stroke-color: rgba(135, 135, 135, 0.997);
-  }
-
   code {
     background-color: blueviolet;
   }
@@ -120,23 +121,7 @@
     <span id="left"></span>
   </div>
 </div>
-{% if page.meta.git_site_revision_date_localized %}
-<div class="md-source-file">
-  <small>
-    <!-- mkdocs-git-revision-date-localized-plugin -->
-    Последнее обновление:
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">
-      {{ page.meta.git_site_revision_date_localized }}
-    </span>
-    <br>
-    Дата создания:
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">
-      {{ page.meta.git_creation_date_localized }}
-    </span>
-    <!-- mkdocs-git-revision-date-plugin -->
-  </small>
-</div>
-{% endif %}
+{{ page.content }}
 {% endblock %}
 
 <!-- Application footer -->

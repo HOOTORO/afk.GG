@@ -13,7 +13,7 @@
 @import "hoots/purecss";
 @import "hoots/silder";
 @import "hoots/custom";
-@import "hoots/table";
+// @import "hoots/table";
 @import "hoots/radio";
 @import "hoots/dust";
 @import "hoots/admonition";
@@ -24,6 +24,7 @@
 
 @import "general";
 
+@import "extensions/tables";
 @import "extensions/admonition";
 @import "extensions/emoji";
 @import "extensions/progressbar";

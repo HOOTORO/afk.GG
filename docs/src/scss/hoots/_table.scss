@@ -34,19 +34,15 @@ tbody td {
   word-break: break-word;
 }
 
-tr:nth-child(even) {
-  background-color: #ffd4002b;
-}
+// tr td:first-of-type {
+//   color: #ff006e;
+//   font-weight: 700;
+// }
 
-tr td:first-of-type {
-  color: #ff006e;
-  font-weight: 700;
-}
-
-tr td:last-of-type {
-  font-weight: 600;
-  font-style: oblique;
-}
+// tr td:last-of-type {
+//   font-weight: 600;
+//   font-style: oblique;
+// }
 
 th {
   margin-bottom: 1px;
@@ -64,11 +60,17 @@ th {
   }
 }
 
-thead th,
-tfoot td {
+thead th {
   padding: 6px !important;
   color: #400bad;
   text-transform: uppercase;
+  background-color: #bada55;
+}
+
+tfoot td {
+  color: #400bad;
+  font-weight: 200;
+  font-size: 11px;
   background-color: #bada55;
 }
 

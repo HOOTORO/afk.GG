@@ -2,15 +2,14 @@
 
 @media screen and (min-width: 45em) {
   .md-typeset .inline {
-    margin-bottom: 0.8rem;
-    margin-top: 0;
-    max-width: 20.7rem;
     width: fit-content;
+    max-width: 20.7rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
   }
 }
 
 .quote > p.admonition-title {
-  display: flex;
   align-items: center;
   padding: 10px;
 }
@@ -21,4 +20,9 @@
 
 li > a > img {
   border-radius: 0;
+}
+
+.admonition-title {
+  display: flex;
+  justify-content: space-between;
 }

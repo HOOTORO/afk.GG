@@ -56,6 +56,7 @@ comments: true
    Автор: R3ZZ
 2. **Мастер над таблицей** расчеты относительной ценности ресурсов в разных событиях.
    Автор: R3ZZ
+///
 
 === "NM Review"
 
@@ -123,6 +124,7 @@ comments: true
 
 1. [Shop Value](../kb/infographics/#shop-values) Таблица с расчетом выгоды $ магазина.
    Автор: Yops.
+///
 
 ---
 
@@ -137,11 +139,14 @@ comments: true
 |    Discord:     | Закрытый                         | s5   | #55    | #6  |
 |   Srv. Owner:   | SenseiYabai                      |      |        |     |
 
+<!-- prettier-ignore -->
 /// admonition | Общепризнанный вклад в развитие сообщества
+    type: sh-luv
 
 1. Мемные видео по бездне и тонна другого развлекательного контента
 
 ///
+
 /// info | Факты
 Была академкой Hurricane, после S3 отпочковались от Hurricane во главе c Sir Eblo 2000
 ///

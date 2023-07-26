@@ -4,7 +4,7 @@ import {
   createInput,
   storedValue,
 } from "../components/helper.js";
-import { Beasts, Heroes, treeBranches } from "../model/afk.js";
+import { Beasts, Branch, Heroes } from "../model/afk.js";
 import { AfkObject, Team } from "../model/teams.js";
 
 let MetaTeam = new Team();
@@ -105,22 +105,22 @@ jQuery(table).appendTo("#bat-stat");
 atkContainer.appendChild(btnContainer);
 const treeDiv = createElementN("div", { class: `${formId}-inputs` });
 
-treeBranches.forEach((x) => {
+for (const v of Object.values(Branch)) {
   const inp = createInput(
     "number",
     "",
-    `/afk.GG/assets/icons/tree/tree-${x}.png`,
+    `/afk.GG/assets/icons/tree/tree-${v}.png`,
     {
       class: `${formId}-inputs-number`,
-      id: `${formId}-input-tree-${x}`,
+      id: `${formId}-input-tree-${v}`,
       min: "0",
       max: "200",
-      value: storedValue(x) ? storedValue(x).toString() : "107",
+      value: storedValue(v) ? storedValue(v).toString() : "107",
     }
   );
   inp.onchange = updOnChange;
   treeDiv.appendChild(inp);
-});
+}
 
 addAttack.addEventListener("click", (e) => {
   const text = `

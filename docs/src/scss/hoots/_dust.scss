@@ -3,8 +3,8 @@
 
 @mixin box-sizing {
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @mixin border-rad {
@@ -23,14 +23,7 @@
 }
 
 #dust-input {
-  flex-direction: row;
-  display: flex;
-  margin-top: 5px;
-  padding: 5px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  min-width: 20%;
-
+  display: block;
   * {
     margin: 5px;
   }
@@ -45,36 +38,37 @@
   }
 
   input[type="number"] {
-    // display: -ms-flexbox;
     height: max-content;
-    padding: 10px;
     margin: auto;
+    padding: 10px;
+    background-color: $dark-tabs-bg;
     border: 2px inset cornflowerblue;
-    background-color: $l-tabs-bg;
   }
 
   input::-webkit-inner-spin-button {
-    appearance: auto;
-    display: block;
     position: relative;
-    cursor: default;
-    height: 2.5em;
+    display: block;
+    flex-basis: auto;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: auto;
-    -webkit-user-select: auto;
+    height: 2.5em;
+    cursor: default;
+    appearance: auto;
+    user-select: auto;
   }
 
   output {
     display: flex;
-    border-radius: 15px;
-    font-weight: 800;
-    color: black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: hsl(0, 0%, 0%);
     text-align: center;
-    height: auto;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 20px;
-    background: $din-color;
+    background: #bada55;
+  }
+
+  fieldset {
+    display: flex;
+    align-items: flex-end;
   }
 }

@@ -7,12 +7,12 @@ template: templates/abex.j2
 
 ## Apps
 
-//// warning | Development in progress
+//// warning | Development in progress [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
 
 Половина AbEx осталась позади, так что вывел на общее пользование эту функцию в пре-альфа-даже-не-в-раннем-доступе версии, пока она еще актуальна.
 При этом более половины от запланированного еще не реализовано.
 На данный момент вы можете выбрать команду, добавить результаты теста и экспортировать следующие данные: члены команды, урон питомца и комментарий.
-Наверняка есть баги, если вы их нашли или у вас есть идеи/пожелания, вы можете оставить отзыв здесь. [:fontawesome-brands-discord: Обратная связь](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+Наверняка есть баги, если вы их нашли или у вас есть идеи/пожелания, можете оставить отзыв в дискорде (кнопка Feedback).  
 
 /// details | English description
     type: example
@@ -20,7 +20,7 @@ template: templates/abex.j2
 As half AbEx passed, introducing this feature in pre-alpha-not-even-early-access-state-version while it relevant.
 That said, more than a half from planned not developed yet.
 As of now you can choose team add test results and export following data: team members, pet damage and comment.
-There are a bugs for sure, if you found one or have ideas/feature request you can leave feedback here [:fontawesome-brands-discord: Submit Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+There are a bugs for sure, if you found one or have ideas/feature request click "feedback"
 ///
 
 === "Relic Estimate"
@@ -50,13 +50,8 @@ There are a bugs for sure, if you found one or have ideas/feature request you ca
     //// tip | Don't miss a thing!
     Калькулятор атак по ласт боссу.  
     Указываете количество зрителей и текущую стамину,  
-    он считает сколько атак можно сделать без потери атаки и сколько ретраев можно сделать.  
-
-    [=100% "over9999%"]{: .candystripe .candystripe-animate .abex-progress}
-
-    Удачи всем!
+    он считает сколько атак можно сделать без потери атаки и сколько ретраев можно сделать.
     ////
-
 ////
 
 ## Timeleft
@@ -76,13 +71,13 @@ There are a bugs for sure, if you found one or have ideas/feature request you ca
 
 === "![all](/afk.GG/assets/icons/tree/hero_tag_all.png){width=24 .skip-lb}"
     ![a][rela]
-=== "![Rangers](/afk.GG/assets/icons/tree/tree-ranger.png){width=24 .skip-lb}"
+=== "![Rangers](/afk.GG/assets/icons/tree/tree-celerity.png){width=24 .skip-lb}"
     ![c][relcel]
 === "![Support](/afk.GG/assets/icons/tree/tree-support.png){width=24 .skip-lb}"
     ![su][relsup]
 === "![Mages](/afk.GG/assets/icons/tree/tree-mage.png){width=24 .skip-lb}"
     ![sr][relsor]
-=== "![Tank](/afk.GG/assets/icons/tree/tree-tank.png){width=24 .skip-lb}"
+=== "![Tank](/afk.GG/assets/icons/tree/tree-fort.png){width=24 .skip-lb}"
     ![rt][reltan]
 === "![Warrior ](/afk.GG/assets/icons/tree/tree-might.png){width=24 .skip-lb}"
     ![rw][relwar]
@@ -90,6 +85,16 @@ There are a bugs for sure, if you found one or have ideas/feature request you ca
 ## Old reddit guide for newcomers
 
 ![g][nb]
+
+### Footnotes
+
+/// example | FORMULA<a id="fn1" href="#sp1">↩︎</a>
+*RD~avg~ ÷ t~drop~ × P~rrd~  + (1 - P~rrd~) × RD~avg~ ÷ t~drop~ × C~sell~*
+///
+
+RD = Relic drop  
+P~rrd~ = chance drop required relic  
+C~sell~ = sell price coefficient, which is 40%
 
 [nb]: https://media.discordapp.net/attachments/1128524376929742879/1128524655804825690/aenewbieguide.webp
 [rela]: https://media.discordapp.net/attachments/1128524376929742879/1128524476540260444/all.jpg

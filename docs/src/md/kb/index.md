@@ -1,5 +1,5 @@
 ---
-title: О разделе
+title: Welcome
 description: >
   Раздел с полезной информацией про внутриигровые механики.
 template: main.html

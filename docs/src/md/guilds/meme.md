@@ -16,9 +16,6 @@ glightbox.auto_caption: false
 </figure>
 ///
 
-|    HAHA, CLASSIC    |
-|:-------------------:|
-
 --8<-- "memlink.md"
 
 |                        Видео                                                      мемасы                        |

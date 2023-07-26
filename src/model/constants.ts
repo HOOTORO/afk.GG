@@ -15,6 +15,61 @@ import { DustChest } from "./types.js";
 //   console.log(data);
 //   return data;
 // };
+
+const relicEstimateTable = `
+  <thead>
+    <tr>
+      <th align="center" width=30%>Expeditor</th>
+      <th align="center">Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">Income</td>
+      <td align="center">$inc ess./h</td>
+    </tr>
+    <tr>
+          <td align="center" colspan="2">GOAL</td>
+    </tr>
+    <tr>
+      <td align="center">Components</td>
+      <td align="center">$comp</td>
+    </tr>        
+    <tr>
+      <td align="center">TIME TO<super>*</super></td>
+      <td align="center">$tl h.</td>
+    </tr>    
+    <tr>
+      <td align="center">Missing</td>
+      <td align="center">$gc ess.</td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2">BAG</td>
+    </tr>
+      <tr>
+        <td align="center">Items</td>
+        <td align="center">$tg</td>
+      </tr>
+      <tr>
+        <td align="center">KEEP</td>
+        <td align="left">$need</td>
+      </tr>
+      <tr>
+        <td align="center">SELL</td>
+        <td align="right">$toSell</td>
+      </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td align="center" colspan=2>
+        <sup>*</sup>
+          Resulting number takes into account 
+          <br>
+           [<strong>entered</strong> ess.| <strong>Income</strong> | <strong>SELL</strong> | town based avg. <strong>relic drop</strong><sup id="sp1"><a href="#fn1">1</a></sup>] 
+      </td>
+    </tr>
+  </tfoot>
+`;
 class Period {
   static hour = 1;
   static day = 24 * this.hour;
@@ -231,6 +286,7 @@ export {
   iconSize,
   leftover,
   query,
+  relicEstimateTable,
   sheetId,
   url,
   userFields,

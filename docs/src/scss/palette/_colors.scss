@@ -1,50 +1,26 @@
-@import "./dracula";
+@import "./dracula", "./slate", "./default";
 
-// general stuff
+/* general stuff */
 $glass: rgba(255, 255, 255, 0.2);
 $glass-icon: rgba(255, 255, 255, 0.3);
-$gradient: linear-gradient(180deg, #2e303d, #141419);
-//$gradient: linear-gradient(35deg, #2E303D, #2e33ad);
-$def-rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
-$def-gradient: linear-gradient(225deg, #ffffffb5, rgba(165, 144, 48, 0.621));
+$gradient: linear-gradient(35deg, #2e303d, #2e33ad);
 $option: #320a28;
 $slider-radius: 20px;
 
-// dark theme vars
+/* dark theme vars */
 $dLabel: "Dark Side";
-$dark-bg: #141419;
-$d-wrapper: #2c313d3d;
-$d-text: rgb(218, 218, 218);
 $d-sel-text: white;
-$d-foot-bg: #{$dark-bg};
-$d-foot-fg: #{$d-text};
-$d-tabs-bg: #222200de;
+
 $d-nav-link: #ffffff;
 $din-color: #bada55;
 $d-code-bg: #424242;
 
-// light theme vars
+/* light theme vars */
 $lLabel: "Jedi";
 $lin-color: rgb(255, 0, 0);
-$light-bg: rgba(217, 217, 0, 0.217);
-$light-bg2: #cdcdaf;
-$l-text: #373737;
-$l-sel-text: #280808;
-$l-foot-bg: wheat;
-$l-foot-fg: #1d1810;
-$l-foot-low: rgb(0, 160, 210);
-$l-tabs-bg: #222200aa;
-$l-tabs-fg: #{$l-text};
-$l-nav-link: #ffff;
-
-$ladmo-bg: linear-gradient(45deg, rgba(119, 101, 20, 0.491), #ffffffb5);
-$l-def-bg: linear-gradient(45deg, rgba(117, 117, 117, 0.383), #32323217);
-
-$dadmo-bg: linear-gradient(45deg, rgba(102, 102, 102, 0.605), #bebebebe);
-$d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
 
 :root > * {
-  // Custom code colors
+  /* Custom code colors --md-admonition-fg-color*/
   --md-code-link-bg-color: hsla(0, 0%, 96%, 1);
   --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
   --md-default-bg-color--trans: rgb(100%, 100%, 100%, 0);
@@ -62,10 +38,10 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
   --md-code-hl-builtin-color: var(--md-code-hl-constant-color);
   --md-code-hl-class-color: var(--md-code-hl-function-color);
 
-  // Various Material related color variables
+  /* Various Material related color variables */
   --md-typeset-a-color: #{$clr-cyan-500};
 
-  // Progressbar colors
+  /* Progressbar colors */
   --md-progress-stripe: var(--md-default-bg-color--lighter);
   --md-progress-100: #{$clr-green-a400};
   --md-progress-80: #{$clr-green-a400};
@@ -76,50 +52,143 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
   --md-progress-20: #{$clr-red-a200};
   --md-progress-0: #{$clr-red-a400};
 
-  // Keys colors
+  /* Keys colors */
   --md-typeset-kbd-color: #{shade(hsla(0, 100%, 100%, 1), 8%)};
   --md-typeset-kbd-border-color: #{shade(hsla(0, 100%, 100%, 1), 28%)};
   --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
 
+  /* WHITE theme  */
   &[data-md-color-scheme="default"] {
-    --md-default-fg-color--light: #999999;
-    --md-footer-bg-color--dark: #{$l-foot-low};
+    --md-default-fg-color--light: #b3b3b3;
+    --md-footer-bg-color--dark: #{$mos-def-foot-low};
     --input-bd-color: #{$lin-color};
     --theme-label: #{$lLabel};
-    --md-admonition-bg-color: #{$ladmo-bg};
-    --nav-link: #{$l-nav-link};
+    --md-admonition-bg-color: #{$mos-def-admo-bg};
+    --nav-link: #{$mos-def-nav-link};
     --nav-color: #{$glass};
-    --slate-gradient: #{$def-gradient};
-    --containers-bg: #{$light-bg};
-    --text: #{$l-text};
-    --select-font-color: #{$l-sel-text};
-    --md-footer-bg-color: #{$l-foot-bg};
-    --md-footer-fg-color: #{$l-foot-fg};
-    --tab-bg: #{$l-tabs-bg};
-    --tab-fg: #{$l-tabs-fg};
-    --md-default-bg: #{$l-def-bg};
-    --rnb: #{$def-rnb};
+    --slate-gradient: #{$mos-def-gradient};
+    --containers-bg: #{$mos-def-bg};
+    --select-font-color: #{$mos-def-sel-text};
+    --md-footer-bg-color: #{$mos-def-foot-bg};
+    --md-footer-fg-color: #{$mos-def-foot-fg};
+    --tab-bg: #{$mos-def-tabs-bg};
+    --tab-fg: #{$mos-def-tabs-fg};
+    --rnb: #{$mos-def-rnb};
+    --md-default-bg: #{$mos-def-def-bg};
+    --text: #{$mos-def-text};
+    --md-text-color: #{$mos-def-text};
+
+    --md-default-fg-color: #{transparentize($mos-def-fg, 0.13)};
+    --md-default-fg-color--light: #{transparentize($mos-def-fg, 0.46)};
+    --md-default-fg-color--lighter: #{transparentize($mos-def-fg, 0.84)};
+    --md-default-fg-color--lightest: #{transparentize($mos-def-fg, 0.93)};
+    --md-default-autocomplete-fg-color: #{transparentize($mos-def-fg, 0.6)};
+    --md-shadow-z2: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3),
+      0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.2);
+
+    --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
+    --md-default-bg-color--light: #{transparentize($mos-def-default-bg, 0.3)};
+    --md-default-bg-color--lighter: #{transparentize($mos-def-default-bg, 0.7)};
+    --md-default-bg-color--lightest: #{transparentize($mos-def-default-bg, 0.88)};
+    --md-default-bg-color--trans: #{transparentize($mos-def-default-bg, 1)};
+
+    /* General text */
+    --md-text-color: var(--md-default-fg-color);
+    --md-typeset-color: var(--md-default-fg-color);
+
+    /* Dark specific colors */
+    --md-default-bg-color--dark: #{darken($mos-def-default-bg, 3%)};
+    --md-default-bg-color--darker: #{darken($mos-def-default-bg, 6%)};
+    --md-default-bg-color--darkest: #{darken($mos-def-default-bg, 9%)};
+    --md-default-bg-color--ultra-dark: #{darken($mos-def-default-bg, 25%)};
+
+    /* Admonition colors */
+    --md-admonition-fg-color: #{$mos-def-text};
+    --md-admonition-bg-color: #{$mos-def-default-bg};
+    --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
+    --md-admonition-bg-color--settings: rgba(19, 15, 21, 0.1);
+
+    /* Various Material related color variables */
+    --md-typeset-a-color: #{$mos-def-cyan};
+    --md-typeset-mark-color: #{mix($mos-def-yellow, $mos-def-bg, 35%)};
+    --md-typeset-del-color: #{mix($mos-def-pink, $mos-def-bg, 35%)};
+    --md-typeset-ins-color: #{mix($mos-def-green, $mos-def-bg, 35%)};
+
+    /* Code colors */
+    --md-code-fg-color: #{$mos-def-fg};
+    --md-code-bg-color: #{$mos-def-bg};
+    --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
+    --md-code-inline-bg-color: #{lighten($mos-def-bg, 5%)};
+    --md-code-hl-operator-color: #{$mos-def-pink};
+    --md-code-hl-punctuation-color: #{$mos-def-fg};
+    --md-code-hl-string-color: #{$mos-def-yellow};
+    --md-code-hl-special-color: #{$mos-def-purple};
+    --md-code-hl-number-color: #{$mos-def-purple};
+    --md-code-hl-keyword-color: #{$mos-def-pink};
+    --md-code-hl-name-color: #{$mos-def-fg};
+    --md-code-hl-constant-color: #{$mos-def-purple};
+    --md-code-hl-function-color: #{$mos-def-green};
+    --md-code-hl-comment-color: #{$mos-def-blue};
+    --md-code-hl-variable-color: #{$mos-def-orange};
+    --md-code-hl-generic-color: #{$mos-def-blue};
+    --md-code-hl-color: #{$mos-def-selection};
+
+    /* Custom code colors */
+    --md-code-hl-entity-color: #{$mos-def-green};
+    --md-code-hl-tag-color: #{$mos-def-pink};
+    --md-code-hl-namespace-color: #{$mos-def-fg};
+    --md-code-hl-builtin-color: #{$mos-def-cyan};
+    --md-code-hl-class-color: #{$mos-def-cyan};
+
+    --md-code-special-bg-color: #{darken($mos-def-bg, 5%)};
+    --md-code-alternate-bg-color: #{tint($mos-def-bg, 10%)};
+    --md-code-link-bg-color: #{mix($mos-def-cyan, $mos-def-bg, 15%)};
   }
 
+  /* BLACK */
   &[data-md-color-scheme="slate"] {
-    // Custom code colors
+    /* Custom code colors */
     --input-bd-color: #{$din-color};
-    --slate-gradient: #{$gradient};
-    --containers-bg: #{$d-wrapper};
-    --nav-color: #{$d-wrapper};
-    --text: #{$d-text};
+    --slate-gradient: #{$dark-gradient};
+    --containers-bg: #{$dark-wrapper};
+    --nav-color: #{$dark-wrapper};
+    --text: #{$dark-text};
+    --md-text-color: #{$dark-text};
     --md-code-bg-color: #{$d-code-bg};
-    --md-code-fg-color: #{$drac-fg};
+    --md-code-fg-color: #{$dark-fg};
     --select-font-color: #{$d-sel-text};
-    --md-footer-bg-color: #{$d-foot-bg};
-    --md-footer-fg-color: #{$d-foot-fg};
-    --tab-bg: #{$d-tabs-bg};
+    --md-footer-bg-color: #{$dark-foot-bg};
+    --md-footer-fg-color: #{$dark-foot-fg};
+    --tab-bg: #{$dark-tabs-bg};
     --nav-link: #{$d-nav-link};
-    --md-admonition-bg-color: #{$dadmo-bg};
-    --md-default-bg: #{$d-def-bg};
+    --md-admonition-bg-color: #{$dark-admo-bg};
+    --md-default-bg: #{$dark-def-bg};
     --theme-label: #{$dLabel};
-    --rnb: #{$def-rnb};
-    // --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
+    --rnb: #{$mos-def-rnb};
+
+    --md-default-fg-color: #{transparentize($dark-fg, 0.13)};
+    --md-default-fg-color--light: #{transparentize($dark-fg, 0.46)};
+    --md-default-fg-color--lighter: #{transparentize($dark-fg, 0.84)};
+    --md-default-fg-color--lightest: #{transparentize($dark-fg, 0.93)};
+    --md-default-autocomplete-fg-color: #{transparentize($dark-fg, 0.6)};
+    --md-shadow-z2: 0 #{px2rem(14px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3),
+      0 0 #{px2rem(2px)} hsla(0, 0%, 0%, 0.2);
+
+    --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
+    --md-default-bg-color--light: #{transparentize($dark-default-bg, 0.3)};
+    --md-default-bg-color--lighter: #{transparentize($dark-default-bg, 0.7)};
+    --md-default-bg-color--lightest: #{transparentize($dark-default-bg, 0.88)};
+    --md-default-bg-color--trans: #{transparentize($dark-default-bg, 1)};
+
+    /* General text */
+    --md-text-color: var(--md-default-fg-color);
+    --md-typeset-color: var(--md-default-fg-color);
+
+    // Dark specific colors
+    --md-default-bg-color--dark: #{darken($dark-default-bg, 3%)};
+    --md-default-bg-color--darker: #{darken($dark-default-bg, 6%)};
+    --md-default-bg-color--darkest: #{darken($dark-default-bg, 9%)};
+    --md-default-bg-color--ultra-dark: #{darken($dark-default-bg, 15%)};
     --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
     --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
     --md-code-special-bg-color: #{lighten(hsl(232, 15%, 15%), 5%)};
@@ -132,11 +201,11 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
 
     // Admonition colors
     --md-admonition-fg-color: var(--md-default-fg-color);
-    --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
+    // --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
     // --md-admonition-bg-color: #111217;
     --md-admonition-bg-color: #121219;
     --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
-    --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
+    --md-admonition-bg-color--settings: rgba(19, 15, 21, 0.1);
     // --md-admonition-bg-color--info: rgba(170, 0, 255, 0.1);
     --md-admonition-bg-color--note: var(--md-default-bg-color--ultra-dark);
     --md-admonition-bg-color--abstract: var(--md-default-bg-color--ultra-dark);
@@ -166,10 +235,12 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --md-admonition-icon-color--warning: hsl(31, 100%, 71%);
   }
 
+  /* Dracula */
   // Dark mode color changes
   &[data-md-color-scheme="dracula"] {
     // Default color shades
-    --text: #{$l-text};
+    --text: #{$dark-text};
+    --md-typeset-color: #{$drac-selection};
     --md-default-fg-color: #{transparentize($drac-fg, 0.13)};
     --md-default-fg-color--light: #{transparentize($drac-fg, 0.46)};
     --md-default-fg-color--lighter: #{transparentize($drac-fg, 0.84)};
@@ -184,17 +255,17 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --md-default-bg-color--lightest: #{transparentize($drac-default-bg, 0.88)};
     --md-default-bg-color--trans: #{transparentize($drac-default-bg, 1)};
 
-    // Dark specific colors
+    /* Dark specific colors */
     --md-default-bg-color--dark: #{darken($drac-default-bg, 3%)};
     --md-default-bg-color--darker: #{darken($drac-default-bg, 6%)};
     --md-default-bg-color--darkest: #{darken($drac-default-bg, 9%)};
     --md-default-bg-color--ultra-dark: #{darken($drac-default-bg, 15%)};
 
-    // General text
+    // General text */
     --md-text-color: var(--md-default-fg-color);
-    --md-typeset-color: var(--md-default-fg-color);
+    // --md-typeset-color: var(--md-default-fg-color);
 
-    // Admonition colors
+    // Admonition colors */
     --md-admonition-fg-color: var(--md-default-fg-color);
     // --md-admonition-bg-color: #111217;
     --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
@@ -216,7 +287,7 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --md-admonition-icon-color--tip: hsl(161, 97%, 77%);
     --md-admonition-icon-color--warning: hsl(31, 100%, 71%);
 
-    // Code colors
+    // Code colors */
     --md-code-fg-color: #{$drac-fg};
     --md-code-bg-color: #{$drac-bg};
     --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
@@ -235,7 +306,7 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --md-code-hl-generic-color: #{$drac-blue};
     --md-code-hl-color: #{$drac-selection};
 
-    // Custom code colors
+    // Custom code colors */
     --md-code-hl-entity-color: #{$drac-green};
     --md-code-hl-tag-color: #{$drac-pink};
     --md-code-hl-namespace-color: #{$drac-fg};
@@ -246,13 +317,13 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --md-code-alternate-bg-color: #{tint($drac-bg, 10%)};
     --md-code-link-bg-color: #{mix($drac-cyan, $drac-bg, 15%)};
 
-    // Various Material related color variables
+    // Various Material related color variables */
     --md-typeset-a-color: #{$drac-cyan};
     --md-typeset-mark-color: #{mix($drac-yellow, $drac-bg, 35%)};
     --md-typeset-del-color: #{mix($drac-pink, $drac-bg, 35%)};
     --md-typeset-ins-color: #{mix($drac-green, $drac-bg, 35%)};
 
-    // Progressbar colors
+    // Progressbar colors */
     --md-progress-stripe: var(--md-default-bg-color--lightest);
     --md-progress-100: #{$drac-green};
     --md-progress-80: #{$drac-light-green};
@@ -261,7 +332,7 @@ $d-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
     --md-progress-20: #{$drac-pink};
     --md-progress-0: #{$drac-red};
 
-    // Keys colors
+    // Keys colors */
     --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
     --md-typeset-kbd-border-color: var(--md-default-bg-color--ultra-dark);
     --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);

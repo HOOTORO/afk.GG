@@ -1,64 +1,13 @@
-import {
-  createElementN,
-  createInput,
-  storedValue,
-} from "../components/helper.js";
-import { relicType, relics } from "../model/afk.js";
+import { createElementN, createInput } from "../components/helper.js";
+import { Branch, RelicManager, Renderer } from "../model/afk.js";
+import { relicEstimateTable } from "../model/constants.js";
+import { BagRelic, CoreSlot, SLOT_ID } from "../model/types.js";
 import { expeditor } from "./abex.js";
 
-console.log("WE RE RELIC");
-
 const relApp = document.getElementById("relic-app");
-const resultHeadBody = `
-  <thead>
-    <tr>
-      <th align="center">Expeditor</th>
-      <th align="left">Data</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">Income</td>
-      <td align="left">$inc</td>
-    </tr>
-    <tr>
-      <td align="center">Goal Cost</td>
-      <td align="left">$gc</td>
-    </tr>
-    <tr>
-      <td align="center">Goal timeleft</td>
-      <td align="left">$tl</td>
-    </tr>    
-    <tr>
-      <td align="center" colspan="2">Bag</td>
-    </tr>
-      <tr>
-      <td align="center">Relics</td>
-      <td align="center">$tg</td>
-      </tr>
-      <tr>
-      <td align="center">Used in</td>
-      <td align="center">$need</td>
-      </tr>
-      <tr>
-      <td align="center">Sell</td>
-      <td align="center">$toSell</td>
-      </tr>
-  </tbody>
-`;
 
 export function runRelic() {
-  for (const item of relicType) {
-    let equippedRelics = CoreRelicInfo(item, "equip"),
-      planned = CoreRelicInfo(item, "goal"),
-      lb = createElementN("span", {}, "equip 🢁 | 🡻 goal");
-    const container = createElementN("span", { class: "relic-type" }, item);
-    container.innerText = item;
-    container.appendChild(equippedRelics);
-    container.appendChild(lb);
-    container.appendChild(planned);
-    relApp.appendChild(container);
-  }
+  CoreRelicInfo(expeditor.relic);
 
   const userInput = createElementN(
       "div",
@@ -100,24 +49,25 @@ export function runRelic() {
           idx = parseInt(containerClasses[0].replace("idx-", "")),
           relId = parseInt(containerClasses[1].replace("item-", "")),
           type = topLevelContainerClasses.className.split(" ")[0],
-          branch = topLevelContainerClasses.className.split(" ")[2];
-        const getValue = function (t: string) {
-          return RelicInfo(expeditor.NextLevelRelic(branch, idx, t === "goal"));
-        };
+          branch = topLevelContainerClasses.className.split(" ")[2] as Branch,
+          slotId = `${branch}-${idx}`;
 
-        const value = getValue(type);
-        if (relId && value) {
+        if (relId) {
           const temp = topLevelContainerClasses.parentElement.querySelectorAll(
             `.item-${relId}`
           );
           if (type === "equip") {
+            const value = expeditor.equippedSlot(<SLOT_ID>slotId);
+            expeditor.relic = <SLOT_ID>slotId;
             for (const ite of temp) {
-              ite.firstElementChild.setAttribute("src", value.icon);
-              ite.className = `idx-${idx} item-${value.id}`;
+              ite.firstElementChild.setAttribute("src", value.equipped.icon);
+              ite.className = `idx-${idx} item-${value.equipped.id}`;
             }
           } else {
-            e.target.setAttribute("src", value.icon);
-            e.target.parentElement.className = `idx-${idx} item-${value.id}`;
+            expeditor.nextGoal(<SLOT_ID>slotId);
+            const value = expeditor.equippedSlot(<SLOT_ID>slotId);
+            e.target.setAttribute("src", value.goal.icon);
+            e.target.parentElement.className = `idx-${idx} item-${value.goal.id}`;
           }
         }
       }
@@ -139,11 +89,13 @@ export function runRelic() {
     });
   });
 
-  const expLabel = createElementN("span", { class: "ui-output" }),
+  const expLabel = createElementN("span", {
+      class: "ui-output",
+      style: "width:50%",
+    }),
     out = createElementN("output", { id: "expeditor-data" }),
     resultTable = createElementN("table", {
       id: "final-table",
-      class: "expeditor-table",
       style: "width:100%",
     });
 
@@ -162,33 +114,21 @@ export function runRelic() {
 
 function updateOut() {
   const data = expeditor.RepresentYourSelf();
-  document.getElementById("final-table").innerHTML = resultHeadBody
-    .replace("$inc", data[0].toString())
-    .replace("$gc", data[1].toString())
-    .replace("$tl", `${data[2]}h`)
-    .replace("$tg", data[3].toString())
-    .replace("$need", data[4].toString())
-    .replace("$toSell", data[5]?.toString());
+  document.getElementById("final-table").innerHTML = relicEstimateTable
+    .replace("$inc", data[0])
+    .replace("$gc", data[1])
+    .replace("$tl", data[2])
+    .replace("$tg", data[3])
+    .replace("$need", data[4])
+    .replace("$toSell", data[5])
+    .replace("$comp", data[6]);
 }
 
 export function loadBag() {
-  const bag = document.getElementById("relic-bag");
-  relics.forEach((x) => {
-    const val = expeditor._bag[x.id] ? expeditor._bag[x.id] : 0;
+  const app = document.getElementById("relic-bag");
+  const expeditorBag = Renderer.relicInput("user-bag", expeditor.bag);
 
-    const el = createElementN(
-      "span",
-      {},
-      `
-      <img src=${x.icon} alt=${x.name} width=42></img>
-      <input type="number" class="user-bag item-${x.id}" min=0 value="${val}">
-      `
-    );
-    bag?.appendChild(el);
-  });
-  const inputs = document.querySelectorAll(".user-bag");
-
-  inputs.forEach((x) => {
+  expeditorBag.childNodes.forEach((x) => {
     x.addEventListener("change", (e: InputEvent) => {
       const tg = e.target as HTMLInputElement;
 
@@ -197,45 +137,47 @@ export function loadBag() {
 
       if (match.length > 0) {
         const itemId = parseInt(match[1]),
-          val = parseInt(tg.value);
-
-        expeditor._bag[itemId] = val;
-        storedValue("bag", JSON.stringify(expeditor._bag));
+          rel = <BagRelic>RelicManager.getById(itemId);
+        rel.qty = parseInt(tg.value);
+        expeditor.bag = rel;
         tg.setAttribute("value", tg.value);
-        console.log(`relic in the bag! \n\t => ${itemId} \n val => ${val}`);
-
-        console.log(expeditor._bag);
         updateOut();
       }
     });
   });
+  app.appendChild(expeditorBag);
 }
 
-function CoreRelicInfo(branch: string, type: string) {
-  let r = expeditor.relic.equip[branch];
-  if (type === "goal") {
-    r = expeditor.relic.goal[branch];
-  }
-
-  const innerSpan = `<span class='idx-$i item-$id'>
+function CoreRelicInfo(r: CoreSlot[]) {
+  const innerTemplate = `<span class='idx-$i item-$id'>
       <img src=$src width=52>
       </span>`;
 
-  let inner = "";
-  for (let i = 0; i < 6; i++) {
-    inner += innerSpan
-      .replaceAll("$id", RelicInfo(r[i])?.id.toString())
-      .replace("$src", RelicInfo(r[i])?.icon)
-      .replace("$i", i.toString());
-  }
-  const relicTree = createElementN(
-    "div",
-    { class: `${type} relic ${branch}` },
-    inner
-  );
-  return relicTree;
-}
+  for (const v of Object.values(Branch)) {
+    let eq = "",
+      goalstr = "";
+    r.filter((x) => x.slotId.startsWith(v)).forEach((rel, i) => {
+      eq += innerTemplate
+        .replaceAll("$id", rel.equipped.id.toString())
+        .replace("$src", rel.equipped.icon)
+        .replace("$i", i.toString());
+      goalstr += innerTemplate
+        .replaceAll("$id", rel.goal.id.toString())
+        .replace("$src", rel.goal.icon)
+        .replace("$i", i.toString());
+    });
 
-function RelicInfo(n: number) {
-  return relics.find((x) => x.id === n);
+    const container = createElementN("span", { class: "relic-type" });
+    const relicTree = createElementN("div", { class: `equip relic ${v}` }, eq);
+    const lb = createElementN(
+      "span",
+      {},
+      `🢁 equip 🢁 <img src="/afk.GG/assets/icons/tree/tree-${v}.png" width=32> 🡻 goal 🡻`
+    );
+    const goal = createElementN("div", { class: `goal relic ${v}` }, goalstr);
+    container.appendChild(relicTree);
+    container.appendChild(lb);
+    container.appendChild(goal);
+    relApp.appendChild(container);
+  }
 }

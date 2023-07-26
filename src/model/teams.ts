@@ -1,5 +1,5 @@
 import { storedValue } from "../components/helper.js";
-import { based, classes, races, treeBranches } from "./afk.js";
+import { based, classes, races, Branch } from "./afk.js";
 
 interface AfkObject {
   name: string;
@@ -70,7 +70,7 @@ export class Team {
   heroes: [number, Hero][];
   pet: Pet;
   target?: string;
-  eldrerTree: Map<string, number>;
+  elderTree: Map<string, number>;
   private _max: number;
   damage: [number, string?][];
   constructor(p?: Pet, t?: string, ...team: Hero[]) {
@@ -78,10 +78,10 @@ export class Team {
     this.pet = p;
     this.target = t;
     this.heroes = [];
-    this.eldrerTree = new Map<string, number>();
-    for (const br of treeBranches) {
+    this.elderTree = new Map<string, number>();
+    for (const br in Branch) {
       if (storedValue(br)) {
-        this.eldrerTree.set(br, parseInt(storedValue(br).toString()));
+        this.elderTree.set(br, parseInt(storedValue(br).toString()));
       }
     }
     if (team.length >= this._max) {
@@ -135,15 +135,15 @@ export class Team {
   }
 
   setElderTree(t: string, lvl: number) {
-    this.eldrerTree.set(t, lvl);
+    this.elderTree.set(t, lvl);
     storedValue(t, lvl.toString());
   }
   TreeString() {
-    return `MI:${this.eldrerTree.get("might")} | TA:${this.eldrerTree.get(
+    return `MI:${this.elderTree.get("might")} | TA:${this.elderTree.get(
       "tank"
-    )} | RA:${this.eldrerTree.get("ranger")} | SU:${this.eldrerTree.get(
+    )} | RA:${this.elderTree.get("ranger")} | SU:${this.elderTree.get(
       "support"
-    )} | MA:${this.eldrerTree.get("mage")}`;
+    )} | MA:${this.elderTree.get("mage")}`;
   }
 }
 
