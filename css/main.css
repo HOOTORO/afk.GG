@@ -5501,6 +5501,8 @@ summary > .md-button {
 .user-bag .relic-type,
 #relic-app .ui-input,
 #relic-app .relic-type {
+  display: flex;
+  justify-content: space-evenly;
   width: 20em;
   margin: 5px;
   font-size: larger;
@@ -5518,8 +5520,8 @@ summary > .md-button {
 .user-bag .relic-type img,
 #relic-app .ui-input img,
 #relic-app .relic-type img {
-  -webkit-user-drag: none;
   -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 .user-bag .ui-input > span,
 .user-bag .relic-type > span,
@@ -5528,6 +5530,7 @@ summary > .md-button {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 40px;
 }
 .user-bag .ui-input .relic,
 .user-bag .relic-type .relic,
@@ -5536,9 +5539,8 @@ summary > .md-button {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 7em;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  max-width: 105px;
+  margin: 2px;
   cursor: pointer;
 }
 .user-bag .ui-input,
