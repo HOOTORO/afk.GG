@@ -346,6 +346,8 @@
 
   .ui-input,
   .relic-type {
+    display: flex;
+    justify-content: space-evenly;
     width: 20em;
     margin: 5px;
     font-size: larger;
@@ -361,23 +363,23 @@
     -webkit-text-stroke: #00ffff;
 
     img {
-      -webkit-user-drag: none;
       -webkit-user-select: none;
+      -webkit-user-drag: none;
     }
 
     > span {
       display: inline-flex;
       flex-direction: column;
       justify-content: center;
+      max-width: 40px;
     }
 
     .relic {
       display: inline-flex;
       flex-direction: row;
       flex-wrap: wrap;
-      max-width: 7em;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      max-width: 105px;
+      margin: 2px;
       cursor: pointer;
     }
   }
