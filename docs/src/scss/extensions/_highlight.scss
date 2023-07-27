@@ -1,5 +1,5 @@
 .highlight {
-  .kc { // Keyword constant
+  .kc {
     color: var(--md-code-hl-constant-color);
   }
 
@@ -13,36 +13,35 @@
     color: var(--md-code-hl-number-color);
   }
 
-  .nb,  // Name, builtin
-  .bp { // Name, builtin pseudo
+  .nb,
+  .bp {
     color: var(--md-code-hl-builtin-color);
   }
 
-  .nn { // Name, namespace Name, namespace Name, namespace Name, namespace
+  .nn {
     color: var(--md-code-hl-namespace-color);
   }
 
-  .na,  // Name, attribute
-  .nd,  // Name, decorator
-  .ni { // Name, entity
+  .na,
+  .nd,
+  .ni {
     color: var(--md-code-hl-entity-color);
   }
-  .nl,  // Name, label
-  .nt { // Name, tag
+  .nl,
+  .nt {
     color: var(--md-code-hl-tag-color);
   }
 }
 
 .md-typeset {
-
   /* Allow code to look like code everywhere despite Material's current preference */
   *:not(pre) > code {
-      margin: 0;
-      padding: 0 px2em( 4px, 13.6px);
-      color: var(--md-code-fg-color);
-      background-color: var(--md-code-inline-bg-color);
-      border-radius: px2rem(2px);
-      box-shadow: none;
+    margin: 0;
+    padding: 0 px2em(4px, 13.6px);
+    color: var(--md-code-fg-color);
+    background-color: var(--md-code-inline-bg-color);
+    border-radius: px2rem(2px);
+    box-shadow: none;
   }
 
   /* Code that is also a link */
@@ -78,7 +77,6 @@
   }
 
   .highlight {
-
     /* Needed for tab preserving mode */
     tab-size: 8;
 
@@ -88,7 +86,6 @@
 
     /* `pymdownx-inline` mode */
     [data-linenos] {
-
       /* Special line mode coloring */
       &.special::before {
         background-color: var(--md-code-special-bg-color);
@@ -96,7 +93,7 @@
     }
   }
 
-    /* Special line number coloring for tables */
+  /* Special line number coloring for tables */
   .highlighttable {
     .linenodiv {
       .special {
@@ -111,7 +108,6 @@
 
   // Filename span
   .highlight span.filename {
-
     // Adjust margins and and general container look of code block
     + pre {
       margin-top: 0;
@@ -122,7 +118,7 @@
       }
     }
 
-    // Style the filename banner
+    /* Style the filename banner */
     position: relative;
     display: block;
     margin-top: 1em;
@@ -157,7 +153,7 @@
       margin-bottom: 0;
     }
 
-    input{
+    input {
       display: none;
 
       ~ .code-footer {
@@ -227,17 +223,17 @@
           bottom: 0;
           left: 0;
           padding: px2em(32px) px2em(8px) px2em(8px) px2rem(16px);
-          background-image: linear-gradient(to bottom,
-              transparent,
-              var(--md-default-bg-color) 80%
-          100%);
+          background-image: linear-gradient(
+            to bottom,
+            transparent,
+            var(--md-default-bg-color) 80% 100%
+          );
         }
       }
     }
   }
 
   @include break-to-device(mobile) {
-
     > {
       diagram-div {
         margin-right: px2rem(-16px);

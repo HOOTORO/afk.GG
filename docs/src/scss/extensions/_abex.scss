@@ -135,7 +135,8 @@
     margin-left: 10px;
     padding: 0;
     padding-left: 7px;
-    color: var(--text);
+    color: var(--md-default-fg-color);
+    background-color: var(--md-default-bg-color);
     line-height: 2;
     border: 1px solid rgba(114, 114, 114, 0.4470588235);
     border-radius: 10px;
@@ -239,7 +240,8 @@
     height: calc(1em + 0.6em + 0.5em);
     margin: 5px;
     padding: 0.8em 1em;
-    color: #000000;
+    color: var(--md-default-fg-primary) !important;
+    background-color: var(--md-default-bg-color) !important;
     font-size: 1.25rem;
     line-height: 1;
     background-image: linear-gradient(#000000, #000000),
@@ -340,7 +342,8 @@
   input[type="number"],
   code {
     max-width: 5em;
-    color: #000000;
+    color: var(--md-default-bg-color);
+    background-color: var(--md-default-fg-color);
     border-radius: 5px;
   }
 
@@ -356,6 +359,7 @@
     text-transform: capitalize;
     text-shadow: 1px 1px 2px rgb(179, 0, 255), 0 2px 1em rgb(0, 217, 255),
       0 0 0.2em rgb(98, 0, 255);
+    // background-color: var(--md-default-bg-color);
     background-color: #3d2e4b48;
     border: 2px outset #3030347d;
     border-radius: 10px;

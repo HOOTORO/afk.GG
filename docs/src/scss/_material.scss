@@ -101,16 +101,22 @@
 
 .md-sidebar__inner {
   overflow-y: scroll;
-  background: var(--md-default-bg) !important;
+
+  /* background: var(--slate-gradient-a) !important;
+   background: var(--md-default-bg) !important; */
+  background: transparent !important;
   border-radius: 10px;
 }
 
 .md-nav__list {
-  padding: 3px;
+  padding: 10px;
 }
 
+.md-nav__title,
 .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
   top: 10px;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .md-tabs__link--active,

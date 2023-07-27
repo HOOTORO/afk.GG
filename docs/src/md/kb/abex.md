@@ -7,7 +7,7 @@ template: templates/abex.j2
 
 ## Apps
 
-//// warning | Development in progress [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+//// new | Development in progress [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
 
 There are a bugs for sure, if you found one or have ideas/feature request click "Feedback".
 

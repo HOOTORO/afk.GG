@@ -12,7 +12,6 @@
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": null,
     "color-hex-length": "long",
-    "color-named": "never",
     "comment-empty-line-before": [
       "always",
       {

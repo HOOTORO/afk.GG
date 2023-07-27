@@ -67,6 +67,7 @@ $lin-color: rgb(255, 0, 0);
     --nav-link: #{$mos-def-nav-link};
     --nav-color: #{$glass};
     --slate-gradient: #{$mos-def-gradient};
+    --slate-gradient-a: #{$mos-def-gradient-anti};
     --containers-bg: #{$mos-def-bg};
     --select-font-color: #{$mos-def-sel-text};
     --md-footer-bg-color: #{$mos-def-foot-bg};
@@ -150,6 +151,7 @@ $lin-color: rgb(255, 0, 0);
     /* Custom code colors */
     --input-bd-color: #{$din-color};
     --slate-gradient: #{$dark-gradient};
+    --slate-gradient-a: #{$dark-gradient-anti};
     --containers-bg: #{$dark-wrapper};
     --nav-color: #{$dark-wrapper};
     --text: #{$dark-text};
@@ -249,7 +251,7 @@ $lin-color: rgb(255, 0, 0);
     --md-shadow-z2: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3),
       0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.2);
 
-    --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
+    --md-default-bg-color: var(--md-default-bg-color--darkest);
     --md-default-bg-color--light: #{transparentize($drac-default-bg, 0.3)};
     --md-default-bg-color--lighter: #{transparentize($drac-default-bg, 0.7)};
     --md-default-bg-color--lightest: #{transparentize($drac-default-bg, 0.88)};
@@ -263,15 +265,15 @@ $lin-color: rgb(255, 0, 0);
 
     // General text */
     --md-text-color: var(--md-default-fg-color);
-    // --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-color: var(--md-default-fg-color);
 
     // Admonition colors */
     --md-admonition-fg-color: var(--md-default-fg-color);
+    // --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
     // --md-admonition-bg-color: #111217;
     --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
     --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
     --md-admonition-bg-color--info: rgba(170, 0, 255, 0.1);
-    --md-admonition-fg-color: hsla(232, 75%, 95%, 1);
     --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
     --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
     --md-admonition-icon-color--danger: hsl(0, 100%, 67%);

@@ -1,4 +1,4 @@
-mjx-container[display=true] {
+mjx-container[display="true"] {
   font-size: 120% !important;
 }
 
@@ -33,7 +33,6 @@ mjx-container:not([display]) {
     flex-wrap: nowrap;
     align-items: baseline;
     justify-content: space-between;
-    // overflow-x: auto;
 
     .base {
       display: inline !important;

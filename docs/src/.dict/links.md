@@ -19,6 +19,8 @@
 [aawk4]: https://cdn.discordapp.com/attachments/976976670345035796/1126466253477908491/9.webp
 [aawk5]: https://cdn.discordapp.com/attachments/976976670345035796/1126466253876363354/10.webp
 [aawk6]: https://cdn.discordapp.com/attachments/976976670345035796/1126466254589407314/11.webp
+[wrizz]: https://preview.redd.it/5xcozfyvkzpa1.png?width=952&format=png&auto=webp&s=9b1afaba154d44c427e56b41e31766fabe7de0c3
+[soren]: https://preview.redd.it/p50extjxkzpa1.png?width=952&format=png&auto=webp&s=de8162228f207ae109604d84a378f19b2c8b41c2
 
 <!-- nm-respect -->
 

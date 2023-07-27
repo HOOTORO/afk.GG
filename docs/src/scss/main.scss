@@ -7,18 +7,15 @@
 
 @import "palette/miss";
 @import "palette/colors";
+@import "palette/default";
+@import "palette/slate";
 @import "palette/dracula";
 
-/* @import "hoots/table"; */
-@import "hoots/output";
-@import "hoots/purecss";
-@import "hoots/silder";
-@import "hoots/custom";
-@import "hoots/radio";
-@import "hoots/dust";
-@import "hoots/admonition";
-@import "hoots/timer";
-@import "hoots/abex";
+@import "extensions/kb";
+@import "extensions/blog";
+@import "extensions/silder";
+@import "extensions/timer";
+@import "extensions/abex";
 
 @import "config";
 
@@ -30,7 +27,7 @@
 @import "extensions/progressbar";
 @import "extensions/critic";
 @import "extensions/details";
-@import "extensions/hightlight";
+@import "extensions/highlight";
 @import "extensions/keys";
 @import "extensions/magiclink";
 @import "extensions/superfences";

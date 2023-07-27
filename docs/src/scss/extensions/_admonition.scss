@@ -1,4 +1,4 @@
-// @import "../palette/dracula"
+@import "../palette/dracula";
 
 .md-typeset .admonition {
   border-width: 0;
@@ -142,4 +142,36 @@ $old-admonitions: (
       }
     }
   }
+}
+
+@media screen and (min-width: 45em) {
+  .md-typeset .inline {
+    width: fit-content;
+    max-width: 20.7rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.quote > p.admonition-title {
+  align-items: center;
+  padding: 10px;
+}
+
+.quote > p.admonition-title > a {
+  margin-right: 15px;
+}
+
+li > a > img {
+  border-radius: 0;
+}
+
+summary > .md-button {
+  right: 10vw !important;
+}
+
+.admonition-title > .md-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }

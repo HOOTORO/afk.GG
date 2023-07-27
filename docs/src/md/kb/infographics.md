@@ -10,7 +10,6 @@ template: main.html
 <figure markdown>
 
 ![stats][ig1]
-
 <figcaption>Lil' bit outdated, but still relevant!</figcaption>
 </figure>
 
@@ -19,10 +18,12 @@ template: main.html
 by R3ZZ
 
 <!-- prettier-ignore -->
-=== "#1"
-    ![1][iog1]
-=== "#2"
-    ![2][iog2]
+/// tab | Trivia
+![1][iog1]
+///
+/// tab | Positioning
+![2][iog2]
+///
 
 ## Pet Guide
 
@@ -31,7 +32,6 @@ by Cero
 <figure markdown>
 
 ![cero][ig3]
-
 <figcaption>Updated 2023-06-23</figcaption>
 </figure>
 
@@ -40,7 +40,6 @@ by Cero
 <figure markdown>
 
 ![gm][ig2]
-
 <figcaption>
 mb outdated
 </figcaption>
@@ -50,35 +49,49 @@ better check [bob49 document](links.md#-game-knowledge-)
 
 ## Spender's Values
 
-=== "SHOP VALUES"
-
-<figure markdown>
+/// tab | SHOP VALUES
 ![shop value][ig4]
-<figcaption>Relevant</figcaption>
-</figure>
-<!-- prettier-ignore -->
-=== "VIP COST"
-    ![VipCost][ig6]{width=400} ![CostVip][ig5]{width=300}
-=== "Deals value | v.Л.Н"
-    ![bbb][whalevalue]
+///
+/// tab | VIP COST
+![VipCost][ig6]{width=400}
+![CostVip][ig5]{width=300}
+///
+/// tab | Deals value | v.Л.Н
+![bbb][whalevalue]
+///
 
 ## Awk. Heroes
 
 Outdated
 
 <!-- prettier-ignore -->
-=== "Priority Guide"
-    ![awk1][aawk1]
-=== "Belinda"
-    ![awk2][aawk2]
-=== "Brutus"
-    ![awk3][aawk3]
-=== "Solise"
-    ![awk4][aawk4]
-=== "Baden"
-    ![awk5][aawk5]
-=== "Thane"
-    ![awk6][aawk6]
+/// tab | Priority Guide
+![awk1][aawk1]
+///
+/// tab | Belinda
+![awk2][aawk2]
+///
+/// tab | Brutus
+![awk3][aawk3]
+///
+/// tab | Solise
+![awk4][aawk4]
+///
+/// tab | Baden
+![awk5][aawk5]
+///
+/// tab | Thane
+![awk6][aawk6]
+///
+
+## Guild Bosses
+
+/// tab | Soren
+![s][soren]
+///
+/// tab | Wrizz
+![w][wrizz]
+///
 
 ## Resources Val
 

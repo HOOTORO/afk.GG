@@ -30,6 +30,7 @@ $dark-foot-bg: $dark-bg;
 $dark-admo-bg: linear-gradient(45deg, rgba(102, 102, 102, 0.605), #bebebebe);
 $dark-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
 $dark-gradient: linear-gradient(180deg, #2e303d, $dark-bg);
+$dark-gradient-anti: linear-gradient(360deg, #2e303d2c, opacify($dark-bg, 0.1));
 
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
