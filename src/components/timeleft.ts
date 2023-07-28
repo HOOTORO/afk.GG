@@ -85,12 +85,13 @@ export default function startTimer(
 
 function formatTime(time: number) {
   let remain = new Date(time);
-  let days = remain.getUTCDate() - 1,
+  let month = remain.getMonth(),
+    days = remain.getUTCDate() - 1,
     hours = remain.getUTCHours(),
     minutes = remain.getUTCMinutes(),
     seconds = remain.getUTCSeconds();
 
-  return `${days}d ${hours}h<br>${minutes}m ${seconds}s`;
+  return `${month}mo<br>${days}d ${hours}h<br>${minutes}min ${seconds}s`;
 }
 
 function setRemainingPathColor(timeLeft: number, el: string) {

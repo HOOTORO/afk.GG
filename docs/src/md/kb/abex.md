@@ -66,18 +66,22 @@ There are a bugs for sure, if you found one or have ideas/feature request click 
     ////
 ////
 
-## Timeleft
+## Timeleft[^teo]
 
-<div id="main-event">
-  <h1>
-    Abyssal Expedition #10
-  </h1>
-  <div class="main-container">
-    <span id="start"></span>
-    <span id="silent"></span>
-    <span id="left"></span>
-  </div>
-</div>
+///// html | div#main-event
+
+<h1>Abyssal Expedition #11</h1>
+
+//// html | div.main-container
+/// html | span#start
+///
+/// html | span#silent
+///
+/// html | span#left
+///
+////
+/////
+[^teo]: Hypothetically of course , based on past seasons
 
 ## Relics
 
@@ -117,11 +121,14 @@ There are a bugs for sure, if you found one or have ideas/feature request click 
 
 /// example | FORMULA<a id="fn1" href="#sp1">↩︎</a>
 *RD~avg~ ÷ t~drop~ × P~rrd~  + (1 - P~rrd~) × RD~avg~ ÷ t~drop~ × C~sell~*
-///
 
+```text
 RD = Relic drop  
 P~rrd~ = chance drop required relic  
 C~sell~ = sell price coefficient, which is 40%
+```
+
+///
 
 [nb]: https://media.discordapp.net/attachments/1128524376929742879/1128524655804825690/aenewbieguide.webp
 [rela]: https://media.discordapp.net/attachments/1128524376929742879/1128524476540260444/all.jpg

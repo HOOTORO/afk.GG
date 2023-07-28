@@ -106,7 +106,7 @@ class AbEx {
   static viewerMultiplier = 1.2;
   static starFasterRecoveryMod = 0.9;
   static start() {
-    return new Date(2023, 6, 5, 0, 0, 0, 0);
+    return new Date(2023, 9, 30, 0, 0, 0, 0);
   }
   static leftToStart() {
     return new Date(this.start().getTime() - this.now.getTime());

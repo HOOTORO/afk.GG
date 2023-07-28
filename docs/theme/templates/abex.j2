@@ -1,7 +1,10 @@
 {% extends "main.html" %}
 
 {% from 'templates/macro/input.j2' import input with context %}
+{% block htmltitle %}
 
+{{ super() }}
+{% endblock htmltitle %}
 {% block styles %}
 
 {{ super() }}
@@ -26,6 +29,7 @@
 {% block content %}
 {{ super() }}
 {% endblock content %}
+
 {% block scripts %}
 {{ super() }}
 <script type="module">
