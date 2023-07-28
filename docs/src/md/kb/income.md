@@ -16,8 +16,8 @@ template: templates/tools.j2
 3. PROFIT?
 ///
 
-/// warning | ATTENTION! _Please_ [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
-Раздел находится в _разработке_, в данный момент считает **только** суммарный профит с указанных режимов.  
+/// warning | ATTENTION! _Please_ [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
+Выводится суммарный профит **только** с указанных режимов.  
 В _планах_:
 
 - Добавить расчет АФК наград
@@ -29,4 +29,3 @@ template: templates/tools.j2
 :octicons-heart-fill-24:{ .heart }  
 Как и помощь в разработке 😏
 ///
-

@@ -8,7 +8,7 @@ template: main.html
 ---
 
 <!-- prettier-ignore -->
-/// admonition | Powered by Community! [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+/// admonition | Powered by Community! [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
     type: sh-luv
 Сделано сообществом для сообщества!
 ///

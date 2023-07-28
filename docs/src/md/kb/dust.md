@@ -5,7 +5,7 @@ description: >
 template: templates/calculator.j2
 ---
 
-/// warning | Ограничения [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+/// warning | Ограничения [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
 
 ❗️🔴 Расчет лвл/мес. исходя из `44500 пыль/лвл`
 

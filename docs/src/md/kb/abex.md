@@ -7,7 +7,7 @@ template: templates/abex.j2
 
 ## Apps
 
-//// new | Development in progress [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+//// new | Development in progress [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
 
 There are a bugs for sure, if you found one or have ideas/feature request click "Feedback".
 
@@ -97,6 +97,21 @@ There are a bugs for sure, if you found one or have ideas/feature request click 
 ## Old reddit guide for newcomers
 
 ![g][nb]
+
+## Ranking Seasons
+
+| #  | Boss        | Start      | End        |
+|----|-------------|------------|------------|
+| 1  | Gouldos     | 2020.05.30 | 2020.06.19 |
+| 2  | Gouldos     | 2020.08.08 | 2020.08.28 |
+| 3  | Ainz+Albedo | 2020.12.12 | 2020.12.28 |
+| 4  | Ezizh       | 2021.05.02 | 2021.05.18 |
+| 5  | Balancer    | 2021.10.30 | 2021.11.15 |
+| 6  | Balancer    | 2022.03.05 | 2021.03.21 |
+| 7  | Marsha      | 2022.09.03 | 2021.09.19 |
+| 8  | Marsha      | 2022.11.05 | 2021.11.21 |
+| 9  | Clawlossus  | 2023.05.07 | 2021.05.23 |
+| 10 | Clawlossus  | 2023.07.05 | 2021.07.21 |
 
 ### Footnotes
 

@@ -7,7 +7,7 @@ template: templates/blog.j2
 glightbox.auto_caption: false
 ---
 
-/// warning | Любишь кекать? [:fontawesome-brands-discord: Мемасная](https://discord.gg/xjJavhAvv6){ .md-button }
+/// danger | Любишь кекать? [:fontawesome-brands-discord:{.discord} Мемасная](https://discord.gg/xjJavhAvv6){ .md-button }
 <figure markdown>
 ![](/afk.GG/assets/images/general/needmemes.jpg){width=310}
 <figcaption> Есть чем поделиться? <br>

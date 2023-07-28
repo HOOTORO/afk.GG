@@ -280,3 +280,7 @@ h2 {
   margin-bottom: 20px;
   font-size: 0.7rem;
 }
+
+[data-md-component="announce"] .twemoji {
+  color: var(--md-primary-fg-color);
+}

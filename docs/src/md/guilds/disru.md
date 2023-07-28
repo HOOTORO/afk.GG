@@ -4,7 +4,7 @@ description: Russians. Сервера дискорда для носителей
 template: main.html
 ---
 
-/// info | Информация [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+/// info | Информация [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
 Пополнению списка всегда открыты двери!  
 Что бы сервер оказался в этом списке напишите мне в личку, с удовольствием добавлю.  
 Только убедитесь что приглашение/ссылка на сервер рабочая!  

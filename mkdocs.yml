@@ -45,14 +45,12 @@ theme:
       accent: deep purple
   features:
     - announce.dismiss
-    # - content.action.edit
     - content.code.copy
     - content.code.annotate
     - search.share
     - search.highlight
     - search.suggest
     - header.autohide
-    # - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.top

@@ -8,7 +8,7 @@ template: templates/blog.j2
 comments: true
 ---
 
-/// warning | DISCLAIMER [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+/// warning | DISCLAIMER [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
 <figure markdown>
 
 ![in][tro]  

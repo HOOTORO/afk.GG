@@ -4,12 +4,13 @@
 $glass: rgba(255, 255, 255, 0.2);
 $glass-icon: rgba(255, 255, 255, 0.3);
 $gradient: linear-gradient(35deg, #2e303d, #2e33ad);
-$option: #320a28;
+
+/* $option: rgb(221, 221, 221); */
+$option: invert(var(--select-font-color), $weight: 100%);
 $slider-radius: 20px;
 
 /* dark theme vars */
 $dLabel: "Dark Side";
-$d-sel-text: white;
 
 $d-nav-link: #ffffff;
 $din-color: #bada55;
@@ -158,7 +159,7 @@ $lin-color: rgb(255, 0, 0);
     --md-text-color: #{$dark-text};
     --md-code-bg-color: #{$d-code-bg};
     --md-code-fg-color: #{$dark-fg};
-    --select-font-color: #{$d-sel-text};
+    --select-font-color: #{$dark-sel-text};
     --md-footer-bg-color: #{$dark-foot-bg};
     --md-footer-fg-color: #{$dark-foot-fg};
     --tab-bg: #{$dark-tabs-bg};
@@ -242,6 +243,8 @@ $lin-color: rgb(255, 0, 0);
   &[data-md-color-scheme="dracula"] {
     // Default color shades
     --text: #{$dark-text};
+    --input-bd-color: #{$drac-dark-pink};
+    --select-font-color: #{$dark-sel-text};
     --md-typeset-color: #{$drac-selection};
     --md-default-fg-color: #{transparentize($drac-fg, 0.13)};
     --md-default-fg-color--light: #{transparentize($drac-fg, 0.46)};

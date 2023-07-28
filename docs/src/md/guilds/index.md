@@ -10,7 +10,7 @@ comments: true
 ---
 
 <!-- prettier-ignore -->
-/// details | О разделе [:fontawesome-brands-discord: Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary }
+/// details | О разделе [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
     type: info
 
 В игре достаточно большое и разнообразное СНГ сообщество.  
@@ -161,8 +161,12 @@ comments: true
 | s9   | #30    | #3 |
 | s8   | #31    | #2 |
 | s7   | #57    | #6 |
-| s6   | --     | -- |
+| s6   | #49    | -- |
 | s5   | #83    | #8 |
+| s4   | #88    | #8 |
+| s3   | #85    | #8 |
+| s2   | #85    | #8 |
+| s1   | #112    | #8 |
 ///
 /// admonition | Общепризнанный вклад в развитие сообщества
     type: sh-luv

@@ -4,8 +4,8 @@ description: Way of Back'n'Black
 draft: true
 ---
 
-/// warning | DISCLAIMER
-_Если вам интересна техническая сторона вопроса стратегии  БнБ в последней бездне, ее можно посмотреть_ [_тут_][strategy].
+/// warning | DISCLAIMER [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){:target="_blank" rel="noopener noreferrer" .md-button .md-button--primary }
+_Техническую сторона вопроса стратегии БнБ в последней бездне, можно посмотреть тут_[:fontawesome-brands-reddit:{.reddit}][strategy]{:target="_blank" rel="noopener noreferrer"}.
 Изначально не планировал делать пост про BnB, но после взятия топ-1 интерес к теме был неизбежен.
 В этом посте попробую разобрать другую сторону вопроса, повседневную жизнь BnB, как она организованна и чем отличается от привычного ритма РУ комьюнити (по моему скромному опыту).
 На мой взгляд именно тут скрыт секрет успеха B'n'B.

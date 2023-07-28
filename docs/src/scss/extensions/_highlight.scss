@@ -250,3 +250,13 @@
     }
   }
 }
+
+.shine {
+  -webkit-text-stroke: rgb(115, 0, 255) 0.7px;
+  text-shadow: 0px 0px 4px rgb(115, 0, 255), 3px -5px 5px rgb(0, 238, 255);
+}
+
+.shine-reverse {
+  -webkit-text-stroke: rgb(0, 238, 255) 0.7px;
+  text-shadow: 0px 0px 4px rgb(0, 238, 255), 3px -5px 5px rgb(115, 0, 255);
+}
