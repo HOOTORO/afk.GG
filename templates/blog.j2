@@ -1,33 +1,6 @@
 {% extends "main.html" %}
 
-{% block htmltitle %}
-
+{% block libs %}
+<script type="module" src="{{ 'js/ts/components/bossicon.js' | url }}"></script>
 {{ super() }}
-{% endblock htmltitle %}
-
-{% block styles %}
-
-{{ super() }}
-
-{% endblock styles %}
-
-{% block tabs %}
-
-{{ super() }}
-
-{% endblock tabs %}
-
-{% block site_nav %}
-{{ super() }}
-{% endblock site_nav %}
-
-{% block content %}
-
-{{ super() }}
-{% endblock content %}
-
-{% block footer %}
-
-{{ super() }}
-
-{% endblock footer %}
+{% endblock libs %}

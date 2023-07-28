@@ -1,11 +1,5 @@
 {% extends "main.html" %}
 
-{% from 'templates/macro/input.j2' import input with context %}
-
-{% block styles %}
-
-{{ super() }}
-{% endblock styles %}
 
 {% block libs %}
 
@@ -17,15 +11,6 @@
 
 {% endblock libs %}
 
-{% block tabs %}
-
-{{ super() }}
-{% endblock tabs %}
-<!-- Content -->
-
-{% block content %}
-{{ super() }}
-{% endblock content %}
 {% block scripts %}
 {{ super() }}
 <script type="module">

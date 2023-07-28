@@ -1,16 +1,6 @@
 {% extends "base.html" %}
 {% from 'templates/macro/input.j2' import input with context %}
 
-{% block htmltitle %}
-
-{{ super() }}
-{% endblock htmltitle %}
-
-{% block styles %}
-
-{{ super() }}
-{% endblock styles %}
-
 {% block libs %}
 
 {{ super() }}
@@ -18,12 +8,6 @@
 <script type="module" src="{{ 'js/ts/dust.js' | url }}"></script>
 <script type="module" src="{{ 'js/ts/types.js' | url }}"></script>
 {% endblock libs %}
-
-{% block tabs %}
-
-{{ super() }}
-{% endblock tabs %}
-<!-- Content -->
 
 {% block content %}
 
@@ -46,11 +30,3 @@
 </div>
 {{ super() }}
 {% endblock content %}
-
-{% block scripts %}
-
-<!-- Add scripts that need to run before here -->
-{{ super() }}
-<!-- Add scripts that need to run afterwards here -->
-
-{% endblock scripts %}

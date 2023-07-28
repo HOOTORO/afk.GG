@@ -1,4 +1,4 @@
-import { exportToCsv } from "../components/ csvexport.js";
+import { exportToCsv } from "../components/csvexport.js";
 import { createElementN, createInput, storedValue, } from "../components/helper.js";
 import { Beasts, Branch, Heroes } from "../model/afk.js";
 import { Team } from "../model/teams.js";
