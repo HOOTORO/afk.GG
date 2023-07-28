@@ -613,6 +613,7 @@ html .md-typeset__table table {
 }
 
 /* Non-standard Dracula colors */
+/* rgb(69, 69, 96) */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -647,7 +648,9 @@ html .md-typeset__table table {
   --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
 }
 
+/* joyful color rgb(228, 255, 119) */
 /* Non-standard Dracula colors */
+/* $mos-def-sel-text: #9999c999; */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -683,6 +686,7 @@ html .md-typeset__table table {
 }
 
 /* general stuff */
+/* $option: rgb(221, 221, 221); */
 /* dark theme vars */
 /* light theme vars */
 :root > * {
@@ -729,7 +733,7 @@ html .md-typeset__table table {
   --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --slate-gradient-a: linear-gradient(45deg, rgba(255, 255, 255, 0.431372549), rgba(165, 144, 48, 0.398));
   --containers-bg: rgb(228, 255, 119);
-  --select-font-color: #280808;
+  --select-font-color: rgb(41, 33, 33);
   --md-footer-bg-color: hsl(39, 77%, 83%);
   --md-footer-fg-color: #1d1810;
   --tab-bg: rgba(34, 34, 0, 0.5529411765);
@@ -807,7 +811,7 @@ html .md-typeset__table table {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: white;
+  --select-font-color: rgb(212, 212, 212);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -875,6 +879,8 @@ html .md-typeset__table table {
 }
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
+  --input-bd-color: hsl(325, 100%, 64%);
+  --select-font-color: rgb(212, 212, 212);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -1274,7 +1280,9 @@ html .md-typeset__table table {
   --md-accent-bg-color--light: var(--md-default-bg-color--light);
 }
 
+/* joyful color rgb(228, 255, 119) */
 /* Non-standard Dracula colors */
+/* $mos-def-sel-text: #9999c999; */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -1310,6 +1318,7 @@ html .md-typeset__table table {
 }
 
 /* Non-standard Dracula colors */
+/* rgb(69, 69, 96) */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -1415,6 +1424,7 @@ html .md-typeset__table table {
 }
 
 /* Non-standard Dracula colors */
+/* rgb(69, 69, 96) */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -1449,7 +1459,9 @@ html .md-typeset__table table {
   --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
 }
 
+/* joyful color rgb(228, 255, 119) */
 /* Non-standard Dracula colors */
+/* $mos-def-sel-text: #9999c999; */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -1485,6 +1497,7 @@ html .md-typeset__table table {
 }
 
 /* general stuff */
+/* $option: rgb(221, 221, 221); */
 /* dark theme vars */
 /* light theme vars */
 :root > * {
@@ -1531,7 +1544,7 @@ html .md-typeset__table table {
   --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --slate-gradient-a: linear-gradient(45deg, rgba(255, 255, 255, 0.431372549), rgba(165, 144, 48, 0.398));
   --containers-bg: rgb(228, 255, 119);
-  --select-font-color: #280808;
+  --select-font-color: rgb(41, 33, 33);
   --md-footer-bg-color: hsl(39, 77%, 83%);
   --md-footer-fg-color: #1d1810;
   --tab-bg: rgba(34, 34, 0, 0.5529411765);
@@ -1609,7 +1622,7 @@ html .md-typeset__table table {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: white;
+  --select-font-color: rgb(212, 212, 212);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -1677,6 +1690,8 @@ html .md-typeset__table table {
 }
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
+  --input-bd-color: hsl(325, 100%, 64%);
+  --select-font-color: rgb(212, 212, 212);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -2534,7 +2549,7 @@ select {
 }
 select option {
   color: inherit;
-  background-color: #320a28;
+  background-color: invert(var(--select-font-color));
 }
 select:focus {
   outline: none;
@@ -2637,6 +2652,7 @@ select::-ms-expand {
 }
 
 /* Non-standard Dracula colors */
+/* rgb(69, 69, 96) */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -2671,7 +2687,9 @@ select::-ms-expand {
   --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
 }
 
+/* joyful color rgb(228, 255, 119) */
 /* Non-standard Dracula colors */
+/* $mos-def-sel-text: #9999c999; */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -2707,6 +2725,7 @@ select::-ms-expand {
 }
 
 /* general stuff */
+/* $option: rgb(221, 221, 221); */
 /* dark theme vars */
 /* light theme vars */
 :root > * {
@@ -2753,7 +2772,7 @@ select::-ms-expand {
   --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --slate-gradient-a: linear-gradient(45deg, rgba(255, 255, 255, 0.431372549), rgba(165, 144, 48, 0.398));
   --containers-bg: rgb(228, 255, 119);
-  --select-font-color: #280808;
+  --select-font-color: rgb(41, 33, 33);
   --md-footer-bg-color: hsl(39, 77%, 83%);
   --md-footer-fg-color: #1d1810;
   --tab-bg: rgba(34, 34, 0, 0.5529411765);
@@ -2831,7 +2850,7 @@ select::-ms-expand {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: white;
+  --select-font-color: rgb(212, 212, 212);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -2899,6 +2918,8 @@ select::-ms-expand {
 }
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
+  --input-bd-color: hsl(325, 100%, 64%);
+  --select-font-color: rgb(212, 212, 212);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -3425,6 +3446,7 @@ span > img {
 }
 
 /* Non-standard Dracula colors */
+/* rgb(69, 69, 96) */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -3459,7 +3481,9 @@ span > img {
   --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
 }
 
+/* joyful color rgb(228, 255, 119) */
 /* Non-standard Dracula colors */
+/* $mos-def-sel-text: #9999c999; */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -3495,6 +3519,7 @@ span > img {
 }
 
 /* general stuff */
+/* $option: rgb(221, 221, 221); */
 /* dark theme vars */
 /* light theme vars */
 :root > * {
@@ -3541,7 +3566,7 @@ span > img {
   --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --slate-gradient-a: linear-gradient(45deg, rgba(255, 255, 255, 0.431372549), rgba(165, 144, 48, 0.398));
   --containers-bg: rgb(228, 255, 119);
-  --select-font-color: #280808;
+  --select-font-color: rgb(41, 33, 33);
   --md-footer-bg-color: hsl(39, 77%, 83%);
   --md-footer-fg-color: #1d1810;
   --tab-bg: rgba(34, 34, 0, 0.5529411765);
@@ -3619,7 +3644,7 @@ span > img {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: white;
+  --select-font-color: rgb(212, 212, 212);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -3687,6 +3712,8 @@ span > img {
 }
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
+  --input-bd-color: hsl(325, 100%, 64%);
+  --select-font-color: rgb(212, 212, 212);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -4688,6 +4715,7 @@ input[type=range] {
 }
 
 /* Non-standard Dracula colors */
+/* rgb(69, 69, 96) */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -4722,7 +4750,9 @@ input[type=range] {
   --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
 }
 
+/* joyful color rgb(228, 255, 119) */
 /* Non-standard Dracula colors */
+/* $mos-def-sel-text: #9999c999; */
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
   --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
@@ -4758,6 +4788,7 @@ input[type=range] {
 }
 
 /* general stuff */
+/* $option: rgb(221, 221, 221); */
 /* dark theme vars */
 /* light theme vars */
 :root > * {
@@ -4804,7 +4835,7 @@ input[type=range] {
   --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
   --slate-gradient-a: linear-gradient(45deg, rgba(255, 255, 255, 0.431372549), rgba(165, 144, 48, 0.398));
   --containers-bg: rgb(228, 255, 119);
-  --select-font-color: #280808;
+  --select-font-color: rgb(41, 33, 33);
   --md-footer-bg-color: hsl(39, 77%, 83%);
   --md-footer-fg-color: #1d1810;
   --tab-bg: rgba(34, 34, 0, 0.5529411765);
@@ -4882,7 +4913,7 @@ input[type=range] {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: white;
+  --select-font-color: rgb(212, 212, 212);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -4950,6 +4981,8 @@ input[type=range] {
 }
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
+  --input-bd-color: hsl(325, 100%, 64%);
+  --select-font-color: rgb(212, 212, 212);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -5585,6 +5618,10 @@ h2 {
   font-size: 0.7rem;
 }
 
+[data-md-component=announce] .twemoji {
+  color: var(--md-primary-fg-color);
+}
+
 /* Dark mode changes */
 [data-md-color-scheme=default] .md-typeset table:not([class]),
 [data-md-color-scheme=slate] .md-typeset table:not([class]),
@@ -5984,27 +6021,43 @@ summary > .md-button {
 
 .admonition-title > .md-button, .md-typeset details > summary > .md-button {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 7px;
+  right: 10px;
 }
 
 .discord {
-  color: blueviolet;
-  animation: discord 2000ms infinite;
+  color: #737bef !important;
+  animation: move 2s infinite;
+}
+
+.reddit {
+  color: #ec6433 !important;
 }
 
 .twemoji {
-  margin-left: 10px;
   margin-right: 10px;
+  margin-left: 10px;
   scale: 1.5;
 }
 
 @keyframes discord {
-  0%, 20% {
-    transform: scale(1.2);
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes move {
+  25% {
+    transform: rotate(-90deg) scale(0.95);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg) scale(0.98);
   }
   100% {
-    transform: scale(0.75);
+    transform: rotate(-360deg);
   }
 }
 @keyframes heart {
@@ -6309,6 +6362,16 @@ summary > .md-button {
   .md-typeset > .collapse-code label.collapse {
     left: 0.8rem;
   }
+}
+
+.shine {
+  -webkit-text-stroke: rgb(115, 0, 255) 0.7px;
+  text-shadow: 0px 0px 4px rgb(115, 0, 255), 3px -5px 5px rgb(0, 238, 255);
+}
+
+.shine-reverse {
+  -webkit-text-stroke: rgb(0, 238, 255) 0.7px;
+  text-shadow: 0px 0px 4px rgb(0, 238, 255), 3px -5px 5px rgb(115, 0, 255);
 }
 
 .md-typeset .keys .key-power::before {
