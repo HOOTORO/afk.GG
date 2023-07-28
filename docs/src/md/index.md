@@ -10,7 +10,7 @@ footer: hide
 template: home.html
 ---
 
-//// details | Updates 
+//// details | Updates
     type: new
 
 === "Новшества"

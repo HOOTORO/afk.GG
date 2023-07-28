@@ -7,12 +7,6 @@ author: HOOTSMAN, Лев Николаевич
 date: 23-04-08
 
 ---
-
-
-
-
----
-
 /// warning | DISCLAIMER [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
 *Aloha!*  
 Данный "гайд" не претендует на истину в последней инстанции, а является личным мнением автора и систематизацией знаний, накопленных за все время существования TS.  

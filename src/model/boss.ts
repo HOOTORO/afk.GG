@@ -4,7 +4,7 @@ interface Boss {
   icon: string;
 }
 
-const crBoss = JSON.parse(`[
+const afkBosses = JSON.parse(`[
   {
     "id": 0,
     "name": "kane",
@@ -44,7 +44,7 @@ const crBoss = JSON.parse(`[
 `);
 
 class BossManager {
-  static bosses: Boss[] = crBoss;
+  static bosses: Boss[] = afkBosses;
 }
 
 export { BossManager };

@@ -246,20 +246,6 @@ img {
   }
 }
 
-.new::after {
-  color: red;
-  font-size: small;
-  vertical-align: super;
-  content: "new!";
-}
-
-.upd::after {
-  color: red;
-  font-size: small;
-  vertical-align: super;
-  content: "upd!";
-}
-
 .flbox {
   display: flex;
   flex-direction: row;

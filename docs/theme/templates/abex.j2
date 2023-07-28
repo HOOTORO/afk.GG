@@ -1,14 +1,5 @@
 {% extends "main.html" %}
 
-{% from 'templates/macro/input.j2' import input with context %}
-{% block htmltitle %}
-
-{{ super() }}
-{% endblock htmltitle %}
-{% block styles %}
-
-{{ super() }}
-{% endblock styles %}
 
 {% block libs %}
 
@@ -19,16 +10,6 @@
 <script type="module" src="{{ 'js/ts/gamevents/relic.js' | url }}"></script>
 
 {% endblock libs %}
-
-{% block tabs %}
-
-{{ super() }}
-{% endblock tabs %}
-<!-- Content -->
-
-{% block content %}
-{{ super() }}
-{% endblock content %}
 
 {% block scripts %}
 {{ super() }}

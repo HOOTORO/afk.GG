@@ -1,6 +1,6 @@
 ---
 title: AbEx | Helper
-description: >-
+description: >
   Ваш помощник в сезон экспедиции в Бездну.
 template: templates/abex.j2
 ---
@@ -28,7 +28,6 @@ There are a bugs for sure, if you found one or have ideas/feature request click 
     /// info | Description
     Some relic recipes can be incorrect, it shouldn't be problem since on each tier prices not differs much.  
     Just in case left for first time additional info under each relic:  
-
     - id: number used as ref in recipes
     - price: build cost only.
     - recipe: required relics
@@ -70,7 +69,7 @@ There are a bugs for sure, if you found one or have ideas/feature request click 
 
 ///// html | div#main-event
 
-<h1>Abyssal Expedition #11</h1>
+<h2>Abyssal Expedition #11</h2>
 
 //// html | div.main-container
 /// html | span#start
@@ -119,16 +118,24 @@ There are a bugs for sure, if you found one or have ideas/feature request click 
 
 ### Footnotes
 
-/// example | FORMULA<a id="fn1" href="#sp1">↩︎</a>
+//// example | FORMULA<a id="fn1" href="#sp1">↩︎</a>
 *RD~avg~ ÷ t~drop~ × P~rrd~  + (1 - P~rrd~) × RD~avg~ ÷ t~drop~ × C~sell~*
 
-```text
-RD = Relic drop  
-P~rrd~ = chance drop required relic  
-C~sell~ = sell price coefficient, which is 40%
-```
+/// define
+RD
 
+- Relic drop
+
+P~rrd~
+
+- chance drop required relic
+
+C~sell~
+
+- sell price coefficient, which is 40%
 ///
+
+////
 
 [nb]: https://media.discordapp.net/attachments/1128524376929742879/1128524655804825690/aenewbieguide.webp
 [rela]: https://media.discordapp.net/attachments/1128524376929742879/1128524476540260444/all.jpg
