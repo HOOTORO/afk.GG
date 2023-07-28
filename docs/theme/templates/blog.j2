@@ -4,6 +4,12 @@
 
 {{ super() }}
 {% endblock htmltitle %}
+{% block libs %}
+<script type="module" src="{{ 'js/ts/components/bossicon.js' | url }}">
+
+</script>
+{{ super() }}
+{% endblock libs %}
 
 {% block styles %}
 
