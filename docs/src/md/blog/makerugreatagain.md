@@ -5,7 +5,7 @@ description: >
 author: HOOTSMAN, Лев Николаевич
 template: templates/blog.j2
 ---
-/// warning | DISCLAIMER [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
+/// warning | DISCLAIMER [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
 
     Данный текст является исключительно теорией и фантазией автора, не имеющей под собой никаких оснований, бывают совпадения с невидимой вселенной.  
     Может вызвать зуд в области таза, возмущение/недовольство(и пр. подробнее в [дисклеймере оглавления](./index.md)) и быть не таким далеким от реального положения дел как хотелось бы.
@@ -16,6 +16,7 @@ template: templates/blog.j2
 [Вступление](#intro) и приведенный ниже комментарий ^^к вам не относится^^, и скорее всего вызовет вопросы, ответы на которые вы сможете получить ^^только вступив в НМ^^.
 
 ==}
+///
 
 ## Intro
 

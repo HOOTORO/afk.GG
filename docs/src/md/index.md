@@ -10,7 +10,7 @@ footer: hide
 template: home.html
 ---
 
-//// details | Updates
+//// details | Updates [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
     type: new
 
 === "Новшества"

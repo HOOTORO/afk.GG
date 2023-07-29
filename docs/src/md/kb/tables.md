@@ -5,7 +5,7 @@ description: >
 template: main.html
 ---
 
-/// warning | ВНИМАНИЕ [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
+/// warning | ВНИМАНИЕ [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
 Цена _Желтых гравировок_ и _Эссенции_ основана на обновлении магазина, локальная цена опущена из расчетов,
 так как золото и кормовые герои стали бесполезными  
 Цена _Карт храма и Пое_ взята как средняя с учетом всех доступных для покупки мест

@@ -1,5 +1,5 @@
-import { loadRewards, modeRewards, rewards } from "../components/dataloader.js";
-import { columnData } from "../components/gsheets.js";
+import { loadRewards, modeRewards, rewards } from "./components/dataloader.js";
+import { columnData } from "./components/gsheets.js";
 import {
   createElementN,
   createSelectList,
@@ -7,10 +7,10 @@ import {
   qLog,
   rangeSlide,
   setApp,
-} from "../components/helper.js";
-import { makeOut, updateResourceBox } from "../components/output.js";
-import { ValueModes, userFields, verb } from "../model/constants.js";
-import { Gsheet, RankReward, User } from "../model/types.js";
+} from "./components/helper.js";
+import { makeOut, updateResourceBox } from "./components/output.js";
+import { ValueModes, userFields, verb } from "./model/constants.js";
+import { Gsheet, RankReward, User } from "./model/types.js";
 
 qLog(`[Extended log] => ${verb}`);
 qLog(`Looking for entry tag...`);

@@ -6,7 +6,7 @@ description: >-
 author: HOOTSMAN, Лев Николаевич
 template: templates/blog.j2
 ---
-//// warning | DISCLAIMER [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
+//// warning | DISCLAIMER [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
 Все персонажи и события вымышленны, любые места случайны и предсказуемы.  
 Любое сходство субъектов данных текстов с реальными, адекватными или красивыми людьми — это обыкновенное чудо.  
 
@@ -21,7 +21,7 @@ You have been _warned_ ;)
 Тут можно найти рассказы о нашем славном сообществе и не только.  
 Если коротко - душ<del class="red-font">к</del>а СНГ.
 
-- [Бизнесс по-аквилонски](aqual.md) мутные истории почитать хотите?
+- [Бизнес по-аквилонски](aqual.md) мутные истории почитать хотите?
 - [Dog Dream](dogdream.md) История шпиона-неудачника.
 - [RU-COMMUNITY](makerugreatagain.md) Точка зрения на положение дел в ру сегменте сообществ посвященных игре.
 - [No Mercy](nm-respect.md). Моменты топ-1 РУ гильдии, глазами все того же обывателя
@@ -32,7 +32,7 @@ You have been _warned_ ;)
 Раздел с информацией по игровым активностям
 
 - [Статистика ПМ/КК](../game/modes.md)
-- [Острова Золота](../game/iog.md) Результаты эвента.
+- [Острова Золота](../game/iog.md) Результаты события.
 
 [sick1]: https://ru.wikipedia.org/wiki/Бред_преследования
 [sick2]: https://ru.wikipedia.org/wiki/Бред_величия

@@ -1,3 +1,5 @@
+[feed]: <https://discord.gg/xjJavhAvv6>
+
 [dropstat]: https://media.discordapp.net/attachments/1128524376929742879/1129171914217238559/image.png
 [storevalue]: https://media.discordapp.net/attachments/1128524376929742879/1129182604978049244/image.png
 [whalevalue]: https://media.discordapp.net/attachments/1128524376929742879/1129183811805126716/image.png
@@ -26,3 +28,17 @@
 
 [nm1]: https://media.discordapp.net/attachments/1130528875961651371/1130528929460011038/1.jpg
 [nm2]: https://media.discordapp.net/attachments/1130528875961651371/1130528929900400811/2.jpg
+
+<!-- links -->
+
+[realmranking]: https://rank-afk-cn.lilith.com/index.html
+
+<!-- AbEx -->
+
+[nb]: https://media.discordapp.net/attachments/1128524376929742879/1128524655804825690/aenewbieguide.webp
+[rela]: https://media.discordapp.net/attachments/1128524376929742879/1128524476540260444/all.jpg
+[relcel]: https://media.discordapp.net/attachments/1128524376929742879/1128524477207171082/celerity.jpg
+[relsup]: https://media.discordapp.net/attachments/1128524376929742879/1128524477723054220/image6.jpg
+[relsor]: https://media.discordapp.net/attachments/1128524376929742879/1128524478964580503/sorc.jpg
+[reltan]: https://media.discordapp.net/attachments/1128524376929742879/1128524480143179866/tanks.jpg
+[relwar]: https://media.discordapp.net/attachments/1128524376929742879/1128524480642302093/war.jpg

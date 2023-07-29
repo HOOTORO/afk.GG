@@ -6,7 +6,7 @@ author: HOOTSMAN, Лев Николаевич
 date: 23-03-02
 template: templates/blog.j2
 ---
-/// new | «Беспощадные[^tn]» соги! [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
+/// new | «Беспощадные[^tn]» соги! [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
 
 Прошу!  
 Уделите немного внимания/времени данному посту.

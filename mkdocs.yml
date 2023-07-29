@@ -60,11 +60,12 @@ nav:
   - index.md
   - База знаний:
       - kb/index.md
-      - Game Mechanics:
+      - Game:
           - kb/links.md
           - kb/trescamble.md
           - kb/infographics.md
           - kb/tables.md
+          - kb/realms.md
       - Tools:
           - kb/abex.md
           - kb/income.md
@@ -81,12 +82,12 @@ nav:
   - Хуторок Льва Николаевича:
       - blog/index.md
       - Блог:
+          # - blog/draft-ae.md
           - blog/aqual.md
           - blog/dogdream.md
           - blog/makerugreatagain.md
           - blog/nm-respect.md
           - blog/th-retirement.md
-          # - blog/draft-ae.md
       - AFK Statistics:
           - game/modes.md
           - game/drop.md

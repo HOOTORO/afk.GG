@@ -8,7 +8,7 @@ template: main.html
 ---
 
 <!-- prettier-ignore -->
-/// admonition | Powered by Community! [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
+/// admonition | Powered by Community! [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
     type: sh-luv
 Сделано сообществом для сообщества!
 ///
@@ -41,14 +41,6 @@ template: main.html
 ??? info "[Guidelist (Reddit)](https://docs.google.com/spreadsheets/d/e/2PACX-1vT6SZiRrnf2JlvJE4pyHA4DyZVrm9dl0OFm2nNXsQIwwGmfbE6ILbmiY9Fdnb373vLdUYsmTRme4n3K/pubhtml?gid=0&single=true){:target="\_blank" rel="noopener noreferrer"}"
 
     Инструкции по версии реддита
-
-??? info "[AbEx Cross Server Ranks][1a]"
-
-     Международный, китайский и южно-азиатский[^ns] а.к.а "тестовый"
-
-[1a]: https://rank-afk-cn.lilith.com/index.html
-
-[^ns]: но это не точно :grin:
 
 ## ➤ Tools ◬
 

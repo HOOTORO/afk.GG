@@ -20,5 +20,5 @@ template: main.html
 ## Посчитать
 
 - [AbEx | Helper](abex.md) для путешествия в бездну.
-- [Resource Income](income.md) Расчет ресурсов при указании средних значений в режимах.
+- [Income | Resource](income.md) Расчет ресурсов при указании средних значений в режимах.
 - [Dust | Level Progress](dust.md) Расчет пыли в зависимости от указанных параметров

@@ -4,21 +4,10 @@
   box-sizing: border-box;
 }
 
-:root {
-  --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
-  --md-shadow-z7: 0 0.2rem 0.6rem hsla(0, 6%, 27%, 0.293),
-    0 0 0 0.1rem #47474716;
-}
-
 ::selection {
   color: hsl(230, 30%, 15%);
   background-color: hsl(310, 100%, 65%);
   -webkit-text-fill-color: hsl(230, 30%, 15%);
-}
-
-.md-typeset .admonition,
-.md-typeset details {
-  box-shadow: var(--md-shadow-z7);
 }
 
 /*
@@ -27,13 +16,12 @@
 }
 */
 .md-typeset code:not(.focus-visible) {
-  margin-left: 15%;
   outline: 1px solid darksalmon;
   -webkit-tap-highlight-color: transparent;
 }
 
 .md-button {
-  padding: 0.2em 0.7em 0 0 !important;
+  // padding: 0.6em 1em 0.5em 0.5em !important;
 }
 .md-banner {
   text-align: center;
@@ -73,23 +61,6 @@
 .glightbox img {
   -webkit-user-drag: none;
   user-select: none;
-}
-
-.md-typeset .admonition.sh-luv,
-.md-typeset details.sh-luv {
-  border-color: rgb(235, 5, 5);
-}
-
-.md-typeset .sh-luv > .admonition-title,
-.md-typeset .sh-luv > summary {
-  background-color: rgba(235, 5, 5, 0.2);
-}
-
-.md-typeset .sh-luv > .admonition-title::before,
-.md-typeset .sh-luv > summary::before {
-  background-color: rgba(235, 5, 5);
-  -webkit-mask-image: var(--md-admonition-icon--sh-luv);
-  animation: heart 1000ms infinite;
 }
 
 .mdx-hero__content {

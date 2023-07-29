@@ -1,5 +1,5 @@
 ---
-title: Resources Income
+title: Incm | Res. Modes
 description: >
   Калькулятор для расчета инкама ресурсов в зависимости от указанных данных.
 template: templates/tools.j2
@@ -16,7 +16,7 @@ template: templates/tools.j2
 3. PROFIT?
 ///
 
-/// warning | ATTENTION! _Please_ [:fontawesome-brands-discord:{.discord} Feedback](https://discord.gg/xjJavhAvv6){.md-button .md-button--primary}
+/// warning | ATTENTION! _Please_ [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
 Выводится суммарный профит **только** с указанных режимов.  
 В _планах_:
 

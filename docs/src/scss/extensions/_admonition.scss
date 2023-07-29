@@ -1,8 +1,9 @@
 @import "../palette/dracula";
 
-.md-typeset .admonition {
-  border-width: 0;
-  border-left-width: 4px;
+:root {
+  --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
+  --md-shadow-z7: 0 0.2rem 0.6rem hsla(0, 6%, 27%, 0.293),
+    0 0 0 0.1rem #47474716;
 }
 
 $new-admonitions: (
@@ -166,12 +167,35 @@ li > a > img {
   border-radius: 0;
 }
 
-summary > .md-button {
-  right: 10vw !important;
+.md-typeset .admonition-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.admonition-title > .md-button {
-  position: absolute;
-  top: 7px;
-  right: 10px;
+.md-typeset .admonition {
+  border-width: 0;
+  border-left-width: 4px;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  box-shadow: var(--md-shadow-z7);
+}
+
+.md-typeset .admonition.sh-luv,
+.md-typeset details.sh-luv {
+  border-color: rgb(235, 5, 5);
+}
+
+.md-typeset .sh-luv > .admonition-title,
+.md-typeset .sh-luv > summary {
+  background-color: rgba(235, 5, 5, 0.2);
+}
+
+.md-typeset .sh-luv > .admonition-title::before,
+.md-typeset .sh-luv > summary::before {
+  background-color: rgba(235, 5, 5);
+  -webkit-mask-image: var(--md-admonition-icon--sh-luv);
+  animation: heart 1000ms infinite;
 }

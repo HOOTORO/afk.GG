@@ -1,7 +1,7 @@
 import { rewards } from "./components/dataloader.js";
 import { populateStorage, rangeSlide } from "./components/helper.js";
 import { updateResourceBox } from "./components/output.js";
-import { user } from "./gamevents/main.js";
+import { user } from "./main.js";
 import { ValueModes } from "./model/constants.js";
 import { RankReward } from "./model/types.js";
 
