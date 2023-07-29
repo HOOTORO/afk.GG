@@ -2,21 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-:root {
-  --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
-  --md-shadow-z7: 0 0.2rem 0.6rem hsla(0, 6%, 27%, 0.293),
-    0 0 0 0.1rem #47474716;
-}
-
 ::selection {
   color: hsl(230, 30%, 15%);
   background-color: hsl(310, 100%, 65%);
   -webkit-text-fill-color: hsl(230, 30%, 15%);
-}
-
-.md-typeset .admonition,
-.md-typeset details {
-  box-shadow: var(--md-shadow-z7);
 }
 
 /*
@@ -25,13 +14,8 @@
 }
 */
 .md-typeset code:not(.focus-visible) {
-  margin-left: 15%;
   outline: 1px solid darksalmon;
   -webkit-tap-highlight-color: transparent;
-}
-
-.md-button {
-  padding: 0.2em 0.7em 0 0 !important;
 }
 
 .md-banner {
@@ -71,23 +55,6 @@
 .glightbox img {
   -webkit-user-drag: none;
   user-select: none;
-}
-
-.md-typeset .admonition.sh-luv,
-.md-typeset details.sh-luv {
-  border-color: rgb(235, 5, 5);
-}
-
-.md-typeset .sh-luv > .admonition-title,
-.md-typeset .sh-luv > summary {
-  background-color: rgba(235, 5, 5, 0.2);
-}
-
-.md-typeset .sh-luv > .admonition-title::before,
-.md-typeset .sh-luv > summary::before {
-  background-color: rgb(235, 5, 5);
-  -webkit-mask-image: var(--md-admonition-icon--sh-luv);
-  animation: heart 1000ms infinite;
 }
 
 .mdx-hero__content {
@@ -811,7 +778,7 @@ html .md-typeset__table table {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -880,7 +847,7 @@ html .md-typeset__table table {
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
   --input-bd-color: hsl(325, 100%, 64%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -1622,7 +1589,7 @@ html .md-typeset__table table {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -1691,7 +1658,7 @@ html .md-typeset__table table {
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
   --input-bd-color: hsl(325, 100%, 64%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -2850,7 +2817,7 @@ select::-ms-expand {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -2919,7 +2886,7 @@ select::-ms-expand {
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
   --input-bd-color: hsl(325, 100%, 64%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -3644,7 +3611,7 @@ span > img {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -3713,7 +3680,7 @@ span > img {
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
   --input-bd-color: hsl(325, 100%, 64%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -4913,7 +4880,7 @@ input[type=range] {
   --md-text-color: rgb(218, 218, 218);
   --md-code-bg-color: #424242;
   --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-footer-bg-color: hsl(240, 11%, 9%);
   --md-footer-fg-color: rgb(218, 218, 218);
   --tab-bg: rgba(12, 12, 12, 0.6);
@@ -4982,7 +4949,7 @@ input[type=range] {
 :root > *[data-md-color-scheme=dracula] {
   --text: rgb(218, 218, 218);
   --input-bd-color: hsl(325, 100%, 64%);
-  --select-font-color: rgb(212, 212, 212);
+  --select-font-color: rgb(42, 42, 42);
   --md-typeset-color: hsl(231, 25%, 25%);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
@@ -5714,9 +5681,10 @@ h2 {
   --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
 }
 
-.md-typeset .admonition, .md-typeset details {
-  border-width: 0;
-  border-left-width: 4px;
+:root {
+  --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
+  --md-shadow-z7: 0 0.2rem 0.6rem hsla(0, 6%, 27%, 0.293),
+    0 0 0 0.1rem #47474716;
 }
 
 /* Style new admonitions with dark or light colors */
@@ -6001,14 +5969,37 @@ li > a > img {
   border-radius: 0;
 }
 
-summary > .md-button {
-  right: 10vw !important;
+.md-typeset .admonition-title, .md-typeset details > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.admonition-title > .md-button, .md-typeset details > summary > .md-button {
-  position: absolute;
-  top: 7px;
-  right: 10px;
+.md-typeset .admonition, .md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  box-shadow: var(--md-shadow-z7);
+}
+
+.md-typeset .admonition.sh-luv,
+.md-typeset details.sh-luv {
+  border-color: rgb(235, 5, 5);
+}
+
+.md-typeset .sh-luv > .admonition-title,
+.md-typeset .sh-luv > summary {
+  background-color: rgba(235, 5, 5, 0.2);
+}
+
+.md-typeset .sh-luv > .admonition-title::before,
+.md-typeset .sh-luv > summary::before {
+  background-color: rgb(235, 5, 5);
+  -webkit-mask-image: var(--md-admonition-icon--sh-luv);
+  animation: heart 1000ms infinite;
 }
 
 .discord {
