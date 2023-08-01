@@ -99,6 +99,14 @@
   }
 }
 
+.md-footer-nav__direction {
+  color: var(--md-primary-fg-color);
+}
+
+.md-footer-meta {
+  border-top: 0.1rem solid var(--md-primary-fg-color);
+}
+
 
 [data-md-color-scheme="slate"] .md-header__option:before {
   content: "Dark \aSide";

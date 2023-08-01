@@ -6,6 +6,6 @@ template: templates/blog.j2
 author: HOOTSMAN, Лев Николаевич
 ---
 
-## Только с персонального акка: HOOTSMAN
+## Only: HOOTSMAN
 
 ![drop][dropstat]

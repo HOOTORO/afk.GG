@@ -28,7 +28,10 @@ Overall should be pretty accurate as it takes into account [ **entered** ess.| *
 ///// tab | Bag
 /// info | Description
 Some relic recipes can be incorrect, it shouldn't be problem since on each tier prices not differs much.  
-Just in case left for first time additional info under each relic:
+Just in case left for first time additional info about each relic (1):
+{ .annotate }
+
+1. Click|Tap relic image will show it
 
 - id: number used as ref in recipes
 - price: build cost only.
@@ -36,6 +39,7 @@ Just in case left for first time additional info under each relic:
 
 let me know if found any.
 ///
+
 /// html | div#relic-bag
 ///
 /////
