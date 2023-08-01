@@ -107,23 +107,24 @@ class Renderer {
         rels.forEach((x) => {
             const el = createElementN("span", {}, `
       <img src=${x.icon} alt=${x.name} width=52>
-        <span class="relinf n${x.name}" hidden>
-      <code><u>id</u>: ${x.id}</code>
-      <code><strong>price</strong>:<br> ${RelicManager.price(x)}</code>
-      <code><em>recipe</em>: ${x.recipe.join("/")}</code>
+      <span class="relinf n${x.name}" hidden>
+      <div><u>id</u>: ${x.id}</div>
+      <div><strong>price</strong>: ${RelicManager.price(x)}</div>
+      <div><em>recipe</em>: ${x.recipe.join("/")}</div>
       </span>
       <input type="number" class="${containerName}-item-${x.id}" min=0 value="${x.qty}">
       `);
             div.appendChild(el);
             el.addEventListener("click", (e) => {
-                const rel = e.target;
-                console.log(e);
-                let desc = rel.nextElementSibling;
-                if (desc.getAttribute("hidden")) {
-                    desc.removeAttribute("hidden");
-                }
-                else {
-                    desc.setAttribute("hidden", "");
+                if (e.target instanceof HTMLImageElement) {
+                    const rel = e.target;
+                    let desc = document.querySelector(`.relinf.n${rel.alt}`);
+                    if (desc.hasAttribute("hidden")) {
+                        desc.removeAttribute("hidden");
+                    }
+                    else {
+                        desc.setAttribute("hidden", "");
+                    }
                 }
             });
         });

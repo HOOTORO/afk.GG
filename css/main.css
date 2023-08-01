@@ -91,6 +91,14 @@
     border-bottom: 0.1rem solid var(--md-primary-fg-color);
   }
 }
+.md-footer-nav__direction {
+  color: var(--md-primary-fg-color);
+}
+
+.md-footer-meta {
+  border-top: 0.1rem solid var(--md-primary-fg-color);
+}
+
 [data-md-color-scheme=slate] .md-header__option:before {
   content: "Dark \aSide";
 }
@@ -214,7 +222,7 @@ html .md-typeset__table table {
   /* Dark mode color changes*/
 }
 :root > *[data-md-color-scheme=default] {
-  --md-footer-bg-color--dark: rgb(0, 160, 210);
+  --md-footer-bg-color--dark: rgba(131, 116, 0, 0.54);
   --input-bd-color: rgb(255, 0, 0);
   --theme-label: Jedi;
   --nav-link: #cdcdaf;
@@ -1053,7 +1061,7 @@ select::-ms-expand {
   /* Dark mode color changes*/
 }
 :root > *[data-md-color-scheme=default] {
-  --md-footer-bg-color--dark: rgb(0, 160, 210);
+  --md-footer-bg-color--dark: rgba(131, 116, 0, 0.54);
   --input-bd-color: rgb(255, 0, 0);
   --theme-label: Jedi;
   --nav-link: #cdcdaf;
