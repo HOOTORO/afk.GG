@@ -6,7 +6,7 @@ author: "HOOTSMAN, Лев Николаевич"
 date: 2022-11-11
 template: templates/blog.j2
 ---
-/// example | Good night sweet prince [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+/// example | Good night sweet prince 
 ![sweet dreams](../assets/images/th-retirement/1.jpg)
 ///
 

@@ -1,16 +1,5 @@
 @charset "UTF-8";
 
-$clr-red-a200: hsl(326, 100%, 74%);
-$clr-red-a400: hsl(0, 100%, 67%);
-$clr-green-a400: hsl(135, 94%, 65%);
-$clr-green-a400: hsl(135, 92%, 79%);
-$clr-yellow-700: hsl(65, 92%, 76%);
-$clr-orange-a400: hsl(31, 100%, 71%);
-$clr-yellow-a700: yellow;
-$clr-cyan-500: cyan;
-$clr-blue-a400: blue;
-$clr-purple-a700: blueviolet;
-
 :root > * {
   --md-code-link-bg-color: hsla(0, 0%, 96%, 1);
   --md-code-link-accent-bg-color: var(--md-code-link-bg-color);

@@ -4,7 +4,7 @@ description: Game has several different realms/hosts besides international one. 
 ---
 
 
-/// info  | [AbEx Realm Ranking][realmranking][:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+/// info  | [AbEx Realm Ranking][realmranking]
 Во время 7 сезона Lilith предоставили общественности топ бездны по всем своим реалмам  
 На текущий момент известно о следующих реалмах:
 

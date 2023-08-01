@@ -60,29 +60,6 @@ function rangeSlide(value: string, user: User) {
   updateResourceBox(user.income, parseInt(value));
 }
 
-function radioGroups(
-  opts: { id: number; res: { type: string; amount: number }[] }[]
-) {
-  const container = document.createElement("div");
-  container.id = "mv";
-  for (let row of opts) {
-    const form = document.createElement("form"),
-      wrap = document.createElement("div");
-
-    form.id = `misty-row-${row.id}`;
-    wrap.className = "misty-group";
-    for (let choice of row.res) {
-      const input = `<input type="radio" id="misty-ch-${row.id}-${choice.type}" name="selector">
-                            <label for="misty-ch-${row.id}-${choice.type}">
-                            ${choice.amount}
-                            <img src="../assets/icons/s/${choice.type}.png" width="24"></label>
-                            </label>`;
-      wrap.innerHTML += input;
-    }
-    container.appendChild(form.appendChild(wrap));
-  }
-  return container;
-}
 function createSelectList(name: string, options: string[] | number[]) {
   const list = document.createElement("select");
   list.id = name;
@@ -144,7 +121,6 @@ function savedObj(str: string, def: any) {
 }
 
 export {
-  chainDomElement,
   createElementN,
   createInput,
   createSelectList,
@@ -153,13 +129,13 @@ export {
   isEmpty,
   isDefault,
   populateStorage,
-  radioGroups,
   rangeSlide,
   safeReduceSum,
   savedObj,
   setApp,
   storedValue,
   weekLabels,
+  fetchData
 };
 
 function createElementN(tag: string, props?: tagAttr, inner?: string) {
@@ -176,16 +152,6 @@ function createElementN(tag: string, props?: tagAttr, inner?: string) {
 }
 
 type tagAttr = { [k: string]: string };
-
-function chainDomElement(tags: string[]) {
-  let parentEl = document.createElement(tags[0]);
-  tags.forEach((tag) => parentEl.appendChild(document.createElement(tag)));
-  return parentEl;
-}
-
-function getRandomInt(max: number) {
-  return Math.floor(Math.random() * max);
-}
 
 function storedValue(inputId: string, value?: any): boolean | string {
   if (value) {
@@ -226,4 +192,10 @@ function difference(a: number[], b: number[]) {
       a.reduce((acc, v) => acc.set(v, (acc.get(v) || 0) + 1), new Map())
     ),
   ].reduce((acc, [v, count]) => acc.concat(Array(Math.abs(count)).fill(v)), []);
+}
+
+async function fetchData(assetpath: string) {
+  const data = await fetch(`/afk.GG/assets/${assetpath}`)
+  const str = await data.text()
+  return JSON.parse(str)
 }

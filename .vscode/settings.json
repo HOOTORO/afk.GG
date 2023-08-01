@@ -83,6 +83,7 @@
       "Drez",
       "dribbble",
       "DROPCHANCE",
+      "dtype",
       "Dura",
       "Eblo",
       "Eirn",
@@ -157,6 +158,7 @@
       "Kelthur",
       "Khaz",
       "Khazard",
+      "KLBR",
       "Kren",
       "ladmo",
       "leaderboard",
@@ -178,6 +180,7 @@
       "Mehira",
       "Melusi",
       "Memender",
+      "memlink",
       "Mezoth",
       "Mish",
       "Mishka",
@@ -360,6 +363,7 @@
       "дискорду",
       "донать",
       "дропнул",
+      "заруинить",
       "Извергилия",
       "инвайт",
       "инвайту",
@@ -456,4 +460,10 @@
       "!jsonc",
       "!yaml"
     ],
+    "yaml.schemas": {
+      "https://squidfunk.github.io/mkdocs-material/schema.json": [
+        "mkdocs.yml",
+        "file:///Users/reinweise/HOOTSMAN/vscode/afk.GG/mkdocs.yml"
+      ]
+    },
   }

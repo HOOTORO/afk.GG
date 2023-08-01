@@ -8,7 +8,7 @@ template: templates/blog.j2
 comments: true
 ---
 
-/// warning | DISCLAIMER [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+/// warning | DISCLAIMER 
 <figure markdown>
 
 ![in][tro]  
@@ -21,7 +21,7 @@ comments: true
 То во второй черт ногу сломал, но ваш слуга постарался разобраться насколько это возможно, в тонкостях этой петрушки.  
 Текст историй приведен практически _as-is_ с минимально необходимой редактурой.  
 После каждой истории оставил скромное мнение, не претендующее на объективность.  
-Наводку оставлю [тут для истории][origin]{:target="_blank" rel="noopener noreferrer"}
+Наводку оставлю [тут для истории][origin]
 ///
 
 ## 1. Подарок
@@ -39,7 +39,7 @@ comments: true
 
 ### Реакция пострадавшей стороны
 
-/// quote | **_Delian_** ![deli][5]{width=24 .ava .skip-lb}
+/// quote | **_Delian_** ![deli][5]{width=24 .ava}
 
 Не думаю, что моя информация принесёт хоть какой-то толк, так как аккаунт не был куплен, предыдущий владелец с которым мы были в
 хороших отношениях, попросту решил отдать его мне. :)  
@@ -60,7 +60,7 @@ comments: true
 
 ### Независимое мнение I
 
-/// quote | _**HOOTSMAN, Лев Николаевич**_ ![hoot][13]{width=24 .ava .skip-lb}  
+/// quote | _**HOOTSMAN, Лев Николаевич**_ ![hoot][13]{width=24 .ava}  
 
 ![not gay][notgay]{ align=right width=210}
 В произошедшем инциденте,  
@@ -93,7 +93,7 @@ comments: true
 
 #### Завязка
 
-//// quote | **_Assmodeus_** ![assm][4]{width=24 .ava .skip-lb}
+//// quote | **_Assmodeus_** ![assm][4]{width=24 .ava}
 
 Изначально играл на аккаунте _Эмбер_. Потом главный HR Аквы _Pohoyoo_ приводит _Elitsir_ в Акву, но тот вскоре уходит из игры, оставив аккаунт _Pohoyoo_. Мы с ним договариваемся о том, что я выкупаю аккаунт _Elitsir_'а за 20к рублей + отдаю дельфиний акк _Эмбер_ и он на нем будет играть.
 
@@ -130,7 +130,7 @@ comments: true
 
 #### Сходка, начало проблем
 
-///// quote | **_Assmodeus_** ![assm][4]{width=24 .ava .skip-lb}
+///// quote | **_Assmodeus_** ![assm][4]{width=24 .ava}
 
 На сходке Аквилона выясняется, что _pohoyoo_ продал аккаунт _Ember_, Метке[^pr] и утверждает, что _Элитсир_ точно не вернется в игру.  
 ![Дружный коллектив][c1]{width=330 align=right style="margin:25px;border-radius:10px;"}
@@ -224,21 +224,21 @@ _Сир_ уже думает, что существует Коалиция "АН
 
 #### Поиск выхода
 
-/// quote | **_Assmodeus_** ![assm][4]{width=24 .ava .skip-lb}  
+/// quote | **_Assmodeus_** ![assm][4]{width=24 .ava}  
 
 === "Ингвар"
     Написал ему в телеграмме  
-    ![Alt text](/afk.GG/assets/images/aquavon/imge.jpg)  
+    ![Alt text](../assets/images/aquavon/imge.jpg)  
     Он так и не ответил.  
 
 === "Альт. #1"
     Параллельно начал искать альтернативные варианты  
     Узнавал у другого соги Аквы, может ли он выкупить аккаунт.  
-    ![Alt text](/afk.GG/assets/images/aquavon/image-27.jpg)
-    ![Alt text](/afk.GG/assets/images/aquavon/image-28.jpg)
+    ![Alt text](../assets/images/aquavon/image-27.jpg)
+    ![Alt text](../assets/images/aquavon/image-28.jpg)
 
 === "Альт. #2"
-    ![Alt text](/afk.GG/assets/images/aquavon/image-29.jpg)
+    ![Alt text](../assets/images/aquavon/image-29.jpg)
 
 ***
 
@@ -254,27 +254,27 @@ _Пох_: Мы же договаривались[^deal].
 Вышел с войса т.к. предложений о выкупе аккаунта не было.
 <figure markdown>
 
-![Alt text](/afk.GG/assets/images/aquavon/image-30.jpg){width=700}
-![Alt text](/afk.GG/assets/images/aquavon/image-31.jpg){width=700}
-![Alt text](/afk.GG/assets/images/aquavon/image-32.jpg){width=700}
+![Alt text](../assets/images/aquavon/image-30.jpg){width=700}
+![Alt text](../assets/images/aquavon/image-31.jpg){width=700}
+![Alt text](../assets/images/aquavon/image-32.jpg){width=700}
 <figcaption>???</figcaption>
 
 </figure>
 В это же время поиски альтернативы приносят первые плоды
 === "Screenshot #1"
-    ![Alt text](/afk.GG/assets/images/aquavon/image-33.jpg){width=700}
+    ![Alt text](../assets/images/aquavon/image-33.jpg){width=700}
 
 === "Screenshot #2"
-    ![Alt text](/afk.GG/assets/images/aquavon/image-34.jpg){width=700}
+    ![Alt text](../assets/images/aquavon/image-34.jpg){width=700}
 
 Вроде появилась надежда, но...
 
 === "№1"
-    ![Alt text](/afk.GG/assets/images/aquavon/image-35.jpg)  
+    ![Alt text](../assets/images/aquavon/image-35.jpg)  
     После этого успеваю привязать свой гугл к аккаунту.
 
 === "№2"
-    ![Alt text](/afk.GG/assets/images/aquavon/image-36.jpg)  
+    ![Alt text](../assets/images/aquavon/image-36.jpg)  
     Видимо pohoyoo все же уболтал _Elitsire_ поменять пароли.
 
 Источник из совета:
@@ -286,7 +286,7 @@ _Пох_: Мы же договаривались[^deal].
 
 #### La Finale
 
-/// quote | **_Assmodeus_** ![assm][4]{width=24 .ava .skip-lb}
+/// quote | **_Assmodeus_** ![assm][4]{width=24 .ava}
 
 На аккаунте начинается активность, заходит другой человек.  
 Сообщения о договоренностях выкупить аккаунт не поступало.  
@@ -295,13 +295,13 @@ _Пох_: Мы же договаривались[^deal].
 Из разговора узнаю о нестыковках с договоренностями _pohoyoo_. Оказалось, что вдобавок Пох наговорил Элитсир'у, будто дал мне ВРЕМЕННО аккаунт.  
 <figure markdown>
 
-![Alt text](/afk.GG/assets/images/aquavon/image-37.jpg)
+![Alt text](../assets/images/aquavon/image-37.jpg)
 <figcaption></figcaption>
 </figure>
 
 <figure markdown>
 
-![Alt text](/afk.GG/assets/images/aquavon/image-38.jpg)
+![Alt text](../assets/images/aquavon/image-38.jpg)
 <figcaption>Пишу Поху</figcaption>
 </figure>
 
@@ -309,7 +309,7 @@ _Пох_: Мы же договаривались[^deal].
 **Конец истории.**
 ///
 
-/// quote | **_Assmodeus_** ![assm][4]{width=24 .ava .skip-lb}
+/// quote | **_Assmodeus_** ![assm][4]{width=24 .ava}
 _Заключение_: с моей стороны был косяк, что мне не следовало резко топить акк с ресурсами.  
 Надо было дать им понять, что доступ к аккаунту я имел, даже после изменения пароля в Лилит Пасс, и дать им время обдумать, что делать дальше.  
 Как видно из диалогов, цели уйти с аккаунтом в другую гильдию у меня не было, акк я готов был спокойно передать с выкупом обратно Аквилону.  
@@ -321,13 +321,13 @@ _Заключение_: с моей стороны был косяк, что м�
 
 ### Комментарий администрации Аквилона
 
-/// quote | _**MOONWAR**_ ![moon][16]{width=24 .ava .skip-lb}
+/// quote | _**MOONWAR**_ ![moon][16]{width=24 .ava}
 ![moon][moo]
 ///
 
 ### Независимое мнение II
 
-/// quote | _**HOOTSMAN, Лев Николаевич**_ ![hoot][13]{width=24 .ava .skip-lb}
+/// quote | _**HOOTSMAN, Лев Николаевич**_ ![hoot][13]{width=24 .ava}
 
 Ситуация конечно, мягко скажем дерьмовая.  
 
@@ -350,7 +350,7 @@ _Заключение_: с моей стороны был косяк, что м�
 
 ### Ответочка лидера Аквы
 
-//// quote | _**Sir Eblo 2000**_ ![sir][17]{width=24 .ava .skip-lb}
+//// quote | _**Sir Eblo 2000**_ ![sir][17]{width=24 .ava}
 
 <figure markdown>
 ![ho][a1]{width=600}
@@ -391,7 +391,7 @@ _Заключение_: с моей стороны был косяк, что м�
 
 ### Независимое мнение III
 
-/// quote | _**HOOTSMAN, Лев Николаевич**_ ![hoot][13]{width=24 .ava .skip-lb}
+/// quote | _**HOOTSMAN, Лев Николаевич**_ ![hoot][13]{width=24 .ava}
 
 <figure markdown>
 
@@ -422,7 +422,7 @@ _Заключение_: с моей стороны был косяк, что м�
 ///
 
 [^leave]: Тут Assmodeus подразумевает [этот пост Сира][darmamu]
-[^t]: такие к [примеру][treat]{:target="_blank" rel="noopener noreferrer"}
+[^t]: такие к [примеру][treat]
 
 [tro]: https://media.discordapp.net/attachments/976976670345035796/1128350253138067486/input0.jpg
 [1]: https://media.discordapp.net/attachments/976976670345035796/1128345931146854552/image-15.jpg
@@ -435,11 +435,11 @@ _Заключение_: с моей стороны был косяк, что м�
 [10]: https://www.consultant.ru/document/cons_doc_LAW_10699/598fbbd993948ff493e853c0845161561b01f0a5/
 [11]: https://www.consultant.ru/document/cons_doc_LAW_10699/d260e55e06d1e6bc720d2e591a8383a43b1a5eed/
 [12]: https://www.consultant.ru/document/cons_doc_LAW_10699/c193654ae5c3bd5b02d92ade18796cd8864ec353/
-[13]: /afk.GG/assets/avatars/hootsman.webp
-[4]: /afk.GG/assets/avatars/assmodeus.webp
-[5]: /afk.GG/assets/avatars/deliav.webp
-[16]: /afk.GG/assets/avatars/moon.webp
-[17]: /afk.GG/assets/avatars/sir.webp
+[13]: ../assets/avatars/hootsman.webp
+[4]: ../assets/avatars/assmodeus.webp
+[5]: ../assets/avatars/deliav.webp
+[16]: ../assets/avatars/moon.webp
+[17]: ../assets/avatars/sir.webp
 [14]: https://www.consultant.ru/document/cons_doc_LAW_10699/8727611b42df79f2b3ef8d2f3b68fea711ed0c7a/
 [15]: https://www.consultant.ru/document/cons_doc_LAW_10699/3cf93ca64f2a009e75430fc6394b66a3642ba176/
 

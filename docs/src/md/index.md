@@ -1,6 +1,6 @@
 ---
 title: Ты дома
-description: >- 
+description: >-
     Все что пожелаешь знать, найдешь тут.
     Доброе пожаловать в резиденцию HOLYDOOM.
     В программе: куча полезной информации по  AFK Arena, которой пользуюсь регулярно
@@ -10,7 +10,7 @@ footer: hide
 template: home.html
 ---
 
-//// details | Updates [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+//// details | Updates
     type: new
 
 === "Новшества"
@@ -19,7 +19,7 @@ template: home.html
     - [x] [Расчет времени ожидания ранга](kb/abex.md)  для AbEx.
     - [x] [Калькулятор стамины/ретраев](kb/abex.md)  для AbEx.
     - [x] [Блокнот для тестов](kb/abex.md) AbEx и не только.
-    - [x] Welcome home! ![](/afk.GG/assets/kappa.webp){width=24 .skip-lb}
+    - [x] Welcome home! ![heh][kappa]{width=24 .skip-lb}
 
 === "В планах"
 

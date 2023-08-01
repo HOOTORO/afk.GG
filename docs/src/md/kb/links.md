@@ -8,51 +8,51 @@ template: main.html
 ---
 
 <!-- prettier-ignore -->
-/// admonition | Powered by Community! [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+/// admonition | Powered by Community!
     type: sh-luv
 Сделано сообществом для сообщества!
 ///
 
 ## ➤ Game knowledge ⊛
 
-??? info "[Beyond Comprehensive](https://docs.google.com/document/d/1anFewmc_96HU6_mfVsfYniNmRPInNZY7RNMKxW3Kjnw/edit#){:target="\_blank" rel="noopener noreferrer"} by Bob49"
+??? info "[Beyond Comprehensive][boob] by Bob49"
 
-    > Пожалуй наиболее детальный разбор механик и взаимодействий в игре.\
-    > Библия трайхарда АФК Арены\
+    > Пожалуй наиболее детальный разбор механик и взаимодействий в игре.  
+    > Библия трайхарда АФК Арены  
     > Произведение искусства, за авторством bob49
 
-??? info "[AFK Analytica](https://www.afkanalytica.com/home){:target="\_blank" rel="noopener noreferrer"} by inSeas0n"
+??? info "[AFK Analytica][inseasonanal] by inSeas0n"
 
-    Сайт inSeas0n'a. Много разнообразных данных о характеристиках и игровых ресурсах\
-    Так же у него имеется дискорд-сервер [Discord](../dis)
+    Сайт inSeas0n'a. Много разнообразных данных о характеристиках и игровых ресурсах  
+    Так же у него имеется дискорд-сервер [Discord](../guilds/disen.md)
 
-??? info "[Reddit](https://www.reddit.com/r/afkarena){:target="\_blank" rel="noopener noreferrer"}"
+??? info "[Reddit](https://www.reddit.com/r/afkarena)"
 
     Достаточно много информации по игре можно найти на реддите
 
-??? info "[AFK Guide](https://afk.guide/){:target="\_blank" rel="noopener noreferrer"}"
+??? info "[AFK Guide](https://afk.guide/)"
 
     Неплохой ресурс для новичков
 
-??? info "[Gacha Revenue](https://docs.google.com/spreadsheets/d/13plqhSBip9VNHW98IC1fGwPPY7-_qAi-nOQofdBvENA/edit#gid=1333208165){:target="\_blank" rel="noopener noreferrer"}"
+??? info "[Gacha Revenue][revenue]"
 
     Таблица с капитализацией популярных гача игр.
 
-??? info "[Guidelist (Reddit)](https://docs.google.com/spreadsheets/d/e/2PACX-1vT6SZiRrnf2JlvJE4pyHA4DyZVrm9dl0OFm2nNXsQIwwGmfbE6ILbmiY9Fdnb373vLdUYsmTRme4n3K/pubhtml?gid=0&single=true){:target="\_blank" rel="noopener noreferrer"}"
+??? info "[Guidelist (Reddit)][redditguide]"
 
     Инструкции по версии реддита
 
 ## ➤ Tools ◬
 
-??? example "[Коды возмещения](https://cdkey.lilith.com/afk-global){:target="\_blank" rel="noopener noreferrer"}"
+??? example "[Коды возмещения](https://cdkey.lilith.com/afk-global)"
 
-    Выше линк на офф сайт для активации кодов, так же есть [open source iOS|Android приложение](https://afkredeem.com/)\
-    Которое будет уведомлять о всех выпущенных кодах и активировать без необходимости посещать сайт Lilith.\
+    Выше линк на офф сайт для активации кодов, так же есть [open source iOS|Android приложение](https://afkredeem.com/)  
+    Которое будет уведомлять о всех выпущенных кодах и активировать без необходимости посещать сайт Lilith.  
     Так что вы никогда не пропустите ни одного кода!
 
-??? example "[AFCalculator и не только](https://afkalc.com/){:target="\_blank" rel="noopener noreferrer"}"
+??? example "[AFCalculator и не только](https://afkalc.com/)"
 
-    Много полезный инструментов, создание оценочных  листов.\
+    Много полезный инструментов, создание оценочных  листов.  
     Калькуляторы:
 
     - для бездны выпадения/продажи реликвий
@@ -60,20 +60,20 @@ template: main.html
     - ИП эмблем
     - АФК и Быстрых наград
 
-??? example "[AFK Helper](https://afkhelper.nax.is/){:target="\_blank" rel="noopener noreferrer"}"
+??? example "[AFK Helper](https://afkhelper.nax.is/)"
 
-    База проходок кампании/башек. Теряет актуальность по мере снижения сложности в кампании.\
+    База проходок кампании/башек. Теряет актуальность по мере снижения сложности в кампании.  
     Но все еще остается полезной для поиска адекватных проходок, особенно на ранних стадиях
 
-??? example "[AbEx relic drop](https://afk-abyssal.netlify.app/){:target="\_blank" rel="noopener noreferrer"}"
+??? example "[AbEx relic drop](https://afk-abyssal.netlify.app/)"
 
     Еще один калькулятор дроп реликвий в бездне
 
-??? example "[Engravings Calculator](https://akagipanda.github.io/){:target="\_blank" rel="noopener noreferrer"}"
+??? example "[Engravings Calculator](https://akagipanda.github.io/)"
 
     Калькулятор для примерного расчета прироста гравировок.
 
-??? example "[Elder Tree Planner](https://docs.google.com/spreadsheets/d/1AUbMoJifxG0zCs1SkKTPmLy76qIWyCwHH3gqEu4k7QU/edit#gid=2139514170){:target="\_blank" rel="noopener noreferrer"}"
+??? example "[Elder Tree Planner][eldplan]"
 
     Калькулятор для примерного расчета прироста сока(дерево), показывает временные рамки до капа личного/общего.
 
@@ -82,13 +82,13 @@ template: main.html
 <!-- prettier-ignore -->
 /// details | Bilibili search request
     type: abstract
-[Hero Trials][1]{:target="\_blank" rel="noopener noreferrer"}
+[Hero Trials][bibi1]
 Поиск испытаний гильдии, в запросе на китайском 'afk arena guild trial'
 
-[Abyssal Expedition][2]{:target="\_blank" rel="noopener noreferrer"}
+[Abyssal Expedition][bibi2]
 Поиск видео по бездне, текст в запросе AE 團隊遠征
 
-[Hunting Fields][3]{:target="\_blank" rel="noopener noreferrer"}
+[Hunting Fields][bibi3]
 По Охотничьи Угодьям, текст в запросе HF 众神猎场
 
 ///
@@ -97,28 +97,24 @@ template: main.html
 
     Китайский блоггер
 
-??? abstract "[Wombat](https://www.youtube.com/@Wombat907){:target="\_blank" rel="noopener noreferrer"}"
+??? abstract "[Wombat](https://www.youtube.com/@Wombat907)"
 
     Китайский блоггер
 
-??? abstract "[Karam.](https://space.bilibili.com/5482059?from=search&seid=5629209936129208270){:target="\_blank" rel="noopener noreferrer"}"
+??? abstract "[Karam.](https://space.bilibili.com/5482059?from=search&seid=5629209936129208270)"
 
     Весьма известный своими проходками Bilibili паренек
 
 ## ➤ Google Tables ⊟
 
-??? tip "[NM Pulls Data and Templates](https://docs.google.com/spreadsheets/d/1B54LWQrPGhx1Jc7qG1g7ofE_Zs0Y2-Gb83Ka9wsunR8/edit#gid=1494048482){:target="\_blank" rel="noopener noreferrer"}"
+??? tip "[NM Pulls Data and Templates][nmpull]"
 
     Шаблоны для ведения статистики по призывам
 
-??? tip "[RC Stats](https://docs.google.com/spreadsheets/d/1eXx7XoDyn9RoH8NXGAMPuD8U2ii55feieT6r-bIi1MM/edit#gid=1757883554){:target="\_blank" rel="noopener noreferrer"}"
+??? tip "[RC Stats][rcstat]"
 
     Табличная версия, характеристик персонажей, которые можно посмотреть у inSeas0n
 
-??? tip "[AFK Arena Assets](https://drive.google.com/drive/u/0/folders/1j7Hi-HoKdNjYJIJyq-UEGtIQSgv_tdCo){:target="\_blank" rel="noopener noreferrer"}"
+??? tip "[AFK Arena Assets](https://drive.google.com/drive/u/0/folders/1j7Hi-HoKdNjYJIJyq-UEGtIQSgv_tdCo)"
 
     Внутриигровые картинки, анимации и прочее. Может быть полезным для создателей контента.
-
-[1]: https://search.bilibili.com/all?keyword=%E5%89%91%E4%B8%8E%E8%BF%9C%E5%BE%81%20%E5%85%AC%E4%BC%9A%E8%AF%95%E7%82%BC&from_source=webtop_search&spm_id_from=333.788&search_source=5
-[2]: https://search.bilibili.com/all?keyword=AE+%E5%9C%98%E9%9A%8A%E9%81%A0%E5%BE%81&from_source=webtop_search&spm_id_from=333.788&search_source=5
-[3]: https://search.bilibili.com/all?keyword=HF+%E4%BC%97%E7%A5%9E%E7%8C%8E%E5%9C%BA&from_source=webtop_search&spm_id_from=333.788&search_source=5

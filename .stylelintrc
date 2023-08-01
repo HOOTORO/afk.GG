@@ -12,14 +12,6 @@
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": null,
     "color-hex-length": "long",
-    "comment-empty-line-before": [
-      "always",
-      {
-        "ignore": [
-          "stylelint-commands"
-        ]
-      }
-    ],
     "font-family-name-quotes": "always-where-recommended",
     "font-weight-notation": "numeric",
     "function-url-quotes": "always",

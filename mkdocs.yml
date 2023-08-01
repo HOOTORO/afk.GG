@@ -4,7 +4,7 @@ site_description: afk.GG is an 'AFK Arena' game fansite, and is not affiliated w
 dev_addr: "0.0.0.0:80"
 repo_name: afk.GG
 repo_url: https://github.com/Hootsdev/afk.GG
-edit_uri: tree/master/docs/src/
+edit_uri: edit/master/docs/src/md
 
 copyright: >
   Copyright &copy; 2023, Лев Николаевич HOOTSMAN – <a href="#__consent">Change cookie settings</a><br>
@@ -46,10 +46,12 @@ theme:
     - announce.dismiss
     - content.code.copy
     - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tooltips
     - search.share
     - search.highlight
     - search.suggest
-    - header.autohide
     - navigation.tracking
     - navigation.tabs
     - navigation.top
@@ -82,7 +84,7 @@ nav:
   - Хуторок Льва Николаевича:
       - blog/index.md
       - Блог:
-          # - blog/draft-ae.md
+          #          - blog/draft-ae.md
           - blog/aqual.md
           - blog/dogdream.md
           - blog/makerugreatagain.md
@@ -100,6 +102,7 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - js/tablesort.js
+  - js/ts/util/linker.js
 
 plugins:
   - search:
@@ -116,32 +119,26 @@ plugins:
       width: "100%"
       skip_classes:
         - "skip-lb"
+        - "ava"
   - table-reader:
       allow_missing_files: False
   - social:
-      cards: !ENV [CI, true]
+      cards: !ENV [ CI, true ]
   - git-revision-date-localized:
-      enabled: !ENV [ENABLED_GIT_REVISION_DATE, true]
+      enabled: !ENV [ ENABLED_GIT_REVISION_DATE, false ]
       strict: true
       fallback_to_build_date: true
       enable_creation_date: true
       timezone: Europe/Moscow
       locale: ru
   - git-authors:
-      enabled: !ENV [ENABLED_GIT_AUTHOR, true]
+      enabled: !ENV [ ENABLED_GIT_AUTHOR, false ]
       show_contribution: true
       show_line_count: true
       show_email_address: false
       fallback_to_empty: true
       sort_authors_by: name
       strict: false
-  # - tags:
-  #     enabled: !ENV [CI, false]
-  #     tags_file: tags.md
-  # - git-committers:
-  #     repository: Hootsdev/afk.GG
-  #     branch: master
-  #     token: !!python/object/apply:os.getenv ["GIT_API_KEY_HOOTSDEV"]
 
 hooks:
   - scripts/hooks.py
@@ -160,9 +157,6 @@ markdown_extensions:
   - abbr
   - footnotes
   - md_in_html
-  - meta
-  - smarty:
-      smart_quotes: false
   - pymdownx.tilde
   - pymdownx.caret
   - pymdownx.smartsymbols
@@ -170,9 +164,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.inlinehilite
-  - pymdownx.progressbar
-  - pymdownx.striphtml
-  - pymdownx.saneheaders
   - pymdownx.critic:
       mode: view
   - pymdownx.betterem:
@@ -184,11 +175,9 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       use_pygments: true
-      pygments_lang_class: true
       auto_title: true
       linenums_style: table
       linenums: true
-      line_spans: __span
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.emoji:
@@ -197,11 +186,6 @@ markdown_extensions:
       options:
         custom_icons:
           - theme/.icons
-  - pymdownx.escapeall:
-      hardbreak: true
-      nbsp: true
-  - pymdownx.arithmatex:
-      generic: true
   - pymdownx.blocks.admonition:
       types:
         - new
@@ -218,7 +202,7 @@ markdown_extensions:
         - bug
         - example
         - quote
-  - pymdownx.blocks.details:
+  - pymdownx.blocks.details
   - pymdownx.blocks.html:
   - pymdownx.blocks.definition:
   - pymdownx.blocks.tab:

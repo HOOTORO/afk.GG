@@ -244,7 +244,11 @@
     "short": "Gwy",
     "icon": "/afk.GG/assets/portraits/Longbow.jpg"
   },
-  { "name": "Wu", "short": "MK", "icon": "/afk.GG/assets/portraits/MK.jpg" },
+  {
+    "name": "Wu",
+    "short": "MK",
+    "icon": "/afk.GG/assets/portraits/MK.jpg"
+  },
   {
     "name": "Awk.Belinda",
     "short": "ABel",
@@ -260,7 +264,11 @@
     "short": "JoDa",
     "icon": "/afk.GG/assets/portraits/JOA.jpg"
   },
-  { "name": "LDV", "short": "LDV", "icon": "/afk.GG/assets/portraits/LDV.jpg" },
+  {
+    "name": "LDV",
+    "short": "LDV",
+    "icon": "/afk.GG/assets/portraits/LDV.jpg"
+  },
   {
     "name": "Zikis",
     "short": "Zik",
@@ -306,7 +314,11 @@
     "short": "Ceci",
     "icon": "/afk.GG/assets/portraits/NunAssassin.jpg"
   },
-  { "name": "Drez", "short": "Drz", "icon": "/afk.GG/assets/portraits/OA.jpg" },
+  {
+    "name": "Drez",
+    "short": "Drz",
+    "icon": "/afk.GG/assets/portraits/OA.jpg"
+  },
   {
     "name": "Vurk",
     "short": "Vrk",
@@ -342,7 +354,11 @@
     "short": "Anik",
     "icon": "/afk.GG/assets/portraits/OrcLeader.jpg"
   },
-  { "name": "POP", "short": "POP", "icon": "/afk.GG/assets/portraits/POP.jpg" },
+  {
+    "name": "POP",
+    "short": "POP",
+    "icon": "/afk.GG/assets/portraits/POP.jpg"
+  },
   {
     "name": "AnusPatronus",
     "short": "Ans",
@@ -633,7 +649,11 @@
     "short": "Dae",
     "icon": "/afk.GG/assets/portraits/daemia.jpg"
   },
-  { "name": "Rem", "short": "Rem", "icon": "/afk.GG/assets/portraits/rem.jpg" },
+  {
+    "name": "Rem",
+    "short": "Rem",
+    "icon": "/afk.GG/assets/portraits/rem.jpg"
+  },
   {
     "name": "Ginneas",
     "short": "Gin",

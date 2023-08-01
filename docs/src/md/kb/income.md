@@ -1,7 +1,7 @@
 ---
 title: Incm | Res. Modes
 description: >
-  Калькулятор для расчета инкама ресурсов в зависимости от указанных данных.
+    Калькулятор для расчета инкама ресурсов в зависимости от указанных данных.
 template: templates/tools.j2
 ---
 
@@ -14,9 +14,9 @@ template: templates/tools.j2
 1. Указываем ваши средние показатели по 3 основным доходным режимам.
 2. Слайдером регулируем количество недель.
 3. PROFIT?
-///
+   ///
 
-/// warning | ATTENTION! _Please_ [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+/// warning | ATTENTION!
 Выводится суммарный профит **только** с указанных режимов.  
 В _планах_:
 

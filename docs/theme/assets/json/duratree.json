@@ -1,0 +1,32 @@
+[
+  {
+    "id": "WAR",
+    "name": "might",
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669419910103070/tree-might.png",
+    "value": 60
+  },
+  {
+    "id": "FORT",
+    "name": "fort",
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669419352264734/tree-fort.png",
+    "value": 60
+  },
+  {
+    "id": "MAG",
+    "name": "mage",
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669419582963793/tree-mage.png",
+    "value": 60
+  },
+  {
+    "id": "RAN",
+    "name": "celerity",
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669419108991157/tree-celerity.png",
+    "value": 60
+  },
+  {
+    "id": "SUP",
+    "name": "support",
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669420321148948/tree-support.png",
+    "value": 60
+  }
+]  

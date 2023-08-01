@@ -1,5 +1,5 @@
-import { storedValue } from "../components/helper.js";
-import { based, classes, races, Branch } from "./afk.js";
+import {storedValue} from "../components/helper.js";
+import {based, classes, races, Branch, Tree, Renderer} from "./afk.js";
 
 interface AfkObject {
   name: string;
@@ -8,13 +8,12 @@ interface AfkObject {
 
 type Pet = { name: string; short?: string; lvl?: number; icon?: string };
 
-type EldTree = {
-  might?: number;
-  tank?: number;
-  mage?: number;
-  ranger?: number;
-  support?: number;
-};
+type DuraTree = {
+  id: string,
+  name: string,
+  icon: string,
+  value: number
+}
 type baseType = "str" | "agi" | "int";
 
 class HeroPortrait {
@@ -30,6 +29,7 @@ class HeroPortrait {
     | "hypogenian"
     | "dimensional";
   skills: string[];
+
   constructor(name: string, base: based, gameclass: classes, race: races) {
     this.based = base;
     this.name = name;
@@ -70,18 +70,19 @@ export class Team {
   heroes: [number, Hero][];
   pet: Pet;
   target?: string;
-  elderTree: Map<string, number>;
+  elderTree: DuraTree[];
   private _max: number;
   damage: [number, string?][];
+
   constructor(p?: Pet, t?: string, ...team: Hero[]) {
     this._max = 5;
     this.pet = p;
     this.target = t;
     this.heroes = [];
-    this.elderTree = new Map<string, number>();
-    for (const br in Branch) {
-      if (storedValue(br)) {
-        this.elderTree.set(br, parseInt(storedValue(br).toString()));
+    this.elderTree = Tree;
+    for (const br of this.elderTree) {
+      if (storedValue(br.id)) {
+        br.value = parseInt(storedValue(br.id).toString());
       }
     }
     if (team.length >= this._max) {
@@ -110,6 +111,7 @@ export class Team {
     }
     this.damage.push([dmg, c]);
   }
+
   removeHero(h: string | number | Hero) {
     if (typeof h === "string") {
       const idx = this.heroes.findIndex(
@@ -135,16 +137,13 @@ export class Team {
   }
 
   setElderTree(t: string, lvl: number) {
-    this.elderTree.set(t, lvl);
-    storedValue(t, lvl.toString());
+    this.elderTree.find(x => x.name === t).value = lvl
+    storedValue(t, lvl);
   }
+
   TreeString() {
-    return `MI:${this.elderTree.get("might")} | TA:${this.elderTree.get(
-      "tank"
-    )} | RA:${this.elderTree.get("ranger")} | SU:${this.elderTree.get(
-      "support"
-    )} | MA:${this.elderTree.get("mage")}`;
+    return this.elderTree.map(x => `${Renderer.Icon(x.icon, x.name,12)}:${x.value}`).join("  ");
   }
 }
 
-export { AfkObject, Ascension, Engrv, Furn, Hero, Pet, Sig };
+export {AfkObject, Ascension, Engrv, Furn, Hero, Pet, Sig, DuraTree};

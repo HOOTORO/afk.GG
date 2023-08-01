@@ -46,6 +46,7 @@
 *[LL]: Life Leech
 *[DODGE]: Dodge
 *[BnB]: аббр.гильдий BackNBlack, BackNBlurple, BackNBlanc
+*[KLBR]: аббр.гильд. KillBeRos
 *[GM]: aббр. Guild Master, глава гильдии
 
 <!-- Peoples -->

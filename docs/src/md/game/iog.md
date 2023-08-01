@@ -8,7 +8,7 @@ template: templates/blog.j2
 
 ## IOG 2023.07.05
 
-/// info | Brief Info [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+/// info | Brief Info 
 
 | Strategy       | Fountain | Max. Bonus | Max Dia Reward |
 |----------------|----------|------------|----------------|

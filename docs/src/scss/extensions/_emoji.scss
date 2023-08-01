@@ -12,6 +12,7 @@
   margin-left: 10px;
   scale: 1.5;
 }
+
 @keyframes discord {
   100% {
     -webkit-transform: rotate(360deg);
@@ -32,22 +33,4 @@
   100% {
     transform: rotate(-360deg);
   }
-}
-
-@keyframes heart {
-  0%,
-  40%,
-  80%,
-  100% {
-    transform: scale(1);
-  }
-  20%,
-  60% {
-    transform: scale(1.15);
-  }
-}
-
-.heart {
-  color: red;
-  animation: heart 1000ms infinite;
 }

@@ -5,7 +5,7 @@ description: >
 author: HOOTSMAN, Лев Николаевич
 template: templates/blog.j2
 ---
-/// warning | DISCLAIMER [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+/// warning | DISCLAIMER 
 
     Данный текст является исключительно теорией и фантазией автора, не имеющей под собой никаких оснований, бывают совпадения с невидимой вселенной.  
     Может вызвать зуд в области таза, возмущение/недовольство(и пр. подробнее в [дисклеймере оглавления](./index.md)) и быть не таким далеким от реального положения дел как хотелось бы.
@@ -244,18 +244,18 @@ template: templates/blog.j2
     >В первой версии текста, только ленивый не потыкал автора за синтаксические ошибки.  
     >Но он обучаем! Установил spellchecker. 
 
-    - [HOOTSMAN](https://discordid.netlify.app/?id=88370628763078656){:target="_blank" rel="noopener noreferrer"}  
+    - [HOOTSMAN](https://discordid.netlify.app/?id=88370628763078656)  
     
     **Коррекция**  
     > Все помогли с коррекцией в этот раз, но больше других:  
 
-    - [Извергилия](https://discordid.netlify.app/?id=437745140141129729){:target="_blank" rel="noopener noreferrer"}
-    - [Солнышко](https://discordid.netlify.app/?id=215139335262044161){:target="_blank" rel="noopener noreferrer"}
+    - [Извергилия](https://discordid.netlify.app/?id=437745140141129729)
+    - [Солнышко](https://discordid.netlify.app/?id=215139335262044161)
 
     **Последняя капля**   
 
     > Когда-то сладка, а когда-то не стоит.
 
-    - [R3ZZ](https://discordid.netlify.app/?id=340221902914191360){:target="_blank" rel="noopener noreferrer"}
+    - [R3ZZ](https://discordid.netlify.app/?id=340221902914191360)
 
     _Всем спасибо за помощь и уделенное время!_

@@ -32,9 +32,6 @@ interface CoreSlot {
 
   goal: Relic;
   level: relicLvl;
-
-  // nextLevel(): void;
-  // nextGoal(): void;
 }
 
 type relicLvl = 1 | 2 | 3 | 4 | 5;

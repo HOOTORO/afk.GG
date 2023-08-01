@@ -43,7 +43,7 @@
   }
 
   .md-container {
-    background-image: url("{{ '../assets/bg.jpg' | url }}");
+    background-image: url("{{ './assets/bg.jpg' | url }}");
     height: 100%;
     width: 100%;
     background-position: center;
@@ -108,6 +108,13 @@
   .md-content__inner:before {
     display: none;
   }
+
+  .md-typeset details.info:focus-within,
+  .md-typeset .admonition,
+  .md-typeset details {
+    box-shadow: var(--md-shadow-z7);
+  }
+
 
   code {
     background-color: blueviolet;

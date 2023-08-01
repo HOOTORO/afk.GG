@@ -1,4 +1,4 @@
-import { updateProgressBar } from "../gamevents/abex.js";
+import {updateProgressBar} from "../gamevents/abex.js";
 
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 96;
@@ -22,6 +22,7 @@ let TIME_LIMIT = 2000;
 let remainingPathColor = COLOR_CODES.info.color;
 
 let temp = `
+  <div id="base-timer-__label" class="base-timer-label"></div>
 <div class="base-timer">
   <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <g class="base-timer__circle">
@@ -39,7 +40,6 @@ let temp = `
       ></path>
     </g>
   </svg>
-  <span id="base-timer-__label" class="base-timer-label"></span>
 </div>
 `;
 
@@ -64,7 +64,8 @@ export default function startTimer(
   lb.setAttribute("id", `span-label-${el}`);
   lb.innerHTML = tn;
   timer.innerHTML = temp.replaceAll("__label", `${el}`);
-  timer.appendChild(lb);
+
+  timer.insertAdjacentElement("afterbegin", lb);
   const remainingTime = goal.getTime() - now.getTime();
   let timerInterval: string | number | NodeJS.Timeout = null;
 
@@ -91,11 +92,11 @@ function formatTime(time: number) {
     minutes = remain.getUTCMinutes(),
     seconds = remain.getUTCSeconds();
 
-  return `${month}mo<br>${days}d ${hours}h<br>${minutes}min ${seconds}s`;
+  return `${month}<sub>month</sub> | ${days}<sub>Days</sub> | ${hours}<sub>Hours</sub> | ${minutes}<sub>min</sub> | ${seconds}<sub>sec</sub>`;
 }
 
 function setRemainingPathColor(timeLeft: number, el: string) {
-  const { alert, warning, info } = COLOR_CODES;
+  const {alert, warning, info} = COLOR_CODES;
   const hLeft = timeLeft / 1000 / 60 / 60;
 
   if (hLeft <= alert.threshold) {

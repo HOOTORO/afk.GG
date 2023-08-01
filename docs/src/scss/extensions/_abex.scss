@@ -1,16 +1,10 @@
-/* stylelint-disable color-named */
 #main-event {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fill-available;
-  margin: 1em 0;
-  padding: 14px;
+  display: block;
+  padding: 10px;
   background-color: rgba(90, 90, 220, 0.328);
   border-radius: 10px;
   box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
-    0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
+  0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
 }
 
 #abex-form {
@@ -20,6 +14,7 @@
   align-items: flex-start;
   justify-content: center;
 }
+
 .labeled-container {
   display: flex;
   flex-direction: column;
@@ -42,6 +37,7 @@
   margin: 15px;
   background-color: aliceblue;
 }
+
 .outbox {
   display: flex;
   flex-direction: row;
@@ -57,13 +53,6 @@
   justify-content: center;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding-bottom: 20px;
-}
-
 .main-e-label {
   display: flex;
   justify-content: center;
@@ -73,7 +62,7 @@
   border: 0.5px outset orange;
   border-radius: 10px;
   box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
-    0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
+  0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
 }
 
 #attack-app {
@@ -107,6 +96,7 @@
     justify-content: center;
     max-width: 100%;
   }
+
   > label {
     display: inline-flex;
     flex-wrap: nowrap;
@@ -128,6 +118,7 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
   }
+
   input[type="number"] {
     width: 100px;
     height: 40px;
@@ -136,8 +127,8 @@
     padding: 0;
     padding-left: 7px;
     color: var(--md-default-fg-color);
-    background-color: var(--md-default-bg-color);
     line-height: 2;
+    background-color: var(--md-default-bg-color);
     border: 1px solid rgba(114, 114, 114, 0.4470588235);
     border-radius: 10px;
     /* stylelint-disable-next-line property-no-vendor-prefix */
@@ -241,11 +232,11 @@
     margin: 5px;
     padding: 0.8em 1em;
     color: var(--md-default-fg-primary) !important;
-    background-color: var(--md-default-bg-color) !important;
     font-size: 1.25rem;
     line-height: 1;
+    background-color: var(--md-default-bg-color) !important;
     background-image: linear-gradient(#000000, #000000),
-      linear-gradient(120deg, #ff0099 0%, #00ffff 50%, #99ff00 100%);
+    linear-gradient(120deg, #ff0099 0%, #00ffff 50%, #99ff00 100%);
     background-size: 200% 100%;
     background-clip: padding-box, border-box;
     background-origin: border-box;
@@ -321,14 +312,15 @@
     transform: scale(0.9);
   }
 }
+
 #comm__label,
 #dps__label {
   max-width: 250px;
   margin: 5px;
 }
 
-#dps-table {
-  width: 10vw;
+#team-attacks-form {
+  width: 100%;
 }
 
 .user-bag,
@@ -358,8 +350,8 @@
     text-align: center;
     text-transform: capitalize;
     text-shadow: 1px 1px 2px rgb(179, 0, 255), 0 2px 1em rgb(0, 217, 255),
-      0 0 0.2em rgb(98, 0, 255);
-    // background-color: var(--md-default-bg-color);
+    0 0 0.2em rgb(98, 0, 255);
+    /* background-color: var(--md-default-bg-color); */
     background-color: #3d2e4b48;
     border: 2px outset #3030347d;
     border-radius: 10px;

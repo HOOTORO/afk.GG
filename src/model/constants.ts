@@ -105,6 +105,7 @@ class AbEx {
   static baseIncome = 4;
   static viewerMultiplier = 1.2;
   static starFasterRecoveryMod = 0.9;
+  static lastAbexEnd = new Date(2023, 6, 21, 0, 0, 0, 0);
   static start() {
     return new Date(2023, 9, 30, 0, 0, 0, 0);
   }

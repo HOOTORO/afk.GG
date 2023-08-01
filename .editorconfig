@@ -17,5 +17,5 @@ trim_trailing_whitespace = false
 indent_size = 4
 
 [*.py]
-trim_trailing_whitespace = false
+trim_trailing_whitespace = true
 indent_size = 4

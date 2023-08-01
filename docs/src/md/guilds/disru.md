@@ -4,16 +4,16 @@ description: Russians. Сервера дискорда для носителей
 template: main.html
 ---
 
-/// info | Информация [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+/// info | Информация 
 Пополнению списка всегда открыты двери!  
 Что бы сервер оказался в этом списке напишите мне в личку, с удовольствием добавлю.  
 Только убедитесь что приглашение/ссылка на сервер рабочая!  
 ///
 
-## [NoMercy](https://discord.gg/nom3rcy){:target="_blank" rel="noopener noreferrer"}
+## [NoMercy](https://discord.gg/nom3rcy)
 
  2023/05 Top #1 СНГ гильдия
 
-## [Затонувшая гильдия](https://discord.gg/NFqvgcX3ak){:target="_blank" rel="noopener noreferrer"}
+## [Затонувшая гильдия](https://discord.gg/NFqvgcX3ak)
 
 Одна из первых подсуетившихся во времена появления АЕ-гильдия

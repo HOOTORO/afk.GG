@@ -1,15 +1,12 @@
 {% macro renderAva(user, class='ava', width=24) -%}
-  {% if user|wordcount > 1 %}
-    {% set filename = user.split(",")[0] %}
-  {% else %}
-    {% set filename = user %}
-  {% endif %}
-  <div class="av-wrapper">
-    <img alt="{{ user }}"
-         class="{{ class }}"
-         src="/afk.GG/assets/avatars/{{ filename|lower }}.webp"
-         width="{{ width }}"
-         height="auto">
-  </div>
-  {{ caller() }}
+{% if user|wordcount > 1 %}
+{% set filename = user.split(",")[0] %}
+{% else %}
+{% set filename = user %}
+{% endif %}
+<div class="av-wrapper">
+  <img alt="{{ user }}" class="{{ class }}" src="../../assets/avatars/{{ filename|lower }}.webp" width="{{ width }}"
+    height="auto">
+</div>
+{{ caller() }}
 {% endmacro %}

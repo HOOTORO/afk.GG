@@ -25,7 +25,7 @@ opts=[], nonval=[], icon=[]) -%}
     <input type="{{ type }}" class="{{ class }}__input" name="{{ ch }}" id="{{ ch }}" {{ atrbs|e }}>
     <label for="{{ ch }}">
       {% if icon and loop.index0 < icon|length %} <img alt="{{ icon[loop.index0] }}"
-        src="/afk.GG/assets/{{ icon[loop.index0]|lower }}" width="{{ width }}" height="auto">
+        src="../../assets/{{ icon[loop.index0]|lower }}" width="{{ width }}" height="auto">
         {% else %}
         {{ ch }}
         {% endif %}
@@ -39,7 +39,7 @@ opts=[], nonval=[], icon=[]) -%}
 {% if icon %}
 {% endif %}
 <label for="{{ id }}">
-  <img alt="{{ icon[0] }}" src="/afk.GG/assets/{{ icon[0]|lower }}" width="{{ width }}" height="auto">
+  <img alt="{{ icon[0] }}" src="../../assets/{{ icon[0]|lower }}" width="{{ width }}" height="auto">
   {{ name }}
 </label>
 {% endif %}

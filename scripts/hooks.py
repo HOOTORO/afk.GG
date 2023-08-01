@@ -5,16 +5,6 @@ import discoworker.async_runner as dar
 import numpy as np
 import pandas as pd
 
-# /Users/reinweise/HOOTSMAN/vscode/afk.GG/scripts/
-
-# current_path = os.path.abspath('scripts/')
-# os.environ.setdefault("PYTHONPATH", ":"+current_path)
-
-# print(os.getenv("PYTHONPATH"))
-
-
-# from .discoworker import async_runner
-
 
 def on_startup(**kwargs) -> None:
 
@@ -33,9 +23,9 @@ def on_startup(**kwargs) -> None:
         tmpl.write("/// html | div#memes\n\n")
         for m in files:
             if m.startswith("http"):
-                tmpl.write(f"![]({m})\n")
+                tmpl.write(f"![auto-generated]({m})\n")
             else:
-                tmpl.write(f"![](/afk.GG/assets/images/meme/{m})\n")
+                tmpl.write(f"![auto-generated](/afk.GG/assets/images/meme/{m})\n")
         tmpl.write("\n///")
 
     sheet_ids = {"val": 156134846, "loc": 249616100, "rf2p": 639889886, "HOOT":1162827151}

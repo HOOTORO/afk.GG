@@ -10,7 +10,7 @@ comments: true
 ---
 
 <!-- prettier-ignore -->
-/// details | О разделе [:fontawesome-brands-discord:{.discord} Feedback][feed]{:target="_blank" rel="noopener noreferrer"}
+/// details | О разделе 
     type: info
 
 В игре достаточно большое и разнообразное СНГ сообщество.  
@@ -18,7 +18,7 @@ comments: true
 Вот например единственное +/- годное описание ру-гильдий, которое можно найти на просторах сети.
 
 <figure markdown>
-![gg](../assets/images/rudesc.jpg){width=300}
+![gg][ru-guilds]{width=300}
 <figcaption></figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ comments: true
 |     Статус:     | <font color=green>Активна</font>                          |
 | Направленность: | Бездна/AbEx                                               |
 |       GM:       | _R3ZZ_                                                    |
-|    Discord:     | [NoMercy][1]{:target="\_blank" rel="noopener noreferrer"} |
+|    Discord:     | [NoMercy][1] |
 |   Srv. Owner:   | Folfy                                                     |
 ///
 /// tab | Бездна
@@ -172,7 +172,7 @@ comments: true
 /// admonition | Общепризнанный вклад в развитие сообщества
     type: sh-luv
 
-1. [Shop Value](../kb/infographics/#shop-values) Таблица с расчетом выгоды $ магазина.
+1. [Shop Value](../kb/infographics.md#shop-values) Таблица с расчетом выгоды $ магазина.
    Автор: Yops.
 2. [РУ Топ](abex.md#season-10) по результатам S10 Бездны
 ///
@@ -489,7 +489,7 @@ comments: true
 |     Статус:     | <font color=red>Неактивна</font>                               |
 | Направленность: | Бездна/AbEx                                                    |
 |       GM:       | _Treffej_                                                      |
-|    Discord:     | [The Hospital][2]{:target="\_blank" rel="noopener noreferrer"} |
+|    Discord:     | [The Hospital][2] |
 |   Srv. Owner:   | David Blane                                                    |
 ///
 /// tab  | Бездна
@@ -535,7 +535,7 @@ comments: true
 | Статус:         | <font color=red>Неактивна</font>                               |
 | Направленность: | Бездна/AbEx                                                    |
 | GM:             | _HelPy/Lycoris_                                                |
-| Discord:        | [The Hospital][2]{:target="\_blank" rel="noopener noreferrer"} |
+| Discord:        | [The Hospital][2] |
 | Srv. Owner:     | David Blane                                                    |
 ///
 /// tab  | Бездна

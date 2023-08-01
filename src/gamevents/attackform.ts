@@ -1,11 +1,11 @@
-import { exportToCsv } from "../components/csvexport.js";
+import {exportToCsv} from "../components/csvexport.js";
 import {
   createElementN,
   createInput,
   storedValue,
 } from "../components/helper.js";
-import { Beasts, Branch, Heroes } from "../model/afk.js";
-import { AfkObject, Team } from "../model/teams.js";
+import {Beasts, Branch, Heroes, Renderer, Tree} from "../model/afk.js";
+import {AfkObject, Team} from "../model/teams.js";
 
 let MetaTeam = new Team();
 
@@ -16,8 +16,8 @@ const petSelectId = "pet-sele";
 const heroForm = document.getElementById(formId);
 
 const aClsAttack = "attack-inputs";
-const atkContainer = createElementN("div", { class: aClsAttack });
-const attackForm = createElementN("form", { id: "team-attacks-form" });
+const atkContainer = createElementN("div", {class: aClsAttack});
+const attackForm = createElementN("form", {id: "team-attacks-form"});
 atkContainer.appendChild(attackForm);
 atkContainer.appendChild(
   createInput("number", "Damage, B", "", {
@@ -43,11 +43,11 @@ let table = `
 <table id="dps-table" style="width:100%">
 <thead>
 <tr>
-<th style='width:65%'>Team</th>
-<th>Pet</th>
-<th style='width:50%'>Elder Tree</th>
-<th>Damage</th>
-<th>Comment</th>
+<th style='width:30%'>Team</th>
+<th style='width:5%'>Pet</th>
+<th style='width:20%'>Elder Tree</th>
+<th style='width:5%'>Damage</th>
+<th style='width:40%'>Comment</th>
 </tr>
 </thead>
 <tbody>
@@ -55,7 +55,7 @@ let table = `
 </table>
 `;
 
-const btnContainer = createElementN("div", { class: "butt-container" });
+const btnContainer = createElementN("div", {class: "butt-container"});
 const addAttack = createElementN(
   "button",
   {
@@ -84,7 +84,7 @@ csvExport.addEventListener("click", (e) => {
       .map((y) => y.short)
       .join("|"),
     MetaTeam.pet.name,
-    MetaTeam.TreeString(),
+    MetaTeam.elderTree.map(x => `${x.name}:${x.value}`).join("|"),
     x[0].toString(),
     x[1].toString(),
   ]);
@@ -107,19 +107,19 @@ jQuery(atkContainer).appendTo("#attack-app");
 jQuery(table).appendTo("#bat-stat");
 
 atkContainer.appendChild(btnContainer);
-const treeDiv = createElementN("div", { class: `${formId}-inputs` });
+const treeDiv = createElementN("div", {class: `${formId}-inputs`});
 
-for (const v of Object.values(Branch)) {
+for (const v of Tree) {
   const inp = createInput(
     "number",
     "",
-    `/afk.GG/assets/icons/tree/tree-${v}.png`,
+    v.icon,
     {
       class: `${formId}-inputs-number`,
-      id: `${formId}-input-tree-${v}`,
+      id: `${formId}-input-tree-${v.name}`,
       min: "0",
       max: "200",
-      value: storedValue(v) ? storedValue(v).toString() : "107",
+      value: storedValue(v.name) ? storedValue(v.name) as string : v.value.toString(),
     }
   );
   inp.onchange = updOnChange;
@@ -130,9 +130,9 @@ addAttack.addEventListener("click", (e) => {
   const text = `
     <tr>
     <td>${MetaTeam.Heroes()
-      .map((x) => x.name)
-      .join(" | ")}</td>
-      <td>${MetaTeam.pet.short}</td>
+    .map((x) => Renderer.Icon(x.icon, x.name))
+    .join(" | ")}</td>
+      <td>${Renderer.Icon(MetaTeam.pet.icon, MetaTeam.pet.name)}</td>
       <td>${MetaTeam.TreeString()}</td>
       <td>${$("#dps").val()}</td>
       <td>${$("#comm").val()}</td>
@@ -176,6 +176,7 @@ function heroClick(e: InputEvent) {
     MetaTeam.removeHero(clickedHero);
   }
 }
+
 function petClick(e: InputEvent) {
   const tg = e.target as HTMLInputElement;
   const petGroup = document.querySelectorAll(`.${petSelectId} input`);
@@ -185,6 +186,7 @@ function petClick(e: InputEvent) {
   });
   MetaTeam.pet = clickedPet;
 }
+
 function checkBoxSelector(
   id: string,
   data: AfkObject[],
@@ -195,7 +197,7 @@ function checkBoxSelector(
   },
   type = "checkbox"
 ) {
-  const container = createElementN("div", { class: id });
+  const container = createElementN("div", {class: id});
 
   const ul = document.createElement("ul");
   for (const h of data) {
@@ -204,7 +206,7 @@ function checkBoxSelector(
       "checkbox",
       "",
       h.icon,
-      { id: `ch-${id.substring(0, 3)}-${h.name}` },
+      {id: `ch-${id.substring(0, 3)}-${h.name}`},
       li
     );
     checkBox.onchange = fn;
