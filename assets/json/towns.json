@@ -1,0 +1,26 @@
+{
+  "5": {
+    "baseEPH": 200,
+    "garrisoned": 240,
+    "dropTier": 3,
+    "dropTime": 206800
+  },
+  "6": {
+    "baseEPH": 240,
+    "garrisoned": 288,
+    "dropTier": 3,
+    "dropTime": 172333
+  },
+  "7": {
+    "baseEPH": 280,
+    "garrisoned": 336,
+    "dropTier": 4,
+    "dropTime": 612000
+  },
+  "8": {
+    "baseEPH": 320,
+    "garrisoned": 383,
+    "dropTier": 4,
+    "dropTime": 535500
+  }
+}

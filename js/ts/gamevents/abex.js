@@ -4,9 +4,15 @@ import { AbEx, Boss } from "../model/constants.js";
 import { Expeditor } from "../model/expeditor.js";
 import { Militia } from "../model/types.js";
 export default function runAbExTimers() {
-    t.default(AbEx.now, AbEx.start(), "start", "Старт", "В процессе");
-    t.default(AbEx.start(), AbEx.silentHoursIn(), "silent", "Тихий час", "Наступил");
-    t.default(AbEx.start(), AbEx.left(), "left", "Финиш", "Сезон<br>завершен");
+    if (AbEx.now < AbEx.start()) {
+        t.default(AbEx.lastAbexEnd, AbEx.start(), "abex-timer", `Next Season In<sup id="fnref:teo"><a href="#fn:teo" >1</a></sup>`, "");
+    }
+    else if (AbEx.now < AbEx.silentHoursIn()) {
+        t.default(AbEx.start(), AbEx.silentHoursIn(), "abex-timer", "Silent Hour In", "Наступил");
+    }
+    else {
+        t.default(AbEx.start(), AbEx.left(), "abex-timer", "End In", "Сезон<br>завершен");
+    }
 }
 const app = document.getElementById("rem-food");
 const mil = new Militia(10);

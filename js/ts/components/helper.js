@@ -53,25 +53,6 @@ function rangeSlide(value, user) {
     populateStorage("rangeValue", value);
     updateResourceBox(user.income, parseInt(value));
 }
-function radioGroups(opts) {
-    const container = document.createElement("div");
-    container.id = "mv";
-    for (let row of opts) {
-        const form = document.createElement("form"), wrap = document.createElement("div");
-        form.id = `misty-row-${row.id}`;
-        wrap.className = "misty-group";
-        for (let choice of row.res) {
-            const input = `<input type="radio" id="misty-ch-${row.id}-${choice.type}" name="selector">
-                            <label for="misty-ch-${row.id}-${choice.type}">
-                            ${choice.amount}
-                            <img src="../assets/icons/s/${choice.type}.png" width="24"></label>
-                            </label>`;
-            wrap.innerHTML += input;
-        }
-        container.appendChild(form.appendChild(wrap));
-    }
-    return container;
-}
 function createSelectList(name, options) {
     const list = document.createElement("select");
     list.id = name;
@@ -121,7 +102,7 @@ function savedObj(str, def) {
     }
     return def;
 }
-export { chainDomElement, createElementN, createInput, createSelectList, difference, generateAFKResObj, isEmpty, isDefault, populateStorage, radioGroups, rangeSlide, safeReduceSum, savedObj, setApp, storedValue, weekLabels, };
+export { createElementN, createInput, createSelectList, difference, generateAFKResObj, isEmpty, isDefault, populateStorage, rangeSlide, safeReduceSum, savedObj, setApp, storedValue, weekLabels, fetchData };
 function createElementN(tag, props, inner) {
     const doc = document.createElement(tag);
     if (props) {
@@ -133,14 +114,6 @@ function createElementN(tag, props, inner) {
         doc.innerHTML = inner;
     }
     return doc;
-}
-function chainDomElement(tags) {
-    let parentEl = document.createElement(tags[0]);
-    tags.forEach((tag) => parentEl.appendChild(document.createElement(tag)));
-    return parentEl;
-}
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
 }
 function storedValue(inputId, value) {
     if (value) {
@@ -173,4 +146,9 @@ function difference(a, b) {
     return [
         ...b.reduce((acc, v) => acc.set(v, (acc.get(v) || 0) - 1), a.reduce((acc, v) => acc.set(v, (acc.get(v) || 0) + 1), new Map())),
     ].reduce((acc, [v, count]) => acc.concat(Array(Math.abs(count)).fill(v)), []);
+}
+async function fetchData(assetpath) {
+    const data = await fetch(`/afk.GG/assets/${assetpath}`);
+    const str = await data.text();
+    return JSON.parse(str);
 }

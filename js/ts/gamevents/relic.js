@@ -1,5 +1,5 @@
 import { createElementN, createInput } from "../components/helper.js";
-import { Branch, RelicManager, Renderer } from "../model/afk.js";
+import { RelicManager, Renderer, Tree } from "../model/afk.js";
 import { relicEstimateTable } from "../model/constants.js";
 import { expeditor } from "./abex.js";
 const relApp = document.getElementById("relic-app");
@@ -113,9 +113,9 @@ function CoreRelicInfo(r) {
     const innerTemplate = `<span class='idx-$i item-$id'>
       <img src=$src width=52>
       </span>`;
-    for (const v of Object.values(Branch)) {
+    for (const v of Tree) {
         let eq = "", goalstr = "";
-        r.filter((x) => x.slotId.startsWith(v)).forEach((rel, i) => {
+        r.filter((x) => x.slotId.startsWith(v.name)).forEach((rel, i) => {
             eq += innerTemplate
                 .replaceAll("$id", rel.equipped.id.toString())
                 .replace("$src", rel.equipped.icon)
@@ -126,9 +126,9 @@ function CoreRelicInfo(r) {
                 .replace("$i", i.toString());
         });
         const container = createElementN("span", { class: "relic-type" });
-        const relicTree = createElementN("div", { class: `equip relic ${v}` }, eq);
-        const lb = createElementN("span", {}, `<| equip <img src="/afk.GG/assets/icons/tree/tree-${v}.png"> goal |>`);
-        const goal = createElementN("div", { class: `goal relic ${v}` }, goalstr);
+        const relicTree = createElementN("div", { class: `equip relic ${v.name}` }, eq);
+        const lb = createElementN("span", {}, `<| equip <img src="${v.icon}"> goal |>`);
+        const goal = createElementN("div", { class: `goal relic ${v.name}` }, goalstr);
         container.appendChild(relicTree);
         container.appendChild(lb);
         container.appendChild(goal);

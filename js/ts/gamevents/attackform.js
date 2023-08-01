@@ -1,6 +1,6 @@
 import { exportToCsv } from "../components/csvexport.js";
 import { createElementN, createInput, storedValue, } from "../components/helper.js";
-import { Beasts, Branch, Heroes } from "../model/afk.js";
+import { Beasts, Heroes, Renderer, Tree } from "../model/afk.js";
 import { Team } from "../model/teams.js";
 let MetaTeam = new Team();
 const formId = "team-set";
@@ -29,11 +29,11 @@ let table = `
 <table id="dps-table" style="width:100%">
 <thead>
 <tr>
-<th style='width:65%'>Team</th>
-<th>Pet</th>
-<th style='width:50%'>Elder Tree</th>
-<th>Damage</th>
-<th>Comment</th>
+<th style='width:30%'>Team</th>
+<th style='width:5%'>Pet</th>
+<th style='width:20%'>Elder Tree</th>
+<th style='width:5%'>Damage</th>
+<th style='width:40%'>Comment</th>
 </tr>
 </thead>
 <tbody>
@@ -59,7 +59,7 @@ csvExport.addEventListener("click", (e) => {
             .map((y) => y.short)
             .join("|"),
         MetaTeam.pet.name,
-        MetaTeam.TreeString(),
+        MetaTeam.elderTree.map(x => `${x.name}:${x.value}`).join("|"),
         x[0].toString(),
         x[1].toString(),
     ]);
@@ -79,13 +79,13 @@ jQuery(atkContainer).appendTo("#attack-app");
 jQuery(table).appendTo("#bat-stat");
 atkContainer.appendChild(btnContainer);
 const treeDiv = createElementN("div", { class: `${formId}-inputs` });
-for (const v of Object.values(Branch)) {
-    const inp = createInput("number", "", `/afk.GG/assets/icons/tree/tree-${v}.png`, {
+for (const v of Tree) {
+    const inp = createInput("number", "", v.icon, {
         class: `${formId}-inputs-number`,
-        id: `${formId}-input-tree-${v}`,
+        id: `${formId}-input-tree-${v.name}`,
         min: "0",
         max: "200",
-        value: storedValue(v) ? storedValue(v).toString() : "107",
+        value: storedValue(v.name) ? storedValue(v.name) : v.value.toString(),
     });
     inp.onchange = updOnChange;
     treeDiv.appendChild(inp);
@@ -94,9 +94,9 @@ addAttack.addEventListener("click", (e) => {
     const text = `
     <tr>
     <td>${MetaTeam.Heroes()
-        .map((x) => x.name)
+        .map((x) => Renderer.Icon(x.icon, x.name))
         .join(" | ")}</td>
-      <td>${MetaTeam.pet.short}</td>
+      <td>${Renderer.Icon(MetaTeam.pet.icon, MetaTeam.pet.name)}</td>
       <td>${MetaTeam.TreeString()}</td>
       <td>${$("#dps").val()}</td>
       <td>${$("#comm").val()}</td>

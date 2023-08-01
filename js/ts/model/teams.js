@@ -1,5 +1,5 @@
 import { storedValue } from "../components/helper.js";
-import { Branch } from "./afk.js";
+import { Tree, Renderer } from "./afk.js";
 class HeroPortrait {
     name;
     based;
@@ -25,10 +25,10 @@ export class Team {
         this.pet = p;
         this.target = t;
         this.heroes = [];
-        this.elderTree = new Map();
-        for (const br in Branch) {
-            if (storedValue(br)) {
-                this.elderTree.set(br, parseInt(storedValue(br).toString()));
+        this.elderTree = Tree;
+        for (const br of this.elderTree) {
+            if (storedValue(br.id)) {
+                br.value = parseInt(storedValue(br.id).toString());
             }
         }
         if (team.length >= this._max) {
@@ -77,10 +77,10 @@ export class Team {
         return this.heroes.map((x) => x[1]);
     }
     setElderTree(t, lvl) {
-        this.elderTree.set(t, lvl);
-        storedValue(t, lvl.toString());
+        this.elderTree.find(x => x.name === t).value = lvl;
+        storedValue(t, lvl);
     }
     TreeString() {
-        return `MI:${this.elderTree.get("might")} | TA:${this.elderTree.get("tank")} | RA:${this.elderTree.get("ranger")} | SU:${this.elderTree.get("support")} | MA:${this.elderTree.get("mage")}`;
+        return this.elderTree.map(x => `${Renderer.Icon(x.icon, x.name, 12)}:${x.value}`).join("  ");
     }
 }

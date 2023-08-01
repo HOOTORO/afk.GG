@@ -18,6 +18,7 @@ const COLOR_CODES = {
 let TIME_LIMIT = 2000;
 let remainingPathColor = COLOR_CODES.info.color;
 let temp = `
+  <div id="base-timer-__label" class="base-timer-label"></div>
 <div class="base-timer">
   <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <g class="base-timer__circle">
@@ -35,7 +36,6 @@ let temp = `
       ></path>
     </g>
   </svg>
-  <span id="base-timer-__label" class="base-timer-label"></span>
 </div>
 `;
 function onTimesUp(ti) {
@@ -52,7 +52,7 @@ export default function startTimer(countFrom, goal, el, tn, sla) {
     lb.setAttribute("id", `span-label-${el}`);
     lb.innerHTML = tn;
     timer.innerHTML = temp.replaceAll("__label", `${el}`);
-    timer.appendChild(lb);
+    timer.insertAdjacentElement("afterbegin", lb);
     const remainingTime = goal.getTime() - now.getTime();
     let timerInterval = null;
     timerInterval = setInterval(() => {
@@ -72,7 +72,7 @@ export default function startTimer(countFrom, goal, el, tn, sla) {
 function formatTime(time) {
     let remain = new Date(time);
     let month = remain.getMonth(), days = remain.getUTCDate() - 1, hours = remain.getUTCHours(), minutes = remain.getUTCMinutes(), seconds = remain.getUTCSeconds();
-    return `${month}mo<br>${days}d ${hours}h<br>${minutes}min ${seconds}s`;
+    return `${month}<sub>month</sub> | ${days}<sub>Days</sub> | ${hours}<sub>Hours</sub> | ${minutes}<sub>min</sub> | ${seconds}<sub>sec</sub>`;
 }
 function setRemainingPathColor(timeLeft, el) {
     const { alert, warning, info } = COLOR_CODES;
