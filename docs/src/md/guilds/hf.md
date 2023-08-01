@@ -8,4 +8,4 @@ template: main.html
 
 ### Season 4
 
-![s4 ru ranks](../assets/images/top/hf-s4.jpg)
+![s4 ru ranks][hfs9]

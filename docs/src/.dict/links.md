@@ -119,3 +119,13 @@
 <!--  GUILDS -->
 
 [ru-guilds]: https://media.discordapp.net/attachments/1135807268017942591/1135807296480485376/rudesc.jpg
+
+<!--  Abex Rankings -->
+
+[s10]: https://media.discordapp.net/attachments/1135807268017942591/1135895758554546176/image.png
+[s10sheet]: https://docs.google.com/spreadsheets/d/1exdSVW4MlCha7NjxSTxTUjP2pnl1iQynxjvn_StYCCY/
+[pdver]: https://docs.google.com/spreadsheets/d/1OBk6A7DH1hI2gPuvFBJiBUl1K6IGUonnTUB_E4i2im8/edit#gid=1245827945
+[s9]: https://media.discordapp.net/attachments/1135807268017942591/1135898010044350506/aes9rurank.jpg
+[s9sheet]: https://docs.google.com/spreadsheets/d/1hsh9Ve9JvRZlpoZem0DYcFEJO6UIcn5wFlsLRgvrce4/edit#gid=0
+
+[hfs4]: https://media.discordapp.net/attachments/1135807268017942591/1135898010795118702/hf-s4.jpg
