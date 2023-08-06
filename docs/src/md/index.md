@@ -11,7 +11,7 @@ template: home.html
 ---
 
 //// details | Updates
-type: new
+    type: new
 
 === "Новшества"
 
