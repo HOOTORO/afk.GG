@@ -84,7 +84,7 @@ nav:
   - Хуторок Льва Николаевича:
       - blog/index.md
       - Блог:
-          - blog/draft-ae.md
+          #          - blog/draft-ae.md
           - blog/aqual.md
           - blog/dogdream.md
           - blog/makerugreatagain.md
