@@ -1,4 +1,4 @@
-import {createElementN, fetchData} from "../components/helper.js";
+import {buttonWrapInput, createElementN, fetchData} from "../components/helper.js";
 import {DuraTree, Hero, Pet} from "./teams.js";
 import {
   BagRelic,
@@ -147,8 +147,8 @@ class Renderer {
         "span",
         {},
         `
-      <img src=${x.icon} alt=${x.name} width=52>
-      <span class="relinf n${x.name}" hidden>
+      <img src=${x.icon} alt=${x.id} width=52>
+      <span class="relinf n${x.id}" hidden>
       <div><u>id</u>: ${x.id}</div>
       <div><strong>price</strong>: ${RelicManager.price(x)}</div>
       <div><em>recipe</em>: ${x.recipe.join("/")}</div>
@@ -158,13 +158,12 @@ class Renderer {
       );
       div.appendChild(el);
       el.addEventListener("click", (e) => {
+        document.querySelectorAll(".relinf").forEach(x => x.setAttribute("hidden", ""))
         if (e.target instanceof HTMLImageElement) {
           const rel = e.target as HTMLImageElement;
           let desc = document.querySelector(`.relinf.n${rel.alt}`);
-          if (desc.hasAttribute("hidden")) {
+          if (desc) {
             desc.removeAttribute("hidden")
-          } else {
-            desc.setAttribute("hidden", "")
           }
         }
       })

@@ -39,6 +39,3 @@ template: templates/blog.j2
 </figcaption>
 </figure>
 
-[iog-log]: ../assets/images/iog/log.jpg
-[iog-res]: ../assets/images/iog/result.jpg
-[iog-res1]: ../assets/images/iog/result1.jpg

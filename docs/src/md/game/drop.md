@@ -1,5 +1,5 @@
 ---
-title: Призывы SG/TC
+title: Summons SG/TC
 description: >
     Статистика, отраженная в нескольких срезах
 template: templates/blog.j2

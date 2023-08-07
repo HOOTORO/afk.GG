@@ -1,8 +1,8 @@
-import { createElementN, createInput } from "../components/helper.js";
+import {buttonWrapInput, createElementN, createInput} from "../components/helper.js";
 import {Branch, RelicManager, Renderer, Tree} from "../model/afk.js";
-import { relicEstimateTable } from "../model/constants.js";
-import { BagRelic, CoreSlot, SLOT_ID } from "../model/types.js";
-import { expeditor } from "./abex.js";
+import {relicEstimateTable} from "../model/constants.js";
+import {BagRelic, CoreSlot, SLOT_ID} from "../model/types.js";
+import {expeditor} from "./abex.js";
 
 const relApp = document.getElementById("relic-app");
 
@@ -11,24 +11,27 @@ export function runRelic() {
 
   const userInput = createElementN(
       "div",
-      { class: "ui-input" },
+      {class: "ui-input"},
       "Essence & Captured Towns"
     ),
-    ess = createInput("number", "", "/afk.GG/assets/ae/slg_coin.png", {
+    ess = createInput("number", "", "/afk.GG/assets/ae/relic_coin.png", {
       value: expeditor.essence ? expeditor.essence.toString() : "0",
       min: "0",
-      size: "10",
+      size: "10"
     });
   userInput.appendChild(ess);
   [5, 6, 7, 8].forEach((x) => {
-    userInput.appendChild(
-      createInput("number", ``, `/afk.GG/assets/ae/ranks/icon_level${x}.png`, {
-        min: "0",
-        max: "40",
-        value: expeditor.towns[x] ? expeditor.towns[x].toString() : "0",
-        class: `town tier-${x}`,
-      })
-    );
+    const expeditorUpdr = (y: number) => {
+      expeditor.towns = [x, y];
+    }
+    const input = createInput("number", ``, `/afk.GG/assets/ae/ranks/icon_level${x}.png`, {
+      min: "0",
+      max: "40",
+      value: expeditor.towns[x] ? expeditor.towns[x].toString() : "0",
+      class: `town tier-${x}`,
+    })
+    const withButtons = buttonWrapInput(input, expeditorUpdr)
+    userInput.appendChild(withButtons);
   });
   relApp.appendChild(userInput);
 
@@ -93,7 +96,7 @@ export function runRelic() {
       class: "ui-output",
       style: "width:100%",
     }),
-    out = createElementN("output", { id: "expeditor-data" }),
+    out = createElementN("output", {id: "expeditor-data"}),
     resultTable = createElementN("table", {
       id: "final-table",
       style: "width:100%",
@@ -167,14 +170,14 @@ function CoreRelicInfo(r: CoreSlot[]) {
         .replace("$i", i.toString());
     });
 
-    const container = createElementN("span", { class: "relic-type" });
-    const relicTree = createElementN("div", { class: `equip relic ${v.name}` }, eq);
+    const container = createElementN("span", {class: "relic-type"});
+    const relicTree = createElementN("div", {class: `equip relic ${v.name}`}, eq);
     const lb = createElementN(
       "span",
       {},
       `<| equip <img src="${v.icon}"> goal |>`
     );
-    const goal = createElementN("div", { class: `goal relic ${v.name}` }, goalstr);
+    const goal = createElementN("div", {class: `goal relic ${v.name}`}, goalstr);
     container.appendChild(relicTree);
     container.appendChild(lb);
     container.appendChild(goal);

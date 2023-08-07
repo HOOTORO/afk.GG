@@ -1,5 +1,5 @@
-import { iconSize } from "../model/constants.js";
-import { prop } from "../model/types.js";
+import {iconSize} from "../model/constants.js";
+import {prop} from "../model/types.js";
 
 enum htmlTags {
   Input = "input",
@@ -13,11 +13,6 @@ enum htmlTags {
   Form = "form",
   Img = "img",
 }
-interface DElement {
-  tag: htmlTags;
-
-  props?: prop[];
-}
 
 enum tagAttrs {
   Id = "id",
@@ -29,7 +24,6 @@ enum tagAttrs {
   Style = "style",
 }
 
-type SpecialAttr = "icon";
 function createElem(t: string, attr?: prop | prop[], ch?: htmlTags[]) {
   const doc = document.createElement(t);
   if (Array.isArray(attr) && attr.length > 0) {
@@ -47,12 +41,6 @@ function createElem(t: string, attr?: prop | prop[], ch?: htmlTags[]) {
   return doc;
 }
 
-function createWithLabel(t: htmlTags, id: string, lb: string) {
-  const label = createElem(htmlTags.Label, [buildProperty(tagAttrs.For, id)]);
-  label.innerText = lb;
-  return createElem(t, [buildProperty(tagAttrs.Id, id)]).appendChild(label);
-}
-
 function genId(s: string) {
   return s.toLowerCase().replaceAll(" ", "-");
 }
@@ -63,7 +51,6 @@ function buildElement(el: htmlTags, properties?: prop[], labelText?: string) {
   container.appendChild(doc);
   if (properties && properties.length > 0) {
     for (const p of properties) {
-      // doc processSpecialProp(p);
       const fn = processSpecialProp(p);
       fn(doc);
     }
@@ -79,7 +66,7 @@ function buildElement(el: htmlTags, properties?: prop[], labelText?: string) {
 }
 
 function buildProperty(k: string, val: string) {
-  return { n: k, v: val } as prop;
+  return {n: k, v: val} as prop;
 }
 
 function processSpecialProp(p: prop) {
@@ -102,11 +89,9 @@ function processSpecialProp(p: prop) {
 
 export {
   htmlTags as DElem,
-  DElement,
   tagAttrs as ElProps,
   buildElement,
   buildProperty,
   createElem,
-  createWithLabel,
   genId,
 };

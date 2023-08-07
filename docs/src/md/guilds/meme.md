@@ -1,5 +1,5 @@
 ---
-title: 🇷🇺 Forged Мемасики
+title: 🇷🇺 Forged Memes
 description: Выкованные в СНГ с любовью!
 author: Community
 date: 2023

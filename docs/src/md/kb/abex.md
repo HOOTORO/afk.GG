@@ -62,53 +62,20 @@ Setup team, add attack data and export to csv.
 
 ///// tab | Attack Remain Calculator
 /// info | Description
+
 Calculates how many attacks on boss can be done + retries.
+
+***
+
+Калькулятор атак по ласт боссу.
+Показывает кол-во атак и запас ретраев до потери атаки.
+
 ///
 /// html | div#rem-food
 ///
 
-/// tip | Don't miss a thing!
-Калькулятор атак по ласт боссу.  
-Указываете количество зрителей и текущую стамину,  
-он считает сколько атак можно сделать без потери атаки и сколько ретраев можно сделать.
-///
 /////
 //////
-
-## Abyssal Expedition #11
-
-///// html | div#main-event
-//// html | div.main-container
-/// html | span#abex-timer
-///
-////
-/////
-[^teo]: Hypothetically of course , based on past seasons
-
-## Relics
-
-/// tab | ![all][tree-all]{width=24 .skip-lb}
-![a][rela]
-///
-/// tab | ![Rangers][tree-celerity]{width=24 .skip-lb}
-![c][relcel]
-///
-/// tab | ![Support][tree-support]{width=24 .skip-lb}
-![su][relsup]
-///
-/// tab | ![Mages][tree-mage]{width=24 .skip-lb}
-![sr][relsor]
-///
-/// tab | ![Tank][tree-fort]{width=24 .skip-lb}
-![rt][reltan]
-///
-/// tab | ![Warrior ][tree-might]{width=24 .skip-lb}
-![rw][relwar]
-///
-
-## Old reddit guide for newcomers
-
-![g][nb]
 
 ## Ranking Seasons
 
@@ -124,6 +91,16 @@ Calculates how many attacks on boss can be done + retries.
 | 8  | Marsha      | 2022.11.05 | 2021.11.21 |
 | 9  | Clawlossus  | 2023.05.07 | 2021.05.23 |
 | 10 | Clawlossus  | 2023.07.05 | 2021.07.21 |
+
+## Abyssal Expedition #11
+
+///// html | div#main-event
+//// html | div.main-container
+/// html | span#abex-timer
+///
+////
+/////
+[^teo]: Hypothetically of course , based on past seasons
 
 ### Footnotes
 

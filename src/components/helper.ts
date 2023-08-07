@@ -1,6 +1,7 @@
-import { bres, verb } from "../model/constants.js";
-import { BaseResQty, User } from "../model/types.js";
-import { updateResourceBox } from "./output.js";
+import {bres, verb} from "../model/constants.js";
+import {BaseResQty, User, prop} from "../model/types.js";
+import {updateResourceBox} from "./output.js";
+
 export const qLog = (x: string) => {
   if (verb) {
     console.log(x);
@@ -39,6 +40,7 @@ function populateStorage(key: string, value: string) {
     setApp(key);
   }
 }
+
 function weekLabels(n: number, stops: { n: number; desc: string }[]) {
   let html: string = "";
   for (let i = 1; i <= n; i++) {
@@ -65,7 +67,7 @@ function createSelectList(name: string, options: string[] | number[]) {
   list.id = name;
   for (const opt of options) {
     list.appendChild(
-      createElementN("option", { value: opt.toString() }, opt.toString())
+      createElementN("option", {value: opt.toString()}, opt.toString())
     );
   }
   const localVal = storedValue(name);
@@ -92,7 +94,7 @@ function createInput(
     labelE.setAttribute("id", `${attrs["id"]}__label`);
   }
   if (img) {
-    labelE.appendChild(createElementN("img", { src: img }));
+    labelE.appendChild(createElementN("img", {src: img}));
   }
   if (!attrs) {
     attrs = {};
@@ -135,7 +137,8 @@ export {
   setApp,
   storedValue,
   weekLabels,
-  fetchData
+  fetchData,
+  buttonWrapInput
 };
 
 function createElementN(tag: string, props?: tagAttr, inner?: string) {
@@ -199,3 +202,51 @@ async function fetchData(assetpath: string) {
   const str = await data.text()
   return JSON.parse(str)
 }
+
+function buttonWrapInput(el: HTMLElement, update: (y: number) => void) {
+  const inputContainer = createElementN("div", {class: "number-container"})
+  inputContainer.appendChild(createElementN("button", {type: "button", class: `btn desc ${el.className}`}, "<|"))
+  inputContainer.appendChild(el)
+  inputContainer.appendChild(createElementN("button", {type: "button", class: `btn inc ${el.className}`}, "|>"))
+  inputContainer.addEventListener("click", (e: MouseEvent) => {
+    if (e.target instanceof HTMLButtonElement) {
+      const inpt: HTMLInputElement = e.target.parentElement.querySelector("input");
+      if (e.target.className.search("inc") > -1) {
+        inpt.value = (parseInt(inpt.value) + 1).toString()
+      } else {
+        inpt.value = (parseInt(inpt.value) - 1).toString();
+      }
+      update(parseInt(inpt.value));
+    }
+  })
+  return inputContainer
+}
+
+interface Builder<T> {
+  value: T;
+
+  then(next: (val: T) => T): Builder<T>;
+
+  finally(): T;
+}
+
+//class DOMBuilder implements Builder<HTMLElement> {
+//
+//  value: HTMLElement;
+//
+//  then(next: (tag: string, props?: prop[]) => HTMLElement): DOMBuilder{
+//    return new DOMBuilder(this.value.appendChild(next(tag)));
+//  }
+//
+//  finally(): HTMLElement {
+//    return this.value;
+//  }
+//
+//  constructor(tag: string, props?: prop[]) {
+//    let d = document.createElement(tag)
+//    for (const k,v of props ){
+//      d.setAttribute(k,v)
+//    }
+//    this.value = d;
+//  }
+//}

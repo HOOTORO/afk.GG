@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block htmltitle %}
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+<title>afk.GG</title>
+{% endblock htmltitle %}
+
 <!-- Render hero under tabs -->
 {% block tabs %}
 {{ super() }}
@@ -149,7 +154,7 @@
         <div class="cont">
           <h4>
             <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
-              class="md-button md-button--secondary">
+               class="md-button md-button--secondary">
               Dive into idless afk
             </a>
           </h4>
@@ -163,6 +168,7 @@
 <!-- Add scripts that need to run before here -->
 <script type="module">
   import * as ab from "./js/ts/gamevents/abex.js"
+
   ab.default()
 </script>
 {{ super() }}

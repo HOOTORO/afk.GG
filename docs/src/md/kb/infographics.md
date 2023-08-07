@@ -60,6 +60,33 @@ better check [bob49 document](links.md#-game-knowledge-)
 ![bbb][whalevalue]
 ///
 
+## AbEx Relics
+
+/// tab | ![all][tree-all]{width=24 .skip-lb}
+![a][rela]
+///
+/// tab | ![Rangers][tree-celerity]{width=24 .skip-lb}
+![c][relcel]
+///
+/// tab | ![Support][tree-support]{width=24 .skip-lb}
+![su][relsup]
+///
+/// tab | ![Mages][tree-mage]{width=24 .skip-lb}
+![sr][relsor]
+///
+/// tab | ![Tank][tree-fort]{width=24 .skip-lb}
+![rt][reltan]
+///
+/// tab | ![Warrior ][tree-might]{width=24 .skip-lb}
+![rw][relwar]
+///
+
+## Reddit AbEx guide for newcomers
+
+Outdated
+
+![g][nb]
+
 ## Awk. Heroes
 
 Outdated

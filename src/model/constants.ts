@@ -1,4 +1,4 @@
-import { DustChest } from "./types.js";
+import {DustChest} from "./types.js";
 
 // document.getElementById("body").use(cors());
 
@@ -25,7 +25,7 @@ const relicEstimateTable = `
   <tbody>
     <tr>
       <td align="center">Income</td>
-      <td align="center">$inc ess./h</td>
+      <td align="center">$inc <img src="/afk.GG/assets/ae/slg_coin.png" width=20>/h</td>
     </tr>
     <tr>
           <td align="center" colspan="2">GOAL</td>
@@ -40,7 +40,7 @@ const relicEstimateTable = `
     </tr>    
     <tr>
       <td align="center">Missing</td>
-      <td align="center">$gc ess.</td>
+      <td align="center">$gc <img src="/afk.GG/assets/ae/slg_coin.png"  width=20></td>
     </tr>
     <tr>
       <td align="center" colspan="2">BAG</td>
@@ -60,6 +60,7 @@ const relicEstimateTable = `
   </tbody>
 
 `;
+
 class Period {
   static hour = 1;
   static day = 24 * this.hour;
@@ -71,26 +72,33 @@ const iconSize = 38;
 
 class AfkArena {
   static levelup = 44500;
+
   static dustInc() {
     const base = 1167 / Period.day,
       fos = base * 1.6 + 385 / Period.day;
     return base + fos;
   }
+
   static storeDust() {
     return 500 / Period.day;
   }
+
   static fastRewards() {
     return (this.dustInc() * 2) / Period.day;
   }
+
   static storeDiDeal() {
     return new DustChest(3, 8).dust() / Period.day;
   }
+
   static subsChest() {
     return new DustChest(2, 6).dust() / Period.day;
   }
+
   static dailyPile() {
     return new DustChest(1, 2).dust() / Period.day;
   }
+
   static mistyValley() {
     const base = new DustChest(12, 8);
     const firstReward = new DustChest(12, 8);
@@ -106,12 +114,15 @@ class AbEx {
   static viewerMultiplier = 1.2;
   static starFasterRecoveryMod = 0.9;
   static lastAbexEnd = new Date(2023, 6, 21, 0, 0, 0, 0);
+
   static start() {
     return new Date(2023, 9, 30, 0, 0, 0, 0);
   }
+
   static leftToStart() {
     return new Date(this.start().getTime() - this.now.getTime());
   }
+
   static left() {
     return new Date(
       this.start().getUTCFullYear(),
@@ -131,11 +142,13 @@ class AbEx {
       this.left().getUTCMinutes()
     );
   }
+
   static hoursLeft() {
     return (
       (this.silentHoursIn().getTime() - this.now.getTime()) / 1000 / 60 / 60
     );
   }
+
   static actualIncome(viewers: number, star: boolean) {
     const recoveryBonus = (viewers * this.viewerMultiplier) / 100;
     let res = this.baseIncome + this.baseIncome * recoveryBonus;
@@ -185,7 +198,7 @@ class ValueModes extends AfkArena {
 
   static emuns() {
     return this.rSources.map((x) => {
-      return { id: x.id, table: x.tableName };
+      return {id: x.id, table: x.tableName};
     });
   }
 
@@ -201,6 +214,7 @@ class ValueModes extends AfkArena {
     );
   }
 }
+
 type gms = "CR" | "TS" | "NC";
 type bres =
   | "dia"
@@ -237,6 +251,7 @@ enum GameMode {
   NC = "NC",
   all = "all",
 }
+
 const verb = true;
 const xh = `
     <div>
@@ -250,9 +265,9 @@ const leftover = `
 `;
 
 const userFields = [
-  { name: "cursed-realm", type: "select", src: "gsheet" },
-  { name: "treasure-scramble", type: "select", src: "gsheet" },
-  { name: "nightmare-corridor", type: "select", src: "gsheet" },
+  {name: "cursed-realm", type: "select", src: "gsheet"},
+  {name: "treasure-scramble", type: "select", src: "gsheet"},
+  {name: "nightmare-corridor", type: "select", src: "gsheet"},
   //    {name: "afk", type: "bool", src: "gsheet"}
 ];
 

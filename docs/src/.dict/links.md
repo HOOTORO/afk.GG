@@ -243,3 +243,8 @@
 [dodik]: https://media.discordapp.net/attachments/1130528875961651371/1137703493092778004/100.jpg
 [giv]: https://media.discordapp.net/attachments/1130528875961651371/1137717663037132890/101.jpg
 [iogr]: https://media.discordapp.net/attachments/1130528875961651371/1137717695924686908/102.jpg
+
+<!--  IoG -->
+[iog-log]: https://media.discordapp.net/attachments/1130528875961651371/1137946092093321357/log.jpg
+[iog-res]: https://media.discordapp.net/attachments/1130528875961651371/1137946092886053025/result.jpg
+[iog-res1]: https://media.discordapp.net/attachments/1130528875961651371/1137946093204807710/result1.jpg

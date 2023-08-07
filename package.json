@@ -15,6 +15,7 @@
     "SASS:watch": "sass --no-source-map --watch docs/src/scss/:docs/theme/css/",
     "RE:build": "tsc --build && npm run -s SASS:build && mkdocs build",
     "RE:serve": "mkdocs serve --watch-theme",
+    "RE:dirty": "mkdocs serve --dirtyreload",
     "SERVE.THIS": "tsc --watch & npm run -s SASS:watch & npm run -s RE:serve",
     "GHP:Manual Deploy": "mkdocs gh-deploy --force"
   },

@@ -15,6 +15,36 @@
   justify-content: center;
 }
 
+button.btn {
+  border: 1px outset blueviolet;
+  border-radius: 5px;
+  color: #f800ff;
+  margin: 5px;
+  display: inline-block;
+  font-family: "Twilio Sans Mono", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-text-stroke: #2c00ff thin;
+}
+
+.ui-input > label {
+  > img {
+    width: 32px;
+  }
+}
+
+.number-container {
+  display: flex;
+  justify-content: center;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+
 .labeled-container {
   display: flex;
   flex-direction: column;
@@ -205,7 +235,7 @@
 
   @supports (mix-blend-mode: darken) {
     position: relative;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
 
     &__label {
       position: absolute;
@@ -231,7 +261,7 @@
     height: calc(1em + 0.6em + 0.5em);
     margin: 5px;
     padding: 0.8em 1em;
-    color: var(--md-default-fg-primary) !important;
+    color: var(--md-default-fg-color);
     font-size: 1.25rem;
     line-height: 1;
     background-color: var(--md-default-bg-color) !important;
@@ -337,6 +367,7 @@
     color: var(--md-default-bg-color);
     background-color: var(--md-default-fg-color);
     border-radius: 5px;
+    margin-left: 10px;
   }
 
   .ui-input,
@@ -389,7 +420,7 @@
       flex-direction: row;
       align-content: center;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
     }
   }
 
@@ -407,10 +438,25 @@
 }
 
 .user-bag > span {
+  position: relative;
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: stretch;
   max-width: 5em;
   margin: 1px;
+
+  img {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+  }
+}
+
+.relinf {
+  position: absolute;
+  bottom: 70px;
+  left: 40px;
+  background-color: darkcyan;
+  padding: 10px;
+  border-radius: 10px;
 }

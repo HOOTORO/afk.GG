@@ -60,7 +60,7 @@ theme:
 
 nav:
   - index.md
-  - База знаний:
+  - База знаний<br>Knowledge Base:
       - kb/index.md
       - Game:
           - kb/links.md
@@ -72,7 +72,7 @@ nav:
           - kb/abex.md
           - kb/income.md
           - kb/dust.md
-  - Сообщество:
+  - Сообщество<br>Community:
       - guilds/index.md
       - guilds/meme.md
       - СНГ:
@@ -81,7 +81,7 @@ nav:
       - Discord:
           - guilds/disru.md
           - guilds/disen.md
-  - Хуторок Льва Николаевича:
+  - Хуторок Льва Николаевича<br>HOOT-o-ROCK:
       - blog/index.md
       - Блог:
           #          - blog/draft-ae.md

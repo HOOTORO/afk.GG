@@ -193,22 +193,22 @@ $lin-color: rgb(255, 0, 0);
   /* BLACK */
   &[data-md-color-scheme="slate"] {
     /* Custom code colors */
+    --select-font-color: #{$dark-sel-text};
     --input-bd-color: #{$din-color};
     --slate-gradient: #{$dark-gradient};
     --slate-gradient-a: #{$dark-gradient-anti};
     --containers-bg: #{$dark-wrapper};
     --nav-color: #{$dark-wrapper};
     --text: #{$dark-text};
-    --md-code-bg-color: #{$d-code-bg};
-    --md-code-fg-color: #{$dark-fg};
-    --select-font-color: #{$dark-sel-text};
-    --md-footer-bg-color: #{$dark-foot-bg};
-    --md-footer-fg-color: #{$dark-foot-fg};
+    --rnb: #{$mos-def-rnb};
     --tab-bg: #{$dark-tabs-bg};
     --nav-link: #{$d-nav-link};
-    --md-default-bg: #{$dark-def-bg};
     --theme-label: #{$dLabel};
-    --rnb: #{$mos-def-rnb};
+    --md-code-bg-color: #{$d-code-bg};
+    --md-code-fg-color: #{$dark-fg};
+    --md-default-bg: #{$dark-def-bg};
+    --md-footer-bg-color: #{$dark-foot-bg};
+    --md-footer-fg-color: #{$dark-foot-fg};
 
     --md-default-fg-color: #{transparentize($dark-fg, 0.13)};
     --md-default-fg-color--light: #{transparentize($dark-fg, 0.46)};
