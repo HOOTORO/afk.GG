@@ -37,11 +37,6 @@ function createElem(t, attr, ch) {
     }
     return doc;
 }
-function createWithLabel(t, id, lb) {
-    const label = createElem(htmlTags.Label, [buildProperty(tagAttrs.For, id)]);
-    label.innerText = lb;
-    return createElem(t, [buildProperty(tagAttrs.Id, id)]).appendChild(label);
-}
 function genId(s) {
     return s.toLowerCase().replaceAll(" ", "-");
 }
@@ -85,4 +80,4 @@ function processSpecialProp(p) {
         };
     }
 }
-export { htmlTags as DElem, tagAttrs as ElProps, buildElement, buildProperty, createElem, createWithLabel, genId, };
+export { htmlTags as DElem, tagAttrs as ElProps, buildElement, buildProperty, createElem, genId, };

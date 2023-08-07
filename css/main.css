@@ -25,6 +25,7 @@
   color: var(--nav-link);
   font-weight: 500 !important;
   font-family: Jura, sans-serif !important;
+  margin-top: 0.3rem;
   letter-spacing: 0.5px !important;
   text-rendering: optimizelegibility;
 }
@@ -327,22 +328,22 @@ html .md-typeset__table table {
 }
 :root > *[data-md-color-scheme=slate] {
   /* Custom code colors */
+  --select-font-color: rgb(42, 42, 42);
   --input-bd-color: #bada55;
   --slate-gradient: linear-gradient(180deg, #2e303d, hsl(240, 11%, 9%));
   --slate-gradient-a: linear-gradient(360deg, rgba(46, 48, 61, 0.1725490196), #141419);
   --containers-bg: rgba(44, 49, 61, 0.2392156863);
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: rgb(218, 218, 218);
-  --md-code-bg-color: #424242;
-  --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: rgb(42, 42, 42);
-  --md-footer-bg-color: hsl(240, 11%, 9%);
-  --md-footer-fg-color: rgb(218, 218, 218);
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
   --tab-bg: rgba(12, 12, 12, 0.6);
   --nav-link: #90907d;
-  --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
   --theme-label: Dark Side;
-  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
+  --md-code-bg-color: #424242;
+  --md-code-fg-color: hsl(60, 30%, 96%);
+  --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
+  --md-footer-bg-color: hsl(240, 11%, 9%);
+  --md-footer-fg-color: rgb(218, 218, 218);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
   --md-default-fg-color--lighter: rgba(248, 248, 242, 0.16);
@@ -1166,22 +1167,22 @@ select::-ms-expand {
 }
 :root > *[data-md-color-scheme=slate] {
   /* Custom code colors */
+  --select-font-color: rgb(42, 42, 42);
   --input-bd-color: #bada55;
   --slate-gradient: linear-gradient(180deg, #2e303d, hsl(240, 11%, 9%));
   --slate-gradient-a: linear-gradient(360deg, rgba(46, 48, 61, 0.1725490196), #141419);
   --containers-bg: rgba(44, 49, 61, 0.2392156863);
   --nav-color: rgba(44, 49, 61, 0.2392156863);
   --text: rgb(218, 218, 218);
-  --md-code-bg-color: #424242;
-  --md-code-fg-color: hsl(60, 30%, 96%);
-  --select-font-color: rgb(42, 42, 42);
-  --md-footer-bg-color: hsl(240, 11%, 9%);
-  --md-footer-fg-color: rgb(218, 218, 218);
+  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
   --tab-bg: rgba(12, 12, 12, 0.6);
   --nav-link: #90907d;
-  --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
   --theme-label: Dark Side;
-  --rnb: linear-gradient(180deg, #684dba, #3aebcb, #7beb3a, #eba73a, #dd58d2);
+  --md-code-bg-color: #424242;
+  --md-code-fg-color: hsl(60, 30%, 96%);
+  --md-default-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 38, 55, 0.3568627451));
+  --md-footer-bg-color: hsl(240, 11%, 9%);
+  --md-footer-fg-color: rgb(218, 218, 218);
   --md-default-fg-color: rgba(248, 248, 242, 0.87);
   --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
   --md-default-fg-color--lighter: rgba(248, 248, 242, 0.16);
@@ -1932,6 +1933,32 @@ input[type=range] {
   justify-content: center;
 }
 
+button.btn {
+  border: 1px outset blueviolet;
+  border-radius: 5px;
+  color: #f800ff;
+  margin: 5px;
+  display: inline-block;
+  font-family: "Twilio Sans Mono", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-text-stroke: #2c00ff thin;
+}
+
+.ui-input > label > img {
+  width: 32px;
+}
+
+.number-container {
+  display: flex;
+  justify-content: center;
+}
+.number-container input::-webkit-outer-spin-button,
+.number-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .labeled-container {
   display: flex;
   flex-direction: column;
@@ -2107,7 +2134,7 @@ input[type=range] {
 @supports (mix-blend-mode: darken) {
   .attack-inputs {
     position: relative;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
   }
   .attack-inputs__label {
     position: absolute;
@@ -2131,7 +2158,7 @@ input[type=range] {
   height: 2.1em;
   margin: 5px;
   padding: 0.8em 1em;
-  color: var(--md-default-fg-primary) !important;
+  color: var(--md-default-fg-color);
   font-size: 1.25rem;
   line-height: 1;
   background-color: var(--md-default-bg-color) !important;
@@ -2235,6 +2262,7 @@ input[type=range] {
   color: var(--md-default-bg-color);
   background-color: var(--md-default-fg-color);
   border-radius: 5px;
+  margin-left: 10px;
 }
 .user-bag .ui-input,
 .user-bag .relic-type,
@@ -2294,7 +2322,7 @@ input[type=range] {
   flex-direction: row;
   align-content: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .user-bag .goal,
 #relic-app .goal {
@@ -2310,12 +2338,26 @@ input[type=range] {
 }
 
 .user-bag > span {
+  position: relative;
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: stretch;
   max-width: 5em;
   margin: 1px;
+}
+.user-bag > span img {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+.relinf {
+  position: absolute;
+  bottom: 70px;
+  left: 40px;
+  background-color: darkcyan;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 /*

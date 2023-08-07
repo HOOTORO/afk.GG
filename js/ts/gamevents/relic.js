@@ -1,23 +1,28 @@
-import { createElementN, createInput } from "../components/helper.js";
+import { buttonWrapInput, createElementN, createInput } from "../components/helper.js";
 import { RelicManager, Renderer, Tree } from "../model/afk.js";
 import { relicEstimateTable } from "../model/constants.js";
 import { expeditor } from "./abex.js";
 const relApp = document.getElementById("relic-app");
 export function runRelic() {
     CoreRelicInfo(expeditor.relic);
-    const userInput = createElementN("div", { class: "ui-input" }, "Essence & Captured Towns"), ess = createInput("number", "", "/afk.GG/assets/ae/slg_coin.png", {
+    const userInput = createElementN("div", { class: "ui-input" }, "Essence & Captured Towns"), ess = createInput("number", "", "/afk.GG/assets/ae/relic_coin.png", {
         value: expeditor.essence ? expeditor.essence.toString() : "0",
         min: "0",
-        size: "10",
+        size: "10"
     });
     userInput.appendChild(ess);
     [5, 6, 7, 8].forEach((x) => {
-        userInput.appendChild(createInput("number", ``, `/afk.GG/assets/ae/ranks/icon_level${x}.png`, {
+        const expeditorUpdr = (y) => {
+            expeditor.towns = [x, y];
+        };
+        const input = createInput("number", ``, `/afk.GG/assets/ae/ranks/icon_level${x}.png`, {
             min: "0",
             max: "40",
             value: expeditor.towns[x] ? expeditor.towns[x].toString() : "0",
             class: `town tier-${x}`,
-        }));
+        });
+        const withButtons = buttonWrapInput(input, expeditorUpdr);
+        userInput.appendChild(withButtons);
     });
     relApp.appendChild(userInput);
     const relicPics = document.querySelectorAll(".relic-type"), townsInputs = document.querySelectorAll(".town");

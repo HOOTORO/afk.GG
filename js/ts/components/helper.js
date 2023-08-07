@@ -102,7 +102,7 @@ function savedObj(str, def) {
     }
     return def;
 }
-export { createElementN, createInput, createSelectList, difference, generateAFKResObj, isEmpty, isDefault, populateStorage, rangeSlide, safeReduceSum, savedObj, setApp, storedValue, weekLabels, fetchData };
+export { createElementN, createInput, createSelectList, difference, generateAFKResObj, isEmpty, isDefault, populateStorage, rangeSlide, safeReduceSum, savedObj, setApp, storedValue, weekLabels, fetchData, buttonWrapInput };
 function createElementN(tag, props, inner) {
     const doc = document.createElement(tag);
     if (props) {
@@ -151,4 +151,23 @@ async function fetchData(assetpath) {
     const data = await fetch(`/afk.GG/assets/${assetpath}`);
     const str = await data.text();
     return JSON.parse(str);
+}
+function buttonWrapInput(el, update) {
+    const inputContainer = createElementN("div", { class: "number-container" });
+    inputContainer.appendChild(createElementN("button", { type: "button", class: `btn desc ${el.className}` }, "<|"));
+    inputContainer.appendChild(el);
+    inputContainer.appendChild(createElementN("button", { type: "button", class: `btn inc ${el.className}` }, "|>"));
+    inputContainer.addEventListener("click", (e) => {
+        if (e.target instanceof HTMLButtonElement) {
+            const inpt = e.target.parentElement.querySelector("input");
+            if (e.target.className.search("inc") > -1) {
+                inpt.value = (parseInt(inpt.value) + 1).toString();
+            }
+            else {
+                inpt.value = (parseInt(inpt.value) - 1).toString();
+            }
+            update(parseInt(inpt.value));
+        }
+    });
+    return inputContainer;
 }
