@@ -190,8 +190,8 @@
 [porq44]: https://media.discordapp.net/attachments/1130528875961651371/1137694530053886042/47.jpg
 [dm1]: https://media.discordapp.net/attachments/1130528875961651371/1137694530322300948/48.jpg
 [dm2]: https://media.discordapp.net/attachments/1130528875961651371/1137694530599129088/49.jpg
-[iog1]: https://media.discordapp.net/attachments/1130528875961651371/1137694530854998086/50.jpg
-[iog2]: https://media.discordapp.net/attachments/1130528875961651371/1137696129664958515/51.jpg
+[iog1th]: https://media.discordapp.net/attachments/1130528875961651371/1137694530854998086/50.jpg
+[iog2th]: https://media.discordapp.net/attachments/1130528875961651371/1137696129664958515/51.jpg
 [meanwhilehosp]: https://media.discordapp.net/attachments/1130528875961651371/1137696129975320628/52.jpg
 [dm3]: https://media.discordapp.net/attachments/1130528875961651371/1137696130323464192/53.jpg
 [dm4]: https://media.discordapp.net/attachments/1130528875961651371/1137696130570932264/54.jpg
