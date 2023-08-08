@@ -83,6 +83,7 @@ $lin-color: rgb(255, 0, 0);
     --slate-gradient-a: #{$mos-def-gradient-anti};
     --containers-bg: #{$mos-def-bg};
     --select-font-color: #{$mos-def-sel-text};
+    --md-header-bg-color: var(--md-primary-fg-color);
     --md-footer-bg-color: #{$mos-def-foot-bg};
     --md-footer-fg-color: #{$mos-def-foot-fg};
     --tab-bg: #{$mos-def-tabs-bg};
@@ -207,6 +208,7 @@ $lin-color: rgb(255, 0, 0);
     --md-code-bg-color: #{$d-code-bg};
     --md-code-fg-color: #{$dark-fg};
     --md-default-bg: #{$dark-def-bg};
+    --md-header-bg-color: var(--md-primary-fg-color);
     --md-footer-bg-color: #{$dark-foot-bg};
     --md-footer-fg-color: #{$dark-foot-fg};
 

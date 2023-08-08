@@ -1,7 +1,5 @@
 @mixin box-sizing {
   box-sizing: border-box;
-  box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 ::selection {
@@ -119,6 +117,22 @@
 
 [data-md-color-scheme="dracula"] .md-header__option:before {
   content: "Dracula \aSide";
+}
+
+.md-header {
+  color: var(--md-text-color);
+  background-color: var(--md-header-bg-color);
+  border-bottom: 2px solid var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="slate"] .md-header {
+  border-bottom: 2px solid var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="dracula"] .md-header[data-md-state="shadow"] {
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.15),
+  0 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 
 .md-typeset .headerlink {

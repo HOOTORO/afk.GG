@@ -1,5 +1,5 @@
 ---
-title: N<u>M</u>. Respect.
+title: N<del>M</del>. Respect.
 description: >-
     There is no future with no respect for each other.
 author: HOOTSMAN, Лев Николаевич
