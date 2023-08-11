@@ -1,4 +1,3 @@
-import { updateProgressBar } from "../gamevents/abex.js";
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 96;
 const ALERT_THRESHOLD = 24;
@@ -61,7 +60,6 @@ export default function startTimer(countFrom, goal, el, tn, sla) {
         document.getElementById(`base-timer-${el}`).innerHTML =
             formatTime(timeLeft);
         setCircleDasharray(el, timeLeft);
-        updateProgressBar();
         setRemainingPathColor(timeLeft, el);
         if (timeLeft <= 0) {
             onTimesUp(timerInterval);

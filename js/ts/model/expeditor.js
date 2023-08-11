@@ -1,5 +1,5 @@
 import { isDefault, isEmpty, safeReduceSum, savedObj, storedValue, } from "../components/helper.js";
-import { SellPriceMod as SellCoef } from "../gamevents/abexvars.js";
+import { SellPriceMod as SellCoef } from "../abex/abexvars.js";
 import { Preferences } from "../settings.js";
 import { RelicManager, Renderer, Tier, defaults, stored, townTypes, } from "./afk.js";
 import { AbEx } from "./constants.js";
@@ -66,9 +66,6 @@ class Expeditor {
     }
     equippedSlot(id) {
         return this._slots.find((x) => x.slotId === id);
-    }
-    equippedRelics(branch) {
-        return this._slots.map((x) => x.equipped);
     }
     income() {
         return this.starStatus

@@ -243,7 +243,7 @@ html .md-typeset__table table {
   --theme-label: Jedi;
   --nav-link: #cdcdaf;
   --nav-color: rgba(255, 255, 255, 0.2);
-  --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
+  --slate-gradient: linear-gradient(230deg, rgba(162, 160, 125, 0.27), rgba(141, 117, 4, 0.81));
   --slate-gradient-a: linear-gradient(45deg, rgba(255, 255, 255, 0.431372549), rgba(165, 144, 48, 0.398));
   --containers-bg: rgb(228, 255, 119);
   --select-font-color: rgb(41, 33, 33);
@@ -278,7 +278,7 @@ html .md-typeset__table table {
   /* Admonition colors */
   --md-admonition-title-bg: #ffdb86;
   --md-admonition-fg-color: #373737;
-  --md-admonition-bg-color: var(--md-default-bg-color--darker);
+  --md-admonition-bg-color: #fdffac;
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
   --md-admonition-bg-color--sh-luv: rgba(235, 5, 5, 0.2);
@@ -1084,7 +1084,7 @@ select::-ms-expand {
   --theme-label: Jedi;
   --nav-link: #cdcdaf;
   --nav-color: rgba(255, 255, 255, 0.2);
-  --slate-gradient: linear-gradient(225deg, rgba(255, 255, 255, 0.7098039216), rgba(165, 144, 48, 0.621));
+  --slate-gradient: linear-gradient(230deg, rgba(162, 160, 125, 0.27), rgba(141, 117, 4, 0.81));
   --slate-gradient-a: linear-gradient(45deg, rgba(255, 255, 255, 0.431372549), rgba(165, 144, 48, 0.398));
   --containers-bg: rgb(228, 255, 119);
   --select-font-color: rgb(41, 33, 33);
@@ -1119,7 +1119,7 @@ select::-ms-expand {
   /* Admonition colors */
   --md-admonition-title-bg: #ffdb86;
   --md-admonition-fg-color: #373737;
-  --md-admonition-bg-color: var(--md-default-bg-color--darker);
+  --md-admonition-bg-color: #fdffac;
   --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
   --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
   --md-admonition-bg-color--sh-luv: rgba(235, 5, 5, 0.2);
@@ -2330,6 +2330,10 @@ button.btn {
   margin: 2px;
   cursor: pointer;
 }
+.user-bag .relic-type,
+#relic-app .relic-type {
+  padding: 30px 0;
+}
 .user-bag .ui-input,
 #relic-app .ui-input {
   display: flex;
@@ -2342,6 +2346,10 @@ button.btn {
   align-content: center;
   align-items: center;
   justify-content: center;
+}
+.user-bag .relic img,
+#relic-app .relic img {
+  margin: 6px 0;
 }
 .user-bag .goal,
 #relic-app .goal {
