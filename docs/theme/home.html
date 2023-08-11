@@ -164,14 +164,3 @@
   </div>
 </section>
 {% endblock %}
-{% block scripts %}
-<!-- Add scripts that need to run before here -->
-<script type="module">
-  import * as ab from "./js/ts/gamevents/abex.js"
-
-  ab.default()
-</script>
-{{ super() }}
-
-<!-- Add scripts that need to run afterwards here -->
-{% endblock %}

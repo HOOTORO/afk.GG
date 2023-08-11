@@ -4,7 +4,7 @@ description: >-
     История шпиона-неудачника.
 author: HOOTSMAN, Лев Николаевич
 date: 2023-06-10
-template: templates/blog.j2
+template: main.html
 ---
 ## Хронология события
 

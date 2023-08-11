@@ -2,7 +2,7 @@
 title: Incm | Res. Modes
 description: >
     Калькулятор для расчета инкама ресурсов в зависимости от указанных данных.
-template: templates/tools.j2
+template: main.html
 ---
 
 /// html | div#app

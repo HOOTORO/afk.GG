@@ -4,7 +4,7 @@ description: >-
     Глазами рядового обывателя.
 author: "HOOTSMAN, Лев Николаевич"
 date: 2022-11-11
-template: templates/blog.j2
+template: main.html
 ---
 
 /// example | Good night sweet prince

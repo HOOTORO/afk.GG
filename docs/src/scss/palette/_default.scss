@@ -35,13 +35,10 @@ $mos-def-tabs-fg: $mos-def-text;
 $mos-def-2-bg: #cdcdaf;
 $mos-def-nav-link: $mos-def-2-bg;
 
-$mos-def-admo-bg: linear-gradient(45deg, rgba(119, 101, 20, 0.739), #bf8556b5);
+//$mos-def-admo-bg: linear-gradient(45deg, rgba(119, 101, 20, 0.739), #bf8556b5);
+$mos-def-admo-bg: #fdffac;
 $mos-def-def-bg: linear-gradient(45deg, rgba(222, 222, 222, 0.383), #63636317);
-$mos-def-gradient: linear-gradient(
-    225deg,
-    #ffffffb5,
-    rgba(165, 144, 48, 0.621)
-);
+$mos-def-gradient: linear-gradient(230deg, rgb(162 160 125 / 27%), rgb(141 117 4 / 81%));
 $mos-def-gradient-anti: linear-gradient(
     45deg,
     #ffffff6e,

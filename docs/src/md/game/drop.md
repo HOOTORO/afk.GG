@@ -2,7 +2,7 @@
 title: Summons SG/TC
 description: >
     Статистика, отраженная в нескольких срезах
-template: templates/blog.j2
+template: main.html
 author: HOOTSMAN, Лев Николаевич
 ---
 

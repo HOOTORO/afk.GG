@@ -248,3 +248,9 @@
 [iog-log]: https://media.discordapp.net/attachments/1130528875961651371/1137946092093321357/log.jpg
 [iog-res]: https://media.discordapp.net/attachments/1130528875961651371/1137946092886053025/result.jpg
 [iog-res1]: https://media.discordapp.net/attachments/1130528875961651371/1137946093204807710/result1.jpg
+
+[aq-s6]: https://disk.yandex.ru/i/B9Y_BlONwl47eg
+[aq-harry]: https://disk.yandex.ru/d/eN6aFtjI0hLzow
+[aq-s7]: https://disk.yandex.ru/d/LKcx-c_qjXkgqQ
+[aq-s8]: https://disk.yandex.ru/i/5mK5cUF_7wCwCg
+[aq-s9]: https://disk.yandex.ru/i/Ch9aJMGBVJTITg

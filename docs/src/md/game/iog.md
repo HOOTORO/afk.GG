@@ -3,7 +3,7 @@ title: Isle of Gold
 description: >-
     Пожалуй, один из самых щедрых на кристаллы режимов в игре.
 author: HOOTSMAN, Лев Николаевич
-template: templates/blog.j2
+template: main.html
 ---
 
 ## IOG 2023.07.05

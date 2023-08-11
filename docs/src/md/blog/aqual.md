@@ -4,7 +4,7 @@ description: >
     Oppa Aqua Style!
 date: 2023-06-27
 author: HOOTSMAN, Лев Николаевич
-template: templates/blog.j2
+template: main.html
 comments: true
 ---
 

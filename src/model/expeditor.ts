@@ -5,7 +5,7 @@ import {
   savedObj,
   storedValue,
 } from "../components/helper.js";
-import { SellPriceMod as SellCoef } from "../gamevents/abexvars.js";
+import { SellPriceMod as SellCoef } from "../abex/abexvars.js";
 import { Preferences } from "../settings.js";
 import {
   Branch,
@@ -97,9 +97,6 @@ class Expeditor {
 
   equippedSlot(id: SLOT_ID) {
     return this._slots.find((x) => x.slotId === id);
-  }
-  equippedRelics(branch: Branch) {
-    return this._slots.map((x) => x.equipped);
   }
   income(): number {
     return this.starStatus

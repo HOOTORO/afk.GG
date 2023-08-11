@@ -170,16 +170,19 @@ function CoreRelicInfo(r: CoreSlot[]) {
         .replace("$i", i.toString());
     });
 
-    const container = createElementN("span", {class: "relic-type"});
-    const relicTree = createElementN("div", {class: `equip relic ${v.name}`}, eq);
+    const container = createElementN("span", {
+      class: "relic-type",
+      style: `background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(${v.icon});background-repeat: no-repeat;  background-position: center;background-size: 100%;`
+    });
+    const relicTree = createElementN("div", {class: `equip relic ${v.name}`}, `<span style="width:100px;">equip</span>${eq}`);
     const lb = createElementN(
       "span",
       {},
       `<| equip <img src="${v.icon}"> goal |>`
     );
-    const goal = createElementN("div", {class: `goal relic ${v.name}`}, goalstr);
+    const goal = createElementN("div", {class: `goal relic ${v.name}`}, `<span style="width:100px;">goal</span>${goalstr}`);
     container.appendChild(relicTree);
-    container.appendChild(lb);
+//    container.appendChild(lb);
     container.appendChild(goal);
     relApp.appendChild(container);
   }

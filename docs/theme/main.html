@@ -15,6 +15,12 @@
 {% include "templates/section/announcement.j2" ignore missing %}
 {% endblock announce %}
 
+{% block libs %}
+
+{{ super() }}
+<script type="module" src="{{ 'js/ts/main.js' | url }}"></script>
+{% endblock libs %}
+
 {% block content %}
 
 {% include "templates/section/title.j2" %}

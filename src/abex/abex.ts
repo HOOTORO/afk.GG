@@ -10,6 +10,35 @@ import * as t from "../components/timeleft.js";
 import {AbEx, Boss} from "../model/constants.js";
 import {Expeditor} from "../model/expeditor.js";
 import {Militia} from "../model/types.js";
+import {loadBag, runRelic} from "./relic.js";
+import {AttackForm} from "./attackform.js";
+
+export const mil = new Militia(10);
+export const expeditor = new Expeditor(mil, false);
+
+export function abexApp() {
+  const app = document.getElementById("rem-food");
+  runAbExTimers();
+  runRelic();
+  loadBag();
+  AttackForm();
+
+  if (!app) {
+    console.log(`no app tag, return`);
+  } else {
+    initForm(app);
+    window.onload = updateAbex;
+
+    app.addEventListener("change", (e) => {
+      if (e.target instanceof HTMLInputElement) {
+        inputChange(e.target);
+        updateAbex();
+      }
+    });
+  }
+
+}
+
 
 export default function runAbExTimers() {
   if (AbEx.now < AbEx.start()) {
@@ -25,25 +54,6 @@ export default function runAbExTimers() {
   } else {
     t.default(AbEx.start(), AbEx.left(), "abex-timer", "End In", "Сезон<br>завершен");
   }
-}
-
-const app = document.getElementById("rem-food");
-const mil = new Militia(10);
-export const expeditor = new Expeditor(mil, false);
-runAbExTimers();
-
-if (!app) {
-  console.log(`no app tag, return`);
-} else {
-  initForm(app);
-  window.onload = updateAbex;
-
-  app.addEventListener("change", (e) => {
-    if (e.target instanceof HTMLInputElement) {
-      inputChange(e.target);
-      updateAbex();
-    }
-  });
 }
 
 function updateAbex() {
@@ -132,29 +142,3 @@ function inputChange(e: HTMLInputElement) {
   }
 }
 
-function updateProgressBar() {
-  let totalHours = AbEx.abexDurationDays * 24;
-  let timePassed = totalHours - AbEx.hoursLeft();
-  let percent = (timePassed / totalHours) * 100;
-  const bar = document.getElementsByClassName("abex-progress").item(0);
-  if (bar) {
-    const style = bar.getElementsByClassName("progress-bar").item(0);
-    const label = bar.getElementsByClassName("progress-label").item(0);
-    style.setAttribute("style", `width:${percent.toFixed(2)}%`);
-    label.innerHTML = `${percent.toFixed(2)}% done`;
-    for (const item of bar.classList) {
-      if (item.startsWith("progress-")) {
-        bar.removeAttribute(item);
-
-        bar.setAttribute(
-          "class",
-          `progress progress-${((percent / 10) * 10).toFixed(
-            0
-          )}plus candystripe candystripe-animate abex-progress`
-        );
-      }
-    }
-  }
-}
-
-export {updateProgressBar};

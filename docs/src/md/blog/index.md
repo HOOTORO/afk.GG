@@ -4,7 +4,7 @@ description: >-
     Добро пожаловать в хуторок Льва Николаевича!  <br>
       Персональный блог завсегдатая <del>уборной с телефоном</del> AFK Arena.
 author: HOOTSMAN, Лев Николаевич
-template: templates/blog.j2
+template: main.html
 ---
 
 //// warning | DISCLAIMER

@@ -29,7 +29,6 @@ interface BagRelic extends Relic {
 interface CoreSlot {
   slotId: `${Branch}-${position}`;
   equipped: Relic;
-
   goal: Relic;
   level: relicLvl;
 }

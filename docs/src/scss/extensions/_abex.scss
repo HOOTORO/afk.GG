@@ -389,6 +389,7 @@ button.btn {
     stroke: #00ffff;
     -webkit-text-stroke: #00ffff;
 
+
     img {
       -webkit-user-select: none;
       -webkit-user-drag: none;
@@ -411,6 +412,10 @@ button.btn {
     }
   }
 
+  .relic-type {
+    padding: 30px 0;
+  }
+
   .ui-input {
     display: flex;
     flex-direction: column;
@@ -422,6 +427,10 @@ button.btn {
       align-items: center;
       justify-content: center;
     }
+  }
+
+  .relic img {
+    margin: 6px 0;
   }
 
   .goal {

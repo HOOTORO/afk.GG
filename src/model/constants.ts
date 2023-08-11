@@ -25,7 +25,7 @@ const relicEstimateTable = `
   <tbody>
     <tr>
       <td align="center">Income</td>
-      <td align="center">$inc <img src="/afk.GG/assets/ae/slg_coin.png" width=20>/h</td>
+      <td align="center">$inc <img src="/afk.GG/assets/ae/slg_coin.png" width=20>/h.</td>
     </tr>
     <tr>
           <td align="center" colspan="2">GOAL</td>

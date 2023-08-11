@@ -35,7 +35,7 @@ theme:
         icon: material/lambda
         name: Switch to light mode
       primary: deep purple
-      accent: lime
+      accent: cyan
     - scheme: dracula
       toggle:
         icon: material/bat
@@ -81,9 +81,9 @@ nav:
       - Discord:
           - guilds/disru.md
           - guilds/disen.md
-  - Хуторок Льва Николаевича<br>HOOT-o-ROCK:
+  - Хуторок Льва Николаевича<br>Posts:
       - blog/index.md
-      - Блог:
+      - Blog:
           #          - blog/draft-ae.md
           - blog/aqual.md
           - blog/dogdream.md

@@ -5,7 +5,7 @@ description: >
     Дополняется по мере возможности и благодаря участникам сообщества!
 date: 2023-07-01
 author: HOOTSMAN
-template: templates/blog.j2
+template: main.html
 comments: true
 ---
 
@@ -138,7 +138,17 @@ comments: true
 /// info | Факты
 Была академкой Hurricane, после S3 отпочковались от Hurricane во главе c Sir Eblo 2000
 ///
+/// details | _AbEx Meme Videos_ ya.disk links
+    type: tip
 
+[6 сезон][aq-s6]  
+[Гарри аквилонец][aq-harry]  
+[7 сезон][aq-s7]  
+[8 сезон][aq-s8]  
+[9 сезон][aq-s9]  
+
+Спасибо Кисочка за предоставленные ссылки :octicons-heart-fill-24:{ .heart }  
+///
 ***
 
 ## Prodota's Scum
@@ -210,7 +220,7 @@ comments: true
 |     Статус:     | <font color=green>Активна</font> |
 | Направленность: | Бездна/AbEx                      |
 |       GM:       | _Escobar_                        |
-|    Discord:     | непубличный                      |
+|    Discord:     | Закрытый                      |
 |   Srv. Owner:   | whxtever                         |
 ///
 /// tab  | Бездна
@@ -260,6 +270,7 @@ comments: true
 |     Статус:     | <font color=green>Активна</font>  |
 | Направленность: | Бездна/AbEx                       |
 |       GM:       | <em style="color:red">missing<em> |
+|    Discord:     | <em style="color:red">missing<em> |
 |   Srv. Owner:   | <em style="color:red">missing<em> |
 ///
 /// tab  | Бездна

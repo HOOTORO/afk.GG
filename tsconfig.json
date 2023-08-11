@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
     "module": "ESNext",
-    "esModuleInterop": true,
     "moduleResolution": "Node",
     "noImplicitAny": true,
     "strictNullChecks": false,
     "removeComments": true,
-    "sourceMap": false,
     "rootDir": "src",
     "outDir": "docs/theme/js/ts",
-    "target": "ESNext",
+    "target": "ESNext"
   },
   "include": [
     "src/**/*",

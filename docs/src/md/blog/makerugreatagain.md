@@ -3,7 +3,7 @@ title: MAKE СНГ GREAT AGAIN
 description: >
   Мысли о причинах токсичности в СНГ части AFK Arena
 author: HOOTSMAN, Лев Николаевич
-template: templates/blog.j2
+template: main.html
 ---
 /// warning | DISCLAIMER 
 

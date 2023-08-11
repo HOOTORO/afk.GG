@@ -3,7 +3,7 @@ title: 🇷🇺 Forged Memes
 description: Выкованные в СНГ с любовью!
 author: Community
 date: 2023
-template: templates/blog.j2
+template: main.html
 glightbox.auto_caption: false
 ---
 

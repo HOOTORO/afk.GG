@@ -1,6 +1,7 @@
 import { BossManager } from "../model/boss.js";
 import { Preferences } from "../settings.js";
 
+export function BossIcons(){
 const table = document.querySelectorAll("td");
 
 if (table.length > 0) {
@@ -21,4 +22,5 @@ if (table.length > 0) {
       x.setAttribute("style", "display:flex;align-items: center;");
     }
   });
+}
 }
