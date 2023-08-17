@@ -1,6 +1,6 @@
 ---
-title: BAbEx
-description: Way of BackNBlack
+title: To be "BackNBlack"
+description: Worlds Ranked \#1 BackNBlack, behind the scene
 author: HOOTSMAN, Лев Николаевич
 draft: true
 ---

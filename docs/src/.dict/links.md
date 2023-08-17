@@ -104,7 +104,10 @@
 [discodetails]: https://media.discordapp.net/attachments/1130528875961651371/1136609306201038949/image.png
 
 [discodesc]: https://media.discordapp.net/attachments/976976670345035796/1136535031771299920/image.png
-
+[compo]: https://media.discordapp.net/attachments/1130528875961651371/1141526479834992840/image.png
+[fingerandfist]: https://en.wikipedia.org/wiki/Kulak
+[nososlog]: https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%81%D0%BB%D0%B0%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D0%BD%D0%B0%D0%BA%D0%BB%D0%BE%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5#%D0%92_%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B5
+[s10st]: https://media.discordapp.net/attachments/1130528875961651371/1141771436344737842/image.png
 
 <!-- AFK Assets -->
 
@@ -243,6 +246,7 @@
 [dodik]: https://media.discordapp.net/attachments/1130528875961651371/1137703493092778004/100.jpg
 [giv]: https://media.discordapp.net/attachments/1130528875961651371/1137717663037132890/101.jpg
 [iogr]: https://media.discordapp.net/attachments/1130528875961651371/1137717695924686908/102.jpg
+[brcompare]: https://media.discordapp.net/attachments/1130528875961651371/1141577266346868858/unknown.png
 
 <!--  IoG -->
 [iog-log]: https://media.discordapp.net/attachments/1130528875961651371/1137946092093321357/log.jpg
