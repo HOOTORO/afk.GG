@@ -3,6 +3,7 @@ import {Branch, RelicManager, Renderer, Tree} from "../model/afk.js";
 import {relicEstimateTable} from "../model/constants.js";
 import {BagRelic, CoreSlot, SLOT_ID} from "../model/types.js";
 import {expeditor} from "./abex.js";
+import {aeIcons} from "./abexvars.js";
 
 const relApp = document.getElementById("relic-app");
 
@@ -14,7 +15,7 @@ export function runRelic() {
       {class: "ui-input"},
       "Essence & Captured Towns"
     ),
-    ess = createInput("number", "", "/afk.GG/assets/ae/relic_coin.png", {
+    ess = createInput("number", "", aeIcons.ess, {
       value: expeditor.essence ? expeditor.essence.toString() : "0",
       min: "0",
       size: "10"
@@ -24,7 +25,7 @@ export function runRelic() {
     const expeditorUpdr = (y: number) => {
       expeditor.towns = [x, y];
     }
-    const input = createInput("number", ``, `/afk.GG/assets/ae/ranks/icon_level${x}.png`, {
+    const input = createInput("number", ``, `/assets/ae/ranks/icon_level${x}.png`, {
       min: "0",
       max: "40",
       value: expeditor.towns[x] ? expeditor.towns[x].toString() : "0",

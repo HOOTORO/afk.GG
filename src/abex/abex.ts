@@ -12,6 +12,7 @@ import {Expeditor} from "../model/expeditor.js";
 import {Militia} from "../model/types.js";
 import {loadBag, runRelic} from "./relic.js";
 import {AttackForm} from "./attackform.js";
+import {aeIcons} from "./abexvars.js";
 
 export const mil = new Militia(10);
 export const expeditor = new Expeditor(mil, false);
@@ -91,7 +92,7 @@ function initForm(n: HTMLElement) {
         buildProperty("max", "9999"),
         buildProperty("size", "20"),
         buildProperty("value", "0"),
-        buildProperty("icon", "/afk.GG/assets/ae/img_stamina_icon_big.png"),
+        buildProperty("icon", aeIcons.stam),
       ],
     },
     {
@@ -104,7 +105,7 @@ function initForm(n: HTMLElement) {
         buildProperty("max", "10"),
         buildProperty("size", "20"),
         buildProperty("value", "0"),
-        buildProperty("icon", "/afk.GG/assets/icons/slg_battlepass_enter.png"),
+        buildProperty("icon", aeIcons.bpEnter),
       ],
     },
     {
@@ -113,7 +114,7 @@ function initForm(n: HTMLElement) {
       props: [
         buildProperty("type", "checkbox"),
         buildProperty("id", "mil-sod"),
-        buildProperty("icon", "/afk.GG/assets/icons/img_bp_enter.png"),
+        buildProperty("icon", aeIcons.bpEnterImg),
       ],
     },
   ];

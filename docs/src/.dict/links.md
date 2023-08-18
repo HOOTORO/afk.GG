@@ -1,6 +1,6 @@
 [feed]: https://discord.gg/xjJavhAvv6
 
-[kappa]: /afk.GG/assets/kappa.webp
+[kappa]: assets/kappa.webp
 
 [dropstat]: https://media.discordapp.net/attachments/1128524376929742879/1129171914217238559/image.png
 
@@ -73,6 +73,7 @@
 [bibi2]: https://search.bilibili.com/all?keyword=AE+%E5%9C%98%E9%9A%8A%E9%81%A0%E5%BE%81&from_source=webtop_search&spm_id_from=333.788&search_source=5
 
 [bibi3]: https://search.bilibili.com/all?keyword=HF+%E4%BC%97%E7%A5%9E%E7%8C%8E%E5%9C%BA&from_source=webtop_search&spm_id_from=333.788&search_source=5
+
 <!-- AbEx -->
 
 [nb]: https://media.discordapp.net/attachments/1128524376929742879/1128524655804825690/aenewbieguide.webp
@@ -124,6 +125,9 @@
 
 [tree-support]: https://media.discordapp.net/attachments/1135669088459431997/1135669420321148948/tree-support.png
 
+[ae-stam]: https://media.discordapp.net/attachments/1135669088459431997/1142030420649717760/img_stamina_icon_big.png
+[ae-coin]:https://media.discordapp.net/attachments/1135669088459431997/1142030421165621358/slg_coin.png
+[ae-ess]: https://media.discordapp.net/attachments/1135669088459431997/1142030420909760593/relic_coin.png
 <!--  GUILDS -->
 
 [ru-guilds]: https://media.discordapp.net/attachments/1135807268017942591/1135807296480485376/rudesc.jpg

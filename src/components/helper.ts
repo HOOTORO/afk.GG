@@ -198,7 +198,7 @@ function difference(a: number[], b: number[]) {
 }
 
 async function fetchData(assetpath: string) {
-  const data = await fetch(`/afk.GG/assets/${assetpath}`)
+  const data = await fetch(`/assets/${assetpath}`)
   const str = await data.text()
   return JSON.parse(str)
 }

@@ -17,7 +17,7 @@
     ],
     "typescript.tsdk": "node_modules/typescript/lib",
     "markdown.validate.ignoredLinks": [
-      "/afk.GG/assets/vids/phil.webm",
+      "../assets/vids/phil.webm",
       "../assets/avatars/hootsman.webp",
       "../kb/infographics/",
       "../assets/avatars/anon.png"
