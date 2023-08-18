@@ -1,6 +1,6 @@
 [feed]: https://discord.gg/xjJavhAvv6
 
-[kappa]: ./assets/kappa.webp
+[kappa]: ../assets/kappa.webp
 
 [dropstat]: https://media.discordapp.net/attachments/1128524376929742879/1129171914217238559/image.png
 
@@ -181,8 +181,8 @@
 [porq27]: https://media.discordapp.net/attachments/1130528875961651371/1137690131101392927/30.jpg
 [porq28]: https://media.discordapp.net/attachments/1130528875961651371/1137692471359459368/31.jpg
 [porq29]: https://media.discordapp.net/attachments/1130528875961651371/1137692471598526544/32.jpg
-[porq30]: https://media.discordapp.net/attachments/1130528875961651371/1137692471946661929/33.jpg 
-[porq31]: https://media.discordapp.net/attachments/1130528875961651371/1137692472198316073/34.jpg 
+[porq30]: https://media.discordapp.net/attachments/1130528875961651371/1137692471946661929/33.jpg
+[porq31]: https://media.discordapp.net/attachments/1130528875961651371/1137692472198316073/34.jpg
 [porq32]: https://media.discordapp.net/attachments/1130528875961651371/1137692472483532891/35.jpg
 [porq33]: https://media.discordapp.net/attachments/1130528875961651371/1137692472751960195/36.jpg
 [porq34]: https://media.discordapp.net/attachments/1130528875961651371/1137692472978456636/37.jpg
@@ -215,23 +215,23 @@
 [dm13]: https://media.discordapp.net/attachments/1130528875961651371/1137697846892699758/64.jpg
 [dm14]: https://media.discordapp.net/attachments/1130528875961651371/1137697847232450570/65.jpg
 [mem1]: https://media.discordapp.net/attachments/1130528875961651371/1137697847479894076/66.jpg
-[dm15]: https://media.discordapp.net/attachments/1130528875961651371/1137697847802875945/67.jpg 
-[dm16]: https://media.discordapp.net/attachments/1130528875961651371/1137697848096456704/68.jpg 
+[dm15]: https://media.discordapp.net/attachments/1130528875961651371/1137697847802875945/67.jpg
+[dm16]: https://media.discordapp.net/attachments/1130528875961651371/1137697848096456704/68.jpg
 [dm17]: https://media.discordapp.net/attachments/1130528875961651371/1137697848461369406/69.jpg
 [dm18]: https://media.discordapp.net/attachments/1130528875961651371/1137697848960503829/70.jpg
-[leave]: https://media.discordapp.net/attachments/1130528875961651371/1137700495184642179/71.jpg 
+[leave]: https://media.discordapp.net/attachments/1130528875961651371/1137700495184642179/71.jpg
 [dm19]: https://media.discordapp.net/attachments/1130528875961651371/1137700495503401010/72.jpg
 [dm20]: https://media.discordapp.net/attachments/1130528875961651371/1137700495843147796/73.jpg
 [dm21]: https://media.discordapp.net/attachments/1130528875961651371/1137700496329683015/74.jpg
 [dm22]: https://media.discordapp.net/attachments/1130528875961651371/1137700496627482695/75.jpg
-[dog1]: https://media.discordapp.net/attachments/1130528875961651371/1137700496946241627/76.jpeg 
+[dog1]: https://media.discordapp.net/attachments/1130528875961651371/1137700496946241627/76.jpeg
 [dog2]: https://media.discordapp.net/attachments/1130528875961651371/1137700497265016942/77.jpg
 [dmdog]: https://media.discordapp.net/attachments/1130528875961651371/1137700497806073876/78.jpg
 [aeafter]: https://media.discordapp.net/attachments/1130528875961651371/1137700498120650752/79.jpg
 [aeafter1]: https://media.discordapp.net/attachments/1130528875961651371/1137700498439421992/80.jpg
 [ae2]: https://media.discordapp.net/attachments/1130528875961651371/1137701994547654758/81.jpg
 [ae3]: https://media.discordapp.net/attachments/1130528875961651371/1137701996070178896/82.jpg
-[ae4]: https://media.discordapp.net/attachments/1130528875961651371/1137701996342804511/83.jpg 
+[ae4]: https://media.discordapp.net/attachments/1130528875961651371/1137701996342804511/83.jpg
 [warn]: https://media.discordapp.net/attachments/1130528875961651371/1137701996820967465/84.jpg
 [ae5]: https://media.discordapp.net/attachments/1130528875961651371/1137701997202641047/85.jpg
 [adv]: https://media.discordapp.net/attachments/1130528875961651371/1137701997764673536/86.jpg

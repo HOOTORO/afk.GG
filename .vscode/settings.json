@@ -149,6 +149,7 @@
       "Izold",
       "Jaba",
       "javascripts",
+      "jono",
       "Jugg",
       "Kaizernaut",
       "Kalene",
@@ -467,4 +468,13 @@
         "file:///Users/reinweise/HOOTSMAN/vscode/afk.GG/mkdocs.yml"
       ]
     },
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+      {
+        "previewLimit": 50,
+        "driver": "SQLite",
+        "name": "disco",
+        "database": "${workspaceFolder:afk.GG}/disco.db"
+      }
+    ],
   }
