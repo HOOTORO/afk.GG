@@ -148,7 +148,7 @@ function difference(a, b) {
     ].reduce((acc, [v, count]) => acc.concat(Array(Math.abs(count)).fill(v)), []);
 }
 async function fetchData(assetpath) {
-    const data = await fetch(`/afk.GG/assets/${assetpath}`);
+    const data = await fetch(`/assets/${assetpath}`);
     const str = await data.text();
     return JSON.parse(str);
 }

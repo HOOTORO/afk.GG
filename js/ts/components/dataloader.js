@@ -22,7 +22,7 @@ function loadRewards(gm, gt) {
             return {
                 type: col1rank,
                 label: col1rank,
-                img: `/afk.GG/assets/icons/s/${col1rank}.png`,
+                img: `/assets/icons/s/${col1rank}.png`,
                 amount: qty,
             };
         });

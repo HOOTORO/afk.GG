@@ -2,66 +2,66 @@
   {
     "name": "Rock Lizard",
     "short": "Rock",
-    "icon": "/afk.GG/assets/portraits/pet/pet_6008.png"
+    "icon": "../../assets/portraits/pet/pet_6008.png"
   },
   {
     "name": "Talismane",
     "short": "Tali",
-    "icon": "/afk.GG/assets/portraits/pet/pet_6012.png"
+    "icon": "../../assets/portraits/pet/pet_6012.png"
   },
   {
     "name": "Moth",
     "short": "Mot",
-    "icon": "/afk.GG/assets/portraits/pet/phantasmoth.png"
+    "icon": "../../assets/portraits/pet/phantasmoth.png"
   },
   {
     "name": "Fox Fatale",
     "short": "FoxF",
-    "icon": "/afk.GG/assets/portraits/pet/fox_fatale.png"
+    "icon": "../../assets/portraits/pet/fox_fatale.png"
   },
   {
     "name": "Winged Lion",
     "short": "Lion",
-    "icon": "/afk.GG/assets/portraits/pet/pet_6007.png"
+    "icon": "../../assets/portraits/pet/pet_6007.png"
   },
   {
     "name": "Flutter Owl",
     "short": "FOwl",
-    "icon": "/afk.GG/assets/portraits/pet/pet_6011.png"
+    "icon": "../../assets/portraits/pet/pet_6011.png"
   },
   {
     "name": "Seal",
     "short": "Seal",
-    "icon": "/afk.GG/assets/portraits/pet/slumber_seal.png"
+    "icon": "../../assets/portraits/pet/slumber_seal.png"
   },
   {
     "name": "Souflee",
     "short": "Cake",
-    "icon": "/afk.GG/assets/portraits/pet/savage_souffle.png"
+    "icon": "../../assets/portraits/pet/savage_souffle.png"
   },
   {
     "name": "Deer",
     "short": "Dir",
-    "icon": "/afk.GG/assets/portraits/pet/pet_6010.png"
+    "icon": "../../assets/portraits/pet/pet_6010.png"
   },
   {
     "name": "Blade Lizard",
     "short": "Blade",
-    "icon": "/afk.GG/assets/portraits/pet/pet_6006.png"
+    "icon": "../../assets/portraits/pet/pet_6006.png"
   },
   {
     "name": "Red Fat",
     "short": "RFat",
-    "icon": "/afk.GG/assets/portraits/pet/pet_6005.png"
+    "icon": "../../assets/portraits/pet/pet_6005.png"
   },
   {
     "name": "White Snow Fat",
     "short": "WFat",
-    "icon": "/afk.GG/assets/portraits/pet/pet_6004.png"
+    "icon": "../../assets/portraits/pet/pet_6004.png"
   },
   {
     "name": "Vesperio",
     "short": "Vesp",
-    "icon": "/afk.GG/assets/portraits/pet/pet_6009.png"
+    "icon": "../../assets/portraits/pet/pet_6009.png"
   }
 ]

@@ -1,4 +1,5 @@
 import { DustChest } from "./types.js";
+import { aeIcons } from "../abex/abexvars.js";
 const relicEstimateTable = `
   <thead>
     <tr>
@@ -8,7 +9,7 @@ const relicEstimateTable = `
   <tbody>
     <tr>
       <td align="center">Income</td>
-      <td align="center">$inc <img src="/afk.GG/assets/ae/slg_coin.png" width=20>/h.</td>
+      <td align="center">$inc <img src=${aeIcons.coin} width=20>/h.</td>
     </tr>
     <tr>
           <td align="center" colspan="2">GOAL</td>
@@ -23,7 +24,7 @@ const relicEstimateTable = `
     </tr>    
     <tr>
       <td align="center">Missing</td>
-      <td align="center">$gc <img src="/afk.GG/assets/ae/slg_coin.png"  width=20></td>
+      <td align="center">$gc <img src=${aeIcons.coin}  width=20></td>
     </tr>
     <tr>
       <td align="center" colspan="2">BAG</td>
