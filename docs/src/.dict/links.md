@@ -1,6 +1,6 @@
 [feed]: https://discord.gg/xjJavhAvv6
 
-[kappa]: assets/kappa.webp
+[kappa]: ../assets/kappa.webp
 
 [dropstat]: https://media.discordapp.net/attachments/1128524376929742879/1129171914217238559/image.png
 

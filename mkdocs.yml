@@ -1,5 +1,5 @@
 site_name: AFK. Все что желаешь знать.
-site_url: http://hooto.ru
+site_url: https://hooto.ru
 site_description: afk.GG is an 'AFK Arena' game fansite, and is not affiliated with Lilith Games in any way.
 dev_addr: "0.0.0.0:80"
 repo_name: afk.GG
@@ -221,7 +221,7 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discordid.netlify.app/?id=88370628763078656
       name: HOOTSMAN
-  homepage: http://hooto.ru
+  homepage: https://hooto.ru
   consent:
     title: Cookie consent
     description: >-
