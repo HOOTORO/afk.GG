@@ -1,5 +1,5 @@
 site_name: AFK. Все что желаешь знать.
-site_url: https://hootsdev.github.io/afk.GG/
+site_url: http://hooto.ru
 site_description: afk.GG is an 'AFK Arena' game fansite, and is not affiliated with Lilith Games in any way.
 dev_addr: "0.0.0.0:80"
 repo_name: afk.GG
@@ -84,7 +84,7 @@ nav:
   - Хуторок Льва Николаевича<br>Posts:
       - blog/index.md
       - Blog:
-#          - blog/draft-ae.md
+          #          - blog/draft-ae.md
           - blog/aqual.md
           - blog/dogdream.md
           - blog/makerugreatagain.md
@@ -123,16 +123,16 @@ plugins:
   - table-reader:
       allow_missing_files: False
   - social:
-      cards: !ENV [ CI, true ]
+      cards: !ENV [CI, true]
   - git-revision-date-localized:
-      enabled: !ENV [ ENABLED_GIT_REVISION_DATE, false ]
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
       strict: true
       fallback_to_build_date: true
       enable_creation_date: true
       timezone: Europe/Moscow
       locale: ru
   - git-authors:
-      enabled: !ENV [ ENABLED_GIT_AUTHOR, false ]
+      enabled: !ENV [ENABLED_GIT_AUTHOR, false]
       show_contribution: true
       show_line_count: true
       show_email_address: false
