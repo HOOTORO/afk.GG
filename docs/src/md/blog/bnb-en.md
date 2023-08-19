@@ -65,7 +65,6 @@ In BnB, there is some prohibitive number of channels dedicated directly to the g
 Following jono advice make navigation even easy.
 <figure markdown>
 ![desc][discodesc]
-<figure>
     <figcaption>
     Guiding advice from jono
     </figcaption>
