@@ -38,8 +38,8 @@ And about what I was looking for and what I found.
 
 Currently BnB #1 in the **world**.  
 For the first time, the [realms](../kb/realms.md) Grand Prix was taken by a non-Chinese.  
-KLBR were breathing in the back,
-Calculations were so accurate that just one sleepy guildmate could ruin everything. 
+KLBR were breathing in the back, the calculations were so verified that just one sleepy guildmate could ruin the first
+place.  
 But the system built in BnB did it!  
 A lot of human labor has been invested in this victory, for the most part certainly from the leaders and all those
 involved in
@@ -55,7 +55,7 @@ The three pillars behind BnB success
 ## What is BNB?
 
 In fact, BNB is a closed community of highly motivated people whose main goal is
-maximizing the potential of player potential, which will logically affect the results of AbEx as well. (But only
+maximizing the potential of player accounts, which will logically affect the results of AbEx as well. (But only
 kind of!)
 
 ## Discord
@@ -66,8 +66,9 @@ Following jono advice make navigation even easy.
 <figure markdown>
 ![desc][discodesc]
 <figure>
-parting word from jono
-</figcaption>
+    <figcaption>
+    Guiding advice from jono
+    </figcaption>
 </figure>
 <figure markdown>
 ![comp2][discodetails]
@@ -78,8 +79,7 @@ For clarity, you can compare with the ru community
 As for the other 350 channels, the BNB discord is designed in such a way that any person could find not only game related question information, but a place where you can comfortably spend your leisure time and chat / share any aspect their interests.
 
 Everything is done here so that each participant would be as comfortable as possible within the community.
-By the way, there are no strict rules or some kind of, this function is perfectly performed by the server index describing all
-server channels with clearly defined topics and expected content.
+By the way, there are no strict rules or some kind of, this function is perfectly performed by the server index describing all server channels with clearly defined topics and expected content.
 
 As you may have noticed, a separate discord server with a comparable number of channels is used for the abyss.
 At first I assumed that the main purpose of such a decision was to once again emphasize the importance of
@@ -107,6 +107,7 @@ have nothing in common and cannot have:
      - Homogeneous social and civil status
 
 ![nat][national]{align=left width=40%}
+
 To mention, BnB has a very diverse composition on a national basis.
 How non-trivial can be the coordination of people, where everyone is free to do as he sees fit, for many
 English is not a native language, and some do not know it at all?
@@ -117,6 +118,15 @@ I take my hat off to the creators.
 <figure markdown>
 ![op][compo]
 </figure>
+
+## Feedback
+
+/// quote | **FATALITY** ![f][av-fatality]{width=24 .ava}
+The only thing that I don't like about BnB, within AbEx, is a big delay in providing information on the mechanics of packs and their construction.  
+Despite the fact that the information is very detailed and includes many variations of account leveling, you are almost completely unaware of full-fledged packs and their mechanics until the last moment, which compresses the opportunity to test them well.  
+It is obvious to me why this is being done: to avoid possible information leakage.  
+But from the player's point of view, this makes it extremely difficult to effectively allocate time to show the best result.
+///
 
 ## Instead of a conclusion
 
@@ -132,209 +142,12 @@ But right now AbEx still far from it. As
 1. In that given order.
 S1 - S2, were not even about strategy, who was able to manage at least 30 people, to cooperate, already hit the top 100.
 
-In BnB, this is especially clear. And victory in S10 belongs solely to **human skills**.
+In BnB, this is especially clear. And S10 victory belongs solely to **human skills**.
 Tests, calculation of the minimum required relics, **coordination** of such a large number of motley people. These are all merit of human genius.
 The BNB understands this very well and therefore creates all conditions for **for the comfort of people**.
 
 Of course, BR plays a role, which is important to some extent, but for BNB this question is out of scope.
 A strong community always attracts and gathers around itself the most **motivated** and **goal-oriented people**.
-Which is very _natural_, because only in such conditions people can and will show their best qualities.
+Which is very _natural_, because only in such conditions people _can_ and **will** show their best qualities.
 
-## Flying over Cuckoo's Nest
-
-Speaking of the native community, let's start with the classic "problem" of the community - _whales_.
-
-this term doesn't make sense it should in CIS at least, and that's little scary.
-
-/// question | In what topics, in the community, whales are usually mentioned directly or indirectly?
-
-The most of time of course AbEx:
-
-- for GMs, this is a convenient scapegoat.
-   >Why such bad result in AbEx?
-   >Because there are no whales / few / more are needed, and, you know, AbEx all about wallet anyways, so don't take it close
-   (no. [proven](th-retirement.md#comparison-br-guilds-between-s7-and-s8) with particular diligence)
-
-Among f2p/dolphins, they are either sheikhs who have nowhere to put their untold wealth, or oppressors of the feelings of ordinary hard workers.
-
-Recently witness a "<del>witch</del>whalehunt" in No Mercy, a person, not even hiding behind a usual joke / sarcasm, **shame** giuldmate for a donations.
-
-But the whales are missing! really in need!
-Or [here](th-retirement.md#moments) oldone moment"
-///
-/// success | But if you take a moment and think about it...
-it becomes obvious that the whales are not Arabian sheiks. And thing like "extra money" doesn't exist in the world!. Never. Nobody.
-The average whale is just an enthusiastic player, with a strong focus on the competitive component of the game.
-Often, more motivated than average f2p/dolphins, which is manifests itself in the willingness to spend time and money on an interesting/favorite hobby.
-
-///
-
-The reasons for such an attitude sometimes mistakenly attributed as "our national feature", then _kulaks_ (1) to us the oppressors of the working class, then _whales._
-In fact, it is obvious that the first two theses have a clear causal relationship with the subsequent ones.
-The use of such a convenient "justification" for all occasions has its price, the dismorality of a motivated minority is not its only component.
-{ .annotate }
-
-1. Recently I came across the fact that few people have an idea about who _plebeians_ are. _kulaks_ in the mass consciousness to this day are perceived in approximately the same way, in order to avoid a misinterpretation, in case of uncertainty, I recommend looking into the [history of russia][fingerandfist], read about who it is.
-_(link to the English version, since the article in Russian has poor quality, a lot about the attitude towards the kulaks, but there is not even a link to Stolypin's reforms, thanks to which this phenomenon was born from the begining)_
-(TLDR; Fists, in fact, the first peasant entrepreneurs who, as a result of the Stolypin reforms, received property rights in order to make production more efficient. But in the end, this really efficient production somehow did not fit with the planned economy(WOW SUCH UNEXPECTED), so the government decide to rollback rights from people, in a very bloody and inhumane way.)
-
-### An objective assessment of the significance of "whales" within the CIS?
-
-Last AbEx 3(!) CIS Guilds took out all the 5th bosses. Now it's a historical fact.
-
-//// question | Does this mean that they had a chance to compete for the top 1?
-This question does not make sense for two reasons:
-
-1) ["History does not tolerate the subjunctive mood."][nososlog]
-2) If in BnB they calculated optimal relics for the fastest knockout of boss, in CIS didn’t consider this option at all and killing boss  for sure, well, so as not to screw up and fail.
-
-Instead of such speculations, I propose to inquisitive minds to conduct an amusing _thought experiment_, which was once proposed to the traffej, ubivash, and recently, to the sir of Aquilon. (famous GMs within community)
-
-/// example | **Thought experiment**
-1. Let's imagine that a miracle happened and at the start of the abyss, all member swapped accounts with the whale guild (any of the top 5, at your discretion, but of course only accounts).
-2. **Question:** How likely is your guild to _beat_ the already _known_ top 5 whale guild result?
-///
-///details | Interviewees' answers
-     type: new
-
-I don’t remember the exact answers, it was a matter of voice in all cases, but the essence was the same - 0%.
-
-**Experiment Simes**: There is no interest in how many whales you need to take to get a little less shit. Any result below that already achieved is irrelevant.
-More detailed about the dangers of such speculation below.
-
-///
-////
-
-//// details | Digression, S9-S10 stats compare
-    type: tip
-
-Much more interesting is the damage statistics in the cut of guilds, or rather the trend with S9.
-
-![aestat][s10st]
-
-/// warning | DISCLAIMER
-The author does not have the proper experience in **analytics** of data, and by the nature of his activity he is a software architect.
-As a consequence, all the conclusions presented below are just the author's fantasy and are unlikely to be related to objective reality.
-///
-
-Just by looking at the numbers, it's impossible not to notice Aqua's extremely confident performance.
-If in S9 it was the total dominance of NM on all fronts, then in S10 aqua confidently pushed the leader in terms of average.
-Which clearly hints at the fact that a lot of people did a great job trying to get the most out of accounts (_or on most accounts a small group of people played_ ![heh][kappa]{width=24 .skip-lb} ).
-
-But looking at the average performance of the Hurricanes, I can’t imagine what bottom of the barrel Winter scraped together damage to snatch second place.
-I would venture to suggest that the gi has obvious problems with the coordination / motivation of the composition and, as a result, a lot of mistakes, presumably many had to be pulled out to break through with pitchforks and torches.
-
-There is nothing special to say about NM, the newly coordinated game, judging by the numbers, played a bet on key players + competent distribution of resources, as a result, they calmly filled up the flippers, at their own pace, with an obvious margin.
-
-Summarizing S10,
-The fact that after the triumphant victory post posted by the sire, the Huriks passed Aqua at the finish line, delivered a lot of lulz to the community.
-Nevertheless, in my opinion, the Aquilonians were stronger, they showed a well-coordinated team game, but most importantly, they demonstrated their potential!
-As part of the CIS scene, this is a strong application and a definite like!
-////
-
-## Death Omens
-
-Returning to the question of why "_speculative rhetoric among community leaders_", this is clearly a disturbing and destructive factor for the competitive part of the community.
-
- and whales is already visible to the naked eye, and there is not much fresh blood.
-Old people, often, no longer take out the degree of general toxicity.
-
-/// tips | Interesting fact
-Sirushka often in her jokes, in one form or another, accuses Rezz of whaling, calls him a "whale hunter".
-At first glance, it may seem that way, but in reality, Rezz does not have to strain himself much, there is no need to hunt if the whales themselves swim towards you.
-If we characterize the role of Rezz in this... for my taste, the image of an undertaker or a churchman, the funeral of whales leaving for their last journey, is more appropriate here.
-///
-/// question | How many whales returned to the rotation in their home community? :)
-
-After NMA, there are usually two ways:
-
-- You know the language and have a desire - foreign guilds
-- If leaving the native swamp is not an option, then to premature[^yoba] rest.
-
-///
-
-Why is this happening?
-The answer lies on the surface, you just need to pay attention.
-
-The Russian community does not yet have a guild that would help/encourage a motivated person to reveal their gaming potential.
-The entertainment menu of guilds for the player is +/- the same in the community.
-
-/// define
-
-CIS Menu
-
-| Dish                                                                                              | Avail                                                                                     |
-|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| like to head hunt whales[^hh]?                                                                    | Welcome, all-season fun.                                                                  |
-| Fan of 007 series?                                                                                | There is where to turn around, secret strategies for the abyss will not steal themselves. |
-| Or maybe you are looking for your sworn enemy or dreaming of declaring war on someone in the CIS? | it's on the menu.                                                                         |
-| Are you fond of speculation, do you like conspiracy theories, and theorycraft in general?         | In abundance.                                                                             |
-| Rich experience in sofa analytics?                                                                | Come here dear.                                                                           |
-| Do you get high from emotional moments and dramas?                                                | Surprise around every corner.                                                             |
-| Oh yes, there are also various strict rules that must be observed.                                | For what?                                                                                 |
-| To be a cool guy.                                                                                 | I mean, what does this have to do with the game?                                          |
-
-`It will take a little from you, a little routine in the abyss.`
-///
-
-As you can see, community activists are busy people, there is not always enough time for the game.
-So just to play we have a rare guest. But on the abyss, limited edition, can be seen on the menu.
-The choice of toppings, of course, is not very rich, mostly whining and snot, but, as they say, what is rich and happy about it.
-
-What can be offered to a person who just wants to measure his strength in the GAME, in a pleasant company?
-I pay tribute to the stencil, he openly said that he did not know what he could offer a whale who wanted to play in the abyss.
-
-Jokes aside, the absolute lack of understanding of the needs of the players is due to a _lack of experience / _low level of knowledge_ in the field of management / leadership.
-
-Resulting:
-
-- Communities built on archaic principles and concepts, which, for the most part, are alien to the player.
-- Feedback, in its infancy, is available in a limited number of guilds.
-   Needless to say, how does this contribute to the discovery of the needs of players who would like to keep?
-   People are often surprised at the outflow of people, but it never occurs to ask about the reasons.
-   But the funniest and the scariest at the same time, if a person **himself** comes with feedback to the leaders, they often see anything in this: an opinion, an idea, a point of view, an assumption, a complaint, an insult, a personal claim, dissatisfaction, etc. . but no feedback.
-  There is a suspicion that leaders simply do not understand the fundamental difference between feedback and some of the similar examples given.
-  The importance and power of feedback is easy to underestimate, which is a very big mistake.
-  The skill of competent and timely work with feedback can build a strong community in solo.
-- Detailed post-analytics on the results of team competitions, for unknown reasons, is not held in high esteem. It is not known to disassemble mistakes or they are afraid or complex. The consequences of this may not be obvious, but it is very important for the development, both personal and the entire guild. Analysis of errors and cause-and-effect relationships is a basic development mechanism inherent in us by nature.
-    Ignoring it, people not only lose **the very opportunity** for growth/development, but are left alone with questions about how it happened, what happened, what happened.
-
-    After the abyss, there were rumors about the dissolution of the Hurrics, and information about Winter's comments.
-    In which many personal reasons are indicated (work / business / family), but not a word about the guild. Bravo.
-
-And this list can be continued for a long time.
-
-All this paints a sad picture of a dying community, strangled by its own leaders.
-Of course, there is no malicious intent here, they are not even aware of the consequences of their actions.
-And here there is no one's personal fault, the fact is that in the CIS, in principle, there is a big problem with competent managers.
-
-It is important to say that not a single gram of pessimism is invested in the words.
-The main message: the current situation is not a sentence, it _can_ and **should** work with it, you just need to find the strength to realize it.
-
-It is still a mystery to me why, under the circumstances, GMs believed so much in recruiting, in which, by the way, they pumped quite well.
-But this is not a very simple craft, but it would be time to pump up other equally imtent killerportant skills.
-
-The statement from the beginning of the post that everything is the same in the BNB turned out to be erroneous.
-There are no close or remotely similar problems, and perhaps this is what, to a greater extent, distinguishes it from any of our communities.
-
-Of course, there are problems and there is room for improvement.
-But the leaders clearly see the course and this is very encouraging.
-
-### P.S. for Prodota
-
-If this post was caught by a Prodota member, and he got to these lines (thank you!), this postscript is for you and your mates.
-
-During a recent Солнышко visit to the capital, conveyed gratitude on behalf of PD (did not mention any names) for the AbEx | Helper.
-Says it was useful for ya. If so, I want to express gratitude in return, as it extremely pleasant and very important for me.
-
-As you can see, ima lack of feedback tools :D, so I had no idea if it was useful to someone or not.
-Get sure that it was extremely important! This gives strength and motivation to further develop the resource, thank you!
-
-### P.S.S. for all curious
-
-Also wanted to share in this post about an amazing offtopic channel discovered in  BNB.
-But it didn't fit. If anyone is interested / curious, please give feedback in any form.
-Then I will write a separate post with a slightly more detailed overview of the BNB discord.
-
-[^yoba]: Premature because the desire to play is still there, but cannot handle toxic attitude anymore.
-[^hh]: Recruiting/search/recruiting is implied, not the blatant horror described earlier.
+[Post about CIS Community can be found here](cis.md)
