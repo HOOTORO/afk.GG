@@ -1,6 +1,6 @@
 ---
 title: To be "BackNBlack"
-description: Worlds Ranked \#1 BackNBlack, behind the scene
+description: Worlds Ranked `#1 BackNBlack, behind the scene
 author: HOOTSMAN, Лев Николаевич
 draft: true
 ---
@@ -60,7 +60,7 @@ kind of!)
 
 ## Discord
 
-When first get into the "black" discord, a truly incredible amount of content opens up to your eyes.
+When first get into the "black" discord, a truly incredible amount of content opens up to your eyes.  
 In BnB, there is some prohibitive number of channels dedicated directly to the game itself, there are 50+ of them, despite huge amount, channels are well categorized.
 Following jono advice make navigation even easy.
 <figure markdown>
@@ -77,25 +77,25 @@ For clarity, you can compare with the ru community
 </figure>
 As for the other 350 channels, the BNB discord is designed in such a way that any person could find not only game related question information, but a place where you can comfortably spend your leisure time and chat / share any aspect their interests.
 
-Everything is done here so that each participant would be as comfortable as possible within the community.
+Everything is done here so that each participant would be as comfortable as possible within the community.  
 By the way, there are no strict rules or some kind of, this function is perfectly performed by the server index describing all server channels with clearly defined topics and expected content.
 
-As you may have noticed, a separate discord server with a comparable number of channels is used for the abyss.
+As you may have noticed, a separate discord server with a comparable number of channels is used for the abyss.  
 At first I assumed that the main purpose of such a decision was to once again emphasize the importance of
 events, but when I saw the total number of channels, it became obvious that the placement of all this on the farm on one
-server would be hell for any manager (who has access to all/most of these channels).
+server would be hell for any manager (who has access to all/most of these channels).  
 But even despite the initial reasons for such a decision, this does not detract from the above positive bonus + open
 opportunities for organizing / distributing key coordinators specifically for the abyss and easy management of role-playing
 accesses, without the need to embed them in the role model of the main server of the community.
 
 ## Organizational structure
 
-Pay attention to the reddit article, Compo's final words :
+Pay attention to the reddit article, Compo's final words:  
 > Shout out to all of leadership at BnB for your hard work, coordinating 193 people in a mobile game for two weeks isn't
 > an easy task!
 
 **193** is the exact number of _active_ BNB abyss players, just wonder what it's like to coordinate 193 people? Using army terminology, the guild (70 people) is considered a [company][rota] soldier, and 193 is the maximum size
-companies. It takes at least 5 people to manage that many people(and this is not counting the commanders of the platoons and squads of which the company consists).
+companies. It takes at least 5 people to manage that many people(and this is not counting the commanders of the platoons and squads of which the company consists).  
 But the analogy with the army is not appropriate, in the case of BnB especially, because the mobile gacha and army
 have nothing in common and cannot have:
 
@@ -107,12 +107,12 @@ have nothing in common and cannot have:
 
 ![nat][national]{align=left width=40%}
 
-To mention, BnB has a very diverse composition on a national basis.
-How non-trivial can be the coordination of people, where everyone is free to do as he sees fit, for many
-English is not a native language, and some do not know it at all?
+To mention, BnB has a very diverse composition on a national basis.  
+How non-trivial can be the coordination of people, where everyone is free to do as he sees fit, for many  
+English is not a native language, and some do not know it at all?  
 
-Although the analogy is not appropriate, in the BNB approach to the abyss is extremely serious and the organizational structure consists of more than two levels of coordinators and it turns out to some extent follows the canons of the military craft.
-System created by BnB has clearly shown its effectiveness.
+Although the analogy is not appropriate, in the BNB approach to the abyss is extremely serious and the organizational structure consists of more than two levels of coordinators and it turns out to some extent follows the canons of the military craft.  
+System created by BnB has clearly shown its effectiveness.  
 I take my hat off to the creators.
 <figure markdown>
 ![op][compo]
@@ -132,21 +132,21 @@ But from the player's point of view, this makes it extremely difficult to effect
 Even before BNB, it was obvious to me that a good result (1) in the AbEx (_and not only_) is mostly organization / coordination, calculation, strategy (building) (2), and the BR is not even in the top five in importance.
 { .annotate }
 
-1. Implies around [top 100 : top 10].
+1. Implies around [top 100 : top 10].  
 It is important to understand here that above the top 10, this is a completely different league.
 But **even** there the BR difference is still not a prevailing factor, take a look at pic.
 obviously in any sport/competition, the higher league, the closer general skill of all participants, so smallest difference can become crucial.
-But right now AbEx still far from it. As
-![br][bnbr]
+But right now AbEx still far from it.  
+![br][bnbbr]
 1. In that given order.
 S1 - S2, were not even about strategy, who was able to manage at least 30 people, to cooperate, already hit the top 100.
 
-In BnB, this is especially clear. And S10 victory belongs solely to **human skills**.
+In BnB, this is especially clear. And S10 victory belongs solely to **human skills**.  
 Tests, calculation of the minimum required relics, **coordination** of such a large number of motley people. These are all merit of human genius.
-The BNB understands this very well and therefore creates all conditions for **for the comfort of people**.
+The BNB understands this very well and therefore creates all conditions for **for the comfort of people**.  
 
-Of course, BR plays a role, which is important to some extent, but for BNB this question is out of scope.
-A strong community always attracts and gathers around itself the most **motivated** and **goal-oriented people**.
+Of course, BR plays a role, which is important to some extent, but for BNB this question is out of scope.  
+A strong community always attracts and gathers around itself the most **motivated** and **goal-oriented people**.  
 Which is very _natural_, because only in such conditions people _can_ and **will** show their best qualities.
 
 [Post about CIS Community can be found here](cis.md)
