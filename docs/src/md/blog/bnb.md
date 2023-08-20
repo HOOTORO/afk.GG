@@ -1,8 +1,8 @@
 ---
-title: To be "BackNBlack"
+title: To Be "BackNBlack"
 description: Worlds Ranked `#1 BackNBlack, behind the scene
 author: HOOTSMAN, Лев Николаевич
-draft: true
+comments: true
 ---
 
 /// warning | DISCLAIMER

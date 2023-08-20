@@ -264,5 +264,4 @@
 [aq-s8]: https://disk.yandex.ru/i/5mK5cUF_7wCwCg
 [aq-s9]: https://disk.yandex.ru/i/Ch9aJMGBVJTITg
 
-
 [av-fatality]: https://cdn.discordapp.com/avatars/259798687188910081/e821630d510d492b3678a207f4344bea.webp

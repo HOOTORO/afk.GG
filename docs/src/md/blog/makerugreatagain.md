@@ -4,6 +4,7 @@ description: >
   Мысли о причинах токсичности в СНГ части AFK Arena
 author: HOOTSMAN, Лев Николаевич
 template: main.html
+comments: true
 ---
 /// warning | DISCLAIMER 
 

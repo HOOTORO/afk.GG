@@ -5,6 +5,7 @@ description: >-
 author: "HOOTSMAN, Лев Николаевич"
 date: 2022-11-11
 template: main.html
+comments: true
 ---
 
 /// example | Good night sweet prince

@@ -5,6 +5,7 @@ description: >-
 author: HOOTSMAN, Лев Николаевич
 date: 2023-06-10
 template: main.html
+comments: true
 ---
 ## Хронология события
 

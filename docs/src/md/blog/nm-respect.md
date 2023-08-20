@@ -5,6 +5,7 @@ description: >-
 author: HOOTSMAN, Лев Николаевич
 date: 23-03-02
 template: main.html
+comments: true
 ---
 
 /// new | **«Беспощадные[^tn]» соги!**
