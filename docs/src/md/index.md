@@ -15,6 +15,7 @@ template: home.html
 
 === "Новшества"
 
+    - [x] Два поста: [Way of BnB](blog/bnb.md) и [рестроспективный взгляд на родное сообщество](blog/cis.md)
     - [x] [Результаты СНГ AbEx S10](guilds/abex.md).
     - [x] [Расчет времени ожидания ранга](kb/abex.md)  для AbEx.
     - [x] [Калькулятор стамины/ретраев](kb/abex.md)  для AbEx.
