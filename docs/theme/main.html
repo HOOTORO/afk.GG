@@ -27,7 +27,12 @@
 {{ page.content }}
 <hr />
 {% include "templates/section/metainf.j2" %}
+{% include "partials/feedback.html" %}
 {% endblock content %}
+
+{% block analytics %}
+{{ super() }}
+{% endblock %}
 
 {% block scripts %}
 
@@ -37,7 +42,6 @@
 {% endblock scripts %}
 
 {% block footer %}
-
 {{ super() }}
 {{ page.footer }}
 {% endblock footer %}

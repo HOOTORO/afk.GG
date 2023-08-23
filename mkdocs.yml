@@ -96,15 +96,6 @@ nav:
           - game/drop.md
           - game/iog.md
 
-extra_css:
-  - css/main.css
-  - css/extra.css
-extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - js/tablesort.js
-  - js/ts/util/linker.js
-
 plugins:
   - search:
       lang: ru
@@ -221,6 +212,21 @@ extra:
   analytics:
     provider: google
     property: G-KZYV31PZDD
+    feedback:
+      title: Do you like what you see?
+      ratings:
+        - icon: octicons/heart-fill-24
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: octicons/x-circle-24
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! <br>
+            Help us improve this page by
+            leaving feedback in <a href="https://discord.gg/xjJavhAvv6" rel="noopener noreferrer" target="_blank">discord</a>
   social:
     - icon: fontawesome/brands/discord
       link: https://discordid.netlify.app/?id=88370628763078656
@@ -236,3 +242,13 @@ extra:
     actions:
       - accept
       - manage
+
+extra_css:
+  - css/main.css
+  - css/extra.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - js/tablesort.js
+  - js/feedback.js
+  - js/ts/util/linker.js

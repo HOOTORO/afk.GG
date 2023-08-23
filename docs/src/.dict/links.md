@@ -214,4 +214,6 @@
 [aq-s9]: https://disk.yandex.ru/i/Ch9aJMGBVJTITg
 [aq-s10]: https://disk.yandex.com/i/543k7N0fMcAxMg
 
+<!-- avatars -->
+
 [av-fatality]: https://cdn.discordapp.com/avatars/259798687188910081/e821630d510d492b3678a207f4344bea.webp

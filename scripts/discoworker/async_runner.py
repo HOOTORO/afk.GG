@@ -24,8 +24,8 @@ class MemeScrapper(discord.Client):
 
     async def on_ready(self):
         print(f'Logged in as {self.user} (ID: {self.user.id})')
-        emos = self.emojis
-        await load_emojis(emos)
+        # emos = self.emojis
+        # await load_emojis(emos)
         print('------')
 
     async def my_background_task(self):
@@ -56,7 +56,6 @@ def get_memes():
 
 
 async def load_emojis(emo):
-        print(emo)
         if os.path.exists("docs/theme/assets/disco.db"):
             os.remove("docs/theme/assets/disco.db")
         con = sqlite3.connect("docs/theme/assets/disco.db")
@@ -68,7 +67,6 @@ async def load_emojis(emo):
             if em.animated:
                 ext = ".gif"
             link = f'https://cdn.discordapp.com/emojis/{em.id}{ext}'
-            print(link)
             cur.execute(f'INSERT INTO emos VALUES("{em.name}", "{link}")')
             con.commit()
 
