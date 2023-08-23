@@ -218,6 +218,9 @@ markdown_extensions:
       check_paths: true
 
 extra:
+  analytics:
+    provider: google
+    property: G-KZYV31PZDD
   social:
     - icon: fontawesome/brands/discord
       link: https://discordid.netlify.app/?id=88370628763078656
