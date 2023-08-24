@@ -48,4 +48,15 @@ template: home.html
     - [x] репа стремительно растет, подумать куда и как переносить ассеты (размазал самые тяжелые вложения по облакам)
     - [x] Исправить баг в мемасах и расчетах ресурсов (иногда не подгружаются при первом заходе, обходится обновлением страницы)
 
+=== "Поддежать Aвтора"
+    _Donations always appreciated, but never needed_.
+    
+    [CloudTips](https://pay.cloudtips.ru/p/5587246e)
+    
+    ![t](qrCode.jpg){width=256}
+    
+    [На развитие китайской экономики (QIWI)](https://donate.qiwi.com/payin/HOOTORO)
+
 ////
+    <!--   
+    <iframe width="500" height="500" src="https://donate.qiwi.com/widgets/b57c713d-e223-4caa-8b2e-7e21342e16fb" allowtransparency="true" scrolling="no" frameborder="0"></iframe> -->
