@@ -1814,8 +1814,10 @@ span > img {
 }
 
 .resized {
-  width: 90vw;
+  width: 80%;
   border-radius: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 output > div {
