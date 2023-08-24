@@ -83,6 +83,7 @@ nav:
           - guilds/disen.md
   - Хуторок Льва Николаевича<br>Posts:
       - blog/index.md
+      - donate.md
       - Blog:
           - blog/cis.md
           - blog/bnb.md
@@ -95,6 +96,9 @@ nav:
           - game/modes.md
           - game/drop.md
           - game/iog.md
+      - ML Translated Posts:
+          - blog/cis-en.md
+          - blog/bnb-en.md
 
 plugins:
   - search:

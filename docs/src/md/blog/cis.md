@@ -5,6 +5,8 @@ author: HOOTSMAN, Лев Николаевич
 comments: true
 ---
 
+[English ver.](cis-en.md)
+
 ## Intro
 
 Начать можно с классической "проблемы" сообщества - _китов_.

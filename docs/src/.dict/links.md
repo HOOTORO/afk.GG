@@ -200,6 +200,97 @@
 [iogr]: https://media.discordapp.net/attachments/1130528875961651371/1137717695924686908/102.jpg
 [brcompare]: https://media.discordapp.net/attachments/1130528875961651371/1141577266346868858/unknown.png
 
+<!--  Aquilon Criminal -->
+
+[tro]: https://media.discordapp.net/attachments/976976670345035796/1128350253138067486/input0.jpg
+[1]: https://media.discordapp.net/attachments/976976670345035796/1128345931146854552/image-15.jpg
+[2]: https://media.discordapp.net/attachments/976976670345035796/1128346032963596318/image-16.jpg
+[3]: https://media.discordapp.net/attachments/976976670345035796/1128346033286553650/image-17.jpg
+[6]: https://media.discordapp.net/attachments/976976670345035796/1128346033584341043/image-18.jpg
+<!-- [7]: https://media.discordapp.net/attachments/976976670345035796/1128346033844400159/image-19.jpg -->
+[8]: https://www.consultant.ru/document/cons_doc_LAW_10699/4641cfe1bdfab945ead3ae228d36c3e8141dd9f1/
+[9]: https://www.consultant.ru/document/cons_doc_LAW_10699/8012ecdf64b7c9cfd62e90d7f55f9b5b7b72b755/
+[10]: https://www.consultant.ru/document/cons_doc_LAW_10699/598fbbd993948ff493e853c0845161561b01f0a5/
+[11]: https://www.consultant.ru/document/cons_doc_LAW_10699/d260e55e06d1e6bc720d2e591a8383a43b1a5eed/
+[12]: https://www.consultant.ru/document/cons_doc_LAW_10699/c193654ae5c3bd5b02d92ade18796cd8864ec353/
+[14]: https://www.consultant.ru/document/cons_doc_LAW_10699/8727611b42df79f2b3ef8d2f3b68fea711ed0c7a/
+[15]: https://www.consultant.ru/document/cons_doc_LAW_10699/3cf93ca64f2a009e75430fc6394b66a3642ba176/
+
+[x1]: https://cdn.discordapp.com/attachments/1121769153611694110/1122601065418854580/SmartSelect_20230528_162134_Discord.png
+[x2]: https://media.discordapp.net/attachments/1117035695094124636/1124529009162731630/image.png
+[x3]: https://cdn.discordapp.com/attachments/976976670345035796/1126439066389463050/image.png
+[x4]: https://media.discordapp.net/attachments/976976670345035796/1126447142899290193/image.png
+[x5]: https://media.discordapp.net/attachments/976976670345035796/1126447982850605066/image.png
+[x6]: https://cdn.discordapp.com/attachments/976976670345035796/1126449994539470918/image.png
+[treat]: https://cdn.discordapp.com/attachments/1121769153611694110/1121896773779198003/5a95ff8d-a836-4111-adc0-aea465b66951.png
+[darmamu]: https://media.discordapp.net/attachments/1121769153611694110/1121902025735680070/b2fef5b0-1c81-408c-8eaf-13a16739b9c1.png
+[origin]: https://media.discordapp.net/attachments/976976670345035796/1124059283458367599/image.png
+[c1]: https://media.discordapp.net/attachments/976976670345035796/1128347394602438686/image-20.jpg
+[c2]: https://media.discordapp.net/attachments/976976670345035796/1128347394858295347/image-21.jpg
+[c3]: https://media.discordapp.net/attachments/976976670345035796/1128347395122532478/image-22.jpg
+[s1]: https://media.discordapp.net/attachments/976976670345035796/1128347395403563059/image-23.jpg
+[s2]: https://media.discordapp.net/attachments/976976670345035796/1128347395982368868/image-24.jpg
+[s3]: https://media.discordapp.net/attachments/976976670345035796/1128347396317909053/image-26.jpg
+[a1]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311255386173591/Screenshot_2023-06-30-14-04-16-097_com.discord-edit.jpg
+[a2]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311255704936519/Screenshot_2023-06-30-14-03-00-045_com.discord-edit.jpg
+[aa1]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311256006930474/Screenshot_2023-06-30-14-03-17-371_com.discord-edit.jpg
+[aa2]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311256896131204/Screenshot_2023-06-30-15-09-48-167_com.discord-edit.jpg
+[aa3]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311257193918494/Screenshot_2023-06-30-15-10-13-650_com.discord-edit.jpg
+[a3]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311256384413818/Screenshot_2023-06-30-14-03-31-537_com.discord-edit.jpg
+[a4]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311257445572638/Screenshot_2023-06-30-15-10-32-872_com.discord-edit.jpg
+[a5]: https://cdn.discordapp.com/attachments/1124196118910206013/1124390789926092950/image.png
+[a6]: https://cdn.discordapp.com/attachments/976976670345035796/1124392796606976051/image.png
+[a7]: https://media.discordapp.net/attachments/1124196118910206013/1124429555201998999/Screenshot_2023-06-30-22-57-32-849_com.discord-edit.jpg
+[a8]: https://media.discordapp.net/attachments/1124196118910206013/1124429555504009296/Screenshot_2023-06-30-22-58-02-608_com.discord-edit.jpg
+[a9]: https://media.discordapp.net/attachments/1124196118910206013/1124429555764039833/Screenshot_2023-06-30-22-58-19-332_com.discord-edit.jpg
+[a10]: https://media.discordapp.net/attachments/1124196118910206013/1124429556040859719/Screenshot_2023-06-30-22-58-38-312_com.discord-edit.jpg
+[a11]: https://cdn.discordapp.com/attachments/1124196118910206013/1124429556846170213/Screenshot_2023-06-30-22-59-19-052_com.discord-edit.jpg
+[a12]: https://media.discordapp.net/attachments/1124196118910206013/1124429556531613796/Screenshot_2023-06-30-22-59-01-384_com.discord-edit.jpg
+[a13]: https://cdn.discordapp.com/attachments/1124196118910206013/1124429557508866098/Screenshot_2023-06-30-23-00-01-400_com.discord-edit.jpg
+[a14]: https://cdn.discordapp.com/attachments/1124196118910206013/1124429557173342380/Screenshot_2023-06-30-22-59-40-287_com.discord-edit.jpg
+[l1]: https://media.discordapp.net/attachments/976976670345035796/1128349788769898546/image.jpg
+[l2]: https://media.discordapp.net/attachments/976976670345035796/1128348325159125163/image-1.jpg
+[l3]: https://media.discordapp.net/attachments/976976670345035796/1128348325461106718/image-2.jpg
+[l4]: https://media.discordapp.net/attachments/976976670345035796/1128348325985406996/image-3.jpg
+[l5]: https://media.discordapp.net/attachments/976976670345035796/1128348326262226985/image-4.jpg
+[l6]: https://media.discordapp.net/attachments/976976670345035796/1128348326564208731/image-5.jpg
+[l7]: https://media.discordapp.net/attachments/976976670345035796/1128348326870401146/image-6.jpg
+[l8]: https://media.discordapp.net/attachments/976976670345035796/1128348327386292254/image-7.jpg
+[l9]: https://media.discordapp.net/attachments/976976670345035796/1128348327709265950/image-8.jpg
+[l10]: https://media.discordapp.net/attachments/976976670345035796/1128348328036409464/image-9.jpg
+[l11]: https://media.discordapp.net/attachments/976976670345035796/1128348328334217256/image-10.jpg
+[l12]: https://media.discordapp.net/attachments/976976670345035796/1128349388511662160/image-11.jpg
+[l13]: https://media.discordapp.net/attachments/976976670345035796/1128349388784287775/image-12.jpg
+[l14]: https://media.discordapp.net/attachments/976976670345035796/1128349389035933787/image-13.jpg
+[l15]: https://media.discordapp.net/attachments/976976670345035796/1128349389287608383/image-14.jpg
+[notgay]: https://media.discordapp.net/attachments/976976670345035796/1128351848147976283/image-15.png
+[moo]: https://media.discordapp.net/attachments/976976670345035796/1128349697761869835/image-0.jpg
+[vias]: https://cdn.discordapp.com/attachments/1128503638470447154/1128503812596969533/assmodeus.webm
+[aqvon0]: https://media.discordapp.net/attachments/1130528875961651371/1144191280205803621/imge.jpg
+[aqvon27]: https://media.discordapp.net/attachments/1130528875961651371/1144191148278169700/image-27.jpg
+[aqvon28]: https://media.discordapp.net/attachments/1130528875961651371/1144191431964106812/image-28.jpg
+[aqvon29]: https://media.discordapp.net/attachments/1130528875961651371/1144191483558232144/image-29.jpg
+[aqvon30]: https://media.discordapp.net/attachments/1130528875961651371/1144191483843465256/image-30.jpg
+[aqvon31]: https://media.discordapp.net/attachments/1130528875961651371/1144191484107690024/image-31.jpg
+[aqvon32]: https://media.discordapp.net/attachments/1130528875961651371/1144191484397092976/image-32.jpg
+[aqvon33]: https://media.discordapp.net/attachments/1130528875961651371/1144191484619411466/image-33.jpg
+[aqvon34]: https://media.discordapp.net/attachments/1130528875961651371/1144191484858470512/image-34.jpg
+[aqvon35]: https://media.discordapp.net/attachments/1130528875961651371/1144191485126901820/image-35.jpg
+[aqvon36]: https://media.discordapp.net/attachments/1130528875961651371/1144191485441495050/image-36.jpg
+[aqvon37]: https://media.discordapp.net/attachments/1130528875961651371/1144191485718302750/image-37.jpg
+[aqvon38]: https://media.discordapp.net/attachments/1130528875961651371/1144191485944791110/image-38.jpg
+<!-- [aqvon]:  -->
+
+<!--  dog dream -->
+
+[spybig]: https://cdn.discordapp.com/attachments/976976670345035796/1126439865815412777/image.png
+[spysmall]: https://cdn.discordapp.com/attachments/976976670345035796/1126440177829679154/image.png
+[spyfail]: https://cdn.discordapp.com/attachments/976976670345035796/1126440868392480799/image.png
+[remember]: https://media.discordapp.net/attachments/976976670345035796/1126441038102397059/image.png
+[dodr11]: https://media.discordapp.net/attachments/1130528875961651371/1144201164104142940/11.jpg
+[dodr13]: https://media.discordapp.net/attachments/1130528875961651371/1144201164339032094/13.jpg
+[dodr14]: https://media.discordapp.net/attachments/1130528875961651371/1144201164611657748/14.jpg
+
 <!--  IoG -->
 [iog-log]: https://media.discordapp.net/attachments/1130528875961651371/1137946092093321357/log.jpg
 [iog-res]: https://media.discordapp.net/attachments/1130528875961651371/1137946092886053025/result.jpg
@@ -217,3 +308,8 @@
 <!-- avatars -->
 
 [av-fatality]: https://cdn.discordapp.com/avatars/259798687188910081/e821630d510d492b3678a207f4344bea.webp
+[13]: ../assets/avatars/hootsman.webp
+[4]: ../assets/avatars/assmodeus.webp
+[5]: ../assets/avatars/deliav.webp
+[16]: ../assets/avatars/moon.webp
+[17]: ../assets/avatars/sir.webp

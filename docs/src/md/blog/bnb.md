@@ -5,6 +5,8 @@ author: HOOTSMAN, Лев Николаевич
 comments: true
 ---
 
+[English ver.](bnb-en.md)
+
 /// warning | DISCLAIMER
 _Техническую сторона вопроса стратегии БнБ в последней бездне, можно посмотреть
 тут_[:fontawesome-brands-reddit:{.reddit}][strategy].  

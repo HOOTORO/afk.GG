@@ -267,3 +267,7 @@ h2 {
 [data-md-component="announce"] .twemoji {
   color: var(--md-primary-fg-color);
 }
+
+.md-nav__item--section>.md-nav__link[for] {
+  color: var(--md-accent-fg-color)
+}

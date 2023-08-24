@@ -204,8 +204,6 @@ _Сир_ уже думает, что существует Коалиция "АН
     </video>  
 </center>
 
-<!-- ![aa](https://cdn.discordapp.com/attachments/1128503638470447154/1128503812596969533/assmodeus.webm) -->
-
 В войсе помимо меня был Сир и зам Бореас, поднялась тема бездны, хотел отыграть в Eternum, но Сир в приказном порядке говорит отыграть в Акве, мотивируя:
 > вы получили аккаунты благодаря Акве, вы мне обязаны
 
@@ -228,17 +226,17 @@ _Сир_ уже думает, что существует Коалиция "АН
 
 === "Ингвар"
     Написал ему в телеграмме  
-    ![Alt text](../assets/images/aquavon/imge.jpg)  
+    ![Alt text][aqvon0]  
     Он так и не ответил.  
 
 === "Альт. #1"
     Параллельно начал искать альтернативные варианты  
     Узнавал у другого соги Аквы, может ли он выкупить аккаунт.  
-    ![Alt text](../assets/images/aquavon/image-27.jpg)
-    ![Alt text](../assets/images/aquavon/image-28.jpg)
+    ![Alt text][aqvon27]  
+    ![Alt text][aqvon28]  
 
 === "Альт. #2"
-    ![Alt text](../assets/images/aquavon/image-29.jpg)
+    ![Alt text][aqvon29]  
 
 ***
 
@@ -254,27 +252,26 @@ _Пох_: Мы же договаривались[^deal].
 Вышел с войса т.к. предложений о выкупе аккаунта не было.
 <figure markdown>
 
-![Alt text](../assets/images/aquavon/image-30.jpg){width=700}
-![Alt text](../assets/images/aquavon/image-31.jpg){width=700}
-![Alt text](../assets/images/aquavon/image-32.jpg){width=700}
+![Alt text][aqvon30]{ .resized }
+![Alt text][aqvon31]{ .resized }
+![Alt text][aqvon32]{ .resized }
 <figcaption>???</figcaption>
-
 </figure>
 В это же время поиски альтернативы приносят первые плоды
 === "Screenshot #1"
-    ![Alt text](../assets/images/aquavon/image-33.jpg){width=700}
+    ![Alt text][aqvon33]{ .resized }
 
 === "Screenshot #2"
-    ![Alt text](../assets/images/aquavon/image-34.jpg){width=700}
+    ![Alt text][aqvon34]{ .resized }
 
 Вроде появилась надежда, но...
 
 === "№1"
-    ![Alt text](../assets/images/aquavon/image-35.jpg)  
+    ![Alt text][aqvon35]  
     После этого успеваю привязать свой гугл к аккаунту.
 
 === "№2"
-    ![Alt text](../assets/images/aquavon/image-36.jpg)  
+    ![Alt text][aqvon36]  
     Видимо pohoyoo все же уболтал _Elitsire_ поменять пароли.
 
 Источник из совета:
@@ -295,13 +292,12 @@ _Пох_: Мы же договаривались[^deal].
 Из разговора узнаю о нестыковках с договоренностями _pohoyoo_. Оказалось, что вдобавок Пох наговорил Элитсир'у, будто дал мне ВРЕМЕННО аккаунт.  
 <figure markdown>
 
-![Alt text](../assets/images/aquavon/image-37.jpg)
-<figcaption></figcaption>
+![Alt text][aqvon37]
 </figure>
 
 <figure markdown>
 
-![Alt text](../assets/images/aquavon/image-38.jpg)
+![Alt text][aqvon38]
 <figcaption>Пишу Поху</figcaption>
 </figure>
 
@@ -353,38 +349,42 @@ _Заключение_: с моей стороны был косяк, что м�
 //// quote | _**Sir Eblo 2000**_ ![sir][17]{width=24 .ava}
 
 <figure markdown>
-![ho][a1]{width=600}
-![ho][a2]{width=600}
+    
+![ho][a1]{ .resized }
+![ho][a2]{ .resized }
 </figure>
 /// details | Примеры ОСТОРОЖНО! МНОГО НЕНОРМАТИВНОЙ ЛЕКСИКИ
     type: danger
 
     <figure markdown>
-    ![ho][aa1]{width=600}
-    ![ho][aa2]{width=600}
-    ![ho][aa3]{width=600}
+        
+    ![ho][aa1]{ .resized }
+    ![ho][aa2]{ .resized }
+    ![ho][aa3]{ .resized }
     </figure>
 ///
 
 <figure markdown>
-![ho][a3]{width=600}
-![ho][a4]{width=600}
-![ho][a5]{width=600}
-![ho][a6]{width=600}
+    
+![ho][a3]{ .resized }
+![ho][a4]{ .resized }
+![ho][a5]{ .resized }
+![ho][a6]{ .resized }
 </figure>
 
 /// details | Продолжение содержит ненормативную лексику, которую не убрать/замазать без вреда содержанию. Ознакамливаться на свой страх и риск
     type: warning
 
     <figure markdown>
-    ![ho][a7]{width=600}
-    ![ho][a8]{width=600}
-    ![ho][a9]{width=600}
-    ![ho][a10]{width=600}
-    ![ho][a12]{width=600}
-    ![ho][a11]{width=600}
-    ![ho][a14]{width=600}
-    ![ho][a13]{width=600}
+        
+    ![ho][a7]{ .resized }
+    ![ho][a8]{ .resized }
+    ![ho][a9]{ .resized }
+    ![ho][a10]{ .resized }
+    ![ho][a12]{ .resized }
+    ![ho][a11]{ .resized }
+    ![ho][a14]{ .resized }
+    ![ho][a13]{ .resized }
     </figure>
 ///
 ////
@@ -409,7 +409,7 @@ _Заключение_: с моей стороны был косяк, что м�
 Очень доставили местные мемоделы :grin:  
 <figure markdown>
 
-![mem][x2]{width=600}
+![mem][x2]{ .resized }
 <figcaption>Жаль что оттепель быстро закончилась.<figcaption>
 </figure>
 
@@ -423,77 +423,3 @@ _Заключение_: с моей стороны был косяк, что м�
 
 [^leave]: Тут Assmodeus подразумевает [этот пост Сира][darmamu]
 [^t]: такие к [примеру][treat]
-
-[tro]: https://media.discordapp.net/attachments/976976670345035796/1128350253138067486/input0.jpg
-[1]: https://media.discordapp.net/attachments/976976670345035796/1128345931146854552/image-15.jpg
-[2]: https://media.discordapp.net/attachments/976976670345035796/1128346032963596318/image-16.jpg
-[3]: https://media.discordapp.net/attachments/976976670345035796/1128346033286553650/image-17.jpg
-[6]: https://media.discordapp.net/attachments/976976670345035796/1128346033584341043/image-18.jpg
-<!-- [7]: https://media.discordapp.net/attachments/976976670345035796/1128346033844400159/image-19.jpg -->
-[8]: https://www.consultant.ru/document/cons_doc_LAW_10699/4641cfe1bdfab945ead3ae228d36c3e8141dd9f1/
-[9]: https://www.consultant.ru/document/cons_doc_LAW_10699/8012ecdf64b7c9cfd62e90d7f55f9b5b7b72b755/
-[10]: https://www.consultant.ru/document/cons_doc_LAW_10699/598fbbd993948ff493e853c0845161561b01f0a5/
-[11]: https://www.consultant.ru/document/cons_doc_LAW_10699/d260e55e06d1e6bc720d2e591a8383a43b1a5eed/
-[12]: https://www.consultant.ru/document/cons_doc_LAW_10699/c193654ae5c3bd5b02d92ade18796cd8864ec353/
-[13]: ../assets/avatars/hootsman.webp
-[4]: ../assets/avatars/assmodeus.webp
-[5]: ../assets/avatars/deliav.webp
-[16]: ../assets/avatars/moon.webp
-[17]: ../assets/avatars/sir.webp
-[14]: https://www.consultant.ru/document/cons_doc_LAW_10699/8727611b42df79f2b3ef8d2f3b68fea711ed0c7a/
-[15]: https://www.consultant.ru/document/cons_doc_LAW_10699/3cf93ca64f2a009e75430fc6394b66a3642ba176/
-
-[x1]: https://cdn.discordapp.com/attachments/1121769153611694110/1122601065418854580/SmartSelect_20230528_162134_Discord.png
-[x2]: https://media.discordapp.net/attachments/1117035695094124636/1124529009162731630/image.png
-[x3]: https://cdn.discordapp.com/attachments/976976670345035796/1126439066389463050/image.png
-[x4]: https://media.discordapp.net/attachments/976976670345035796/1126447142899290193/image.png
-[x5]: https://media.discordapp.net/attachments/976976670345035796/1126447982850605066/image.png
-[x6]: https://cdn.discordapp.com/attachments/976976670345035796/1126449994539470918/image.png
-
-[treat]: https://cdn.discordapp.com/attachments/1121769153611694110/1121896773779198003/5a95ff8d-a836-4111-adc0-aea465b66951.png
-[darmamu]: https://media.discordapp.net/attachments/1121769153611694110/1121902025735680070/b2fef5b0-1c81-408c-8eaf-13a16739b9c1.png
-[origin]: https://media.discordapp.net/attachments/976976670345035796/1124059283458367599/image.png
-
-[c1]: https://media.discordapp.net/attachments/976976670345035796/1128347394602438686/image-20.jpg
-[c2]: https://media.discordapp.net/attachments/976976670345035796/1128347394858295347/image-21.jpg
-[c3]: https://media.discordapp.net/attachments/976976670345035796/1128347395122532478/image-22.jpg
-[s1]: https://media.discordapp.net/attachments/976976670345035796/1128347395403563059/image-23.jpg
-[s2]: https://media.discordapp.net/attachments/976976670345035796/1128347395982368868/image-24.jpg
-[s3]: https://media.discordapp.net/attachments/976976670345035796/1128347396317909053/image-26.jpg
-
-[a1]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311255386173591/Screenshot_2023-06-30-14-04-16-097_com.discord-edit.jpg
-[a2]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311255704936519/Screenshot_2023-06-30-14-03-00-045_com.discord-edit.jpg
-[aa1]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311256006930474/Screenshot_2023-06-30-14-03-17-371_com.discord-edit.jpg
-[aa2]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311256896131204/Screenshot_2023-06-30-15-09-48-167_com.discord-edit.jpg
-[aa3]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311257193918494/Screenshot_2023-06-30-15-10-13-650_com.discord-edit.jpg
-[a3]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311256384413818/Screenshot_2023-06-30-14-03-31-537_com.discord-edit.jpg
-[a4]: https://cdn.discordapp.com/attachments/1124196118910206013/1124311257445572638/Screenshot_2023-06-30-15-10-32-872_com.discord-edit.jpg
-[a5]: https://cdn.discordapp.com/attachments/1124196118910206013/1124390789926092950/image.png
-[a6]: https://cdn.discordapp.com/attachments/976976670345035796/1124392796606976051/image.png
-[a7]: https://media.discordapp.net/attachments/1124196118910206013/1124429555201998999/Screenshot_2023-06-30-22-57-32-849_com.discord-edit.jpg
-[a8]: https://media.discordapp.net/attachments/1124196118910206013/1124429555504009296/Screenshot_2023-06-30-22-58-02-608_com.discord-edit.jpg
-[a9]: https://media.discordapp.net/attachments/1124196118910206013/1124429555764039833/Screenshot_2023-06-30-22-58-19-332_com.discord-edit.jpg
-[a10]: https://media.discordapp.net/attachments/1124196118910206013/1124429556040859719/Screenshot_2023-06-30-22-58-38-312_com.discord-edit.jpg
-[a11]: https://cdn.discordapp.com/attachments/1124196118910206013/1124429556846170213/Screenshot_2023-06-30-22-59-19-052_com.discord-edit.jpg
-[a12]: https://media.discordapp.net/attachments/1124196118910206013/1124429556531613796/Screenshot_2023-06-30-22-59-01-384_com.discord-edit.jpg
-[a13]: https://cdn.discordapp.com/attachments/1124196118910206013/1124429557508866098/Screenshot_2023-06-30-23-00-01-400_com.discord-edit.jpg
-[a14]: https://cdn.discordapp.com/attachments/1124196118910206013/1124429557173342380/Screenshot_2023-06-30-22-59-40-287_com.discord-edit.jpg
-[l1]: https://media.discordapp.net/attachments/976976670345035796/1128349788769898546/image.jpg
-[l2]: https://media.discordapp.net/attachments/976976670345035796/1128348325159125163/image-1.jpg
-[l3]: https://media.discordapp.net/attachments/976976670345035796/1128348325461106718/image-2.jpg
-[l4]: https://media.discordapp.net/attachments/976976670345035796/1128348325985406996/image-3.jpg
-[l5]: https://media.discordapp.net/attachments/976976670345035796/1128348326262226985/image-4.jpg
-[l6]: https://media.discordapp.net/attachments/976976670345035796/1128348326564208731/image-5.jpg
-[l7]: https://media.discordapp.net/attachments/976976670345035796/1128348326870401146/image-6.jpg
-[l8]: https://media.discordapp.net/attachments/976976670345035796/1128348327386292254/image-7.jpg
-[l9]: https://media.discordapp.net/attachments/976976670345035796/1128348327709265950/image-8.jpg
-[l10]: https://media.discordapp.net/attachments/976976670345035796/1128348328036409464/image-9.jpg
-[l11]: https://media.discordapp.net/attachments/976976670345035796/1128348328334217256/image-10.jpg
-[l12]: https://media.discordapp.net/attachments/976976670345035796/1128349388511662160/image-11.jpg
-[l13]: https://media.discordapp.net/attachments/976976670345035796/1128349388784287775/image-12.jpg
-[l14]: https://media.discordapp.net/attachments/976976670345035796/1128349389035933787/image-13.jpg
-[l15]: https://media.discordapp.net/attachments/976976670345035796/1128349389287608383/image-14.jpg
-[notgay]: https://media.discordapp.net/attachments/976976670345035796/1128351848147976283/image-15.png
-[moo]: https://media.discordapp.net/attachments/976976670345035796/1128349697761869835/image-0.jpg
-
-[vias]: https://cdn.discordapp.com/attachments/1128503638470447154/1128503812596969533/assmodeus.webm

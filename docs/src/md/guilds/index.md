@@ -17,6 +17,7 @@ comments: true
 Вот например единственное +/- годное описание ру-гильдий, которое можно найти на просторах сети.
 
 <figure markdown>
+    
 ![gg][ru-guilds]{width=300}
 <figcaption></figcaption>
 </figure>
@@ -107,7 +108,7 @@ comments: true
 |     Статус:     | <font color=green>Активна</font> |
 | Направленность: | Бездна/AbEx                      |
 |       GM:       | _Sir Eblo 2000_                  |
-|    Discord:     | Закрытый                         |
+|    Discord:     | [Aquilon/BOREAS/Eternum][aq-dis]                         |
 |   Srv. Owner:   | SenseiYabai                      |
 ///
 /// tab | Бездна
@@ -150,6 +151,7 @@ comments: true
 
 Спасибо Кисочка за предоставленные ссылки :octicons-heart-fill-24:{ .heart }  
 ///
+
 ***
 
 ## Prodota's Scum
@@ -208,6 +210,56 @@ comments: true
 | s10  | #77    | #11 |
 | s9   | #98    | #13 |
 | s8   | --     | --  |
+| s7   | --     | --  |
+| s6   | --     | --  |
+| s5   | --     | --  |
+///
+
+***
+
+## Eternum
+
+/// tab | Обзор
+|      Общая      | Информация                        |
+|:---------------:|:----------------------------------|
+|      Тип:       | <u>Соревновательная</u>           |
+|     Статус:     | <font color=green>Активна</font>  |
+| Направленность: | Бездна/AbEx                       |
+|       GM:       | <em style="color:red">missing<em> |
+|    Discord:     | [Aquilon/BOREAS/Eternum][aq-dis]                         |
+|   Srv. Owner:   | SenseiYabai                      |
+///
+/// tab  | Бездна
+| AbEx | Global | RU  |
+|------|--------|-----|
+| s10  | #53    | #7  |
+| s9   | #69    | #9  |
+| s8   | #81    | #11 |
+| s7   | --     | --  |
+| s6   | --     | --  |
+| s5   | --     | --  |
+///
+
+***
+
+## BOREAS
+
+/// tab | Обзор
+|      Общая      | Информация                        |
+|:---------------:|:----------------------------------|
+|      Тип:       | <u>Соревновательная</u>           |
+|     Статус:     | <font color=green>Активна</font>  |
+| Направленность: | Бездна/AbEx                       |
+|       GM:       | <em style="color:red">missing<em> |
+|    Discord:     | [Aquilon/BOREAS/Eternum][aq-dis]                         |
+|   Srv. Owner:   | SenseiYabai                      |
+///
+/// tab  | Бездна
+| AbEx | Global | RU  |
+|------|--------|-----|
+| s10  | #96    | #13 |
+| s9   | #82    | #11 |
+| s8   | #92    | #12 |
 | s7   | --     | --  |
 | s6   | --     | --  |
 | s5   | --     | --  |
@@ -319,30 +371,6 @@ comments: true
 
 ***
 
-## Eternum
-
-/// tab | Обзор
-|      Общая      | Информация                        |
-|:---------------:|:----------------------------------|
-|      Тип:       | <u>Соревновательная</u>           |
-|     Статус:     | <font color=green>Активна</font>  |
-| Направленность: | Бездна/AbEx                       |
-|       GM:       | <em style="color:red">missing<em> |
-|    Discord:     | <em style="color:red">missing<em> |
-|   Srv. Owner:   | <em style="color:red">missing<em> |
-///
-/// tab  | Бездна
-| AbEx | Global | RU  |
-|------|--------|-----|
-| s10  | #53    | #7  |
-| s9   | #69    | #9  |
-| s8   | #81    | #11 |
-| s7   | --     | --  |
-| s6   | --     | --  |
-| s5   | --     | --  |
-///
-
-***
 
 ## SystemHARIBO
 
@@ -369,30 +397,6 @@ comments: true
 
 ***
 
-## BOREAS
-
-/// tab | Обзор
-|      Общая      | Информация                        |
-|:---------------:|:----------------------------------|
-|      Тип:       | <u>Соревновательная</u>           |
-|     Статус:     | <font color=green>Активна</font>  |
-| Направленность: | Бездна/AbEx                       |
-|       GM:       | <em style="color:red">missing<em> |
-|    Discord:     | <em style="color:red">missing<em> |
-|   Srv. Owner:   | <em style="color:red">missing<em> |
-///
-/// tab  | Бездна
-| AbEx | Global | RU  |
-|------|--------|-----|
-| s10  | #96    | #13 |
-| s9   | #82    | #11 |
-| s8   | #92    | #12 |
-| s7   | --     | --  |
-| s6   | --     | --  |
-| s5   | --     | --  |
-///
-
-***
 
 ## NewEra
 
@@ -477,7 +481,7 @@ comments: true
 |      Тип:       | <u>Соревновательная</u>          |
 |     Статус:     | <font color=red>Неактивна</font> |
 | Направленность: | Бездна/AbEx                      |
-|       GM:       | _Winter_                         |
+|       GM:       | _WINTER_                         |
 |    Discord:     | Закрытый                         |
 |   Srv. Owner:   | EddyFord                         |
 ///
@@ -616,5 +620,6 @@ comments: true
 
 [1]: https://discord.gg/nom3rcy
 [2]: https://discord.gg/CGuZXF9hys
+[aq-dis]: https://discord.gg/eba-wait-you
 [av1]: ../assets/avatars/hootsman.webp
 [av0]: ../assets/avatars/anon.png

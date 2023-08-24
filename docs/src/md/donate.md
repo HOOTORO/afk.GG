@@ -14,5 +14,3 @@ hide:
 
 [На развитие китайской экономики (QIWI)](https://donate.qiwi.com/payin/HOOTORO)
 
-<!-- 
- <iframe width="500" height="500" src="https://donate.qiwi.com/widgets/b57c713d-e223-4caa-8b2e-7e21342e16fb" allowtransparency="true" scrolling="no" frameborder="0"></iframe> -->
