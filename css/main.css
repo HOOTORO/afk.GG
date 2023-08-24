@@ -2640,6 +2640,10 @@ h2 {
   color: var(--md-primary-fg-color);
 }
 
+.md-nav__item--section > .md-nav__link[for] {
+  color: var(--md-accent-fg-color);
+}
+
 /* Dark mode changes */
 [data-md-color-scheme=default] .md-typeset table:not([class]),
 [data-md-color-scheme=slate] .md-typeset table:not([class]),

@@ -2,36 +2,36 @@
   {
     "id": 0,
     "name": "kane",
-    "icon": "../assets/icons/crboss/boss_icon_03.png"
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1144198917894963261/boss_icon_03.png"
   },
   {
     "id": 1,
     "name": "nemora",
-    "icon": "../assets/icons/crboss/boss_icon_04.png"
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1144198918276649011/boss_icon_04.png"
   },
   {
     "id": 2,
     "name": "shemira",
-    "icon": "../assets/icons/crboss/boss_icon_05.png"
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1144198918540894298/boss_icon_05.png"
   },
   {
     "id": 3,
     "name": "brut",
-    "icon": "../assets/icons/crboss/boss_icon_06.png"
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1144198918813519882/boss_icon_06.png"
   },
   {
     "id": 4,
     "name": "arden",
-    "icon": "../assets/icons/crboss/boss_icon_07.png"
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1144198919199399956/boss_icon_07.png"
   },
   {
     "id": 5,
     "name": "oden",
-    "icon": "../assets/icons/crboss/boss_icon_14.png"
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1144198919581073439/boss_icon_14.png"
   },
   {
     "id": 6,
     "name": "dune",
-    "icon": "../assets/icons/crboss/boss_icon_22.png"
+    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1144198920080199740/boss_icon_22.png"
   }
 ]
