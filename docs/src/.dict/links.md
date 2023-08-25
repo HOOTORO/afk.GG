@@ -53,6 +53,25 @@
 [reltan]: https://media.discordapp.net/attachments/1128524376929742879/1128524480143179866/tanks.jpg
 [relwar]: https://media.discordapp.net/attachments/1128524376929742879/1128524480642302093/war.jpg
 
+<!-- HF -->
+
+[tactic_played]: https://media.discordapp.net/attachments/1128524376929742879/1144301347395616798/S4_strat_fin.png
+[tactic_theory]: https://media.discordapp.net/attachments/1128524376929742879/1144302203339816960/S4_strat_fin_disco_theory.png
+[cmps1]: https://media.discordapp.net/attachments/1128524376929742879/1144454141746364606/IMG_2880.jpg
+[cmps2]: https://media.discordapp.net/attachments/1128524376929742879/1144454142081904801/IMG_2936.jpg
+[cmps3]: https://media.discordapp.net/attachments/1128524376929742879/1144454142417436763/IMG_2944.jpg
+[cmps4]: https://media.discordapp.net/attachments/1128524376929742879/1144454143029809293/IMG_2947.PNG
+[cmps5]: https://media.discordapp.net/attachments/1128524376929742879/1144454144598491176/IMG_3006.PNG
+[cmps6]: https://media.discordapp.net/attachments/1128524376929742879/1144454145051471922/ShareX_Ab0FeolAkT.png
+[bosstat]: https://media.discordapp.net/attachments/1128524376929742879/1144460678913065061/image.jpg
+[cnst1]: https://media.discordapp.net/attachments/1128524376929742879/1144461010112106506/IMG_2414.jpg
+[cnst2]: https://media.discordapp.net/attachments/1128524376929742879/1144461010716078161/IMG_2447.jpg
+[cnroad1]: https://media.discordapp.net/attachments/1128524376929742879/1144461060334698618/roads_v2.jpg
+[cnroad2]: https://media.discordapp.net/attachments/1128524376929742879/1144461060737343550/roads.jpg
+[cnroad3]: https://media.discordapp.net/attachments/1128524376929742879/1144461061102256138/Screenshot_20221129_143511_com.lilithgame.hgame.gp.jpg
+[hftbs4]: https://docs.google.com/spreadsheets/d/1ABPnk3RnkMtMl0rmCOcChMkNPw_r3k2Z23dqx3ztrVk/edit#gid=1054859791
+[hftbs3]: https://docs.google.com/spreadsheets/d/1DBF_Fg2N-QmJbyntvfVB4jGyt1x94jXA/edit#gid=1050642741
+
 <!-- BNB AbEx Story -->
 
 [strategy]: https://www.reddit.com/r/afkarena/comments/1562oy9/bnb_s10_abyssal_expedition_1st_4th_13th_teams/

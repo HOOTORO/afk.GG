@@ -1,5 +1,5 @@
 import os
-import sqlite3
+# import sqlite3
 
 import discord
 
@@ -55,19 +55,19 @@ def get_memes():
     return client.imageLinks
 
 
-async def load_emojis(emo):
-        if os.path.exists("docs/theme/assets/disco.db"):
-            os.remove("docs/theme/assets/disco.db")
-        con = sqlite3.connect("docs/theme/assets/disco.db")
-        cur = con.cursor()
-        cur.execute("CREATE TABLE emos(name, url)")
+# async def load_emojis(emo):
+#         if os.path.exists("docs/theme/assets/disco.db"):
+#             os.remove("docs/theme/assets/disco.db")
+#         con = sqlite3.connect("docs/theme/assets/disco.db")
+#         cur = con.cursor()
+#         cur.execute("CREATE TABLE emos(name, url)")
 
-        for em in emo:
-            ext = ".png"
-            if em.animated:
-                ext = ".gif"
-            link = f'https://cdn.discordapp.com/emojis/{em.id}{ext}'
-            cur.execute(f'INSERT INTO emos VALUES("{em.name}", "{link}")')
-            con.commit()
+#         for em in emo:
+#             ext = ".png"
+#             if em.animated:
+#                 ext = ".gif"
+#             link = f'https://cdn.discordapp.com/emojis/{em.id}{ext}'
+#             cur.execute(f'INSERT INTO emos VALUES("{em.name}", "{link}")')
+#             con.commit()
 
-        con.close()
+#         con.close()

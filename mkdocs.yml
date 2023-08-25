@@ -68,6 +68,8 @@ nav:
           - kb/infographics.md
           - kb/tables.md
           - kb/realms.md
+      - Ranked Modes:
+          - kb/hf.md
       - Tools:
           - kb/abex.md
           - kb/income.md
