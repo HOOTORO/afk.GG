@@ -87,6 +87,7 @@ nav:
       - blog/index.md
       - donate.md
       - Blog:
+          - blog/party.md
           - blog/cis.md
           - blog/bnb.md
           - blog/aqual.md

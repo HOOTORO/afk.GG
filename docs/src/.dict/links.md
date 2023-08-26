@@ -300,6 +300,15 @@
 [aqvon38]: https://media.discordapp.net/attachments/1130528875961651371/1144191485944791110/image-38.jpg
 <!-- [aqvon]:  -->
 
+[sound]: https://media.discordapp.net/attachments/1130528875961651371/1144797455230177441/image.png
+[emo]: https://cdn.discordapp.com/attachments/1046212982796988448/1144432323199254528/image.png
+[rain]: https://cdn.discordapp.com/attachments/1046212982796988448/1144427378521686046/image.png
+[radio]: https://cdn.discordapp.com/attachments/1046212982796988448/1144432756147896430/image.png
+[place]: https://cdn.discordapp.com/attachments/1046212982796988448/1144432323731935302/image.png
+[party]: https://cdn.discordapp.com/attachments/1046212982796988448/1144427516908548216/image.png
+[burg]: https://cdn.discordapp.com/attachments/1046212982796988448/1144427207641542697/image.png
+[zoo]: https://cdn.discordapp.com/attachments/1046212982796988448/1144432322985349261/image.png
+
 <!--  dog dream -->
 
 [spybig]: https://cdn.discordapp.com/attachments/976976670345035796/1126439865815412777/image.png
