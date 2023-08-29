@@ -6,7 +6,7 @@ repo_name: afk.GG
 repo_url: https://github.com/Hootsdev/afk.GG
 edit_uri: edit/master/docs/src/md
 
-copyright: >
+copyright: >-
   Copyright &copy; 2023, Лев Николаевич HOOTSMAN – <a href="#__consent">Change cookie settings</a><br>
 
 docs_dir: docs/src/md

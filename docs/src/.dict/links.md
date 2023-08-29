@@ -218,6 +218,7 @@
 [giv]: https://media.discordapp.net/attachments/1130528875961651371/1137717663037132890/101.jpg
 [iogr]: https://media.discordapp.net/attachments/1130528875961651371/1137717695924686908/102.jpg
 [brcompare]: https://media.discordapp.net/attachments/1130528875961651371/1141577266346868858/unknown.png
+[tralast]: https://media.discordapp.net/attachments/1034529995139338290/1044322106650923108/unknown.png
 
 <!--  Aquilon Criminal -->
 

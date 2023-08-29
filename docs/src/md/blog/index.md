@@ -46,23 +46,13 @@ You have been _warned_ ;)
 - [Острова Золота](../game/iog.md) Результаты события.
 
 [sick1]: https://ru.wikipedia.org/wiki/Бред_преследования
-
 [sick2]: https://ru.wikipedia.org/wiki/Бред_величия
-
 [sick3]: https://ru.wikipedia.org/wiki/Бред_отношения
-
 [sick4]: https://ru.wikipedia.org/wiki/Бред_воздействия
-
 [sick5]: https://ru.wikipedia.org/wiki/Деперсонализация
-
 [sick6]: https://ru.wikipedia.org/wiki/Дереализация
-
 [sick7]: https://ru.wikipedia.org/wiki/Обсессия
-
 [sick8]: https://ru.wikipedia.org/wiki/Сенестопатия
-
 [sick9]: https://ru.wikipedia.org/wiki/Резонёрство
-
 [sick10]: https://ru.wikipedia.org/wiki/Истерическое_расстройство_личности
-
 [sick11]: https://ru.wikipedia.org/wiki/Нарциссическое_расстройство_личности

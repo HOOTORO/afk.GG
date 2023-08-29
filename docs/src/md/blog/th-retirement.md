@@ -898,6 +898,13 @@ _Итоги закономерны:_
    </figcaption>
 </figure>
 
+<figure markdown>
+    ![miss][tralast]
+    <figcaption>
+        через пару часов он покинет гильдию и окажется в Амисити
+    </figcaption>
+</figure>
+
 ### Round
 
 | ![off1][off]  |
