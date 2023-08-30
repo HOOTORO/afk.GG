@@ -2,6 +2,7 @@
 title: Flying over the cuckoo's nest
 description: A retrospective look at the state of affairs in the native community, after the BnB experience.
 author: HOOTSMAN, Lev Nikolayevich
+template: main.html
 comments: true
 ---
 

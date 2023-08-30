@@ -5,7 +5,7 @@ description: >-
     НЕ-гайд на охоту за сокровищами.
 author: HOOTSMAN, Лев Николаевич
 date: 23-04-08
-
+template: main.html
 ---
 /// warning | DISCLAIMER 
 *Aloha!*  

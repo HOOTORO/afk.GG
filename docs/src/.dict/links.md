@@ -354,3 +354,9 @@
 <!--  Who is hootoro -->
 
 [about]: https://media.discordapp.net/attachments/1130528875961651371/1145993940714135612/image.png
+
+<!--  Discord Hints -->
+
+[seton]: https://media.discordapp.net/attachments/1145871949231292446/1145872210804887643/image.png
+[inact]: https://media.discordapp.net/attachments/1145871949231292446/1145872211085897768/image.png
+[rescrowd]: https://media.discordapp.net/attachments/1145871949231292446/1145938680284983306/image.png

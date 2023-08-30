@@ -4,7 +4,7 @@ site_description: afk.GG is an 'AFK Arena' game fansite, and is not affiliated w
 dev_addr: "0.0.0.0:80"
 repo_name: afk.GG
 repo_url: https://github.com/Hootsdev/afk.GG
-edit_uri: edit/master/docs/src/md
+#edit_uri: edit/master/docs/src/md
 
 copyright: >
     Copyright &copy; 2023, Лев Николаевич HOOTSMAN – <a href="#__consent">Change cookie settings</a><br>
@@ -75,6 +75,8 @@ nav:
           - kb/abex.md
           - kb/income.md
           - kb/dust.md
+      - Discord Tools:
+          - kb/chroles.md
   - Сообщество<br>Community:
       - guilds/index.md
       - guilds/meme.md

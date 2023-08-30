@@ -3,6 +3,7 @@ title: Beautiful People
 description: >
     UI/UX importance
 author: HOOTSMAN, Лев Николаевич
+template: main.html
 comments: true
 ---
 

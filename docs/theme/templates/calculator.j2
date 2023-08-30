@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "main.html" %}
 {% from 'templates/macro/input.j2' import input with context %}
 
 {% block libs %}
@@ -10,7 +10,7 @@
 {% endblock libs %}
 
 {% block content %}
-
+{{ super() }}
 <div id="dust-calc">
   <form id="dust-input">
     {{ input(name="",id="b", type="checkbox", legend="Set options", opts=["StoreDeal", "Misty Valley"],
@@ -28,5 +28,4 @@
     </output>
   </form>
 </div>
-{{ super() }}
 {% endblock content %}

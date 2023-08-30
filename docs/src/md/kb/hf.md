@@ -5,6 +5,7 @@ description: >-
 authors:  
     - Fatality
     - HOOTSMAN, Лев Николаевич
+template: main.html
 ---
 
 ## General Tactic

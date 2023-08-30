@@ -3,6 +3,7 @@ title: AQUATALES
 description: >
         Однажды в фарватере Aквилона состоялась аквадискотека, но удостоились ее лишь избранные аквилонцы...
 author: HOOTSMAN, Лев Николаевич
+template: main.html
 comments: true
 ---
 

@@ -2,6 +2,7 @@
 title: Пролетая над гнездом кукушки
 description: Ретроспективный взгляд на положение дел в родном сообществе, после опыта BnB
 author: HOOTSMAN, Лев Николаевич
+template: main.html
 comments: true
 ---
 

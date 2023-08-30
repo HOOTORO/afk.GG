@@ -2,6 +2,7 @@
 title: To Be "BackNBlack"
 description: Worlds Ranked `#1 BackNBlack, behind the scene
 author: HOOTSMAN, Лев Николаевич
+template: main.html
 comments: true
 ---
 

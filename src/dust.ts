@@ -47,3 +47,23 @@ function CountDust(e: Event | InputEvent) {
   out.innerHTML = `<div>${day}</div><div>${week}</div><div>${month}</div><div>${lvlv}</div>`;
 }
 export { CountDust, lo };
+
+//function drawForm(){
+//  const numInputs = [
+//    {t: "number", id: "a", n: "a", v:"0", m: 99, ic: `/assets/icons/s/refresh.png`},
+//    {t: "number", id: "c", n: "c", v:"0", m: 4, ic: `/assets/icons/s/mc.png`},
+//    {t: "number", id: "d", n: "d", v:"0", m: 20, ic: `/assets/icons/s/fr.png`},
+//  ]
+//  const cbInputs = [
+//    {t: "checkbox", id: "a", n: "a", v:"0", m: 99, ic: `/assets/icons/s/dust-store.png`},
+//    {t: "checkbox", id: "c", n: "c", v:"0", m: 4},
+//    {t: "number", id: "d", n: "d", v:"0", m: 20, ic: `/assets/icons/s/fr.png`},
+//  ]
+//  const input = createInput("input", ``, `/assets/ae/ranks/icon_level${x}.png`, {
+//    min: "0",
+//    max: "40",
+//    value: expeditor.towns[x] ? expeditor.towns[x].toString() : "0",
+//    class: `town tier-${x}`,
+//  })
+//  const fieldSet = createElementN()
+//}

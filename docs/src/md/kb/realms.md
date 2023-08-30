@@ -1,6 +1,7 @@
 ---
 title: Realms
 description: Game has several different realms/hosts besides international one. Here is what I found about these realms.
+template: main.html
 ---
 
 
