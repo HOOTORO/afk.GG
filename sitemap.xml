@@ -131,6 +131,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hooto.ru/kb/chroles/</loc>
+         <lastmod>2023-08-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hooto.ru/kb/dust/</loc>
          <lastmod>2023-08-30</lastmod>
          <changefreq>daily</changefreq>
