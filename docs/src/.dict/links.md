@@ -342,3 +342,15 @@
 [5]: ../assets/avatars/deliav.webp
 [16]: ../assets/avatars/moon.webp
 [17]: ../assets/avatars/sir.webp
+
+<!--  Beautiful people -->
+
+[bnboff]: https://media.discordapp.net/attachments/1130528875961651371/1145562777365254235/image.png
+[huektura]: https://media.discordapp.net/attachments/1130528875961651371/1146382284631576728/image.png
+[hospgeneral]: https://media.discordapp.net/attachments/1130528875961651371/1146385266437804062/image.png
+[mguq]: https://media.discordapp.net/attachments/1130528875961651371/1146411446121541732/image.png
+[soydet]: https://media.discordapp.net/attachments/1130528875961651371/1146446477502197871/acceptable.png
+
+<!--  Who is hootoro -->
+
+[about]: https://media.discordapp.net/attachments/1130528875961651371/1145993940714135612/image.png
