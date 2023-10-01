@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @mixin box-sizing {
   box-sizing: border-box;
 }
@@ -45,7 +47,8 @@ select {
   appearance: none;
   option {
     color: inherit;
-    background-color: invert(var(--select-font-color), $weight: 100%);
+    filter: invert(1);
+    /*     background-color: Invert(var(--select-font-color), $weight: 100%); */
   }
 
   /* Remove focus outline */
