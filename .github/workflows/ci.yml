@@ -23,7 +23,7 @@ jobs:
       - name: Make destination directory for compiled CSS
         run: mkdir -vp docs/theme/css
       - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.4.7
+        uses: gha-utilities/sass-build@v0.5.1
         with:
           source: docs/src/scss/main.scss
           destination: docs/theme/css/main.css
