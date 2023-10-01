@@ -5,7 +5,6 @@
 @mixin border-rad {
   border-radius: 10px;
 }
-$option: invert(var(--select-font-color), $weight: 100%);
 
 body {
   background: var(--slate-gradient) no-repeat center center fixed;
@@ -46,7 +45,7 @@ select {
   appearance: none;
   option {
     color: inherit;
-    background-color: $option;
+    background-color: invert(var(--select-font-color), $weight: 100%);
   }
 
   /* Remove focus outline */
