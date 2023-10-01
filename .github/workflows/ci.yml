@@ -22,6 +22,11 @@ jobs:
           python-version: 3.x
       - name: Make destination directory for compiled CSS
         run: mkdir -vp docs/theme/css
+      - name: install node v20
+        uses: actions/setup-node@v1
+        with:
+          node-version: 20
+      - run: npm run build
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.5.1
         with:

@@ -11,6 +11,7 @@
     "name": "HOOTORO"
   },
   "scripts": {
+    "build": "tsc --build",
     "SASS:build": "sass --no-source-map docs/src/scss:docs/theme/css/",
     "SASS:watch": "sass --no-source-map --watch docs/src/scss/:docs/theme/css/",
     "RE:build": "tsc --build && npm run -s SASS:build && mkdocs build",
