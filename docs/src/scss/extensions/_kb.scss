@@ -5,6 +5,7 @@
 @mixin border-rad {
   border-radius: 10px;
 }
+$option: invert(var(--select-font-color), $weight: 100%);
 
 body {
   background: var(--slate-gradient) no-repeat center center fixed;
