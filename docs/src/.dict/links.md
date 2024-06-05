@@ -26,8 +26,11 @@
 
 <!-- nm-respect -->
 
-[nm1]: https://media.discordapp.net/attachments/1130528875961651371/1130528929460011038/1.jpg
-[nm2]: https://media.discordapp.net/attachments/1130528875961651371/1130528929900400811/2.jpg
+<!-- [nm1]: https://media.discordapp.net/attachments/1130528875961651371/1130528929460011038/1.jpg -->
+[nm1]: https://cdn.discordapp.com/attachments/1130528875961651371/1130528929460011038/1.jpg?ex=666133dc&is=665fe25c&hm=e4b5ebf3372427e4819e326f3cc5554d6125b0d035366413a9765afac38fa6c4&
+[nm2]: https://cdn.discordapp.com/attachments/1130528875961651371/1130528929900400811/2.jpg?ex=666133dd&is=665fe25d&hm=afa761e462a97d54b46a1fcaa5c1cc4277cad5a0638e37d1832521a327f0ee02&
+<!-- [nm2]: https://media.discordapp.net/attachments/1130528875961651371/1130528929900400811/2.jpg -->
+
 
 <!-- links -->
 
