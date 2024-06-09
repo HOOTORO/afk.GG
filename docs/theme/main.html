@@ -1,56 +1,35 @@
-{% extends "base.html" %}
-
-{% block styles %}
-<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/twilio-sans-mono">
-{{ super() }}
-{% endblock styles %}
-
-{% block htmltitle %}
-<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+{% extends "base.html" %} {% block styles %}
+<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/twilio-sans-mono" />
+{{ super() }} {% endblock styles %} {% block htmltitle %}
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 <title>afk.GG</title>
-{% endblock htmltitle %}
-
-{% block announce %}
-
-{% include "templates/section/announcement.j2" ignore missing %}
-{% endblock announce %}
-
-{% block libs %}
-
-{{ super() }}
+{% endblock htmltitle %} {# block announce #} {# include
+"templates/section/announcement.j2" ignore missing #} {# endblock announce #} {%
+block libs %} {{ super() }}
 <script type="module" src="{{ 'js/ts/main.js' | url }}"></script>
-{% endblock libs %}
-
-{% block content %}
-
-{% include "templates/section/title.j2" %}
-{{ page.content }}
+{% endblock libs %} {% block content %} {% include "templates/section/title.j2"
+%} {{ page.content }}
 <hr />
-{% include "templates/section/metainf.j2" %}
-{% include "partials/feedback.html" %}
-{% endblock content %}
-
-{% block analytics %}
+{% include "templates/section/metainf.j2" %} {% include "partials/feedback.html"
+%} {% endblock content %} {% block analytics %}
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZYV31PZDD"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-KZYV31PZDD"
+></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  gtag('config', 'G-KZYV31PZDD');
+  gtag("config", "G-KZYV31PZDD");
 </script>
-{{ super() }}
-{% endblock %}
-
-{% block scripts %}
+{{ super() }} {% endblock %} {% block scripts %}
 
 <!-- Add scripts that need to run before here -->
 {{ super() }}
 <!-- Add scripts that need to run afterwards here -->
-{% endblock scripts %}
-
-{% block footer %}
-{{ super() }}
-{{ page.footer }}
-{% endblock footer %}
+{% endblock scripts %} {% block footer %} {{ super() }} {{ page.footer }} {%
+endblock footer %}

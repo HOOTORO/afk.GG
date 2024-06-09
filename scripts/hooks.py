@@ -12,20 +12,20 @@ def on_startup(**kwargs) -> None:
     mkdocs_dir = "docs/src/md/tbl"
     spreadsheet_id = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY"
     files = []
-    files = dar.get_memes()
-    if os.path.isdir(meme_src):
-        files += os.listdir(meme_src)
-    if not os.path.isdir(mkdocs_dir):
-        os.makedirs(mkdocs_dir)
+    # files = dar.get_memes()
+    # if os.path.isdir(meme_src):
+    #     files += os.listdir(meme_src)
+    # if not os.path.isdir(mkdocs_dir):
+    #     os.makedirs(mkdocs_dir)
 
-    with open(meme_md, 'w') as tmpl:
-        tmpl.write("/// html | div#memes\n\n")
-        for m in files:
-            if m.startswith("http"):
-                tmpl.write(f"![auto-generated]({m})\n")
-            else:
-                tmpl.write(f"![auto-generated](../assets/images/meme/{m})\n")
-        tmpl.write("\n///")
+    # with open(meme_md, 'w') as tmpl:
+    #     tmpl.write("/// html | div#memes\n\n")
+    #     for m in files:
+    #         if m.startswith("http"):
+    #             tmpl.write(f"![auto-generated]({m})\n")
+    #         else:
+    #             tmpl.write(f"![auto-generated](../assets/images/meme/{m})\n")
+    #     tmpl.write("\n///")
 
     sheet_ids = {"val": 156134846, "loc": 249616100, "rf2p": 639889886, "HOOT": 1162827151}
     for k, v in sheet_ids.items():

@@ -1,5 +1,4 @@
 import os
-# import sqlite3
 
 import discord
 
@@ -24,8 +23,6 @@ class MemeScrapper(discord.Client):
 
     async def on_ready(self):
         print(f'Logged in as {self.user} (ID: {self.user.id})')
-        # emos = self.emojis
-        # await load_emojis(emos)
         print('------')
 
     async def my_background_task(self):
@@ -53,21 +50,3 @@ def get_memes():
     client = MemeScrapper(intents=intents)
     client.run(env("DISBOTOK"))
     return client.imageLinks
-
-
-# async def load_emojis(emo):
-#         if os.path.exists("docs/theme/assets/disco.db"):
-#             os.remove("docs/theme/assets/disco.db")
-#         con = sqlite3.connect("docs/theme/assets/disco.db")
-#         cur = con.cursor()
-#         cur.execute("CREATE TABLE emos(name, url)")
-
-#         for em in emo:
-#             ext = ".png"
-#             if em.animated:
-#                 ext = ".gif"
-#             link = f'https://cdn.discordapp.com/emojis/{em.id}{ext}'
-#             cur.execute(f'INSERT INTO emos VALUES("{em.name}", "{link}")')
-#             con.commit()
-
-#         con.close()
