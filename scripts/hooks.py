@@ -15,8 +15,8 @@ def on_startup(**kwargs) -> None:
     # files = dar.get_memes()
     # if os.path.isdir(meme_src):
     #     files += os.listdir(meme_src)
-    # if not os.path.isdir(mkdocs_dir):
-    #     os.makedirs(mkdocs_dir)
+    if not os.path.isdir(mkdocs_dir):
+        os.makedirs(mkdocs_dir)
 
     # with open(meme_md, 'w') as tmpl:
     #     tmpl.write("/// html | div#memes\n\n")
