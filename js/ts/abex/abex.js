@@ -10,7 +10,6 @@ export const mil = new Militia(10);
 export const expeditor = new Expeditor(mil, false);
 export function abexApp() {
     const app = document.getElementById("rem-food");
-    runAbExTimers();
     runRelic();
     loadBag();
     AttackForm();
