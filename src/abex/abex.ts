@@ -136,7 +136,7 @@ function initForm(n: HTMLElement) {
 }
 
 function inputChange(e: HTMLInputElement) {
-  if (e.type /// tab |checkbox") {
+  if (e.type === "checkbox") {
     e.checked ? e.setAttribute("checked", "") : e.removeAttribute("checked");
   } else {
     e.setAttribute("value", e.value);

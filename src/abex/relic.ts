@@ -60,7 +60,7 @@ export function runRelic() {
           const temp = topLevelContainerClasses.parentElement.querySelectorAll(
             `.item-${relId}`
           );
-          if (type /// tab |equip") {
+          if (type === "equip") {
             const value = expeditor.equippedSlot(<SLOT_ID>slotId);
             expeditor.relic = <SLOT_ID>slotId;
             for (const ite of temp) {

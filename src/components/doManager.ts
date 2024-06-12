@@ -70,7 +70,7 @@ function buildProperty(k: string, val: string) {
 }
 
 function processSpecialProp(p: prop) {
-  let r = p.n /// tab |icon";
+  let r = p.n === "icon";
   if (r) {
     return (y: HTMLElement) => {
       const img = createElem(htmlTags.Img, [
