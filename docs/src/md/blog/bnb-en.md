@@ -64,13 +64,13 @@ kind of!)
 When first get into the "black" discord, a truly incredible amount of content opens up to your eyes.  
 In BnB, there is some prohibitive number of channels dedicated directly to the game itself, there are 50+ of them, despite huge amount, channels are well categorized.
 Following jono advice make navigation even easy.
-<figure markdown>
+<figure markdown="span">
 ![desc][discodesc]
     <figcaption>
     Guiding advice from jono
     </figcaption>
 </figure>
-<figure markdown>
+<figure markdown="span">
 ![comp2][discodetails]
 <figcaption>
 For clarity, you can compare with the ru community
@@ -115,7 +115,7 @@ English is not a native language, and some do not know it at all?
 Although the analogy is not appropriate, in the BNB approach to the abyss is extremely serious and the organizational structure consists of more than two levels of coordinators and it turns out to some extent follows the canons of the military craft.  
 System created by BnB has clearly shown its effectiveness.  
 I take my hat off to the creators.
-<figure markdown>
+<figure markdown="span">
 ![op][compo]
 </figure>
 

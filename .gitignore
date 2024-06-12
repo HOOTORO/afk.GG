@@ -42,3 +42,4 @@ src/**/*.map
 # Temporary files
 test.sh
 ignored
+run.py

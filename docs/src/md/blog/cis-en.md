@@ -14,13 +14,13 @@ It's a bit horrifying how vulgarized this term has become.
 
 /// question | In which topics, in the community, whales are usually mentioned directly or indirectly?
 
-The undisputed leader is of course the abyss theme:
+The undisputed leader is of course the abyss theme:***
 
 - It's a convenient scapegoat for GMs.
 
 >Why is the abyss such a result?  
 >Because there are no/small/need more whales, and the abyss, _understandably_ is won only by the wallet.  
-(no. [proven](th-retirement.md#comparison-br-guilds-between-s7-and-s8) with special diligence)
+(no. [proven](th-retirement.md#сравнение-бр-гильдий-между-s7-и-s8) with special diligence)
 
 - Or as a "tool" that by some unknown and undoubtedly unfair chance, ended up in another GM's possession, but if it had been in our possession, well, then we would have shown everyone!
 
@@ -48,12 +48,12 @@ Sometimes they try to build themselves as sheikhs, but at the same time they mer
 
 The reasons for this attitude are easily, but erroneously, sometimes written off as "our nationality," then _kulaks_ (1) us oppressors of the working class, now _whales._  
 In fact, it is obvious that the first two theses have a clear causal connection with the subsequent ones.  
-The use, of such a convenient "excuse" for everything, has its price. And the dismorale of a motivated minority is not its only component.
+The use, of such a convenient "excuse" for everything, has its price. And ruin motivation of minority is not its only component.
 { .annotate }
 
 1. I have recently encountered the fact that few people have any idea of who the _plebeians_ are. _Kulaks_ in the mass consciousness to this day approximately similarly perceived, in order to avoid double interpretation, in case of uncertainty, I recommend to look in [history of our state][fingerandfist], read about who it.  
 _(link to the English version, since the article in Russian is of extremely dubious quality, a lot about the attitude to kulaks, but there is not even a reference to Stolypin's reforms, thanks to which this phenomenon came into existence)_  
-(for the lazy TLDR; Kulaks are in fact the first peasant-entrepreneurs who, as a result of Stolypin's reforms, were given property rights in order to make more efficient production. But in the end, this really efficient production somehow did not match the planned economy, so this right was taken back from innocent people in a very bloody and inhuman way).
+(for the lazy TL;DR Kulaks are in fact the first peasant-entrepreneurs who, as a result of Stolypin's reforms, were given property rights in order to make more efficient production. But in the end, this really efficient production somehow did not match the planned economy, so this right was taken back from innocent people in a very bloody and inhuman way).
 
 ## The "whale factor"?
 
@@ -90,7 +90,7 @@ More on the harms of such speculation below, after a little lyrical digression.
 
 ## S9 - S10 Trends
 
-![aestat][s10st]
+![s10st]
 
 /// warning | DISCLAIMER
 The author has no experience in **data analysis**, moreover he's software architect.
@@ -99,7 +99,7 @@ As a consequence, the following conclusions are just the author's fantasy and ar
 
 Just looking at the numbers, it is easy to notice Akva's extremely confident performance.  
 If in S9 it was total domination of NM by all means, in S10 Aqua has confidently squeezed the leader in terms of player performance average.  
-Which clearly hints at the fact that a lot of people did a great job, trying to squeeze the most out of akvah (_or on most accounts wagering a small group of people_ ![heh][kappa]{width=24 .skip-lb} ).
+Which clearly hints at the fact that a lot of people did a great job, trying to squeeze the most out of akvah (_or on most accounts wagering a small group of people_ ![kappa]{width=24 .skip-lb} ).
 
 Looking at the Hurricanes' averages, I can't figure out how Winter(1) scraped up the damage to snatch second place.
 { .annotate }
@@ -132,7 +132,7 @@ If describe Rezz's role, i'd say, it's more akin to an undertaker or a churchman
 After NM, there are usually two ways:
 
 - If you know the language and have the desire, foreign guilds.
-- If leaving the native swamp is not an option, then to a premature[^yoba] rest.
+- If leaving the native swamp is not an option, then to a premature rest.
 
 ///
 
@@ -146,16 +146,16 @@ The guild entertainment menu for the player +/- the same across the community.
 
 CIS Menu
 
-| Dish | Avail |
-|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| You like whale hunting? | Welcome, it's an all-season pastime.
-| 007 fan? | There's a lot of room to play, secret strategies to the abyss don't steal themselves.
-| Or maybe you're looking for your nemesis or dreaming of declaring war on someone in the cis! | That's on the menu. |
-| Are you into speculation, conspiracy theories, and theoricraft in general? | Plenty of it. |
-| You got a lot of experience with couch analytics? | Come here,sweetheart.                                           |
-|  Get high on emotional moments and drama? | Surprise around every corner. |
-| ♪ Oh, yeah, there's all kinds of rules to follow | Why? |
-|To be a cool guy. | I mean, what does that have to do with the game? |
+| Dish                                                                                         | Avail                                                                                 |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| You like whale hunting?[^hh]                                                                 | Welcome, it's an all-season pastime.                                                  |
+| 007 fan?                                                                                     | There's a lot of room to play, secret strategies to the abyss don't steal themselves. |
+| Or maybe you're looking for your nemesis or dreaming of declaring war on someone in the cis! | That's on the menu.                                                                   |
+| Are you into speculation, conspiracy theories, and theorycraft in general?                   | Plenty of it.                                                                         |
+| You got a lot of experience with couch analytics?                                            | Come here,sweetheart.                                                                 |
+| Get high on emotional moments and drama?                                                     | Surprise around every corner.                                                         |
+| ♪ Oh, yeah, there's all kinds of rules to follow                                             | Why?                                                                                  |
+| To be a cool guy.                                                                            | I mean, what does that have to do with the game?                                      |
 
 ♪ It's gonna take a little bit, a little bit of routine in the abyss ♪
 ///
@@ -184,7 +184,7 @@ The skill of dealing with feedback in a competent and timely manner can build a 
 
 - _Post-analytics_ on AbEx results are, for reasons unknown, not honored.  
 It is not known whether is it afraid to analyze errors or I dunno.  The consequences of this may not be obvious, but it is very important for development, both personal and guild-wide.  Analyzing mistakes and cause-and-effect relationships is a basic development mechanism inherent in us by nature. By ignoring it, people not only lose **the very opportunity** for growth/development, but are left alone with questions about how it happened, that happened, what happened. You don't have to go far for an example. After the AbEx, there were rumors about Hurricanes disbanding, and information about Winter's comment. In which a lot of personal reasons (work/do/family) are stated, but not a word about the guild. Bravo.  
-    ![s][shi]
+![s][shi]
 
 And this list could go on...  
 
@@ -200,13 +200,15 @@ It's still a mystery to me, why GMs so believed in recruiting in
 such circumstances, btw in which they're skilled up a lot.  
 And this is not a easy skill to master, but it's time to raise up other important skills.  
 
+[^hh]: I mean recruiting/searching/recruiting, not the blatant horror described earlier.
+
 ## P.S
 
 ### Prodota
 
 If this post came across someone who is knew my mom and they made it to these lines (thank you!), this postscript is for you and people like you.
 
-Sunny(1), during a recent visit to the capital, passed along thanks on behalf of PD (names withheld) for the AbEx | Helper. Said it was help you. If so, I would like to express my thanks in return, it is extremely gratifying and very important to me.
+Sunny (1), during a recent visit to the capital, passed along thanks on behalf of PD (names withheld) for the AbEx | Helper. Said it was help you. If so, I would like to express my thanks in return, it is extremely gratifying and very important to me.
 { .annotate }
 
 1. Member of "No Mercy"
@@ -214,6 +216,3 @@ Sunny(1), during a recent visit to the capital, passed along thanks on behalf of
 There are problems with the feedback tools, so I had no idea if this was useful to anyone or not.  
 Find out that it did was extremely important!  
 It gives me motivation to keep working on it, thank you!
-
-[^yoba]: Premature because the desire to play is still there, but the toxicity to endure the strength is not enough.
-[^hh]: I mean recruiting/searching/recruiting, not the blatant horror described earlier.

@@ -19,7 +19,7 @@ export const expeditor = new Expeditor(mil, false);
 
 export function abexApp() {
   const app = document.getElementById("rem-food");
-  runAbExTimers();
+  // runAbExTimers();
   runRelic();
   loadBag();
   AttackForm();
@@ -136,7 +136,7 @@ function initForm(n: HTMLElement) {
 }
 
 function inputChange(e: HTMLInputElement) {
-  if (e.type === "checkbox") {
+  if (e.type /// tab |checkbox") {
     e.checked ? e.setAttribute("checked", "") : e.removeAttribute("checked");
   } else {
     e.setAttribute("value", e.value);

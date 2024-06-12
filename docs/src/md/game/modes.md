@@ -1,7 +1,7 @@
 ---
 title: Cursed/Nightmare
 description: >-
-    Статистика с персонального акка
+    Статистика с персонального аккаунта
 author: HOOTSMAN, Лев Николаевич
 template: main.html
 ---

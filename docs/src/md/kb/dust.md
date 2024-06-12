@@ -11,8 +11,8 @@ template: templates/calculator.j2
 
 - [x] option Misty Valley accounts `3 ⨂ 4 chests ⨂ 8 hours` and dust reward in 1st slot  `12 chests ⨂ 8 hours`
 
-❗️🔴 Take into account only AFK chest(based on **max** FoS Bonus[^dco]) + chosen options. **Bounty Bord** and other
-chests **doesn't **!
+❗️🔴 Take into account only AFK chest(based on **max** FoS Bonus[^dco]) + chosen options. **Bounty Board** and other
+chests **doesn't**!
 
 ***
 
@@ -42,6 +42,7 @@ AFK сундук и быстрые награды считаются с учет
 - [x] ![sh](../assets/icons/s/refresh.png){width=52} обновление магазина
 - [x] ![sh](../assets/icons/s/mc.png){width=52} Месячная малая подписка `2 кучки ⨂ 6 часов`
 - [x] ![sh](../assets/icons/s/fr.png){width=52} Быстрые награды
-  ///
+
+///
 
 [^dco]:  `1167 пыли/день` такой инкам начинается по достижению 29 главы, после которой больше не растет.

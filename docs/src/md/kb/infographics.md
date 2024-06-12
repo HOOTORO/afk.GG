@@ -7,78 +7,65 @@ template: main.html
 
 ## Hero stats proportions in different game modes
 
-<figure markdown>
+<figure markdown="span">
 
-![stats][ig1]
+![ig1]
 <figcaption>Lil' bit outdated, but still relevant!</figcaption>
 </figure>
 
 ## Isle of Gold
 
-by R3ZZ
-
-<!-- prettier-ignore -->
-/// tab | Trivia
-![1][iog1]
-///
-/// tab | Positioning
-![2][iog2]
-///
+<blockquote class="reddit-embed-bq" style="height:316px" data-embed-theme="dark" data-embed-height="316">
+<a href="https://www.reddit.com/r/afkarena/comments/1bzu5o7/the_isle_of_gold_guide/">The Isle of Gold Guide</a>
+<br> by<a href="https://www.reddit.com/user/Artrizet/">u/Artrizet</a> in<a href="https://www.reddit.com/r/afkarena/">afkarena</a>
+</blockquote>
+<script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
 
 ## Pet Guide
 
-by Cero
+<figure markdown="span">
 
-<figure markdown>
-
-![cero][ig3]
-<figcaption>Updated 2023-06-23</figcaption>
+![ig3]
 </figure>
 
 ## Game mechanics
 
-<figure markdown>
+![ig2]
 
-![gm][ig2]
-<figcaption>
-mb outdated
-</figcaption>
-</figure>
-
-better check [bob49 document](links.md#-game-knowledge-)
+For more detailed check [Bob49 document][boob]
 
 ## Spender's Values
 
 /// tab | SHOP VALUES
-![shop value][ig4]
+![ig4]
 ///
 /// tab | VIP COST
-![VipCost][ig6]{width=400}
-![CostVip][ig5]{width=300}
+![ig6]{width=400}
+![ig5]{width=300}
 ///
 /// tab | Deals value | v.Л.Н
-![bbb][whalevalue]
+![whale-value]
 ///
 
 ## AbEx Relics
 
-/// tab | ![all][tree-all]{width=24 .skip-lb}
-![a][rela]
+/// tab | ![tree-all]{width=24 .skip-lb}
+![rela]
 ///
-/// tab | ![Rangers][tree-celerity]{width=24 .skip-lb}
-![c][relcel]
+/// tab | ![tree-celerity]{width=24 .skip-lb}
+![relcel]
 ///
-/// tab | ![Support][tree-support]{width=24 .skip-lb}
-![su][relsup]
+/// tab | ![tree-support]{width=24 .skip-lb}
+![relsup]
 ///
-/// tab | ![Mages][tree-mage]{width=24 .skip-lb}
-![sr][relsor]
+/// tab | ![tree-mage]{width=24 .skip-lb}
+![relsor]
 ///
-/// tab | ![Tank][tree-fort]{width=24 .skip-lb}
-![rt][reltan]
+/// tab | ![tree-fort]{width=24 .skip-lb}
+![reltan]
 ///
-/// tab | ![Warrior ][tree-might]{width=24 .skip-lb}
-![rw][relwar]
+/// tab | ![tree-might]{width=24 .skip-lb}
+![relwar]
 ///
 
 ## Reddit AbEx guide for newcomers
@@ -93,39 +80,39 @@ Outdated
 
 <!-- prettier-ignore -->
 /// tab | Priority Guide
-![awk1][aawk1]
+![aawk1]
 ///
 /// tab | Belinda
-![awk2][aawk2]
+![aawk2]
 ///
 /// tab | Brutus
-![awk3][aawk3]
+![aawk3]
 ///
 /// tab | Solise
-![awk4][aawk4]
+![aawk4]
 ///
 /// tab | Baden
-![awk5][aawk5]
+![aawk5]
 ///
 /// tab | Thane
-![awk6][aawk6]
+![aawk6]
 ///
 
 ## Guild Bosses
 
 /// tab | Soren
-![s][soren]
+![soren]
 ///
 /// tab | Wrizz
-![w][wrizz]
+![wrizz]
 ///
 
 ## Resources Val
 
 v.Л.Н
 
-![aaa][storevalue]
+![store-value]
 
 ## Elder Tree
 
-![f][fdroplets]
+![fdroplets]

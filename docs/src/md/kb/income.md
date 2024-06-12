@@ -11,7 +11,7 @@ template: main.html
 /// info | HOW-TO
 
 1. Set average results for 3 resource modes.
-2. Use slider to set timeframe.
+2. Use slider to set time interval.
 
 ***
 

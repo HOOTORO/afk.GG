@@ -11,7 +11,7 @@ template: main.html
 
 ## [Cursed Friends](https://discord.gg/5neB6RzAHv)
 
-Посвящен курседу
+Посвящен Cursed Realm
 
 ## [Seas0n's Analytica](https://discord.gg/n8mutNttdZ)
 
@@ -19,7 +19,7 @@ template: main.html
 
 ## [NaXiS AFK-Helper](https://discord.com/invite/H6NY2hG)
 
- изначально сервер англоговорящей гильдии  NaXiS ([АФКХелпер](https://afkhelper.nax.is/) был задуман для внутригильдейского использования изначально), но когда его пустили по миру, тогда же там появились и разделы не только для своих соги.
+ изначально сервер англоговорящей гильдии  NaXiS ([AFK Helper](https://afkhelper.nax.is/) был задуман для внутригильдейского использования изначально), но когда его пустили по миру, тогда же там появились и разделы не только для своих соги.
 
 ## [Official AFK Arena](https://discord.gg/afkarena)
 

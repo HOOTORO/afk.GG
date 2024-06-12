@@ -52,7 +52,7 @@ async function drawInputs() {
       user.reward = reward;
       user.calc();
     }
-    if (tg instanceof HTMLInputElement && tg.type === "range") {
+    if (tg instanceof HTMLInputElement && tg.type /// tab |range") {
       rangeSlide(tg.value, user);
     } else if (user) {
       const weeks = parseInt(localStorage.getItem("rangeValue"));

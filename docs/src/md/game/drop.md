@@ -8,4 +8,4 @@ author: HOOTSMAN, Лев Николаевич
 
 ## Only: HOOTSMAN
 
-![drop][dropstat]
+![drop-stat]

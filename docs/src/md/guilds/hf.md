@@ -7,6 +7,6 @@ template: main.html
 
 ## RU Rankings
 
-### Season 4
-
+/// tab | S4
 ![s4 ru ranks][hfs4]
+///

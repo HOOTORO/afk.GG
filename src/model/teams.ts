@@ -113,7 +113,7 @@ export class Team {
   }
 
   removeHero(h: string | number | Hero) {
-    if (typeof h === "string") {
+    if (typeof h /// tab |string") {
       const idx = this.heroes.findIndex(
         (x) => x[1].name.includes(h) || x[1].short.includes(h)
       );
@@ -121,10 +121,10 @@ export class Team {
         this.heroes.splice(idx, 1);
       }
     }
-    if (typeof h === "number") {
+    if (typeof h /// tab |number") {
       this.heroes.splice(h, 1);
     }
-    if (typeof h === "object") {
+    if (typeof h /// tab |object") {
       const idx = this.heroes.findIndex((x) => x[1].name === h.name);
       if (idx > -1) {
         this.heroes.splice(idx, 1);

@@ -1,5 +1,5 @@
 ---
-title: AQUATALES
+title: AQUANAUTS
 description: >
         Однажды в фарватере Aквилона состоялась аквадискотека, но удостоились ее лишь избранные аквилонцы...
 author: HOOTSMAN, Лев Николаевич
@@ -20,7 +20,7 @@ A были обнаружены трудолюбивым гостем город
 
 И решил он порадовать жителей сего града.
 
-<figure markdown>
+<figure markdown="span">
 
 ![aa][sound]{ .resized }
 <figcaption>
@@ -28,7 +28,7 @@ A были обнаружены трудолюбивым гостем город
 </figcaption>
 </figure>
 
-<figure markdown>
+<figure markdown="span">
 
 ![aa][emo]{ .resized }
 <figcaption>
@@ -36,7 +36,7 @@ A были обнаружены трудолюбивым гостем город
 </figcaption>
 </figure>
 
-<figure markdown>
+<figure markdown="span">
 
 ![aa][rain]{ .resized }
 <figcaption>
@@ -44,7 +44,7 @@ A были обнаружены трудолюбивым гостем город
 </figcaption>
 </figure>
 
-<figure markdown>
+<figure markdown="span">
 
 ![aa][radio]{ .resized }
 <figcaption>
@@ -52,7 +52,7 @@ A были обнаружены трудолюбивым гостем город
 </figcaption>
 </figure>
 
-<figure markdown>
+<figure markdown="span">
 
 ![aa][place]{ .resized }
 <figcaption>
@@ -60,7 +60,7 @@ A были обнаружены трудолюбивым гостем город
 </figcaption>
 </figure>
 
-<figure markdown>
+<figure markdown="span">
 
 ![aa][party]{ .resized }
 <figcaption>
@@ -69,19 +69,19 @@ A были обнаружены трудолюбивым гостем город
 </figcaption>
 </figure>
 
-<figure markdown>
+<figure markdown="span">
 
 ![aa][burg]{ .resized }
 </figure>
 
 Но веселье не продлилось долго, вечеринку решил прервать чинуша местного назначения, бургомистр _муууу_
 
-Ожидаемо, аппаратчик, не разобравшись в ситуации и прикрываясь "глубинным народом", со словами "неположено", приступил к любимому злоупотреблению.  
+Ожидаемо, аппаратчик, не разобравшись в ситуации и прикрываясь "глубинным народом", со словами "не положено", приступил к любимому злоупотреблению.  
 Ну да ладно, не нам судить его глупость.  
 
-<figure markdown>
+<figure markdown="span">
 
-![aa][zoo]{ .resized }v
+![aa][zoo]{ .resized }
 <figcaption>
 Отдельно хотелось бы отметить местный зоопарк!
 </figcaption>
@@ -91,7 +91,7 @@ A были обнаружены трудолюбивым гостем город
 
 Вот такая вот история о гостеприимности.  
 
-<!-- <figure markdown> -->
+<!-- <figure markdown="span"> -->
 <!-- <figcaption> -->
 <!-- </figcaption> -->
 <!-- </figure> -->

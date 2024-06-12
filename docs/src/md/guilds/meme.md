@@ -9,7 +9,7 @@ glightbox.auto_caption: false
 
 /// danger | Любишь кекать?
 
-![needyour memes](../assets/images/general/needmemes.jpg){align=right width=210 style="margin-right:30px"}
+![need your memes](../assets/images/general/needmemes.jpg){align=right width=210 style="margin-right:30px"}
 
 <figure markdown style="margin-top: 3rem">
 
@@ -21,8 +21,8 @@ glightbox.auto_caption: false
 </figure>
 ///
 
-<!-- --8<-- "memlink.md" -->
+--8<-- "memlink.md"
 
-|                                                      Видео                                                      мемасы                                                      |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <video width="320" height="240" controls><source src="https://cdn.discordapp.com/attachments/1128503638470447154/1128503813117051030/phil.webm"" type="video/webm"></video> |
+|                                                                  Видео                                                      мемасы                                                                  |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <video width="320" height="240" controls><source src="https://www.dropbox.com/scl/fi/wga0ctnwyvyacyw08gui9/phil.webm?rlkey=di4abunb6uqlwwb27t5bss0ln&st=yihoaorn&raw=1"" type="video/webm"></video> |
