@@ -1,7 +1,6 @@
 site_name: AFK. Все что желаешь знать.
 site_url: https://hooto.ru
 site_description: afk.GG is an 'AFK Arena' game fansite, and is not affiliated with Lilith Games in any way.
-dev_addr: "0.0.0.0:80"
 repo_name: afk.GG
 repo_url: https://github.com/Hootsdev/afk.GG
 
@@ -153,14 +152,8 @@ markdown_extensions:
           case: lower
       permalink: true
       toc_depth: 3
-  - attr_list
-  - tables
-  - abbr
-  - footnotes
-  - md_in_html
-  - pymdownx.smartsymbols
-  - pymdownx.betterem:
-      smart_enable: all
+  - pymdownx.extra
+  - pymdownx.critic
   - pymdownx.keys:
       separator: "\uff0b"
   - pymdownx.highlight:
@@ -173,11 +166,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets:
       base_path:
         - docs/src/.dict

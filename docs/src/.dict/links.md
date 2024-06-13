@@ -416,6 +416,8 @@
 [Солнышко]: https://discordid.netlify.app/?id=215139335262044161
 [Kekez]: https://discordid.netlify.app/?id=891186775026978826
 [White Nigger]: https://discordid.netlify.app/?id=402485240184176641
+[Извергилия]: https://discordid.netlify.app/?id=437745140141129729
+[R3ZZ]: https://discordid.netlify.app/?id=340221902914191360
 
 <!-- memes -->
 

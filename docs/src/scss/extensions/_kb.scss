@@ -16,12 +16,6 @@ body {
   background-size: cover;
 }
 
-blockquote,
-blockquote:before {
-  border-color: var(--rnb);
-  border-left: 5px ridge !important;
-  border-radius: 10px;
-}
 
 .md-typeset #a-form h4 {
   margin: 1px;
@@ -36,8 +30,8 @@ select {
   color: var(--select-font-color);
   font: inherit;
   text-align: center;
-  background: url("../assets/svg/Caret_down_font_awesome_whitevariation.svg")
-      no-repeat right 0.8em center / 1.4em,
+  background:
+    url("../assets/svg/Caret_down_font_awesome_whitevariation.svg") no-repeat right 0.8em center / 1.4em,
     linear-gradient(to left, $glass-icon 2em, $glass 3em);
   border: 0;
   border-radius: 0.25em;

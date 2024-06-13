@@ -271,3 +271,13 @@ h2 {
 .md-nav__item--section>.md-nav__link[for] {
   color: var(--md-accent-fg-color)
 }
+
+blockquote,
+blockquote:before {
+  border-left: 5px groove !important;
+  border-radius: 10px;
+}
+
+// blockquote:before {
+//   background: var(--rnb) no-repeat center center fixed;
+// }

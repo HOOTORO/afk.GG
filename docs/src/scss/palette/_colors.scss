@@ -284,6 +284,8 @@ $lin-color: rgb(255, 0, 0);
   /* Dracula */
   /* Dark mode color changes*/
   &[data-md-color-scheme="dracula"] {
+    --rnb: #{$mos-def-rnb};
+
     /* Default color shades*/
     --text: #{$dark-text};
     --input-bd-color: #{$drac-dark-pink};
