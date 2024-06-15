@@ -1,5 +1,5 @@
 ---
-title: N<del>M</del>. Respect.
+title: No <del>Mercy</del>. Respect.
 description: >-
     There is no future with no respect for each other.
 author: HOOTSMAN, Лев Николаевич

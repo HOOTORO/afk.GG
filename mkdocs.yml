@@ -48,7 +48,6 @@ theme:
     - content.action.edit
     - content.action.view
     - content.tooltips
-    - content.tabs.link
     - search.share
     - search.highlight
     - search.suggest
@@ -154,6 +153,7 @@ markdown_extensions:
       toc_depth: 3
   - pymdownx.extra
   - pymdownx.critic
+  - pymdownx.tilde
   - pymdownx.keys:
       separator: "\uff0b"
   - pymdownx.highlight:

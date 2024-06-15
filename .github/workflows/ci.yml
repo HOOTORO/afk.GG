@@ -50,7 +50,6 @@ jobs:
       - run: pip install mkdocs-git-committers-plugin
       - run: pip install discord
       - run: pip install openpyxl
-      - run: pip install requests
       - run: pip install pyarrow
       - run: pip install pillow cairosvg
       - name: Deploy to gh
