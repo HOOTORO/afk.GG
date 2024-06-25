@@ -423,3 +423,7 @@
 
 [musketer]: https://i.imgur.com/XU6WvTv.png
 [later-3m]: https://static.codenary.co.kr/content_img/thumbnail/2270.png
+
+<!-- Tale of a Hero -->
+
+[daaaaaa]: https://i.imgur.com/wXyiCv8.png
