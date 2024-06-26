@@ -1,50 +1,31 @@
 {% extends "base.html" %}
+
 {% block extrahead %}
-  <meta name="robots" content="noindex, nofollow" />
+<meta name="robots" content="noindex, nofollow" />
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 {% endblock extrahead %}
-{% block styles %}
-  <link rel="stylesheet"
-        href="https://fonts.cdnfonts.com/css/twilio-sans-mono" />
-  {{ super() }}
-{% endblock styles %}
-{% block htmltitle %}
-  <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-  <title>afk.GG</title>
-{% endblock htmltitle %}
-{# {% block announce %}
-  {% include "templates/section/announcement.j2" ignore missing %}
-{% endblock announce %} #}
+
 {% block libs %}
-  {{ super() }}
-  <script type="module" src="{{ 'js/ts/main.js' | url }}"></script>
+{{ super() }}
+<script type="module" src="{{ 'js/ts/main.js' | url }}"></script>
 {% endblock libs %}
-{% block content %}
-  {% include "templates/section/title.j2" %}
-  {{ page.content }}
-  <hr />
-  {% include "templates/section/metainf.j2" %}
-  {% include "partials/feedback.html" %}
-{% endblock content %}
+
 {% block analytics %}
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZYV31PZDD"></script>
-  <script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZYV31PZDD"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
   }
   gtag("js", new Date());
-
   gtag("config", "G-KZYV31PZDD");
-  </script>
-  {{ super() }}
+</script>
+{{ super() }}
 {% endblock analytics %}
+
 {% block scripts %}
-  <!-- Add scripts that need to run before here -->
-  {{ super() }}
-  <!-- Add scripts that need to run afterwards here -->
+<!-- Add scripts that need to run before here -->
+{{ super() }}
+<!-- Add scripts that need to run afterwards here -->
 {% endblock scripts %}
-{% block footer %}
-  {{ super() }}
-  {{ page.footer }}
-{% endblock footer %}

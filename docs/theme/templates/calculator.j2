@@ -1,31 +1,24 @@
 {% extends "main.html" %}
 {% from 'templates/macro/input.j2' import input with context %}
-
 {% block libs %}
-
-{{ super() }}
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="module" src="{{ 'js/ts/dust.js' | url }}"></script>
-<script type="module" src="{{ 'js/ts/types.js' | url }}"></script>
+  {{ super() }}
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="module" src="{{ 'js/ts/dust.js' | url }}"></script>
+  <script type="module" src="{{ 'js/ts/types.js' | url }}"></script>
 {% endblock libs %}
-
 {% block content %}
-{{ super() }}
-<div id="dust-calc">
-  <form id="dust-input">
-    {{ input(name="",id="b", type="checkbox", legend="Set options", opts=["StoreDeal", "Misty Valley"],
-    icon=["icons/s/dust-store.png"]) }}
-    <p>
-      {{ input(name="", id="a", type="number", value="0",max=99, icon=["icons/s/refresh.png"]) }}
-    </p>
-    <p>
-      {{ input(name="",id="c", type="number", value="0",max=4, icon=["icons/s/mc.png"]) }}
-    </p>
-    <p>
-      {{ input(name="", id="d", type="number", value="0",max=20, icon=["icons/s/fr.png"]) }}
-    </p>
-    <output id="total" for="a c d">
-    </output>
-  </form>
-</div>
+  {% include "templates/section/title.j2" %}
+  <div id="dust-calc">
+    <form id="dust-input">
+      {{ input(name="",id="b", type="checkbox", legend="Set options", opts=["StoreDeal", "Misty Valley"],
+            icon=["icons/s/dust-store.png"]) }}
+      <p>{{ input(name="", id="a", type="number", value="0",max=99, icon=["icons/s/refresh.png"]) }}</p>
+      <p>{{ input(name="",id="c", type="number", value="0",max=4, icon=["icons/s/mc.png"]) }}</p>
+      <p>{{ input(name="", id="d", type="number", value="0",max=20, icon=["icons/s/fr.png"]) }}</p>
+      <output id="total" for="a c d">
+      </output>
+    </form>
+  </div>
+  {{ page.content }}
 {% endblock content %}

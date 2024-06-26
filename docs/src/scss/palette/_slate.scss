@@ -1,5 +1,5 @@
 $dark-fg: hsl(60, 30%, 96%);
-$dark-bg: hsl(240, 11%, 9%);
+$dark-bg: #141419;
 $dark-highlight: hsl(66, 94%, 73%);
 $dark-selection: hsl(231, 25%, 25%);
 $dark-blue: hsl(225, 27%, 51%);
@@ -32,8 +32,8 @@ $dark-sel-text: rgb(42, 42, 42);
 $d-nav-link: #90907d;
 
 $dark-admo-bg: linear-gradient(45deg, rgba(102, 102, 102, 0.605), #bebebebe);
-$dark-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #0026375b);
-$dark-gradient: linear-gradient(180deg, #2e303d, $dark-bg);
+$dark-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #002f37f1);
+$dark-gradient: linear-gradient(180deg, #5f4292e1, darken($dark-bg, 40));
 $dark-gradient-anti: linear-gradient(360deg, #2e303d2c, opacify($dark-bg, 0.1));
 /*
 :root > * {

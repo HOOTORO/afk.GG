@@ -1,5 +1,4 @@
 ---
-title: Ты дома
 description: >-
     Все что пожелаешь знать, найдешь тут.
     Доброе пожаловать в резиденцию HOLYDOOM.
@@ -10,25 +9,20 @@ footer: hide
 template: home.html
 ---
 
+# :fontawesome-solid-house-chimney:
+
 //// details | Updates
     type: new
+    attrs: {style: 'display:none' }
 
 /// tab | New
 
 - [x] Welcome home! ![kappa]{width=24 .skip-lb}
-- [x] Сделать иконки боссов в статистике
-///
-
-/// tab |В планах
-
-- [ ] Сделать collapsible блоки
-- [ ] Расширенное описание аттрибутов персонажей
 ///
 
 /// tab | Поддержать
 _Donations always appreciated, but never needed_
 [CloudTips](https://pay.cloudtips.ru/p/5587246e)  
 ![t](qrCode.jpg){width=256}  
-[На развитие китайской экономики (QIWI)](https://donate.qiwi.com/payin/HOOTORO)
 ///
 ////

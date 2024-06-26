@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block htmltitle %}
+{{ super() }}
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<title>afk.GG</title>
 {% endblock htmltitle %}
 
 <!-- Render hero under tabs -->
@@ -14,7 +14,6 @@
   .md-header {
     position: initial;
   }
-
 
   .md-main,
   .md-content {
@@ -28,7 +27,6 @@
     margin: 0 !important;
   }
 
-  #main-event,
   .md-sidebar {
     display: none !important;
   }
@@ -63,20 +61,10 @@
 
   }
 
-  #main-event,
-  .md-tabs,
-  details,
-  .md-button {
-    backdrop-filter: blur(50px);
-  }
-
   .md-typeset .md-button {
     width: auto;
     display: block;
     font-family: 'Jura';
-    /* -webkit-text-stroke: 1px #7700b8de; 
-    -webkit-text-stroke: 1px #7700b8de;
-     outline: thin solid black; */
   }
 
   [data-md-color-scheme=slate] .md-button {
@@ -130,17 +118,7 @@
 {% endblock %}
 <!-- Content -->
 {% block content %}
-<div id="main-event">
-  <h1>Abyssal Expedition #10</h1>
-  <div class="main-container">
-    <span id="start"></span>
-    <span id="silent"></span>
-    <span id="left"></span>
-  </div>
-</div>
-{{ page.content }}
 {% endblock %}
-
 <!-- Application footer -->
 {% block footer %}
 <section class="mdx-container">
@@ -154,7 +132,7 @@
         <div class="cont">
           <h4>
             <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
-               class="md-button md-button--secondary">
+              class="md-button md-button--secondary">
               Dive into idless afk
             </a>
           </h4>

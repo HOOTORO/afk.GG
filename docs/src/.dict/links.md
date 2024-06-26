@@ -117,7 +117,7 @@
 
 <!--  GUILDS -->
 
-[ru-guilds]: https://i.imgur.com/wFfAolJ.png
+[ru-guilds]: https://i.imgur.com/9pyPtIq.png
 
 <!--  Abex Rankings -->
 
@@ -362,11 +362,11 @@
 <!-- avatars -->
 
 [av-fatality]: https://i.imgur.com/jn3oSaT.png
-[13]: ../assets/avatars/hootsman.webp
-[4]: ../assets/avatars/assmodeus.webp
-[5]: ../assets/avatars/deliav.webp
-[16]: ../assets/avatars/moon.webp
-[17]: ../assets/avatars/sir.webp
+[13]: https://i.imgur.com/euzEpLG.png
+[4]: https://i.imgur.com/IQZYURM.png
+[5]: https://i.imgur.com/kkTdeid.png
+[16]: https://i.imgur.com/rXP2Qle.png
+[17]: https://i.imgur.com/iQmiwMw.png
 
 <!--  Beautiful people -->
 
@@ -427,3 +427,4 @@
 <!-- Tale of a Hero -->
 
 [daaaaaa]: https://i.imgur.com/wXyiCv8.png
+[invite]: https://i.imgur.com/Ix3qHbJ.jpeg

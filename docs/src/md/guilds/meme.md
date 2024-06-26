@@ -1,25 +1,15 @@
 ---
-title: 🇷🇺 Forged Memes
-description: Выкованные в СНГ с любовью!
+title: 🇷🇺 memes
+description: Made in CIS!
 author: Community
 date: 2023
 template: main.html
 glightbox.auto_caption: false
 ---
 
-/// danger | Любишь кекать?
-
-![need your memes](../assets/images/general/needmemes.jpg){align=right width=210 style="margin-right:30px"}
-
-<figure markdown style="margin-top: 3rem">
-
-[:fontawesome-brands-discord:{.discord} Мемасная](https://discord.gg/xjJavhAvv6){ .md-button }
-<figcaption>
-Есть чем поделиться?   <br>
-Не держи в себе, закинь картинку в discord.
-</figcaption>
-</figure>
-///
+![need your memes](https://i.imgur.com/04xWgUQ.png){.skip-lb}
+<!-- ![need your memes](https://i.imgur.com/otBWrXW.jpeg) -->
+***
 
 --8<-- "memlink.md"
 

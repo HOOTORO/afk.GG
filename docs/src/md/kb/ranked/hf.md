@@ -8,6 +8,12 @@ authors:
 template: main.html
 ---
 
+## RU Rankings
+
+/// tab | S4
+![s4 ru ranks][hfs4]
+///
+
 ## General Tactic
 
 _Created by:_

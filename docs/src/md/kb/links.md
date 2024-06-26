@@ -1,5 +1,5 @@
 ---
-title: Bookmarks
+title: Community Resource
 description: >
     Created by the Best people of AFK!<br>
     Коллекция ссылок на актуальные и не очень, но все еще полезные ресурсы по АФК Арене
@@ -12,9 +12,7 @@ template: main.html
 Сделано сообществом для сообщества!
 ///
 
-/// details | ➤ Game knowledge ⊛
-    type: info
-    open: True
+/// tab | Knowledge
 
 - [`Beyond Comprehensive`][boob]  
   Библия трайхарда в AFK Arena.  
@@ -22,16 +20,12 @@ template: main.html
   Произведение искусства, за авторством многоуважаемого **Bob49**!
 - [AFK Analytica][inseasonanal] by inSeas0n.  
   Некогда скандальный трайхард в области сбора и систематизации циферок.  
-  Есть [Discord](../guilds/disen.md)
 - [AFK.guide][AFK Guide], один из первых неофициальных ресурсов посвященный игре, умерено-казуальный.
 - [Gacha Revenue][revenue] Капитализация популярных гача игр.
 - [Reddit Community][Reddit]
 - [Community Guide Compilation (Reddit Version)][redditguide] .
 ///
-
-/// details | ➤ Tools ◬
-    type: example
-    open: True
+/// tab | Tools
 
 - [Коды возмещения][redemption] офф сайт для активации кодов
 - [open source iOS|Android приложение][redemption-mobile] уведомляет и активирует публично выпущенные коды без необходимости посещать сайт Lilith.  
@@ -42,9 +36,7 @@ template: main.html
 - [Engravings Calculator][eng-calc] расчет прироста гравировок.
 - [Elder Tree Planner][eldplan] расчета прироста сока(дерево), показывает временные рамки до капа личного/общего.
 ///
-
-/// details | ➤ Videos
-    type: abstract
+/// tab | Videos
 
 поисковые запросы на китайском Bilibili:
 
@@ -56,14 +48,28 @@ template: main.html
 - [Wombat] китайский блоггер
 - [Karam] известный своими проходками паренек c Bilibili
 ///
-
-/// details | ➤ Google Tables ⊟
-    type: tip
-    open: True
+/// tab | Google Tables
 
 - [NM Pulls Data and Templates][nmpull] шаблоны для ведения статистики по призывам
 - [RC Stats][rcstat] табличная версия, характеристик персонажей, которые можно посмотреть у inSeas0n
-- [Игровые медиа ресурсы][AFK Arena Assets] честно выковырянные[^not-me] из клиента игры на Android. Может быть полезным для создателей контента.
+- [Игровые медиа ресурсы][AFK Arena Assets] честно выковырянные из клиента игры на Android. Может быть полезным для создателей контента.
 ///
 
-[^not-me]: Не мной
+//// details | ➤ Discord Communities
+    type: new
+    open: True
+
+/// tab | EU
+
+- [Crowd Sourcing](https://discord.gg/EYtHQVWSyn) Обновления крупных событий (AE, HF...) чаще всего тут появляются первыми в EN сообществе
+- [Cursed Friends](https://discord.gg/5neB6RzAHv) Посвящен Cursed Realm
+- [Seas0n's Analytica](https://discord.gg/n8mutNttdZ) Сервер inSeas0n'a, круто придумал с навигацией~!
+- [NaXiS](https://discord.com/invite/H6NY2hG) Guild. Тут был создан ([AFK Helper](https://afkhelper.nax.is/)
+- [Official AFK Arena](https://discord.gg/afkarena) Офф сервер игры. Скукотища
+///
+/// tab | RU
+
+- [NoMercy](https://discord.gg/nom3rcy) 2023/05 Top #1 СНГ гильдия
+- [Затонувшая гильдия](https://discord.gg/NFqvgcX3ak) Одна из первых сори во времена появления АЕ-гильдия
+///
+////

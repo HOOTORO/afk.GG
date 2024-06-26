@@ -3,7 +3,7 @@ title: No <del>Mercy</del>. Respect.
 description: >-
     There is no future with no respect for each other.
 author: HOOTSMAN, Лев Николаевич
-date: 23-03-02
+date: 2023-03-02
 template: main.html
 comments: true
 ---
@@ -25,6 +25,7 @@ comments: true
 
 _Спонсором данного текста является ночная дискуссия с субъектом относительно охоты_  
 _Контекст важен, поэтому привожу весь диалог на картинке_
+<!-- more -->
 
 /// tab | At first I was like
 ![nm1]

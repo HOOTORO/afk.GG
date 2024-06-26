@@ -1,11 +1,13 @@
 .ava {
   width: 32px;
-  box-shadow: 1px 1px 5px 1px cyan, -1px -1px 5px 1px lime;
+  box-shadow:
+    1px 1px 5px 1px cyan,
+    -1px -1px 5px 1px lime;
 }
 
 .resized {
-  width: 80%;
-  border-radius: 0;
+  // width: 80%;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 0;
 }

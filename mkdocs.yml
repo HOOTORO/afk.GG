@@ -2,7 +2,8 @@ site_name: AFK. Все что желаешь знать.
 site_url: https://hooto.ru
 site_description: afk.GG is an 'AFK Arena' game fansite, and is not affiliated with Lilith Games in any way.
 repo_name: afk.GG
-repo_url: https://github.com/Hootsdev/afk.GG
+repo_url: https://github.com/HOOTORO/afk.GG
+edit_uri: edit/master/docs/src/md/
 
 copyright: >
     Copyright &copy; 2023, Лев Николаевич HOOTSMAN – <a href="#__consent">Change cookie settings</a><br>
@@ -48,64 +49,50 @@ theme:
     - content.action.edit
     - content.action.view
     - content.tooltips
+    - header.autohide
     - search.share
     - search.highlight
     - search.suggest
+    - navigation.indexes
     - navigation.tracking
+    - navigation.instant
     - navigation.tabs
     - navigation.top
     - navigation.footer
     - navigation.sections
+    - navigation.prune
 
 nav:
   - index.md
-  - База знаний<br>Knowledge Base:
+  - База знаний:
       - kb/index.md
       - Game:
           - kb/links.md
           - kb/trescamble.md
           - kb/infographics.md
-          - kb/tables.md
-          - kb/realms.md
-      - Ranked Modes:
-          - kb/hf.md
+      - Ranked:
+          - kb/ranked/realms.md
+          - kb/ranked/abex.md
+          - kb/ranked/hf.md
       - Tools:
           - kb/abex.md
           - kb/income.md
           - kb/dust.md
       - Discord Tools:
           - kb/chroles.md
-  - Сообщество<br>Community:
+      - AFK Statistics:
+          - kb/iog.md
+  - Сообщество:
       - guilds/index.md
       - guilds/meme.md
-      - СНГ:
-          - guilds/abex.md
-          - guilds/hf.md
-      - Discord:
-          - guilds/disru.md
-          - guilds/disen.md
-  - Хуторок Льва Николаевича<br>Posts:
+
+  - Blog:
       - blog/index.md
-      - donate.md
-      - Blog:
-          - blog/dch.md
-          - blog/party.md
-          - blog/cis.md
-          - blog/bnb.md
-          - blog/aqual.md
-          - blog/dogdream.md
-          - blog/makerugreatagain.md
-          - blog/nm-respect.md
-          - blog/th-retirement.md
-      - AFK Statistics:
-          - game/modes.md
-          - game/drop.md
-          - game/iog.md
-      - ML Translated Posts:
-          - blog/cis-en.md
-          - blog/bnb-en.md
+          
+
 
 plugins:
+  - blog
   - search:
       lang: ru
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -121,8 +108,6 @@ plugins:
       skip_classes:
         - "skip-lb"
         - "ava"
-  - table-reader:
-      allow_missing_files: False
   - social:
       cards: !ENV [CI, true]
   - git-revision-date-localized:
@@ -159,13 +144,7 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
-      use_pygments: true
-      auto_title: true
-      linenums_style: table
-      linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.tasklist:
-      custom_checkbox: true
   - pymdownx.snippets:
       base_path:
         - docs/src/.dict
@@ -199,7 +178,6 @@ markdown_extensions:
         - quote
         - sh-luv
   - pymdownx.blocks.html:
-  - pymdownx.blocks.definition:
   - pymdownx.blocks.tab:
       alternate_style: true
       combine_header_slug: true
@@ -248,6 +226,5 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - js/tablesort.js
   - js/feedback.js
   - js/ts/util/linker.js

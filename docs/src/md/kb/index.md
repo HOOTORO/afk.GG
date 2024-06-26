@@ -18,7 +18,6 @@ Forged by community!
 - [Инфографика](infographics.md) Репрезентативные сводки игровых данных. Various visual data respresentations.
 - [TRESCAMBLE! Охота за костылями](trescamble.md) by HOOTSMAN.  
   Авторское описание механизмов работы "Охоты за Сокровищами". / Treasure Scramble mechanics
-- [Соотношение внутриигровых валют](tables.md) и не только. Раздел с табличными данными / Table data
 
 ## Посчитать / Do Math
 
