@@ -9,8 +9,12 @@ firstAdmonition?.appendChild(feedbackBtn)
 const contentLiks = document.querySelectorAll(".md-content a[href^='http']")
 
 contentLiks?.forEach(l => {
-  l.setAttribute("rel", "noopener noreferrer")
-  l.setAttribute("target", "_blank")
+  let ur = l.getAttribute("href")
+  const isExternalURL = (url:any) => new URL(url).origin !== location.origin;
+  if (isExternalURL(ur)) {
+    l.setAttribute("rel", "noopener noreferrer")
+    l.setAttribute("target", "_blank")
+   }
 })
 
 const details = document.querySelectorAll("details")

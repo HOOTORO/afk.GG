@@ -85,14 +85,18 @@ nav:
   - Сообщество:
       - guilds/index.md
       - guilds/meme.md
-
-  - Blog:
+  - HOOT-o-ROCK:
       - blog/index.md
-          
+
 
 
 plugins:
-  - blog
+  - blog:
+      blog_toc: true
+      authors: true
+      authors_file: "{blog}/.authors.yml"
+      pagination: true
+      post_excerpt_max_authors: 3
   - search:
       lang: ru
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -125,9 +129,6 @@ plugins:
       fallback_to_empty: true
       sort_authors_by: name
       strict: false
-
-hooks:
-  - scripts/hooks.py
 
 markdown_extensions:
   - toc:
@@ -181,7 +182,7 @@ markdown_extensions:
   - pymdownx.blocks.tab:
       alternate_style: true
       combine_header_slug: true
-      separator: '-'  
+      separator: '-'
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower

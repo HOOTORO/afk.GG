@@ -2,13 +2,19 @@
 title: Восхождение и Падение Аквилона.
 date: 2024-06-28
 time: 19:00
-author: HOOTSMAN
+authors:
+    - HOOTSMAN
+    - SE2k
 guest: Sir Eblo 2000
 description: Эпопея из первых уст. Вся неприятная правда выйдет на свет.
 watch: https://www.twitch.tv/hootoro
 ---
 
 Доброго дня, господа!
+
+![invite]
+
+<!-- more -->
 
 Буду краток, если вам интересно узнать:
 
@@ -19,7 +25,5 @@ watch: https://www.twitch.tv/hootoro
 ![daaaaaa]
 
 И другие закулисные интриги произошедшие в эпатажной гильдии, приходите на пятничный стрим. И мы вместе все узнаем из первых рук.
-
-![invite]
 
 Стрим будет тут <https://www.twitch.tv/hootoro>

@@ -3,6 +3,16 @@
 [feed]: https://discord.gg/xjJavhAvv6
 [kappa]: https://i.imgur.com/Ip0FwUV.png
 
+<!-- avatars -->
+
+[av-fatality]: https://i.imgur.com/jn3oSaT.png
+[13]: https://i.imgur.com/euzEpLG.png
+[4]: https://i.imgur.com/IQZYURM.png
+[5]: https://i.imgur.com/kkTdeid.png
+[16]: https://i.imgur.com/rXP2Qle.png
+[17]: https://i.imgur.com/iQmiwMw.png
+[anon]: https://i.imgur.com/aVTHjcC.png
+
 <!--  infographics -->
 
 [drop-stat]: https://i.imgur.com/VSGxOn8.png
@@ -358,15 +368,6 @@
 [aq-s8]: https://disk.yandex.ru/i/5mK5cUF_7wCwCg
 [aq-s9]: https://disk.yandex.ru/i/Ch9aJMGBVJTITg
 [aq-s10]: https://disk.yandex.com/i/543k7N0fMcAxMg
-
-<!-- avatars -->
-
-[av-fatality]: https://i.imgur.com/jn3oSaT.png
-[13]: https://i.imgur.com/euzEpLG.png
-[4]: https://i.imgur.com/IQZYURM.png
-[5]: https://i.imgur.com/kkTdeid.png
-[16]: https://i.imgur.com/rXP2Qle.png
-[17]: https://i.imgur.com/iQmiwMw.png
 
 <!--  Beautiful people -->
 
