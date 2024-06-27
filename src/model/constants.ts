@@ -1,22 +1,6 @@
 import {DustChest} from "./types.js";
 import {aeIcons} from "../abex/abexvars.js";
 
-// document.getElementById("body").use(cors());
-
-// const fetchJSON = async (name: string) => {
-//   const response = await fetch(`data/${name}.json`);
-//   const data = await response
-//     .json()
-//     .then(function (result) {
-//       return result;
-//     })
-//     .catch(function (error) {
-//       return error;
-//     });
-//   console.log(data);
-//   return data;
-// };
-
 const relicEstimateTable = `
   <thead>
     <tr>
@@ -300,13 +284,3 @@ export {
   verb,
   xh,
 };
-
-// export function getJsonString(filename: string) {
-//   try {
-//     const jsonString = fetchJSON(); // fs.readFileSync(`./data/${filename}.json`, "utf-8");
-//     const jsonData = JSON.parse(jsonString);
-//     return jsonData;
-//   } catch (err) {
-//     console.error(err);
-//   }
-// }

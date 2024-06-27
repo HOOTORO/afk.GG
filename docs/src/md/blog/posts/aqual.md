@@ -6,6 +6,7 @@ date: 2023-06-27
 authors: [asm, SE2k, Delian, HOOTSMAN]
 categories: [ITsRU, Outsiders, Conflict]
 comments: true
+slug: aqua-business
 ---
 
 |                          ![in][tro]                           |

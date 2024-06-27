@@ -7,6 +7,7 @@ slug: it-sank
 description: >
     Глазами рядового обывателя.
 comments: true
+slug: hospital
 ---
 
 ^^Что это?^^

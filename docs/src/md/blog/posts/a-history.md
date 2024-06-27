@@ -5,6 +5,7 @@ time: 19:00
 authors: [HOOTSMAN, SE2k]
 categories: [ITsRU, Outsiders, Story]
 description: Эпопея из первых уст. Вся неприятная правда выйдет на свет.
+slug: rise-and-fall
 watch: https://www.twitch.tv/hootoro
 ---
 

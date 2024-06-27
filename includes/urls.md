@@ -135,8 +135,8 @@
 [tkappa]: https://i.imgur.com/RCGkC1g.png
 [ph]: https://i.imgur.com/xV2qUW3.jpeg
 [thg]: https://i.imgur.com/h7pmx12.jpeg
-[pretty]: https://i.imgur.com/OQE5urx.jpeg
-[meh]: https://i.imgur.com/I7goLWV.jpeg
+[pretty]: https://i.imgur.com/2fyJiGg.jpeg
+[meh]: https://i.imgur.com/sBZAdHm.jpeg
 
 <!-- ranked/HF -->
 

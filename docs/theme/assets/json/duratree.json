@@ -2,31 +2,31 @@
   {
     "id": "WAR",
     "name": "might",
-    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669419910103070/tree-might.png",
+    "icon": "https://i.imgur.com/wTr2Zxo.png",
     "value": 60
   },
   {
     "id": "FORT",
     "name": "fort",
-    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669419352264734/tree-fort.png",
+    "icon": "https://i.imgur.com/gGCAwop.png",
     "value": 60
   },
   {
     "id": "MAG",
     "name": "mage",
-    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669419582963793/tree-mage.png",
+    "icon": "https://i.imgur.com/UXu5KgP.png",
     "value": 60
   },
   {
     "id": "RAN",
     "name": "celerity",
-    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669419108991157/tree-celerity.png",
+    "icon": "https://i.imgur.com/MBGw43H.png",
     "value": 60
   },
   {
     "id": "SUP",
     "name": "support",
-    "icon": "https://media.discordapp.net/attachments/1135669088459431997/1135669420321148948/tree-support.png",
+    "icon": "https://i.imgur.com/hOrvjT5.png",
     "value": 60
   }
-]  
+]

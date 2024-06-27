@@ -8,12 +8,7 @@ template: main.html
 ## Apps
 
 ////// new | Development in progress
-
-There are a bugs for sure, if you found one or have ideas/feature request click "Feedback".
-
-***
-
-Возможны баги, при обнаружении, а так же с идеями/предложениями, обращаться в дискорде (кнопка Feedback).
+^^Возможны баги^^, при обнаружении тыкать в кнопку Feedback.
 
 ///// tab | Relic Estimate
 /// warning | CAUTION

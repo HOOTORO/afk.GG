@@ -5,6 +5,7 @@ authors: [HOOTSMAN]
 categories: [Reflection, Improvement, Fantasy]
 date: 2023-06-03
 comments: true
+slug: make-ru-great-once
 ---
 
 ^^O причинах токсичности в СНГ части AFK Arena^^\

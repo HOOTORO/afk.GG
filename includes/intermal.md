@@ -6,4 +6,4 @@
 [iurl3]: /kb/ranked/abex/#s10
 [ru]: /kb/bookmarks/#ru
 [en]: /kb/bookmarks/#eu
-[realms]: /kb/ranked/realms.md
+[realms]: /kb/ranked/realms

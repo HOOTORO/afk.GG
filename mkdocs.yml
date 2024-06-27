@@ -4,6 +4,7 @@ site_description: afk.GG is an 'AFK Arena' game fansite, and is not affiliated w
 repo_name: afk.GG
 repo_url: https://github.com/HOOTORO/afk.GG
 edit_uri: edit/master/docs/src/md/
+dev_addr: "0.0.0.0:80"
 
 copyright: Copyright &copy; 2023 - 2024 Лев Николаевич, HOOTSMAN
 
@@ -61,7 +62,6 @@ theme:
     - content.code.annotate
     - content.action.edit
     - content.action.view
-    - content.tabs.link
     - content.tooltips
 
 not_in_nav: |
@@ -101,6 +101,8 @@ plugins:
       pagination_per_page: 5
       categories: true
       post_excerpt_max_authors: 3
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      post_url_format: "{slug}"
   - search:
       lang: ru
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -117,31 +119,32 @@ plugins:
         - "skip-lb"
         - "ava"
   - social:
-      cards: !ENV [CI, true]
+      cards: !ENV [CI, false]
   - git-revision-date-localized:
-      enabled: !ENV [ENABLED_GIT_REVISION_DATE, true]
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
       fallback_to_build_date: true
   - git-committers:
-      enabled: !ENV [CI, true]
+      enabled: !ENV [CI, false]
       repository: HOOTORO/afk.GG
       branch: master
       exclude:
         - README.md
-        - src/**
-        - docs/theme/**
-        - docs/src/scss/**
 
 markdown_extensions:
   - toc:
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
       permalink: true
       toc_depth: 3
-  - pymdownx.extra
+  - smarty:
+      smart_quotes: true
+  - pymdownx.extra:
   - pymdownx.critic
   - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.inlinehilite
   - pymdownx.caret:
       smart_insert: true
-  - pymdownx.tilde
   - pymdownx.escapeall:
       hardbreak: True
       nbsp: True
@@ -150,7 +153,6 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
-  - pymdownx.inlinehilite
   - pymdownx.snippets:
       base_path:
         - docs/src/.dict
@@ -162,14 +164,13 @@ markdown_extensions:
         - intermal.md
       check_paths: true
       restrict_base_path: true
-  - pymdownx.smartsymbols
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       options:
         custom_icons:
           - theme/.icons
-  - pymdownx.blocks.details
+  - pymdownx.blocks.details:
   - pymdownx.blocks.admonition:
       types:
         - new
@@ -192,8 +193,6 @@ markdown_extensions:
       alternate_style: true
       combine_header_slug: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-  - smarty:
-      smart_quotes: true
 
 extra:
   analytics:
@@ -233,7 +232,7 @@ extra:
 
 extra_css:
   - css/main.css
-  - css/extra.css
+  # - css/extra.css
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   - js/feedback.js

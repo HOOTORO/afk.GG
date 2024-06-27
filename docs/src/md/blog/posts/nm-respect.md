@@ -6,6 +6,7 @@ authors: [HOOTSMAN]
 categories: [ITsRU, Showcase, Bad-practice]
 date: 2023-03-02
 comments: true
+slug: no-respect
 ---
 
 **«Беспощадные[^tn]»** согильдийцы!

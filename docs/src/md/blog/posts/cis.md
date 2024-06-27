@@ -5,6 +5,7 @@ authors: [HOOTSMAN]
 categories: [ITsRU, Opinion, Reflection]
 date: 2023-08-20
 comments: true
+slug: over-the-cuckoo-nest
 ---
 
 ^^Ретроспективный взгляд на родное сообщество, после опыта BnB^^

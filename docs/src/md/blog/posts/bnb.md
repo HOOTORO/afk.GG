@@ -5,6 +5,7 @@ authors: [HOOTSMAN, fatal]
 categories: [EU, Showcase, AbEx, Bread-and-Butter]
 date: 2023-08-20
 comments: true
+slug: to-be-black
 ---
 
 ^^Worlds Ranked #1 BackNBlack, behind the scene.^^

@@ -5,6 +5,7 @@ authors: [HOOTSMAN]
 categories: [ITsRU, Outsiders, Story]
 date: 2023-06-10
 comments: true
+slug: dog-dream
 ---
 
 ^^Хронология события^^
