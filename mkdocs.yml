@@ -119,10 +119,10 @@ plugins:
   - social:
       cards: !ENV [CI, true]
   - git-revision-date-localized:
-      enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, true]
       fallback_to_build_date: true
   - git-committers:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [CI, true]
       repository: HOOTORO/afk.GG
       branch: master
       exclude:

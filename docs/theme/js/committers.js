@@ -1,4 +1,4 @@
 $('.contributors img[data-src]').each(function () {
-  src = $(this).attr("data-src");
-  $(this).attr('src', src);
+  let src = $(this).attr("data-src");
+  $.find(src).attr('src', src);
 });

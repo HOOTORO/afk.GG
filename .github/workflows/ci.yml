@@ -25,6 +25,7 @@ jobs:
             requirements.txt
       - name: Install dependency
         run: |
+         echo "PYTHONPATH=:/home/runner/work/afk.GG/afk.GG/scripts/" >> $GITHUB_ENV
          python -m pip install -r requirements.txt
          echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
 
