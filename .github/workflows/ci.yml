@@ -16,7 +16,6 @@ jobs:
           sparse-checkout: |
             docs
             includes
-
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
@@ -35,8 +34,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm i --save-dev @types/jquery
-      - run: npm run build
+      - run: |
+          ls
+          npm i --save-dev @types/jquery
+          npm run build
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.6.0
         with:
