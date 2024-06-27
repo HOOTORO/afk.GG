@@ -9,8 +9,5 @@
     "outDir": "docs/theme/js/ts",
     "target": "ESNext"
   },
-  "include": [
-    "src/**/*",
-    "docs/src/scss/*"
-  ]
+  "include": ["src/**/*"]
 }
