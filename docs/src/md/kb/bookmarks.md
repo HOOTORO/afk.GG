@@ -61,15 +61,15 @@ template: main.html
 
 /// tab | EU
 
-- [Crowd Sourcing](https://discord.gg/EYtHQVWSyn) Обновления крупных событий (AE, HF...) чаще всего тут появляются первыми в EN сообществе
-- [Cursed Friends](https://discord.gg/5neB6RzAHv) Посвящен Cursed Realm
-- [Seas0n's Analytica](https://discord.gg/n8mutNttdZ) Сервер inSeas0n'a, круто придумал с навигацией~!
-- [NaXiS](https://discord.com/invite/H6NY2hG) Guild. Тут был создан ([AFK Helper](https://afkhelper.nax.is/)
-- [Official AFK Arena](https://discord.gg/afkarena) Офф сервер игры. Скукотища
+- [Crowd Sourcing][crowdss] Обновления крупных событий (AE, HF...) чаще всего тут появляются первыми в EN сообществе
+- [Cursed Friends][cursed] Посвящен Cursed Realm
+- [Seas0n's Analytica][inseasonanal] Сервер inSeas0n'a, круто придумал с навигацией~!
+-  [NaXiS Guild][NaXiS]. Тут был создан ([AFK Helper](https://afkhelper.nax.is/)
+- [Офф сервер игры][Official AFK Arena]. Скукотища
 ///
 /// tab | RU
 
-- [NoMercy](https://discord.gg/nom3rcy) 2023/05 Top #1 СНГ гильдия
-- [Затонувшая гильдия](https://discord.gg/NFqvgcX3ak) Одна из первых сори во времена появления АЕ-гильдия
+- [NoMercy] 2023/05 Top #1 СНГ гильдия
+- [69 медиков,с 1 морячоком][sanked] были успешными первопроходцами бездны в первых сезонах(до S3). Несмотря на закономерный дисбанд. В [дисе][th]  все еще кто-то живет.
 ///
 ////

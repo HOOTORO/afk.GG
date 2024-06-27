@@ -9,8 +9,12 @@ import { User } from "./model/types.js";
 const location = window.location.pathname;
 const user: User = new User("1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY");
 initUser();
+console.log('Loca: %s', location)
 
 // Open a SQLite database, stored in the file db.sqlite
+window.addEventListener("load", (event) => {
+  console.log('LocaEvent: %s', location)
+});
 
 switch (location) {
   case Locations.income:

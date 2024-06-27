@@ -7,7 +7,9 @@ template: main.html
 glightbox.auto_caption: false
 ---
 
-![need your memes](https://i.imgur.com/04xWgUQ.png){.skip-lb}
+![need your memes]{.skip-lb width=100%}
+
+<!-- ![need your memes](https://i.imgur.com/04xWgUQ.png){.skip-lb width=100%} -->
 <!-- ![need your memes](https://i.imgur.com/otBWrXW.jpeg) -->
 ***
 

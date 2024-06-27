@@ -4,8 +4,8 @@ import { updateResourceBox } from "./components/output.js";
 import { user } from "./main.js";
 import { ValueModes } from "./model/constants.js";
 import { RankReward } from "./model/types.js";
-
 export const tLoadedEvent = new Event("tableready");
+
 
 // Storing user input
 $(document).on("change", "select", function (x) {

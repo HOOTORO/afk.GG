@@ -10,51 +10,42 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Set py scripts folder
-        run: echo "PYTHONPATH=:/home/runner/work/afk.GG/afk.GG/scripts/" >> $GITHUB_ENV
-      - name: Test
-        run: echo $PYTHONPATH
-      - uses: actions/setup-python@v4
+          sparse-checkout: |
+            docs
+            includes
+
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+      - name: Install dependency
+        run: |
+         python -m pip install -r requirements.txt
+         echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
       - name: Make destination directory for compiled CSS
         run: mkdir -vp docs/theme/css
       - name: install node v20
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm i --save-dev @types/jquery
       - run: npm run build
       - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.5.1
+        uses: gha-utilities/sass-build@v0.6.0
         with:
           source: docs/src/scss/main.scss
           destination: docs/theme/css/main.css
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material=="9.*"
-      - run: pip install mkdocs-minify-plugin
-      - run: pip install mkdocs-glightbox
-      - run: pip install mkdocs-redirects
-      - run: pip install mkdocs-table-reader-plugin
-      - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: pip install mkdocs-git-authors-plugin
-      - run: pip install mkdocs-git-committers-plugin
-      - run: pip install discord
-      - run: pip install openpyxl
-      - run: pip install pyarrow
-      - run: pip install pillow cairosvg
       - name: Deploy to gh
-        env:
-          DISBOTOK: ${{ secrets.DISBOTOK }}
-          MEMESCH: ${{ vars.MEMESCH }}
-          LOGCHAN: ${{ vars.LOGCHAN }}
         run: mkdocs gh-deploy --force

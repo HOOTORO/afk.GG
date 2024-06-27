@@ -14,7 +14,7 @@ Forged by community!
 
 ## Почитать / To Read
 
-- [Избранное/Bookmarks](links.md) Коллекция ссылок на ресурсы. Links collection
+- [Избранное/Bookmarks](bookmarks.md) Коллекция ссылок на ресурсы. Links collection
 - [Инфографика](infographics.md) Репрезентативные сводки игровых данных. Various visual data respresentations.
 - [TRESCAMBLE! Охота за костылями](trescamble.md) by HOOTSMAN.  
   Авторское описание механизмов работы "Охоты за Сокровищами". / Treasure Scramble mechanics

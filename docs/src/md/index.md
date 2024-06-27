@@ -1,5 +1,6 @@
 ---
-description: >-
+title: Ты дома
+description: >
     Все что пожелаешь знать, найдешь тут.
     Доброе пожаловать в резиденцию HOLYDOOM.
     В программе: куча полезной информации по  AFK Arena, которой пользуюсь регулярно
@@ -9,7 +10,7 @@ footer: hide
 template: home.html
 ---
 
-# :fontawesome-solid-house-chimney:
+
 
 //// details | Updates
     type: new

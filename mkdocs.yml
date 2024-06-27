@@ -5,8 +5,7 @@ repo_name: afk.GG
 repo_url: https://github.com/HOOTORO/afk.GG
 edit_uri: edit/master/docs/src/md/
 
-copyright: >
-    Copyright &copy; 2023, Лев Николаевич HOOTSMAN – <a href="#__consent">Change cookie settings</a><br>
+copyright: Copyright &copy; 2023 - 2024 Лев Николаевич, HOOTSMAN
 
 docs_dir: docs/src/md
 theme:
@@ -21,53 +20,58 @@ theme:
     view: material/eye
     annotation: material/chevron-right-circle
   font:
-    text: Overpass
+    text: Comfortaa
     code: Chivo Mono
   palette:
     - scheme: default
       toggle:
         icon: material/toggle-switch-variant
-        name: Switch to dracula mode
+        name: Switch to dark mode
       primary: orange
       accent: lime
     - scheme: slate
       toggle:
         icon: material/lambda
-        name: Switch to light mode
-      primary: deep purple
-      accent: cyan
+        name: Switch to dracula mode
+      primary: cyan
+      accent: orange
     - scheme: dracula
       toggle:
         icon: material/bat
-        name: Switch to dark mode
+        name: Switch to light mode
       primary: deep purple
       accent: deep purple
   features:
     - announce.dismiss
-    - content.code.copy
-    - content.code.annotate
-    - content.action.edit
-    - content.action.view
-    - content.tooltips
     - header.autohide
-    - search.share
-    - search.highlight
-    - search.suggest
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.indexes
     - navigation.tracking
-    - navigation.instant
     - navigation.tabs
     - navigation.top
     - navigation.footer
     - navigation.sections
     - navigation.prune
+    - toc.follow
+    - search.share
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
+    - content.tooltips
 
+not_in_nav: |
+  donate.md
 nav:
   - index.md
   - База знаний:
       - kb/index.md
       - Game:
-          - kb/links.md
+          - kb/bookmarks.md
           - kb/trescamble.md
           - kb/infographics.md
       - Ranked:
@@ -88,14 +92,14 @@ nav:
   - HOOT-o-ROCK:
       - blog/index.md
 
-
-
 plugins:
   - blog:
       blog_toc: true
       authors: true
       authors_file: "{blog}/.authors.yml"
       pagination: true
+      pagination_per_page: 5
+      categories: true
       post_excerpt_max_authors: 3
   - search:
       lang: ru
@@ -116,30 +120,31 @@ plugins:
       cards: !ENV [CI, true]
   - git-revision-date-localized:
       enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
-      strict: true
       fallback_to_build_date: true
-      enable_creation_date: true
-      timezone: Europe/Moscow
-      locale: ru
-  - git-authors:
-      enabled: !ENV [ENABLED_GIT_AUTHOR, false]
-      show_contribution: true
-      show_line_count: true
-      show_email_address: false
-      fallback_to_empty: true
-      sort_authors_by: name
-      strict: false
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: HOOTORO/afk.GG
+      branch: master
+      exclude:
+        - README.md
+        - src/**
+        - docs/theme/**
+        - docs/src/scss/**
 
 markdown_extensions:
   - toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
       permalink: true
       toc_depth: 3
   - pymdownx.extra
   - pymdownx.critic
+  - pymdownx.mark
+  - pymdownx.caret:
+      smart_insert: true
   - pymdownx.tilde
+  - pymdownx.escapeall:
+      hardbreak: True
+      nbsp: True
   - pymdownx.keys:
       separator: "\uff0b"
   - pymdownx.highlight:
@@ -149,11 +154,15 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path:
         - docs/src/.dict
+        - includes
       auto_append:
         - abbr.md
         - links.md
         - urls.md
+        - intermal.md
       check_paths: true
+      restrict_base_path: true
+  - pymdownx.smartsymbols
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -182,10 +191,10 @@ markdown_extensions:
   - pymdownx.blocks.tab:
       alternate_style: true
       combine_header_slug: true
-      separator: '-'
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  - smarty:
+      smart_quotes: true
+
 extra:
   analytics:
     provider: google
@@ -209,7 +218,8 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discordid.netlify.app/?id=88370628763078656
       name: HOOTSMAN
-  homepage: https://hooto.ru
+    - icon: fontawesome/brands/github
+      link: https://github.com/HOOTORO
   consent:
       title: Cookie consent
       description: >-
@@ -226,6 +236,6 @@ extra_css:
   - css/extra.css
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - js/feedback.js
+  - js/committers.js
   - js/ts/util/linker.js

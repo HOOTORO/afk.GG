@@ -11,8 +11,8 @@
 
 @import "extensions/kb";
 @import "extensions/blog";
-// @import "extensions/silder";
-// @import "extensions/abex";
+@import "extensions/silder";
+@import "extensions/abex";
 
 @import "config";
 
@@ -25,9 +25,9 @@
 // @import "extensions/critic";
 @import "extensions/details";
 // @import "extensions/highlight";
-// @import "extensions/keys";
+@import "extensions/keys";
 // @import "extensions/magiclink";
-// @import "extensions/superfences";
 @import "extensions/tabbed";
 // @import "extensions/tasklist";
 // @import "extensions/toc";
+@import "extensions/git-committers";

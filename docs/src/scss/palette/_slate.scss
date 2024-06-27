@@ -1,11 +1,11 @@
 $dark-fg: hsl(60, 30%, 96%);
 $dark-bg: #141419;
-$dark-highlight: hsl(66, 94%, 73%);
+$dark-highlight: hsl(29, 94%, 73%);
 $dark-selection: hsl(231, 25%, 25%);
 $dark-blue: hsl(225, 27%, 51%);
-$dark-cyan: hsl(191, 97%, 77%);
-$dark-green: hsl(135, 94%, 65%);
-$dark-orange: hsl(31, 100%, 71%);
+$dark-cyan: hsl(194, 85%, 41%);
+$dark-green: hsl(135, 100%, 59%);
+$dark-orange: hsl(36, 100%, 50%);
 $dark-pink: hsl(326, 100%, 74%);
 $dark-purple: hsl(265, 89%, 78%);
 $dark-red: hsl(0, 100%, 67%);
@@ -24,17 +24,19 @@ $dark-default-bg: lighten($dark-bg, 5%);
 $dark-tabs-bg: #0c0c0c99;
 
 /* rgb(69, 69, 96) */
-$dark-text: rgb(218, 218, 218);
+$dark-text: rgb(236, 236, 236);
 $dark-wrapper: #2c313d3d;
 $dark-foot-fg: $dark-text;
 $dark-foot-bg: $dark-bg;
 $dark-sel-text: rgb(42, 42, 42);
-$d-nav-link: #90907d;
+$d-nav-link: #b8b8ae;
 
 $dark-admo-bg: linear-gradient(45deg, rgba(102, 102, 102, 0.605), #bebebebe);
 $dark-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #002f37f1);
-$dark-gradient: linear-gradient(180deg, #5f4292e1, darken($dark-bg, 40));
+$dark-gradient: linear-gradient(180deg, #00bdd696, darken($dark-bg, 30));
+// $dark-gradient: linear-gradient(180deg, #5f4292e1, darken($dark-bg, 40));
 $dark-gradient-anti: linear-gradient(360deg, #2e303d2c, opacify($dark-bg, 0.1));
+
 /*
 :root > * {
   --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);

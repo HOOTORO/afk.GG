@@ -64,7 +64,7 @@
   .md-typeset .md-button {
     width: auto;
     display: block;
-    font-family: 'Jura';
+    backdrop-filter: blur(100px);
   }
 
   [data-md-color-scheme=slate] .md-button {
@@ -82,6 +82,7 @@
     -webkit-font-smoothing: subpixel-antialiased;
     text-align: center;
     flex-direction: column;
+
   }
 
   .md-typeset details {
@@ -93,10 +94,6 @@
     background-color: rgba(0, 0, 0, 0.777) !important;
   }
 
-  [data-md-color-scheme="default"] .md-typeset .admonition,
-  .md-typeset details {
-    color: azure;
-  }
 
   .md-content__inner:before {
     display: none;
@@ -106,11 +103,6 @@
   .md-typeset .admonition,
   .md-typeset details {
     box-shadow: var(--md-shadow-z7);
-  }
-
-
-  code {
-    background-color: blueviolet;
   }
 </style>
 {% endblock %}

@@ -11,3 +11,7 @@
   margin-left: auto;
   border-radius: 0;
 }
+
+article hr {
+  border: 0.3rem dotted var(--md-accent-fg-color);
+}

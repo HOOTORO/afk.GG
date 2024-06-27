@@ -9,12 +9,16 @@ template: main.html
 comments: true
 ---
 
-/// warning | Disclaimer
+/// details | Disclaimer
+    type: warning
+    open: False
+
 Это _не топ_ гильдий _по бездне_, а **справочник** гильдий **сообщества**  
 Любой вклад в развитие раздела приветствуется.  
+
+![ru-guilds]{width=90% style='margin:5%'}
 ///
 
-![ru-guilds]
 
 ## No Mercy
 
@@ -674,15 +678,3 @@ comments: true
 После распада госпа в чате стали общаться только бывшие участники госпа
 ///
 ////
-
-#### Footnotes
-
-[1]: https://discord.gg/nom3rcy
-[2]: https://discord.gg/CGuZXF9hys
-[aq-dis]: https://discord.gg/eba-wait-you
-[av1]: ../assets/avatars/hootsman.webp
-[av0]: ../assets/avatars/anon.png
-
-[iurl1]: ../kb/infographics.md#isle-of-gold
-[iurl2]: ../kb/infographics.md#spenders-values
-[iurl3]: ../kb/ranked/abex.md#season-10

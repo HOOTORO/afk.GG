@@ -7,7 +7,7 @@
 
 {% block libs %}
 {{ super() }}
-<script type="module" src="{{ 'js/ts/main.js' | url }}"></script>
+{% include "partials/libs.html" ignore missing %}
 {% endblock libs %}
 
 {% block analytics %}

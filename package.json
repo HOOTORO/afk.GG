@@ -17,7 +17,7 @@
     "RE:build": "tsc --build && npm run -s SASS:build && mkdocs build",
     "RE:serve": "mkdocs serve --watch-theme",
     "RE:dirty": "mkdocs serve --dirtyreload",
-    "SERVE.THIS": "tsc --watch & npm run -s SASS:watch & npm run -s RE:serve",
+    "SERVE.THIS": "npm run -s RE:serve & tsc --watch & npm run --loglevel=silent SASS:watch ",
     "GHP:Manual Deploy": "mkdocs gh-deploy --force"
   },
   "devDependencies": {

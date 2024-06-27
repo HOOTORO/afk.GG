@@ -1,5 +1,7 @@
 /// html | div#memes
 
+[need your memes]: https://i.imgur.com/UUD5NxY.png
+
 ![1121040470957633536.jpg](https://i.imgur.com/jnTo85c.jpeg)
 ![1121040535445057546.jpg](https://i.imgur.com/8thbJN4.jpeg)
 ![1121040637798654013.jpg](https://i.imgur.com/8PaLigZ.jpeg)
@@ -65,6 +67,7 @@
 ![1127869908282245130.jpg](https://i.imgur.com/FVLA3CW.jpeg)
 ![1127869908638769253.jpg](https://i.imgur.com/MpVYmjS.jpeg)
 ![1127869909087551498.jpg](https://i.imgur.com/JteX6Kf.jpeg)
+![alt text](https://i.imgur.com/WzydHzv.png)
 ![1127869909326635060.jpg](https://i.imgur.com/Hgxkidt.jpeg)
 ![1127869909553123368.jpg](https://i.imgur.com/6eQpZCo.jpeg)
 ![1127869909813166200.jpg](https://i.imgur.com/LorkSeW.jpeg)
@@ -124,5 +127,9 @@
 ![1147098004642336818.jpg](https://i.imgur.com/FSraEMZ.jpeg)
 ![1148345272498401392.jpg](https://i.imgur.com/oeNVBOG.jpeg)
 ![auto-generated](../assets/images/meme/76.jpg)
-
+![alt text](https://i.imgur.com/RYeNdWn.jpeg)
+![alt text](https://i.imgur.com/S903eny.png)
+![alt text](https://i.imgur.com/864A7td.png)
+![alt text](https://i.imgur.com/hcXDgki.jpeg)
+![alt text](https://i.imgur.com/Av2OjVJ.png)
 ///

@@ -47,57 +47,6 @@ For more detailed check [Bob49 document][boob]
 ![whale-value]
 ///
 
-## AbEx Relics
-
-/// tab | ![tree-all]{width=24 .skip-lb}
-![rela]
-///
-/// tab | ![tree-celerity]{width=24 .skip-lb}
-![relcel]
-///
-/// tab | ![tree-support]{width=24 .skip-lb}
-![relsup]
-///
-/// tab | ![tree-mage]{width=24 .skip-lb}
-![relsor]
-///
-/// tab | ![tree-fort]{width=24 .skip-lb}
-![reltan]
-///
-/// tab | ![tree-might]{width=24 .skip-lb}
-![relwar]
-///
-
-## Reddit AbEx guide for newcomers
-
-Outdated
-
-![g][nb]
-
-## Awk. Heroes
-
-Outdated
-
-<!-- prettier-ignore -->
-/// tab | Priority Guide
-![aawk1]
-///
-/// tab | Belinda
-![aawk2]
-///
-/// tab | Brutus
-![aawk3]
-///
-/// tab | Solise
-![aawk4]
-///
-/// tab | Baden
-![aawk5]
-///
-/// tab | Thane
-![aawk6]
-///
-
 ## Guild Bosses
 
 /// tab | Soren
