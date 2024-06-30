@@ -4,7 +4,6 @@
 [later-3m]: https://static.codenary.co.kr/content_img/thumbnail/2270.png
 [shi]: https://memepedia.ru/wp-content/uploads/2019/07/lih8qy.jpg
 
-
 <!-- nm-respect -->
 
 [nm1]: https://i.imgur.com/0lwrfwd.png
@@ -252,3 +251,23 @@
 [daaaaaa]: https://i.imgur.com/wXyiCv8.png
 [invite]: https://i.imgur.com/Ix3qHbJ.jpeg
 [loh]: https://i.imgur.com/kcJk6U5.png
+
+<!-- report -->
+
+[aprilfool]: https://i.imgur.com/hZVUrTO.png
+[uscollab]: https://i.imgur.com/QcrX5yL.jpeg
+[sensey]: https://i.imgur.com/uwu59yx.png
+[s1112]: https://i.imgur.com/iqHX4oJ.jpeg
+
+[ddaa]: https://i.imgur.com/mwLdmKd.png
+[guchi]: https://i.imgur.com/VSR9Nwb.jpeg
+[ddaa1]: https://i.imgur.com/Gx6fSlk.png
+[dooo]: https://i.imgur.com/arMGzfu.png
+[daaa2meet]: https://i.imgur.com/qqgVFsC.jpeg
+[dogout]: https://i.imgur.com/C0sxSTj.png
+[mazay]: https://i.imgur.com/7YYpVz4.jpeg
+[fur]: https://i.imgur.com/KAunI98.jpeg
+[fury]: https://i.imgur.com/KYi8dAE.png
+[sirmotive]: https://i.imgur.com/DEYS3Kn.png
+[keka]: https://i.imgur.com/WLmZk2I.png
+[gamechat]: https://i.imgur.com/pnXb0n0.jpeg
