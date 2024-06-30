@@ -1,75 +1,42 @@
-$dark-fg: hsl(60, 30%, 96%);
-$dark-bg: #141419;
-$dark-highlight: hsl(29, 94%, 73%);
-$dark-selection: hsl(231, 25%, 25%);
-$dark-blue: hsl(225, 27%, 51%);
-$dark-cyan: hsl(194, 85%, 41%);
-$dark-green: hsl(135, 100%, 59%);
-$dark-orange: hsl(36, 100%, 50%);
-$dark-pink: hsl(326, 100%, 74%);
-$dark-purple: hsl(265, 89%, 78%);
-$dark-red: hsl(0, 100%, 67%);
-$dark-yellow: hsl(65, 92%, 76%);
+@use "sass:color";
+
+$label: "Freeman";
+$fg: #caa888;
+$bg: #141419;
+$highlight: hsl(29deg 94% 73%);
+$selection: hsl(231deg 25% 25%);
+$blue: hsl(225deg 27% 51%);
+$cyan: hsl(194deg 85% 41%);
+$green: hsl(135deg 100% 59%);
+$orange: hsl(36deg 100% 50%);
+$pink: hsl(326deg 100% 74%);
+$purple: hsl(265deg 89% 78%);
+$red: hsl(0deg 100% 67%);
+$yellow: hsl(65deg 92% 76%);
 
 /* Non-standard Dracula colors */
-$dark-grey: hsl(225, 8%, 51%);
-$dark-teal: hsl(161, 97%, 77%);
-$dark-light-blue: hsl(190, 94%, 87%);
-$dark-light-green: hsl(135, 92%, 79%);
-$dark-dark-pink: hsl(325, 100%, 64%);
-$dark-dark-red: hsl(0, 100%, 59%);
-$dark-dark-yellow: hsl(51, 94%, 73%);
+$grey: hsl(225deg 8% 51%);
+$teal: hsl(161deg 97% 77%);
+$light-blue: hsl(190deg 94% 87%);
+$light-green: hsl(135deg 92% 79%);
+$dark-pink: hsl(325deg 100% 64%);
+$dark-red: hsl(0deg 100% 59%);
+$dark-yellow: hsl(51deg 94% 73%);
 
-$dark-default-bg: lighten($dark-bg, 5%);
-$dark-tabs-bg: #0c0c0c99;
+$bg-radient: linear-gradient(180deg, #00bdd6bb, color.adjust($bg, $lightness: 30%));
+
+$default-bg: color.adjust($bg, $lightness: 5%);
+$tabs-bg: #0c0c0c99;
 
 /* rgb(69, 69, 96) */
-$dark-text: rgb(236, 236, 236);
-$dark-wrapper: #2c313d3d;
-$dark-foot-fg: $dark-text;
-$dark-foot-bg: $dark-bg;
-$dark-sel-text: rgb(42, 42, 42);
-$d-nav-link: #b8b8ae;
+$text: rgb(236 236 236);
+$wrapper: #2c313d3d;
+$foot-fg: $text;
+$foot-bg: $bg;
+$sel-text: rgb(42 42 42);
+$nav-link: #b8b8ae;
+$admo-bg: linear-gradient(45deg, rgb(102 102 102 / 60.5%), #bebebebe);
+$gradient: linear-gradient(180deg, #00bdd6bb, color.adjust($bg, $lightness: 30%));
+$gradient-anti: linear-gradient(360deg, #2e303d2c, color.adjust($bg, $alpha: 0.1));
 
-$dark-admo-bg: linear-gradient(45deg, rgba(102, 102, 102, 0.605), #bebebebe);
-$dark-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #002f37f1);
-$dark-gradient: linear-gradient(180deg, #00bdd696, darken($dark-bg, 30));
-// $dark-gradient: linear-gradient(180deg, #5f4292e1, darken($dark-bg, 40));
-$dark-gradient-anti: linear-gradient(360deg, #2e303d2c, opacify($dark-bg, 0.1));
-
-/*
-:root > * {
-  --md-admonition-bg-color: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-bg-color--sh-luv: rgba(235, 5, 5, 0.2);
-  --md-admonition-icon-color--sh-luv: rgb(235, 5, 5);
-  --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
-  --md-admonition-icon-color--settings: #aa00ff;
-  --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
-  --md-admonition-icon-color--new: #ffd600;
-  --md-admonition-bg-color--note: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--note: hsl(51, 94%, 73%);
-  --md-admonition-bg-color--abstract: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
-  --md-admonition-bg-color--info: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--info: hsl(190, 94%, 87%);
-  --md-admonition-bg-color--tip: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--tip: hsl(161, 97%, 77%);
-  --md-admonition-bg-color--success: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--success: hsl(135, 94%, 65%);
-  --md-admonition-bg-color--question: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--question: hsl(135, 92%, 79%);
-  --md-admonition-bg-color--warning: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--warning: hsl(31, 100%, 71%);
-  --md-admonition-bg-color--failure: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--failure: hsl(0, 100%, 59%);
-  --md-admonition-bg-color--danger: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
-  --md-admonition-bg-color--bug: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
-  --md-admonition-bg-color--example: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--example: hsl(265, 89%, 78%);
-  --md-admonition-bg-color--quote: var(--md-default-bg-color--ultra-dark);
-  --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
-}
-
-*/
+// $gradient: linear-gradient(180deg, #5f4292e1, color.adjust($bg, $lightness:  40%));

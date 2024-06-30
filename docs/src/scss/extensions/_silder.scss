@@ -16,18 +16,18 @@ output > div {
   height: $slider-radius;
   margin-left: 5px;
   overflow: hidden;
-  background: #111111;
+  background: #111;
   border-radius: 15px;
   outline: none;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
-  -webkit-appearance: none;
+  box-shadow: inset 0 0 5px rgb(0 0 0 / 100%);
+  appearance: none;
 }
 
 .range::-webkit-slider-thumb {
   width: $slider-radius + 2;
   height: $slider-radius + 2;
   background: #700bad;
-  border: 4px solid #333333;
+  border: 4px solid #333;
   border-radius: 50%;
   box-shadow: -507px 0 0 500px #bada55;
   cursor: pointer;
@@ -41,11 +41,11 @@ datalist {
   writing-mode: horizontal-tb;
   width: -webkit-fill-available;
   background: linear-gradient(to right, #1488ad, #3ade10);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (width <= 800px) {
   datalist {
     display: none;
   }

@@ -1,24 +1,27 @@
-$drac-fg: hsl(60, 30%, 96%);
-$drac-bg: hsl(231, 15%, 18%);
-$drac-highlight: hsl(66, 94%, 73%);
-$drac-selection: hsl(231, 25%, 25%);
-$drac-blue: hsl(225, 27%, 51%);
-$drac-cyan: hsl(191, 97%, 77%);
-$drac-green: hsl(135, 94%, 65%);
-$drac-orange: hsl(31, 100%, 71%);
-$drac-pink: hsl(326, 100%, 74%);
-$drac-purple: hsl(265, 89%, 78%);
-$drac-red: hsl(0, 100%, 67%);
-$drac-yellow: hsl(65, 92%, 76%);
+@use "sass:color";
+
+/* dracula vars */
+$label: "Dracula";
+$fg: hsl(60deg 30% 96%);
+$bg: hsl(231deg 15% 18%);
+$highlight: hsl(66deg 94% 73%);
+$selection: hsl(231deg 25% 25%);
+$blue: hsl(225deg 27% 51%);
+$cyan: hsl(191deg 97% 77%);
+$green: hsl(135deg 94% 65%);
+$orange: hsl(31deg 100% 71%);
+$pink: hsl(326deg 100% 74%);
+$purple: hsl(265deg 89% 78%);
+$red: hsl(0deg 100% 67%);
+$yellow: hsl(65deg 92% 76%);
 
 /* Non-standard Dracula colors */
-$drac-grey: hsl(225, 8%, 51%);
-$drac-teal: hsl(161, 97%, 77%);
-$drac-light-blue: hsl(190, 94%, 87%);
-$drac-light-green: hsl(135, 92%, 79%);
-$drac-dark-pink: hsl(325, 100%, 64%);
-$drac-dark-red: hsl(0, 100%, 59%);
-$drac-dark-yellow: hsl(51, 94%, 73%);
-
-$drac-default-bg: lighten($drac-bg, 5%);
-
+$grey: hsl(225deg 8% 51%);
+$teal: hsl(161deg 97% 77%);
+$light-blue: hsl(190deg 94% 87%);
+$light-green: hsl(135deg 92% 79%);
+$dark-pink: hsl(325deg 100% 64%);
+$dark-red: hsl(0deg 100% 59%);
+$dark-yellow: hsl(51deg 94% 73%);
+$default-bg: color.adjust($bg, $lightness: 5%);
+$bg-radient: linear-gradient(222deg, rgba(44, 42, 42, 0.815), #002f37);

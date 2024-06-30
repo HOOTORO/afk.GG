@@ -1,10 +1,13 @@
 /* Dark mode changes */
+@use "../palette/dracula" as drac;
+@use "../palette/slate" as sla;
+@use "../palette/default" as def;
 
-@each $sch, $color in ("dracula": $drac-green, "slate": $dark-green, "default": $mos-def-green) {
+@each $sch, $color in ("dracula": drac.$green, "slate": sla.$green, "default": def.$green) {
   [data-md-color-scheme="#{$sch}"] {
     .md-typeset .task-list-control {
       .task-list-indicator::before {
-        background-color: var(--md-default-fg-color--lighter);
+        background-color: var(--md-default-fg-color-lighter);
       }
 
       [type="checkbox"]:checked + .task-list-indicator::before {

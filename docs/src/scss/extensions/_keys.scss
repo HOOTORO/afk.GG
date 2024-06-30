@@ -1,8 +1,6 @@
 .md-typeset {
-
   // Keyboard key
   .keys {
-
     // Define keyboard keys with left icon
     @each $name, $code in (
       // Extra Keys

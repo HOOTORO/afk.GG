@@ -10,12 +10,8 @@
 
 body {
   background: var(--slate-gradient) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
-
 
 .md-typeset #a-form h4 {
   margin: 1px;
@@ -36,12 +32,14 @@ select {
   border: 0;
   border-radius: 0.25em;
   outline: 0;
-  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1em 0 rgb(0 0 0 / 20%);
   cursor: pointer;
   appearance: none;
+
   option {
     color: inherit;
     filter: invert(1);
+
     /*     background-color: Invert(var(--select-font-color), $weight: 100%); */
   }
 
@@ -58,17 +56,18 @@ select {
 
 #dust-calc,
 #dust-input * {
-  @include box-sizing();
-  @include border-rad();
+  @include box-sizing;
+  @include border-rad;
 }
 
 #dust-calc {
   padding: 15px;
-  background-color: rgba(13, 14, 15, 0.46);
+  background-color: rgb(13 14 15 / 46%);
 }
 
 #dust-input {
   display: block;
+
   * {
     margin: 5px;
   }
@@ -86,16 +85,14 @@ select {
     height: max-content;
     margin: auto;
     padding: 10px;
-    background-color: $dark-tabs-bg;
+    background-color: #0c0c0c99;
     border: 2px inset cornflowerblue;
   }
 
   input::-webkit-inner-spin-button {
     position: relative;
     display: block;
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 0;
+    flex: 1 0 auto;
     height: 2.5em;
     cursor: default;
     appearance: auto;
@@ -104,10 +101,9 @@ select {
 
   output {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
-    color: hsl(0, 0%, 0%);
+    color: hsl(0deg 0% 0%);
     text-align: center;
     background: #bada55;
   }
@@ -122,11 +118,9 @@ select {
 
 #a-form {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
+  flex-flow: row wrap;
+  place-content: center space-evenly;
   align-items: center;
-  justify-content: space-evenly;
   max-height: fit-content;
   margin: 5px;
   background-color: var(--containers-bg);
@@ -147,7 +141,7 @@ select {
   border-radius: 10px;
 }
 
-#result:before {
+#result::before {
   position: sticky;
   right: 90%;
   margin: 0;
@@ -160,7 +154,7 @@ select {
   content: "Total Income";
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   #a-form {
     display: inline-flex;
     width: 200px;
@@ -173,7 +167,7 @@ select {
   }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   output.result {
     display: inline-flex;
     flex-direction: row;

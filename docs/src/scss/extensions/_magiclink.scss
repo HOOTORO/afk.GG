@@ -51,13 +51,9 @@
 }
 
 // Assign icons to repository links
-@each $name, $icon in (
-  "commit": "commit",
-  "compare": "compare",
-  "pull": "pull",
-  "issue": "issue",
-  "discussion": "discussion"
-) {
+@each $name,
+  $icon in ("commit": "commit", "compare": "compare", "pull": "pull", "issue": "issue", "discussion": "discussion")
+{
   .md-typeset {
     .magiclink-#{$name}:not(.magiclink-ignore) {
       &::before {
@@ -68,11 +64,7 @@
 }
 
 // Assign icons to repository links
-@each $name, $icon in (
-  "github": "github",
-  "gitlab": "gitlab",
-  "bitbucket": "bitbucket"
-) {
+@each $name, $icon in ("github": "github", "gitlab": "gitlab", "bitbucket": "bitbucket") {
   .md-typeset {
     .magiclink-repository.magiclink-#{$name}:not(.magiclink-ignore) {
       &::before {

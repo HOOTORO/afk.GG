@@ -15,7 +15,6 @@
 
 @keyframes discord {
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -24,12 +23,15 @@
   25% {
     transform: rotate(-90deg) scale(0.95);
   }
+
   50% {
     transform: rotate(-180deg);
   }
+
   75% {
     transform: rotate(-270deg) scale(0.98);
   }
+
   100% {
     transform: rotate(-360deg);
   }

@@ -1,10 +1,12 @@
 #main-event {
   display: block;
   padding: 10px;
-  background-color: rgba(90, 90, 220, 0.328);
+  background-color: rgb(90 90 220 / 32.8%);
   border-radius: 10px;
-  box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
-  0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
+  box-shadow:
+    1px 1px 2px red,
+    0 0.5px 1em blue,
+    0.5px 0.5px 0.5px 0.5px rgb(0 238 255);
 }
 
 #abex-form {
@@ -43,7 +45,6 @@ button.btn {
     margin: 0;
   }
 }
-
 
 .labeled-container {
   display: flex;
@@ -91,8 +92,10 @@ button.btn {
   background-color: blueviolet;
   border: 0.5px outset orange;
   border-radius: 10px;
-  box-shadow: 1px 1px 2px red, 0 0.5px 1em blue,
-  0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
+  box-shadow:
+    1px 1px 2px red,
+    0 0.5px 1em blue,
+    0.5px 0.5px 0.5px 0.5px rgb(0 238 255);
 }
 
 #attack-app {
@@ -119,11 +122,9 @@ button.btn {
 
   label {
     display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-flow: column wrap;
+    place-content: center center;
     align-items: center;
-    justify-content: center;
     max-width: 100%;
   }
 
@@ -159,12 +160,11 @@ button.btn {
     color: var(--md-default-fg-color);
     line-height: 2;
     background-color: var(--md-default-bg-color);
-    border: 1px solid rgba(114, 114, 114, 0.4470588235);
+    border: 1px solid rgb(114 114 114 / 44.7%);
     border-radius: 10px;
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -moz-appearance: textfield;
 
-    &::-webkit-inner-spin-button,
     &::-webkit-inner-spin-button {
       margin: 0;
       /* stylelint-disable-next-line property-no-vendor-prefix */
@@ -191,7 +191,7 @@ button.btn {
     font-family: "Trebuchet MS", Helvetica, sans-serif !important;
     line-height: 1.7;
     text-align: center;
-    border-left: 1px solid #eeeeee;
+    border-left: 1px solid #eee;
     transform: translateX(-100%);
     cursor: pointer;
     -webkit-user-select: none;
@@ -203,7 +203,7 @@ button.btn {
       top: 5px;
       left: 5px;
       height: 20px;
-      border-bottom: 1px solid #eeeeee;
+      border-bottom: 1px solid #eee;
     }
 
     &.team-set-down {
@@ -224,13 +224,9 @@ button.btn {
   min-height: 6vh;
   padding: 2em;
   background-position: 50% 50%;
-}
 
-.attack-inputs {
   z-index: 2;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   width: 100%;
 
   @supports (mix-blend-mode: darken) {
@@ -241,15 +237,15 @@ button.btn {
       position: absolute;
       top: -0.28em;
       left: 3em;
-      background: #000000;
+      background: #000;
     }
   }
 
   &__label {
     margin-bottom: 0.5em;
     padding: 0 0.5em;
-    color: #ccccdd;
-    color: rgba(255, 220, 255, 0.6);
+    color: #ccd;
+    color: rgb(255 220 255 / 60%);
     font-size: 0.875em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -265,8 +261,7 @@ button.btn {
     font-size: 1.25rem;
     line-height: 1;
     background-color: var(--md-default-bg-color) !important;
-    background-image: linear-gradient(#000000, #000000),
-    linear-gradient(120deg, #ff0099 0%, #00ffff 50%, #99ff00 100%);
+    background-image: linear-gradient(#000, #000), linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
     background-size: 200% 100%;
     background-clip: padding-box, border-box;
     background-origin: border-box;
@@ -327,18 +322,18 @@ button.btn {
   }
 
   :checked + label {
-    border-color: #dddddd;
+    border-color: #ddd;
   }
 
-  :checked + label:before {
+  :checked + label::before {
     z-index: 100;
-    background-color: rgba(1, 170, 63, 0.751);
+    background-color: rgb(1 170 63 / 75.1%);
     transform: scale(1.5);
     content: "✓";
   }
 
   :checked + label img {
-    box-shadow: 0 0 5px #333333;
+    box-shadow: 0 0 5px #333;
     transform: scale(0.9);
   }
 }
@@ -356,8 +351,7 @@ button.btn {
 .user-bag,
 #relic-app {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
 
@@ -380,15 +374,17 @@ button.btn {
     font-family: "Twilio Sans Mono";
     text-align: center;
     text-transform: capitalize;
-    text-shadow: 1px 1px 2px rgb(179, 0, 255), 0 2px 1em rgb(0, 217, 255),
-    0 0 0.2em rgb(98, 0, 255);
+    text-shadow:
+      1px 1px 2px rgb(179 0 255),
+      0 2px 1em rgb(0 217 255),
+      0 0 0.2em rgb(98 0 255);
+
     /* background-color: var(--md-default-bg-color); */
     background-color: #3d2e4b48;
     border: 2px outset #3030347d;
     border-radius: 10px;
-    stroke: #00ffff;
-    -webkit-text-stroke: #00ffff;
-
+    stroke: #0ff;
+    -webkit-text-stroke: #0ff;
 
     img {
       -webkit-user-select: none;
@@ -404,8 +400,7 @@ button.btn {
 
     .relic {
       display: inline-flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-flow: row wrap;
       max-width: 105px;
       margin: 2px;
       cursor: pointer;
@@ -423,9 +418,8 @@ button.btn {
     label {
       display: inline-flex;
       flex-direction: row;
-      align-content: center;
+      place-content: center center;
       align-items: center;
-      justify-content: center;
     }
   }
 
@@ -437,7 +431,9 @@ button.btn {
     background-color: #0015ff49;
     background-size: 150%;
     border-radius: 10px;
-    box-shadow: 1px 1px 2px red, 0 0.5px 1em blue;
+    box-shadow:
+      1px 1px 2px red,
+      0 0.5px 1em blue;
   }
 
   output {
@@ -449,8 +445,7 @@ button.btn {
 .user-bag > span {
   position: relative;
   display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   align-items: stretch;
   max-width: 5em;
   margin: 1px;

@@ -1,29 +1,25 @@
-@import "material";
 @import "tools/break";
 @import "tools/converter";
 @import "tools/color";
-
 @import "palette/colors";
-
 @import "extensions/kb";
 @import "extensions/blog";
 @import "extensions/silder";
 @import "extensions/abex";
-
 @import "config";
-
 @import "general";
-
 @import "extensions/tables";
 @import "extensions/admonition";
 @import "extensions/emoji";
-// @import "extensions/progressbar";
+@import "extensions/progressbar";
 @import "extensions/critic";
 @import "extensions/details";
 @import "extensions/highlight";
 @import "extensions/keys";
-// @import "extensions/magiclink";
+@import "extensions/magiclink";
 @import "extensions/tabbed";
-// @import "extensions/tasklist";
+@import "extensions/tasklist";
 @import "extensions/toc";
 @import "extensions/git-committers";
+
+@import "material";

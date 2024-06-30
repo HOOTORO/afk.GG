@@ -2,23 +2,27 @@
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-  color: #999999;
+  color: #999;
   font-size: 0.85em;
   list-style: none;
 }
+
 .metadata.page-metadata .contributors-text {
   margin-right: 5px;
 }
+
 body[dir="rtl"] .metadata.page-metadata .contributors-text {
   margin-right: 0;
   margin-left: 5px;
 }
+
 .page-metadata .contributors {
   display: inline-block;
   margin: 0 !important;
   padding: 0 !important;
   list-style: none;
 }
+
 .page-metadata .contributors li {
   display: inline-block;
   margin: 0;

@@ -1,69 +1,75 @@
-$themes: ( dracula, slate, default);
+@use "../palette/dracula" as drac;
+@use "../palette/slate" as sla;
+@use "../palette/default" as def;
+@use "sass:color";
+@use "sass:list";
 
+$themes: (dracula, slate, default);
 $new-admonitions: (
-  settings config: $drac-pink $clr-purple-a700 "@mdi/svg/svg/cog.svg",
-  new: $drac-yellow $clr-yellow-a700 "@mdi/svg/svg/alert-decagram.svg",
-  sh-luv: $clr-red-a200 $drac-dark-red var(--md-admonition-icon--sh-luv)
+  settings config: drac.$pink def.$clr-purple-a700 "@mdi/svg/svg/cog.svg",
+  new: drac.$yellow def.$clr-yellow-a700 "@mdi/svg/svg/alert-decagram.svg",
+  sh-luv: def.$clr-red-a200 drac.$dark-red var(--md-admonition-icon-sh-luv)
+) !default;
+$old-admonitions: (
+  note: drac.$dark-yellow,
+  abstract: drac.$cyan,
+  info: drac.$light-blue,
+  tip: drac.$teal,
+  success: drac.$green,
+  question: drac.$light-green,
+  warning: drac.$orange,
+  failure: drac.$dark-red,
+  danger: drac.$red,
+  bug: drac.$dark-pink,
+  example: drac.$purple,
+  quote: drac.$grey
 ) !default;
 
-$old-admonitions: (
-  note: $drac-dark-yellow,
-  abstract: $drac-cyan,
-  info: $drac-light-blue,
-  tip: $drac-teal,
-  success: $drac-green,
-  question: $drac-light-green,
-  warning: $drac-orange,
-  failure: $drac-dark-red,
-  danger: $drac-red,
-  bug: $drac-dark-pink,
-  example: $drac-purple,
-  quote: $drac-grey,
-) !default;
-  
 /* Style new admonitions with dark or light colors */
 :root > * {
   --md-admonition-bg-color: transparent;
 
   &[data-md-color-scheme="dracula"] {
-    --md-admonition-icon-color: #{$drac-dark-yellow};
+    --md-admonition-icon-color: #{drac.$dark-yellow};
   }
 
   @each $names, $prop in $new-admonitions {
-    $tint: nth($prop, 1);
-    $tint2: nth($prop, 2);
-    $name: nth($names, 1);
+    $tint: list.nth($prop, 1);
+    $tint2: list.nth($prop, 2);
+    $name: list.nth($names, 1);
 
-    /* --md-admonition-icon--#{$name}: svg-load("#{nth($prop, 3)}"); */
+    /* --md-admonition-icon--#{$name}: svg-load("#{list.nth($prop, 3)}"); */
 
-    --md-admonition-bg-color--#{$name}: #{transparentize($tint2, 0.9)};
-    --md-admonition-icon-color--#{$name}: #{$tint2};
+    --md-admonition-bg-color-#{$name}: #{color.adjust($tint2, $alpha: -0.9)};
+    --md-admonition-icon-color-#{$name}: #{$tint2};
 
     &[data-md-color-scheme="dracula"] {
-      --md-admonition-bg-color--#{$name}: var(
-        --md-default-bg-color--ultra-dark
-      );
-      --md-admonition-icon-color--#{$name}: #{$tint};
+      --md-admonition-bg-color-#{$name}: var(--md-default-bg-color-ultra-dark);
+      --md-admonition-icon-color-#{$name}: #{$tint};
     }
   }
 
   @each $names, $tint in $old-admonitions {
-    $name: nth($names, 1);
-    --md-admonition-bg-color--#{$name}: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-icon-color--#{$name}: #{$tint};
+    $name: list.nth($names, 1);
+
+    --md-admonition-bg-color-#{$name}: var(--md-default-bg-color-ultra-dark);
+    --md-admonition-icon-color-#{$name}: #{$tint};
   }
 }
 
 /* Dark mode changes */
 [data-md-color-scheme="dracula"] .md-typeset .admonition {
-  border-color: var(--md-admonition-icon-color--note);
+  border-color: var(--md-admonition-icon-color-note);
+
   > .admonition-title {
-    background-color: var(--md-admonition-bg-color--note);
+    background-color: var(--md-admonition-bg-color-note);
+
     &::before {
-      background-color: var(--md-admonition-icon-color--note);
+      background-color: var(--md-admonition-icon-color-note);
     }
+
     &::after {
-      color: var(--md-admonition-icon-color--note);
+      color: var(--md-admonition-icon-color-note);
     }
   }
 
@@ -73,57 +79,59 @@ $old-admonitions: (
 /* Style existing admonitions with dark mode colors */
 [data-md-color-scheme="dracula"] {
   @each $names, $prop in $old-admonitions {
-    $name: nth($names, 1);
+    $name: list.nth($names, 1);
 
     // Define base class
     .md-typeset .admonition.#{$name} {
-      border-color: var(--md-admonition-icon-color--#{$name});
+      border-color: var(--md-admonition-icon-color-#{$name});
 
       // Define base class
       > .admonition-title {
-        background-color: var(--md-admonition-bg-color--#{$name});
-        border-color: var(--md-admonition-icon-color--#{$name});
+        background-color: var(--md-admonition-bg-color-#{$name});
+        border-color: var(--md-admonition-icon-color-#{$name});
 
         // Icon
         &::before {
-          background-color: var(--md-admonition-icon-color--#{$name});
+          background-color: var(--md-admonition-icon-color-#{$name});
         }
+
         &::after {
-          color: var(--md-admonition-icon-color--#{$name});
+          color: var(--md-admonition-icon-color-#{$name});
         }
       }
     }
-  
 
     // Define synonyms for base class
-    @if length($names) > 1 {
-      @for $n from 2 through length($names) {
-        .#{nth($names, $n)} {
+    @if list.length($names) > 1 {
+      @for $n from 2 through list.length($names) {
+        .#{list.nth($names, $n)} {
           @extend .#{$name};
         }
       }
     }
   }
 }
-  [data-md-color-scheme="default"] {
+
+[data-md-color-scheme="default"] {
   @each $names, $prop in $old-admonitions {
-    $name: nth($names, 1);
+    $name: list.nth($names, 1);
 
     // Define base class
     .md-typeset .admonition.#{$name} {
-      border-color: var(--md-admonition-icon-color--#{$name});
+      border-color: var(--md-admonition-icon-color-#{$name});
 
       // Define base class
       > .admonition-title {
-        background-color: var(--md-admonition-bg-color--#{$name});
-        border-color: var(--md-admonition-icon-color--#{$name});
+        background-color: var(--md-admonition-bg-color-#{$name});
+        border-color: var(--md-admonition-icon-color-#{$name});
 
         // Icon
         &::before {
-          background-color: var(--md-admonition-icon-color--#{$name});
+          background-color: var(--md-admonition-icon-color-#{$name});
         }
+
         &::after {
-          color: var(--md-admonition-icon-color--#{$name});
+          color: var(--md-admonition-icon-color-#{$name});
         }
       }
     }
@@ -131,43 +139,43 @@ $old-admonitions: (
 }
 
 @each $names, $prop in $new-admonitions {
-  $name: nth($names, 1);
+  $name: list.nth($names, 1);
 
   // Define base class
   .md-typeset .admonition.#{$name} {
-    border-color: var(--md-admonition-icon-color--#{$name});
+    border-color: var(--md-admonition-icon-color-#{$name});
 
     > .admonition-title {
-      background-color: var(--md-admonition-bg-color--#{$name});
-      border-color: var(--md-admonition-icon-color--#{$name});
+      background-color: var(--md-admonition-bg-color-#{$name});
+      border-color: var(--md-admonition-icon-color-#{$name});
 
       // Icon
       &::before {
         width: px2rem(20px);
         height: px2rem(20px);
-        background-color: var(--md-admonition-icon-color--#{$name});
+        background-color: var(--md-admonition-icon-color-#{$name});
         background-size: px2rem(20px);
-        mask-image: var(--md-admonition-icon--#{$name});
-        -webkit-mask-image: var(--md-admonition-icon--#{$name});
+        mask-image: var(--md-admonition-icon-#{$name});
         content: "\a0";
       }
+
       &::after {
-        color: var(--md-admonition-icon-color--#{$name});
+        color: var(--md-admonition-icon-color-#{$name});
       }
     }
   }
 
   // Define synonyms for base class
-  @if length($names) > 1 {
-    @for $n from 2 through length($names) {
-      .#{nth($names, $n)} {
+  @if list.length($names) > 1 {
+    @for $n from 2 through list.length($names) {
+      .#{list.nth($names, $n)} {
         @extend .#{$name};
       }
     }
   }
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (width >= 45em) {
   .md-typeset .inline {
     width: fit-content;
     max-width: 20.7rem;
@@ -194,6 +202,7 @@ li > a > img {
   justify-content: space-between;
   align-items: center;
 }
+
 .md-typeset details,
 .md-typeset .admonition {
   border-radius: 0.3rem;
@@ -214,6 +223,7 @@ li > a > img {
   100% {
     transform: scale(1);
   }
+
   20%,
   60% {
     transform: scale(1.15);
@@ -225,8 +235,7 @@ li > a > img {
   animation: heart 1000ms infinite;
 }
 
-
 //.md-typeset .warning>.admonition-title,
 //.md-typeset .warning>summary {
-//    background-color:var(--md-admonition-bg-color--warning);
+//    background-color:var(--md-admonition-bg-color-warning);
 //}

@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .md-typeset .collapse-code {
   position: relative;
   margin-top: 1em;
@@ -26,9 +27,7 @@
   color: var(--md-primary-bg-color);
   font-size: 90%;
   background-color: var(--md-primary-fg-color);
-  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
   mask-size: contain;
   border-radius: 0.1rem;
   cursor: pointer;
@@ -57,12 +56,10 @@
 }
 
 .md-typeset .collapse-code input ~ .code-footer label.expand::before {
-  -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 21v-2H6.41l4.5-4.5-1.41-1.41-4.5 4.5V14H3v7h7m4.5-10.09 4.5-4.5V10h2V3h-7v2h3.59l-4.5 4.5 1.41 1.41Z"/></svg>');
   mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 21v-2H6.41l4.5-4.5-1.41-1.41-4.5 4.5V14H3v7h7m4.5-10.09 4.5-4.5V10h2V3h-7v2h3.59l-4.5 4.5 1.41 1.41Z"/></svg>');
 }
 
 .md-typeset .collapse-code input ~ .code-footer label.collapse::before {
-  -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 3.09 15 7.59V4h-2v7h7V9h-3.59l4.5-4.5-1.41-1.41M4 13v2h3.59l-4.5 4.5 1.41 1.41 4.5-4.5V20h2v-7H4Z"/></svg>');
   mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 3.09 15 7.59V4h-2v7h7V9h-3.59l4.5-4.5-1.41-1.41M4 13v2h3.59l-4.5 4.5 1.41 1.41 4.5-4.5V20h2v-7H4Z"/></svg>');
 }
 
@@ -87,7 +84,7 @@
   background-image: linear-gradient(to bottom, transparent, var(--md-default-bg-color) 80% 100%);
 }
 
-@media screen and (max-width: 44.9375em) {
+@media screen and (width <= 44.9375em) {
   .md-typeset > diagram-div {
     margin-right: -0.8rem;
     margin-left: -0.8rem;
@@ -139,7 +136,7 @@
 .md-typeset .admonition.settings,
 .md-typeset details.config,
 .md-typeset details.settings {
-  border-color: var(--md-admonition-icon-color--settings);
+  border-color: var(--md-admonition-icon-color-settings);
 }
 
 .md-typeset .admonition.config > .admonition-title,
@@ -148,8 +145,8 @@
 .md-typeset details.config > summary,
 .md-typeset details.settings > .admonition-title,
 .md-typeset details.settings > summary {
-  background-color: var(--md-admonition-bg-color--settings);
-  border-color: var(--md-admonition-icon-color--settings);
+  background-color: var(--md-admonition-bg-color-settings);
+  border-color: var(--md-admonition-icon-color-settings);
 }
 
 .md-typeset .admonition.config > .admonition-title::before,
@@ -160,10 +157,9 @@
 .md-typeset details.settings > summary::before {
   width: 1rem;
   height: 1rem;
-  background-color: var(--md-admonition-icon-color--settings);
+  background-color: var(--md-admonition-icon-color-settings);
   background-size: 1rem;
-  -webkit-mask-image: var(--md-admonition-icon--settings);
-  mask-image: var(--md-admonition-icon--settings);
+  mask-image: var(--md-admonition-icon-settings);
   content: " ";
 }
 
@@ -173,19 +169,19 @@
 .md-typeset details.config > summary::after,
 .md-typeset details.settings > .admonition-title::after,
 .md-typeset details.settings > summary::after {
-  color: var(--md-admonition-icon-color--settings);
+  color: var(--md-admonition-icon-color-settings);
 }
 
 .md-typeset .admonition.new,
 .md-typeset details.new {
-  border-color: var(--md-admonition-icon-color--new);
+  border-color: var(--md-admonition-icon-color-new);
 }
 
 .md-typeset .admonition.new > .admonition-title,
 .md-typeset details.new > .admonition-title,
 .md-typeset details.new > summary {
-  background-color: var(--md-admonition-bg-color--new);
-  border-color: var(--md-admonition-icon-color--new);
+  background-color: var(--md-admonition-bg-color-new);
+  border-color: var(--md-admonition-icon-color-new);
 }
 
 .md-typeset .admonition.new > .admonition-title::before,
@@ -193,15 +189,14 @@
 .md-typeset details.new > summary::before {
   width: 1rem;
   height: 1rem;
-  background-color: var(--md-admonition-icon-color--new);
+  background-color: var(--md-admonition-icon-color-new);
   background-size: 1rem;
-  -webkit-mask-image: var(--md-admonition-icon--new);
-  mask-image: var(--md-admonition-icon--new);
+  mask-image: var(--md-admonition-icon-new);
   content: " ";
 }
 
 .md-typeset .admonition.new > .admonition-title::after,
 .md-typeset details.new > .admonition-title::after,
 .md-typeset details.new > summary::after {
-  color: var(--md-admonition-icon-color--new);
+  color: var(--md-admonition-icon-color-new);
 }

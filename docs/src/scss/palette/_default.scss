@@ -1,43 +1,53 @@
-$mos-def-fg: hsl(0, 0%, 0%);
+@use "sass:color";
+
+$label: "Jedi";
+$fg: hsla(0, 7%, 28%, 0.603);
+$bg: rgb(228 255 119);
+$highlight: hsl(51deg 100% 67%);
+$selection: #280808;
+$blue: hsl(225deg 27% 51%);
+$cyan: hsl(191deg 99% 35%);
+$green: hsl(135deg 94% 65%);
+$orange: hsl(31deg 100% 71%);
+$pink: hsl(326deg 100% 74%);
+$purple: hsl(265, 89%, 78%);
+$red: hsl(0deg 100% 67%);
+$yellow: hsl(65deg 100% 66%);
 
 /* joyful color rgb(228, 255, 119) */
-$mos-def-bg: rgb(228, 255, 119);
-$mos-def-highlight: hsl(51, 100%, 67%);
-$mos-def-selection: #280808;
-$mos-def-blue: hsl(225, 27%, 51%);
-$mos-def-cyan: hsl(191, 99%, 35%);
-$mos-def-green: hsl(135, 94%, 65%);
-$mos-def-orange: hsl(31, 100%, 71%);
-$mos-def-pink: hsl(326, 100%, 74%);
-$mos-def-purple: hsl(265, 89%, 78%);
-$mos-def-red: hsl(0, 100%, 67%);
-$mos-def-yellow: hsl(65, 100%, 66%);
 
 /* Non-standard Dracula colors */
-$mos-def-grey: hsl(225, 8%, 51%);
-$mos-def-teal: hsl(161, 97%, 77%);
-$mos-def-light-blue: hsl(190, 94%, 87%);
-$mos-def-light-green: hsl(135, 92%, 79%);
-$mos-def-dark-pink: hsl(325, 100%, 64%);
-$mos-def-dark-red: hsl(0, 100%, 59%);
-$mos-def-dark-yellow: hsl(51, 94%, 73%);
+$grey: hsl(225deg 8% 51%);
+$teal: hsl(161deg 97% 77%);
+$light-blue: hsl(190deg 94% 87%);
+$light-green: hsl(135deg 92% 79%);
+$dark-pink: hsl(325deg 100% 64%);
+$dark-red: hsl(0deg 100% 59%);
+$dark-yellow: hsl(51deg 94% 73%);
+$default-bg: color.adjust($bg, $lightness: 18%);
+$clr-red-a200: hsl(326deg 100% 74%);
+$clr-red-a400: hsl(0deg 100% 67%);
+$clr-green-a200: hsl(135deg 92% 79%);
+$clr-green-a400: hsl(135deg 94% 65%);
+$clr-yellow-a500: hsl(65deg 92% 76%);
+$clr-yellow-a700: yellow;
+$clr-orange-a400: hsl(31deg 100% 71%);
+$clr-cyan-500: hsl(191deg 97% 77%);
+$clr-blue-a400: hsl(225deg 27% 51%);
+$clr-purple-a700: hsl(265deg 89% 78%);
 
-$mos-def-text: #373737;
-$mos-def-default-bg: lighten($mos-def-bg, 18%);
-$mos-def-tabs-bg: #2222008d;
+$bg-radient: linear-gradient(230deg, rgb(162 160 125 / 27%), rgb(141 117 4 / 81%));
 
-/* $mos-def-sel-text: #9999c999; */
-$mos-def-sel-text: rgb(41, 33, 33);
-$mos-def-foot-bg: hsl(39, 77%, 83%);
-$mos-def-foot-fg: #1d1810;
-$mos-def-foot-low: rgb(131 116 0 / 54%);
-$mos-def-tabs-fg: $mos-def-text;
-$mos-def-2-bg: #cdcdaf;
-$mos-def-nav-link: $mos-def-2-bg;
+$text: #373737;
+$tabs-bg: #2222008d;
+$sel-text: rgb(85, 59, 59);
+$foot-bg: hsl(39deg 77% 83%);
+$foot-fg: #1d1810;
+$foot-low: rgb(131 116 0 / 54%);
+$tabs-fg: $text;
+$nav-link: #cdcdaf;
 
-//$mos-def-admo-bg: linear-gradient(45deg, rgba(119, 101, 20, 0.739), #bf8556b5);
-$mos-def-admo-bg: #58436669;
-$mos-def-def-bg: linear-gradient(45deg, rgba(222, 222, 222, 0.383), #63636317);
-$mos-def-gradient: linear-gradient(230deg, rgb(162 160 125 / 27%), rgb(141 117 4 / 81%));
-$mos-def-gradient-anti: linear-gradient(45deg, #ffffff6e, rgba(165, 144, 48, 0.398));
-$mos-def-rnb: linear-gradient(180deg, #00eeff, #6dff18, #ffb949, #ff00ea);
+$admo-bg: linear-gradient(45deg, rgb(119 101 20 / 73.9%), #bf8556b5);
+$gradient: linear-gradient(230deg, rgb(162 160 125 / 27%), rgb(141 117 4 / 81%));
+$gradient-anti: linear-gradient(45deg, #ffffff6e, rgb(165 144 48 / 39.8%));
+$rnb: linear-gradient(180deg, #0ef, #6dff18, #ffb949, #ff00ea);

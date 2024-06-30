@@ -1,12 +1,3 @@
-/* Dark mode changes */
-[data-md-color-scheme="dracula"] {
-  .md-typeset {
-    .tabbed-set > .tabbed-labels {
-      box-shadow: 0 px2rem(-1px) var(--md-default-fg-color--lighter) inset;
-    }
-  }
-}
-
 /* Style code blocks to fill full tab,
    but otherwise, pad content. */
 .md-typeset {
@@ -29,9 +20,7 @@
         .codehilitetable,
         .highlight,
         .highlighttable {
-
           &:only-child {
-
             span.filename {
               margin-top: 0;
             }
@@ -45,14 +34,13 @@
 
         .collapse-code:only-child {
           margin-top: 0;
-
           margin-right: px2rem(-24px);
           margin-left: px2rem(-24px);
           padding-right: px2rem(12px);
           padding-left: px2rem(12px);
 
           > .code-footer {
-            left: px2rem(12px)
+            left: px2rem(12px);
           }
         }
 
@@ -67,12 +55,17 @@
   }
 }
 
-/* Ignore mobile overflow styling that extends the tab bar */
-@include break-to-device(mobile) {
-  [dir=ltr] .md-content__inner > .tabbed-set .tabbed-labels {
-    padding-left: 0;
+/* Dark mode changes */
+[data-md-color-scheme="dracula"] {
+  .md-typeset {
+    .tabbed-set > .tabbed-labels {
+      box-shadow: 0 px2rem(-1px) var(--md-default-fg-color-lighter) inset;
+    }
   }
+}
 
+/* Ignore mobile overflow styling that extends the tab bar */
+@include break-to-device(mobile portrait) {
   .md-content__inner > .tabbed-set .tabbed-labels {
     max-width: 100%;
     margin: 0;
@@ -95,5 +88,9 @@
       margin-inline-end: 0;
       padding-inline-end: 0;
     }
+  }
+
+  [dir="ltr"] .md-content__inner > .tabbed-set .tabbed-labels {
+    padding-left: 0;
   }
 }

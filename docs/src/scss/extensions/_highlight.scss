@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .highlight {
   .kc {
     color: var(--md-code-hl-constant-color);
@@ -27,6 +29,7 @@
   .ni {
     color: var(--md-code-hl-entity-color);
   }
+
   .nl,
   .nt {
     color: var(--md-code-hl-tag-color);
@@ -44,13 +47,21 @@
     box-shadow: none;
   }
 
+  pre > code {
+    outline: none;
+  }
+
+  td code {
+    word-break: normal;
+  }
+
   /* Code that is also a link */
   a {
     > code {
       color: inherit !important;
       background-color: var(--md-code-link-bg-color) !important;
+      transition: background-color 125ms;
       transition: color 125ms;
-      -webkit-transition: background-color 125ms;
 
       /* If we are linking highlighted, inline code, force it to just look like a code link */
       * {
@@ -67,14 +78,7 @@
     }
   }
 
-  pre > code {
-    outline: none;
-  }
-
   /* Don't always like code breaking in table cells */
-  td code {
-    word-break: normal;
-  }
 
   .highlight {
     /* Needed for tab preserving mode */
@@ -111,6 +115,7 @@
     // Adjust margins and and general container look of code block
     + pre {
       margin-top: 0;
+      margin-bottom: 0;
 
       code {
         border-top-left-radius: 0;
@@ -148,18 +153,13 @@
     margin-top: 1em;
     margin-bottom: 1em;
 
-    pre {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
     input {
       display: none;
 
       ~ .code-footer {
         width: 100%;
         margin: 0;
-        padding: px2em(4px) px2em(8px) px2em(4px) px2em(0px);
+        padding: px2em(4px) px2em(8px) px2em(4px) 0;
 
         label {
           position: relative;
@@ -198,6 +198,7 @@
               mask-image: svg-load("@mdi/svg/svg/arrow-expand.svg");
             }
           }
+
           &.collapse::before {
             mask-image: svg-load("@mdi/svg/svg/arrow-collapse.svg");
           }
@@ -223,22 +224,19 @@
           bottom: 0;
           left: 0;
           padding: px2em(32px) px2em(8px) px2em(8px) px2rem(16px);
-          background-image: linear-gradient(
-            to bottom,
-            transparent,
-            var(--md-default-bg-color) 80% 100%
-          );
+          background-image: linear-gradient(to bottom, transparent, var(--md-default-bg-color) 80% 100%);
         }
       }
     }
   }
 
-  @include break-to-device(mobile) {
+  @include break-to-device(mobile portrait) {
     > {
       diagram-div {
         margin-right: px2rem(-16px);
         margin-left: px2rem(-16px);
       }
+
       .collapse-code {
         margin-right: px2rem(-16px);
         margin-left: px2rem(-16px);
@@ -252,11 +250,15 @@
 }
 
 .shine {
-  -webkit-text-stroke: rgb(115, 0, 255, 69%) 0.4px;
-  text-shadow: 0px 0px 4px rgb(115, 0, 255), 2px 0px 5px rgb(0, 238, 255);
+  -webkit-text-stroke: rgb(115 0 255 / 69%) 0.4px;
+  text-shadow:
+    0 0 4px rgb(115 0 255),
+    2px 0 5px rgb(0 238 255);
 }
 
 .shine-reverse {
-  -webkit-text-stroke: rgb(0, 238, 255, 69%) 0.4px;
-  text-shadow: 0px 0px 4px rgb(0, 238, 255), 2px 0px 5px rgb(115, 0, 255);
+  -webkit-text-stroke: rgb(0 238 255 / 69%) 0.4px;
+  text-shadow:
+    0 0 4px rgb(0 238 255),
+    2px 0 5px rgb(115 0 255);
 }
