@@ -11,6 +11,10 @@
 }
 
 .md-typeset {
+  h1 {
+    text-shadow: 1px 1px 2px var(--md-accent-fg-color);
+    text-transform: uppercase;
+  }
   h4 {
     margin: 2em 0 1em;
   }
@@ -157,26 +161,6 @@ body {
 figure > img {
   overflow: hidden;
   border-radius: 10px;
-}
-
-.red-font {
-  color: #eb01aa !important;
-}
-
-.green-f {
-  color: green !important;
-}
-
-.brown-f {
-  color: brown !important;
-}
-
-.cyan-f {
-  color: cyan !important;
-}
-
-em {
-  color: rgb(33, 111, 222);
 }
 
 img {

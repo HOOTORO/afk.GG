@@ -1,7 +1,10 @@
-$mos-def-fg: hsl(0, 0%, 0%);
+@use "sass:color";
+
+$mos-def-fg: hsl(260, 10%, 6%);
 
 /* joyful color rgb(228, 255, 119) */
 $mos-def-bg: rgb(228, 255, 119);
+
 $mos-def-highlight: hsl(51, 100%, 67%);
 $mos-def-selection: #280808;
 $mos-def-blue: hsl(225, 27%, 51%);
@@ -23,10 +26,10 @@ $mos-def-dark-red: hsl(0, 100%, 59%);
 $mos-def-dark-yellow: hsl(51, 94%, 73%);
 
 $mos-def-text: #373737;
-$mos-def-default-bg: lighten($mos-def-bg, 18%);
+$mos-def-default-bg: color.adjust(#ddff53, $lightness: 19%);
+// $mos-def-default-bg: color.adjust($mos-def-bg, $blackness: -20%, $alpha: -0.3, $hue: 33deg);
 $mos-def-tabs-bg: #2222008d;
 
-/* $mos-def-sel-text: #9999c999; */
 $mos-def-sel-text: rgb(41, 33, 33);
 $mos-def-foot-bg: hsl(39, 77%, 83%);
 $mos-def-foot-fg: #1d1810;

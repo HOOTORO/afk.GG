@@ -1,11 +1,20 @@
 ---
-title: Падение Аквилона. Трансляция.
+title: Падение Аквилона
 date: 2024-06-30
-authors: [SE2k, sensei, kisso, HOOTSMAN]
-categories: [ITsRU, Outsiders, Story]
+authors:
+    - SE2k
+    - sensei
+    - kisso
+    - HOOTSMAN
+categories:
+    - AbEx
+    - ITsRU
+    - Outsiders
+    - Story
+    - Conflict
 draft: false
-description: Запись трансляции. Обнародование материалов.
-slug: fall-materials
+description: Запись трансляции. Обнародование скриншотов.
+slug: fall-stream
 ---
 
 <video width="100%" controls>

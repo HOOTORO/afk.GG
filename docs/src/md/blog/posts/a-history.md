@@ -1,11 +1,11 @@
 ---
-title: Восхождение и Падение Аквилона.
+title: Восхождение Аквилона
 date: 2024-06-28
 time: 19:00
 authors: [HOOTSMAN, SE2k]
 categories: [ITsRU, Outsiders, Story]
 description: Эпопея из первых уст. Вся неприятная правда выйдет на свет.
-slug: rise-and-fall
+slug: rise-invitation
 watch: https://www.twitch.tv/hootoro
 ---
 

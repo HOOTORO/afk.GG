@@ -1,5 +1,5 @@
 .highlight {
-  .kc {
+  .kc { // Keyword constant
     color: var(--md-code-hl-constant-color);
   }
 
@@ -13,35 +13,36 @@
     color: var(--md-code-hl-number-color);
   }
 
-  .nb,
-  .bp {
+  .nb,  // Name, builtin
+  .bp { // Name, builtin pseudo
     color: var(--md-code-hl-builtin-color);
   }
 
-  .nn {
+  .nn { // Name, namespace Name, namespace Name, namespace Name, namespace
     color: var(--md-code-hl-namespace-color);
   }
 
-  .na,
-  .nd,
-  .ni {
+  .na,  // Name, attribute
+  .nd,  // Name, decorator
+  .ni { // Name, entity
     color: var(--md-code-hl-entity-color);
   }
-  .nl,
-  .nt {
+  .nl,  // Name, label
+  .nt { // Name, tag
     color: var(--md-code-hl-tag-color);
   }
 }
 
 .md-typeset {
+
   /* Allow code to look like code everywhere despite Material's current preference */
   *:not(pre) > code {
-    margin: 0;
-    padding: 0 px2em(4px, 13.6px);
-    color: var(--md-code-fg-color);
-    background-color: var(--md-code-inline-bg-color);
-    border-radius: px2rem(2px);
-    box-shadow: none;
+      margin: 0;
+      padding: 0 px2em( 4px, 13.6px);
+      color: var(--md-code-fg-color);
+      background-color: var(--md-code-inline-bg-color);
+      border-radius: px2rem(2px);
+      box-shadow: none;
   }
 
   /* Code that is also a link */
@@ -50,7 +51,7 @@
       color: inherit !important;
       background-color: var(--md-code-link-bg-color) !important;
       transition: color 125ms;
-      -webkit-transition: background-color 125ms;
+      transition: background-color 125ms;
 
       /* If we are linking highlighted, inline code, force it to just look like a code link */
       * {
@@ -77,6 +78,7 @@
   }
 
   .highlight {
+
     /* Needed for tab preserving mode */
     tab-size: 8;
 
@@ -86,6 +88,7 @@
 
     /* `pymdownx-inline` mode */
     [data-linenos] {
+
       /* Special line mode coloring */
       &.special::before {
         background-color: var(--md-code-special-bg-color);
@@ -93,7 +96,7 @@
     }
   }
 
-  /* Special line number coloring for tables */
+    /* Special line number coloring for tables */
   .highlighttable {
     .linenodiv {
       .special {
@@ -108,6 +111,7 @@
 
   // Filename span
   .highlight span.filename {
+
     // Adjust margins and and general container look of code block
     + pre {
       margin-top: 0;
@@ -118,7 +122,7 @@
       }
     }
 
-    /* Style the filename banner */
+    // Style the filename banner
     position: relative;
     display: block;
     margin-top: 1em;
@@ -136,7 +140,7 @@
       width: px2em(20px, 13.6px);
       height: px2em(20px, 13.6px);
       background-color: var(--md-default-fg-color);
-      mask-image: svg-load("@mdi/svg/svg/console.svg");
+      mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg>');
       mask-repeat: no-repeat;
       mask-size: contain;
       content: "";
@@ -153,7 +157,7 @@
       margin-bottom: 0;
     }
 
-    input {
+    input{
       display: none;
 
       ~ .code-footer {
@@ -223,17 +227,17 @@
           bottom: 0;
           left: 0;
           padding: px2em(32px) px2em(8px) px2em(8px) px2rem(16px);
-          background-image: linear-gradient(
-            to bottom,
-            transparent,
-            var(--md-default-bg-color) 80% 100%
-          );
+          background-image: linear-gradient(to bottom,
+              transparent,
+              var(--md-default-bg-color) 80%
+          100%);
         }
       }
     }
   }
 
   @include break-to-device(mobile) {
+
     > {
       diagram-div {
         margin-right: px2rem(-16px);
@@ -249,14 +253,4 @@
       }
     }
   }
-}
-
-.shine {
-  -webkit-text-stroke: rgb(115, 0, 255, 69%) 0.4px;
-  text-shadow: 0px 0px 4px rgb(115, 0, 255), 2px 0px 5px rgb(0, 238, 255);
-}
-
-.shine-reverse {
-  -webkit-text-stroke: rgb(0, 238, 255, 69%) 0.4px;
-  text-shadow: 0px 0px 4px rgb(0, 238, 255), 2px 0px 5px rgb(115, 0, 255);
 }

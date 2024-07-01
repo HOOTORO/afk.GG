@@ -26,7 +26,7 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-variant
+        icon: fontawesome/solid/jedi
         name: Switch to dark mode
       primary: orange
       accent: lime
@@ -75,7 +75,6 @@ nav:
           - kb/trescamble.md
           - kb/infographics.md
       - Ranked:
-          - kb/ranked/realms.md
           - kb/ranked/abex.md
           - kb/ranked/hf.md
       - Tools:
@@ -84,6 +83,7 @@ nav:
           - kb/dust.md
       - Discord Tools:
           - kb/chroles.md
+          - kb/notification.md
       - AFK Statistics:
           - kb/iog.md
   - Сообщество:
@@ -142,7 +142,15 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.smartsymbols
-  - pymdownx.inlinehilite
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      user: HOOTORO
+      provider: github
+      repo: afk.gg
+      repo_url_shorthand: true
+      repo_url_shortener: true
+      social_url_shorthand: true
+      social_url_shortener: true
   - pymdownx.caret:
       smart_insert: true
   - pymdownx.escapeall:
@@ -150,8 +158,13 @@ markdown_extensions:
       nbsp: True
   - pymdownx.keys:
       separator: "\uff0b"
+  - pymdownx.inlinehilite
   - pymdownx.highlight:
+      pygments_lang_class: true
       anchor_linenums: true
+      auto_title: true
+      linenums: true
+      linenums_style: pymdownx-inline
       line_spans: __span
   - pymdownx.snippets:
       base_path:
@@ -170,6 +183,11 @@ markdown_extensions:
       options:
         custom_icons:
           - theme/.icons
+  - pymdownx.progressbar:
+  - pymdownx.pathconverter:
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
   - pymdownx.blocks.details:
   - pymdownx.blocks.admonition:
       types:

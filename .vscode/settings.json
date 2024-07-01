@@ -1,23 +1,5 @@
 {
-  "git.ignoreLimitWarning": true,
-  "search.exclude": {
-    "**/material": true,
-    "**/node_modules": true,
-    "**/package-lock.json": true
-  },
-  "search.followSymlinks": false,
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "markdown.validate.enabled": false,
-  "stylelint.validate": ["css", "scss", "md"],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "markdown.validate.ignoredLinks": [
-    "../assets/vids/phil.webm",
-    "../assets/avatars/hootsman.webp",
-    "../kb/infographics/",
-    "../assets/avatars/anon.png"
-  ],
+  "cSpell.enableFiletypes": ["!json", "!jsonc", "!yaml"],
   "cSpell.language": "en,ru,ru-RU,lorem",
   "cSpell.words": [
     "aawk",
@@ -61,6 +43,8 @@
     "Celestials",
     "Clawlossus",
     "cntf",
+    "codehilite",
+    "codehilitetable",
     "Coef",
     "colalign",
     "colz",
@@ -152,6 +136,7 @@
     "Heralt",
     "heroselector",
     "Hidan",
+    "highlighttable",
     "HOOTSMAN",
     "htmltitle",
     "huektura",
@@ -244,6 +229,7 @@
     "Pudge",
     "purecss",
     "pyarrow",
+    "radient",
     "Raine",
     "Raku",
     "rdata",
@@ -395,6 +381,7 @@
     "Войс",
     "войса",
     "войсе",
+    "выебонов",
     "гайдом",
     "гача",
     "Главред",
@@ -412,6 +399,7 @@
     "дискорду",
     "донать",
     "дропнул",
+    "ебала",
     "заруинить",
     "Извергилия",
     "инвайт",
@@ -442,10 +430,12 @@
     "минильным",
     "минималках",
     "Монтескье",
+    "мудачества",
     "Мунвар",
     "мута",
     "муты",
     "муууу",
+    "насрать",
     "нерф",
     "нестыковках",
     "НУМЛЯ",
@@ -489,10 +479,12 @@
     "Спиралл",
     "срачей",
     "срачи",
+    "сссссука",
     "стамину",
     "стамины",
     "Статбафф",
     "статбаффом",
+    "стриме",
     "тайминги",
     "Тестит",
     "токсикам",
@@ -514,8 +506,11 @@
     "фидбэк",
     "Хелпи",
     "Хоспа",
+    "хотю",
     "Хурики",
+    "Хутсмана",
     "Хуутсманом",
+    "хуями",
     "чилл",
     "чилле",
     "Элитсир",
@@ -523,10 +518,46 @@
     "Эмбер",
     "Этернума"
   ],
-  "cSpell.enableFiletypes": ["!json", "!jsonc", "!yaml"],
-  "yaml.schemas": {
-    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+  "css.validate": false,
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/docs/src/md/blog",
+      "title": "blog"
+    },
+    {
+      "path": "[[workspace]]/docs/src/md",
+      "title": "md"
+    }
+  ],
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.framework.id": "other",
+  "git.ignoreLimitWarning": true,
+  "less.validate": false,
+  "markdown.validate.enabled": false,
+  "markdown.validate.ignoredLinks": [
+    "../assets/vids/phil.webm",
+    "../assets/avatars/hootsman.webp",
+    "../kb/infographics/",
+    "../assets/avatars/anon.png"
+  ],
+  "scss.validate": false,
+  "search.exclude": {
+    "**/material": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true
   },
+  "search.followSymlinks": false,
+  "sqltools.connections": [
+    {
+      "database": "${workspaceFolder:afk.GG}/disco.db",
+      "driver": "SQLite",
+      "name": "disco",
+      "previewLimit": 50
+    }
+  ],
+  "sqltools.useNodeRuntime": true,
+  "stylelint.validate": ["css", "scss", "md"],
+  "typescript.tsdk": "node_modules/typescript/lib",
   "yaml.customTags": [
     "!ENV scalar",
     "!ENV sequence",
@@ -535,13 +566,10 @@
     "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
     "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
   ],
-  "sqltools.useNodeRuntime": true,
-  "sqltools.connections": [
-    {
-      "previewLimit": 50,
-      "driver": "SQLite",
-      "name": "disco",
-      "database": "${workspaceFolder:afk.GG}/disco.db"
-    }
-  ]
+  "yaml.schemas": {
+    "https://squidfunk.github.io/mkdocs-material/schema.json": [
+      "mkdocs.yml",
+      "file:///c%3A/Users/HOOTORO/R/afk.GG/mkdocs.yml"
+    ]
+  }
 }

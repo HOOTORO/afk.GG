@@ -1,0 +1,64 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{now}",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "authors",
+          "name": "authors",
+          "type": "choice",
+          "choices": [
+            "SE2k",
+            "sensei",
+            "kisso",
+            "HOOTSMAN"
+          ],
+          "default": "HOOTORO"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft",
+          "default": true
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string",
+          "default": "You should never underestimate the predictability of stupidity"
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.snippets": {
+    "admonition": {
+      "description": "well",
+      "body": [
+        "/// | Lorem ipsum",
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "///"
+      ],
+      "fields": []
+    }
+  }
+}

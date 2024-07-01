@@ -1,5 +1,6 @@
 @import "./dracula", "./slate", "./default";
 
+
 /* dracula vars */
 $clr-red-a200: hsl(326, 100%, 74%);
 $clr-red-a400: hsl(0, 100%, 67%);
@@ -16,10 +17,6 @@ $clr-purple-a700: blueviolet;
 $glass: rgba(255, 255, 255, 0.2);
 $glass-icon: rgba(255, 255, 255, 0.3);
 $gradient: linear-gradient(35deg, #2e303d, #2e33ad);
-/* 
-$option: rgb(221, 221, 221);
-$option: invert(var(--select-font-color), $weight: 100%); 
-*/
 $slider-radius: 20px;
 
 /* dark theme vars */
@@ -35,25 +32,20 @@ $lin-color: rgb(255, 0, 0);
 :root > * {
   --md-shadow-z7: 0 0.2rem 0.6rem hsla(0, 6%, 27%, 0.293), 0 0 0 0.1rem #47474716;
 
-  --md-admonition-icon--settings: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>');
-  --md-admonition-icon--new: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12m-10 5h-2v-2h2v2m0-4h-2V7h2v6Z"/></svg>');
-  --md-admonition-icon--sh-luv: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg>');
+  /* Admonition colors */
+  --md-admonition-fg-color: var(--md-default-fg-color);
+  --md-admonition-bg-color: var(--md-default-bg-color--light);
 
-  /* Custom code colors --md-admonition-fg-color*/
+  /* Custom code colors */
   --md-code-link-bg-color: hsla(0, 0%, 96%, 1);
   --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
-
   --md-code-title-bg-color: var(--md-code-bg-color);
   --md-code-inline-bg-color: var(--md-code-bg-color);
-
-  --md-code-special-bg-color: #e8e8e8;
-
-  // --md-code-special-bg-color: #{darken(#f5f5f5, 5%)};
+  // --md-code-special-bg-color: #e8e8e8;
+  --md-code-special-bg-color: #{darken(#f5f5f5, 5%)};
   --md-code-alternate-bg-color: var(--md-code-bg-color);
-
   --md-code-hl-punctuation-color: var(--md-code-fg-color);
   --md-code-hl-namespace-color: var(--md-code-fg-color);
-
   --md-code-hl-entity-color: var(--md-code-hl-keyword-color);
   --md-code-hl-tag-color: var(--md-code-hl-keyword-color);
   --md-code-hl-builtin-color: var(--md-code-hl-constant-color);
@@ -71,17 +63,6 @@ $lin-color: rgb(255, 0, 0);
   --md-progress-40: #{$clr-orange-a400};
   --md-progress-20: #{$clr-red-a200};
   --md-progress-0: #{$clr-red-a400};
-
-  // --md-typeset-a-color: #00bcd4;
-  // --md-progress-stripe: var(--md-default-bg-color--lighter);
-  // --md-progress-100: #00e676;
-  // --md-progress-80: #00e676;
-  // --md-progress-60: #fbc02d;
-  // --md-progress-40: #ff9100;
-  // --md-progress-20: #ff5252;
-  // --md-progress-0: #ff1744;
-  // --md-typeset-kbd-color: #ebebeb;
-  // --md-typeset-kbd-border-color: #b8b8b8;
 
   /* Keys colors */
   --md-typeset-kbd-color: #{shade(hsla(0, 100%, 100%, 1), 8%)};
@@ -107,7 +88,7 @@ $lin-color: rgb(255, 0, 0);
     --nav-color: #{$glass};
     --slate-gradient: #{$mos-def-gradient};
     --slate-gradient-a: #{$mos-def-gradient-anti};
-    --containers-bg: #{$mos-def-bg};
+    // --containers-bg: #{$mos-def-bg};
     --select-font-color: #{$mos-def-sel-text};
     --md-header-bg-color: var(--md-primary-fg-color);
     --md-footer-bg-color: #{$mos-def-foot-bg};
@@ -117,6 +98,12 @@ $lin-color: rgb(255, 0, 0);
     --rnb: #{$mos-def-rnb};
     --md-default-bg: #{$mos-def-def-bg};
     --text: #{$mos-def-text};
+
+    /* Dark specific colors */
+    --md-default-bg-color--dark: #{darken($mos-def-default-bg, 3%)};
+    --md-default-bg-color--darker: #{darken($mos-def-default-bg, 6%)};
+    --md-default-bg-color--darkest: #{darken($mos-def-default-bg, 9%)};
+    --md-default-bg-color--ultra-dark: #{darken($mos-def-default-bg, 15%)};
 
     --md-default-fg-color: #{transparentize($mos-def-fg, 0.13)};
     --md-default-fg-color--light: #{transparentize($mos-def-fg, 0.46)};
@@ -134,47 +121,8 @@ $lin-color: rgb(255, 0, 0);
     /* General text */
     --md-text-color: #{$mos-def-text};
     --md-typeset-color: var(--md-default-fg-color);
+    --md-admonition-title-bg: #ffdb86;
 
-    /* Dark specific colors */
-    --md-default-bg-color--dark: #{darken($mos-def-default-bg, 3%)};
-    --md-default-bg-color--darker: #{darken($mos-def-default-bg, 6%)};
-    --md-default-bg-color--darkest: #{darken($mos-def-default-bg, 9%)};
-    --md-default-bg-color--ultra-dark: #{darken($mos-def-default-bg, 25%)};
-
-    /* Admonition colors */
-    --md-admonition-title-bg: #{adjust-hue(darken($mos-def-default-bg, 15%), -30)};
-    --md-admonition-fg-color: #{$mos-def-text};
-    --md-admonition-bg-color: #{$mos-def-admo-bg};
-    --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
-    --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
-    --md-admonition-bg-color--sh-luv: rgba(235, 5, 5, 0.2);
-    --md-admonition-icon-color--settings: #aa00ff;
-    --md-admonition-icon-color--sh-luv: rgb(235, 5, 5);
-    --md-admonition-icon-color--new: #ffd600;
-    --md-admonition-icon-color--note: hsl(51, 94%, 73%);
-    --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
-    --md-admonition-icon-color--tip: hsl(161, 97%, 77%);
-    --md-admonition-icon-color--info: hsl(150, 50%, 64%);
-    --md-admonition-icon-color--success: hsl(135, 94%, 65%);
-    --md-admonition-icon-color--question: hsl(135, 92%, 79%);
-    --md-admonition-icon-color--warning: hsl(31, 100%, 71%);
-    --md-admonition-icon-color--failure: hsl(0, 100%, 59%);
-    --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
-    --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
-    --md-admonition-icon-color--example: hsl(265, 89%, 78%);
-    --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
-    --md-admonition-bg-color--note: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--abstract: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--info: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--tip: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--success: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--question: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--warning: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--failure: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--danger: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--bug: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--example: var(--md-admonition-title-bg);
-    --md-admonition-bg-color--quote: var(--md-admonition-title-bg);
     /* Various Material related color variables */
     --md-typeset-a-color: #{$mos-def-cyan};
     --md-typeset-mark-color: #{mix($mos-def-yellow, $mos-def-bg, 35%)};
@@ -182,34 +130,8 @@ $lin-color: rgb(255, 0, 0);
     --md-typeset-ins-color: #{mix($mos-def-green, $mos-def-bg, 35%)};
 
     /* Code colors */
-    --md-code-fg-color: #{$mos-def-fg};
-    --md-code-bg-color: #{$mos-def-bg};
-    --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
-    --md-code-inline-bg-color: #{lighten($mos-def-bg, 5%)};
-    --md-code-hl-operator-color: #{$mos-def-pink};
-    --md-code-hl-punctuation-color: #{$mos-def-fg};
-    --md-code-hl-string-color: #{$mos-def-yellow};
-    --md-code-hl-special-color: #{$mos-def-purple};
-    --md-code-hl-number-color: #{$mos-def-purple};
-    --md-code-hl-keyword-color: #{$mos-def-pink};
-    --md-code-hl-name-color: #{$mos-def-fg};
-    --md-code-hl-constant-color: #{$mos-def-purple};
-    --md-code-hl-function-color: #{$mos-def-green};
-    --md-code-hl-comment-color: #{$mos-def-blue};
-    --md-code-hl-variable-color: #{$mos-def-orange};
-    --md-code-hl-generic-color: #{$mos-def-blue};
-    --md-code-hl-color: #{$mos-def-selection};
+    --md-code-bg-color: #{$din-color};
 
-    /* Custom code colors */
-    --md-code-hl-entity-color: #{$mos-def-green};
-    --md-code-hl-tag-color: #{$mos-def-pink};
-    --md-code-hl-namespace-color: #{$mos-def-fg};
-    --md-code-hl-builtin-color: #{$mos-def-cyan};
-    --md-code-hl-class-color: #{$mos-def-cyan};
-
-    --md-code-special-bg-color: #{darken($mos-def-bg, 5%)};
-    --md-code-alternate-bg-color: #{tint($mos-def-bg, 10%)};
-    --md-code-link-bg-color: #{mix($mos-def-cyan, $mos-def-bg, 15%)};
   }
 
   /* BLACK */
@@ -233,6 +155,12 @@ $lin-color: rgb(255, 0, 0);
     --md-footer-bg-color: #{$dark-foot-bg};
     --md-footer-fg-color: #{$dark-foot-fg};
 
+    /* Dark specific colors */
+    --md-default-bg-color--dark: #{darken($dark-default-bg, 3%)};
+    --md-default-bg-color--darker: #{darken($dark-default-bg, 6%)};
+    --md-default-bg-color--darkest: #{darken($dark-default-bg, 9%)};
+    --md-default-bg-color--ultra-dark: #{darken($dark-default-bg, 15%)};
+
     --md-default-fg-color: #{transparentize($dark-fg, 0.13)};
     --md-default-fg-color--light: #{transparentize($dark-fg, 0.46)};
     --md-default-fg-color--lighter: #{transparentize($dark-fg, 0.84)};
@@ -252,12 +180,6 @@ $lin-color: rgb(255, 0, 0);
     --md-typeset-color: var(--md-default-fg-color);
     --md-typeset-a-color: #{$dark-orange};
 
-    /* Dark specific colors */
-    --md-default-bg-color--dark: #{darken($dark-default-bg, 3%)};
-    --md-default-bg-color--darker: #{darken($dark-default-bg, 6%)};
-    --md-default-bg-color--darkest: #{darken($dark-default-bg, 9%)};
-    --md-default-bg-color--ultra-dark: #{darken($dark-default-bg, 15%)};
-
     --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
     --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
     --md-code-special-bg-color: #{lighten(hsl(232, 15%, 15%), 5%)};
@@ -267,40 +189,7 @@ $lin-color: rgb(255, 0, 0);
     --md-typeset-kbd-border-color: #{darken(rgb(46, 48, 62), 9%)};
     --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);
 
-    /* Admonition colors */
 
-    --md-admonition-fg-color: var(--md-default-fg-color);
-    --md-admonition-bg-color: #{transparentize(#121219, 0.5)};
-    --md-admonition-bg-color--sh-luv: rgba(235, 5, 5, 0.2);
-    --md-admonition-bg-color--settings: rgba(19, 15, 21, 0.1);
-    --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
-    --md-admonition-bg-color--note: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--abstract: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--info: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--tip: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--success: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--question: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--warning: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--failure: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--danger: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--bug: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--example: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--quote: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-icon-color--sh-luv: rgb(235, 5, 5);
-    --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
-    --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
-    --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
-    --md-admonition-icon-color--example: hsl(265, 89%, 78%);
-    --md-admonition-icon-color--failure: hsl(0, 100%, 59%);
-    --md-admonition-icon-color--info: hsl(190, 94%, 87%);
-    --md-admonition-icon-color--new: #ffd600;
-    --md-admonition-icon-color--note: hsl(51, 94%, 73%);
-    --md-admonition-icon-color--question: hsl(135, 92%, 79%);
-    --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
-    --md-admonition-icon-color--settings: #aa00ff;
-    --md-admonition-icon-color--success: hsl(135, 94%, 65%);
-    --md-admonition-icon-color--tip: hsl(161, 97%, 77%);
-    --md-admonition-icon-color--warning: hsl(31, 100%, 71%);
     // --md-accent-fg-color: #{adjust-hue($dark-orange, 100deg)};
   }
 
@@ -337,48 +226,16 @@ $lin-color: rgb(255, 0, 0);
     --md-text-color: var(--md-default-fg-color);
     --md-typeset-color: var(--md-default-fg-color);
 
-    /* Admonition colors */
-    --md-admonition-fg-color: var(--md-default-fg-color);
-    --md-admonition-bg-color: var(--md-default-bg-color--dark);
-    // --md-admonition-bg-color: #02020242;
-    /* --md-admonition-fg-color: hsla(232, 75%, 95%, 1);*/
-    /* --md-admonition-bg-color: #111217; */
-    --md-admonition-bg-color--new: rgba(255, 214, 0, 0.1);
-    --md-admonition-bg-color--settings: rgba(170, 0, 255, 0.1);
-    --md-admonition-icon-color--abstract: hsl(191, 97%, 77%);
-    --md-admonition-icon-color--bug: hsl(325, 100%, 64%);
-    --md-admonition-icon-color--danger: hsl(0, 100%, 67%);
-    --md-admonition-icon-color--example: hsl(265, 89%, 78%);
-    --md-admonition-icon-color--failure: hsl(0, 100%, 59%);
-    --md-admonition-icon-color--info: hsl(190, 94%, 87%);
-    --md-admonition-icon-color--new: #ffd600;
-    --md-admonition-icon-color--note: hsl(51, 94%, 73%);
-    --md-admonition-icon-color--question: hsl(135, 92%, 79%);
-    --md-admonition-icon-color--quote: hsl(225, 8%, 51%);
-    --md-admonition-icon-color--settings: #aa00ff;
-    --md-admonition-icon-color--success: hsl(135, 94%, 65%);
-    --md-admonition-icon-color--tip: hsl(161, 97%, 77%);
-    --md-admonition-icon-color--warning: hsl(31, 100%, 71%);
-    --md-admonition-bg-color--sh-luv: rgba(235, 5, 5, 0.2);
-    --md-admonition-icon-color--sh-luv: rgb(235, 5, 5);
-    --md-admonition-bg-color--success: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--question: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--note: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--warning: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--abstract: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--failure: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--danger: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--bug: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--info: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--example: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--quote: var(--md-default-bg-color--ultra-dark);
-    --md-admonition-bg-color--tip: var(--md-default-bg-color--ultra-dark);
-
     /* Code colors */
     --md-code-fg-color: #{$drac-fg};
     --md-code-bg-color: #{$drac-bg};
     --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
     --md-code-inline-bg-color: #{lighten($drac-bg, 5%)};
+    --md-code-special-bg-color: #{darken($drac-bg, 5%)};
+    --md-code-alternate-bg-color: #{tint($drac-bg, 10%)};
+    --md-code-link-bg-color: #{mix($drac-cyan, $drac-bg, 15%)};
+    
+    /* Custom code colors */
     --md-code-hl-operator-color: #{$drac-pink};
     --md-code-hl-punctuation-color: #{$drac-fg};
     --md-code-hl-string-color: #{$drac-yellow};
@@ -392,17 +249,11 @@ $lin-color: rgb(255, 0, 0);
     --md-code-hl-variable-color: #{$drac-orange};
     --md-code-hl-generic-color: #{$drac-blue};
     --md-code-hl-color: #{$drac-selection};
-
-    /* Custom code colors */
     --md-code-hl-entity-color: #{$drac-green};
     --md-code-hl-tag-color: #{$drac-pink};
     --md-code-hl-namespace-color: #{$drac-fg};
     --md-code-hl-builtin-color: #{$drac-cyan};
     --md-code-hl-class-color: #{$drac-cyan};
-
-    --md-code-special-bg-color: #{darken($drac-bg, 5%)};
-    --md-code-alternate-bg-color: #{tint($drac-bg, 10%)};
-    --md-code-link-bg-color: #{mix($drac-cyan, $drac-bg, 15%)};
 
     /* Various Material related color variables */
     --md-typeset-a-color: #{$drac-cyan};

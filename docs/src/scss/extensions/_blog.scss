@@ -12,5 +12,6 @@
 }
 
 article hr {
-  border: 0.3rem dotted var(--md-accent-fg-color);
+  border-top: 0.4rem ridge var(--md-accent-fg-color);
+  border-radius: 3rem;
 }

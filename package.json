@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "tsc --build",
+    "lint.fix": "npx stylelint docs/src/scss/**/*.scss",
     "SASS:build": "sass --no-source-map docs/src/scss:docs/theme/css/",
     "SASS:watch": "sass --no-source-map --watch docs/src/scss/:docs/theme/css/",
     "RE:build": "tsc --build && npm run -s SASS:build && mkdocs build",
@@ -20,16 +21,25 @@
     "SERVE.THIS": "tsc --watch & npm run -s RE:serve & npm run --loglevel=silent SASS:watch ",
     "GHP:Manual Deploy": "mkdocs gh-deploy --force"
   },
+  "engines": {
+    "node": ">=20.0.0",
+    "vscode": "^1.90.0",
+    "npm": "~10.0.0"
+  },
   "devDependencies": {
+    "@mdi/svg": "^7.4.47",
     "@types/cors": "^2.8.13",
     "@types/jquery": "^3.5.16",
     "@types/node": "^20.3.1",
     "@types/sqlite3": "^3.1.8",
     "concurrently": "^8.2.0",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-order": "^6.0.3",
-    "stylelint-scss": "^5.0.1",
+    "postcss-inline-svg": "^6.0.0",
+    "postcss-pseudo-classes": "^0.4.0",
+    "postcss-scss": "^4.0.9",
+    "postcss-svgo": "^7.0.1",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-scss": "*",
     "typescript": "^5.4.5"
   },
   "dependencies": {

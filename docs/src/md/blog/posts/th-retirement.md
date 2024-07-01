@@ -1,13 +1,11 @@
 ---
-title: History of the Hospital.
+title: History of the Hospital
 date: 2022-11-11
 authors: [HOOTSMAN]
 categories: [ITsRU, Showcase, Bad-practice, Story, AbEx, DeadEnd, Outsiders, Conflict]
 slug: it-sank
-description: >
-    Глазами рядового обывателя.
+description: Глазами рядового обывателя.
 comments: true
-slug: hospital
 ---
 
 ^^Что это?^^

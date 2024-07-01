@@ -42,3 +42,7 @@ src/**/*.map
 test.sh
 ignored
 run.py
+
+# drafts
+
+g.md

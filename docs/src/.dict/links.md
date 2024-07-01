@@ -270,4 +270,7 @@
 [fury]: https://i.imgur.com/KYi8dAE.png
 [sirmotive]: https://i.imgur.com/DEYS3Kn.png
 [keka]: https://i.imgur.com/WLmZk2I.png
-[gamechat]: https://i.imgur.com/pnXb0n0.jpeg
+
+<!-- dumbs -->
+
+[anton]: https://i.imgur.com/PU1Zo9V.png
