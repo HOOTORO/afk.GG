@@ -43,7 +43,7 @@ async function drawInputs() {
   app.addEventListener("change", (x: InputEvent) => {
     const tg = x.target as HTMLSelectElement;
     user.loadLocal();
-    if (tg.value && tg.type !== "range") {
+    if (tg.value && tg.type === "select-one") {
       const reward = rewards.find(
         (g: RankReward) =>
           g.mode === ValueModes.gMode(tg.id) && g.rank === tg.value
@@ -52,7 +52,7 @@ async function drawInputs() {
       user.reward = reward;
       user.calc();
     }
-    if (tg instanceof HTMLInputElement && tg.type === "range") {
+    if (tg instanceof HTMLInputElement && tg.type === "select-one") {
       rangeSlide(tg.value, user);
     } else if (user) {
       const weeks = parseInt(localStorage.getItem("rangeValue"));
