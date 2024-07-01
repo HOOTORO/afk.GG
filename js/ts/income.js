@@ -35,13 +35,13 @@ async function drawInputs() {
     app.addEventListener("change", (x) => {
         const tg = x.target;
         user.loadLocal();
-        if (tg.value && tg.type !== "range") {
+        if (tg.value && tg.type === "select-one") {
             const reward = rewards.find((g) => g.mode === ValueModes.gMode(tg.id) && g.rank === tg.value);
             populateStorage(tg.id, tg.value);
             user.reward = reward;
             user.calc();
         }
-        if (tg instanceof HTMLInputElement && tg.type === "range") {
+        if (tg instanceof HTMLInputElement && tg.type === "select-one") {
             rangeSlide(tg.value, user);
         }
         else if (user) {
