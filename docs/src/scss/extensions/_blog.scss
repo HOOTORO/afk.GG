@@ -15,3 +15,21 @@ article hr {
   border-top: 0.4rem ridge var(--md-accent-fg-color);
   border-radius: 3rem;
 }
+
+@media screen and (max-width: 76.234375em) {
+  .md-sidebar.md-sidebar--post .md-nav__list {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .md-post__authors {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .md-nav--primary {
+    padding: 0.5rem;
+  }
+  .md-sidebar.md-sidebar--post .md-sidebar__scrollwrap {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+}

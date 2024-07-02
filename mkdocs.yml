@@ -119,12 +119,12 @@ plugins:
         - "skip-lb"
         - "ava"
   - social:
-      cards: !ENV [CI, false]
+      cards: !ENV [CI_SOCIAL, false]
   - git-revision-date-localized:
       enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
       fallback_to_build_date: true
   - git-committers:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [ENABLED_GIT_COMMITTERS, false]
       repository: HOOTORO/afk.GG
       branch: master
       exclude:
@@ -185,9 +185,9 @@ markdown_extensions:
           - theme/.icons
   - pymdownx.progressbar:
   - pymdownx.pathconverter:
-  - pymdownx.tabbed:
-      alternate_style: true
-      combine_header_slug: true
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  #     combine_header_slug: true
   - pymdownx.blocks.details:
   - pymdownx.blocks.admonition:
       types:
@@ -204,8 +204,11 @@ markdown_extensions:
         - danger
         - bug
         - example
-        - quote
-        - sh-luv
+        - name: quote
+          title: Cite
+        - name: adheart
+          class: sh-luv
+          title: <3
   - pymdownx.blocks.html:
   - pymdownx.blocks.tab:
       alternate_style: true

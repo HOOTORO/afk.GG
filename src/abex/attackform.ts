@@ -139,7 +139,7 @@ export function AttackForm() {
       parseInt($("#dps").val().toString()),
       $("#comm").val().toString()
     );
-    jQuery(text).appendTo("#dps-table > tbody");
+    $(text).appendTo("#dps-table > tbody");
   });
 
   const petCheckBoxes = checkBoxSelector(petSelectId, Beasts, petClick);

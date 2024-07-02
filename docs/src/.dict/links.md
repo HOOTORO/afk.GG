@@ -274,3 +274,31 @@
 <!-- dumbs -->
 
 [anton]: https://i.imgur.com/PU1Zo9V.png
+[ssgood]: https://i.imgur.com/uqCQfcs.png
+
+[dodicus]: https://i.imgur.com/krufmGS.jpeg
+[dorian]: https://i.imgur.com/Kxn2EHN.png
+
+
+[aqua-dmb1]: https://i.imgur.com/ori8bQY.jpeg
+[aqua-dmb2]: https://i.imgur.com/kN9FTBG.jpeg
+[aqua-dmb3]: https://i.imgur.com/VVNAuXU.jpeg
+<!-- https://i.imgur.com/NtLEX1M.jpeg -->
+[aqua-dmb4]: https://i.imgur.com/mAu84T5.png
+<!-- https://i.imgur.com/FmuCoHQ.jpeg -->
+[aqua-dmb5]: https://i.imgur.com/NTlx7tz.png
+<!-- https://i.imgur.com/EGuuLh7.png -->
+<!-- https://i.imgur.com/ZY8Dt5D.png -->
+[aqua-dmb6]: https://i.imgur.com/0NsdJZ0.jpeg
+<!-- https://i.imgur.com/TOn4VIU.jpeg -->
+[aqua-dmb7]: https://i.imgur.com/bqulWEQ.png
+<!-- https://i.imgur.com/dHBIgf4.png -->
+[aqua-dmb8]: https://i.imgur.com/0NMq7zR.png
+<!-- https://i.imgur.com/xnklNst.png -->
+<!-- https://i.imgur.com/ds3RUoU.png -->
+[aqua-dmb9]: https://i.imgur.com/F3QmCkb.png
+[aqua-dmb10]: https://i.imgur.com/FrdWD6l.png
+[aqua-dmb11]: https://i.imgur.com/QQORwBI.png
+
+[toha]: https://i.imgur.com/H6k36cN.jpeg
+[dodik]: https://i.imgur.com/2M7nvtw.jpeg
