@@ -104,7 +104,7 @@ export function AttackForm() {
       </tr>
       `;
         MetaTeam.makeAttack(parseInt($("#dps").val().toString()), $("#comm").val().toString());
-        jQuery(text).appendTo("#dps-table > tbody");
+        $(text).appendTo("#dps-table > tbody");
     });
     const petCheckBoxes = checkBoxSelector(petSelectId, Beasts, petClick);
     const heroselector = checkBoxSelector(heroSelectId, Heroes, heroClick);

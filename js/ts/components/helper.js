@@ -48,7 +48,7 @@ function weekLabels(n, stops) {
     return html;
 }
 function rangeSlide(value, user) {
-    document.getElementById("rangeValue").innerHTML = value + " weeks";
+    $("rangeValue").html(value + " weeks");
     $(this).attr("value", value?.toString());
     populateStorage("rangeValue", value);
     updateResourceBox(user.income, parseInt(value));
