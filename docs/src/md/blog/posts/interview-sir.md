@@ -15,6 +15,7 @@ categories:
 draft: false
 description: Запись трансляции. Обнародование скриншотов.
 slug: fall-stream
+comments: true
 ---
 
 <video width="100%" controls>

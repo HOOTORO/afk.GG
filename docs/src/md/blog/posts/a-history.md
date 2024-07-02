@@ -7,6 +7,7 @@ categories: [ITsRU, Outsiders, Story]
 description: Эпопея из первых уст. Вся неприятная правда выйдет на свет.
 slug: rise-invitation
 watch: https://www.twitch.tv/hootoro
+comments: true
 ---
 
 
