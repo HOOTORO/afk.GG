@@ -8,7 +8,7 @@ template: main.html
 ---
 
 /// admonition | Powered by Community!
-    type: sh-luv
+    type: adheart
 Сделано сообществом для сообщества!
 ///
 

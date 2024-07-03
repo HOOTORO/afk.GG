@@ -54,7 +54,8 @@
 [porq23]: https://i.imgur.com/btQwa4z.png
 [porq24]: https://i.imgur.com/jamAxWZ.png
 [porq25]: https://i.imgur.com/giEFmcN.png
-[porq26]: https://i.imgur.com/hnQ0n6z.png
+[porq26]: https://i.imgur.com/hnQ0n6z.png 
+<!-- ocr marker -->
 [porq27]: https://i.imgur.com/22vMGTX.png
 [porq28]: https://i.imgur.com/sZLigi1.png
 [porq29]: https://i.imgur.com/e3iZ8Fy.png

@@ -405,7 +405,7 @@ Fourtwoo появляется только по достижению 3800 PTS
 *Помощь всегда welcome*
 ///
 
-/// sh-luv | Trescamble
+/// adheart | Trescamble
 
 **Над текстом работали:**
 

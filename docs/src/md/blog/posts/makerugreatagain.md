@@ -241,7 +241,7 @@ slug: make-ru-great-once
 
 ### Contributors
 
-/// sh-luv | MAKE COMMUNITY GREAT AGAIN!
+/// adheart | MAKE COMMUNITY GREAT AGAIN!
 
 Written by
 
