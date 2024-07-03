@@ -31,7 +31,7 @@ comments: true
 Зато TL;DR предоставлен, аж в двух вариантах!
 
 /// tab | v.HOOTS
-<video controls src="https://www.dropbox.com/scl/fi/9atr4se4wq0d03kotxvvh/recap2min.webm?rlkey=wvi3d99rfm1jfqsurr0k7zt0k&st=c57io5n2&raw=1" title="Recap""></video>
+<video controls src="https://www.dropbox.com/scl/fi/exqj0s9uflup1bqcxjz7g/0702.webm?rlkey=dsd23gwy5c6fnc7joze8y5bkt&st=kkinjovu&raw=1" title="Recap""></video>
 
 ///
 /// tab | v.Dorian summary
