@@ -142,15 +142,6 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.smartsymbols
-  - pymdownx.magiclink:
-      normalize_issue_symbols: true
-      user: HOOTORO
-      provider: github
-      repo: afk.gg
-      repo_url_shorthand: true
-      repo_url_shortener: true
-      social_url_shorthand: true
-      social_url_shortener: true
   - pymdownx.caret:
       smart_insert: true
   - pymdownx.escapeall:
