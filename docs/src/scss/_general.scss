@@ -12,9 +12,19 @@
 
 .md-typeset {
   h1 {
+    // display: inline-grid;ddd
     text-shadow: 1px 1px 2px var(--md-accent-fg-color);
     text-transform: uppercase;
+    // grid-template-columns: 1fr auto 1fr;
+    // gap: 1em;
   }
+  h1::before,
+  h1::after {
+    content: "";
+    border-top: 0.1em double black;
+    align-self: center;
+  }
+
   h4 {
     margin: 2em 0 1em;
   }

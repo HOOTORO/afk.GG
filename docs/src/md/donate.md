@@ -3,7 +3,6 @@ title: Support Developer
 description: >-
     Тут можно поблагодарить/поддержать создателя.<br>
     Donations always appreciated, but never needed.
-template: main.html
 hide:
     - feedback
 ---

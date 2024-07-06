@@ -2,7 +2,9 @@
 title: Native Autoroles
 description: >
     HOW-TO setup new Discord feature, self-assigned roles
-author: HOOTSMAN, Лев Николаевич
+authors: [HOOTSMAN]
+categories: [Doc]
+tags: [Discord, Guide]
 template: main.html
 comments: true
 ---

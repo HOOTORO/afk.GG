@@ -3,9 +3,9 @@ title: How-to YAGPDB
 description: Setup amazing https://yagpdb.xyz/ bot to send interval based notification
 date: 2024-06-22
 draft: false
-tags: [ bot, discord, example, notification, code ]
-categories: [ documentation, guide ]
-author: HOOTORO
+categories: [Doc]
+tags: [Guide, Bot, Discord, Code Example]
+authors: [HOOTSMAN]
 slug: yagpdb-notification
 toc: true
 ---

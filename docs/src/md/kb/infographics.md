@@ -1,9 +1,29 @@
 ---
 title: Infographics
 description: Visual representation various data/researches
-author: compiled by HOOTSMAN
+authors: [HOOTSMAN]
+categories: [Game]
+tags: [AFK Arena, Stats, Guide]
 template: main.html
 ---
+
+## Gallery Recommendations
+
+/// tab | 1
+![alt text](https://i.imgur.com/8QaKHF2.jpeg)
+///
+/// tab | 2
+![alt text](https://i.imgur.com/EaNT7D0.jpeg)
+///
+/// tab | 3
+![alt text](https://i.imgur.com/oSLgWYc.jpeg)
+///
+/// tab | 4
+![alt text](https://i.imgur.com/qj3LkM7.jpeg)
+///
+/// tab | 5
+![alt text](https://i.imgur.com/7EI77kV.jpeg)
+///
 
 ## Hero stats proportions in different game modes
 

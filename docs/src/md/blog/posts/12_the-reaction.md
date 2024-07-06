@@ -1,27 +1,21 @@
 ---
 title: Cerebral Palsy Party
-date: 2024-07-02
-authors:
-    - HOOTSMAN
-    - SE2k
-    - sensei
-categories:
-    - Conflict
-    - ITsRU
-    - Opinion
-    - Outsiders
-    - Showcase
-    - Bad-practice
+date: 
+    created: 2024-07-02
+authors: [HOOTSMAN, SE2k, sensei]
+categories: [Showcase]
+tags: [AQUILON, RU, Stupidity]
 draft: false
 description: You should never underestimate the predictability of stupidity
 type: default
 slug: dumb
 comments: true
+hide: 
+    - feedback
+preview: https://i.imgur.com/uqCQfcs.png
 ---
 
-# ^^Реакция Аквилона^^
 
-//// new | TL;DR
 
 Сэр Аквилон 2000 провел сбор урожая скриншотов, после посевных работ на стриме.  
 Не планировал давать комментариев по Акве, но к такому запредельному уровню ханжества, чсв и дремучему невежеству, оказался не готов.  
@@ -30,7 +24,14 @@ comments: true
 Внутри много скриншотов которые в явном или скрытом виде могут угрожать префронта́льной коре, ознакомление на свой страх и риск.  
 Зато TL;DR предоставлен, аж в двух вариантах!
 
+<!-- more --> 
+
+## ^^Реакция Аквилона^^
+
+//// new | TL;DR
+
 /// tab | v.HOOTS
+
 <video controls src="https://www.dropbox.com/scl/fi/exqj0s9uflup1bqcxjz7g/0702.webm?rlkey=dsd23gwy5c6fnc7joze8y5bkt&st=kkinjovu&raw=1" title="Recap""></video>
 
 ///
@@ -42,10 +43,6 @@ comments: true
 
 ///
 ////
-
----
-
-<!-- more -->
 
 > "You should never underestimate the predictability of stupidity"  
 > _(c) Bullet Tooth Tony_

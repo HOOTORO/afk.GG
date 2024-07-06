@@ -3,7 +3,10 @@ title: Community Resource
 description: >
     Created by the Best people of AFK!<br>
     Коллекция ссылок на актуальные и не очень, но все еще полезные ресурсы по АФК Арене
-author: Собрано Львом Николаевичем!
+    Собрано Львом Николаевичем!
+authors: [HOOTORO]
+categories: [Game]
+tags: [AFK Arena, Guide, Knowledge, Community]
 template: main.html
 ---
 

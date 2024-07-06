@@ -4,7 +4,7 @@ description: >
     Обзор СНГ гильдий из топа бездны и не только.<br>
     Дополняется по мере возможности и благодаря участникам сообщества!
 date: 2023-07-01
-author: HOOTSMAN
+authors: [HOOTSMAN]
 template: main.html
 comments: true
 ---

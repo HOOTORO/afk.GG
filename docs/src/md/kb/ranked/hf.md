@@ -4,7 +4,9 @@ description: >-
     Season 4, Ranked 51 and 156 (team-wise 11 & 32).
 authors:  
     - Fatality
-    - HOOTSMAN, Лев Николаевич
+    - HOOTSMAN
+categories: [Game]
+tags: [Guide, AFK Arena, Hunting Fields, Rankings]
 template: main.html
 ---
 

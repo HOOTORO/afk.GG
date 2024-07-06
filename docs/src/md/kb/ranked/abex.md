@@ -2,6 +2,10 @@
 title: AbEx Rankings
 description: >
     СНГ и глобальный топы
+
+categories: [Game]
+tags: [Rankings, AFK Arena, RU]
+authors: [HOOTSMAN]
 template: main.html
 ---
 

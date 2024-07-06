@@ -1,64 +1,27 @@
-{% extends "base.html" %}
-
-{% block htmltitle %}
-{{ super() }}
-<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-{% endblock htmltitle %}
-
-<!-- Render hero under tabs -->
-{% block tabs %}
-{{ super() }}
-<!-- Additional styles for landing page -->
+{#- This file was automatically generated - do not edit -#}
+{% extends "main.html" %} {% block tabs %} {{ super() }}
 <style>
-  /* Application header should be static for the landing page */
+  body {
+    background: url("{{ './assets/bg.jpg' | url }}") no-repeat center center fixed;
+    background-size: cover;
+  }
+
   .md-header {
     position: initial;
   }
 
-  .md-main,
-  .md-content {
-    margin-right: auto;
-    margin-left: auto;
-    min-width: 50%;
+  .md-meta__list {
+    display: inline-flex !important;
   }
 
-  /* Remove spacing, as we cannot hide it completely */
-  .md-main__inner {
-    margin: 0 !important;
+  .md-typeset ul {
+    list-style-type: none;
   }
 
-  .md-sidebar {
-    display: none !important;
-  }
 
-  /* Hide table of contents */
-  @media screen and (min-width: 60em) {
-    .md-sidebar--secondary {
-      display: none;
-    }
-  }
-
-  /* Hide navigation */
-  @media screen and (min-width: 76.25em) {
-    .md-sidebar--primary {
-      display: none;
-    }
-  }
-
-  .md-container {
-    background-image: url("{{ './assets/bg.jpg' | url }}");
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-  }
-
-  .md-sidebar,
-  .md-sidebar--secondary {
+  .md-nav__list,
+  .md-nav--secondary {
     visibility: hidden;
-
   }
 
   .md-typeset .md-button {
@@ -85,52 +48,110 @@
 
   }
 
-  .md-typeset details {
-    background-color: rgba(29, 29, 29, 0.777) !important;
-  }
-
-  summary {
-    color: bisque;
-    background-color: rgba(0, 0, 0, 0.777) !important;
-  }
-
-
   .md-content__inner:before {
     display: none;
   }
 
-  .md-typeset details.info:focus-within,
-  .md-typeset .admonition,
-  .md-typeset details {
-    box-shadow: var(--md-shadow-z7);
+  .md-content {
+    background-color: var(--md-default-bg-color--light);
+    border-radius: 1rem;
+    /*mask-image: radial-gradient(var(--md-default-bg-color), #000, transparent);*/
+    backdrop-filter: blur(1rem);
+  }
+
+  .md-meta__item:not(:last-child):after {
+    margin-left: 1rem;
+  }
+
+
+  .md-typeset ul {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .md-typeset ul {
+    margin-bottom: unset;
+  }
+
+  .md-post--excerpt .md-post__header {
+    height: 0.6rem;
+    gap: unset;
   }
 </style>
 {% endblock %}
-{% block libs %}
-{% endblock %}
-<!-- Content -->
+
 {% block content %}
-{% endblock %}
-<!-- Application footer -->
-{% block footer %}
-<section class="mdx-container">
-  <div class="md-grid md-typeset">
-    <div class="mdx-hero">
-      <!-- Hero content -->
-      <h1>Your New Favourite Site</h1>
-      <h2>About beloved idle gachagame.</h2>
-      <h3>Get ready to ...</h3>
-      <div class="mdx-hero__content">
-        <div class="cont">
-          <h4>
-            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
-              class="md-button md-button--secondary">
-              Dive into idless afk
-            </a>
-          </h4>
-        </div>
-      </div>
+<header class="md-typeset">
+  {{ page.content }}
+</header>
+<hr>
+{% for page in nav.pages %}
+{% if page.url == "blog/" %}
+{% for post in page.posts %}
+<div class="md-post md-post--excerpt post-compact">
+  <h2 class="post-title">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </h2>
+  <div class="md-post__header">
+    {% if post.authors %}
+    <nav class="md-post__authors md-typeset">
+      {% for author in post.authors %}
+      <span class="md-author">
+        <img src="{{ author.avatar | url }}" alt="{{ author.name }}">
+      </span>
+      {% endfor %}
+    </nav>
+    {% endif %}
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="{{ post.config.date.created }}">
+            {{- post.config.date.created | date -}}
+          </time>
+          {#- Collapse whitespace -#}
+        </li>
+        {% if post.categories %}
+        <li class="md-meta__item">
+          {{ lang.t("blog.categories.in") }}
+          {% for category in post.categories %}
+          <a href="{{ category.url | url }}" class="md-meta__link">
+            {{- category.title -}}
+          </a>
+          {%- if loop.revindex > 1 %}, {% endif -%}
+          {% endfor -%}
+        </li>
+        {% endif %}
+        {% if post.config.readtime %}
+        {% set time = post.config.readtime %}
+        <li class="md-meta__item">
+          {% if time == 1 %}
+          {{ lang.t("readtime.one") }}
+          {% else %}
+          {{ lang.t("readtime.other") | replace("#", time) }}
+          {% endif %}
+        </li>
+        {% endif %}
+      </ul>
+      {% if post.config.draft %}
+      <span class="md-draft">
+        {{ lang.t("blog.draft") }}
+      </span>
+      {% endif %}
     </div>
   </div>
-</section>
+  {{ post.content.split('<!-- more -->', 1)[0] }}
+  <div class="post-excerpt-image crop-excerpt">
+    <a href="{{ post.url }}">
+      <img src="{{ post.meta.preview }}" alt="" />
+    </a>
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+{% endfor %}
 {% endblock %}
+
+{% block footer %}
+{%endblock %}

@@ -109,6 +109,7 @@
     "Framton",
     "Frmt",
     "Gacha",
+    "gachagame",
     "ginfo",
     "ginneas",
     "Ginneas",
@@ -161,6 +162,7 @@
     "Kelthur",
     "Khaz",
     "Khazard",
+    "kisso",
     "KLBR",
     "Kren",
     "ladmo",
@@ -578,5 +580,6 @@
       "mkdocs.yml",
       "file:///c%3A/Users/HOOTORO/R/afk.GG/mkdocs.yml"
     ]
-  }
+  },
+  "[markdown]": {}
 }

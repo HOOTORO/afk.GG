@@ -1,32 +1,27 @@
 ---
 title: Падение Аквилона
-date: 2024-06-30
-authors:
-    - SE2k
-    - sensei
-    - kisso
-    - HOOTSMAN
-categories:
-    - AbEx
-    - ITsRU
-    - Outsiders
-    - Story
-    - Conflict
+date: 
+    created: 2024-06-30
+authors: [SE2k, sensei, kisso, HOOTSMAN]
+categories: [Showcase]
+tags: [RU, Stream, SadStory, AQUILON, twitch.tv]
 draft: false
 description: Запись трансляции. Обнародование скриншотов.
 slug: fall-stream
 comments: true
+hide: 
+    - feedback
+preview: https://i.imgur.com/jpvePid.png
 ---
 
-<video width="100%" controls>
-<source src="https://www.dropbox.com/scl/fi/azu91u1xinar405yp893m/aquafall.webm?rlkey=rquf8ofhxrss1ndrrxfqybxm4&st=gbfeem12&raw=1" type="video/webm" title="Rise and Fall of Aquilon">
-</video>
 
 Запись на [twitch.tv](https://www.twitch.tv/videos/2183961787).
 Скачать файлом [тут](https://www.dropbox.com/scl/fi/azu91u1xinar405yp893m/aquafall.webm?rlkey=rquf8ofhxrss1ndrrxfqybxm4&st=n6xsouz1&raw=1).
 
----
 <!-- more -->
+<video width="100%" controls>
+<source src="https://www.dropbox.com/scl/fi/azu91u1xinar405yp893m/aquafall.webm?rlkey=rquf8ofhxrss1ndrrxfqybxm4&st=gbfeem12&raw=1" type="video/webm" title="Rise and Fall of Aquilon">
+</video>
 
 ^^Прочие материалы^^
 

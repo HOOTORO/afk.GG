@@ -2,6 +2,9 @@
 title: Incm | Res. Modes
 description: >
     Калькулятор для расчета инкама ресурсов в зависимости от указанных данных.
+authors: [HOOTSMAN]
+categories: [Game]
+tags: [Tool, AFK Arena]
 template: main.html
 ---
 

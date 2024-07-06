@@ -81,7 +81,7 @@ nav:
           - kb/abex.md
           - kb/income.md
           - kb/dust.md
-      - Discord Tools:
+      - Discord Guides:
           - kb/chroles.md
           - kb/notification.md
       - AFK Statistics:
@@ -91,6 +91,7 @@ nav:
       - guilds/meme.md
   - HOOT-o-ROCK:
       - blog/index.md
+      - tags.md
 
 plugins:
   - blog:
@@ -121,8 +122,16 @@ plugins:
   - social:
       cards: !ENV [CI_SOCIAL, false]
   - git-revision-date-localized:
-      enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, true]
+      enable_creation_date: true
       fallback_to_build_date: true
+      type: timeago
+      timezone: Europe/Moscow
+      locale: en
+  # - git-authors
+      # show_contribution: true
+      # show_line_count: true
+      # count_empty_lines: true
   - git-committers:
       enabled: !ENV [ENABLED_GIT_COMMITTERS, false]
       repository: HOOTORO/afk.GG
@@ -133,7 +142,7 @@ plugins:
 markdown_extensions:
   - toc:
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-      permalink: true
+      permalink: "¤"
       toc_depth: 3
   - smarty:
       smart_quotes: true
@@ -180,21 +189,24 @@ markdown_extensions:
   #     alternate_style: true
   #     combine_header_slug: true
   - pymdownx.blocks.details:
+  # Default admos: note, abstract, info, tip, success,question, , failure, danger, bug, , 
   - pymdownx.blocks.admonition:
       types:
-        - new
-        - settings
-        - note
-        - abstract
-        - info
-        - tip
-        - success
-        - question
-        - warning
-        - failure
         - danger
+        - tip
+        - note
+        - info
+        - question
+        - success
+        - failure
         - bug
-        - example
+        - warning
+        - name: new
+          title: Breaking News❗
+        - name: example
+          title: Usage  
+        - name: settings
+          title: Parameters
         - name: quote
           title: Cite
         - name: adheart

@@ -7,16 +7,51 @@
       "previewPath": null,
       "fields": [
         {
+          "title": "template",
+          "name": "template",
+          "type": "string",
+          "single": true
+        },
+        {
           "title": "title",
           "name": "title",
-          "type": "string"
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string",
+          "default": "You should never underestimate the predictability of stupidity"
         },
         {
           "title": "date",
           "name": "date",
-          "type": "datetime",
-          "default": "{now}",
-          "dateFormat": "yyyy-MM-dd"
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Created",
+              "name": "created",
+              "type": "datetime",
+              "default": "{now}",
+              "dateFormat": "yyyy-MM-dd",
+              "isPublishDate": true
+            },
+            {
+              "title": "Updated",
+              "name": "updated",
+              "type": "datetime",
+              "default": "{now}",
+              "dateFormat": "yyyy-MM-dd",
+              "isModifiedDate": true
+            }
+          ]
+        },
+        {
+          "title": "Article preview",
+          "name": "preview",
+          "type": "image",
+          "isPreviewImage": true
         },
         {
           "title": "authors",
@@ -26,14 +61,23 @@
             "SE2k",
             "sensei",
             "kisso",
-            "HOOTSMAN"
+            "HOOTSMAN",
+            "asm",
+            "Delian",
+            "moon",
+            "fatal"
           ],
-          "default": "HOOTORO"
+          "default": "HOOTSMAN"
         },
         {
           "title": "categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
         },
         {
           "title": "draft",
@@ -42,10 +86,15 @@
           "default": true
         },
         {
-          "title": "description",
-          "name": "description",
-          "type": "string",
-          "default": "You should never underestimate the predictability of stupidity"
+          "title": "comments",
+          "name": "comments",
+          "type": "boolean"
+        },
+        {
+          "title": "hide",
+          "name": "hide",
+          "type": "choice",
+          "choices": ["feedback", "footer", "navigation", "toc"]
         }
       ]
     }
@@ -60,5 +109,7 @@
       ],
       "fields": []
     }
-  }
+  },
+  "frontMatter.preview.host": "http://siniwure.deadspace.inc/blog/",
+  "frontMatter.framework.startCommand": "mkdocs serve --watch-theme"
 }

@@ -2,6 +2,9 @@
 title: Dust | Level Progress
 description: >
     Калькулятор для расчета инкама ресурсов в зависимости от указанных данных.
+categories: [Game]
+authors: [HOOTSMAN]
+tags: [Tool, AFK Arena]
 template: templates/calculator.j2
 ---
 

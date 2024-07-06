@@ -2,7 +2,9 @@
 title: Isle of Gold
 description: >-
     Пожалуй, один из самых щедрых на кристаллы режимов в игре.
-author: HOOTSMAN, Лев Николаевич
+authors: [HOOTSMAN]
+categories: [Game]
+tags: [Stats, AFK Arena]
 template: main.html
 ---
 

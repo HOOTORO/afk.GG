@@ -1,10 +1,22 @@
 ---
 title: AQUANAUTS
 description: Однажды в фарватере Aквилона состоялась аквадискотека, но удостоились ее лишь избранные аквилонцы...
-authors: [HOOTSMAN]
-categories: [ITsRU, Showcase, Bad-practice]
-date: 2023-08-26
+authors:
+    - HOOTSMAN
+categories:
+    - Incident
+tags:
+    - RU
+    - Fun
+    - AQUILON
+    - Discord
+date:
+    created: 2023-08-26
 comments: true
+hide:
+    - feedback
+preview: https://i.imgur.com/aMrZcrS.png
+draft: false
 ---
 
 **Как то раз, в стенах Аквилона, произошла интересная история, с одним туристом, не робкого десятка...**
@@ -15,7 +27,6 @@ A были обнаружены трудолюбивым гостем город
 
 И решил он порадовать жителей сего града, не только лишь делом добрым, но и перфомансом!
 
----
 <!-- more -->
 
 <figure markdown="span">

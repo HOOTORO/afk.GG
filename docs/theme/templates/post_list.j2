@@ -1,0 +1,71 @@
+{% extends "main.html" %}
+{% block style %}
+  <style>
+    .md-container {
+    background-image: url("{{ './assets/bg.jpg' | url }}") !important;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+
+  </style>
+{% endblock style %}
+{% block content %}
+  <div class="post-compact-container">
+    {#{% with %}#}
+    {# set b = nav.pages|selectattr("url", "blog/") #}
+    {% for page in nav.pages %}
+      {% if page.url == "blog/" %}
+        {% for post in page.posts %}
+          <div class="md-post md-post--excerpt post-compact">
+            {% include "partials/post.html" %}
+            {#
+            {% set post.more = false %}
+            <h2 class="post-title">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <span class="post-date">{{ post.meta.date.created }}</span>
+              #}
+            {{ post.content.split('<!-- more -->', 1)[0] }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endblock content %}
+{% block container %}
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        {{ page.content }}
+      </header>
+      {% for page in nav.pages %}
+        {% if page.url == "blog/" %}
+          {% for post in page.posts %}
+            <article class="md-post md-post--excerpt">
+              <div class="md-post__content md-typeset">
+                {#
+        {% include "partials/post.html" %}
+        {% set post.more = false %}
+        #}
+                <h2 class="post-title">
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+                </h2>
+                <span class="post-date">{{ post.meta.date.created }}</span>
+                {{ post.content.split('<!-- more -->', 1)[0] }}
+              </div>
+            </article>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+      {% if pagination %}
+        {% block pagination %}
+          {% include "partials/pagination.html" %}
+        {% endblock %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock container %}

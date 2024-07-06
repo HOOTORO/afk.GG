@@ -3,9 +3,10 @@ title: TRESCAMBLE!
 description: >-
     Bounty Hunter Notes или
     НЕ-гайд на охоту за сокровищами.
-author: HOOTSMAN, Лев Николаевич
+authors: [HOOTSMAN]
+categories: [Game]
+tags: [Guide, AFK Arena]
 date: 23-04-08
-template: main.html
 ---
 /// warning | DISCLAIMER
 

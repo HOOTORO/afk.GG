@@ -1,11 +1,20 @@
 ---
 title: History of the Hospital
-date: 2022-11-11
-authors: [HOOTSMAN]
-categories: [ITsRU, Showcase, Bad-practice, Story, AbEx, DeadEnd, Outsiders, Conflict]
+date:
+    created: 2022-11-11
+authors:
+    - HOOTSMAN
+categories:
+    - Retro
+tags:
+    - RU
+    - SadStory
+    - The Hospital
 slug: it-sank
 description: Глазами рядового обывателя.
 comments: true
+draft: false
+preview: https://i.imgur.com/AoAPoAJ.png
 ---
 
 ^^Что это?^^
@@ -24,12 +33,10 @@ comments: true
 
 :   После небольшого отступления (карма) тут будут голые факты, скриншоты моей порки и не только. Выводы делайте сами.  
 
+<!-- more -->
 | _Good night sweet prince_ |
 | :-----------------------: |
 |           ![gn]           |
-
----
-<!-- more -->
 
 <div class="annotate" markdown>
 

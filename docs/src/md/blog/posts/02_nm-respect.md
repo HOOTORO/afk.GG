@@ -1,12 +1,20 @@
 ---
 title: No <del>Mercy</del>. Respect.
-description: >-
-    There is no future with no respect for each other.
-authors: [HOOTSMAN]
-categories: [ITsRU, Showcase, Bad-practice]
-date: 2023-03-02
+description: There is no future with no respect for each other.
+authors:
+    - HOOTSMAN
+categories:
+    - Incident
+tags:
+    - RU
+    - No Mercy
+    - Discord
+date:
+    created: 2023-03-02
 comments: true
 slug: no-respect
+draft: false
+preview: https://i.imgur.com/EhrhAAE.png
 ---
 
 **«Беспощадные[^tn]»** согильдийцы!

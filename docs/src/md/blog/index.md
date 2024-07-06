@@ -1,8 +1,9 @@
 ---
 title: HOOT-o-ROCK
 description: personal blog
-author: HOOTSMAN, Лев Николаевич
+authors: [HOOTSMAN]
 ---
+
 # Blog
 
 //// details | DISCLAIMER

@@ -1,28 +1,37 @@
 ---
 title: Восхождение Аквилона
-date: 2024-06-28
-time: 19:00
-authors: [HOOTSMAN, SE2k]
-categories: [ITsRU, Outsiders, Story]
+date:
+    created: 2024-06-28
+authors:
+    - HOOTSMAN
+    - SE2k
+categories:
+    - Announce
+tags:
+    - RU
+    - AQUILON
+    - SadStory
+    - Stream
 description: Эпопея из первых уст. Вся неприятная правда выйдет на свет.
 slug: rise-invitation
-watch: https://www.twitch.tv/hootoro
 comments: true
+hide:
+    - feedback
+draft: false
+preview: https://i.imgur.com/Ix3qHbJ.jpeg
 ---
 
 
-| Доброго дня, господа! |
-| :-------------------: |
-|       ![invite]       |
-
----
-<!-- more -->
 
 Буду краток, если вам интересно узнать:
 
 - что произошло с Аквилоном
 - что за коллаборация с мясоедами
 - кто выставил на мороз основателя и отца аквы сэра Лицо 2000?
+<!-- more -->
+| Доброго дня, господа! |
+| :-------------------: |
+|       ![invite]       |
 
 ![daaaaaa]
 

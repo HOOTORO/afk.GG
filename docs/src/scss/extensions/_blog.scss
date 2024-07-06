@@ -12,7 +12,7 @@
 }
 
 article hr {
-  border-top: 0.4rem ridge var(--md-accent-fg-color);
+  border-top: 0.1rem ridge var(--md-accent-fg-color);
   border-radius: 3rem;
 }
 
@@ -33,3 +33,27 @@ article hr {
     overflow: hidden;
   }
 }
+
+// .post-compact-container {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   gap: 10px;
+//   grid-auto-rows: minmax(100px, auto);
+// }
+
+// .post-compact-container {
+//   display: flex;
+//   flex-flow: row wrap;
+// }
+
+// .post-compact {
+//   width: 23rem;
+// }
+
+.post-excerpt-image.crop-excerpt {
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, #000, transparent);
+}
+
