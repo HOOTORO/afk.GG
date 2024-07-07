@@ -6,8 +6,9 @@ repo_url: https://github.com/HOOTORO/afk.GG
 edit_uri: edit/master/docs/src/md/
 dev_addr: "0.0.0.0:80"
 
-copyright: Copyright &copy; 2023 - 2024 Лев Николаевич, HOOTSMAN
-
+copyright: > 
+  Copyright &copy; 2023 - 2024 Лев Николаевич, HOOTSMAN
+  <a href="#__consent">Change cookie settings</a>
 docs_dir: docs/src/md
 theme:
   custom_dir: docs/theme
@@ -45,8 +46,8 @@ theme:
   features:
     - announce.dismiss
     - header.autohide
-    - navigation.instant
-    - navigation.instant.progress
+    # - navigation.instant
+    # - navigation.instant.progress
     - navigation.indexes
     - navigation.tracking
     - navigation.tabs
@@ -262,3 +263,4 @@ extra_javascript:
   - js/feedback.js
   - js/committers.js
   - js/ts/util/linker.js
+  # - js/ts/main.js

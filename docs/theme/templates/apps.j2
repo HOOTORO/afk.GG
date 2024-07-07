@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+
+
+{% block container %}
+  {{ super() }}
+<script type="module" src="{{ 'js/ts/main.js' | url }}">
+  import { initUser } from "{{ 'js/ts/main.js' | url }}";
+  initUser()
+  const anch = document.getElementById("relic-app")
+  if (anch) {
+    anch.addEventListener("load", function () {
+      console.log('LocaEvent: %s', location)
+    });
+      console.log('HANDATACH');
+  }
+</script>
+{% endblock container %}

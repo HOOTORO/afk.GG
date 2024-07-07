@@ -5,11 +5,11 @@ timestamp() {
   date +"updated -> %D %T" # current time
 }
 
-R=`timestamp`
+R=$(timestamp)
 
-DATA=$(find . -type d \( -path ./node_modules -o -path ./site -o -path ./ignored \) -prune -o -name '*.ts' -o -name '*.scss' -o -name '*.py' -o -name '*.sh' -o -name '*.j2' -o -name '*.html' | xargs wc -l)
+DATA=$(find . -type d \( -path ./node_modules -o -path ./site -o -path ./ignored -o -path ./.venv \) -prune -o -name '*.ts' -o -name '*.scss' -o -name '*.py' -o -name '*.sh' -o -name '*.j2' -o -name '*.html' | xargs wc -l)
 
-echo "<|--------------|>\n\t$R\n$DATA\n<|--------------|>\n" > codestat.log
+echo "<|--------------|>\n\t$R\n$DATA\n<|--------------|>\n" >>codestat.log
 
 # date +"updated -> %D %T" >> codestat.log
 # find .. -name '*.go' | xargs wc -l >> codestat.log

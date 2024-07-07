@@ -5,7 +5,7 @@ description: >
 authors: [HOOTSMAN]
 categories: [Game]
 tags: [Tool, AbEx, AFK Arena]
-template: main.html
+template: templates/apps.j2
 ---
 
 ## Apps

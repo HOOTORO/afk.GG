@@ -11,13 +11,13 @@
     "name": "HOOTORO"
   },
   "scripts": {
+    "RE:instal dependencies": "pip install -r requirements.txt",
     "build": "tsc --build",
     "lint.fix": "npx stylelint docs/src/scss/**/*.scss",
     "SASS:build": "sass --no-source-map docs/src/scss:docs/theme/css/",
     "SASS:watch": "sass --no-source-map --watch docs/src/scss/:docs/theme/css/",
     "RE:build": "tsc --build && npm run -s SASS:build && mkdocs build",
     "RE:serve": "mkdocs serve --watch-theme",
-    "RE:dirty": "mkdocs serve --dirtyreload",
     "SERVE.THIS": "tsc --watch & npm run -s RE:serve & npm run --loglevel=silent SASS:watch ",
     "GHP:Manual Deploy": "mkdocs gh-deploy --force"
   },
