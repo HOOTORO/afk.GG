@@ -9,9 +9,6 @@ const location = window.location.pathname;
 const user = new User("1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY");
 initUser();
 console.log('Loca: %s', location);
-window.addEventListener("load", (event) => {
-    console.log('LocaEvent: %s', location);
-});
 switch (location) {
     case Locations.income:
         startApp();
@@ -34,4 +31,4 @@ function initUser() {
         }
     }
 }
-export { user };
+export { initUser, user };
