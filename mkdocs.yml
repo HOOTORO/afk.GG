@@ -75,9 +75,6 @@ nav:
           - kb/bookmarks.md
           - kb/trescamble.md
           - kb/infographics.md
-      - Ranked:
-          - kb/ranked/abex.md
-          - kb/ranked/hf.md
       - Tools:
           - kb/abex.md
           - kb/income.md
@@ -87,9 +84,11 @@ nav:
           - kb/notification.md
       - AFK Statistics:
           - kb/iog.md
-  - Сообщество:
-      - guilds/index.md
-      - guilds/meme.md
+  - Ranked:
+      - ranked/index.md
+      - ranked/abex.md
+      - ranked/hf.md
+      - ranked/meme.md
   - HOOT-o-ROCK:
       - blog/index.md
       - tags.md
@@ -129,10 +128,7 @@ plugins:
       type: timeago
       timezone: Europe/Moscow
       locale: en
-  # - git-authors
-      # show_contribution: true
-      # show_line_count: true
-      # count_empty_lines: true
+  - git-authors
   - git-committers:
       enabled: !ENV [ENABLED_GIT_COMMITTERS, false]
       repository: HOOTORO/afk.GG
@@ -152,6 +148,10 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.smartsymbols
+  - pymdownx.magiclink:
+      user:   HOOTORO
+      provider: github
+      repo: afk.GG
   - pymdownx.caret:
       smart_insert: true
   - pymdownx.escapeall:

@@ -14,6 +14,10 @@
     display: inline-flex !important;
   }
 
+  h2 {
+    text-shadow: 1px 1px 2px var(--md-accent-fg-color);
+  }
+
   .md-typeset ul {
     list-style-type: none;
   }
@@ -102,7 +106,7 @@
 {% for post in page.posts %}
 <div class="md-post md-post--excerpt post-compact">
   <h2 class="post-title">
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url }}">{{- post.title -}}</a>
   </h2>
   <div class="md-post__header">
     {% if post.authors %}

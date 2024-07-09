@@ -1,53 +1,58 @@
 <!-- Abbreviations -->
 
 <!-- prettier-ignore -->
-*[TS]: сокр. от Treasure Scramble
-*[LC]: сокр. от Legends Championship, тот самый китовый раздел арены героев
-*[CR]: сокр. от Cursed Realm, Проклятый Мир, Курса...
-*[TL;DR]: англ. Too Long, Don't Read  
-*[Q&A]: aнгл. Questions & Answer. Секция вопросов и ответов
-*[F2P]: англ. Free To Play. Игрок, не закинувший в игру ни копейки
+*[TS]: (аббревиатура) Treasure Scramble
+*[HF]: (аббревиатура) Hunting Fields
+*[LC]: (аббревиатура) Legends Championship, тот самый китовый раздел арены героев
+*[CR]: (аббревиатура) Cursed Realm, Проклятый Мир, Курса...
+*[TL;DR]: (англ. аббревиатура) Too Long, Don't Read  
+*[Q&A]: (aнгл. аббревиатура) Questions & Answer. Секция вопросов и ответов
+*[F2P]: (англ. аббревиатура) Free To Play. Игрок, не закинувший в игру ни копейки
 *[low_spender]: Игрок с минильным донатом
 *[Dolphin]: Игрок с минильным донатом
 *[PTS]: сокр. от Points, Очки, Поинты
 *[кап]: Максимально доступное значение
-*[WR]: англ. Win Rate. Соотношение побед к поражениям
-*[HP]: англ. Health Points - очки здоровья
-*[GB]: Фракция - Graveborn (Одна из двух, указана в единственном числе)
-*[LB]: Фракция - Lightbearers
-*[WD]: Фракция - Wilders
-*[ML]: Фракция - Maulers
-*[CSL]: Фракция - Celestials
-*[HG]: Фракция - Hypogeans
-*[DIM]: Dimansional - (Одна из двух, указана в единственном числе)
-*[AE]: Abyssal Expedition, Экспедиция в бездну
-*[AbEx]: Abyssal Expedition, Экспедиция в бездну
-*[AS]: Attack Speed - Каждое очко этого атрибута увеличивает скорость анимации и частоту атак на 1%
-*[CDR]: Crit Damage Resistance
-*[CDA]: Crit Damage Amplification
-*[CBR]: Crit. Block Rate
-*[ACC]: Accuracy
-*[RH]: Recieved Healing
-*[PP]: Physical Pierce
-*[MP]: Magic Pierce
-*[TY]: Tenacity
-*[IS]: Insight
-*[DEF]: Defense Rating
-*[ATK]: Attack Rating
-*[CRIT]: Crit Rate
-*[PRF]: Proficiency
-*[DISS]: Dissolve
-*[ME]: Magic Efficiency
-*[MS]: Magic Suppression
+*[WR]: (англ. аббревиатура) Win Rate. Соотношение побед к поражениям
+*[HP]: (англ. аббревиатура) Health Points - очки здоровья
+*[GB]: (англ. акроним) Фракция - Graveborn (Одна из двух, указана в единственном числе)
+*[LB]: (англ. акроним) Фракция - Lightbearers
+*[WD]: (англ. акроним) Фракция - Wilders
+*[ML]: (англ. акроним) Фракция - Maulers
+*[CSL]: (англ. акроним) Фракция - Celestials
+*[HG]: (англ. акроним) Фракция - Hypogeans
+*[DIM]: (англ. акроним) Dimansional - (Одна из двух, указана в единственном числе)
+*[AE]: (англ. аббревиатура) Abyssal Expedition, Экспедиция в бездну
+*[AbEx]: (англ. акроним) Abyssal Expedition, Экспедиция в бездну
+*[AS]: (англ. аббревиатура) Attack Speed - Каждое очко этого атрибута увеличивает скорость анимации и частоту атак на 1%
+*[CDR]: (англ. аббревиатура) Crit Damage Resistance
+*[CDA]: (англ. аббревиатура) Crit Damage Amplification
+*[CBR]: (англ. аббревиатура) Crit. Block Rate
+*[ACC]: (англ. акроним) Accuracy
+*[RH]: (англ. аббревиатура) Recieved Healing
+*[PP]: (англ. аббревиатура) Physical Pierce
+*[MP]: (англ. аббревиатура) Magic Pierce
+*[TY]: (англ. акроним) Tenacity
+*[IS]: (англ. акроним) Insight
+*[DEF]: (англ. акроним) Defense Rating
+*[ATK]: (англ. акроним) Attack Rating
+*[CRIT]: (англ. акроним) Crit Rate
+*[PRF]: (англ. акроним) Proficiency
+*[DISS]: (англ. акроним) Dissolve
+*[ME]: (англ. аббревиатура) Magic Efficiency
+*[MS]: (англ. аббревиатура) Magic Suppression
 *[HASTE]: Атрибут определяющий как быстро и с какой частотой герой может атаковать и использовать умения. Высокий показатель увеличивает скорость анимации атак/навыков и позволяет использовать их чаще.
-*[RPS]: Recovery Per Second
-*[MR]: Magic Resist
-*[PR]: Physical Resist
-*[LL]: Life Leech
-*[DODGE]: Dodge
-*[BnB]: аббр.гильдий BackNBlack, BackNBlurple, BackNBlanc
-*[KLBR]: аббр.гильд. KillBeRos
-*[GM]: aббр. Guild Master, глава гильдии
+*[RPS]: (англ. аббревиатура) Recovery Per Second
+*[MR]: (англ. аббревиатура) Magic Resist
+*[PR]: (англ. аббревиатура) Physical Resist
+*[LL]: (англ. аббревиатура) Life Leech
+*[DODGE]: Уклонение
+*[BnB]: (англ. аббревиатура) гильдий BackNBlack, BackNBlurple, BackNBlanc
+*[KLBR]: (англ. акроним) гильдии KillBeRos
+*[GM]: (англ. аббревиатура)  Guild Master, глава гильдии
+*[ОЕ]: (аббревиатура) Организационная единица
+*[БРО]: (анг. акроним) BRanch Officer
+*[СОф]: (анг. акроним) Squad Officer
+*[хбз]: (аббревиатура) хуйня без задач
 
 <!-- Peoples -->
 
@@ -64,6 +69,7 @@
 *[Сир]: GM Аквилона
 *[СИР]: GM Аквилона
 *[сир]: GM Аквилона
+*[сиру нулевому]:  GM Аквилона. Нулевыми принято называть 2000-е года
 *[Сиром]: GM Аквилона
 *[Sir Eblo 2000]: GM Аквилона
 *[Эмбер]: Игрок давно продавший акк Асмодеусу, который в последствии Pohoyoo продал Черной Метке  
@@ -83,7 +89,6 @@
 *[Спиралл]: Член совета Этернума
 *[Кисочка]: KissO4ka, Член совета Аквы
 *[Морок]: Игрок, купивший аккаунт ПП
-*[сиру нулевому]:  GM Аквилона**. Нулевыми принято называть 2000-е года
 
 <!-- Sentences -->
 

@@ -24,7 +24,7 @@ preview: https://i.imgur.com/uqCQfcs.png
 Внутри много скриншотов которые в явном или скрытом виде могут угрожать префронта́льной коре, ознакомление на свой страх и риск.  
 Зато TL;DR предоставлен, аж в двух вариантах!
 
-<!-- more --> 
+<!-- more -->
 
 ## ^^Реакция Аквилона^^
 
@@ -32,7 +32,7 @@ preview: https://i.imgur.com/uqCQfcs.png
 
 /// tab | v.HOOTS
 
-<video controls src="https://www.dropbox.com/scl/fi/exqj0s9uflup1bqcxjz7g/0702.webm?rlkey=dsd23gwy5c6fnc7joze8y5bkt&st=kkinjovu&raw=1" title="Recap""></video>
+<video controls src="<https://www.dropbox.com/scl/fi/exqj0s9uflup1bqcxjz7g/0702.webm?rlkey=dsd23gwy5c6fnc7joze8y5bkt&st=kkinjovu&raw=1>" title="Recap""></video>
 
 ///
 /// tab | v.Dorian summary

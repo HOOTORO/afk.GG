@@ -1,12 +1,13 @@
 ---
 title: ⛩️ Guilds
-description: >
-    Обзор СНГ гильдий из топа бездны и не только.<br>
-    Дополняется по мере возможности и благодаря участникам сообщества!
+description: |
+    Обзор СНГ гильдий из топа бездны и не только.<br> Дополняется по мере возможности и благодаря участникам сообщества!
 date: 2023-07-01
-authors: [HOOTSMAN]
+authors:
+    - HOOTSMAN
 template: main.html
 comments: true
+draft: true
 ---
 
 /// details | Disclaimer
@@ -18,7 +19,6 @@ comments: true
 
 ![ru-guilds]{width=90% style='margin:5%'}
 ///
-
 
 ## No Mercy
 

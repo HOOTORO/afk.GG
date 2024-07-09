@@ -33,7 +33,7 @@
               "title": "Created",
               "name": "created",
               "type": "datetime",
-              "default": "{now}",
+              "default": "{{now}}",
               "dateFormat": "yyyy-MM-dd",
               "isPublishDate": true
             },
@@ -41,7 +41,7 @@
               "title": "Updated",
               "name": "updated",
               "type": "datetime",
-              "default": "{now}",
+              "default": "{{now}}",
               "dateFormat": "yyyy-MM-dd",
               "isModifiedDate": true
             }
@@ -67,7 +67,9 @@
             "moon",
             "fatal"
           ],
-          "default": "HOOTSMAN"
+          "default": "HOOTSMAN",
+          "multiple": true,
+          "singleValueAsString": true
         },
         {
           "title": "categories",

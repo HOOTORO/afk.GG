@@ -1,12 +1,11 @@
 ---
-title: AbEx Rankings
+title: AbEx
 description: >
     СНГ и глобальный топы
-
 categories: [Game]
 tags: [Rankings, AFK Arena, RU]
 authors: [HOOTSMAN]
-template: main.html
+status: new
 ---
 
 /// details  | [AbEx Realm Ranking][realmranking]
@@ -84,7 +83,7 @@ template: main.html
 ### Footnotes
 
 //// example | FORMULA<a id="fn1" href="../abex.md#sp1">↩︎</a>
-*RD~avg~ ÷ t~drop~ × P~rrd~  + (1 - P~rrd~) × RD~avg~ ÷ t~drop~ × C~sell~*
+_RD~avg~ ÷ t~drop~ × P~rrd~  + (1 - P~rrd~) × RD~avg~ ÷ t~drop~ × C~sell~_
 
 /// define
 RD
