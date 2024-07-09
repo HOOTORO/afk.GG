@@ -1,1 +1,39 @@
-{"taxonomy":{"tags":["AFK Arena","AQUILON","AbEx","BackNBlack","Bot","Code Example","Community","Discord","EU","Fun","Guide","Hunting Fields","Knowledge","No Mercy","RU","Rankings","SadStory","Stats","Stream","Stupidity","The Hospital","Tool","UX","twitch.tv"],"categories":["Analytics","Announce","Doc","Game","Incident","Retro","Showcase"]}}
+{
+  "taxonomy": {
+    "tags": [
+      "AFK Arena",
+      "AQUILON",
+      "AbEx",
+      "BackNBlack",
+      "Bot",
+      "Code Example",
+      "Community",
+      "Discord",
+      "EU",
+      "Fun",
+      "Guide",
+      "Hunting Fields",
+      "Knowledge",
+      "No Mercy",
+      "RU",
+      "Rankings",
+      "SadStory",
+      "Stats",
+      "Stream",
+      "Stupidity",
+      "The Hospital",
+      "Tool",
+      "UX",
+      "twitch.tv"
+    ],
+    "categories": [
+      "Analytics",
+      "Announce",
+      "Doc",
+      "Game",
+      "Incident",
+      "Retro",
+      "Showcase"
+    ]
+  }
+}

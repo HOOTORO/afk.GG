@@ -1,117 +1,161 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.framework.id": "other",
+  "frontMatter.framework.startCommand": "mkdocs serve --watch-theme",
+  "frontMatter.preview.host": "http://siniwure.deadspace.inc/blog/",
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/docs/src/md/blog",
+      "title": "blog"
+    },
+    {
+      "path": "[[workspace]]/docs/src/md",
+      "title": "md"
+    }
+  ],
+  "frontMatter.data.files": [
+    {
+      "file": "[[workspace]]/docs/src/md/blog/authors.yml", // Adapt to your needs
+      "fileType": "yaml",
+      "id": "authors",
+      "title": "Authors",
+      "schema": {
+        "title": "Author",
+        "type": "object",
+        "properties": {
+          "avatar": {
+            "description": "The avatar of the vegetable.",
+            "type": "string"
+          },
+          "description": {
+            "description": "The description of the vegetable.",
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of the vegetable.",
+            "type": "string"
+          }
+        }
+      },
+      "singleEntry": false
+    }
+  ],
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
-      "pageBundle": false,
-      "previewPath": null,
       "fields": [
         {
-          "title": "template",
           "name": "template",
+          "title": "template",
           "type": "string",
+          "hidden": true,
           "single": true
         },
         {
-          "title": "title",
           "name": "title",
+          "title": "title",
           "type": "string",
           "single": true
         },
         {
-          "title": "description",
+          "default": "You should never underestimate the predictability of stupidity",
           "name": "description",
+          "title": "description",
           "type": "string",
-          "default": "You should never underestimate the predictability of stupidity"
+          "single": true,
+          "wysiwyg": false
         },
         {
-          "title": "date",
           "name": "date",
+          "title": "date",
           "type": "fields",
           "fields": [
             {
-              "title": "Created",
-              "name": "created",
-              "type": "datetime",
-              "default": "{{now}}",
               "dateFormat": "yyyy-MM-dd",
+              "default": "{{now}}",
+              "name": "created",
+              "title": "Created",
+              "type": "datetime",
               "isPublishDate": true
             },
             {
-              "title": "Updated",
-              "name": "updated",
-              "type": "datetime",
+              "dateFormat": "yyyy-MM-dd HH:mm",
               "default": "{{now}}",
-              "dateFormat": "yyyy-MM-dd",
+              "name": "updated",
+              "title": "Updated",
+              "type": "datetime",
               "isModifiedDate": true
             }
           ]
         },
         {
-          "title": "Article preview",
           "name": "preview",
+          "title": "Article preview",
           "type": "image",
           "isPreviewImage": true
         },
         {
-          "title": "authors",
+          "dataFileId": "authors",
+          "dataFileKey": "name",
+          "dataFileValue": "name",
           "name": "authors",
-          "type": "choice",
-          "choices": [
-            "SE2k",
-            "sensei",
-            "kisso",
-            "HOOTSMAN",
-            "asm",
-            "Delian",
-            "moon",
-            "fatal"
-          ],
-          "default": "HOOTSMAN",
+          "title": "Authors",
+          "type": "dataFile",
           "multiple": true,
           "singleValueAsString": true
         },
         {
-          "title": "categories",
           "name": "categories",
+          "title": "categories",
           "type": "categories"
         },
         {
-          "title": "tags",
           "name": "tags",
+          "title": "tags",
           "type": "tags"
         },
         {
-          "title": "draft",
           "name": "draft",
+          "title": "draft",
           "type": "draft",
           "default": true
         },
         {
-          "title": "comments",
           "name": "comments",
+          "title": "comments",
           "type": "boolean"
         },
         {
-          "title": "hide",
           "name": "hide",
+          "title": "hide",
           "type": "choice",
-          "choices": ["feedback", "footer", "navigation", "toc"]
+          "choices": ["feedback", "footer", "navigation", "toc"],
+          "multiple": true
+        },
+        {
+          "name": "status",
+          "title": "status",
+          "type": "choice",
+          "choices": ["new", "old"]
+        },
+        {
+          "default": "{{slug}}",
+          "name": "slug",
+          "title": "Slug",
+          "type": "slug",
+          "editable": true
+        },
+        {
+          "name": "lastmod",
+          "title": "lastmod",
+          "type": "datetime",
+          "dateFormat": "yyyy-MM-dd HH:mm"
         }
-      ]
+      ],
+      "pageBundle": false,
+      "previewPath": null
     }
   ],
-  "frontMatter.content.snippets": {
-    "admonition": {
-      "description": "well",
-      "body": [
-        "/// | Lorem ipsum",
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-        "///"
-      ],
-      "fields": []
-    }
-  },
-  "frontMatter.preview.host": "http://siniwure.deadspace.inc/blog/",
-  "frontMatter.framework.startCommand": "mkdocs serve --watch-theme"
+  "frontMatter.content.autoUpdateDate": true
 }
