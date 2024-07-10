@@ -16,7 +16,7 @@
   ],
   "frontMatter.data.files": [
     {
-      "file": "[[workspace]]/docs/src/md/blog/authors.yml", // Adapt to your needs
+      "file": "[[workspace]]/docs/src/md/blog/authors.yml",
       "fileType": "yaml",
       "id": "authors",
       "title": "Authors",
@@ -130,14 +130,23 @@
           "name": "hide",
           "title": "hide",
           "type": "choice",
-          "choices": ["feedback", "footer", "navigation", "toc"],
-          "multiple": true
+          "choices": [
+            "feedback",
+            "footer",
+            "navigation",
+            "toc"
+          ],
+          "multiple": true,
+          "singleValueAsString": false
         },
         {
           "name": "status",
           "title": "status",
           "type": "choice",
-          "choices": ["new", "old"]
+          "choices": [
+            "new",
+            "old"
+          ]
         },
         {
           "default": "{{slug}}",
@@ -157,5 +166,7 @@
       "previewPath": null
     }
   ],
-  "frontMatter.content.autoUpdateDate": true
+  "frontMatter.content.autoUpdateDate": true,
+  "frontMatter.website.host": "https://hooto.ru",
+  "frontMatter.git.enabled": true
 }

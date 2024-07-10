@@ -118,9 +118,10 @@ plugins:
       width: "100%"
       skip_classes:
         - "skip-lb"
+        - "slb"
         - "ava"
   - social:
-      cards: !ENV [CI_SOCIAL, false]
+      cards: !ENV [CI_SOCIAL, true]
   - git-revision-date-localized:
       enabled: !ENV [ENABLED_GIT_REVISION_DATE, true]
       enable_creation_date: true
@@ -128,9 +129,9 @@ plugins:
       type: timeago
       timezone: Europe/Moscow
       locale: en
-  - git-authors
+  # - git-authors
   - git-committers:
-      enabled: !ENV [ENABLED_GIT_COMMITTERS, false]
+      enabled: !ENV [ENABLED_GIT_COMMITTERS, true]
       repository: HOOTORO/afk.GG
       branch: master
       exclude:
@@ -163,7 +164,7 @@ markdown_extensions:
   - pymdownx.highlight:
       pygments_lang_class: true
       anchor_linenums: true
-      auto_title: true
+      auto_title: false
       linenums: true
       linenums_style: pymdownx-inline
       line_spans: __span
@@ -183,7 +184,7 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       options:
         custom_icons:
-          - theme/.icons
+          - docs/theme/.icons
   - pymdownx.progressbar:
   - pymdownx.pathconverter:
   # - pymdownx.tabbed:
