@@ -1,17 +1,20 @@
 ---
 title: Community Resource
-description: >
-    Created by the Best people of AFK!<br>
-    Коллекция ссылок на актуальные и не очень, но все еще полезные ресурсы по АФК Арене
-    Собрано Львом Николаевичем!
-authors: [HOOTORO]
-categories: [Game]
-tags: [AFK Arena, Guide, Knowledge, Community]
-template: main.html
+description: |
+    Created by the Best people of AFK!<br> Коллекция ссылок на актуальные и не очень, но все еще полезные ресурсы по АФК Арене Собрано Львом Николаевичем!
+authors:
+    - HOOTORO
+categories:
+    - Game
+tags:
+    - AFK Arena
+    - Guide
+    - Knowledge
+    - Community
+lastmod: 2024-07-10T23:05:27.060Z
 ---
 
-/// admonition | Powered by Community!
-    type: adheart
+/// adheart | Powered by Community!
 Сделано сообществом для сообщества!
 ///
 
@@ -67,7 +70,7 @@ template: main.html
 - [Crowd Sourcing][crowdss] Обновления крупных событий (AE, HF...) чаще всего тут появляются первыми в EN сообществе
 - [Cursed Friends][cursed] Посвящен Cursed Realm
 - [Seas0n's Analytica][inseasonanal] Сервер inSeas0n'a, круто придумал с навигацией~!
--  [NaXiS Guild][NaXiS]. Тут был создан ([AFK Helper](https://afkhelper.nax.is/)
+- [NaXiS Guild][NaXiS]. Тут был создан ([AFK Helper](https://afkhelper.nax.is/)
 - [Офф сервер игры][Official AFK Arena]. Скукотища
 ///
 /// tab | RU

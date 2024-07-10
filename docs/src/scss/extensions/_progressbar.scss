@@ -1,5 +1,4 @@
 .md-typeset {
-
   /* Progress Bars */
   .progress-label {
     position: absolute;
@@ -10,8 +9,8 @@
     line-height: px2rem(28px);
     white-space: nowrap;
     text-align: center;
-    text-shadow:
-      px2em(-1px) px2em(-1px) px2em(6px) var(--md-default-bg-color--light),
+    text-shadow: px2em(-1px) px2em(-1px) px2em(6px)
+        var(--md-default-bg-color--light),
       px2em(1px) px2em(-1px) px2em(6px) var(--md-default-bg-color--light),
       px2em(-1px) px2em(1px) px2em(6px) var(--md-default-bg-color--light),
       px2em(1px) px2em(1px) px2em(6px) var(--md-default-bg-color--light);
@@ -20,12 +19,12 @@
   .progress-bar {
     float: left;
     height: px2rem(24px);
-    background-color: $clr-blue-a400;
+    background-color: blue;
   }
 
   /* Stripe animation */
   .candystripe-animate {
-    .progress-bar{
+    .progress-bar {
       animation: animate-stripes 3s linear infinite;
     }
   }
@@ -52,29 +51,31 @@
     }
 
     &.candystripe .progress-bar {
-      background-image:
-        linear-gradient(
-          135deg,
-          var(--md-progress-stripe) 27%,
-          transparent 27%,
-          transparent 52%,
-          var(--md-progress-stripe) 52%,
-          var(--md-progress-stripe) 77%,
-          transparent 77%,
-          transparent
-        );
+      background-image: linear-gradient(
+        135deg,
+        var(--md-progress-stripe) 27%,
+        transparent 27%,
+        transparent 52%,
+        var(--md-progress-stripe) 52%,
+        var(--md-progress-stripe) 77%,
+        transparent 77%,
+        transparent
+      );
       background-size: px2rem(40px) px2rem(40px);
     }
   }
 
-  @each $percent, $color in (
-    "100": var(--md-progress-100),
-    "80": var(--md-progress-80),
-    "60": var(--md-progress-60),
-    "40": var(--md-progress-40),
-    "20": var(--md-progress-20),
-    "0": var(--md-progress-0)
-  ) {
+  @each $percent,
+    $color
+      in (
+        "100": var(--md-progress-100),
+        "80": var(--md-progress-80),
+        "60": var(--md-progress-60),
+        "40": var(--md-progress-40),
+        "20": var(--md-progress-20),
+        "0": var(--md-progress-0)
+      )
+  {
     .progress-#{$percent}plus {
       .progress-bar {
         background-color: $color;

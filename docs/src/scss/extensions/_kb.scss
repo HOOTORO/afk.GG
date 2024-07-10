@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:map";
 
 @mixin box-sizing {
   box-sizing: border-box;
@@ -16,7 +17,6 @@ body {
   background-size: cover;
 }
 
-
 .md-typeset #a-form h4 {
   margin: 1px;
 }
@@ -27,14 +27,14 @@ select {
   height: 2em;
   margin: 10px;
   padding: 5px;
-  color: $drac-selection;
+  color: map.get($colormap, $drac, "section");
   font: inherit;
   text-align: center;
-//   $glass: rgba(255, 255, 255, 0.2);
-// $glass-icon: rgba(255, 255, 255, 0.3);
-//   background:
-//     url("../assets/svg/Caret_down_font_awesome_whitevariation.svg") no-repeat right 0.8em center / 1.4em,
-//     linear-gradient(to left, $glass-icon 2em, $glass 3em);
+  //   $glass: rgba(255, 255, 255, 0.2);
+  // $glass-icon: rgba(255, 255, 255, 0.3);
+  //   background:
+  //     url("../assets/svg/Caret_down_font_awesome_whitevariation.svg") no-repeat right 0.8em center / 1.4em,
+  //     linear-gradient(to left, $glass-icon 2em, $glass 3em);
   border: 0;
   border-radius: 0.25em;
   outline: 0;
@@ -87,7 +87,7 @@ select {
     height: max-content;
     margin: auto;
     padding: 10px;
-    background-color: $dark-tabs-bg;
+    background-color: var(--md-header-bg-color);
     border: 2px inset cornflowerblue;
   }
 
@@ -202,4 +202,13 @@ span > img {
 
 .select-container > h4 {
   margin: 0;
+}
+
+.memas {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px 6px rgba(40, 192, 211, 0.38);
 }

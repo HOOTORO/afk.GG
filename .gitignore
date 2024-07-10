@@ -32,6 +32,7 @@ __pycache__
 docs/theme/css/main.css
 docs/theme/css/blog.css
 docs/theme/js/ts
+docs/src/scss/*.css
 docs/src/md/tbl
 src/**/*.js
 src/**/*.map

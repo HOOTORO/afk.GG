@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
 }
@@ -5,4 +7,8 @@
 
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
+}
+
+@function opacify($color, $amount)  {
+  @return color.adjust($color, $alpha: $amount)
 }

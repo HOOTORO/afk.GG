@@ -19,10 +19,14 @@ theme:
   favicon: favicon.ico
   logo: assets/logo.png
   icon:
-    repo: fontawesome/brands/git-alt
-    edit: material/pencil
-    view: material/eye
-    annotation: material/chevron-right-circle
+    repo: simple/gitignoredotio
+    edit: simple/editorconfig
+    view: simple/markdown
+    annotation: material/information-variant-circle
+    # :material-arrow-right-bold-outline: 
+    # :material-arrow-top-left-bottom-right:
+    # :material-arrow-top-left-bottom-right-bold:
+    # 
   font:
     # text: Comfortaa, Play, Inter Tight, Bellota Text, Tektur (funny), Tenor Sans
     # too tight/thin: Yanone Kaffeesatz  Poiret One, Sawarabi Gothic
@@ -32,7 +36,7 @@ theme:
   palette:
     - scheme: default
       primary: lime
-      accent: indigo
+      accent: pink
       toggle:
         icon: fontawesome/solid/jedi
         name: Switch to dark mode
@@ -124,17 +128,16 @@ plugins:
         - "slb"
         - "ava"
   - social:
-      cards: !ENV [CI_SOCIAL, true]
+      cards: !ENV [CI_SOCIAL, false]
   - git-revision-date-localized:
-      enabled: !ENV [ENABLED_GIT_REVISION_DATE, true]
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
       enable_creation_date: true
       fallback_to_build_date: true
       type: timeago
       timezone: Europe/Moscow
       locale: en
-  # - git-authors
   - git-committers:
-      enabled: !ENV [ENABLED_GIT_COMMITTERS, true]
+      enabled: !ENV [ENABLED_GIT_COMMITTERS, false]
       repository: HOOTORO/afk.GG
       branch: master
       exclude:
@@ -209,6 +212,7 @@ markdown_extensions:
         - failure
         - bug
         - warning
+        - config
         - name: new
           title: Breaking News❗
         - name: example

@@ -1,8 +1,6 @@
 .ava {
   width: 32px;
-  box-shadow:
-    1px 1px 5px 1px cyan,
-    -1px -1px 5px 1px lime;
+  box-shadow: 1px 1px 5px 1px cyan, -1px -1px 5px 1px lime;
 }
 
 .resized {
@@ -32,9 +30,17 @@ article hr {
 }
 
 .post-excerpt-image.crop-excerpt {
-    width: 100%;
-    max-height: 200px;
-    overflow: hidden;
-    mask-image: linear-gradient(to bottom, #000, transparent);
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, #000, transparent);
 }
 
+.memas {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px 6px rgba(40, 192, 211, 0.38);
+}

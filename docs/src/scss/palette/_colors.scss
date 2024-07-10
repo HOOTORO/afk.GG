@@ -1,214 +1,241 @@
 @use "sass:color";
+@use "sass:map";
 
-@import "./dracula", "./slate", "./default";
+// @import "./dracula", "./slate", "./default";
 
+$def: "default";
+$drac: "dracula";
+$sla: "slate";
 
-/* dracula vars */
-$clr-red-a200: hsl(326, 100%, 74%);
-$clr-red-a400: hsl(0, 100%, 67%);
-$clr-green-a400: hsl(135, 94%, 65%);
-$clr-green-a400: hsl(135, 92%, 79%);
-$clr-yellow-700: hsl(65, 92%, 76%);
-$clr-orange-a400: hsl(31, 100%, 71%);
-$clr-yellow-a700: yellow;
-$clr-cyan-500: #00ffff;
-$clr-blue-a400: blue;
-$clr-purple-a700: blueviolet;
-
-
+$themes: ($drac, $sla, $def);
+$colormap: (
+  $def: (
+    "fg": hsl(260, 10%, 6%),
+    "bg": rgb(173, 173, 127),
+    "highlight": hsl(51, 100%, 67%),
+    "selection": #280808,
+    "blue": hsl(225, 27%, 51%),
+    "cyan": hsl(191, 99%, 35%),
+    "green": hsl(135, 94%, 65%),
+    "orange": hsl(31, 100%, 71%),
+    "pink": hsl(326, 100%, 74%),
+    "purple": hsl(265, 89%, 78%),
+    "red": hsl(0, 100%, 67%),
+    "yellow": hsl(65, 100%, 66%),
+    "grey": hsl(225, 8%, 51%),
+    "teal": hsl(161, 97%, 77%),
+    "light-blue": hsl(190, 94%, 87%),
+    "light-green": hsl(135, 92%, 79%),
+    "dark-pink": hsl(325, 100%, 64%),
+    "dark-red": hsl(0, 100%, 59%),
+    "dark-yellow": hsl(51, 94%, 73%),
+    "text": #373737,
+    "rnb": linear-gradient(180deg, #00eeff, #6dff18, #ffb949, #ff00ea),
+    "def-bg": color.adjust(#ddff53, $lightness: 19%),
+    "dbg": linear-gradient(45deg, rgba(222, 222, 222, 0.383), #63636317),
+    "foot-bg": hsl(39, 77%, 83%),
+    "foot-fg": #1d1810,
+  ),
+  $sla: (
+    "fg": hsl(60, 30%, 96%),
+    "bg": #141919,
+    "highlight": hsl(29, 94%, 73%),
+    "selection": hsl(231, 25%, 25%),
+    "blue": hsl(225, 27%, 51%),
+    "cyan": hsl(194, 85%, 41%),
+    "green": hsl(135, 100%, 59%),
+    "orange": hsl(36, 100%, 50%),
+    "pink": hsl(326, 100%, 74%),
+    "purple": hsl(265, 89%, 78%),
+    "red": hsl(0, 100%, 67%),
+    "yellow": rgb(246, 234, 7),
+    "grey": hsl(225, 8%, 51%),
+    "teal": hsl(161, 97%, 77%),
+    "light-blue": hsl(190, 94%, 87%),
+    "light-green": hsl(135, 92%, 79%),
+    "dark-pink": hsl(325, 100%, 64%),
+    "dark-red": hsl(0, 100%, 59%),
+    "dark-yellow": hsl(51, 94%, 73%),
+    "rnb": linear-gradient(180deg, #00eeff, #6dff18, #ffb949, #ff00ea),
+    "text": rgb(228, 228, 228),
+    "def-bg":
+      color.adjust(#141819, $hue: 40deg, $saturation: 20%, $lightness: 21%),
+    "dbg": linear-gradient(222deg, rgba(44, 42, 42, 0.198), #002f37f1),
+    "foot-bg": #141919,
+    "foot-fg": rgb(228, 228, 228),
+  ),
+  $drac: (
+    "fg": hsl(60, 30%, 96%),
+    "bg": hsl(231, 15%, 18%),
+    "highlight": hsl(66, 94%, 73%),
+    "selection": #280808,
+    "blue": hsl(225, 27%, 51%),
+    "cyan": hsl(191, 97%, 77%),
+    "green": hsl(135, 94%, 65%),
+    "orange": hsl(31, 100%, 71%),
+    "pink": hsl(326, 100%, 74%),
+    "purple": hsl(265, 89%, 78%),
+    "red": hsl(0, 100%, 67%),
+    "yellow": hsl(65, 92%, 76%),
+    "grey": hsl(225, 8%, 51%),
+    "teal": hsl(161, 97%, 77%),
+    "light-blue": hsl(190, 94%, 87%),
+    "light-green": hsl(135, 92%, 79%),
+    "dark-pink": hsl(325, 100%, 64%),
+    "dark-red": hsl(326, 100%, 74%),
+    "dark-yellow": hsl(51, 94%, 73%),
+    "text": rgb(221, 221, 221),
+    "def-bg": lighten(hsl(231, 15%, 18%), 5%),
+    "dbg": #fff,
+    "foot-bg": hsl(231, 15%, 18%),
+    "foot-fg": hsl(191, 97%, 77%),
+    "rnb": linear-gradient(180deg, #00eeff, #6dff18, #ffb949, #ff00ea),
+  ),
+);
 
 :root > * {
-  --md-shadow-z7: 0 0.2rem 0.6rem hsla(0, 6%, 27%, 0.293), 0 0 0 0.1rem #47474716;
+  @each $theme in $themes {
+    $fg: map.get($colormap, $theme, "fg");
+    $bg: map.get($colormap, $theme, "bg");
+    $blue: map.get($colormap, $theme, "blue");
+    $teal: map.get($colormap, $theme, "teal");
+    $cyan: map.get($colormap, $theme, "cyan");
+    $red: map.get($colormap, $theme, "red");
+    $yellow: map.get($colormap, $theme, "yellow");
+    $pink: map.get($colormap, $theme, "pink");
+    $purple: map.get($colormap, $theme, "purple");
+    $green: map.get($colormap, $theme, "green");
+    $li-green: map.get($colormap, $theme, "light-green");
+    $rnb: map.get($colormap, $theme, "rnb");
+    $orange: map.get($colormap, $theme, "orange");
+    $text: map.get($colormap, $theme, "text");
+    $darker: map.get($colormap, $theme, "dark-red");
+    $dbg: map.get($colormap, $theme, "dbg");
+    $def-bg: map.get($colormap, $theme, "def-bg");
+    $foot-bg: map.get($colormap, $theme, "foot-bg");
+    $foot-fg: map.get($colormap, $theme, "foot-fg");
+    $selection: map.get($colormap, $theme, "selection");
+
+    &[data-md-color-scheme="#{$theme}"] {
+      /* Various Material related color variables */
+      --md-typeset-mark-color: #{mix($yellow, $bg, 35%)};
+      --md-typeset-del-color: #{mix($pink, $bg, 35%)};
+      --md-typeset-ins-color: #{mix($green, $bg, 35%)};
+      --md-typeset-color: var(--md-default-fg-color);
+      --md-typeset-a-color: #{$cyan};
+
+      --md-heart: #{$red};
+      --md-heart-big: #{$darker};
+
+      /* Progressbar colors */
+      // --md-progress-stripe: var(--md-default-bg-color--lightest);
+      --md-progress-stripe: var(--md-default-bg-color--lighter);
+      --md-progress-100: #{$green};
+      --md-progress-80: #{$li-green};
+      --md-progress-60: #{$yellow};
+      --md-progress-40: #{$orange};
+      --md-progress-20: #{$pink};
+      --md-progress-0: #{$red};
+      --rnb: #{$rnb};
+
+      /* General text */
+      --md-text-color: #{$text};
+
+      --md-default-autocomplete-fg-color: #{color.adjust($fg, $alpha: -0.6)};
+
+      --md-default-fg-color: #{color.adjust($fg, $alpha: -0.13)};
+      --md-default-fg-color--light: #{color.adjust($fg, $alpha: -0.46)};
+      --md-default-fg-color--lighter: #{color.adjust($fg, $alpha: -0.84)};
+      --md-default-fg-color--lightest: #{color.adjust($fg, $alpha: -0.93)};
+
+      /* Dark specific colors */
+      --md-default-bg: #{$dbg};
+      --md-default-bg-color--dark: #{color.adjust($def-bg, $lightness: -3%)};
+      --md-default-bg-color--darker: #{color.adjust($def-bg, $lightness: -6%)};
+      --md-default-bg-color--darkest: #{color.adjust($def-bg, $lightness: -9%)};
+      --md-default-bg-color--ultra-dark: #{color.adjust(
+          $def-bg,
+          $lightness: -15%
+        )};
+      --md-default-bg-color--light: #{color.adjust($def-bg, $alpha: -0.1)};
+      --md-default-bg-color--lighter: #{color.adjust($def-bg, $alpha: -0.7)};
+      --md-default-bg-color--lightest: #{color.adjust($def-bg, $alpha: -0.88)};
+      --md-default-bg-color--trans: #{color.adjust($def-bg, $alpha: -1)};
+
+      --md-default-bg-color: linear-gradient(
+        180deg,
+        var(--md-default-bg-color--dark),
+        #{$foot-bg}
+      );
+
+      --md-header-fg-color: #{$def-bg};
+      --md-header-bg-color: var(--md-primary-fg-color);
+
+      --md-footer-fg-color: #{$foot-fg};
+      --md-footer-bg-color: #{$foot-bg};
+
+      // /* Code colors */
+      --md-code-fg-color: #{$fg};
+      --md-code-bg-color: #{color.adjust($bg, $lightness: 10%)};
+      --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
+      --md-code-inline-bg-color: #{color.adjust(
+          $bg,
+          $hue: 80deg,
+          $lightness: -15%
+        )};
+      --md-code-special-bg-color: #{color.adjust($bg, $lightness: -5%)};
+      --md-code-alternate-bg-color: #{tint($bg, 10%)};
+      --md-code-link-bg-color: #{mix($cyan, $bg, 15%)};
+
+      // /* Custom code colors */
+      --md-code-hl-operator-color: #{$pink};
+      --md-code-hl-punctuation-color: #{$fg};
+      --md-code-hl-string-color: #{$yellow};
+      --md-code-hl-special-color: #{$purple};
+      --md-code-hl-number-color: #{$purple};
+      --md-code-hl-keyword-color: #{$pink};
+      --md-code-hl-name-color: #{$fg};
+      --md-code-hl-constant-color: #{$purple};
+      --md-code-hl-function-color: #{$green};
+      --md-code-hl-comment-color: #{$blue};
+      --md-code-hl-variable-color: #{$orange};
+      --md-code-hl-generic-color: #{$blue};
+      --md-code-hl-color: #{$selection};
+      --md-code-hl-entity-color: #{$green};
+      --md-code-hl-tag-color: #{$pink};
+      --md-code-hl-namespace-color: #{$fg};
+      --md-code-hl-builtin-color: #{$cyan};
+      --md-code-hl-class-color: #{$cyan};
+    }
+  }
+
+  --md-shadow-z7: 0 0.2rem 0.6rem #4941414b, 0 0 0 0.1rem #47474716;
+  --md-shadow-z2: 0 #{px2rem(14px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3),
+    0 0 #{px2rem(2px)} hsla(0, 0%, 0%, 0.2);
 
   /* Admonition colors */
   --md-admonition-fg-color: var(--md-default-fg-color);
   --md-admonition-bg-color: var(--md-default-bg-color--light);
+  --md-icon-size: 1rem;
 
-  /* Various Material related color variables */
-  --md-typeset-a-color: #{$clr-cyan-500};
-  --md-default-bg-color--trans: rgb(100%, 100%, 100%, 0);
-
-  /* Progressbar colors */
-  --md-progress-stripe: var(--md-default-bg-color--lighter);
-  --md-progress-100: #{$clr-green-a400};
-  --md-progress-80: #{$clr-green-a400};
-  --md-progress-60: #{$clr-yellow-700};
-  --md-progress-40: #{$clr-orange-a400};
-  --md-progress-20: #{$clr-red-a200};
-  --md-progress-0: #{$clr-red-a400};
-
-
-  /* WHITE theme  */
+  /* WHITE customs  */
   &[data-md-color-scheme="default"] {
-    --rnb: #{$mos-def-rnb};
-    
-    --md-header-bg-color: var(--md-primary-fg-color);
-    --md-footer-fg-color: #{$mos-def-foot-fg};
-    --md-footer-bg-color: #{$mos-def-foot-bg};
-    
-    /* Dark specific colors */
-    --md-default-bg: #{$mos-def-def-bg};
-    --md-default-bg-color: linear-gradient(180deg, var(--md-default-bg-color--dark), #{$mos-def-foot-bg});;
-    --md-default-bg-color--light: #{color.adjust($mos-def-default-bg, $alpha: -0.1)};
-    --md-default-bg-color--lighter: #{color.adjust($mos-def-default-bg, $alpha: -0.7)};
-    --md-default-bg-color--lightest: #{color.adjust($mos-def-default-bg, $alpha: -0.88)};
-    --md-default-bg-color--trans: #{color.adjust($mos-def-default-bg, $alpha: -1)};
-    --md-default-bg-color--dark: #{color.adjust($mos-def-default-bg, $lightness: -50%)};
-    --md-default-bg-color--darker: #{color.adjust($mos-def-default-bg, $lightness: -6%)};
-    --md-default-bg-color--darkest: #{color.adjust($mos-def-default-bg, $lightness: -9%)};
-    --md-default-bg-color--ultra-dark: #{color.adjust($mos-def-default-bg, $lightness: -15%)};
-    
-    --md-default-fg-color: #{color.adjust($mos-def-fg, $alpha: -0.13)};
-    --md-default-fg-color--light: #{color.adjust($mos-def-fg, $alpha: -0.46)};
-    --md-default-fg-color--lighter: #{color.adjust($mos-def-fg, $alpha: -0.84)};
-    --md-default-fg-color--lightest: #{color.adjust($mos-def-fg, $alpha: -0.93)};
-    --md-default-autocomplete-fg-color: #{color.adjust($mos-def-fg, $alpha: -0.6)};
-    --md-shadow-z2: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.2);
-    
-    /* General text */
-    --md-text-color: #{$mos-def-text};
-    --md-typeset-color: var(--md-default-fg-color);
-    --md-admonition-title-bg: #ffdb86;
-    
-    /* Various Material related color variables */
-    --md-typeset-a-color: #{$mos-def-cyan};
-    --md-typeset-mark-color: #{mix($mos-def-yellow, $mos-def-bg, 35%)};
-    --md-typeset-del-color: #{mix($mos-def-pink, $mos-def-bg, 35%)};
-    --md-typeset-ins-color: #{mix($mos-def-green, $mos-def-bg, 35%)};
-
-
-    --md-code-fg-color: #{$mos-def-dark-pink};
-    --md-code-bg-color: #{color.adjust($mos-def-bg, $lightness: 13%)};    
-    --md-code-inline-bg-color: #{lighten($mos-def-bg, 5%)};
-    --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
-    --md-code-inline-bg-color: #{lighten($mos-def-bg, 5%)};
-    --md-code-special-bg-color: #{color.adjust($mos-def-bg, $lightness: -5%)};
-    --md-code-alternate-bg-color: #{tint($mos-def-bg, 10%)};
-    --md-code-link-bg-color: #{mix($mos-def-cyan, $mos-def-bg, 15%)};
-    
+    --md-code-inline-bg-color: #{lighten(map.get($colormap, $def, "pink"), 5%)};
+    // --md-admonition-title-bg: #ffdb86;
   }
-  
-  /* BLACK */
+
+  /* BLACK customs*/
   &[data-md-color-scheme="slate"] {
-    /* Custom code colors */
-    --rnb: #{$mos-def-rnb};
-    --md-header-bg-color: var(--md-primary-fg-color);
-    --md-footer-bg-color: #{$dark-foot-bg};
-    --md-footer-fg-color: #{$dark-foot-fg};
-    
-    /* Dark specific colors */
-    --md-default-bg: #{$dark-def-bg};
-    --md-default-bg-color: linear-gradient(180deg, var(--md-default-bg-color--dark), #{$dark-foot-bg});
-    --md-default-bg-color--light: #{color.adjust($dark-default-bg, $alpha: -0.3)};
-    --md-default-bg-color--lighter: #{color.adjust($dark-default-bg, $alpha: -0.7)};
-    --md-default-bg-color--lightest: #{color.adjust($dark-default-bg, $alpha: -0.88)};
-    --md-default-bg-color--trans: #{color.adjust($dark-default-bg, $alpha: -1)};
-    --md-default-bg-color--dark: #{color.adjust($dark-default-bg, $lightness: -3%)};
-    --md-default-bg-color--darker: #{color.adjust($dark-default-bg, $lightness: -6%)};
-    --md-default-bg-color--darkest: #{color.adjust($dark-default-bg, $lightness: -9%)};
-    --md-default-bg-color--ultra-dark: #{color.adjust($dark-default-bg, $lightness: -15%)};
-    
-    --md-default-fg-color: #{color.adjust($dark-fg, $alpha: -0.13)};
-    --md-default-fg-color--light: #{color.adjust($dark-fg, $alpha: -0.46)};
-    --md-default-fg-color--lighter: #{color.adjust($dark-fg, $alpha: -0.84)};
-    --md-default-fg-color--lightest: #{color.adjust($dark-fg, $alpha: -0.93)};
-    --md-default-autocomplete-fg-color: #{color.adjust($dark-fg, $alpha: -0.6)};
-    --md-shadow-z2: 0 #{px2rem(14px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(2px)} hsla(0, 0%, 0%, 0.2);
-    
-    
     /* General text */
-    --md-text-color: #{$dark-text};
-    --md-typeset-color: var(--md-default-fg-color);
-    --md-typeset-a-color: #{$dark-orange};
-    
-    --md-code-fg-color: #{$dark-teal};
-    --md-code-bg-color: #{color.adjust($dark-bg, $hue: 80deg, $lightness: 5%)};
-    --md-code-alternate-bg-color: #{tint($dark-bg, 10%)};
-    --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
-    --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
-    --md-code-special-bg-color: #{lighten(hsl(232, 15%, 15%), 5%)};
-    --md-code-inline-bg-color: #{color.adjust($dark-bg, $hue: 80deg, $lightness: -5%)};
-
-    --md-code-link-bg-color: #{mix($dark-cyan, $dark-bg, 15%)};
-    // --md-accent-fg-color: #{adjust-hue($dark-orange, 100deg)};
+    // --md-typeset-a-color: #{map.get($colormap, $sla, "orange")};
   }
 
-  /* Dracula */
-  /* Dark mode color changes*/
+  /* Dracula customs */
   &[data-md-color-scheme="dracula"] {
-    --rnb: #{$mos-def-rnb};
-
-    /* Dark specific colors */
-    --md-default-bg-color:  linear-gradient(180deg, var(--md-default-bg-color--dark),  var(--md-default-bg-color--darker));
-    --md-default-bg-color--dark: #{color.adjust($drac-default-bg, $lightness: -3%)};
-    --md-default-bg-color--darker: #{color.adjust($drac-default-bg, $lightness: -6%)};
-    --md-default-bg-color--darkest: #{color.adjust($drac-default-bg, $lightness: -9%)};
-    --md-default-bg-color--ultra-dark: #{color.adjust($drac-default-bg, $lightness: -15%)};
-    --md-default-bg-color--light: #{color.adjust($drac-default-bg, $alpha: -0.1)};
-    --md-default-bg-color--lighter: #{color.adjust($drac-default-bg, $alpha: -0.7)};
-    --md-default-bg-color--lightest: #{color.adjust($drac-default-bg, $alpha: -0.88)};
-    --md-default-bg-color--trans: #{color.adjust($drac-default-bg, $alpha: -1)};
-    /* Default color shades*/
-    --md-default-fg-color: #{color.adjust($drac-fg, $alpha: -0.13)};
-    --md-default-fg-color--light: #{color.adjust($drac-fg, $alpha: -0.46)};
-    --md-default-fg-color--lighter: #{color.adjust($drac-fg, $alpha: -0.84)};
-    --md-default-fg-color--lightest: #{color.adjust($drac-fg, $alpha: -0.93)};
-    --md-default-autocomplete-fg-color: #{color.adjust($drac-fg, $alpha: -0.6)};
-    --md-shadow-z2: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.2);
-    
-
-
-    /* General text */
-    --md-text-color: #{$drac-text};
-    --md-typeset-color: var(--md-default-fg-color);
-
-    // /* Code colors */
-    --md-code-fg-color: #{$drac-teal};
-    --md-code-bg-color: #{color.adjust($drac-bg, $lightness: 10%)};
-    --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
-    --md-code-inline-bg-color: #{color.adjust($drac-bg, $hue: 80deg, $lightness: -15%)};
-    --md-code-special-bg-color: #{color.adjust($drac-bg, $lightness: -5%)};
-    --md-code-alternate-bg-color: #{tint($drac-bg, 10%)};
-    --md-code-link-bg-color: #{mix($drac-cyan, $drac-bg, 15%)};
-    
-    // /* Custom code colors */
-    // --md-code-hl-operator-color: #{$drac-pink};
-    // --md-code-hl-punctuation-color: #{$drac-fg};
-    // --md-code-hl-string-color: #{$drac-yellow};
-    // --md-code-hl-special-color: #{$drac-purple};
-    // --md-code-hl-number-color: #{$drac-purple};
-    // --md-code-hl-keyword-color: #{$drac-pink};
-    --md-code-hl-name-color: #{$drac-fg};
-    // --md-code-hl-constant-color: #{$drac-purple};
-    // --md-code-hl-function-color: #{$drac-green};
-    // --md-code-hl-comment-color: #{$drac-blue};
-    // --md-code-hl-variable-color: #{$drac-orange};
-    // --md-code-hl-generic-color: #{$drac-blue};
-    --md-code-hl-color: #{$drac-selection};
-    // --md-code-hl-entity-color: #{$drac-green};
-    // --md-code-hl-tag-color: #{$drac-pink};
-    // --md-code-hl-namespace-color: #{$drac-fg};
-    // --md-code-hl-builtin-color: #{$drac-cyan};
-    // --md-code-hl-class-color: #{$drac-cyan};
-
-    /* Various Material related color variables */
-    --md-typeset-a-color: #{$drac-cyan};
-    --md-typeset-mark-color: #{mix($drac-yellow, $drac-bg, 35%)};
-    --md-typeset-del-color: #{mix($drac-pink, $drac-bg, 35%)};
-    --md-typeset-ins-color: #{mix($drac-green, $drac-bg, 35%)};
-
-    /* Progressbar colors */
-    --md-progress-stripe: var(--md-default-bg-color--lightest);
-    --md-progress-100: #{$drac-green};
-    --md-progress-80: #{$drac-light-green};
-    --md-progress-60: #{$drac-yellow};
-    --md-progress-40: #{$drac-orange};
-    --md-progress-20: #{$drac-pink};
-    --md-progress-0: #{$drac-red};
-    // background-color: var(--md-default-bg-color);
-    --md-header-fg-color: #{$drac-default-bg};
+    /* Dark mode colors */
+    --md-heart: #{map.get($colormap, $drac, "pink")};
+    --md-heart-big: #{map.get($colormap, $drac, "dark-pink")};
     --md-header-bg-color: var(--md-default-bg-color--darker);
-    --md-footer-bg-color: var(--md-default-bg-color--darker);
   }
 }
 
@@ -219,28 +246,81 @@ $clr-purple-a700: blueviolet;
 @each $name,
   $colors
     in (
-      "red": $drac-red lighten($drac-red, 5%) color.adjust($drac-red, $lightness: -5%),
-      "pink": $drac-pink lighten($drac-pink, 5%) color.adjust($drac-pink, $lightness: -5%),
-      "purple": $drac-purple lighten($drac-purple, 5%) color.adjust($drac-purple, $lightness: -5%),
-      "deep-purple": $drac-purple lighten($drac-purple, 5%) color.adjust($drac-purple, $lightness: -5%),
-      "blue": $drac-blue lighten($drac-blue, 5%) color.adjust($drac-blue, $lightness: -5%),
-      "indigo": $drac-blue lighten($drac-blue, 5%) color.adjust($drac-blue, $lightness: -5%),
-      "light-blue": $drac-blue lighten($drac-blue, 5%) color.adjust($drac-blue, $lightness: -5%),
-      "cyan": $drac-cyan lighten($drac-cyan, 5%) color.adjust($drac-cyan, $lightness: -5%),
-      "teal": $drac-cyan lighten($drac-cyan, 5%) color.adjust($drac-cyan, $lightness: -5%),
-      "green": $drac-green lighten($drac-green, 5%) color.adjust($drac-green, $lightness: -5%),
-      "light-green": $drac-green lighten($drac-green, 5%) color.adjust($drac-green, $lightness: -5%),
-      "lime": $drac-green lighten($drac-green, 5%) color.adjust($drac-green, $lightness: -5%),
-      "yellow": $drac-yellow lighten($drac-yellow, 5%) color.adjust($drac-yellow, $lightness: -5%),
-      "amber": $drac-yellow lighten($drac-yellow, 5%) color.adjust($drac-yellow, $lightness: -5%),
-      "orange": $drac-orange lighten($drac-orange, 5%) color.adjust($drac-orange, $lightness: -5%),
-      "deep-orange": $drac-orange lighten($drac-orange, 5%) color.adjust($drac-orange, $lightness: -5%)
+      "red":
+        map.get($colormap, $drac, "red")
+        lighten(map.get($colormap, $drac, "red"), 5%)
+        color.adjust(map.get($colormap, $drac, "red"), $lightness: -5%),
+      "pink":
+        map.get($colormap, $drac, "pink")
+        lighten(map.get($colormap, $drac, "pink"), 5%)
+        color.adjust(map.get($colormap, $drac, "pink"), $lightness: -5%),
+      "purple":
+        map.get($colormap, $drac, "purple")
+        lighten(map.get($colormap, $drac, "purple"), 5%)
+        color.adjust(map.get($colormap, $drac, "purple"), $lightness: -5%),
+      "deep-purple":
+        map.get($colormap, $drac, "purple")
+        lighten(map.get($colormap, $drac, "purple"), 5%)
+        color.adjust(map.get($colormap, $drac, "purple"), $lightness: -5%),
+      "blue":
+        map.get($colormap, $drac, "blue")
+        lighten(map.get($colormap, $drac, "blue"), 5%)
+        color.adjust(map.get($colormap, $drac, "blue"), $lightness: -5%),
+      "indigo":
+        map.get($colormap, $drac, "blue")
+        lighten(map.get($colormap, $drac, "blue"), 5%)
+        color.adjust(map.get($colormap, $drac, "blue"), $lightness: -5%),
+      "light-blue":
+        map.get($colormap, $drac, "blue")
+        lighten(map.get($colormap, $drac, "blue"), 5%)
+        color.adjust(map.get($colormap, $drac, "blue"), $lightness: -5%),
+      "cyan":
+        map.get($colormap, $drac, "cyan")
+        lighten(map.get($colormap, $drac, "cyan"), 5%)
+        color.adjust(map.get($colormap, $drac, "cyan"), $lightness: -5%),
+      "teal":
+        map.get($colormap, $drac, "cyan")
+        lighten(map.get($colormap, $drac, "cyan"), 5%)
+        color.adjust(map.get($colormap, $drac, "cyan"), $lightness: -5%),
+      "green":
+        map.get($colormap, $drac, "green")
+        lighten(map.get($colormap, $drac, "green"), 5%)
+        color.adjust(map.get($colormap, $drac, "green"), $lightness: -5%),
+      "light-green":
+        map.get($colormap, $drac, "green")
+        lighten(map.get($colormap, $drac, "green"), 5%)
+        color.adjust(map.get($colormap, $drac, "green"), $lightness: -5%),
+      "lime":
+        map.get($colormap, $drac, "green")
+        lighten(map.get($colormap, $drac, "green"), 5%)
+        color.adjust(map.get($colormap, $drac, "green"), $lightness: -5%),
+      "yellow":
+        map.get($colormap, $drac, "yellow")
+        lighten(map.get($colormap, $drac, "yellow"), 5%)
+        color.adjust(map.get($colormap, $drac, "yellow"), $lightness: -5%),
+      "amber":
+        map.get($colormap, $drac, "yellow")
+        lighten(map.get($colormap, $drac, "yellow"), 5%)
+        color.adjust(map.get($colormap, $drac, "yellow"), $lightness: -5%),
+      "orange":
+        map.get($colormap, $drac, "orange")
+        lighten(map.get($colormap, $drac, "orange"), 5%)
+        color.adjust(map.get($colormap, $drac, "orange"), $lightness: -5%),
+      "deep-orange":
+        map.get($colormap, $drac, "orange")
+        lighten(map.get($colormap, $drac, "orange"), 5%)
+        color.adjust(map.get($colormap, $drac, "orange"), $lightness: -5%)
     )
 {
   /* Color palette */
   [data-md-color-scheme="dracula"][data-md-color-primary="#{$name}"],
-  [data-md-color-scheme="dracula"] :not([data-md-color-scheme])[data-md-color-primary="#{$name}"] {
-    --md-primary-code-bg-color: #{mix($drac-bg, nth($colors, 1), 85%)};
+  [data-md-color-scheme="dracula"]
+    :not([data-md-color-scheme])[data-md-color-primary="#{$name}"] {
+    --md-primary-code-bg-color: #{mix(
+        map.get($colormap, $drac, "bg"),
+        nth($colors, 1),
+        85%
+      )};
     --md-primary-fg-color: hsla(#{hex2hsl(nth($colors, 1))}, 1);
     --md-primary-fg-color--transparent: hsla(#{hex2hsl(nth($colors, 1))}, 1);
     --md-primary-fg-color--light: hsla(#{hex2hsl(nth($colors, 2))}, 1);
@@ -257,28 +337,43 @@ $clr-purple-a700: blueviolet;
 @each $name,
   $color
     in (
-      "red": color.adjust($drac-red, $lightness: -5%),
-      "pink": color.adjust($drac-pink, $lightness: -5%),
-      "purple": color.adjust($drac-purple, $lightness: -5%),
-      "deep-purple": color.adjust($drac-purple, $lightness: -5%),
-      "blue": color.adjust($drac-blue, $lightness: -5%),
-      "indigo": color.adjust($drac-blue, $lightness: -5%),
-      "light-blue": color.adjust($drac-blue, $lightness: -5%),
-      "cyan": color.adjust($drac-cyan, $lightness: -5%),
-      "teal": color.adjust($drac-cyan, $lightness: -5%),
-      "green": color.adjust($drac-green, $lightness: -5%),
-      "light-green": color.adjust($drac-green, $lightness: -5%),
-      "lime": color.adjust($drac-green, $lightness: -5%),
-      "yellow": color.adjust($drac-yellow, $lightness: -5%),
-      "amber": color.adjust($drac-yellow, $lightness: -5%),
-      "orange": color.adjust($drac-orange, $lightness: -5%),
-      "deep-orange": color.adjust($drac-orange, $lightness: -5%)
+      "red": color.adjust(map.get($colormap, $drac, "red"), $lightness: -5%),
+      "pink": color.adjust(map.get($colormap, $drac, "pink"), $lightness: -5%),
+      "purple":
+        color.adjust(map.get($colormap, $drac, "purple"), $lightness: -5%),
+      "deep-purple":
+        color.adjust(map.get($colormap, $drac, "purple"), $lightness: -5%),
+      "blue": color.adjust(map.get($colormap, $drac, "blue"), $lightness: -5%),
+      "indigo":
+        color.adjust(map.get($colormap, $drac, "blue"), $lightness: -5%),
+      "light-blue":
+        color.adjust(map.get($colormap, $drac, "blue"), $lightness: -5%),
+      "cyan": color.adjust(map.get($colormap, $drac, "cyan"), $lightness: -5%),
+      "teal": color.adjust(map.get($colormap, $drac, "cyan"), $lightness: -5%),
+      "green":
+        color.adjust(map.get($colormap, $drac, "green"), $lightness: -5%),
+      "light-green":
+        color.adjust(map.get($colormap, $drac, "green"), $lightness: -5%),
+      "lime": color.adjust(map.get($colormap, $drac, "green"), $lightness: -5%),
+      "yellow":
+        color.adjust(map.get($colormap, $drac, "yellow"), $lightness: -5%),
+      "amber":
+        color.adjust(map.get($colormap, $drac, "yellow"), $lightness: -5%),
+      "orange":
+        color.adjust(map.get($colormap, $drac, "orange"), $lightness: -5%),
+      "deep-orange":
+        color.adjust(map.get($colormap, $drac, "orange"), $lightness: -5%)
     )
 {
   /* Color palette*/
   [data-md-color-scheme="dracula"][data-md-color-accent="#{$name}"],
-  [data-md-color-scheme="dracula"] :not([data-md-color-scheme])[data-md-color-primary="#{$name}"] {
-    --md-code-link-accent-bg-color: #{mix($color, $drac-bg, 15%)};
+  [data-md-color-scheme="dracula"]
+    :not([data-md-color-scheme])[data-md-color-primary="#{$name}"] {
+    --md-code-link-accent-bg-color: #{mix(
+        $color,
+        map.get($colormap, $drac, "bg"),
+        15%
+      )};
     --md-accent-fg-color: hsla(#{hex2hsl($color)}, 1);
     --md-accent-fg-color--transparent: hsla(#{hex2hsl($color)}, 0.1);
     --md-accent-bg-color: var(--md-default-bg-color);

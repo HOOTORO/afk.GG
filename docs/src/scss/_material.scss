@@ -31,7 +31,6 @@
 
 .md-tabs__link {
   margin-top: 0.3rem;
-  color: var(--md-accent-fg-color);
   font-weight: 500 !important;
   letter-spacing: 0.5px !important;
 }
@@ -53,6 +52,7 @@
 .glightbox img {
   -webkit-user-drag: none;
   user-select: none;
+  border-radius: 10px;
 }
 
 .mdx-hero__content {
@@ -72,11 +72,10 @@
   border-radius: 10px;
 }
 
-// .md-nav__title,
 .md-nav--primary .md-nav__title,
 .md-nav--secondary .md-nav__title,
 .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
-  background: transparent !important;
+  background: none !important;
   box-shadow: none !important;
 }
 
@@ -93,6 +92,11 @@
     .md-nav__title ~ .md-nav__list {
       background-color: var(--md-default-bg-color--dark);
     }
+  }
+}
+@media screen and (min-width: 60em) {
+  .md-nav--secondary .md-nav__title {
+    background: none;
   }
 }
 
@@ -114,87 +118,90 @@
   content: "Dracula";
 }
 
-[data-md-color-scheme="dracula"] .md-header[data-md-state="shadow"] {
-  box-shadow:
-    0 0 0.2rem rgba(0, 0, 0, 0.15),
+.md-header[data-md-state="shadow"] {
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.15),
     0 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 
-// [data-md-color-scheme="dracula"]
 .md-top {
   background-color: var(--md-default-bg-color--dark);
 }
 
-// [data-md-color-scheme="dracula"]
 .md-top:hover {
   background-color: var(--md-primary-fg-color);
 }
-
-[data-md-color-scheme="dracula"] .md-tabs__link--active {
+.md-tabs__link--active {
   color: var(--md-primary-fg-color);
 }
 
+.md-tabs__item--active,
 .md-tabs__link:hover {
   color: var(--md-accent-fg-color);
 }
 
-[data-md-color-scheme="dracula"] .md-hero {
+.md-hero {
   color: var(--md-text-color);
   background-color: var(--md-primary-fg-color--transparent);
 }
 
-[data-md-color-scheme="dracula"] .md-nav__source {
+.md-nav__source {
   color: var(--md-text-color);
 }
 
-[data-md-color-scheme="dracula"] .md-nav__link[data-md-state="blur"] {
+.md-nav__link[data-md-state="blur"] {
   color: var(--md-default-fg-color--light);
 }
 
-[data-md-color-scheme="dracula"] .md-nav__item .md-nav__link--active {
+.md-nav__item .md-nav__link--active {
   color: var(--md-primary-fg-color);
 }
 
-[data-md-color-scheme="dracula"] .md-nav__link:focus,
-[data-md-color-scheme="dracula"] .md-nav__link:hover {
+.md-nav__link:focus,
+.md-nav__link:hover {
   color: var(--md-accent-fg-color);
 }
 
-[data-md-color-scheme="dracula"] .md-search__input {
+.md-search__input {
   color: var(--md-text-color);
   background-color: var(--md-accent-bg-color--light);
 }
 
-[data-md-color-scheme="dracula"] .md-search__input:hover {
+.md-search__input:hover {
   background-color: var(--md-default-bg-color--light);
 }
 
-[data-md-color-scheme="dracula"] .md-search__input ~ .md-search__icon {
+.md-search__input ~ .md-search__icon {
   color: var(--md-text-color);
 }
 
-[data-md-color-scheme="dracula"] .md-search__input::-moz-placeholder {
+.md-search__input::-moz-placeholder {
   color: var(--md-default-fg-color--light);
 }
 
-[data-md-color-scheme="dracula"] .md-search__input::placeholder {
+.md-search__input::placeholder {
   color: var(--md-default-fg-color--light);
 }
 
-[data-md-color-scheme="dracula"] [data-md-toggle="search"]:checked ~ .md-header .md-search__input {
-  background-color: transparent;
+// [data-md-color-scheme="dracula"]
+// [data-md-toggle="search"]:checked ~ .md-header .md-search__input {
+//   background-color: transparent;
+// }
+
+.md-search__form,
+.md-consent__inner {
+  background-color: var(--md-accent-bg-color);
 }
 
-[data-md-color-scheme="dracula"] .md-search__suggest {
+.md-search__suggest {
   color: var(--md-default-autocomplete-fg-color);
 }
 
-[data-md-color-scheme="dracula"] .md-overlay,
-[data-md-color-scheme="dracula"] .md-search__overlay {
-  background-color: var(--md-default-bg-color--light);
+.md-overlay,
+.md-search__overlay {
+  background-color: var(--md-default-bg-color--dark);
 }
 
-[data-md-color-scheme="dracula"] [data-md-component="announce"] {
+[data-md-component="announce"] {
   background-color: var(--md-default-bg-color--ultra-dark);
 }
 
