@@ -9,7 +9,7 @@
 }
 
 body {
-  background: var(--slate-gradient) no-repeat center center fixed;
+  // background: var(--slate-gradient) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,12 +27,14 @@ select {
   height: 2em;
   margin: 10px;
   padding: 5px;
-  color: var(--select-font-color);
+  color: $drac-selection;
   font: inherit;
   text-align: center;
-  background:
-    url("../assets/svg/Caret_down_font_awesome_whitevariation.svg") no-repeat right 0.8em center / 1.4em,
-    linear-gradient(to left, $glass-icon 2em, $glass 3em);
+//   $glass: rgba(255, 255, 255, 0.2);
+// $glass-icon: rgba(255, 255, 255, 0.3);
+//   background:
+//     url("../assets/svg/Caret_down_font_awesome_whitevariation.svg") no-repeat right 0.8em center / 1.4em,
+//     linear-gradient(to left, $glass-icon 2em, $glass 3em);
   border: 0;
   border-radius: 0.25em;
   outline: 0;
@@ -42,7 +44,6 @@ select {
   option {
     color: inherit;
     filter: invert(1);
-    /*     background-color: Invert(var(--select-font-color), $weight: 100%); */
   }
 
   /* Remove focus outline */
@@ -129,8 +130,8 @@ select {
   justify-content: space-evenly;
   max-height: fit-content;
   margin: 5px;
-  background-color: var(--containers-bg);
-  border: 1px solid var(--input-bd-color);
+  background-color: var(--md-default-fg-color--lightest);
+  border: 1px solid var(--md-accent-fg-color);
   border-radius: 10px;
 }
 
@@ -142,7 +143,7 @@ select {
   margin: 5px;
   padding-bottom: 10px;
   overflow: hidden;
-  background-color: var(--containers-bg);
+  background-color: var(--md-default-fg-color--lightest);
   border: 2px solid blueviolet;
   border-radius: 10px;
 }

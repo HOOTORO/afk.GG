@@ -5,7 +5,7 @@ output > div {
 #rangeValue {
   position: relative;
   display: block;
-  color: var(--text);
+  color: var(--md-text-color);
   font-weight: 400;
   font-size: 1em;
   text-align: center;
@@ -13,7 +13,7 @@ output > div {
 
 .range {
   width: -webkit-fill-available;
-  height: $slider-radius;
+  height: 20px;
   margin-left: 5px;
   overflow: hidden;
   background: #111111;
@@ -24,8 +24,8 @@ output > div {
 }
 
 .range::-webkit-slider-thumb {
-  width: $slider-radius + 2;
-  height: $slider-radius + 2;
+  width: 22px;
+  height:22px;
   background: #700bad;
   border: 4px solid #333333;
   border-radius: 50%;

@@ -1,6 +1,7 @@
 @import "tools/break";
 @import "tools/converter";
 @import "tools/color";
+@import "tools/varurl";
 
 @import "palette/colors";
 
@@ -24,7 +25,6 @@
 @import "extensions/magiclink";
 @import "extensions/tabbed";
 @import "extensions/tasklist";
-@import "extensions/toc";
 @import "extensions/git-committers";
 
 @import "material";

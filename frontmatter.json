@@ -3,7 +3,7 @@
   "frontMatter.content.publicFolder": "",
   "frontMatter.framework.id": "other",
   "frontMatter.framework.startCommand": "mkdocs serve --watch-theme",
-  "frontMatter.preview.host": "http://siniwure.deadspace.inc/blog/",
+  "frontMatter.preview.host": "http://localhost:8000",
   "frontMatter.content.pageFolders": [
     {
       "path": "[[workspace]]/docs/src/md/blog",

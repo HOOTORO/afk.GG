@@ -24,12 +24,15 @@ theme:
     view: material/eye
     annotation: material/chevron-right-circle
   font:
-    text: Comfortaa
-    code: Chivo Mono
+    # text: Comfortaa, Play, Inter Tight, Bellota Text, Tektur (funny), Tenor Sans
+    # too tight/thin: Yanone Kaffeesatz  Poiret One, Sawarabi Gothic
+    # g: Montserrat Alternates, Zen Kaku Gothic New, Zen Kaku Gothic Antique (new bettr), Zen Kurenaido
+    text: Manrope
+    code: Victor Mono
   palette:
     - scheme: default
-      primary: orange
-      accent: lime
+      primary: lime
+      accent: indigo
       toggle:
         icon: fontawesome/solid/jedi
         name: Switch to dark mode

@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import "./dracula", "./slate", "./default";
 
 
@@ -13,21 +15,7 @@ $clr-cyan-500: #00ffff;
 $clr-blue-a400: blue;
 $clr-purple-a700: blueviolet;
 
-/* general stuff */
-$glass: rgba(255, 255, 255, 0.2);
-$glass-icon: rgba(255, 255, 255, 0.3);
-$gradient: linear-gradient(35deg, #2e303d, #2e33ad);
-$slider-radius: 20px;
 
-/* dark theme vars */
-$dLabel: "Dark Side";
-
-$din-color: #bada55;
-$d-code-bg: #424242;
-
-/* light theme vars */
-$lLabel: "Jedi";
-$lin-color: rgb(255, 0, 0);
 
 :root > * {
   --md-shadow-z7: 0 0.2rem 0.6rem hsla(0, 6%, 27%, 0.293), 0 0 0 0.1rem #47474716;
@@ -35,21 +23,6 @@ $lin-color: rgb(255, 0, 0);
   /* Admonition colors */
   --md-admonition-fg-color: var(--md-default-fg-color);
   --md-admonition-bg-color: var(--md-default-bg-color--light);
-
-  /* Custom code colors */
-  --md-code-link-bg-color: hsla(0, 0%, 96%, 1);
-  --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
-  --md-code-title-bg-color: var(--md-code-bg-color);
-  --md-code-inline-bg-color: var(--md-code-bg-color);
-  // --md-code-special-bg-color: #e8e8e8;
-  --md-code-special-bg-color: #{darken(#f5f5f5, 5%)};
-  --md-code-alternate-bg-color: var(--md-code-bg-color);
-  --md-code-hl-punctuation-color: var(--md-code-fg-color);
-  --md-code-hl-namespace-color: var(--md-code-fg-color);
-  --md-code-hl-entity-color: var(--md-code-hl-keyword-color);
-  --md-code-hl-tag-color: var(--md-code-hl-keyword-color);
-  --md-code-hl-builtin-color: var(--md-code-hl-constant-color);
-  --md-code-hl-class-color: var(--md-code-hl-function-color);
 
   /* Various Material related color variables */
   --md-typeset-a-color: #{$clr-cyan-500};
@@ -64,132 +37,99 @@ $lin-color: rgb(255, 0, 0);
   --md-progress-20: #{$clr-red-a200};
   --md-progress-0: #{$clr-red-a400};
 
-  /* Keys colors */
-  --md-typeset-kbd-color: #{shade(hsla(0, 100%, 100%, 1), 8%)};
-  --md-typeset-kbd-border-color: #{shade(hsla(0, 100%, 100%, 1), 28%)};
-  --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
-
-  --magiclink-email-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-3 13H7v-2h10m0-2H7v-2h10m3-2h-3V6h3"/></svg>');
-  --magiclink-github-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>');
-  --magiclink-bitbucket-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.65 3C2.3 3 2 3.3 2 3.65v.12l2.73 16.5c.07.42.43.73.85.73h13.05c.31 0 .59-.22.64-.54L22 3.77a.643.643 0 0 0-.54-.73c-.03-.01-.07-.01-.11-.01L2.65 3M14.1 14.95H9.94L8.81 9.07h6.3l-1.01 5.88Z"/></svg>');
-  --magiclink-gitlab-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.94 13.11-1.05-3.22c0-.03-.01-.06-.02-.09l-2.11-6.48a.859.859 0 0 0-.8-.57c-.36 0-.68.25-.79.58l-2 6.17H8.84L6.83 3.33a.851.851 0 0 0-.79-.58c-.37 0-.69.25-.8.58L3.13 9.82v.01l-1.07 3.28c-.16.5.01 1.04.44 1.34l9.22 6.71c.17.12.39.12.56-.01l9.22-6.7c.43-.3.6-.84.44-1.34M8.15 10.45l2.57 7.91-6.17-7.91m8.73 7.92 2.47-7.59.1-.33h3.61l-5.59 7.16m4.1-13.67 1.81 5.56h-3.62m-1.3.95-1.79 5.51L12 19.24l-2.86-8.79M6.03 3.94 7.84 9.5H4.23m-1.18 4.19c-.09-.07-.13-.19-.09-.29l.79-2.43 5.82 7.45m11.38-4.73-6.51 4.73.02-.03 5.79-7.42.79 2.43c.04.1 0 .22-.09.29"/></svg>');
-  --magiclink-commit-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.944 11h4.306a.75.75 0 0 1 0 1.5h-4.306a5.001 5.001 0 0 1-9.888 0H2.75a.75.75 0 0 1 0-1.5h4.306a5.001 5.001 0 0 1 9.888 0Zm-1.444.75a3.5 3.5 0 1 0-7 0 3.5 3.5 0 0 0 7 0Z"/></svg>');
-  --magiclink-compare-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 6.75a.75.75 0 0 0-1.5 0V9H8.75a.75.75 0 0 0 0 1.5H11v2.25a.75.75 0 0 0 1.5 0V10.5h2.25a.75.75 0 0 0 0-1.5H12.5V6.75ZM8.75 16a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6Z"/><path d="M5 1h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2Zm-.5 2v18a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 .5-.5V7.018a.5.5 0 0 0-.146-.354l-4.018-4.018a.5.5 0 0 0-.354-.146H5a.5.5 0 0 0-.5.5Z"/></svg>');
-  --magiclink-pull-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm-14.5 0a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM4.75 3a1.75 1.75 0 1 0 .001 3.501A1.75 1.75 0 0 0 4.75 3Zm0 14.5a1.75 1.75 0 1 0 .001 3.501A1.75 1.75 0 0 0 4.75 17.5Zm14.5 0a1.75 1.75 0 1 0 .001 3.501 1.75 1.75 0 0 0-.001-3.501Z"/><path d="M13.405 1.72a.75.75 0 0 1 0 1.06L12.185 4h4.065A3.75 3.75 0 0 1 20 7.75v8.75a.75.75 0 0 1-1.5 0V7.75a2.25 2.25 0 0 0-2.25-2.25h-4.064l1.22 1.22a.75.75 0 0 1-1.061 1.06l-2.5-2.5a.75.75 0 0 1 0-1.06l2.5-2.5a.75.75 0 0 1 1.06 0ZM4.75 7.25A.75.75 0 0 1 5.5 8v8A.75.75 0 0 1 4 16V8a.75.75 0 0 1 .75-.75Z"/></svg>');
-  --magiclink-issue-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Zm9.5 2a2 2 0 1 1-.001-3.999A2 2 0 0 1 12 14Z"/></svg>');
-  --magiclink-discussion-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/></svg>');
 
   /* WHITE theme  */
   &[data-md-color-scheme="default"] {
-    --md-footer-bg-color--dark: #{$mos-def-foot-low};
-    --input-bd-color: #{$lin-color};
-    --theme-label: #{$lLabel};
-    --nav-link: #{$mos-def-nav-link};
-    --nav-color: #{$glass};
-    --slate-gradient: #{$mos-def-gradient};
-    --slate-gradient-a: #{$mos-def-gradient-anti};
-    // --containers-bg: #{$mos-def-bg};
-    --select-font-color: #{$mos-def-sel-text};
-    --md-header-bg-color: var(--md-primary-fg-color);
-    --md-footer-bg-color: #{$mos-def-foot-bg};
-    --md-footer-fg-color: #{$mos-def-foot-fg};
-    --tab-bg: #{$mos-def-tabs-bg};
-    --tab-fg: #{$mos-def-tabs-fg};
     --rnb: #{$mos-def-rnb};
-    --md-default-bg: #{$mos-def-def-bg};
-    --text: #{$mos-def-text};
-
+    
+    --md-header-bg-color: var(--md-primary-fg-color);
+    --md-footer-fg-color: #{$mos-def-foot-fg};
+    --md-footer-bg-color: #{$mos-def-foot-bg};
+    
     /* Dark specific colors */
-    --md-default-bg-color--dark: #{darken($mos-def-default-bg, 3%)};
-    --md-default-bg-color--darker: #{darken($mos-def-default-bg, 6%)};
-    --md-default-bg-color--darkest: #{darken($mos-def-default-bg, 9%)};
-    --md-default-bg-color--ultra-dark: #{darken($mos-def-default-bg, 15%)};
-
-    --md-default-fg-color: #{transparentize($mos-def-fg, 0.13)};
-    --md-default-fg-color--light: #{transparentize($mos-def-fg, 0.46)};
-    --md-default-fg-color--lighter: #{transparentize($mos-def-fg, 0.84)};
-    --md-default-fg-color--lightest: #{transparentize($mos-def-fg, 0.93)};
-    --md-default-autocomplete-fg-color: #{transparentize($mos-def-fg, 0.6)};
+    --md-default-bg: #{$mos-def-def-bg};
+    --md-default-bg-color: linear-gradient(180deg, var(--md-default-bg-color--dark), #{$mos-def-foot-bg});;
+    --md-default-bg-color--light: #{color.adjust($mos-def-default-bg, $alpha: -0.1)};
+    --md-default-bg-color--lighter: #{color.adjust($mos-def-default-bg, $alpha: -0.7)};
+    --md-default-bg-color--lightest: #{color.adjust($mos-def-default-bg, $alpha: -0.88)};
+    --md-default-bg-color--trans: #{color.adjust($mos-def-default-bg, $alpha: -1)};
+    --md-default-bg-color--dark: #{color.adjust($mos-def-default-bg, $lightness: -50%)};
+    --md-default-bg-color--darker: #{color.adjust($mos-def-default-bg, $lightness: -6%)};
+    --md-default-bg-color--darkest: #{color.adjust($mos-def-default-bg, $lightness: -9%)};
+    --md-default-bg-color--ultra-dark: #{color.adjust($mos-def-default-bg, $lightness: -15%)};
+    
+    --md-default-fg-color: #{color.adjust($mos-def-fg, $alpha: -0.13)};
+    --md-default-fg-color--light: #{color.adjust($mos-def-fg, $alpha: -0.46)};
+    --md-default-fg-color--lighter: #{color.adjust($mos-def-fg, $alpha: -0.84)};
+    --md-default-fg-color--lightest: #{color.adjust($mos-def-fg, $alpha: -0.93)};
+    --md-default-autocomplete-fg-color: #{color.adjust($mos-def-fg, $alpha: -0.6)};
     --md-shadow-z2: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.2);
-
-    --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
-    --md-default-bg-color--light: #{transparentize($mos-def-default-bg, 0.3)};
-    --md-default-bg-color--lighter: #{transparentize($mos-def-default-bg, 0.7)};
-    --md-default-bg-color--lightest: #{transparentize($mos-def-default-bg, 0.88)};
-    --md-default-bg-color--trans: #{transparentize($mos-def-default-bg, 1)};
-
+    
     /* General text */
     --md-text-color: #{$mos-def-text};
     --md-typeset-color: var(--md-default-fg-color);
     --md-admonition-title-bg: #ffdb86;
-
+    
     /* Various Material related color variables */
     --md-typeset-a-color: #{$mos-def-cyan};
     --md-typeset-mark-color: #{mix($mos-def-yellow, $mos-def-bg, 35%)};
     --md-typeset-del-color: #{mix($mos-def-pink, $mos-def-bg, 35%)};
     --md-typeset-ins-color: #{mix($mos-def-green, $mos-def-bg, 35%)};
 
-    /* Code colors */
-    --md-code-bg-color: #{$din-color};
 
+    --md-code-fg-color: #{$mos-def-dark-pink};
+    --md-code-bg-color: #{color.adjust($mos-def-bg, $lightness: 13%)};    
+    --md-code-inline-bg-color: #{lighten($mos-def-bg, 5%)};
+    --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
+    --md-code-inline-bg-color: #{lighten($mos-def-bg, 5%)};
+    --md-code-special-bg-color: #{color.adjust($mos-def-bg, $lightness: -5%)};
+    --md-code-alternate-bg-color: #{tint($mos-def-bg, 10%)};
+    --md-code-link-bg-color: #{mix($mos-def-cyan, $mos-def-bg, 15%)};
+    
   }
-
+  
   /* BLACK */
   &[data-md-color-scheme="slate"] {
     /* Custom code colors */
-    --select-font-color: #{$dark-sel-text};
-    --input-bd-color: #{$din-color};
-    --slate-gradient: #{$dark-gradient};
-    --slate-gradient-a: #{$dark-gradient-anti};
-    --containers-bg: #{$dark-wrapper};
-    --nav-color: #{$dark-wrapper};
-    --text: #{$dark-text};
     --rnb: #{$mos-def-rnb};
-    --tab-bg: #{$dark-tabs-bg};
-    --nav-link: #{$d-nav-link};
-    --theme-label: #{$dLabel};
-    --md-code-bg-color: #{$d-code-bg};
-    --md-code-fg-color: #{$dark-fg};
-    --md-default-bg: #{$dark-def-bg};
     --md-header-bg-color: var(--md-primary-fg-color);
     --md-footer-bg-color: #{$dark-foot-bg};
     --md-footer-fg-color: #{$dark-foot-fg};
-
+    
     /* Dark specific colors */
-    --md-default-bg-color--dark: #{darken($dark-default-bg, 3%)};
-    --md-default-bg-color--darker: #{darken($dark-default-bg, 6%)};
-    --md-default-bg-color--darkest: #{darken($dark-default-bg, 9%)};
-    --md-default-bg-color--ultra-dark: #{darken($dark-default-bg, 15%)};
-
-    --md-default-fg-color: #{transparentize($dark-fg, 0.13)};
-    --md-default-fg-color--light: #{transparentize($dark-fg, 0.46)};
-    --md-default-fg-color--lighter: #{transparentize($dark-fg, 0.84)};
-    --md-default-fg-color--lightest: #{transparentize($dark-fg, 0.93)};
-    --md-default-autocomplete-fg-color: #{transparentize($dark-fg, 0.6)};
+    --md-default-bg: #{$dark-def-bg};
+    --md-default-bg-color: linear-gradient(180deg, var(--md-default-bg-color--dark), #{$dark-foot-bg});
+    --md-default-bg-color--light: #{color.adjust($dark-default-bg, $alpha: -0.3)};
+    --md-default-bg-color--lighter: #{color.adjust($dark-default-bg, $alpha: -0.7)};
+    --md-default-bg-color--lightest: #{color.adjust($dark-default-bg, $alpha: -0.88)};
+    --md-default-bg-color--trans: #{color.adjust($dark-default-bg, $alpha: -1)};
+    --md-default-bg-color--dark: #{color.adjust($dark-default-bg, $lightness: -3%)};
+    --md-default-bg-color--darker: #{color.adjust($dark-default-bg, $lightness: -6%)};
+    --md-default-bg-color--darkest: #{color.adjust($dark-default-bg, $lightness: -9%)};
+    --md-default-bg-color--ultra-dark: #{color.adjust($dark-default-bg, $lightness: -15%)};
+    
+    --md-default-fg-color: #{color.adjust($dark-fg, $alpha: -0.13)};
+    --md-default-fg-color--light: #{color.adjust($dark-fg, $alpha: -0.46)};
+    --md-default-fg-color--lighter: #{color.adjust($dark-fg, $alpha: -0.84)};
+    --md-default-fg-color--lightest: #{color.adjust($dark-fg, $alpha: -0.93)};
+    --md-default-autocomplete-fg-color: #{color.adjust($dark-fg, $alpha: -0.6)};
     --md-shadow-z2: 0 #{px2rem(14px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(2px)} hsla(0, 0%, 0%, 0.2);
-
-    --md-default-bg-color: var(--md-default-bg-color--ultra-dark);
-    --md-default-bg-color--light: #{transparentize($dark-default-bg, 0.3)};
-    --md-default-bg-color--lighter: #{transparentize($dark-default-bg, 0.7)};
-    --md-default-bg-color--lightest: #{transparentize($dark-default-bg, 0.88)};
-    --md-default-bg-color--trans: #{transparentize($dark-default-bg, 1)};
-
+    
+    
     /* General text */
-    --md-text-color: var(--text);
-    // --md-text-color: var(--md-default-fg-color);
+    --md-text-color: #{$dark-text};
     --md-typeset-color: var(--md-default-fg-color);
     --md-typeset-a-color: #{$dark-orange};
-
-    --md-code-link-bg-color: hsla(232, 15%, 15%, 1);
+    
+    --md-code-fg-color: #{$dark-teal};
+    --md-code-bg-color: #{color.adjust($dark-bg, $hue: 80deg, $lightness: 5%)};
+    --md-code-alternate-bg-color: #{tint($dark-bg, 10%)};
+    --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
     --md-code-link-accent-bg-color: var(--md-code-link-bg-color);
     --md-code-special-bg-color: #{lighten(hsl(232, 15%, 15%), 5%)};
+    --md-code-inline-bg-color: #{color.adjust($dark-bg, $hue: 80deg, $lightness: -5%)};
 
-    /* Keys colors */
-    --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
-    --md-typeset-kbd-border-color: #{darken(rgb(46, 48, 62), 9%)};
-    --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);
-
-
+    --md-code-link-bg-color: #{mix($dark-cyan, $dark-bg, 15%)};
     // --md-accent-fg-color: #{adjust-hue($dark-orange, 100deg)};
   }
 
@@ -198,62 +138,58 @@ $lin-color: rgb(255, 0, 0);
   &[data-md-color-scheme="dracula"] {
     --rnb: #{$mos-def-rnb};
 
-    /* Default color shades*/
-    --text: #{$dark-text};
-    --input-bd-color: #{$drac-dark-pink};
-    --select-font-color: #{$dark-sel-text};
-    --nav-link: #{$mos-def-nav-link};
-    --md-default-fg-color: #{transparentize($drac-fg, 0.13)};
-    --md-default-fg-color--light: #{transparentize($drac-fg, 0.46)};
-    --md-default-fg-color--lighter: #{transparentize($drac-fg, 0.84)};
-    --md-default-fg-color--lightest: #{transparentize($drac-fg, 0.93)};
-    --md-default-autocomplete-fg-color: #{transparentize($drac-fg, 0.6)};
-    --md-shadow-z2: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.2);
-
-    --md-default-bg-color: var(--md-default-bg-color--darkest);
-    --md-default-bg-color--light: #{transparentize($drac-default-bg, 0.3)};
-    --md-default-bg-color--lighter: #{transparentize($drac-default-bg, 0.7)};
-    --md-default-bg-color--lightest: #{transparentize($drac-default-bg, 0.88)};
-    --md-default-bg-color--trans: #{transparentize($drac-default-bg, 1)};
-
     /* Dark specific colors */
-    --md-default-bg-color--dark: #{darken($drac-default-bg, 3%)};
-    --md-default-bg-color--darker: #{darken($drac-default-bg, 6%)};
-    --md-default-bg-color--darkest: #{darken($drac-default-bg, 9%)};
-    --md-default-bg-color--ultra-dark: #{darken($drac-default-bg, 15%)};
+    --md-default-bg-color:  linear-gradient(180deg, var(--md-default-bg-color--dark),  var(--md-default-bg-color--darker));
+    --md-default-bg-color--dark: #{color.adjust($drac-default-bg, $lightness: -3%)};
+    --md-default-bg-color--darker: #{color.adjust($drac-default-bg, $lightness: -6%)};
+    --md-default-bg-color--darkest: #{color.adjust($drac-default-bg, $lightness: -9%)};
+    --md-default-bg-color--ultra-dark: #{color.adjust($drac-default-bg, $lightness: -15%)};
+    --md-default-bg-color--light: #{color.adjust($drac-default-bg, $alpha: -0.1)};
+    --md-default-bg-color--lighter: #{color.adjust($drac-default-bg, $alpha: -0.7)};
+    --md-default-bg-color--lightest: #{color.adjust($drac-default-bg, $alpha: -0.88)};
+    --md-default-bg-color--trans: #{color.adjust($drac-default-bg, $alpha: -1)};
+    /* Default color shades*/
+    --md-default-fg-color: #{color.adjust($drac-fg, $alpha: -0.13)};
+    --md-default-fg-color--light: #{color.adjust($drac-fg, $alpha: -0.46)};
+    --md-default-fg-color--lighter: #{color.adjust($drac-fg, $alpha: -0.84)};
+    --md-default-fg-color--lightest: #{color.adjust($drac-fg, $alpha: -0.93)};
+    --md-default-autocomplete-fg-color: #{color.adjust($drac-fg, $alpha: -0.6)};
+    --md-shadow-z2: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.2);
+    
+
 
     /* General text */
-    --md-text-color: var(--md-default-fg-color);
+    --md-text-color: #{$drac-text};
     --md-typeset-color: var(--md-default-fg-color);
 
-    /* Code colors */
-    --md-code-fg-color: #{$drac-fg};
-    --md-code-bg-color: #{$drac-bg};
+    // /* Code colors */
+    --md-code-fg-color: #{$drac-teal};
+    --md-code-bg-color: #{color.adjust($drac-bg, $lightness: 10%)};
     --md-code-title-bg-color: var(--md-default-bg-color--ultra-dark);
-    --md-code-inline-bg-color: #{lighten($drac-bg, 5%)};
-    --md-code-special-bg-color: #{darken($drac-bg, 5%)};
+    --md-code-inline-bg-color: #{color.adjust($drac-bg, $hue: 80deg, $lightness: -15%)};
+    --md-code-special-bg-color: #{color.adjust($drac-bg, $lightness: -5%)};
     --md-code-alternate-bg-color: #{tint($drac-bg, 10%)};
     --md-code-link-bg-color: #{mix($drac-cyan, $drac-bg, 15%)};
     
-    /* Custom code colors */
-    --md-code-hl-operator-color: #{$drac-pink};
-    --md-code-hl-punctuation-color: #{$drac-fg};
-    --md-code-hl-string-color: #{$drac-yellow};
-    --md-code-hl-special-color: #{$drac-purple};
-    --md-code-hl-number-color: #{$drac-purple};
-    --md-code-hl-keyword-color: #{$drac-pink};
+    // /* Custom code colors */
+    // --md-code-hl-operator-color: #{$drac-pink};
+    // --md-code-hl-punctuation-color: #{$drac-fg};
+    // --md-code-hl-string-color: #{$drac-yellow};
+    // --md-code-hl-special-color: #{$drac-purple};
+    // --md-code-hl-number-color: #{$drac-purple};
+    // --md-code-hl-keyword-color: #{$drac-pink};
     --md-code-hl-name-color: #{$drac-fg};
-    --md-code-hl-constant-color: #{$drac-purple};
-    --md-code-hl-function-color: #{$drac-green};
-    --md-code-hl-comment-color: #{$drac-blue};
-    --md-code-hl-variable-color: #{$drac-orange};
-    --md-code-hl-generic-color: #{$drac-blue};
+    // --md-code-hl-constant-color: #{$drac-purple};
+    // --md-code-hl-function-color: #{$drac-green};
+    // --md-code-hl-comment-color: #{$drac-blue};
+    // --md-code-hl-variable-color: #{$drac-orange};
+    // --md-code-hl-generic-color: #{$drac-blue};
     --md-code-hl-color: #{$drac-selection};
-    --md-code-hl-entity-color: #{$drac-green};
-    --md-code-hl-tag-color: #{$drac-pink};
-    --md-code-hl-namespace-color: #{$drac-fg};
-    --md-code-hl-builtin-color: #{$drac-cyan};
-    --md-code-hl-class-color: #{$drac-cyan};
+    // --md-code-hl-entity-color: #{$drac-green};
+    // --md-code-hl-tag-color: #{$drac-pink};
+    // --md-code-hl-namespace-color: #{$drac-fg};
+    // --md-code-hl-builtin-color: #{$drac-cyan};
+    // --md-code-hl-class-color: #{$drac-cyan};
 
     /* Various Material related color variables */
     --md-typeset-a-color: #{$drac-cyan};
@@ -269,17 +205,10 @@ $lin-color: rgb(255, 0, 0);
     --md-progress-40: #{$drac-orange};
     --md-progress-20: #{$drac-pink};
     --md-progress-0: #{$drac-red};
-
-    /* Keys colors */
-    --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
-    --md-typeset-kbd-border-color: var(--md-default-bg-color--ultra-dark);
-    --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);
-
-    background-color: var(--md-default-bg-color);
-    --md-footer-bg-color: transparent;
-    --md-footer-bg-color--dark: var(--md-default-bg-color--darkest);
-    --md-header-fg-color: var(--md-text-color);
-    --md-header-bg-color: var(--md-default-bg-color--darkest);
+    // background-color: var(--md-default-bg-color);
+    --md-header-fg-color: #{$drac-default-bg};
+    --md-header-bg-color: var(--md-default-bg-color--darker);
+    --md-footer-bg-color: var(--md-default-bg-color--darker);
   }
 }
 
@@ -290,22 +219,22 @@ $lin-color: rgb(255, 0, 0);
 @each $name,
   $colors
     in (
-      "red": $drac-red lighten($drac-red, 5%) darken($drac-red, 5%),
-      "pink": $drac-pink lighten($drac-pink, 5%) darken($drac-pink, 5%),
-      "purple": $drac-purple lighten($drac-purple, 5%) darken($drac-purple, 5%),
-      "deep-purple": $drac-purple lighten($drac-purple, 5%) darken($drac-purple, 5%),
-      "blue": $drac-blue lighten($drac-blue, 5%) darken($drac-blue, 5%),
-      "indigo": $drac-blue lighten($drac-blue, 5%) darken($drac-blue, 5%),
-      "light-blue": $drac-blue lighten($drac-blue, 5%) darken($drac-blue, 5%),
-      "cyan": $drac-cyan lighten($drac-cyan, 5%) darken($drac-cyan, 5%),
-      "teal": $drac-cyan lighten($drac-cyan, 5%) darken($drac-cyan, 5%),
-      "green": $drac-green lighten($drac-green, 5%) darken($drac-green, 5%),
-      "light-green": $drac-green lighten($drac-green, 5%) darken($drac-green, 5%),
-      "lime": $drac-green lighten($drac-green, 5%) darken($drac-green, 5%),
-      "yellow": $drac-yellow lighten($drac-yellow, 5%) darken($drac-yellow, 5%),
-      "amber": $drac-yellow lighten($drac-yellow, 5%) darken($drac-yellow, 5%),
-      "orange": $drac-orange lighten($drac-orange, 5%) darken($drac-orange, 5%),
-      "deep-orange": $drac-orange lighten($drac-orange, 5%) darken($drac-orange, 5%)
+      "red": $drac-red lighten($drac-red, 5%) color.adjust($drac-red, $lightness: -5%),
+      "pink": $drac-pink lighten($drac-pink, 5%) color.adjust($drac-pink, $lightness: -5%),
+      "purple": $drac-purple lighten($drac-purple, 5%) color.adjust($drac-purple, $lightness: -5%),
+      "deep-purple": $drac-purple lighten($drac-purple, 5%) color.adjust($drac-purple, $lightness: -5%),
+      "blue": $drac-blue lighten($drac-blue, 5%) color.adjust($drac-blue, $lightness: -5%),
+      "indigo": $drac-blue lighten($drac-blue, 5%) color.adjust($drac-blue, $lightness: -5%),
+      "light-blue": $drac-blue lighten($drac-blue, 5%) color.adjust($drac-blue, $lightness: -5%),
+      "cyan": $drac-cyan lighten($drac-cyan, 5%) color.adjust($drac-cyan, $lightness: -5%),
+      "teal": $drac-cyan lighten($drac-cyan, 5%) color.adjust($drac-cyan, $lightness: -5%),
+      "green": $drac-green lighten($drac-green, 5%) color.adjust($drac-green, $lightness: -5%),
+      "light-green": $drac-green lighten($drac-green, 5%) color.adjust($drac-green, $lightness: -5%),
+      "lime": $drac-green lighten($drac-green, 5%) color.adjust($drac-green, $lightness: -5%),
+      "yellow": $drac-yellow lighten($drac-yellow, 5%) color.adjust($drac-yellow, $lightness: -5%),
+      "amber": $drac-yellow lighten($drac-yellow, 5%) color.adjust($drac-yellow, $lightness: -5%),
+      "orange": $drac-orange lighten($drac-orange, 5%) color.adjust($drac-orange, $lightness: -5%),
+      "deep-orange": $drac-orange lighten($drac-orange, 5%) color.adjust($drac-orange, $lightness: -5%)
     )
 {
   /* Color palette */
@@ -328,22 +257,22 @@ $lin-color: rgb(255, 0, 0);
 @each $name,
   $color
     in (
-      "red": darken($drac-red, 5%),
-      "pink": darken($drac-pink, 5%),
-      "purple": darken($drac-purple, 5%),
-      "deep-purple": darken($drac-purple, 5%),
-      "blue": darken($drac-blue, 5%),
-      "indigo": darken($drac-blue, 5%),
-      "light-blue": darken($drac-blue, 5%),
-      "cyan": darken($drac-cyan, 5%),
-      "teal": darken($drac-cyan, 5%),
-      "green": darken($drac-green, 5%),
-      "light-green": darken($drac-green, 5%),
-      "lime": darken($drac-green, 5%),
-      "yellow": darken($drac-yellow, 5%),
-      "amber": darken($drac-yellow, 5%),
-      "orange": darken($drac-orange, 5%),
-      "deep-orange": darken($drac-orange, 5%)
+      "red": color.adjust($drac-red, $lightness: -5%),
+      "pink": color.adjust($drac-pink, $lightness: -5%),
+      "purple": color.adjust($drac-purple, $lightness: -5%),
+      "deep-purple": color.adjust($drac-purple, $lightness: -5%),
+      "blue": color.adjust($drac-blue, $lightness: -5%),
+      "indigo": color.adjust($drac-blue, $lightness: -5%),
+      "light-blue": color.adjust($drac-blue, $lightness: -5%),
+      "cyan": color.adjust($drac-cyan, $lightness: -5%),
+      "teal": color.adjust($drac-cyan, $lightness: -5%),
+      "green": color.adjust($drac-green, $lightness: -5%),
+      "light-green": color.adjust($drac-green, $lightness: -5%),
+      "lime": color.adjust($drac-green, $lightness: -5%),
+      "yellow": color.adjust($drac-yellow, $lightness: -5%),
+      "amber": color.adjust($drac-yellow, $lightness: -5%),
+      "orange": color.adjust($drac-orange, $lightness: -5%),
+      "deep-orange": color.adjust($drac-orange, $lightness: -5%)
     )
 {
   /* Color palette*/

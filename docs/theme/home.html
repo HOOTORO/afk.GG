@@ -12,9 +12,13 @@
     display: inline-flex !important;
   }
 
+  .md-main {
+    background: unset;
+  }
+
   h1 {
     text-shadow: 1px 1px 2px var(--md-accent-fg-color);
-    font-size: large;
+    font-size: 1rem;
     font-weight: bold;
   }
 
@@ -76,7 +80,7 @@
         <nav class="md-post__authors md-typeset">
           {% for author in post.authors %}
           <span class="md-author">
-            <img src="{{ author.avatar | url }}" alt="{{ author.name }}" />
+            <img src="{{ author.avatar | url }}" alt="{{ author.name }}" width="" height="" />
           </span>
           {% endfor %}
         </nav>
@@ -144,7 +148,7 @@
         {% if post.meta.preview %}
         <div class="post-excerpt-image crop-excerpt">
           <a href="{{ post.url }}">
-            <img src="{{ post.meta.preview }}" />
+            <img src="{{ post.meta.preview }}" alt="" width="" height="" />
           </a>
         </div>
         {% endif %}

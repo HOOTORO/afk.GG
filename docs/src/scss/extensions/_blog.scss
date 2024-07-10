@@ -25,30 +25,11 @@ article hr {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .md-nav--primary {
-    padding: 0.5rem;
-  }
   .md-sidebar.md-sidebar--post .md-sidebar__scrollwrap {
     border-radius: 1rem;
     overflow: hidden;
   }
 }
-
-// .post-compact-container {
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   gap: 10px;
-//   grid-auto-rows: minmax(100px, auto);
-// }
-
-// .post-compact-container {
-//   display: flex;
-//   flex-flow: row wrap;
-// }
-
-// .post-compact {
-//   width: 23rem;
-// }
 
 .post-excerpt-image.crop-excerpt {
     width: 100%;

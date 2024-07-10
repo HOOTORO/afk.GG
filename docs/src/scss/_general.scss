@@ -15,7 +15,6 @@
   h1 {
     text-shadow: 1px 1px 2px var(--md-accent-fg-color);
     text-transform: uppercase;
-    text-align: center;
   }
   h1::before,
   h1::after {
@@ -23,9 +22,6 @@
     border-top: 0.1em double black;
     align-self: center;
   }
-  // h4 {
-  //   margin: 2em 0 1em;
-  // }
   h2 {
     padding-left: 0.1rem;
   }
@@ -182,17 +178,6 @@ figure > img {
   border-radius: 10px;
 }
 
-img {
-  border-radius: 10px;
-}
-.md-typeset img,
-.md-typeset svg,
-.md-typeset video {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 #memes img {
   max-height: 7rem;
   margin: 5px;
@@ -252,18 +237,14 @@ img {
   justify-content: space-evenly;
 }
 
-.ftnt {
-  margin-bottom: 20px;
-  font-size: 0.7rem;
-}
 
 [data-md-component="announce"] .twemoji {
   color: var(--md-primary-fg-color);
 }
 
-.md-nav__item--section > .md-nav__link[for] {
-  color: var(--md-accent-fg-color);
-}
+// .md-nav__item--section > .md-nav__link[for] {
+//   color: var(--md-accent-fg-color);
+// }
 
 blockquote,
 blockquote:before {

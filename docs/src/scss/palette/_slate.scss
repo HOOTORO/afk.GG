@@ -22,19 +22,17 @@ $dark-dark-pink: hsl(325, 100%, 64%);
 $dark-dark-red: hsl(0, 100%, 59%);
 $dark-dark-yellow: hsl(51, 94%, 73%);
 
-$dark-default-bg: color.adjust($dark-bg, $hue: 30deg, $saturation: 20%, $alpha: -0.3, $lightness: 20%);
-$dark-tabs-bg: #0c0c0c99;
+$dark-default-bg: color.adjust($dark-bg, $hue: 40deg, $saturation: 20%, $lightness: 21%);
+$dark-tabs-bg: var(--md-header-bg-color);
 
 /* rgb(69, 69, 96) */
-$dark-text: rgb(236, 236, 236);
+$dark-text: rgb(228, 228, 228);
 $dark-wrapper: #2c313d3d;
 $dark-foot-fg: $dark-text;
 $dark-foot-bg: $dark-bg;
 $dark-sel-text: rgb(42, 42, 42);
 $d-nav-link: #b8b8ae;
 
-$dark-admo-bg: linear-gradient(45deg, rgba(102, 102, 102, 0.605), #bebebebe);
 $dark-def-bg: linear-gradient(222deg, rgba(44, 42, 42, 0.198), #002f37f1);
-$dark-gradient: linear-gradient(180deg, #00bdd696, darken($dark-bg, 30));
-// $dark-gradient: linear-gradient(180deg, #5f4292e1, darken($dark-bg, 40));
-$dark-gradient-anti: linear-gradient(360deg, #2e303d2c, opacify($dark-bg, 0.1));
+
+
