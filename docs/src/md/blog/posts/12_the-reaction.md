@@ -1,18 +1,26 @@
 ---
 title: Cerebral Palsy Party
-date: 
-    created: 2024-07-02
-authors: [HOOTSMAN, SE2k, sensei]
-categories: [Showcase]
-tags: [AQUILON, RU, Stupidity]
+date:
+  created: 2024-07-02
+authors:
+  - HOOTSMAN
+  - SE2k
+  - sensei
+categories:
+  - Showcase
+tags:
+  - AQUILON
+  - RU
+  - Stupidity
 draft: false
 description: You should never underestimate the predictability of stupidity
 type: default
 slug: dumb
 comments: true
-hide: 
-    - feedback
+hide:
+  - feedback
 preview: https://i.imgur.com/uqCQfcs.png
+lastmod: 2024-07-10T05:28:01.460Z
 ---
 
 
@@ -32,7 +40,7 @@ preview: https://i.imgur.com/uqCQfcs.png
 
 /// tab | v.HOOTS
 
-<video controls src="<https://www.dropbox.com/scl/fi/exqj0s9uflup1bqcxjz7g/0702.webm?rlkey=dsd23gwy5c6fnc7joze8y5bkt&st=kkinjovu&raw=1>" title="Recap""></video>
+<video controls src="https://www.dropbox.com/scl/fi/exqj0s9uflup1bqcxjz7g/0702.webm?rlkey=dsd23gwy5c6fnc7joze8y5bkt&st=46cyy4qa&raw=1" title="Recap""></video>
 
 ///
 /// tab | v.Dorian summary

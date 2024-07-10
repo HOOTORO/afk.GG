@@ -116,11 +116,6 @@ plugins:
       minify_html: true
   - glightbox:
       draggable: false
-      touchNavigation: true
-      loop: true
-      auto_caption: false
-      zoomable: true
-      width: "100%"
       skip_classes:
         - "skip-lb"
         - "slb"
