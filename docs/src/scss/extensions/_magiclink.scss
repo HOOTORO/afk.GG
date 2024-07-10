@@ -1,16 +1,3 @@
-// General styling for repository link icons
-:root > * {
-  --magiclink-email-icon: svg-load("@mdi/svg/svg/mail.svg");
-  --magiclink-github-icon: svg-load("@mdi/svg/svg/github.svg");
-  --magiclink-bitbucket-icon: svg-load("@mdi/svg/svg/bitbucket.svg");
-  --magiclink-gitlab-icon: svg-load("@mdi/svg/svg/gitlab.svg");
-  --magiclink-commit-icon: svg-load("@primer/octicons/build/svg/git-commit-24.svg");
-  --magiclink-compare-icon: svg-load("@primer/octicons/build/svg/file-diff-24.svg");
-  --magiclink-pull-icon: svg-load("@primer/octicons/build/svg/git-pull-request-24.svg");
-  --magiclink-issue-icon: svg-load("@primer/octicons/build/svg/issue-opened-24.svg");
-  --magiclink-discussion-icon: svg-load("@primer/octicons/build/svg/comment-discussion-24.svg");
-}
-
 .md-typeset {
   a[href^="mailto:"]:not(.magiclink-ignore)::before {
     mask-image: var(--magiclink-email-icon);

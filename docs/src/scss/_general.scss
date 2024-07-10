@@ -2,7 +2,7 @@
 :root {
   --md-heart: #{$clr-red-a200};
   --md-heart-big: #{$clr-red-a400};
-  --md-icon-size: px2rem(14px)
+  --md-icon-size: 1rem;
 
   /* Dark mode colors */
   [data-md-color-scheme="dracula"] {
@@ -23,7 +23,6 @@
     border-top: 0.1em double black;
     align-self: center;
   }
-
   // h4 {
   //   margin: 2em 0 1em;
   // }

@@ -19,13 +19,13 @@ draft: false
 comments: true
 status: new
 slug: abyss-coming
-lastmod: 2024-07-10T00:14:42.188Z
+lastmod: 2024-07-10T04:36:22.396Z
 hide:
     - feedback
 ---
 
 
-# Abyss Is Coming :material-alert-decagram:{ .mdx-pulse title="Added on July 9, 2024" }
+<!-- # Abyss Is Coming :material-alert-decagram:{.mdx-pulse title="Added on July 9, 2024"} -->
 
 В преддверии старта тестовой бездны.
 Спешу поделиться ^^организационной структурой^^ черных. В этот раз расписал более детально и наглядно, для самых юных. А то согласно некоторой обратной связи, прошлой отсылки к армейским структурам, оказалось недостаточно.
@@ -214,7 +214,7 @@ _meanwhile_...
 ## PS
 
 Не так давно, случайно наткнулся на [реддит-пост](https://www.reddit.com/r/afkarena/comments/1c3qmuc/abex_s12_data_analysis_and_player_leaderboard/)  
-Чувство испанского стыда не покидает до сих пор.
+Чувство испанского стыда не покидает до сих пор.  
 Хочется верить что этот пост, поможет в будущем избежать аналогичного публичного конфуза :kappa:
 
 </div>

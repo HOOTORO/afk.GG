@@ -1,15 +1,17 @@
 site_name: AFK. Все что желаешь знать.
 site_url: https://hooto.ru
 site_description: afk.GG is an 'AFK Arena' game fansite, and is not affiliated with Lilith Games in any way.
+
+# Source code
 repo_name: afk.GG
 repo_url: https://github.com/HOOTORO/afk.GG
 edit_uri: edit/master/docs/src/md/
-dev_addr: "0.0.0.0:80"
 
 copyright: > 
-  Copyright &copy; 2023 - 2024 Лев Николаевич, HOOTSMAN
+  Copyright &copy; 2023 - 2024 Лев Николаевич, HOOTSMAN<br>
   <a href="#__consent">Change cookie settings</a>
 docs_dir: docs/src/md
+
 theme:
   custom_dir: docs/theme
   name: material
@@ -26,23 +28,23 @@ theme:
     code: Chivo Mono
   palette:
     - scheme: default
+      primary: orange
+      accent: lime
       toggle:
         icon: fontawesome/solid/jedi
         name: Switch to dark mode
-      primary: orange
-      accent: lime
     - scheme: slate
+      primary: cyan
+      accent: orange
       toggle:
         icon: material/lambda
         name: Switch to dracula mode
-      primary: cyan
-      accent: orange
     - scheme: dracula
+      primary: deep purple
+      accent: deep purple
       toggle:
         icon: material/bat
         name: Switch to light mode
-      primary: deep purple
-      accent: deep purple
   features:
     - announce.dismiss
     - header.autohide
@@ -101,9 +103,12 @@ plugins:
       pagination: true
       pagination_per_page: 5
       categories: true
+      post_excerpt: required
+      post_excerpt_separator: <!-- more -->
       post_excerpt_max_authors: 3
       post_slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
       post_url_format: "{slug}"
+      post_readtime_words_per_minute: 250
   - search:
       lang: ru
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -136,12 +141,13 @@ plugins:
       branch: master
       exclude:
         - README.md
+  - tags:
+      tags_file: tags.md
 
 markdown_extensions:
   - toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      # slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
       permalink: "¤"
-      toc_depth: 3
   - smarty:
       smart_quotes: true
   - pymdownx.extra:
@@ -150,6 +156,8 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.smartsymbols
   - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
       user:   HOOTORO
       provider: github
       repo: afk.GG
@@ -258,10 +266,8 @@ extra:
 
 extra_css:
   - css/main.css
-  # - css/extra.css
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   - js/feedback.js
   - js/committers.js
   - js/ts/util/linker.js
-  # - js/ts/main.js

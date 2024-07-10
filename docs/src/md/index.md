@@ -9,7 +9,7 @@ hide:
 template: home.html
 draft: false
 authors: HOOTSMAN
-lastmod: 2024-07-10T00:54:22.019Z
+lastmod: 2024-07-10T01:57:19.200Z
 ---
 
 # ^^Welcome, fellow AFK enjoyer!^^

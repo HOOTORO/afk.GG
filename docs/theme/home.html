@@ -1,57 +1,27 @@
-{#- This file was automatically generated - do not edit -#}
-{% extends "main.html" %} {% block tabs %} {{ super() }}
+{% extends "main.html" %}
+
+{% block container %}
 <style>
   body {
     background: url("{{ './assets/bg.jpg' | url }}") no-repeat center center fixed;
     background-size: cover;
   }
 
-  .md-header {
-    position: initial;
-  }
 
   .md-meta__list {
     display: inline-flex !important;
   }
 
-  h2 {
+  h1 {
     text-shadow: 1px 1px 2px var(--md-accent-fg-color);
+    font-size: large;
+    font-weight: bold;
   }
 
   .md-typeset ul {
     list-style-type: none;
   }
 
-  .md-content__inner:before,
-  .md-nav__list,
-  .md-nav--secondary {
-    /* visibility: hidden; */
-    opacity: 0;
-  }
-
-  .md-typeset .md-button {
-    width: auto;
-    display: block;
-    backdrop-filter: blur(100px);
-  }
-
-  [data-md-color-scheme=slate] .md-button {
-    color: #5e00ff
-  }
-
-  .md-typeset .h4 {
-    display: block;
-    width: 200%;
-  }
-
-  .mdx-hero__content {
-    display: flex;
-    justify-content: space-between;
-    -webkit-font-smoothing: subpixel-antialiased;
-    text-align: center;
-    flex-direction: column;
-
-  }
 
   .md-content {
     max-width: 1000px;
@@ -60,7 +30,6 @@
     margin-bottom: 10rem;
     background-color: var(--md-default-bg-color--light);
     border-radius: 1rem;
-    /*mask-image: radial-gradient(var(--md-default-bg-color), #000, transparent);*/
     backdrop-filter: blur(0.2rem) brightness(0.4);
   }
 
@@ -80,11 +49,6 @@
     margin-bottom: unset;
   }
 
-  .md-post--excerpt .md-post__header {
-    height: 0.6rem;
-    gap: unset;
-  }
-
   .md-content__inner {
     margin: 0 2rem 1.2rem;
     padding-top: .6rem;
@@ -94,78 +58,105 @@
     text-align: center;
   }
 </style>
-{% endblock %}
+<div class="md-content" data-md-component="content">
+  <div class="md-content__inner">
+    <header class="md-typeset">
+      {{ page.content }}
+    </header>
+    <hr>
+    {% for pg in nav.pages %}
+    {% if pg.url == "blog/" %}
+    {% for post in pg.posts %}
+    <article class="md-post md-post--excerpt post-compact">
+      <h1 class="post-title">
+        <a href="{{ post.url }}">{{- post.title -}}</a>
+      </h1>
+      <header class="md-post__header">
+        {% if post.authors %}
+        <nav class="md-post__authors md-typeset">
+          {% for author in post.authors %}
+          <span class="md-author">
+            <img src="{{ author.avatar | url }}" alt="{{ author.name }}" />
+          </span>
+          {% endfor %}
+        </nav>
+        {% endif %}
 
-{% block content %}
-<header class="md-typeset">
-  {{ page.content }}
-</header>
-<hr>
-{% for page in nav.pages %}
-{% if page.url == "blog/" %}
-{% for post in page.posts %}
-<div class="md-post md-post--excerpt post-compact">
-  <h2 class="post-title">
-    <a href="{{ post.url }}">{{- post.title -}}</a>
-  </h2>
-  <div class="md-post__header">
-    {% if post.authors %}
-    <nav class="md-post__authors md-typeset">
-      {% for author in post.authors %}
-      <span class="md-author">
-        <img src="{{ author.avatar | url }}" alt="{{ author.name }}">
-      </span>
-      {% endfor %}
-    </nav>
-    {% endif %}
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="{{ post.config.date.created }}">
-            {{- post.config.date.created | date -}}
-          </time>
-          {#- Collapse whitespace -#}
-        </li>
-        {% if post.categories %}
-        <li class="md-meta__item">
-          {{ lang.t("blog.categories.in") }}
-          {% for category in post.categories %}
-          <a href="{{ category.url | url }}" class="md-meta__link">
-            {{- category.title -}}
-          </a>
-          {%- if loop.revindex > 1 %}, {% endif -%}
-          {% endfor -%}
-        </li>
-        {% endif %}
-        {% if post.config.readtime %}
-        {% set time = post.config.readtime %}
-        <li class="md-meta__item">
-          {% if time == 1 %}
-          {{ lang.t("readtime.one") }}
-          {% else %}
-          {{ lang.t("readtime.other") | replace("#", time) }}
+        <!-- Post metadata -->
+        <div class="md-post__meta md-meta">
+          <ul class="md-meta__list">
+
+            <!-- Post date -->
+            <li class="md-meta__item">
+              <time datetime="{{ post.config.date.created }}">
+                {{- post.config.date.created | date -}}
+              </time>
+              {#- Collapse whitespace -#}
+            </li>
+
+            <!-- Post categories -->
+            {% if post.categories %}
+            <li class="md-meta__item">
+              {{ lang.t("blog.categories.in") }}
+              {% for category in post.categories %}
+              <a href="{{ category.url | url }}" class="md-meta__link">
+                {{- category.title -}}
+              </a>
+              {%- if loop.revindex > 1 %}, {% endif -%}
+              {% endfor -%}
+            </li>
+            {% endif %}
+
+            <!-- Post readtime -->
+            {% if post.config.readtime %}
+            {% set time = post.config.readtime %}
+            <li class="md-meta__item">
+              {% if time == 1 %}
+              {{ lang.t("readtime.one") }}
+              {% else %}
+              {{ lang.t("readtime.other") | replace("#", time) }}
+              {% endif %}
+            </li>
+            {% endif %}
+          </ul>
+
+          <!-- Draft marker -->
+          {% if post.config.draft %}
+          <span class="md-draft">
+            {{ lang.t("blog.draft") }}
+          </span>
           {% endif %}
-        </li>
+        </div>
+      </header>
+
+      <!-- Post content -->
+      <div class="md-post__content md-typeset">
+        {{ post.content.split("<!-- more -->", 1)[0] }}
+
+        <!-- Continue reading link -->
+        {% if post.more %}
+        <nav class="md-post__action">
+          <a href="{{ post.url | url }}">
+            {{ lang.t("blog.continue") }}
+          </a>
+        </nav>
         {% endif %}
-      </ul>
-      {% if post.config.draft %}
-      <span class="md-draft">
-        {{ lang.t("blog.draft") }}
-      </span>
-      {% endif %}
-    </div>
-  </div>
-  {{ post.content.split('<!-- more -->', 1)[0] }}
-  <div class="post-excerpt-image crop-excerpt">
-    <a href="{{ post.url }}">
-      <img src="{{ post.meta.preview }}" alt="" />
-    </a>
+        {% if post.meta.preview %}
+        <div class="post-excerpt-image crop-excerpt">
+          <a href="{{ post.url }}">
+            <img src="{{ post.meta.preview }}" />
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </article>
+
+    {% endfor %}
+
+    {% endif %}
+    {% endfor %}
   </div>
 </div>
-{% endfor %}
-{% endif %}
-{% endfor %}
-{% endblock %}
+{% endblock container %}
 
-{% block footer %}
-{%endblock %}
+{% block footer %}{% endblock %}

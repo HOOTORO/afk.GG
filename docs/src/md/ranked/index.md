@@ -1,13 +1,13 @@
 ---
 title: ⛩️ Guilds
 description: |
-    Обзор СНГ гильдий из топа бездны и не только.<br> Дополняется по мере возможности и благодаря участникам сообщества!
+  Обзор СНГ гильдий из топа бездны и не только.<br> Дополняется по мере возможности и благодаря участникам сообщества!
 date: 2023-07-01
 authors:
-    - HOOTSMAN
-template: main.html
+  - HOOTSMAN
 comments: true
-draft: true
+draft: false
+lastmod: 2024-07-10T04:09:18.157Z
 ---
 
 /// details | Disclaimer
