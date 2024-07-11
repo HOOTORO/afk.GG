@@ -1,6 +1,6 @@
 ---
-title: AQUILON.The End.
-description: You should never underestimate the predictability of stupidity
+title: AQUILON. The End.
+description: Well shit happens.
 date:
     created: 2024-07-11
     updated: 2024-07-11
@@ -19,7 +19,7 @@ comments: true
 hide: []
 status: new
 slug: the-end-of-aquilon
-lastmod: 2024-07-11T23:34:59.094Z
+lastmod: 2024-07-11T23:47:52.697Z
 ---
 
 /// new
