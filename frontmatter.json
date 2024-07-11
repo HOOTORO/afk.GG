@@ -50,7 +50,8 @@
           "title": "template",
           "type": "string",
           "hidden": true,
-          "single": true
+          "single": true,
+          "default": null
         },
         {
           "name": "title",
@@ -80,7 +81,7 @@
               "isPublishDate": true
             },
             {
-              "dateFormat": "yyyy-MM-dd HH:mm",
+              "dateFormat": "yyyy-MM-dd",
               "default": "{{now}}",
               "name": "updated",
               "title": "Updated",
@@ -130,12 +131,7 @@
           "name": "hide",
           "title": "hide",
           "type": "choice",
-          "choices": [
-            "feedback",
-            "footer",
-            "navigation",
-            "toc"
-          ],
+          "choices": ["feedback", "footer", "navigation", "toc"],
           "multiple": true,
           "singleValueAsString": false
         },
@@ -143,10 +139,7 @@
           "name": "status",
           "title": "status",
           "type": "choice",
-          "choices": [
-            "new",
-            "old"
-          ]
+          "choices": ["new", "old"]
         },
         {
           "default": "{{slug}}",

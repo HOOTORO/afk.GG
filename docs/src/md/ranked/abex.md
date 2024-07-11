@@ -1,11 +1,17 @@
 ---
 title: AbEx
-description: >
+description: |
     СНГ и глобальный топы
-categories: [Game]
-tags: [Rankings, AFK Arena, RU]
-authors: [HOOTSMAN]
+categories:
+    - Game
+tags:
+    - Rankings
+    - AFK Arena
+    - RU
+authors:
+    - HOOTSMAN
 status: new
+lastmod: 2024-07-11T10:51:11.979Z
 ---
 
 /// details  | [AbEx Realm Ranking][realmranking]
@@ -25,6 +31,12 @@ status: new
 
 ## Топ СНГильдий
 
+/// tab | s12
+
+![alt text](https://i.imgur.com/ldXFUfO.png)
+
+[Оригинальная таблица, за авторством Резза и Whxtever](https://docs.google.com/spreadsheets/d/1fl9sOsdd3KOvavZEau6xM-9_foXIu_g0bYUAI8g4VDI/edit?gid=98585275#gid=98585275)
+///
 /// tab | S10
 
 В этот раз таблицу оперативно подготовили ребята из Prodota.
@@ -43,6 +55,10 @@ status: new
 
 [Оригинальная гугл-таблица][s9sheet]
 ///
+
+## Построения с прошлого сезона
+
+![alt text](https://i.imgur.com/Dnq8MUr.jpeg)
 
 ## AbEx Relics
 

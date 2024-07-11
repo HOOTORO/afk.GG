@@ -1,11 +1,26 @@
 ---
 title: Infographics
 description: Visual representation various data/researches
-authors: [HOOTSMAN]
-categories: [Game]
-tags: [AFK Arena, Stats, Guide]
+authors:
+    - HOOTSMAN
+categories:
+    - Game
+tags:
+    - AFK Arena
+    - Stats
+    - Guide
 template: main.html
+lastmod: 2024-07-11T02:09:21.998Z
+draft: false
+slug: infographics
+preview: /docs/theme/assets/stars/n_evolve_diamond_star_big.png
+comments: true
+status: new
 ---
+
+## HOW-TO SI40
+
+![alt text](https://i.imgur.com/j5TAvqQ.jpeg)
 
 ## Gallery Recommendations
 

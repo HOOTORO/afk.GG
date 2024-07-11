@@ -75,7 +75,7 @@
 .md-nav--primary .md-nav__title,
 .md-nav--secondary .md-nav__title,
 .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
-  background: none !important;
+  background: transparent;
   box-shadow: none !important;
 }
 
@@ -187,9 +187,10 @@
 //   background-color: transparent;
 // }
 
+.md-search__scrollwrap,
 .md-search__form,
 .md-consent__inner {
-  background-color: var(--md-accent-bg-color);
+  background-color: var(--md-default-bg-color--ultra-dark);
 }
 
 .md-search__suggest {
@@ -198,7 +199,7 @@
 
 .md-overlay,
 .md-search__overlay {
-  background-color: var(--md-default-bg-color--dark);
+  background-color: var(--md-default-fg-color--lighter);
 }
 
 [data-md-component="announce"] {

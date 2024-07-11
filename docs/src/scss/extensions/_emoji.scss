@@ -1,6 +1,15 @@
+[data-md-component="announce"] .twemoji {
+  color: var(--md-primary-fg-color);
+}
+
+
 .discord {
   color: #737bef !important;
   animation: move 2s infinite;
+}
+.heart,
+.youtube {
+  color: #EE0F0F;
 }
 
 .reddit {
@@ -35,9 +44,6 @@
   }
 }
 
-[data-md-component="announce"] .twemoji {
-  color: var(--md-primary-fg-color);
-}
 
 @keyframes pulse {
   0% {

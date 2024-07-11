@@ -17,13 +17,13 @@ $admonitions: (
   bug: "pink" &,
   example: "purple" &,
   quote: "grey" &,
-  config: "dark-pink" var(--md-admonition-icon--settings),
+  config: "dark-pink" var(--md-admonition-icon--settings)
 );
 
 $aniadmo: (
   new: pushup 1000ms infinite,
   sh-luv: heart 1000ms infinite,
-  settings: spin 4s linear infinite,
+  settings: spin 4s linear infinite
 );
 /* Style new admonitions with dark or light colors */
 :root > * {
@@ -38,7 +38,7 @@ $aniadmo: (
         --md-admonition-shadow-color--#{$name}: #{$alohaTint};
         --md-admonition-bg-color--#{$name}: #{color.adjust(
             map.get($colormap, $theme, "def-bg"),
-            $hue: 320deg,
+            $hue: 420deg,
             $lightness: -20%
           )};
       }
@@ -55,6 +55,8 @@ $aniadmo: (
 
         // Define base class
         > .admonition-title {
+          display: flex;
+          justify-content: space-between;
           background-color: var(--md-admonition-bg-color--#{$name});
           border-color: var(--md-admonition-icon-color--#{$name});
 

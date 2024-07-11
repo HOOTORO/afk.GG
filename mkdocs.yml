@@ -94,28 +94,23 @@ nav:
       - AFK Statistics:
           - kb/iog.md
   - Ranked:
-      - ranked/index.md
       - ranked/abex.md
       - ranked/hf.md
       - ranked/meme.md
+      - ranked/index.md
+      - ranked/guild-archive.md
   - HOOT-o-ROCK:
       - blog/index.md
       - tags.md
 
 plugins:
+  - privacy:
+      enabled: !ENV [CI, false]
   - blog:
       blog_toc: true
-      authors: true
-      authors_file: "{blog}/.authors.yml"
-      pagination: true
-      pagination_per_page: 5
-      categories: true
-      post_excerpt: required
-      post_excerpt_separator: <!-- more -->
       post_excerpt_max_authors: 3
-      post_slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
       post_url_format: "{slug}"
-      post_readtime_words_per_minute: 250
+      post_readtime_words_per_minute: 300
   - search:
       lang: ru
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -158,7 +153,6 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.magiclink:
       normalize_issue_symbols: true
-      repo_url_shorthand: true
       user:   HOOTORO
       provider: github
       repo: afk.GG

@@ -1,5 +1,5 @@
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+./venv/scripts/python -m pip install --upgrade pip
+./venv/scripts/python -m pip install -r requirements.txt
 
 
 # brew install pkg-config
