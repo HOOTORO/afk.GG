@@ -63,8 +63,18 @@
   }
 }
 
+@keyframes new {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+}
+
+50% {
+    transform: scale(1.15) rotate(10deg);
+}
+}
+
 .mdx-pulse {
-  animation: pulse 1.5s ease infinite;
+  animation: new 2s infinite;
 }
 
 .twemoji {

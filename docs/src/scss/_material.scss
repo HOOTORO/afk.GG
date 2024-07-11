@@ -81,9 +81,6 @@
 
 @media screen and (max-width: 76.1875em) {
   .md-nav--primary {
-    .md-nav__item--active > .md-nav__link:not(:hover) {
-      color: var(--md-primary-fg-color);
-    }
     .md-nav__title {
       color: var(--md-text-color);
       background-color: var(--md-default-bg-color--dark);
@@ -101,7 +98,7 @@
 }
 
 .md-header {
-  color: var(--md-text-color);
+  color: var(--md-header-text);
   background-color: var(--md-header-bg-color);
   border-bottom: 0.15rem solid var(--md-accent-fg-color);
 }
@@ -115,6 +112,7 @@
 }
 
 [data-md-color-scheme="dracula"] .md-header__option:before {
+  color: var(--md-accent-fg-color-ass);
   content: "Dracula";
 }
 
@@ -182,11 +180,6 @@
   color: var(--md-default-fg-color--light);
 }
 
-// [data-md-color-scheme="dracula"]
-// [data-md-toggle="search"]:checked ~ .md-header .md-search__input {
-//   background-color: transparent;
-// }
-
 .md-search__scrollwrap,
 .md-search__form,
 .md-consent__inner {
@@ -212,4 +205,12 @@
 
 .md-footer-meta {
   border-top: 0.2rem solid var(--md-primary-fg-color);
+}
+
+.md-meta {
+  color: var(--md-default-fg-color);
+}
+
+.md-meta__link:hover {
+  color: var(--md-accent-fg-color-ass);
 }

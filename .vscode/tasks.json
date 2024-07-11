@@ -5,9 +5,7 @@
       "type": "typescript",
       "tsconfig": "tsconfig.json",
       "option": "watch",
-      "problemMatcher": [
-        "$tsc-watch"
-      ],
+      "problemMatcher": ["$tsc-watch"],
       "group": "build",
       "label": "tsc: watch - tsconfig.json"
     },
@@ -17,6 +15,14 @@
       "problemMatcher": [],
       "label": "local.dev",
       "detail": "tsc --watch & npm run -s SASS:watch & npm run -s RE:serve"
+    },
+    {
+      "type": "npm",
+      "script": "SASS:build",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: SASS:build",
+      "detail": "sass docs/src/scss:docs/theme/css/"
     }
   ]
 }

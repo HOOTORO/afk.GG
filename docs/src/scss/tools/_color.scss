@@ -9,6 +9,6 @@
   @return mix(black, $color, $percentage);
 }
 
-@function opacify($color, $amount)  {
-  @return color.adjust($color, $alpha: $amount)
+@function spread($color)  {
+  @return $color lighten($color, 5%) color.adjust($color, $lightness: -5%)
 }

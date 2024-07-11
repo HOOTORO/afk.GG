@@ -1,27 +1,27 @@
 ---
 title: Guild Archive
 description: |
-    Данные сильно утратили актуальность, поэтому в не тронутом виде отправляются в архив.
+  Данные сильно утратили актуальность, поэтому в не тронутом виде отправляются в архив.
 date:
-    created: 2024-07-11
-    updated: 2024-07-11
+  created: 2024-07-11
+  updated: 2024-07-11
 preview: /docs/theme/assets/portraits/GentryD.jpg
 authors:
-    - HOOTSMAN
+  - HOOTSMAN
 categories:
-    - Game
-    - Retro
+  - Game
+  - Retro
 tags:
-    - AFK Arena
-    - Community
-    - RU
+  - AFK Arena
+  - Community
+  - RU
 draft: true
 comments: false
 hide:
-    - feedback
+  - feedback
 status: old
 slug: guild-archive
-lastmod: 2024-07-11T03:05:34.435Z
+lastmod: 2024-07-11T18:17:52.432Z
 ---
 
 
