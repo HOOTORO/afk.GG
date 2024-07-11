@@ -10,7 +10,6 @@
 }
 
 body {
-  // background: var(--slate-gradient) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +20,6 @@ body {
   margin: 1px;
 }
 
-/* <select> styles */
 select {
   width: 8em;
   height: 2em;
@@ -30,11 +28,6 @@ select {
   color: map.get($colormap, $drac, "section");
   font: inherit;
   text-align: center;
-  //   $glass: rgba(255, 255, 255, 0.2);
-  // $glass-icon: rgba(255, 255, 255, 0.3);
-  //   background:
-  //     url("../assets/svg/Caret_down_font_awesome_whitevariation.svg") no-repeat right 0.8em center / 1.4em,
-  //     linear-gradient(to left, $glass-icon 2em, $glass 3em);
   border: 0;
   border-radius: 0.25em;
   outline: 0;

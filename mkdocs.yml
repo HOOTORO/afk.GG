@@ -27,12 +27,12 @@ theme:
     # :material-arrow-top-left-bottom-right:
     # :material-arrow-top-left-bottom-right-bold:
     # 
-  font:
+  font: false
     # text: Comfortaa, Play, Inter Tight, Bellota Text, Tektur (funny), Tenor Sans
     # too tight/thin: Yanone Kaffeesatz  Poiret One, Sawarabi Gothic
     # g: Montserrat Alternates, Zen Kaku Gothic New, Zen Kaku Gothic Antique (new bettr), Zen Kurenaido
-    text: Manrope
-    code: Victor Mono
+    # text: Manrope
+    # code: Victor Mono
   palette:
     - scheme: default
       primary: lime

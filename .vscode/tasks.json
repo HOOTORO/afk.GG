@@ -23,6 +23,14 @@
       "problemMatcher": [],
       "label": "npm: SASS:build",
       "detail": "sass docs/src/scss:docs/theme/css/"
+    },
+    {
+      "type": "shell",
+      "label": "Summaraze written code",
+      "osx": {
+        "command": "${workspaceFolder}/scripts/codestat.sh"
+      },
+      "runOptions": { "runOn": "folderOpen" }
     }
   ]
 }

@@ -280,7 +280,6 @@
 [dodicus]: https://i.imgur.com/krufmGS.jpeg
 [dorian]: https://i.imgur.com/Kxn2EHN.png
 
-
 [aqua-dmb1]: https://i.imgur.com/ori8bQY.jpeg
 [aqua-dmb2]: https://i.imgur.com/kN9FTBG.jpeg
 [aqua-dmb3]: https://i.imgur.com/VVNAuXU.jpeg
@@ -295,3 +294,13 @@
 
 [toha]: https://i.imgur.com/H6k36cN.jpeg
 [dodikna]: https://i.imgur.com/2M7nvtw.jpeg
+
+<!-- !3 -->
+
+[orgmap]: https://i.imgur.com/KLkLu7q.jpeg
+[hospareations]: https://i.imgur.com/sYPKFSt.png
+[hoswitness]: https://i.imgur.com/JVSXXy1.png
+[hoswitness]: https://i.imgur.com/JVSXXy1.png
+[hospargs]: https://i.imgur.com/eJM7bkK.png
+[hospphiST]: https://i.imgur.com/0d2DBZY.png
+[реддит-пост]: https://www.reddit.com/r/afkarena/comments/1c3qmuc/abex_s12_data_analysis_and_player_leaderboard/  

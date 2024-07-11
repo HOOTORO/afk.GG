@@ -19,13 +19,13 @@ comments: true
 hide: []
 status: new
 slug: the-end-of-aquilon
-lastmod: 2024-07-11T11:25:38.754Z
+lastmod: 2024-07-11T23:34:59.094Z
 ---
 
 /// new
 Вполне ожидаемо, но тем не менее неожиданно скоропостижно развалился AQUILON, не дотянув даже до старта тестового сезона.
-Грустно, эпик фейлу не быть.
-Подготовил рекап событий вв удобном формате.
+Грустно, эпик провалу не быть.
+Подготовил сводку событий в удобном формате.
 
-<video controls src="https://www.dropbox.com/scl/fi/cluao8leyebwvcht9mjcb/new_f.mp4?rlkey=t4l5xyr05ueoo9zhxluekhnkj&st=x5r9p2q9&raw=1" title="Title"></video>
+<video controls width="1376" height="720" src="https://www.dropbox.com/scl/fi/cluao8leyebwvcht9mjcb/new_f.mp4?rlkey=t4l5xyr05ueoo9zhxluekhnkj&st=x5r9p2q9&raw=1" title="SECOND WITNESSING OF A HOOTSMAN"></video>
 ///
