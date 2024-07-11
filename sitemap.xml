@@ -16,11 +16,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hooto.ru/blog/2024-07-11-r.i.p-aquilon/</loc>
-         <lastmod>2024-07-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://hooto.ru/blog/it-sank/</loc>
          <lastmod>2024-07-11</lastmod>
          <changefreq>daily</changefreq>
@@ -82,6 +77,11 @@
     </url>
     <url>
          <loc>https://hooto.ru/blog/abyss-coming/</loc>
+         <lastmod>2024-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hooto.ru/blog/the-end-of-aquilon/</loc>
          <lastmod>2024-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -176,6 +176,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hooto.ru/blog/category/retro/</loc>
+         <lastmod>2024-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hooto.ru/blog/category/showcase/</loc>
          <lastmod>2024-07-11</lastmod>
          <changefreq>daily</changefreq>
@@ -197,11 +202,6 @@
     </url>
     <url>
          <loc>https://hooto.ru/blog/category/incident/</loc>
-         <lastmod>2024-07-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hooto.ru/blog/category/retro/</loc>
          <lastmod>2024-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
