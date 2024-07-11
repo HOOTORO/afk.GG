@@ -104,8 +104,8 @@ nav:
       - tags.md
 
 plugins:
-  - privacy:
-      enabled: !ENV [CI, false]
+  # - privacy:
+  #     enabled: !ENV [CI, false]
   - blog:
       blog_toc: true
       post_excerpt_max_authors: 3
