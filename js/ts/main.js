@@ -1,4 +1,5 @@
 import { abexApp } from "./abex/abex.js";
+import { AttackForm } from "./abex/attackform.js";
 import { BossIcons } from "./components/bossicon.js";
 import { populateStorage, qLog, setApp } from "./components/helper.js";
 import { startApp } from "./income.js";
@@ -16,6 +17,8 @@ switch (location) {
         BossIcons();
     case Locations.abex:
         abexApp();
+    case Locations.warnotes:
+        AttackForm();
     default:
         console.log("nothing to do here");
 }

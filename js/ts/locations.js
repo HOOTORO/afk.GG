@@ -9,4 +9,7 @@ export var Locations;
     Locations["abex"] = "/kb/abex/";
     Locations["income"] = "/kb/income/";
     Locations["modes"] = "/game/modes/";
+    Locations["ranked"] = "/ranked/";
+    Locations["tools"] = "/ranked/tools/";
+    Locations["warnotes"] = "/ranked/tools/warnotes/";
 })(Locations || (Locations = {}));
