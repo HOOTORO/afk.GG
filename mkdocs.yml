@@ -99,6 +99,8 @@ nav:
       - ranked/meme.md
       - ranked/index.md
       - ranked/guild-archive.md
+      - Tools:
+          - ranked/tools/warnotes.md
   - HOOT-o-ROCK:
       - blog/index.md
       - tags.md

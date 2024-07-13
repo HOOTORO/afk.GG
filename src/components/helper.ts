@@ -229,24 +229,3 @@ interface Builder<T> {
 
   finally(): T;
 }
-
-//class DOMBuilder implements Builder<HTMLElement> {
-//
-//  value: HTMLElement;
-//
-//  then(next: (tag: string, props?: prop[]) => HTMLElement): DOMBuilder{
-//    return new DOMBuilder(this.value.appendChild(next(tag)));
-//  }
-//
-//  finally(): HTMLElement {
-//    return this.value;
-//  }
-//
-//  constructor(tag: string, props?: prop[]) {
-//    let d = document.createElement(tag)
-//    for (const k,v of props ){
-//      d.setAttribute(k,v)
-//    }
-//    this.value = d;
-//  }
-//}

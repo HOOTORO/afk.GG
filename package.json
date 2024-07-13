@@ -31,6 +31,8 @@
     "@types/cors": "^2.8.13",
     "@types/jquery": "^3.5.16",
     "@types/node": "^20.3.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "@types/sqlite3": "^3.1.8",
     "concurrently": "^8.2.0",
     "postcss-inline-svg": "^6.0.0",
@@ -45,6 +47,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "glightbox": "^3.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.52.1",
     "sqlite3": "^5.1.6"
   }
 }

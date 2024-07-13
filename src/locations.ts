@@ -11,5 +11,8 @@ export enum Locations {
   abex = `${Locations.kb}abex/`,
   income = `${Locations.kb}income/`,
 
-  modes = `${Locations.game}modes/`
+  modes = `${Locations.game}modes/`,
+  ranked = `${Locations.main}ranked/`,
+  tools = `${Locations.ranked}tools/`,
+  warnotes = `${Locations.tools}warnotes/`,
 }

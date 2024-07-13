@@ -30,7 +30,20 @@
       "osx": {
         "command": "${workspaceFolder}/scripts/codestat.sh"
       },
-      "runOptions": { "runOn": "folderOpen" }
+      "windows": {
+        "command": "write",
+        "args": ["not implemented"]
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "serve .venv",
+      "command": ".venvScriptsActivate.ps1 & mkdocs serve --watch-theme",
+      "problemMatcher": []
     }
   ]
 }

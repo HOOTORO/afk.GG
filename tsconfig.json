@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "react",
     "module": "ESNext",
     "moduleResolution": "Node",
     "noImplicitAny": true,
@@ -7,7 +8,8 @@
     "removeComments": true,
     "rootDir": "src",
     "outDir": "docs/theme/js/ts",
-    "target": "ESNext"
+    "target": "ESNext",
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src/**/*"]
 }

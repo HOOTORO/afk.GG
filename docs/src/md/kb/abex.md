@@ -1,11 +1,17 @@
 ---
 title: AbEx | Helper
-description: >
+description: |
     Ваш помощник в сезон экспедиции в Бездну.
-authors: [HOOTSMAN]
-categories: [Game]
-tags: [Tool, AbEx, AFK Arena]
+authors:
+    - HOOTSMAN
+categories:
+    - Game
+tags:
+    - Tool
+    - AbEx
+    - AFK Arena
 template: templates/apps.j2
+lastmod: 2024-07-12T03:59:15.479Z
 ---
 
 ## Apps
@@ -42,21 +48,6 @@ let me know if found any.
 ///
 /////
 
-///// tab | Run Test Form
-/// info | Description
-Setup team, add attack data and export to csv.
-///
-/// html | div#attack-app
-///
-
-//// details | Team management
-    type: settings
-    open: False
-
-/// html | div#team-set
-///
-////
-/////
 
 ///// tab | Attack Remain Calculator
 /// info | Description

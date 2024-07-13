@@ -2,66 +2,66 @@
   {
     "name": "Rock Lizard",
     "short": "Rock",
-    "icon": "../../assets/portraits/pet/pet_6008.png"
+    "icon": "../../../assets/portraits/pet/pet_6008.png"
   },
   {
     "name": "Talismane",
     "short": "Tali",
-    "icon": "../../assets/portraits/pet/pet_6012.png"
+    "icon": "../../../assets/portraits/pet/pet_6012.png"
   },
   {
     "name": "Moth",
     "short": "Mot",
-    "icon": "../../assets/portraits/pet/phantasmoth.png"
+    "icon": "../../../assets/portraits/pet/phantasmoth.png"
   },
   {
     "name": "Fox Fatale",
     "short": "FoxF",
-    "icon": "../../assets/portraits/pet/fox_fatale.png"
+    "icon": "../../../assets/portraits/pet/fox_fatale.png"
   },
   {
     "name": "Winged Lion",
     "short": "Lion",
-    "icon": "../../assets/portraits/pet/pet_6007.png"
+    "icon": "../../../assets/portraits/pet/pet_6007.png"
   },
   {
     "name": "Flutter Owl",
     "short": "FOwl",
-    "icon": "../../assets/portraits/pet/pet_6011.png"
+    "icon": "../../../assets/portraits/pet/pet_6011.png"
   },
   {
     "name": "Seal",
     "short": "Seal",
-    "icon": "../../assets/portraits/pet/slumber_seal.png"
+    "icon": "../../../assets/portraits/pet/slumber_seal.png"
   },
   {
     "name": "Souflee",
     "short": "Cake",
-    "icon": "../../assets/portraits/pet/savage_souffle.png"
+    "icon": "../../../assets/portraits/pet/savage_souffle.png"
   },
   {
     "name": "Deer",
     "short": "Dir",
-    "icon": "../../assets/portraits/pet/pet_6010.png"
+    "icon": "../../../assets/portraits/pet/pet_6010.png"
   },
   {
     "name": "Blade Lizard",
     "short": "Blade",
-    "icon": "../../assets/portraits/pet/pet_6006.png"
+    "icon": "../../../assets/portraits/pet/pet_6006.png"
   },
   {
     "name": "Red Fat",
     "short": "RFat",
-    "icon": "../../assets/portraits/pet/pet_6005.png"
+    "icon": "../../../assets/portraits/pet/pet_6005.png"
   },
   {
     "name": "White Snow Fat",
     "short": "WFat",
-    "icon": "../../assets/portraits/pet/pet_6004.png"
+    "icon": "../../../assets/portraits/pet/pet_6004.png"
   },
   {
     "name": "Vesperio",
     "short": "Vesp",
-    "icon": "../../assets/portraits/pet/pet_6009.png"
+    "icon": "../../../assets/portraits/pet/pet_6009.png"
   }
 ]
