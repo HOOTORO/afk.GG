@@ -1,29 +1,20 @@
-import { abexApp } from "./abex/abex.js";
-import { AttackForm } from "./abex/attackform.js";
-import { BossIcons } from "./components/bossicon.js";
-import { populateStorage, qLog, setApp } from "./components/helper.js";
-import { startApp } from "./income.js";
-import { Locations } from "./locations.js";
+import { populateStorage, log, setApp } from "./components/helper.js";
+import { runRankedIncome } from "./income.js";
+import { Locations } from "./util/locations.js";
 import { userFields } from "./model/constants.js";
 import { User } from "./model/types.js";
 const location = window.location.pathname;
 const user = new User("1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY");
 initUser();
-console.log('Loca: %s', location);
+console.log("Loca: %s", location);
 switch (location) {
     case Locations.income:
-        startApp();
-    case Locations.modes:
-        BossIcons();
-    case Locations.abex:
-        abexApp();
-    case Locations.warnotes:
-        AttackForm();
+        runRankedIncome();
     default:
         console.log("nothing to do here");
 }
 function initUser() {
-    qLog(`Init user...`);
+    log(`Init user...`);
     for (let inputField of userFields) {
         if (!localStorage.getItem(inputField.name)) {
             const selected = $(inputField.name).find(":selected").get(0);
@@ -35,3 +26,4 @@ function initUser() {
     }
 }
 export { initUser, user };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9tYWluLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxlQUFlLEVBQUUsR0FBRyxFQUFFLE1BQU0sRUFBRSxNQUFNLHdCQUF3QixDQUFDO0FBQ3RFLE9BQU8sRUFBRSxlQUFlLEVBQUUsTUFBTSxhQUFhLENBQUM7QUFDOUMsT0FBTyxFQUFFLFNBQVMsRUFBRSxNQUFNLHFCQUFxQixDQUFDO0FBQ2hELE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQztBQUNsRCxPQUFPLEVBQUUsSUFBSSxFQUFFLE1BQU0sa0JBQWtCLENBQUM7QUFFeEMsTUFBTSxRQUFRLEdBQUcsTUFBTSxDQUFDLFFBQVEsQ0FBQyxRQUFRLENBQUM7QUFDMUMsTUFBTSxJQUFJLEdBQVMsSUFBSSxJQUFJLENBQUMsOENBQThDLENBQUMsQ0FBQztBQUM1RSxRQUFRLEVBQUUsQ0FBQztBQUNYLE9BQU8sQ0FBQyxHQUFHLENBQUMsVUFBVSxFQUFFLFFBQVEsQ0FBQyxDQUFDO0FBR2xDLFFBQVEsUUFBUSxFQUFFLENBQUM7SUFDakIsS0FBSyxTQUFTLENBQUMsTUFBTTtRQUNuQixlQUFlLEVBQUUsQ0FBQztJQUNwQjtRQUNFLE9BQU8sQ0FBQyxHQUFHLENBQUMsb0JBQW9CLENBQUMsQ0FBQztBQUN0QyxDQUFDO0FBRUQsU0FBUyxRQUFRO0lBQ2YsR0FBRyxDQUFDLGNBQWMsQ0FBQyxDQUFDO0lBQ3BCLEtBQUssSUFBSSxVQUFVLElBQUksVUFBVSxFQUFFLENBQUM7UUFDbEMsSUFBSSxDQUFDLFlBQVksQ0FBQyxPQUFPLENBQUMsVUFBVSxDQUFDLElBQUksQ0FBQyxFQUFFLENBQUM7WUFDM0MsTUFBTSxRQUFRLEdBQUcsQ0FBQyxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsQ0FBQyxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxDQUFDO1lBQzdELGVBQWUsQ0FBQyxVQUFVLENBQUMsSUFBSSxFQUFFLFFBQVEsRUFBRSxTQUFTLENBQUMsQ0FBQztRQUN4RCxDQUFDO2FBQU0sQ0FBQztZQUNOLE1BQU0sQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDMUIsQ0FBQztJQUNILENBQUM7QUFDSCxDQUFDO0FBRUQsT0FBTyxFQUFFLFFBQVEsRUFBRSxJQUFJLEVBQUUsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHBvcHVsYXRlU3RvcmFnZSwgbG9nLCBzZXRBcHAgfSBmcm9tIFwiLi9jb21wb25lbnRzL2hlbHBlci5qc1wiO1xuaW1wb3J0IHsgcnVuUmFua2VkSW5jb21lIH0gZnJvbSBcIi4vaW5jb21lLmpzXCI7XG5pbXBvcnQgeyBMb2NhdGlvbnMgfSBmcm9tIFwiLi91dGlsL2xvY2F0aW9ucy5qc1wiO1xuaW1wb3J0IHsgdXNlckZpZWxkcyB9IGZyb20gXCIuL21vZGVsL2NvbnN0YW50cy5qc1wiO1xuaW1wb3J0IHsgVXNlciB9IGZyb20gXCIuL21vZGVsL3R5cGVzLmpzXCI7XG5cbmNvbnN0IGxvY2F0aW9uID0gd2luZG93LmxvY2F0aW9uLnBhdGhuYW1lO1xuY29uc3QgdXNlcjogVXNlciA9IG5ldyBVc2VyKFwiMV9MNExtb2JzT3RtVmVCaTNSd1RDZXNweU1xNHZaTFNKVDFFLVFPc1hwb1lcIik7XG5pbml0VXNlcigpO1xuY29uc29sZS5sb2coXCJMb2NhOiAlc1wiLCBsb2NhdGlvbik7XG4vLyBPcGVuIGEgU1FMaXRlIGRhdGFiYXNlLCBzdG9yZWQgaW4gdGhlIGZpbGUgZGIuc3FsaXRlXG5cbnN3aXRjaCAobG9jYXRpb24pIHtcbiAgY2FzZSBMb2NhdGlvbnMuaW5jb21lOlxuICAgIHJ1blJhbmtlZEluY29tZSgpO1xuICBkZWZhdWx0OlxuICAgIGNvbnNvbGUubG9nKFwibm90aGluZyB0byBkbyBoZXJlXCIpO1xufVxuXG5mdW5jdGlvbiBpbml0VXNlcigpIHtcbiAgbG9nKGBJbml0IHVzZXIuLi5gKTtcbiAgZm9yIChsZXQgaW5wdXRGaWVsZCBvZiB1c2VyRmllbGRzKSB7XG4gICAgaWYgKCFsb2NhbFN0b3JhZ2UuZ2V0SXRlbShpbnB1dEZpZWxkLm5hbWUpKSB7XG4gICAgICBjb25zdCBzZWxlY3RlZCA9ICQoaW5wdXRGaWVsZC5uYW1lKS5maW5kKFwiOnNlbGVjdGVkXCIpLmdldCgwKTtcbiAgICAgIHBvcHVsYXRlU3RvcmFnZShpbnB1dEZpZWxkLm5hbWUsIHNlbGVjdGVkPy5pbm5lclRleHQpO1xuICAgIH0gZWxzZSB7XG4gICAgICBzZXRBcHAoaW5wdXRGaWVsZC5uYW1lKTtcbiAgICB9XG4gIH1cbn1cblxuZXhwb3J0IHsgaW5pdFVzZXIsIHVzZXIgfTtcbiJdfQ==

@@ -1,31 +1,41 @@
 [
   {
-    "id": "WAR",
-    "name": "might",
+    "id": 1,
+    "acronym": "WAR",
+    "class": "warrior",
+    "name": "MIGHT",
     "icon": "https://i.imgur.com/wTr2Zxo.png",
     "value": 60
   },
   {
-    "id": "FORT",
-    "name": "fort",
+    "id": 2,
+    "acronym": "FORT",
+    "class": "tank",
+    "name": "FORTITUDE",
     "icon": "https://i.imgur.com/gGCAwop.png",
     "value": 60
   },
   {
-    "id": "MAG",
-    "name": "mage",
-    "icon": "https://i.imgur.com/UXu5KgP.png",
-    "value": 60
-  },
-  {
-    "id": "RAN",
-    "name": "celerity",
+    "id": 3,
+    "acronym": "RAN",
+    "class": "ranger",
+    "name": "CELERITY",
     "icon": "https://i.imgur.com/MBGw43H.png",
     "value": 60
   },
   {
-    "id": "SUP",
-    "name": "support",
+    "id": 4,
+    "acronym": "MAG",
+    "class": "mage",
+    "name": "SORCERY",
+    "icon": "https://i.imgur.com/UXu5KgP.png",
+    "value": 60
+  },
+  {
+    "id": 5,
+    "acronym": "SUP",
+    "class": "support",
+    "name": "SUSTENANCE",
     "icon": "https://i.imgur.com/hOrvjT5.png",
     "value": 60
   }
