@@ -118,7 +118,7 @@ export class Expeditor {
     );
   }
   futureValue() {
-    let convertedDropEssValue = 0;
+    let convertedDropEssValue = 1;
     this.captured.forEach((x) => {
       if (x.value > 0) {
         const avgPrice =

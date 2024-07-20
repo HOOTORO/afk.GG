@@ -21,19 +21,19 @@
   display: none;
 }
 
-.inventory.relic > img:hover + .relic-tooltip  {
-    position: absolute;
-    display: inline-block;
-    background: #2a5f6187;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 1px solid;
-    width: max-content;
-    z-index: 1;
+.inventory.relic > img:hover + .relic-tooltip {
+  position: absolute;
+  display: inline-block;
+  background: #2a5f6187;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid;
+  width: max-content;
+  z-index: 1;
 }
 
 .relic-tooltip * {
-    display: table-cell;
+  display: table-cell;
 }
 
 // button.btn {
@@ -350,7 +350,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   input[type="number"] {
     background-color: var(--md-default-bg-color--darker);
     border: 0.1px solid var(--md-code-bg-color);
@@ -416,7 +417,8 @@
 .ui-input {
   border-radius: 10px;
   background: #0000005c;
-  padding: 5px 30px;
+  padding: 10px 30px;
+  margin-top: 6px;
 
   > * {
     max-height: 32px;

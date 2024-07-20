@@ -30,7 +30,7 @@ export class IconizedInput extends Iconized {
       }
     };
     const fni = () => {
-      return storedValue(this.name).toString();
+      return storedValue(this.name) ? storedValue(this.name).toString() : "0";
     };
 
     super(id, src, name);

@@ -21,7 +21,7 @@ export class Tier {
       case tier.ELITE:
         return "magenta";
       case tier.LEGENDARY:
-        return "yellow";
+        return "darkorange";
       case tier.MYTHIC:
         return "red";
       default:
