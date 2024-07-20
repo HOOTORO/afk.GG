@@ -192,8 +192,10 @@ function hasEmpty(obj: Record<string, any>): boolean {
 }
 
 export function safeSum(n: number[]) {
-  if (!hasEmpty(n)) {
-    return n.reduce((a, b) => a + b);
+  if (n.length > 0 && !hasEmpty(n)) {
+    return n.reduce((a, b) => a + b, 0);
+  } else {
+    return 0
   }
 }
 

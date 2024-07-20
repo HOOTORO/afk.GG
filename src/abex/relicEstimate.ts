@@ -63,7 +63,12 @@ export function updateTableData() {
     .replace("$tier", expeditor.DropTiers())
     .replace("$tw", expeditor.TotalCaptured())
     .replace("$gc", expeditor.MissEssence().toString())
-    .replace("$tl", expeditor.Timeleft().toPrecision(2))
+    .replace(
+      "$tl",
+      `${Math.floor(expeditor.Timeleft() / 24)} d. ${Math.round(
+        expeditor.Timeleft() % 24
+      )} h.`
+    )
     .replace("$tg", expeditor.ReadyToSet())
     .replace("$drop", expeditor.DropTime())
     .replace("$toSell", expeditor.ToSell());

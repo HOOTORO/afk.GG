@@ -31,9 +31,10 @@ $colormap: (
     "dark-yellow": hsl(51, 94%, 73%),
     "text": #373737,
     "rnb": linear-gradient(45deg, rgba(206, 255, 29, 0.712), #9c870fa9),
-    "def-bg": color.adjust(#ddff53, $lightness: 19%),
+    "def-bg": hsl(44, 77%, 88%) ,
+    // "def-bg": hsl(39, 77%, 83%) ,
     "dbg": linear-gradient(45deg, rgba(222, 222, 222, 0.383), #63636317),
-    "foot-bg": hsl(39, 77%, 83%),
+    "foot-bg": color.adjust(#ddff53, $lightness: -10%),
     "foot-fg": #1d1810
   ),
   $sla: (
@@ -97,9 +98,9 @@ $colormap: (
 
 :root > * {
 
-  --md-shadow-z1: 0 0.5rem 0.6rem var(--md-default-fg-color), 0 1rem 0 0.1rem var(--md-default-bg-color);
-  --md-shadow-z2: 0 #{px2rem(14px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(2px)} hsla(0, 0%, 0%, 0.2);
-  --md-shadow-z7: 0 0.2rem 0.6rem #4941414b, 0 0 0 0.1rem #47474716;
+  --md-shadow-z1: 0 0.5rem 0.6rem var(--md-default-fg-color), 0 1rem 1rem 0.1rem var(--md-default-bg-color);
+  --md-shadow-z2: 0 #{px2rem(14px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0.3rem #{px2rem(2px)} hsla(0, 17%, 8%, 0.377);
+  --md-shadow-z7: 0 0.2rem 0.6rem #4941414b, 0 0 0.4rem 0.1rem #47474716;
   /* Admonition colors */
   --md-admonition-fg-color: var(--md-default-fg-color);
   --md-admonition-bg-color: var(--md-default-bg-color--light);

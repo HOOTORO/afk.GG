@@ -27,7 +27,7 @@ const relicEstimateTable = `
     </tr>
     <tr>
       <td align=center><b>[ $tw settlements ]</b></td>
-      <td align=center>$inc/h</td>
+      <td align=center>$inc</td>
       <td align=center>$tier</td>
       <td align=center>$drop</td>
     </tr>
@@ -42,7 +42,7 @@ const relicEstimateTable = `
     <tr>
        <td colspan=2></td>
        <td colspan=1>$gc</td>
-      <td colspan=1>$tl h</td>
+      <td colspan=1>$tl</td>
     </tr>    
     <tr>
       <td align=center colspan=4>BAG</td>

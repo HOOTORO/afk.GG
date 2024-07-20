@@ -127,7 +127,8 @@
 .md-top:hover {
   background-color: var(--md-primary-fg-color);
 }
-.md-tabs__link--active {
+
+ .md-tabs__link--active {
   color: var(--md-primary-fg-color);
 }
 
@@ -149,7 +150,8 @@
   color: var(--md-default-fg-color--light);
 }
 
-.md-nav__item .md-nav__link--active {
+[data-md-color-scheme=slate] .md-nav__item .md-nav__link--active,
+[data-md-color-scheme=dracula] .md-nav__item .md-nav__link--active {
   color: var(--md-primary-fg-color);
 }
 
