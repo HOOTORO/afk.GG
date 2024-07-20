@@ -25,7 +25,6 @@
   color: var(--md-accent-fg-color--lighter);
   background-color: var(--md-default-bg-color--dark);
   -webkit-font-smoothing: subpixel-antialiased;
-  backdrop-filter: blur(2.5rem);
   line-height: 2.5;
 }
 
@@ -213,4 +212,8 @@
 
 .md-meta__link:hover {
   color: var(--md-accent-fg-color-ass);
+}
+
+.md-typeset .number-container .md-button {
+    padding: 0 3px;
 }

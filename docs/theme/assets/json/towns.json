@@ -1,26 +1,65 @@
-{
-  "5": {
-    "baseEPH": 200,
-    "garrisoned": 240,
-    "dropTier": 3,
-    "dropTime": 206800
-  },
-  "6": {
-    "baseEPH": 240,
-    "garrisoned": 288,
-    "dropTier": 3,
-    "dropTime": 172333
-  },
-  "7": {
-    "baseEPH": 280,
-    "garrisoned": 336,
+[
+  {
     "dropTier": 4,
-    "dropTime": 612000
+    "dropTime": 1224000,
+    "essencePerHour": 200,
+    "id": 2,
+    "name": "WILD1",
+    "yield": 0,
+    "icon": "/assets/ae/ranks/icon_level1.png"
   },
-  "8": {
-    "baseEPH": 320,
-    "garrisoned": 383,
+  {
+    "dropTier": 2,
+    "dropTime": 178500,
+    "essencePerHour": 80,
+    "id": 3,
+    "name": "T3",
+    "yield": 20,
+    "icon": "/assets/ae/ranks/icon_level3.png"
+  },
+  {
+    "dropTier": 2,
+    "dropTime": 137307,
+    "essencePerHour": 120,
+    "id": 4,
+    "name": "T4",
+    "yield": 20,
+    "icon": "/assets/ae/ranks/icon_level4.png"
+  },
+  {
+    "dropTier": 3,
+    "dropTime": 206800,
+    "essencePerHour": 200,
+    "id": 5,
+    "name": "T5",
+    "yield": 20,
+    "icon": "/assets/ae/ranks/icon_level5.png"
+  },
+  {
+    "dropTier": 3,
+    "dropTime": 172333,
+    "essencePerHour": 240,
+    "id": 6,
+    "name": "T6",
+    "yield": 20,
+    "icon": "/assets/ae/ranks/icon_level6.png"
+  },
+  {
     "dropTier": 4,
-    "dropTime": 535500
+    "dropTime": 612000,
+    "essencePerHour": 280,
+    "id": 7,
+    "name": "T7",
+    "yield": 20,
+    "icon": "/assets/ae/ranks/icon_level7.png"
+  },
+  {
+    "dropTier": 4,
+    "dropTime": 535500,
+    "essencePerHour": 320,
+    "id": 8,
+    "name": "T8",
+    "yield": 20,
+    "icon": "/assets/ae/ranks/icon_level8.png"
   }
-}
+]

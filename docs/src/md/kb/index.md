@@ -1,8 +1,9 @@
 ---
 title: Welcome
-description: >
-    Раздел с полезной информацией про внутриигровые механики.
+description: |
+  Раздел с полезной информацией про внутриигровые механики.
 template: main.html
+lastmod: 2024-07-15T17:05:57.946Z
 ---
 
 Forged by community!
@@ -21,6 +22,6 @@ Forged by community!
 
 ## Посчитать / Do Math
 
-- [AbEx | Helper](abex.md) handy tools for AbEx.
+- [AbEx | Helper](../ranked/tools/abex.md) handy tools for AbEx.
 - [Income | Resource](income.md) Расчет ресурсов при указании средних значений в режимах / Resource Income calculator
 - [Dust | Level Progress](dust.md) Расчет пыли в зависимости от указанных параметров / Dust/Level estimate

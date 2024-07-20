@@ -2,28 +2,40 @@ import {
   buildElement,
   buildProperty,
   createElem,
-  DElem,
-  ElProps,
+  elProp,
   genId,
-} from "../components/doManager.js";
-import * as t from "../components/timeleft.js";
-import {AbEx, Boss} from "../model/constants.js";
-import {Expeditor} from "../model/expeditor.js";
-import {Militia} from "../model/types.js";
-import {loadBag, runRelic} from "./relic.js";
-import {AttackForm} from "./attackform.js";
-import {aeIcons} from "./abexvars.js";
+} from "./components/doManager.js";
+import { aeIcons, Boss } from "./model/constants.js";
+
+import { loadBag, RelicEstimator } from "./abex/relicEstimate.js";
+import { elTag, Input, log } from "./components/helper.js";
+import { Militia } from "./types/militia.js";
+import { Expeditor } from "./types/expeditor.js";
+import { Locations } from "./util/locations.js";
+import { stam } from "./types/abex-resource.js";
+import { AttackForm } from "./abex/attackform.js";
 
 export const mil = new Militia(10);
 export const expeditor = new Expeditor(mil, false);
 
-export function abexApp() {
-  const app = document.getElementById("rem-food");
-  // runAbExTimers();
-  runRelic();
-  loadBag();
-  AttackForm();
+switch (window.location.pathname) {
+  case Locations.abex:
+    RelicEstimator();
+    loadBag();
+    break;
+  case Locations.warBook:
+    log(
+      `may be PIDOR? ${window.location.pathname}\nno, you PIDOR may be? ${Locations.warBook}`
+    );
+    AttackForm();
+    foodRemain();
+    break;
+  default:
+    console.log("nothing to do here");
+}
 
+export function foodRemain() {
+  const app = document.getElementById("rem-food");
   if (!app) {
     console.log(`no app tag, return`);
   } else {
@@ -37,39 +49,20 @@ export function abexApp() {
       }
     });
   }
-
 }
-
-
-export default function runAbExTimers() {
-  if (AbEx.now < AbEx.start()) {
-    t.default(AbEx.lastAbexEnd, AbEx.start(), "abex-timer", `Next Season In<sup id="fnref:teo"><a href="#fn:teo" >1</a></sup>`, "")
-  } else if (AbEx.now < AbEx.silentHoursIn()) {
-    t.default(
-      AbEx.start(),
-      AbEx.silentHoursIn(),
-      "abex-timer",
-      "Silent Hour In",
-      "Наступил"
-    );
-  } else {
-    t.default(AbEx.start(), AbEx.left(), "abex-timer", "End In", "Сезон<br>завершен");
-  }
-}
-
 function updateAbex() {
   // updatevaluers
   mil.viewers = parseInt(
     document.getElementById("mil-specs").getAttribute("value")
   );
   const sod = document.getElementById("mil-sod") as HTMLInputElement;
-  expeditor.starStatus = sod.checked ? true : false;
-  expeditor.stamina = parseInt(
+  expeditor.star = sod.checked ? true : false;
+  expeditor.stamina.value = parseInt(
     document.getElementById("ex-food").getAttribute("value")
   );
 
   // calculations
-  let totalFood = expeditor.totalFood();
+  let totalFood = expeditor.SilentStam();
   let atl = totalFood / Boss.foodCost;
   let rtyLeft = (totalFood % Boss.foodCost) / Boss.retry;
 
@@ -83,7 +76,15 @@ function updateAbex() {
 function initForm(n: HTMLElement) {
   const inputFields = [
     {
-      n: DElem.Input,
+      n: elTag.Input,
+      v: "AbEx Start",
+      props: [
+        buildProperty("type", Input.Datetime),
+        buildProperty("id", "abex-date"),
+      ],
+    },
+    {
+      n: elTag.Input,
       v: "Current Stam",
       props: [
         buildProperty("type", "number"),
@@ -92,11 +93,11 @@ function initForm(n: HTMLElement) {
         buildProperty("max", "9999"),
         buildProperty("size", "20"),
         buildProperty("value", "0"),
-        buildProperty("icon", aeIcons.stam),
+        buildProperty("icon", stam),
       ],
     },
     {
-      n: DElem.Input,
+      n: elTag.Input,
       v: "Spectators",
       props: [
         buildProperty("type", "number"),
@@ -109,7 +110,7 @@ function initForm(n: HTMLElement) {
       ],
     },
     {
-      n: DElem.Input,
+      n: elTag.Input,
       v: "Star of Dawn",
       props: [
         buildProperty("type", "checkbox"),
@@ -119,8 +120,8 @@ function initForm(n: HTMLElement) {
     },
   ];
   const outputFields = ["Total Food", "Attacks left", "Retry Breakpoint"];
-  const out = createElem(DElem.Div, buildProperty(ElProps.Class, "outbox"));
-  const form = createElem(DElem.Form, buildProperty("id", "abex-form"));
+  const out = createElem(elTag.Div, buildProperty(elProp.Class, "outbox"));
+  const form = createElem(elTag.Form, buildProperty(elProp.Id, "abex-form"));
 
   for (const field of inputFields) {
     form.appendChild(buildElement(field.n, field.props, field.v));
@@ -128,7 +129,7 @@ function initForm(n: HTMLElement) {
 
   for (const o of outputFields) {
     out.appendChild(
-      buildElement(DElem.Span, [buildProperty("id", `${genId(o)}`)], o)
+      buildElement(elTag.Span, [buildProperty(elProp.Id, `${genId(o)}`)], o)
     );
   }
   n.appendChild(form);
@@ -142,4 +143,3 @@ function inputChange(e: HTMLInputElement) {
     e.setAttribute("value", e.value);
   }
 }
-

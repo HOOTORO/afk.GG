@@ -22,7 +22,16 @@
       "group": "build",
       "problemMatcher": [],
       "label": "npm: SASS:build",
-      "detail": "sass docs/src/scss:docs/theme/css/"
+      "detail": "sass docs/src/scss:docs/theme/css/",
+      "presentation": {
+        "echo": false,
+        "reveal": "never",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true,
+        "close": true
+      }
     },
     {
       "type": "shell",
@@ -44,6 +53,23 @@
       "label": "serve .venv",
       "command": ".venvScriptsActivate.ps1 & mkdocs serve --watch-theme",
       "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build",
+      "detail": "tsc --build",
+      "presentation": {
+        "echo": false,
+        "reveal": "never",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true,
+        "close": true
+      }
     }
   ]
 }

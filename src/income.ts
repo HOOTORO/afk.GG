@@ -1,26 +1,31 @@
-import {loadRewards, modeRewards, rewards} from "./components/dataloader.js";
-import {columnData} from "./components/gsheets.js";
-import {createElementN, createSelectList, populateStorage, rangeSlide} from "./components/helper.js";
-import {makeOut, updateResourceBox} from "./components/output.js";
-import {user} from "./main.js";
-import {ValueModes} from "./model/constants.js";
-import {Gsheet, RankReward} from "./model/types.js";
+import { loadRewards, modeRewards, rewards } from "./components/dataloader.js";
+import { columnData } from "./components/gsheets.js";
+import {
+  newEl,
+  createSelectList,
+  populateStorage,
+  rangeSlide,
+} from "./components/helper.js";
+import { makeOut, updateResourceBox } from "./components/output.js";
+import { user } from "./main.js";
+import { ValueModes } from "./model/constants.js";
+import { Gsheet, RankReward } from "./model/types.js";
 
 export const app = document.getElementById("app");
 
-export function startApp() {
+export function runRankedIncome() {
   app.appendChild(makeOut());
   drawInputs().catch((x) => console.log(`Promise rejected => ${x}`));
 }
 
 async function drawInputs() {
-  let inputForm = createElementN("form", {id: "a-form"});
+  let inputForm = newEl("form", { id: "a-form" });
 
   modeRewards().forEach((x) => {
     const mode = ValueModes.emuns().find((s) => s.table === x.mode);
     x.table
       .then((t: Gsheet) => {
-        const container = createElementN("div", {
+        const container = newEl("div", {
             class: "select-container",
           }),
           label = document.createElement("h4"),
@@ -33,7 +38,9 @@ async function drawInputs() {
         loadRewards(x.mode, t);
       })
       .then(() => app.appendChild(inputForm))
-      .catch((x: PromiseRejectedResult) => console.log(`Promise rejected${x.status}`))
+      .catch((x: PromiseRejectedResult) =>
+        console.log(`Promise rejected${x.status}`)
+      )
       .finally(() => {
         setTimeout(() => {
           app.dispatchEvent(new InputEvent("change"));
@@ -64,4 +71,3 @@ async function drawInputs() {
     }
   });
 }
-

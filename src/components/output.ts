@@ -1,6 +1,6 @@
 import { allRes, iconSize, leftover, xh } from "../model/constants.js";
 import { BaseResQty } from "../model/types.js";
-import { createElementN, weekLabels } from "./helper.js";
+import { newEl, weekLabels } from "./helper.js";
 
 function makeOut() {
   const out = document.createElement("div"),
@@ -27,10 +27,10 @@ function makeOut() {
 
 function drawResourceBox(parent: Element) {
   allRes.forEach((el: string) => {
-    const resContainer = createElementN("div", {
+    const resContainer = newEl("div", {
       class: "inc-res",
     });
-    const rr = createElementN("span", { id: el });
+    const rr = newEl("span", { id: el });
     resContainer.appendChild(getResImg(el));
     resContainer.appendChild(rr);
     parent.appendChild(resContainer);

@@ -1,8 +1,37 @@
-import {bres, verb} from "../model/constants.js";
-import {BaseResQty, User, prop} from "../model/types.js";
-import {updateResourceBox} from "./output.js";
+import { bres, verb } from "../model/constants.js";
+import { BaseResQty, User } from "../model/types.js";
+import { updateResourceBox } from "./output.js";
 
-export const qLog = (x: string) => {
+enum elTag {
+  Input = "input",
+  Div = "div",
+
+  Span = "span",
+  Label = "label",
+  Select = "select",
+
+  Option = "option",
+  Form = "form",
+  Img = "img",
+}
+
+enum elProp {
+  Id = "id",
+  Class = "class",
+  For = "for",
+  Alt = "alt",
+  Src = "src",
+  Width = "width",
+  Style = "style",
+  Type = "type",
+}
+enum Input {
+  Number = "number",
+  Text = "text",
+  CheckBox = "checkbox",
+  Datetime = "datetime-local",
+}
+export const log = (x: string) => {
   if (verb) {
     console.log(x);
   }
@@ -67,81 +96,52 @@ function createSelectList(name: string, options: string[] | number[]) {
   list.id = name;
   for (const opt of options) {
     list.appendChild(
-      createElementN("option", {value: opt.toString()}, opt.toString())
+      newEl("option", { value: opt.toString() }, opt.toString())
     );
   }
   const localVal = storedValue(name);
   if (localVal && options.findIndex((x) => x === localVal) !== -1) {
     list.options.item(options.findIndex((x) => x === localVal)).selected = true;
   } else {
-    // $(list).first().attr("selected");
     list.options.item(0).setAttribute("selected", "");
   }
   return list;
 }
 
-function createInput(
-  t = "text",
-  label = `Provide ${t}`,
-  img?: string,
-  attrs?: tagAttr,
-  parent?: HTMLElement
-) {
-  const labelE = createElementN("label");
-  labelE.innerHTML = label;
-  if (attrs && attrs["id"]) {
-    labelE.setAttribute("for", attrs["id"]);
-    labelE.setAttribute("id", `${attrs["id"]}__label`);
-  }
-  if (img) {
-    labelE.appendChild(createElementN("img", {src: img}));
-  }
-  if (!attrs) {
-    attrs = {};
-  }
+function createInput(fieldType: Input, attrs?: { [k: string]: string }) {
+  attrs["type"] = fieldType;
 
-  attrs["type"] = t;
-  const val = storedValue(attrs["id"]);
-  if (val) {
-    attrs["value"] = val.toString();
-  }
-  if (parent) {
-    parent.appendChild(createElementN("input", attrs));
-    parent.appendChild(labelE);
-    return parent;
-  } else {
-    labelE.appendChild(createElementN("input", attrs));
-    return labelE;
-  }
+  return newEl("input", { ...attrs });
 }
 
 function savedObj(str: string, def: any) {
   if (storedValue(str)) {
-    return JSON.parse(storedValue(str).toString());
+    return Object.assign(def, JSON.parse(storedValue(str).toString()));
   }
   return def;
 }
 
 export {
-  createElementN,
+  newEl,
+  newBtn,
   createInput,
   createSelectList,
-  difference,
   generateAFKResObj,
-  isEmpty,
-  isDefault,
+  hasEmpty as isEmpty,
   populateStorage,
   rangeSlide,
-  safeReduceSum,
   savedObj,
   setApp,
   storedValue,
   weekLabels,
   fetchData,
-  buttonWrapInput
+  buttonWrapInput,
+  elTag,
+  Input,
+  elProp,
 };
 
-function createElementN(tag: string, props?: tagAttr, inner?: string) {
+function newEl(tag: string, props?: { [k: string]: string }, inner?: string) {
   const doc = document.createElement(tag);
   if (props) {
     Object.entries(props).forEach((k) => {
@@ -154,10 +154,23 @@ function createElementN(tag: string, props?: tagAttr, inner?: string) {
   return doc;
 }
 
-type tagAttr = { [k: string]: string };
+function newBtn(text?: string, c?: string, id?: string) {
+  if (!text) {
+    text = id;
+  }
+  return newEl(
+    "button",
+    {
+      type: "button",
+      class: `md-button ${c}`,
+      // id: id,
+    },
+    text
+  );
+}
 
 function storedValue(inputId: string, value?: any): boolean | string {
-  if (value) {
+  if (value >= 0 || value) {
     try {
       const str = JSON.stringify(value);
       localStorage.setItem(inputId, str);
@@ -171,61 +184,49 @@ function storedValue(inputId: string, value?: any): boolean | string {
   return v ? v : false;
 }
 
-function isEmpty(obj: Record<string, any>): boolean {
+function hasEmpty(obj: Record<string, any>): boolean {
   return (
     Object.keys(obj).length === 0 &&
-    Object.values(obj).every((x) => x === null || x === 0)
+    Object.values(obj).some((x) => x === null || x === 0 || x === undefined)
   );
 }
 
-function isDefault(obj: Record<string, any>): boolean {
-  return Object.values(obj).every((x) => x === null || x === 0);
-}
-
-function safeReduceSum(n: Array<any>) {
-  if (!isEmpty(n)) {
+export function safeSum(n: number[]) {
+  if (!hasEmpty(n)) {
     return n.reduce((a, b) => a + b);
   }
 }
 
-function difference(a: number[], b: number[]) {
-  return [
-    ...b.reduce(
-      (acc, v) => acc.set(v, (acc.get(v) || 0) - 1),
-      a.reduce((acc, v) => acc.set(v, (acc.get(v) || 0) + 1), new Map())
-    ),
-  ].reduce((acc, [v, count]) => acc.concat(Array(Math.abs(count)).fill(v)), []);
-}
-
-async function fetchData(assetpath: string) {
-  const data = await fetch(`/assets/${assetpath}`)
-  const str = await data.text()
-  return JSON.parse(str)
+async function fetchData(assetsPath: string) {
+  const data = await fetch(`/assets/${assetsPath}`);
+  const str = await data.text();
+  return JSON.parse(str);
 }
 
 function buttonWrapInput(el: HTMLElement, update: (y: number) => void) {
-  const inputContainer = createElementN("div", {class: "number-container"})
-  inputContainer.appendChild(createElementN("button", {type: "button", class: `btn desc ${el.className}`}, "<|"))
-  inputContainer.appendChild(el)
-  inputContainer.appendChild(createElementN("button", {type: "button", class: `btn inc ${el.className}`}, "|>"))
-  inputContainer.addEventListener("click", (e: MouseEvent) => {
+  let input = el as HTMLInputElement;
+
+  const wrap = newEl("div", { class: "number-container" }),
+    // incBtn = newBtn("◀️", `desc ${el.className}`),
+    incBtn = newBtn("<", `desc ${el.className}`),
+    // descBtn = newBtn("▶️", `inc ${el.className}`);
+    descBtn = newBtn(">", `inc ${el.className}`);
+  wrap.appendChild(incBtn);
+  wrap.appendChild(el);
+  wrap.appendChild(descBtn);
+  wrap.addEventListener("click", (e: MouseEvent) => {
     if (e.target instanceof HTMLButtonElement) {
-      const inpt: HTMLInputElement = e.target.parentElement.querySelector("input");
-      if (e.target.className.search("inc") > -1) {
-        inpt.value = (parseInt(inpt.value) + 1).toString()
+      if (e.target.className.includes("desc") && input.valueAsNumber >= 0) {
+        input.stepDown();
       } else {
-        inpt.value = (parseInt(inpt.value) - 1).toString();
+        input.stepUp();
       }
-      update(parseInt(inpt.value));
+      update(input.valueAsNumber);
     }
-  })
-  return inputContainer
-}
+  });
 
-interface Builder<T> {
-  value: T;
-
-  then(next: (val: T) => T): Builder<T>;
-
-  finally(): T;
+  input.addEventListener("input", () => {
+    update(input.valueAsNumber);
+  });
+  return wrap;
 }

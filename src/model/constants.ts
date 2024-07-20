@@ -1,51 +1,97 @@
-import {DustChest} from "./types.js";
-import {aeIcons} from "../abex/abexvars.js";
+import { Essence } from "./../types/abex-resource";
+import { DustChest } from "./types.js";
+
+export const RelicBase = 18;
+export const AbExSellModifier = 0.4;
+
+export const aeIcons = {
+  stam: "https://i.imgur.com/n5WOzSZ.png",
+  coin: "https://i.imgur.com/Gw216PZ.png",
+  ess: "https://i.imgur.com/Gw216PZ.png",
+  bpEnter: "https://i.imgur.com/j6qEANW.png",
+  bpEnterImg: "https://i.imgur.com/QxSfSFU.png",
+};
 
 const relicEstimateTable = `
   <thead>
     <tr>
-      <th align="center" colspan=2>Expeditor Data</th>
+      <th align="center" colspan=4>Expeditor Data</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">Income</td>
-      <td align="center">$inc <img src=${aeIcons.coin} width=20>/h.</td>
+      <td align=center>Income</td>
+      <td align=center> <img src=${aeIcons.coin} width=20></td>
+      <td align=center>Relic Type</td>
+      <td align=center>Drop Timers</td>
     </tr>
     <tr>
-          <td align="center" colspan="2">GOAL</td>
+      <td align=center><b>[ $tw settlements ]</b></td>
+      <td align=center>$inc/h</td>
+      <td align=center>$tier</td>
+      <td align=center>$drop</td>
     </tr>
     <tr>
-      <td align="center">Components</td>
-      <td align="center">$comp</td>
+          <td align=center colspan=4>GOAL</td>
+    </tr>
+    <tr>
+      <td colspan=2>Remain</td>
+      <td colspan=1><img src=${aeIcons.coin} width=20 style="margin-left:20px"></td>
+      <td colspan=1>TIME</td>
     </tr>        
     <tr>
-      <td align="center">TIME TO<super>*</super></td>
-      <td align="center">$tl h.</td>
+       <td colspan=2></td>
+       <td colspan=1>$gc</td>
+      <td colspan=1>$tl h</td>
     </tr>    
     <tr>
-      <td align="center">Missing</td>
-      <td align="center">$gc <img src=${aeIcons.coin}  width=20></td>
-    </tr>
-    <tr>
-      <td align="center" colspan="2">BAG</td>
+      <td align=center colspan=4>BAG</td>
     </tr>
       <tr>
-        <td align="center">Items</td>
-        <td align="center">$tg</td>
+        <td align=center colspan=1>KEEP</td>
+        <td align=center colspan=3>$tg</td>
       </tr>
+
       <tr>
-        <td align="center">KEEP✅ </td>
-        <td align="left">$need</td>
-      </tr>
-      <tr>
-        <td align="center">SELL♻️</td>
-        <td align="right">$toSell</td>
+        <td align=center colspan=1>SELL♻️</td>
+        <td align=right colspan=3>$toSell</td>
       </tr>
   </tbody>
 
 `;
 
+// <tr>
+//   <td align="center">KEEP✅ </td>
+//   <td align="left">$need</td>
+// </tr>;
+
+// type Ascension =
+//   | "E"
+//   | "E+"
+//   | "L"
+//   | "L+"
+//   | "M"
+//   | "M+"
+//   | "A"
+//   | "A1"
+//   | "A2"
+//   | "A3"
+//   | "A4"
+//   | "A5";
+// const FlawlessDroplets = {
+//       E: 1,
+//       "E+": 1,
+//       L: 4,
+//       "L+": 2,
+//       M: 8,
+//       "M+": 8,
+//       A: 4,
+//       A1: 2,
+//       A2: 2,
+//       A3: 2,
+//       A4: 2,
+//       A5: 2,
+//     };
 class Period {
   static hour = 1;
   static day = 24 * this.hour;
@@ -95,17 +141,11 @@ class AbEx {
   static now = new Date();
   static abexDurationDays = 19;
   static silentDay = 1;
-  static baseIncome = 4;
   static viewerMultiplier = 1.2;
   static starFasterRecoveryMod = 0.9;
-  static lastAbexEnd = new Date(2023, 6, 21, 0, 0, 0, 0);
 
   static start() {
-    return new Date(2023, 9, 30, 0, 0, 0, 0);
-  }
-
-  static leftToStart() {
-    return new Date(this.start().getTime() - this.now.getTime());
+    return new Date(document.getElementById("abex-date").nodeValue);
   }
 
   static left() {
@@ -132,15 +172,6 @@ class AbEx {
     return (
       (this.silentHoursIn().getTime() - this.now.getTime()) / 1000 / 60 / 60
     );
-  }
-
-  static actualIncome(viewers: number, star: boolean) {
-    const recoveryBonus = (viewers * this.viewerMultiplier) / 100;
-    let res = this.baseIncome + this.baseIncome * recoveryBonus;
-    if (star) {
-      res = res / this.starFasterRecoveryMod;
-    }
-    return res;
   }
 }
 
@@ -183,7 +214,7 @@ class ValueModes extends AfkArena {
 
   static emuns() {
     return this.rSources.map((x) => {
-      return {id: x.id, table: x.tableName};
+      return { id: x.id, table: x.tableName };
     });
   }
 
@@ -200,7 +231,6 @@ class ValueModes extends AfkArena {
   }
 }
 
-type gms = "CR" | "TS" | "NC";
 type bres =
   | "dia"
   | "bait"
@@ -250,9 +280,9 @@ const leftover = `
 `;
 
 const userFields = [
-  {name: "cursed-realm", type: "select", src: "gsheet"},
-  {name: "treasure-scramble", type: "select", src: "gsheet"},
-  {name: "nightmare-corridor", type: "select", src: "gsheet"},
+  { name: "cursed-realm", type: "select", src: "gsheet" },
+  { name: "treasure-scramble", type: "select", src: "gsheet" },
+  { name: "nightmare-corridor", type: "select", src: "gsheet" },
   //    {name: "afk", type: "bool", src: "gsheet"}
 ];
 
@@ -273,7 +303,6 @@ export {
   allRes,
   base,
   bres,
-  gms,
   iconSize,
   leftover,
   query,

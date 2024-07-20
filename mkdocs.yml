@@ -54,7 +54,7 @@ theme:
         name: Switch to light mode
   features:
     - announce.dismiss
-    - header.autohide
+    # - header.autohide
     # - navigation.instant
     # - navigation.instant.progress
     - navigation.indexes
@@ -85,7 +85,6 @@ nav:
           - kb/trescamble.md
           - kb/infographics.md
       - Tools:
-          - kb/abex.md
           - kb/income.md
           - kb/dust.md
       - Discord Guides:
@@ -100,6 +99,7 @@ nav:
       - ranked/index.md
       - ranked/guild-archive.md
       - Tools:
+          - ranked/tools/abex.md
           - ranked/tools/warnotes.md
   - HOOT-o-ROCK:
       - blog/index.md
@@ -120,6 +120,11 @@ plugins:
       minify_html: true
       minify_js: true
       minify_css: true
+      css_files:
+        - css/main.css
+      htmlmin_opts:
+        remove_comments: true
+
   - glightbox:
       draggable: false
       skip_classes:
@@ -224,9 +229,9 @@ markdown_extensions:
           title: <3
   - pymdownx.blocks.html:
   - pymdownx.blocks.tab:
-      alternate_style: true
-      combine_header_slug: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      alternate_style: true
+      # combine_header_slug: true
 
 extra:
   analytics:
@@ -268,6 +273,8 @@ extra_css:
   - css/main.css
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+  - https://unpkg.com/react@18/umd/react.development.js
+  - https://unpkg.com/react-dom@18/umd/react-dom.development.js
   - js/feedback.js
   - js/committers.js
   - js/ts/util/linker.js

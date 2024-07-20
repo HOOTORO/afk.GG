@@ -1,49 +1,12 @@
 // import { error } from "node:console";
 import { rewards } from "../components/dataloader.js";
 import { generateAFKResObj, rangeSlide } from "../components/helper.js";
-import { Branch } from "./afk.js";
-import {
-  AbEx,
-  AfkArena,
-  ValueModes,
-  allRes,
-  bres,
-  sheetId,
-} from "./constants.js";
-import { Expeditor } from "./expeditor.js";
+import { AfkArena, ValueModes, allRes, bres, sheetId } from "./constants.js";
 
 // TYPES //
 type prop = { n: string; v: string };
 
-interface Relic {
-  id: number;
-  name: string;
-  icon: string;
-  cost: number;
-  recipe: number[];
-}
-interface BagRelic extends Relic {
-  qty: number;
-}
-
-interface CoreSlot {
-  slotId: `${Branch}-${position}`;
-  equipped: Relic;
-  goal: Relic;
-  level: relicLvl;
-}
-
-type relicLvl = 1 | 2 | 3 | 4 | 5;
-type position = 0 | 1 | 2 | 3 | 4 | 5;
 type hours = 2 | 6 | 8 | 24;
-
-type SLOT_ID = `${Branch}-${position}`;
-type resourceIncome = {
-  baseEPH: number;
-  garrisoned: number;
-  dropTier: number;
-  dropTime: number;
-};
 
 // INTERFACES //
 interface Gsheet {
@@ -132,51 +95,4 @@ class User {
   }
 }
 
-class Militia {
-  baseIncome: number;
-
-  _viewers: number;
-  constructor(plebs: number) {
-    this.viewers = plebs;
-    this.baseIncome = 4;
-  }
-  set viewers(n: number) {
-    this._viewers = n;
-  }
-  get viewers(): number {
-    return this._viewers;
-  }
-  actualIncome(): number {
-    return (
-      this.baseIncome +
-      (this.baseIncome * this.viewers * AbEx.viewerMultiplier) / 100
-    );
-  }
-  starIncome(): number {
-    return this.actualIncome() / AbEx.starFasterRecoveryMod;
-  }
-
-  star(): Expeditor {
-    return new Expeditor(this, true);
-  }
-  regular(): Expeditor {
-    return new Expeditor(this, false);
-  }
-}
-
-export {
-  BagRelic,
-  BaseResQty,
-  BaseResource,
-  CoreSlot,
-  DustChest,
-  Gsheet,
-  Militia,
-  RankReward,
-  Relic,
-  SLOT_ID,
-  User,
-  prop,
-  relicLvl,
-  resourceIncome,
-};
+export { BaseResQty, BaseResource, DustChest, Gsheet, RankReward, User, prop };

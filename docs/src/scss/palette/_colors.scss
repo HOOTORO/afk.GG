@@ -30,7 +30,7 @@ $colormap: (
     "dark-red": hsl(0, 100%, 59%),
     "dark-yellow": hsl(51, 94%, 73%),
     "text": #373737,
-    "rnb": linear-gradient(180deg, #00eeff, #6dff18, #ffb949, #ff00ea),
+    "rnb": linear-gradient(45deg, rgba(206, 255, 29, 0.712), #9c870fa9),
     "def-bg": color.adjust(#ddff53, $lightness: 19%),
     "dbg": linear-gradient(45deg, rgba(222, 222, 222, 0.383), #63636317),
     "foot-bg": hsl(39, 77%, 83%),
@@ -58,7 +58,7 @@ $colormap: (
     "dark-pink": rgb(255, 71, 178),
     "dark-red": rgb(255, 46, 46),
     "dark-yellow": rgb(251, 231, 121),
-    "rnb": linear-gradient(180deg, rgb(0, 238, 255), rgb(109, 255, 24), rgb(255, 185, 73), rgb(255, 0, 234)),
+    "rnb": linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 47, 55, 0.945)),
     "text": rgb(228, 228, 228),
     "def-bg": color.adjust(rgb(20, 24, 25), $hue: 40deg, $saturation: 20%, $lightness: 21%),
     "dbg": linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 47, 55, 0.945)),
@@ -91,11 +91,22 @@ $colormap: (
     "dbg": #fff,
     "foot-bg": hsl(229, 18%, 12%),
     "foot-fg": hsl(191, 97%, 77%),
-    "rnb": linear-gradient(180deg, #00eeff, #6dff18, #ffb949, #ff00ea)
+    "rnb": linear-gradient(222deg, rgba(173, 10, 238, 0.198), rgba(28, 0, 55, 0.945))
   )
 );
 
 :root > * {
+
+  --md-shadow-z1: 0 0.5rem 0.6rem var(--md-default-fg-color), 0 1rem 0 0.1rem var(--md-default-bg-color);
+  --md-shadow-z2: 0 #{px2rem(14px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(2px)} hsla(0, 0%, 0%, 0.2);
+  --md-shadow-z7: 0 0.2rem 0.6rem #4941414b, 0 0 0 0.1rem #47474716;
+  /* Admonition colors */
+  --md-admonition-fg-color: var(--md-default-fg-color);
+  --md-admonition-bg-color: var(--md-default-bg-color--light);
+  --md-icon-size: 1rem;
+  
+  /* style unique vars */
+  
   @each $theme in $themes {
     $fg: map.get($colormap, $theme, "fg");
     $bg: map.get($colormap, $theme, "bg");
@@ -188,29 +199,21 @@ $colormap: (
       --md-header-text: var(--md-text-color);
     }
   }
-
-  --md-shadow-z1: 0 0.5rem 0.6rem var(--md-default-fg-color), 0 1rem 0 0.1rem var(--md-default-bg-color);
-  --md-shadow-z2: 0 #{px2rem(14px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3), 0 0 #{px2rem(2px)} hsla(0, 0%, 0%, 0.2);
-  --md-shadow-z7: 0 0.2rem 0.6rem #4941414b, 0 0 0 0.1rem #47474716;
-  /* Admonition colors */
-  --md-admonition-fg-color: var(--md-default-fg-color);
-  --md-admonition-bg-color: var(--md-default-bg-color--light);
-  --md-icon-size: 1rem;
-
-  /* style unique vars */
+  
   &[data-md-color-scheme="default"] {
     --md-code-inline-bg-color: #{lighten(map.get($colormap, $def, "pink"), 5%)};
     // --md-admonition-title-bg: #ffdb86;
   }
-
+  
   &[data-md-color-scheme="slate"] {
   }
-
+  
   &[data-md-color-scheme="dracula"] {
     --md-heart: #{map.get($colormap, $drac, "pink")};
     --md-heart-big: #{map.get($colormap, $drac, "dark-pink")};
     --md-header-bg-color: var(--md-default-bg-color--darker);
   }
+  
 }
 
 /* ----------------------------------------------------------------------------*/
@@ -218,10 +221,10 @@ $colormap: (
 /* --------------------------------------------------------------------------*/
 @each $theme in $themes {
   @each $name,
-    $colors
-      in (
-        "red": spread(map.get($colormap, $theme, "red")),
-        "pink": spread(map.get($colormap, $theme, "pink")),
+  $colors
+  in (
+    "red": spread(map.get($colormap, $theme, "red")),
+    "pink": spread(map.get($colormap, $theme, "pink")),
         "purple": spread(map.get($colormap, $theme, "purple")),
         "deep-purple": spread(map.get($colormap, $theme, "purple")),
         "blue": spread(map.get($colormap, $theme, "blue")),

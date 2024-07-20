@@ -11,7 +11,7 @@ tags:
 authors:
     - HOOTSMAN
 status: new
-lastmod: 2024-07-11T10:51:11.979Z
+lastmod: 2024-07-15T18:20:25.258Z
 ---
 
 /// details  | [AbEx Realm Ranking][realmranking]
@@ -95,24 +95,3 @@ lastmod: 2024-07-11T10:51:11.979Z
 | 8   | Marsha      | 2022.11.05 | 2021.11.21 |
 | 9   | Clawlossus  | 2023.05.07 | 2021.05.23 |
 | 10  | Clawlossus  | 2023.07.05 | 2021.07.21 |
-
-### Footnotes
-
-//// example | FORMULA<a id="fn1" href="../abex.md#sp1">↩︎</a>
-_RD~avg~ ÷ t~drop~ × P~rrd~  + (1 - P~rrd~) × RD~avg~ ÷ t~drop~ × C~sell~_
-
-/// define
-RD
-
-- Relic drop
-
-P~rrd~
-
-- chance drop required relic
-
-C~sell~
-
-- sell price coefficient, which is 40%
-  ///
-
-////

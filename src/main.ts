@@ -1,33 +1,24 @@
-import { abexApp } from "./abex/abex.js";
-import { AttackForm } from "./abex/attackform.js";
-import { BossIcons } from "./components/bossicon.js";
-import { populateStorage, qLog, setApp } from "./components/helper.js";
-import { startApp } from "./income.js";
-import { Locations } from "./locations.js";
+import { populateStorage, log, setApp } from "./components/helper.js";
+import { runRankedIncome } from "./income.js";
+import { Locations } from "./util/locations.js";
 import { userFields } from "./model/constants.js";
 import { User } from "./model/types.js";
 
 const location = window.location.pathname;
 const user: User = new User("1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY");
 initUser();
-console.log('Loca: %s', location)
+console.log("Loca: %s", location);
 // Open a SQLite database, stored in the file db.sqlite
 
 switch (location) {
   case Locations.income:
-    startApp();
-  case Locations.modes:
-    BossIcons();
-  case Locations.abex:
-    abexApp();
-  case Locations.warnotes:
-    AttackForm();
+    runRankedIncome();
   default:
     console.log("nothing to do here");
 }
 
 function initUser() {
-  qLog(`Init user...`);
+  log(`Init user...`);
   for (let inputField of userFields) {
     if (!localStorage.getItem(inputField.name)) {
       const selected = $(inputField.name).find(":selected").get(0);
@@ -39,4 +30,3 @@ function initUser() {
 }
 
 export { initUser, user };
-

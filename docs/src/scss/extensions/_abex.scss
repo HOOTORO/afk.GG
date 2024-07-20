@@ -1,13 +1,13 @@
-#main-event {
-  display: block;
-  padding: 10px;
-  background-color: rgba(90, 90, 220, 0.328);
-  border-radius: 10px;
-  box-shadow:
-    1px 1px 2px red,
-    0 0.5px 1em blue,
-    0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
-}
+// #main-event {
+//   display: block;
+//   padding: 10px;
+//   background-color: rgba(90, 90, 220, 0.328);
+//   border-radius: 10px;
+//   box-shadow:
+//     1px 1px 2px red,
+//     0 0.5px 1em blue,
+//     0.5px 0.5px 0.5px 0.5px rgb(0, 238, 255);
+// }
 
 #abex-form {
   position: relative;
@@ -17,34 +17,36 @@
   justify-content: center;
 }
 
-button.btn {
-  border: 1px outset blueviolet;
-  border-radius: 5px;
-  color: #f800ff;
-  margin: 5px;
-  display: inline-block;
-  font-family: "Twilio Sans Mono", sans-serif;
-  font-size: 30px;
-  cursor: pointer;
-  -webkit-text-stroke: #2c00ff thin;
+.relic-tooltip {
+  display: none;
 }
 
-.ui-input > label {
-  > img {
-    width: 32px;
-  }
+.inventory.relic > img:hover + .relic-tooltip  {
+    position: absolute;
+    display: inline-block;
+    background: #2a5f6187;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid;
+    width: max-content;
+    z-index: 1;
 }
 
-.number-container {
-  display: flex;
-  justify-content: center;
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+.relic-tooltip * {
+    display: table-cell;
 }
+
+// button.btn {
+//   border: 1px outset var(--md-accent-fg-ass);
+//   border-radius: 5px;
+//   color: var(--md-accent-fg-ass);
+//   margin: 1px;
+//   padding: 1px;
+//   font-size: 0.9rem;
+//   cursor: pointer;
+//   -webkit-text-stroke: #240d91 thin;
+//   background: var(--rnb);
+// }
 
 .labeled-container {
   display: flex;
@@ -115,7 +117,30 @@ button.btn {
   margin-right: auto;
   margin-left: auto;
 }
+#abex-date {
+  color: #000000;
+}
 
+#bat-stat {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#team-attacks-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#dps-table {
+  td,
+  th {
+    padding: 0.2rem 0.1rem;
+    text-align: center;
+  }
+
+  th.fit {
+    width: 1px;
+    white-space: nowrap;
+  }
+}
 // new style
 #team-set {
   position: relative;
@@ -145,8 +170,6 @@ button.btn {
   }
 
   img {
-    width: 30px;
-    height: auto;
     margin-left: 0;
     -webkit-user-drag: none;
     -webkit-user-select: none;
@@ -164,13 +187,11 @@ button.btn {
     background-color: var(--md-default-bg-color);
     border: 1px solid rgba(114, 114, 114, 0.4470588235);
     border-radius: 10px;
-    /* stylelint-disable-next-line property-no-vendor-prefix */
     -moz-appearance: textfield;
 
     &::-webkit-inner-spin-button,
     &::-webkit-inner-spin-button {
       margin: 0;
-      /* stylelint-disable-next-line property-no-vendor-prefix */
       -webkit-appearance: none;
     }
 
@@ -191,7 +212,6 @@ button.btn {
     width: 20px;
     color: var(--md-text-color);
     font-size: 13px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
     line-height: 1.7;
     text-align: center;
     border-left: 1px solid #eeeeee;
@@ -220,17 +240,7 @@ button.btn {
 
 ///attacks
 
-// .attack-inputs {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   min-height: 6vh;
-//   padding: 2em;
-//   background-position: 50% 50%;
-// }
-
 .attack-inputs {
-  z-index: 2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -241,22 +251,16 @@ button.btn {
     mix-blend-mode: normal;
 
     &__label {
-      position: absolute;
-      top: -0.28em;
-      left: 3em;
       background: #000000;
+      margin-bottom: 0.5em;
+      padding: 0 0.5em;
+      color: rgba(255, 220, 255, 0.6);
+      font-size: 0.875em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 5px;
     }
-  }
-
-  &__label {
-    margin-bottom: 0.5em;
-    padding: 0 0.5em;
-    color: #ccccdd;
-    color: rgba(255, 220, 255, 0.6);
-    font-size: 0.875em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    cursor: pointer;
   }
 
   &__input {
@@ -264,13 +268,12 @@ button.btn {
     font-size: 0.95rem;
     background-color: var(--md-default-bg-color) !important;
     background-image: linear-gradient(#000000, #000000), linear-gradient(120deg, #ff0099 0%, #00ffff 50%, #99ff00 100%);
-
     background-clip: padding-box, border-box;
     background-origin: border-box;
     border: 0.25em solid transparent;
     border-style: groove;
     border-radius: 0.6em;
-
+    margin: 5px;
     transition: background-position 0.8s ease-out;
   }
 }
@@ -292,8 +295,8 @@ button.btn {
   label {
     position: relative;
     display: block;
-    margin: 5px;
-    padding: 5px;
+    margin: 2x;
+    padding: 2px;
     border: 0 solid #7368684c;
     cursor: pointer;
 
@@ -302,6 +305,7 @@ button.btn {
       height: 50px !important;
       transform-origin: 70% 70% !important;
       transition-duration: 0.2s !important;
+      border-radius: 1rem;
     }
 
     &::before {
@@ -340,57 +344,44 @@ button.btn {
   }
 }
 
-#comm__label,
-#dps__label {
-  max-width: 250px;
-  margin: 5px;
-}
-
-#team-attacks-form {
-  width: 100%;
-}
-
 .user-bag,
-#relic-app {
+.blessed-core {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-evenly;
 
-  input[type="number"],
-  code {
-    max-width: 5em;
-    color: var(--md-default-bg-color);
-    background-color: var(--md-accent-fg-color--transparent);
-    border-radius: 5px;
-    margin-left: 10px;
+  input[type="number"] {
+    background-color: var(--md-default-bg-color--darker);
+    border: 0.1px solid var(--md-code-bg-color);
   }
 
-  .ui-input,
-  .relic-type {
-    display: flex;
-    justify-content: space-evenly;
-    width: 20em;
-    margin: 5px;
-    font-size: larger;
-    font-family: "Twilio Sans Mono";
+  // .ui-input,
+  .core-virtue {
+    font-size: 0.7rem;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-shadow:
       1px 1px 2px rgb(179, 0, 255),
       0 2px 1em rgb(0, 217, 255),
       0 0 0.2em rgb(98, 0, 255);
-    /* background-color: var(--md-default-bg-color); */
-    background-color: #3d2e4b48;
     border: 2px outset #3030347d;
     border-radius: 10px;
     stroke: #00ffff;
     -webkit-text-stroke: #00ffff;
+    padding: 5px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #24394773;
 
     img {
       -webkit-user-select: none;
       -webkit-user-drag: none;
+    }
+
+    &__label {
+      width: 100px;
     }
 
     > span {
@@ -400,72 +391,138 @@ button.btn {
       max-width: 40px;
     }
 
-    .relic {
+    .relic,
+    .goal {
       display: inline-flex;
-      flex-direction: row;
       flex-wrap: wrap;
       max-width: 105px;
-      margin: 2px;
       cursor: pointer;
+
+      img {
+        margin: 6px 0;
+      }
+    }
+    .goal {
+      background-color: rgba(7, 8, 20, 0.884);
+      background-size: 130%;
+      border-radius: 10px;
+      box-shadow:
+        inset 1px 0px 20px 4px #e9b415,
+        -1px -1px 1em 5px #00b8ffd1;
     }
   }
+}
 
-  .relic-type {
-    padding: 30px 0;
+.ui-input {
+  border-radius: 10px;
+  background: #0000005c;
+  padding: 5px 30px;
+
+  > * {
+    max-height: 32px;
   }
 
-  .ui-input {
-    display: flex;
-    flex-direction: column;
+  input.abex.resource {
+    width: 5.1rem;
+    text-align: center;
+    border-radius: 5px;
+  }
 
-    label {
-      display: inline-flex;
-      flex-direction: row;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
+  input[type="number"]:not(.resource),
+  code {
+    width: 2rem;
+    // max-width: 5em;
+    color: var(--md-default-bg-color);
+    // background-color: var(--md-accent-fg-color--transparent);
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+  }
+
+  > .abex {
+    > img {
+      margin-left: auto;
     }
   }
-
-  .relic img {
-    margin: 6px 0;
+  &__label {
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
   }
 
-  .goal {
-    background-color: #0015ff49;
-    background-size: 150%;
-    border-radius: 10px;
-    box-shadow:
-      1px 1px 2px red,
-      0 0.5px 1em blue;
-  }
+  .number-container {
+    display: inline-flex;
+    max-height: 30px;
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
 
+    .md-button {
+      border-radius: 10px;
+      padding: 0;
+      box-shadow:
+        0px 0px 5px 1px #00d9ffaf,
+        inset 0px 0px 5px 3px #6200ff5e;
+    }
+  }
+}
+
+.ui-output {
   output {
     display: flex;
     min-width: 250px;
+
+    .table-text {
+      display: inline-block;
+      font-size: 0.7rem;
+      width: 2.4rem;
+      vertical-align: top;
+      text-align: center;
+      -webkit-text-stroke: thin #bbff00;
+      background-color: #12111166;
+      border-radius: 5px;
+      padding: 5px;
+    }
   }
 }
 
 .user-bag > span {
-  position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: stretch;
-  max-width: 5em;
   margin: 1px;
+  display: inline-flex;
 
   img {
     -webkit-user-select: none;
     -webkit-user-drag: none;
   }
-}
 
-.relinf {
-  position: absolute;
-  bottom: 70px;
-  left: 40px;
-  background-color: darkcyan;
-  padding: 10px;
-  border-radius: 10px;
+  input[type="number"] {
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    // -webkit-appearance: none;
+    height: 2.5rem;
+    padding-left: 9px;
+    background-color: var(--md-accent-fg-ass);
+  }
+  input:not(input[value="0"]) {
+    box-shadow: inset var(--md-accent-fg-color) -10px 0px 20px 0px;
+  }
+
+  .relinf {
+    position: fixed;
+    bottom: 1rem;
+    right: 50%;
+    background-color: darkcyan;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+  }
 }

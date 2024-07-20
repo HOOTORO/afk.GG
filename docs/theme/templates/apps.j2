@@ -1,9 +1,18 @@
 {% extends "main.html" %}
-
-
+{% block libs %}
+  <script type="module"
+          src="https://unpkg.com/react@18/umd/react.development.js"
+          crossorigin></script>
+  <script type="module"
+          src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+          crossorigin></script>
+{% endblock libs %}
 {% block container %}
   {{ super() }}
-<script type="module" src="{{ 'js/ts/main.js' | url }}">
+  <script type="module" src="{{ 'js/ts/abex.js' | url }}">
+{% endblock container %}
+{#
+  <script type="module" src="{{ 'js/ts/main.js' | url }}">
   import { initUser } from "{{ 'js/ts/main.js' | url }}";
   initUser()
   const anch = document.getElementById("relic-app")
@@ -14,4 +23,9 @@
       console.log('HANDATACH');
   }
 </script>
-{% endblock container %}
+{% block scripts %}
+<script type="module" src="../../../js/ts/abex/warbook.js"></script>
+<script type="module" src="{{ 'js/ts/abex/warbook.js' | url }}"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+{% endblock scripts %}
+#}

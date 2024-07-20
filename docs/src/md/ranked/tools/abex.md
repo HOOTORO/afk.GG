@@ -1,25 +1,31 @@
 ---
-title: AbEx | Helper
+title: AbEx | Rel. Estimate
 description: |
-    Ваш помощник в сезон экспедиции в Бездну.
+  Ваш помощник в сезон экспедиции в Бездну.
 authors:
-    - HOOTSMAN
+  - HOOTSMAN
 categories:
-    - Game
+  - Game
 tags:
-    - Tool
-    - AbEx
-    - AFK Arena
+  - Tool
+  - AbEx
+  - AFK Arena
 template: templates/apps.j2
-lastmod: 2024-07-12T03:59:15.479Z
+slug: helper
+lastmod: 2024-07-19T02:33:12.606Z
 ---
 
-## Apps
+/// details | Development in progress
+    type: new
+    open: True
+    attrs: {id: app}
 
-////// new | Development in progress
 ^^Возможны баги^^, при обнаружении тыкать в кнопку Feedback.
+///
 
-///// tab | Relic Estimate
+***
+
+//// tab | Relic Estimate
 /// warning | CAUTION
 Calculates estimate for a given goal, based on towns/essence and loot.  
 There are can be minor inaccuracies, see detail in the "bag" section.  
@@ -27,9 +33,9 @@ Overall should be pretty accurate as it takes into account [**entered** ess.| **
 ///
 /// html | div#relic-app
 ///
-/////
+////
 
-///// tab | Bag
+//// tab | Bag
 /// info | Description
 Some relic recipes can be incorrect, it shouldn't be problem since on each tier prices not differs much.  
 Just in case left for first time additional info about each relic (1):
@@ -46,22 +52,29 @@ let me know if found any.
 
 /// html | div#relic-bag
 ///
-/////
+////
+
+### Footnotes
+
+/// question | MATH UNDER THE HOOD?<a id="fn1" href="#sp1">↩︎</a>
+
+>_ESS~rem~ 🟰 ∑GOAL~fc~ ➖ ESS~actual~ ➖ ∑SoldRelics ➖ ∑KeptRelics_
+
+>_ESS~drop~ 🟰 RD~avg~ ➗ t~drop~ ✖️ P~rrd~  ➕ (1 ➖ P~rrd~) ✖️ RD~avg~ ➗ t~drop~ ✖️ C~sell~_
+
+>_Timeleft 🟰 ESS~rem~ ➗ ( ESS~inc~ ➕ ESS~drop~ )_
 
 
-///// tab | Attack Remain Calculator
-/// info | Description
+^^RD^^
 
-Calculates how many attacks on boss can be done + retries.
+:   Relic drop
 
-***
+^^P~rrd~^^
 
-Калькулятор атак по ласт боссу.
-Показывает кол-во атак и запас ретраев до потери атаки.
+:   chance required relic drop
+
+^^C~sell~^^
+
+:   sell price coefficient, which is 40%
 
 ///
-/// html | div#rem-food
-///
-
-/////
-//////

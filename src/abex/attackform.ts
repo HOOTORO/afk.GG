@@ -1,7 +1,14 @@
-import {exportToCsv} from "../components/csvexport.js";
-import {createElementN, createInput, storedValue,} from "../components/helper.js";
-import {Beasts, Heroes, Renderer, Tree} from "../model/afk.js";
-import {AfkObject, Team} from "../model/teams.js";
+import { exportToCsv } from "../components/csvexport.js";
+import {
+  newEl,
+  createInput,
+  storedValue,
+  newBtn,
+  Input,
+} from "../components/helper.js";
+import { Beasts, Heroes, Renderer } from "../model/afk.js";
+import { AfkObject, Team } from "../model/teams.js";
+import { Tree } from "../types/inventory.js";
 
 let MetaTeam = new Team();
 const petSelectId = "pet-sele";
@@ -12,25 +19,32 @@ export function AttackForm() {
 
   const heroForm = document.getElementById(formId);
 
-  const aClsAttack = "attack-inputs";
-  const atkContainer = createElementN("div", {class: aClsAttack});
-  const attackForm = createElementN("form", {id: "team-attacks-form"});
-  atkContainer.appendChild(attackForm);
-  atkContainer.appendChild(
-    createInput("number", "Damage, B", "", {
-      class: `${aClsAttack}__input`,
-      name: "Damage",
-      id: "dps",
-    })
-  );
-  atkContainer.appendChild(
-    createInput("text", "Comment", "", {
-      class: `${aClsAttack}__input`,
-      name: "Comment",
-      id: "comm",
-    })
-  );
+  const atkContainer = newEl("div", { class: "attack-inputs" });
+  const attackForm = newEl("form", { id: "team-attacks-form" });
 
+  const addAttack = newBtn("Add Dmg", "add-attack");
+  const csvExport = newBtn("Export", "export-csv");
+
+  atkContainer.appendChild(attackForm);
+
+  attackForm.appendChild(
+    newEl("label", { for: "dps", class: "attack-inputs__label" }, "Damage, B.")
+  );
+  attackForm.appendChild(
+    createInput(Input.Number, {
+      class: "attack-inputs__input",
+      id: "dps",
+      step: "1000",
+    })
+  );
+  attackForm.appendChild(addAttack);
+  attackForm.appendChild(
+    newEl("label", { for: "comm", class: "attack-inputs__label" }, "Comment")
+  );
+  attackForm.appendChild(
+    createInput(Input.Text, { class: "attack-inputs__input", id: "comm" })
+  );
+  attackForm.appendChild(csvExport);
   atkContainer.addEventListener("change", (x: InputEvent) => {
     const tg = x.target as HTMLInputElement;
     $(tg).attr("value", tg.value);
@@ -40,11 +54,11 @@ export function AttackForm() {
 <table id="dps-table" style="width:100%">
 <thead>
 <tr>
-<th style='width:30%'>Team</th>
-<th style='width:5%'>Pet</th>
-<th style='width:20%'>Elder Tree</th>
-<th style='width:5%'>Damage</th>
-<th style='width:40%'>Comment</th>
+<th>Team</th>
+<th class="fit">Pet</th>
+<th>Elder Tree</th> 
+<th>Damage</th>
+<th>Comment</th>
 </tr>
 </thead>
 <tbody>
@@ -52,36 +66,13 @@ export function AttackForm() {
 </table>
 `;
 
-  const btnContainer = createElementN("div", {class: "butt-container"});
-  const addAttack = createElementN(
-    "button",
-    {
-      type: "button",
-      class: "md-button",
-      id: "add-attack",
-    },
-    "Add Dmg"
-  );
-
-  const csvExport = createElementN(
-    "button",
-    {
-      type: "button",
-      class: "md-button",
-      id: "export-csv",
-    },
-    "Export Data"
-  );
-  btnContainer.appendChild(addAttack);
-  btnContainer.appendChild(csvExport);
-
   csvExport.addEventListener("click", (e) => {
     const o = MetaTeam.damage.map((x) => [
       MetaTeam.Heroes()
         .map((y) => y.short)
         .join("|"),
       MetaTeam.pet.name,
-      MetaTeam.elderTree.map(x => `${x.name}:${x.value}`).join("|"),
+      MetaTeam.elderTree.map((x) => `${x.name}:${x.value}`).join("|"),
       x[0].toString(),
       x[1].toString(),
     ]);
@@ -95,7 +86,7 @@ export function AttackForm() {
   });
 
   attackForm.appendChild(
-    createElementN("output", {
+    newEl("output", {
       name: "battle-stat",
       id: "bat-stat",
     })
@@ -103,24 +94,23 @@ export function AttackForm() {
   jQuery(atkContainer).appendTo("#attack-app");
   jQuery(table).appendTo("#bat-stat");
 
-  atkContainer.appendChild(btnContainer);
-  const treeDiv = createElementN("div", {class: `${formId}-inputs`});
+  const treeDiv = newEl("div", { class: `${formId}-inputs` });
 
   for (const v of Tree) {
-    const inp = createInput(
-      "number",
-      "",
-      v.icon,
-      {
-        class: `${formId}-inputs-number`,
-        id: `${formId}-input-tree-${v.name}`,
-        min: "0",
-        max: "200",
-        value: storedValue(v.name) ? storedValue(v.name) as string : v.value.toString(),
-      }
-    );
+    const lb = newEl("label", { for: `${formId}-input-tree-${v.name}` });
+    const inp = createInput(Input.Number, {
+      class: `${formId}-inputs-number`,
+      id: `${formId}-input-tree-${v.name}`,
+      min: "0",
+      max: "200",
+      value: storedValue(v.name)
+        ? (storedValue(v.name) as string)
+        : v.value.toString(),
+    });
     inp.onchange = updOnChange;
-    treeDiv.appendChild(inp);
+    lb.appendChild(newEl("img", { src: v.icon }));
+    lb.appendChild(inp);
+    treeDiv.appendChild(lb);
   }
 
   addAttack.addEventListener("click", (e) => {
@@ -156,12 +146,12 @@ export function AttackForm() {
     }
   });
 
-  heroForm.appendChild(createElementN("h2", {}, "Set Elder Tree"));
+  heroForm.appendChild(newEl("h2", {}, "Set Elder Tree"));
   heroForm.appendChild(treeDiv);
 
-  heroForm.appendChild(createElementN("h2", {}, "Choose Pet"));
+  heroForm.appendChild(newEl("h2", {}, "Choose Pet"));
   heroForm.appendChild(petCheckBoxes);
-  heroForm.appendChild(createElementN("h2", {}, "Choose Team"));
+  heroForm.appendChild(newEl("h2", {}, "Choose Team"));
   heroForm.appendChild(heroselector);
   //  ELDER TREE HANDLER
   jQuery(
@@ -232,23 +222,22 @@ function checkBoxSelector(
     (e: InputEvent): void;
     (e: InputEvent): void;
     (this: GlobalEventHandlers, ev: Event): any;
-  },
-  type = "checkbox"
+  }
 ) {
-  const container = createElementN("div", {class: id});
+  const container = newEl("div", { class: id });
 
   const ul = document.createElement("ul");
   for (const h of data) {
     const li = document.createElement("li");
-    const checkBox = createInput(
-      "checkbox",
-      "",
-      h.icon,
-      {id: `ch-${id.substring(0, 3)}-${h.name}`},
-      li
-    );
+    const checkBox = createInput(Input.CheckBox, {
+      id: `ch-${id.substring(0, 3)}-${h.name}`,
+    });
     checkBox.onchange = fn;
-    ul.appendChild(checkBox);
+    const lb = newEl("label", { for: `ch-${id.substring(0, 3)}-${h.name}` });
+    lb.appendChild(newEl("img", { src: h.icon }));
+    li.appendChild(checkBox);
+    li.appendChild(lb);
+    ul.appendChild(li);
   }
   container.appendChild(ul);
   return container;

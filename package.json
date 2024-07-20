@@ -42,7 +42,8 @@
     "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-scss": "*",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "typescript-eslint-language-service": "^5.0.5"
   },
   "dependencies": {
     "cors": "^2.8.5",
