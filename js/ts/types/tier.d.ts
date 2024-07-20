@@ -9,7 +9,7 @@ export declare enum tier {
 export declare class Tier {
     id: tier;
     constructor(id: tier);
-    color: () => "white" | "blue" | "magenta" | "yellow" | "red";
+    color: () => "white" | "blue" | "magenta" | "darkorange" | "red";
     html(): HTMLElement;
 }
 //# sourceMappingURL=tier.d.ts.map
