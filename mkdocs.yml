@@ -54,7 +54,7 @@ theme:
         name: Switch to light mode
   features:
     - announce.dismiss
-    # - header.autohide
+    - header.autohide
     # - navigation.instant
     # - navigation.instant.progress
     - navigation.indexes
