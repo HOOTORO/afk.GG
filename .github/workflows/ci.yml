@@ -38,7 +38,7 @@ jobs:
       - run: |
           ls
           npm i --save-dev @types/jquery
-          npm run build
+          npm run TS:build
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.6.0
         with:
