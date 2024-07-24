@@ -1,78 +1,31 @@
-enum based {
-  STR = "str",
-  AGI = "agi",
-  INT = "int",
-}
+import { Input } from "../model/constants.js";
+import { IconizedInput } from "./iconized.js";
 
-enum classes {
-  RANGER = "ranger",
-  TANK = "tank",
-  MAGE = "mage",
-  SUPPORT = "support",
-  WARRIOR = "warrior",
-}
+export class Hero extends IconizedInput {
+  constructor(
+    id: number,
+    icon: string,
+    public heroType: string,
+    public heroClass: string,
+    public role: string,
+    public faction: string,
+    public slug: string
+  ) {
+    super(id, icon, slug, Input.CheckBox);
+    this.width = 100;
+    this.height = 100;
+    this.cssName = `hero`;
+    this.namedId = `ch-${this.id}-${this.name}`;
+    this.update = (x: InputEvent) => {
+      // log(x.target);
+    };
+  }
 
-enum races {
-  GB = "graveborn",
-  CEL = "celestial",
-  LB = "lightbearer",
-  WD = "wilder",
-  ML = "mauler",
-  HP = "hypogenian",
-  DM = "dimensional",
-}
-
-enum stored {
-  BAG = "bag",
-  RELIC = "relic",
-  ESS = "essence",
-  TOWN = "towns",
-  SLOT = "relic-slots",
-}
-
-type baseType = "str" | "agi" | "int";
-
-class HeroPortrait {
-  name: string;
-  based: "str" | "agi" | "int";
-  gclass: "ranger" | "tank" | "mage" | "support" | "warrior";
-  faction:
-    | "graveborn"
-    | "celestial"
-    | "lightbearer"
-    | "wilder"
-    | "mauler"
-    | "hypogenian"
-    | "dimensional";
-  skills: string[];
-
-  constructor(name: string, base: based, gameclass: classes, race: races) {
-    this.based = base;
-    this.name = name;
-    this.gclass = gameclass;
-    this.faction = race;
+  html(): HTMLElement {
+    const el = super.html();
+    el.addEventListener("change", (e) => {
+      this.update(e as InputEvent);
+    });
+    return el;
   }
 }
-
-const Tier = [1, 2, 3, 4, 5, 6, 7];
-
-// const Relic = ""
-const Ascension = [
-  "E",
-  "E+",
-  "L",
-  "L+",
-  "M",
-  "M+",
-  "A",
-  "A*",
-  "A**",
-  "A***",
-  "A****",
-  "A*****",
-];
-
-const Furniture = ["0F", "3F", "9F"];
-const Signature = ["+20", "+30"];
-
-const Engravings = ["E30", "E60", "E80"];

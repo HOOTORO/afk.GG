@@ -1,5 +1,5 @@
-import { newEl, elTag } from "../components/helper.js";
-import { relicEstimateTable } from "../model/constants.js";
+import { newEl } from "../components/helper.js";
+import { elTag, relicEstimateTable } from "../model/constants.js";
 import { expeditor } from "../abex.js";
 
 const relApp = document.getElementById("relic-app");

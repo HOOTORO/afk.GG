@@ -13,14 +13,22 @@ comments: false
 hide: []
 status: ""
 slug: war-notes
-lastmod: 2024-07-19T01:40:36.625Z
+lastmod: 2024-07-20T14:18:34.758Z
 template: templates/apps.j2
 ---
 
 
 /// Example
-Set team, pet add attack data, when done -> export to csv.
+`Boss attacks`
+
+:   Set team, pet add attack data, when done -> export to csv.
+
+`Retries Watcher`
+
+:   Калькулятор атак по ласт боссу.
+    Показывает кол-во атак и запас ретраев до потери атаки.
 ///
+
 ///// tab | Boss attacks
 /// html | div#attack-app
 ///
@@ -35,17 +43,6 @@ Set team, pet add attack data, when done -> export to csv.
 /////
 
 //// tab | Attack Remain Calculator
-/// info | Description
-
-Calculates how many attacks on boss can be done + retries.
-
-***
-
-Калькулятор атак по ласт боссу.
-Показывает кол-во атак и запас ретраев до потери атаки.
-
-///
 /// html | div#rem-food
 ///
-
 ////

@@ -1,10 +1,10 @@
-import { elTag, fetchData, log, newEl, safeSum } from "../components/helper.js";
+import { fetchData, newEl, safeSum } from "../components/helper.js";
 import Relic from "./relic.js";
 import { Core } from "./core.js";
 import { DurasVirtue, Virtue } from "./virtue.js";
-import { AbExSellModifier, RelicBase } from "../model/constants.js";
+import { AbExSellModifier, elTag, RelicBase } from "../model/constants.js";
+import { TreeData } from "./expeditor.js";
 
-export const Tree: Virtue[] = await fetchData("json/duratree.json");
 const relicData: Relic[] = await fetchData("json/relic.json");
 
 export default class Inventory {
@@ -16,7 +16,7 @@ export default class Inventory {
     relicData.forEach((x) => {
       this.bag.push(new Relic(x.icon, x.name, x.id, x.cost, x.recipe));
     });
-    Tree.forEach((x) => {
+    TreeData.forEach((x) => {
       this.tree.push(new Virtue(x.icon, x.name, x.id, x.class, x.acronym));
     });
     this.core = new Core(this.bag, this.tree);
@@ -119,7 +119,7 @@ export default class Inventory {
         { class: `goal` },
         `<span class="core-virtue__label">goal</span>`
       );
-      equipped.forEach((t, i) => {
+      equipped.forEach((t) => {
         relicTree.appendChild(t.html());
 
         goal.appendChild(t.HTMLGoal());
@@ -145,9 +145,6 @@ export default class Inventory {
           e.target.parentElement.replaceWith(rel.html());
         }
         rel.update();
-        const r = this.core.getById(parseInt(itemId));
-        const compo = this.components(r).map((x) => x.id);
-        log(`Relic #${r.id} components: [${compo}] `);
       }
     });
     return coreContainer;

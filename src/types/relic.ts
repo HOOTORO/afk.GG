@@ -1,12 +1,6 @@
 import { updateTableData } from "../abex/relicEstimate.js";
-import {
-  elTag,
-  Input,
-  log,
-  newEl,
-  savedObj,
-  storedValue,
-} from "../components/helper.js";
+import { newEl, storedValue } from "../components/helper.js";
+import { elTag, Input } from "../model/constants.js";
 import { Iconized } from "./iconized.js";
 import { DurasVirtue } from "./virtue.js";
 

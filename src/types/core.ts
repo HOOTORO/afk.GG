@@ -1,8 +1,8 @@
-import { safeSum, savedObj, storedValue } from "../components/helper.js";
+import { savedObj } from "../components/helper.js";
 import { RelicBase } from "../model/constants.js";
 import Relic, { CoreRelic } from "./relic.js";
 import { tier } from "./tier.js";
-import { DurasVirtue, Virtue, Virtues } from "./virtue.js";
+import { DurasVirtue, Virtue } from "./virtue.js";
 
 export class Core {
   #baseRelics = {

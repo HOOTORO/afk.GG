@@ -1,6 +1,6 @@
-import { elTag, newEl } from "../components/helper.js";
-import { AbExSellModifier, RelicBase } from "../model/constants.js";
-import { IconizedInput } from "./abex-resource.js";
+import { newEl } from "../components/helper.js";
+import { AbExSellModifier, elTag, RelicBase } from "../model/constants.js";
+import { IconizedInput } from "./iconized.js";
 import { Tier } from "./tier.js";
 
 export class Settlement extends IconizedInput {
@@ -17,14 +17,19 @@ export class Settlement extends IconizedInput {
     dropTier: number,
     dropTime: number
   ) {
-    const hcls = "abex town";
+    // const hcls = "";
+    const hcls = "abex input town";
 
-    super(id, icon, name, 0, hcls);
+    super(id, icon, name);
+    this.cssName = hcls;
     this.essencePerHour = essencePerHour;
     this.yield = yld;
     this.dropTier = dropTier;
     this.dropTime = dropTime;
+    this.buttons = true;
     this.value = parseInt(this.init());
+    this.width = 58;
+    this.height = 30;
   }
 
   public EPH() {
@@ -53,7 +58,9 @@ export class Settlement extends IconizedInput {
     const color = this.Tier().color();
     const el = newEl(
       elTag.Span,
-      { style: `color: ${color}` },
+      {
+        style: `color: ${color}`,
+      },
       `${this.name} : [ ${this.RelicDrop().toPrecision(3)}h ]`
     );
     return el;

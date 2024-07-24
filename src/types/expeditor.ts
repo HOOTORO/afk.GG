@@ -1,26 +1,25 @@
-import {
-  elTag,
-  fetchData,
-  newEl,
-  safeSum as safeSum,
-} from "../components/helper.js";
+import { fetchData, newEl, safeSum as safeSum } from "../components/helper.js";
 
 import Inventory from "./inventory.js";
 import { Militia } from "./militia.js";
-import { AbEx, RelicBase } from "../model/constants.js";
+import { AbEx, elTag, RelicBase } from "../model/constants.js";
 import { Settlement } from "./settlement.js";
-import { Essence, Stamina } from "./abex-resource.js";
+import { Essence, Stamina, StarOfDawn } from "./abex-resource.js";
 import { Tier } from "./tier.js";
+import { Virtue } from "./virtue.js";
 
 const townsData: Settlement[] = await fetchData("json/towns.json");
+export const TreeData: Virtue[] = await fetchData("json/duratree.json");
 
 export class Expeditor {
   public essence = new Essence();
   public stamina = new Stamina();
   public captured: Settlement[] = [];
   public inventory = new Inventory();
+  public star = new StarOfDawn();
+  public DuraTree: Virtue[] = [];
   // INITIALIZATION, SETTERS/GETTERS
-  constructor(public guild: Militia, public star: boolean) {
+  constructor(public guild: Militia, star: boolean) {
     townsData.forEach((x) => {
       const s = new Settlement(
         x.id,
@@ -33,6 +32,12 @@ export class Expeditor {
       );
       this.captured.push(s);
     });
+    this.star.status = star;
+    this.DuraTree.push(
+      ...TreeData.map(
+        (x) => new Virtue(x.icon, x.name, x.id, x.class, x.acronym)
+      )
+    );
   }
 
   // METHODS
@@ -42,7 +47,7 @@ export class Expeditor {
   }
 
   StamRecovery(): number {
-    return this.star ? this.guild.StarStamRR() : this.guild.StamRecoverRate();
+    return this.guild.StamIncome(this.star.hasSpectator);
   }
   SilentStam(): number {
     return this.stamina.value + AbEx.hoursLeft() * this.StamRecovery();

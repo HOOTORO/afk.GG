@@ -11,14 +11,15 @@
     "name": "HOOTORO"
   },
   "scripts": {
-    "RE:instal dependencies": "pip install -r requirements.txt",
-    "build": "tsc --build",
-    "lint.fix": "npx stylelint docs/src/scss/**/*.scss",
+    "DEV": "concurrently -k -n \"MKDOCS,TSC,SASS\" -c \"blue,magenta,yellow\" \"npm run MK:W\" \"npm run TS:Watch\" \"npm run SASS:w\"",
+    "SLint.fix": "npx stylelint docs/src/scss/**/*.scss",
+    "PIP:instal dependencies": "pip install -r requirements.txt",
+    "TS:build": "tsc --build",
     "SASS:build": "sass docs/src/scss:docs/theme/css/",
-    "SASS:watch": "sass --watch docs/src/scss/:docs/theme/css/",
     "RE:build": "tsc --build && npm run -s SASS:build && mkdocs build",
-    "RE:serve": "mkdocs serve --watch-theme",
-    "SERVE.THIS": "tsc --watch & npm run -s RE:serve & npm run --loglevel=silent SASS:watch ",
+    "SASS:w": "sass --watch docs/src/scss/:docs/theme/css/",
+    "TS:Watch": "tsc --watch",
+    "MK:W": "mkdocs serve --watch-theme",
     "GHP:Manual Deploy": "mkdocs gh-deploy --force"
   },
   "engines": {
@@ -34,7 +35,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/sqlite3": "^3.1.8",
-    "concurrently": "^8.2.0",
+    "concurrently": "^8.2.2",
     "postcss-inline-svg": "^6.0.0",
     "postcss-pseudo-classes": "^0.4.0",
     "postcss-scss": "^4.0.9",

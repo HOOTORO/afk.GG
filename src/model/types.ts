@@ -4,7 +4,6 @@ import { generateAFKResObj, rangeSlide } from "../components/helper.js";
 import { AfkArena, ValueModes, allRes, bres, sheetId } from "./constants.js";
 
 // TYPES //
-type prop = { n: string; v: string };
 
 type hours = 2 | 6 | 8 | 24;
 
@@ -95,4 +94,4 @@ class User {
   }
 }
 
-export { BaseResQty, BaseResource, DustChest, Gsheet, RankReward, User, prop };
+export { BaseResQty, BaseResource, DustChest, Gsheet, RankReward, User };

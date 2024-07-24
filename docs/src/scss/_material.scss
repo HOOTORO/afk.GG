@@ -219,3 +219,8 @@
 .md-typeset .number-container .md-button {
     padding: 0 3px;
 }
+.md-typeset .md-button {
+      margin: 5px;
+    width: -webkit-fill-available;
+    color: var(--md-accent-fg-color);
+}

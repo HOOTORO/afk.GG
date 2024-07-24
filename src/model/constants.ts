@@ -1,6 +1,42 @@
 import { Essence } from "./../types/abex-resource";
 import { DustChest } from "./types.js";
+export enum elTag {
+  Input = "input",
+  Div = "div",
 
+  Span = "span",
+  Label = "label",
+  Select = "select",
+
+  Option = "option",
+  Form = "form",
+  Img = "img",
+  tr = "tr",
+  td = "td",
+  th = "th",
+  Table = "table",
+  Thead = "thead",
+  Tbody = "tbody",
+  Button = "button",
+  Output = "output",
+}
+
+export enum elProp {
+  Id = "id",
+  Class = "class",
+  For = "for",
+  Alt = "alt",
+  Src = "src",
+  Width = "width",
+  Style = "style",
+  Type = "type",
+}
+export enum Input {
+  Number = "number",
+  Text = "text",
+  CheckBox = "checkbox",
+  Datetime = "datetime-local",
+}
 export const RelicBase = 18;
 export const AbExSellModifier = 0.4;
 
@@ -8,8 +44,6 @@ export const aeIcons = {
   stam: "https://i.imgur.com/n5WOzSZ.png",
   coin: "https://i.imgur.com/Gw216PZ.png",
   ess: "https://i.imgur.com/Gw216PZ.png",
-  bpEnter: "https://i.imgur.com/j6qEANW.png",
-  bpEnterImg: "https://i.imgur.com/QxSfSFU.png",
 };
 
 const relicEstimateTable = `
@@ -60,24 +94,6 @@ const relicEstimateTable = `
 
 `;
 
-// <tr>
-//   <td align="center">KEEP✅ </td>
-//   <td align="left">$need</td>
-// </tr>;
-
-// type Ascension =
-//   | "E"
-//   | "E+"
-//   | "L"
-//   | "L+"
-//   | "M"
-//   | "M+"
-//   | "A"
-//   | "A1"
-//   | "A2"
-//   | "A3"
-//   | "A4"
-//   | "A5";
 // const FlawlessDroplets = {
 //       E: 1,
 //       "E+": 1,
@@ -141,30 +157,31 @@ class AbEx {
   static now = new Date();
   static abexDurationDays = 19;
   static silentDay = 1;
-  static viewerMultiplier = 1.2;
-  static starFasterRecoveryMod = 0.9;
+  static spectatorMod = 1.2;
+  static sodFastenMod = 0.9;
+  static startD = new Date();
 
   static start() {
-    return new Date(document.getElementById("abex-date").nodeValue);
+    return new Date();
   }
 
   static left() {
     return new Date(
-      this.start().getUTCFullYear(),
-      this.start().getUTCMonth(),
-      this.start().getUTCDate() + this.abexDurationDays,
-      this.start().getUTCHours(),
-      this.start().getUTCMinutes()
+      this.startD.getUTCFullYear(),
+      this.startD.getUTCMonth(),
+      this.startD.getUTCDate() + this.abexDurationDays,
+      this.startD.getUTCHours(),
+      this.startD.getUTCMinutes()
     );
   }
 
   static silentHoursIn() {
     return new Date(
-      this.left().getUTCFullYear(),
-      this.left().getUTCMonth(),
-      this.left().getUTCDate() - this.silentDay,
-      this.left().getUTCHours(),
-      this.left().getUTCMinutes()
+      this.startD.getUTCFullYear(),
+      this.startD.getUTCMonth(),
+      this.startD.getUTCDate() - this.silentDay,
+      this.startD.getUTCHours(),
+      this.startD.getUTCMinutes()
     );
   }
 

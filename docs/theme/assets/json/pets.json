@@ -1,67 +1,149 @@
 [
   {
-    "name": "Rock Lizard",
-    "short": "Rock",
-    "icon": "../../../assets/portraits/pet/pet_6008.png"
+    "name": "dreary ball",
+    "short": "black",
+    "codename": "pet_6001",
+    "id": 1,
+    "icon": "/assets/portraits/pets/pet_6001.png"
   },
   {
-    "name": "Talismane",
-    "short": "Tali",
-    "icon": "../../../assets/portraits/pet/pet_6012.png"
+    "name": "tufty ears",
+    "short": "whilte",
+    "codename": "pet_6002",
+    "id": 2,
+    "icon": "/assets/portraits/pets/pet_6002.png"
   },
   {
-    "name": "Moth",
-    "short": "Mot",
-    "icon": "../../../assets/portraits/pet/phantasmoth.png"
+    "name": "grasssy orb",
+    "short": "green",
+    "codename": "pet_6003",
+    "id": 3,
+    "icon": "/assets/portraits/pets/pet_6003.png"
   },
   {
-    "name": "Fox Fatale",
-    "short": "FoxF",
-    "icon": "../../../assets/portraits/pet/fox_fatale.png"
+    "name": "polar beast",
+    "short": "WFat",
+    "codename": "pet_6004",
+    "id": 4,
+    "icon": "/assets/portraits/pets/pet_6004.png"
   },
   {
-    "name": "Winged Lion",
-    "short": "Lion",
-    "icon": "../../../assets/portraits/pet/pet_6007.png"
-  },
-  {
-    "name": "Flutter Owl",
-    "short": "FOwl",
-    "icon": "../../../assets/portraits/pet/pet_6011.png"
-  },
-  {
-    "name": "Seal",
-    "short": "Seal",
-    "icon": "../../../assets/portraits/pet/slumber_seal.png"
-  },
-  {
-    "name": "Souflee",
-    "short": "Cake",
-    "icon": "../../../assets/portraits/pet/savage_souffle.png"
-  },
-  {
-    "name": "Deer",
-    "short": "Dir",
-    "icon": "../../../assets/portraits/pet/pet_6010.png"
+    "name": "fire breAther",
+    "short": "RFat",
+    "codename": "pet_6005",
+    "id": 5,
+    "icon": "/assets/portraits/pets/pet_6005.png"
   },
   {
     "name": "Blade Lizard",
     "short": "Blade",
-    "icon": "../../../assets/portraits/pet/pet_6006.png"
+    "codename": "pet_6006",
+    "id": 6,
+    "icon": "/assets/portraits/pets/pet_6006.png"
   },
   {
-    "name": "Red Fat",
-    "short": "RFat",
-    "icon": "../../../assets/portraits/pet/pet_6005.png"
+    "name": "Winged Lion",
+    "short": "Lion",
+    "codename": "pet_6007",
+    "id": 7,
+    "icon": "/assets/portraits/pets/pet_6007.png"
   },
   {
-    "name": "White Snow Fat",
-    "short": "WFat",
-    "icon": "../../../assets/portraits/pet/pet_6004.png"
+    "name": "Rock crown Lizard",
+    "short": "Rock",
+    "codename": "pet_6008",
+    "id": 8,
+    "icon": "/assets/portraits/pets/pet_6008.png"
   },
   {
-    "name": "Vesperio",
+    "name": "feline Vesperio",
     "short": "Vesp",
-    "icon": "../../../assets/portraits/pet/pet_6009.png"
+    "codename": "pet_6009",
+    "id": 9,
+    "icon": "/assets/portraits/pets/pet_6009.png"
+  },
+  {
+    "name": "bellbellow",
+    "short": "Dir",
+    "codename": "pet_6010",
+    "id": 10,
+    "icon": "/assets/portraits/pets/pet_6010.png"
+  },
+  {
+    "name": "Flutterplume Owl",
+    "short": "FOwl",
+    "codename": "pet_6011",
+    "id": 11,
+    "icon": "/assets/portraits/pets/pet_6011.png"
+  },
+  {
+    "name": "Talismane",
+    "short": "Tali",
+    "codename": "pet_6012",
+    "id": 12,
+    "icon": "/assets/portraits/pets/pet_6012.png"
+  },
+  {
+    "name": "phantasMoth",
+    "short": "Mot",
+    "codename": "pet_6013",
+    "id": 13,
+    "icon": "/assets/portraits/pets/pet_6013.png"
+  },
+  {
+    "name": "savage Souflee",
+    "short": "Cake",
+    "codename": "pet_6014",
+    "id": 14,
+    "icon": "/assets/portraits/pets/pet_6014.png"
+  },
+  {
+    "name": "slumber Seal",
+    "short": "Seal",
+    "codename": "pet_6015",
+    "id": 15,
+    "icon": "/assets/portraits/pets/pet_6015.png"
+  },
+  {
+    "name": "Fox Fatale",
+    "short": "FoxF",
+    "codename": "pet_6016",
+    "id": 16,
+    "icon": "/assets/portraits/pets/pet_6016.png"
+  },
+  {
+    "name": "shroom spooder",
+    "short": "Spoody",
+    "codename": "pet_6017",
+    "id": 17,
+    "icon": "/assets/portraits/pets/pet_6017.png"
+  },
+  {
+    "name": "radish vrotunda",
+    "short": "indian",
+    "codename": "pet_6018",
+    "id": 18,
+    "icon": "/assets/portraits/pets/pet_6018.png"
+  },
+  {
+    "name": "panda dumpty",
+    "short": "panda",
+    "codename": "pet_6019",
+    "id": 19,
+    "icon": "/assets/portraits/pets/pet_6019.png"
+  },
+  {
+    "name": "ice crown",
+    "short": "ice",
+    "codename": "pet_6020",
+    "id": 20,
+    "icon": "/assets/portraits/pets/pet_6020.png"
+  },
+  {
+    "name": "aureus",
+    "short": "aue",
+    "codename": "pet_6021",
+    "id": 21,
+    "icon": "/assets/portraits/pets/pet_6021.png"
   }
 ]

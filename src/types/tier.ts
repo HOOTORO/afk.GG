@@ -1,4 +1,5 @@
-import { elTag, newEl } from "../components/helper.js";
+import { newEl } from "../components/helper.js";
+import { elTag } from "../model/constants.js";
 
 export enum tier {
   EMPTY = 0,
