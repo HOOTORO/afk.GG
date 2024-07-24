@@ -1,8 +1,4 @@
 import { bres } from "./constants.js";
-type prop = {
-    n: string;
-    v: string;
-};
 type hours = 2 | 6 | 8 | 24;
 interface Gsheet {
     cols: Array<{
@@ -45,5 +41,5 @@ declare class User {
     loadLocal(): void;
     calc(): void;
 }
-export { BaseResQty, BaseResource, DustChest, Gsheet, RankReward, User, prop };
+export { BaseResQty, BaseResource, DustChest, Gsheet, RankReward, User };
 //# sourceMappingURL=types.d.ts.map

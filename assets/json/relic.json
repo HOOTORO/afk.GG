@@ -4,7 +4,7 @@
     "id": 1,
     "cost": 2100,
     "name": "1106",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1106.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1106.png",
     "quality": "10"
   },
   {
@@ -12,7 +12,7 @@
     "id": 2,
     "cost": 2220,
     "name": "1206",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1206.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1206.png",
     "quality": "10"
   },
   {
@@ -20,7 +20,7 @@
     "id": 3,
     "cost": 1500,
     "name": "1306",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1306.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1306.png",
     "quality": "10"
   },
   {
@@ -28,7 +28,7 @@
     "id": 4,
     "cost": 1140,
     "name": "1406",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1406.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1406.png",
     "quality": "10"
   },
   {
@@ -36,7 +36,7 @@
     "id": 5,
     "cost": 2400,
     "name": "1506",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1506.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1506.png",
     "quality": "10"
   },
   {
@@ -44,7 +44,7 @@
     "id": 6,
     "cost": 1980,
     "name": "2104",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_2104.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_2104.png",
     "quality": "10"
   },
   {
@@ -52,14 +52,14 @@
     "id": 7,
     "cost": 2880,
     "name": "1105",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1105.png"
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1105.png"
   },
   {
     "recipe": [0],
     "id": 8,
     "cost": 2760,
     "name": "1201",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1201.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1201.png",
     "quality": "10"
   },
   {
@@ -67,7 +67,7 @@
     "id": 9,
     "cost": 1620,
     "name": "1202",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1202.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1202.png",
     "quality": "10"
   },
   {
@@ -75,7 +75,7 @@
     "id": 10,
     "cost": 2160,
     "name": "1203",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1203.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1203.png",
     "quality": "10"
   },
   {
@@ -83,7 +83,7 @@
     "id": 11,
     "cost": 1680,
     "name": "1204",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1204.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1204.png",
     "quality": "10"
   },
   {
@@ -91,7 +91,7 @@
     "id": 12,
     "cost": 1200,
     "name": "1205",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1205.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1205.png",
     "quality": "10"
   },
   {
@@ -99,7 +99,7 @@
     "id": 13,
     "cost": 2400,
     "name": "1304",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1304.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1304.png",
     "quality": "10"
   },
   {
@@ -107,7 +107,7 @@
     "id": 14,
     "cost": 2820,
     "name": "1305",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1305.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1305.png",
     "quality": "10"
   },
   {
@@ -115,7 +115,7 @@
     "id": 15,
     "cost": 1140,
     "name": "1404",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1404.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1404.png",
     "quality": "10"
   },
   {
@@ -123,14 +123,14 @@
     "id": 16,
     "cost": 1800,
     "name": "1405",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1405.png"
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1405.png"
   },
   {
     "recipe": [0],
     "id": 17,
     "cost": 1560,
     "name": "1504",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1504.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1504.png",
     "quality": "10"
   },
   {
@@ -138,7 +138,7 @@
     "id": 18,
     "cost": 2160,
     "name": "1505",
-    "icon": "../../../assets/ae/relic/10/bg_relic_1-relic_1505.png",
+    "icon": "/assets/ae/relic/10/bg_relic_1-relic_1505.png",
     "quality": "10"
   },
   {
@@ -146,7 +146,7 @@
     "id": 19,
     "cost": 1500,
     "name": "1106 - Eye of Valor",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_1106.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_1106.png",
     "quality": "20"
   },
   {
@@ -154,7 +154,7 @@
     "id": 20,
     "cost": 1380,
     "name": "1206 - Eye of Determination",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_1206.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_1206.png",
     "quality": "20"
   },
   {
@@ -162,7 +162,7 @@
     "id": 21,
     "cost": 1860,
     "name": "1306- ",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_1306.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_1306.png",
     "quality": "20"
   },
   {
@@ -170,7 +170,7 @@
     "id": 22,
     "cost": 1320,
     "name": "1406",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_1406.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_1406.png",
     "quality": "20"
   },
   {
@@ -178,7 +178,7 @@
     "id": 23,
     "cost": 1020,
     "name": "1506",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_1506.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_1506.png",
     "quality": "20"
   },
   {
@@ -186,7 +186,7 @@
     "id": 24,
     "cost": 900,
     "name": "2104",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2104.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2104.png",
     "quality": "20"
   },
   {
@@ -194,7 +194,7 @@
     "id": 25,
     "cost": 360,
     "name": "2105",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2105.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2105.png",
     "quality": "20"
   },
   {
@@ -202,7 +202,7 @@
     "id": 26,
     "cost": 120,
     "name": "2201",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2201.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2201.png",
     "quality": "20"
   },
   {
@@ -210,7 +210,7 @@
     "id": 27,
     "cost": 1680,
     "name": "2202",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2202.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2202.png",
     "quality": "20"
   },
   {
@@ -218,7 +218,7 @@
     "id": 28,
     "cost": 1210,
     "name": "2203",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2203.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2203.png",
     "quality": "20"
   },
   {
@@ -226,7 +226,7 @@
     "id": 29,
     "cost": 2760,
     "name": "2204",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2204.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2204.png",
     "quality": "20"
   },
   {
@@ -234,7 +234,7 @@
     "id": 30,
     "cost": 2040,
     "name": "2205",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2205.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2205.png",
     "quality": "20"
   },
   {
@@ -242,7 +242,7 @@
     "id": 31,
     "cost": 2040,
     "name": "2304",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2304.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2304.png",
     "quality": "20"
   },
   {
@@ -250,7 +250,7 @@
     "id": 32,
     "cost": 3240,
     "name": "2305",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2305.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2305.png",
     "quality": "20"
   },
   {
@@ -258,7 +258,7 @@
     "id": 33,
     "cost": 540,
     "name": "2404",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2404.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2404.png",
     "quality": "20"
   },
   {
@@ -266,7 +266,7 @@
     "id": 34,
     "cost": 1440,
     "name": "2405",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2405.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2405.png",
     "quality": "20"
   },
   {
@@ -274,7 +274,7 @@
     "id": 35,
     "cost": 1680,
     "name": "2504",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2504.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2504.png",
     "quality": "20"
   },
   {
@@ -282,7 +282,7 @@
     "id": 36,
     "cost": 1020,
     "name": "2505",
-    "icon": "../../../assets/ae/relic/20/bg_relic_2-relic_2505.png",
+    "icon": "/assets/ae/relic/20/bg_relic_2-relic_2505.png",
     "quality": "20"
   },
   {
@@ -290,7 +290,7 @@
     "id": 37,
     "cost": 2400,
     "name": "1106",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_1106.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_1106.png",
     "quality": "30"
   },
   {
@@ -298,7 +298,7 @@
     "id": 38,
     "cost": 2160,
     "name": "1206",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_1206.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_1206.png",
     "quality": "30"
   },
   {
@@ -306,7 +306,7 @@
     "id": 39,
     "cost": 2280,
     "name": "1306",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_1306.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_1306.png",
     "quality": "30"
   },
   {
@@ -314,7 +314,7 @@
     "id": 40,
     "cost": 5040,
     "name": "1406",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_1406.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_1406.png",
     "quality": "30"
   },
   {
@@ -322,7 +322,7 @@
     "id": 41,
     "cost": 3960,
     "name": "1506",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_1506.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_1506.png",
     "quality": "30"
   },
   {
@@ -330,7 +330,7 @@
     "id": 42,
     "cost": 3060,
     "name": "3104",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3104.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3104.png",
     "quality": "30"
   },
   {
@@ -338,7 +338,7 @@
     "id": 43,
     "cost": 4080,
     "name": "3105",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3105.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3105.png",
     "quality": "30"
   },
   {
@@ -346,7 +346,7 @@
     "id": 44,
     "cost": 1430,
     "name": "3201",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3201.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3201.png",
     "quality": "30"
   },
   {
@@ -354,7 +354,7 @@
     "id": 45,
     "cost": 2880,
     "name": "3202",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3202.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3202.png",
     "quality": "30"
   },
   {
@@ -362,7 +362,7 @@
     "id": 46,
     "cost": 1740,
     "name": "3203",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3203.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3203.png",
     "quality": "30"
   },
   {
@@ -370,7 +370,7 @@
     "id": 47,
     "cost": 4200,
     "name": "3204",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3204.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3204.png",
     "quality": "30"
   },
   {
@@ -378,7 +378,7 @@
     "id": 48,
     "cost": 5760,
     "name": "3205",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3205.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3205.png",
     "quality": "30"
   },
   {
@@ -386,7 +386,7 @@
     "id": 49,
     "cost": 2270,
     "name": "3304",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3304.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3304.png",
     "quality": "30"
   },
   {
@@ -394,7 +394,7 @@
     "id": 50,
     "cost": 9600,
     "name": "3305",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3305.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3305.png",
     "quality": "30"
   },
   {
@@ -402,7 +402,7 @@
     "id": 51,
     "cost": 1320,
     "name": "3404",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3404.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3404.png",
     "quality": "30"
   },
   {
@@ -410,7 +410,7 @@
     "id": 52,
     "cost": 6120,
     "name": "3405",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3405.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3405.png",
     "quality": "30"
   },
   {
@@ -418,7 +418,7 @@
     "id": 53,
     "cost": 4440,
     "name": "3504",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3504.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3504.png",
     "quality": "30"
   },
   {
@@ -426,7 +426,7 @@
     "id": 54,
     "cost": 4200,
     "name": "3505",
-    "icon": "../../../assets/ae/relic/30/bg_relic_3-relic_3505.png",
+    "icon": "/assets/ae/relic/30/bg_relic_3-relic_3505.png",
     "quality": "30"
   },
   {
@@ -434,7 +434,7 @@
     "id": 55,
     "cost": 24600,
     "name": "1106",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_1106.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_1106.png",
     "quality": "40"
   },
   {
@@ -442,7 +442,7 @@
     "id": 56,
     "cost": 24600,
     "name": "1206",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_1206.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_1206.png",
     "quality": "40"
   },
   {
@@ -450,7 +450,7 @@
     "id": 57,
     "cost": 36000,
     "name": "1306",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_1306.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_1306.png",
     "quality": "40"
   },
   {
@@ -458,7 +458,7 @@
     "id": 58,
     "cost": 25200,
     "name": "1406",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_1406.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_1406.png",
     "quality": "40"
   },
   {
@@ -466,14 +466,14 @@
     "id": 59,
     "cost": 25200,
     "name": "1506",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_1506.png"
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_1506.png"
   },
   {
     "recipe": [42, 48, 51],
     "id": 60,
     "cost": 9600,
     "name": "4104",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4104.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4104.png",
     "quality": "40"
   },
   {
@@ -481,7 +481,7 @@
     "id": 61,
     "cost": 12000,
     "name": "4105",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4105.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4105.png",
     "quality": "40"
   },
   {
@@ -489,7 +489,7 @@
     "id": 62,
     "cost": 2400,
     "name": "4201",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4201.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4201.png",
     "quality": "40"
   },
   {
@@ -497,7 +497,7 @@
     "id": 63,
     "cost": 15000,
     "name": "4202",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4202.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4202.png",
     "quality": "40"
   },
   {
@@ -505,7 +505,7 @@
     "id": 64,
     "cost": 2400,
     "name": "4203",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4203.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4203.png",
     "quality": "40"
   },
   {
@@ -513,7 +513,7 @@
     "id": 65,
     "cost": 31200,
     "name": "4204",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4204.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4204.png",
     "quality": "40"
   },
   {
@@ -521,14 +521,14 @@
     "id": 66,
     "cost": 12600,
     "name": "4205",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4205.png"
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4205.png"
   },
   {
     "recipe": [49, 46, 51],
     "id": 67,
     "cost": 16800,
     "name": "4304",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4304.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4304.png",
     "quality": "40"
   },
   {
@@ -536,7 +536,7 @@
     "id": 68,
     "cost": 30600,
     "name": "4305",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4305.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4305.png",
     "quality": "40"
   },
   {
@@ -544,7 +544,7 @@
     "id": 69,
     "cost": 10200,
     "name": "4404",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4404.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4404.png",
     "quality": "40"
   },
   {
@@ -552,7 +552,7 @@
     "id": 70,
     "cost": 15000,
     "name": "4405",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4405.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4405.png",
     "quality": "40"
   },
   {
@@ -560,7 +560,7 @@
     "id": 71,
     "cost": 18000,
     "name": "4504",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4504.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4504.png",
     "quality": "40"
   },
   {
@@ -568,7 +568,7 @@
     "id": 72,
     "cost": 17400,
     "name": "4505",
-    "icon": "../../../assets/ae/relic/40/bg_relic_4-relic_4505.png",
+    "icon": "/assets/ae/relic/40/bg_relic_4-relic_4505.png",
     "quality": "40"
   },
   {
@@ -576,7 +576,7 @@
     "id": 73,
     "cost": 156000,
     "name": "1106",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_1106.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_1106.png",
     "quality": "50"
   },
   {
@@ -584,7 +584,7 @@
     "id": 74,
     "cost": 132000,
     "name": "1206",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_1206.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_1206.png",
     "quality": "50"
   },
   {
@@ -592,7 +592,7 @@
     "id": 75,
     "cost": 114000,
     "name": "1306",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_1306.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_1306.png",
     "quality": "50"
   },
   {
@@ -600,7 +600,7 @@
     "id": 76,
     "cost": 96000,
     "name": "1406",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_1406.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_1406.png",
     "quality": "50"
   },
   {
@@ -608,7 +608,7 @@
     "id": 77,
     "cost": 132000,
     "name": "1506",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_1506.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_1506.png",
     "quality": "50"
   },
   {
@@ -616,7 +616,7 @@
     "id": 78,
     "cost": 21600,
     "name": "5104",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5104.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5104.png",
     "quality": "50"
   },
   {
@@ -624,7 +624,7 @@
     "id": 79,
     "cost": 58200,
     "name": "5105",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5105.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5105.png",
     "quality": "50"
   },
   {
@@ -632,7 +632,7 @@
     "id": 80,
     "cost": 48000,
     "name": "5201",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5201.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5201.png",
     "quality": "50"
   },
   {
@@ -640,7 +640,7 @@
     "id": 81,
     "cost": 61200,
     "name": "5202",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5202.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5202.png",
     "quality": "50"
   },
   {
@@ -648,7 +648,7 @@
     "id": 82,
     "cost": 50400,
     "name": "5203",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5203.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5203.png",
     "quality": "50"
   },
   {
@@ -656,7 +656,7 @@
     "id": 83,
     "cost": 75000,
     "name": "5204",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5204.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5204.png",
     "quality": "50"
   },
   {
@@ -664,7 +664,7 @@
     "id": 84,
     "cost": 69600,
     "name": "5205",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5205.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5205.png",
     "quality": "50"
   },
   {
@@ -672,7 +672,7 @@
     "id": 85,
     "cost": 100200,
     "name": "5304",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5304.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5304.png",
     "quality": "50"
   },
   {
@@ -680,7 +680,7 @@
     "id": 86,
     "cost": 159600,
     "name": "5305",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5305.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5305.png",
     "quality": "50"
   },
   {
@@ -688,7 +688,7 @@
     "id": 87,
     "cost": 5400,
     "name": "5404",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5404.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5404.png",
     "quality": "50"
   },
   {
@@ -696,7 +696,7 @@
     "id": 88,
     "cost": 36000,
     "name": "5405",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5405.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5405.png",
     "quality": "50"
   },
   {
@@ -704,7 +704,7 @@
     "id": 89,
     "cost": 51000,
     "name": "5504",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5504.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5504.png",
     "quality": "50"
   },
   {
@@ -712,7 +712,7 @@
     "id": 90,
     "cost": 9000,
     "name": "5505",
-    "icon": "../../../assets/ae/relic/50/bg_relic_5-relic_5505.png",
+    "icon": "/assets/ae/relic/50/bg_relic_5-relic_5505.png",
     "quality": "50"
   }
 ]

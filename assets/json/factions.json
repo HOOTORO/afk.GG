@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "graveborn",
+    "icon": "",
+    "acronym": "GB"
+  },
+  {
+    "id": 2,
+    "name": "celestial",
+    "acronym": "CEL",
+    "icon": ""
+  },
+  {
+    "id": 3,
+    "name": "lightbearer",
+    "acronym": "LB",
+    "icon": ""
+  },
+  {
+    "id": 4,
+    "name": "wilder",
+    "acronym": "WD",
+    "icon": ""
+  },
+  {
+    "id": 5,
+    "name": "hypogenian",
+    "acronym": "",
+    "icon": "HP"
+  },
+  {
+    "id": 6,
+    "name": "mauler",
+    "acronym": "ML",
+    "icon": ""
+  },
+  {
+    "id": 7,
+    "name": "dimensional",
+    "acronym": "DM",
+    "icon": ""
+  }
+]

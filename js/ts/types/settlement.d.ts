@@ -1,4 +1,4 @@
-import { IconizedInput } from "./abex-resource.js";
+import { IconizedInput } from "./iconized.js";
 import { Tier } from "./tier.js";
 export declare class Settlement extends IconizedInput {
     essencePerHour: number;

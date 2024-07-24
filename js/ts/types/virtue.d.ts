@@ -1,4 +1,4 @@
-import { Iconized } from "./iconized.js";
+import { IconizedInput } from "./iconized.js";
 export declare enum Virtues {
     MIGHT = 0,
     FORTITUDE = 1,
@@ -7,10 +7,9 @@ export declare enum Virtues {
     SUSTENANCE = 4
 }
 export type DurasVirtue = keyof typeof Virtues;
-export declare class Virtue extends Iconized {
+export declare class Virtue extends IconizedInput {
     class: string;
     acronym: string;
-    value: number;
     dura: DurasVirtue;
     constructor(icon: string, name: string, id: number, cl: string, acronym: string);
 }

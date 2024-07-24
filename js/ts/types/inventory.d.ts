@@ -1,7 +1,6 @@
 import Relic from "./relic.js";
 import { Core } from "./core.js";
 import { Virtue } from "./virtue.js";
-export declare const Tree: Virtue[];
 export default class Inventory {
     core: Core;
     tree: Virtue[];
