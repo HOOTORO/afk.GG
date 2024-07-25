@@ -1,14 +1,6 @@
 import { Input } from "../model/constants.js";
-import { BaseResQty, User } from "../model/types.js";
 export declare const log: (x: any) => void;
-declare function generateAFKResObj(x: string): BaseResQty;
-declare function weekLabels(n: number, stops: {
-    n: number;
-    desc: string;
-}[]): string;
-declare function rangeSlide(value: string, user: User): void;
-declare function createSelectList(name: string, options: string[] | number[]): HTMLSelectElement;
-export { createSelectList, generateAFKResObj, hasEmpty, populateStorage, rangeSlide, savedObj, setApp, weekLabels, buttonWrapInput, };
+export { hasEmpty, populateStorage, savedObj, setApp, buttonWrapInput };
 export declare function newIn(fieldType: Input, attrs?: {
     [k: string]: string;
 }): HTMLElement;

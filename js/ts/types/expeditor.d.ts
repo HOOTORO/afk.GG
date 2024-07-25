@@ -13,6 +13,7 @@ export declare class Expeditor {
     star: StarOfDawn;
     DuraTree: Virtue[];
     constructor(guild: Militia, star: boolean);
+    BossAttack(): void;
     EssenceIncome(): number;
     StamRecovery(): number;
     SilentStam(): number;

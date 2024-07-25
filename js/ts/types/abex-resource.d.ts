@@ -4,6 +4,8 @@ export declare class Stamina extends IconizedInput {
     constructor();
 }
 export declare class Essence extends IconizedInput {
+    lastUpdate: Date;
+    hoursSinceLastUpdate: number;
     constructor();
 }
 export declare class Spectators extends IconizedInput {

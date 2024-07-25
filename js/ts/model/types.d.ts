@@ -32,14 +32,5 @@ declare class BaseResource {
 declare class BaseResQty extends BaseResource {
     amount: number;
 }
-declare class User {
-    spreadSheetId: string;
-    leaderboard: RankReward[];
-    income: BaseResQty[];
-    constructor(gSheetId?: string);
-    set reward(val: RankReward);
-    loadLocal(): void;
-    calc(): void;
-}
-export { BaseResQty, BaseResource, DustChest, Gsheet, RankReward, User };
+export { BaseResQty, BaseResource, DustChest, Gsheet, RankReward };
 //# sourceMappingURL=types.d.ts.map

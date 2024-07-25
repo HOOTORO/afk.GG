@@ -81,10 +81,6 @@ declare class ValueModes extends AfkArena {
         period: number;
         display: boolean;
     }[];
-    static emuns(): {
-        id: string;
-        table: string;
-    }[];
     static gMode(x: string): GameMode;
 }
 type bres = "dia" | "bait" | "redc" | "yells" | "emblcc" | "timee" | "stars" | "poe" | "dust" | "twise" | "mythfs" | "secrs";
@@ -96,16 +92,9 @@ declare enum GameMode {
     all = "all"
 }
 declare const verb = true;
-declare const xh = "\n    <div>\n        <span id=\"rangeValue\">1 week</span>\n        <input class=\"range\" type=\"range\" name=\"times\" value=\"1\" min=\"1\" max=\"52\"  list=\"values\" />\n<datalist id=\"values\">\n";
-declare const leftover = "\n</datalist>\n    </div>\n";
-declare const userFields: {
-    name: string;
-    type: string;
-    src: string;
-}[];
 declare const sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
 declare const base = "https://docs.google.com/spreadsheets/d/1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY/gviz/tq?";
 declare const query: string;
 declare const url: (x: string) => string;
-export { AbEx, AfkArena, Boss, GameMode, Period, ValueModes, allRes, base, bres, iconSize, leftover, query, relicEstimateTable, sheetId, url, userFields, verb, xh, };
+export { AbEx, AfkArena, Boss, GameMode, Period, ValueModes, allRes, base, bres, iconSize, query, relicEstimateTable, sheetId, url, verb, };
 //# sourceMappingURL=constants.d.ts.map
