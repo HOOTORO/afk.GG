@@ -75,6 +75,8 @@ export function AttackForm() {
     .appendChild(newEl(elTag.Tbody));
   dataColumns.forEach((x) => header.appendChild(newEl(elTag.th, {}, x)));
 
+  const dpsField = document.getElementById("dps") as HTMLInputElement;
+  const commentField = document.getElementById("comm") as HTMLInputElement;
   csvExport.addEventListener("click", (e) => {
     const o = team.damage.map((x) => [
       team.roster.map((y) => y.name).join("|"),
@@ -95,13 +97,13 @@ export function AttackForm() {
 
     team.appendResultRow(
       body,
-      parseInt($("#dps").val().toString()),
+      dpsField.valueAsNumber,
       expeditor.DuraTree[Virtues.MIGHT].value,
       expeditor.DuraTree[Virtues.FORTITUDE].value,
       expeditor.DuraTree[Virtues.CELERITY].value,
       expeditor.DuraTree[Virtues.SORCERY].value,
       expeditor.DuraTree[Virtues.SUSTENANCE].value,
-      $("#comm").val().toString()
+      commentField.value
     );
   });
 }
