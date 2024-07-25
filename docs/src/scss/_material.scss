@@ -224,3 +224,12 @@
     width: -webkit-fill-available;
     color: var(--md-accent-fg-color);
 }
+
+.md-typeset abbr{
+  // background-color: var(--md-default-bg-color--ultra-dark);
+}
+
+/* .md-tooltip2.md-tooltip2--bottom.md-tooltip2--active, */
+.md-tooltip2__inner {
+    background-color: var(--md-default-bg-color--ultra-dark)
+}

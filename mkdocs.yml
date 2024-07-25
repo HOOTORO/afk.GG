@@ -271,7 +271,5 @@ extra:
 extra_css:
   - css/main.css
 extra_javascript:
-  # - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   - js/feedback.js
-  # - js/committers.js
   - js/ts/util/linker.js
