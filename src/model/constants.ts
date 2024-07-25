@@ -1,4 +1,3 @@
-import { Essence } from "./../types/abex-resource";
 import { DustChest } from "./types.js";
 export enum elTag {
   Input = "input",
@@ -229,12 +228,6 @@ class ValueModes extends AfkArena {
     },
   ];
 
-  static emuns() {
-    return this.rSources.map((x) => {
-      return { id: x.id, table: x.tableName };
-    });
-  }
-
   static gMode(x: string) {
     const source = this.rSources.find(
       (y) => y.id === x || y.label === x || y.tableName === x
@@ -285,23 +278,6 @@ enum GameMode {
 }
 
 const verb = true;
-const xh = `
-    <div>
-        <span id="rangeValue">1 week</span>
-        <input class="range" type="range" name="times" value="1" min="1" max="52"  list="values" />
-<datalist id="values">
-`;
-const leftover = `
-</datalist>
-    </div>
-`;
-
-const userFields = [
-  { name: "cursed-realm", type: "select", src: "gsheet" },
-  { name: "treasure-scramble", type: "select", src: "gsheet" },
-  { name: "nightmare-corridor", type: "select", src: "gsheet" },
-  //    {name: "afk", type: "bool", src: "gsheet"}
-];
 
 const sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
 const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
@@ -321,12 +297,9 @@ export {
   base,
   bres,
   iconSize,
-  leftover,
   query,
   relicEstimateTable,
   sheetId,
   url,
-  userFields,
   verb,
-  xh,
 };

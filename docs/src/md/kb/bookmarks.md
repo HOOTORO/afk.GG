@@ -11,7 +11,7 @@ tags:
     - Guide
     - Knowledge
     - Community
-lastmod: 2024-07-10T23:05:27.060Z
+lastmod: 2024-07-25T02:14:26.508Z
 ---
 
 /// adheart | Powered by Community!
@@ -64,6 +64,7 @@ lastmod: 2024-07-10T23:05:27.060Z
 //// details | ➤ Discord Communities
     type: new
     open: True
+    attrs: {id: disco}
 
 /// tab | EU
 

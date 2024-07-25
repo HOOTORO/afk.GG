@@ -19,7 +19,7 @@ comments: true
 hide: []
 status: new
 slug: the-end-of-aquilon
-lastmod: 2024-07-11T23:47:52.697Z
+lastmod: 2024-07-25T06:40:44.442Z
 ---
 
 /// new
@@ -27,5 +27,5 @@ lastmod: 2024-07-11T23:47:52.697Z
 Грустно, эпик провалу не быть.
 Подготовил сводку событий в удобном формате.
 
-<video controls width="1376" height="720" src="https://www.dropbox.com/scl/fi/cluao8leyebwvcht9mjcb/new_f.mp4?rlkey=t4l5xyr05ueoo9zhxluekhnkj&st=x5r9p2q9&raw=1" title="SECOND WITNESSING OF A HOOTSMAN"></video>
+<video controls width="1376" height="720" src="https://www.dropbox.com/scl/fi/y60ij34bytooixxbssopw/cvo_f_on20240725.mp4?rlkey=e124cdjoegybteigypb3xxgc7&st=q4nqqooc&raw=1" title="SECOND WITNESSING OF A HOOTSMAN"></video>
 ///

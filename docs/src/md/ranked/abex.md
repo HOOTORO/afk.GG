@@ -11,7 +11,7 @@ tags:
 authors:
     - HOOTSMAN
 status: new
-lastmod: 2024-07-15T18:20:25.258Z
+lastmod: 2024-07-25T02:37:56.254Z
 ---
 
 /// details  | [AbEx Realm Ranking][realmranking]
@@ -38,6 +38,7 @@ lastmod: 2024-07-15T18:20:25.258Z
 [Оригинальная таблица, за авторством Резза и Whxtever](https://docs.google.com/spreadsheets/d/1fl9sOsdd3KOvavZEau6xM-9_foXIu_g0bYUAI8g4VDI/edit?gid=98585275#gid=98585275)
 ///
 /// tab | S10
+    attrs: {id: s10}
 
 В этот раз таблицу оперативно подготовили ребята из Prodota.
 Таблица заточена под рекрутеров, сделал версию для людей.

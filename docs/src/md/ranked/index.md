@@ -7,8 +7,8 @@ authors:
     - HOOTSMAN
 comments: true
 draft: false
-lastmod: 2024-07-11T03:26:29.639Z
-slug: ⛩️-guilds
+lastmod: 2024-07-25T02:28:04.014Z
+slug: guilds
 ---
 
 /// details | Disclaimer
@@ -135,7 +135,7 @@ slug: ⛩️-guilds
 
 1. [Shop Value][iurl2] Таблица с расчетом выгоды $ магазина.
    Автор: Yops.
-2. [РУ Топ][iurl3] по результатам S10 Бездны
+2. [РУ Топ](abex.md#s10) по результатам S10 Бездны
 ///
 
 ***

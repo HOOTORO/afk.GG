@@ -19,16 +19,6 @@ export function foodRemain() {
   }
 }
 function updateAbex() {
-  // updatevaluers
-  // mil.viewers = parseInt(
-  //   document.getElementById("mil-specs").getAttribute("value")
-  // );
-  // const sod = document.getElementById("mil-sod") as HTMLInputElement;
-  // expeditor.star.status = sod.checked;
-  // expeditor.stamina.value = parseInt(
-  //   document.getElementById("ex-food").getAttribute("value")
-  // );
-
   // calculations
   let totalFood = expeditor.SilentStam();
   let atl = totalFood / Boss.foodCost;

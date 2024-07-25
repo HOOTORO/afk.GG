@@ -78,7 +78,11 @@ export class IconizedInput extends Iconized {
         value: this.init(),
       };
     let input = newEl(elTag.Input, props);
-
+    input.addEventListener("input", (e) => {
+      if (e.target instanceof HTMLInputElement && e.target.valueAsNumber > 0) {
+        this.update(e.target.valueAsNumber);
+      }
+    });
     if (this.buttons) {
       input = buttonWrapInput(input, this.update);
     }

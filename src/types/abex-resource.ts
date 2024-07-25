@@ -1,7 +1,7 @@
 import { updateTableData } from "../abex/relicEstimate.js";
-import { buttonWrapInput, newEl, storedValue } from "../components/helper.js";
-import { elTag, Input } from "../model/constants.js";
-import { Iconized, IconizedInput } from "./iconized.js";
+import { savedObj, storedValue } from "../components/helper.js";
+import { Input } from "../model/constants.js";
+import { IconizedInput } from "./iconized.js";
 
 export const stam = "https://i.imgur.com/n5WOzSZ.png";
 const ess = "https://i.imgur.com/Gw216PZ.png";
@@ -22,12 +22,29 @@ export class Stamina extends IconizedInput {
 }
 
 export class Essence extends IconizedInput {
+  lastUpdate: Date;
+  hoursSinceLastUpdate: number;
   constructor() {
     super(0, ess, "essence");
     this.width = 32;
     this.height = 32;
     this.cssName = clName;
     this.value = parseInt(this.init());
+    const updated: Date = savedObj(`${this.name}-timestamp`, new Date());
+    if (updated) {
+      const now = new Date();
+      this.hoursSinceLastUpdate = (now.getTime() - updated.getTime()) / 3600000;
+      this.lastUpdate = updated;
+    }
+    const fn = (y: number) => {
+      if (y >= 0) {
+        this.value = y;
+        storedValue(this.name, this.value);
+        storedValue(`${this.name}-timestamp`, new Date());
+        updateTableData();
+      }
+    };
+    this.update = fn;
   }
 }
 

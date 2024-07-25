@@ -58,6 +58,9 @@ export function loadBag() {
 }
 
 export function updateTableData() {
+  if (!relApp) {
+    return;
+  }
   document.getElementById("final-table").innerHTML = relicEstimateTable
     .replace("$inc", expeditor.EssenceIncome().toString())
     .replace("$tier", expeditor.DropTiers())

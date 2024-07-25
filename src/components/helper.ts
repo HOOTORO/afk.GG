@@ -1,83 +1,12 @@
-import { bres, elProp, elTag, Input, verb } from "../model/constants.js";
-import { BaseResQty, User } from "../model/types.js";
-import { updateResourceBox } from "./output.js";
-
+import { elProp, elTag, Input, verb } from "../model/constants.js";
+// import sanitizeHtml from "";
 export const log = (x: any) => {
   if (verb) {
     console.log(x);
   }
 };
 
-function generateAFKResObj(x: string) {
-  const gid = x.toLowerCase().replace(/ /g, "-"),
-    short = x
-      .split(" ")
-      .map((v, i) => {
-        if (i > 0) {
-          return v.charAt(0).toLowerCase();
-        } else {
-          return v.toLowerCase().substring(0, 4);
-        }
-      })
-      .join("");
-  const br: BaseResQty = {
-    type: gid as bres,
-    label: short,
-    img: `../assets/icons/s/${short}.png`,
-    amount: 0,
-  };
-  return br;
-}
-
-function weekLabels(n: number, stops: { n: number; desc: string }[]) {
-  let html: string = "";
-  for (let i = 1; i <= n; i++) {
-    if (stops.some((v) => v.n === i)) {
-      html += `<option value="${i.toString()}" label="${
-        stops.find((v) => v.n === i)?.desc
-      }"></option>`;
-    } else {
-      html += `<option value="${i.toString()}" label=""></option>`;
-    }
-  }
-  return html;
-}
-
-function rangeSlide(value: string, user: User) {
-  $("rangeValue").html(value + " weeks");
-  $(this).attr("value", value?.toString());
-  populateStorage("rangeValue", value);
-  updateResourceBox(user.income, parseInt(value));
-}
-
-function createSelectList(name: string, options: string[] | number[]) {
-  const list = document.createElement("select");
-  list.id = name;
-  for (const opt of options) {
-    list.appendChild(
-      newEl("option", { value: opt.toString() }, opt.toString())
-    );
-  }
-  const localVal = storedValue(name);
-  if (localVal && options.findIndex((x) => x === localVal) !== -1) {
-    list.options.item(options.findIndex((x) => x === localVal)).selected = true;
-  } else {
-    list.options.item(0).setAttribute("selected", "");
-  }
-  return list;
-}
-
-export {
-  createSelectList,
-  generateAFKResObj,
-  hasEmpty,
-  populateStorage,
-  rangeSlide,
-  savedObj,
-  setApp,
-  weekLabels,
-  buttonWrapInput,
-};
+export { hasEmpty, populateStorage, savedObj, setApp, buttonWrapInput };
 
 //! ///////////////////
 //! HTML Generators //
@@ -132,8 +61,10 @@ function buttonWrapInput(el: HTMLElement, update: (y: number) => void) {
   wrap.addEventListener("click", (e: MouseEvent) => {
     e.preventDefault();
     if (e.target instanceof HTMLButtonElement) {
-      if (e.target.className.includes("desc") && input.valueAsNumber >= 0) {
-        input.stepDown();
+      if (e.target.className.includes("desc")) {
+        if (input.valueAsNumber > 0) {
+          input.stepDown();
+        }
       } else {
         input.stepUp();
       }
@@ -141,9 +72,6 @@ function buttonWrapInput(el: HTMLElement, update: (y: number) => void) {
     }
   });
 
-  input.addEventListener("input", () => {
-    update(input.valueAsNumber);
-  });
   return wrap;
 }
 

@@ -20,7 +20,7 @@ comments: true
 hide:
     - feedback
 preview: https://i.imgur.com/uqCQfcs.png
-lastmod: 2024-07-11T23:35:23.497Z
+lastmod: 2024-07-25T06:46:17.615Z
 ---
 
 
@@ -40,7 +40,7 @@ lastmod: 2024-07-11T23:35:23.497Z
 
 /// tab | v.HOOTS
 
-<video controls width="1376" height="720" src="https://www.dropbox.com/scl/fi/exqj0s9uflup1bqcxjz7g/0702.webm?rlkey=dsd23gwy5c6fnc7joze8y5bkt&st=46cyy4qa&raw=1" title="WITNESSING OF A HOOTSMAN""></video>
+<video controls width="1376" height="720" src="https://www.dropbox.com/scl/fi/pcakxd7n0jf9on024da2o/cvo_0702_on20240725.mp4?rlkey=rly0r71r40lo5sx7qjjbgih6f&st=789zyieu&raw=1" title="WITNESSING OF A HOOTSMAN""></video>
 
 ///
 /// tab | v.Dorian summary
@@ -154,7 +154,7 @@ _Негодяй Хутсмен не дал шанса потешить чсвс�
 
 Никому уже даже нет дела, чья эта заслуга, случившееся попадание в топ-20.
 
-|            Призыв Сенсея к ответу за гнилоЙ базар            |
+|            Призыв Сенсея к ответу за гнилой базар            |
 | :----------------------------------------------------------: |
 |                          ![ssgood]                           |
 | Пожалуй закреплю тут, если вдруг призыв не дошел до адресата |
@@ -165,13 +165,15 @@ _Негодяй Хутсмен не дал шанса потешить чсвс�
 С удовольствием понаблюдаем как аква отвечает за свой базар.
 
 <figure>
-    <video autoplay loop src="https://www.dropbox.com/scl/fi/1513r944n870asi83uwn4/round.webm?rlkey=serznrbyp0xhdi03vpdsv4yu3&st=ivadj255&raw=1" title="ROUND"></video>
+    <video autoplay loop src="https://www.dropbox.com/scl/fi/ak0e0aid1s1g6u655kg64/cvo_0703_on20240725.mp4?rlkey=ys6t3csx5qpecg1ztiw0za40b&st=nhzcjzbc&raw=1" title="ROUND"></video>
 </figure>
 ---
 
 /// details | OCR
     type: config
     open: False
+    attrs: { style: "display:none" }
+
 28 Јипе 2024
 23:28 Г» anton Привет. у меня одна претензия была по ходу стрима сир кикнул всех, хотя у него
 конфликт был только с советом.

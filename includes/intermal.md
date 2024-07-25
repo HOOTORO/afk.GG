@@ -1,9 +1,6 @@
 
 <!-- guilds -->
 
-[iurl1]: /kb/infographics/#isle-of-gold
-[iurl2]: /kb/infographics/#spenders-values
-[iurl3]: /kb/ranked/abex/#s10
-[ru]: /kb/bookmarks/#ru
-[en]: /kb/bookmarks/#eu
-[realms]: /kb/ranked/realms
+[iurl1]: ../kb/infographics.md#isle-of-gold
+[iurl2]: ../kb/infographics.md#spenders-values
+[ru|en]: ../../kb/bookmarks.md#disco

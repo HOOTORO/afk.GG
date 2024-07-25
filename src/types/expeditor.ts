@@ -2,7 +2,7 @@ import { fetchData, newEl, safeSum as safeSum } from "../components/helper.js";
 
 import Inventory from "./inventory.js";
 import { Militia } from "./militia.js";
-import { AbEx, elTag, RelicBase } from "../model/constants.js";
+import { AbEx, Boss, elTag, RelicBase } from "../model/constants.js";
 import { Settlement } from "./settlement.js";
 import { Essence, Stamina, StarOfDawn } from "./abex-resource.js";
 import { Tier } from "./tier.js";
@@ -38,9 +38,19 @@ export class Expeditor {
         (x) => new Virtue(x.icon, x.name, x.id, x.class, x.acronym)
       )
     );
+    if (this.essence.hoursSinceLastUpdate > 0) {
+      this.essence.value =
+        this.essence.value +
+        this.EssenceIncome() * this.essence.hoursSinceLastUpdate;
+      this.essence.lastUpdate = new Date();
+    }
   }
 
   // METHODS
+
+  BossAttack() {
+    this.stamina.value -= Boss.foodCost;
+  }
 
   EssenceIncome() {
     return safeSum(this.captured.map((x) => x.EPH()));

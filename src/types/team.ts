@@ -4,7 +4,7 @@ import {
   savedObj,
   storedValue,
 } from "../components/helper.js";
-import { elTag } from "../model/constants.js";
+import { Boss, elTag } from "../model/constants.js";
 import { Hero } from "./hero.js";
 import { Pet } from "./pet.js";
 
@@ -105,6 +105,7 @@ export class Team {
     if (this.damage === undefined) {
       this.damage = [];
     }
+    this.food -= Boss.foodCost;
     this.damage.push([dmg, c]);
   }
 
