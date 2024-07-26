@@ -3,8 +3,10 @@ interface Boss {
     name: string;
     icon: string;
 }
-declare class BossManager {
+export declare class BossManager {
+    static foodCost: number;
+    static retry: number;
     static bosses: Boss[];
 }
-export { BossManager };
+export {};
 //# sourceMappingURL=boss.d.ts.map

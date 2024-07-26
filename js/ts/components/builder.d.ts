@@ -3,7 +3,7 @@ export declare class elBuilder {
     #private;
     constructor(tag: elTag, props?: {
         [k: string]: string;
-    });
+    }, inner?: string);
     add(el: HTMLElement): elBuilder;
     add(tag: elTag, props: {
         [k: string]: string;

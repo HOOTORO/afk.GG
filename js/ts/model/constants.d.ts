@@ -1,3 +1,4 @@
+declare const verb = true;
 export declare enum elTag {
     Input = "input",
     Div = "div",
@@ -54,7 +55,6 @@ declare class AfkArena {
     static fastRewards(): number;
     static storeDiDeal(): number;
     static subsChest(): number;
-    static dailyPile(): number;
     static mistyValley(): number;
 }
 declare class AbEx {
@@ -64,37 +64,10 @@ declare class AbEx {
     static spectatorMod: number;
     static sodFastenMod: number;
     static startD: Date;
-    static start(): Date;
-    static left(): Date;
     static silentHoursIn(): Date;
     static hoursLeft(): number;
 }
-declare class Boss {
-    static foodCost: number;
-    static retry: number;
-}
-declare class ValueModes extends AfkArena {
-    static rSources: {
-        id: string;
-        label: string;
-        tableName: string;
-        period: number;
-        display: boolean;
-    }[];
-    static gMode(x: string): GameMode;
-}
-type bres = "dia" | "bait" | "redc" | "yells" | "emblcc" | "timee" | "stars" | "poe" | "dust" | "twise" | "mythfs" | "secrs";
 declare const allRes: string[];
-declare enum GameMode {
-    CR = "CR",
-    TS = "TS",
-    NC = "NC",
-    all = "all"
-}
-declare const verb = true;
-declare const sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
-declare const base = "https://docs.google.com/spreadsheets/d/1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY/gviz/tq?";
 declare const query: string;
-declare const url: (x: string) => string;
-export { AbEx, AfkArena, Boss, GameMode, Period, ValueModes, allRes, base, bres, iconSize, query, relicEstimateTable, sheetId, url, verb, };
+export { AbEx, AfkArena, Period, allRes, iconSize, query, relicEstimateTable, verb, };
 //# sourceMappingURL=constants.d.ts.map
