@@ -4,7 +4,9 @@ import {
   savedObj,
   storedValue,
 } from "../components/helper.js";
-import { Boss, elTag } from "../model/constants.js";
+import { elTag } from "../model/constants.js";
+import { Stamina } from "./abex-resource.js";
+import { BossManager } from "./boss.js";
 import { Hero } from "./hero.js";
 import { Pet } from "./pet.js";
 
@@ -12,22 +14,22 @@ const teamWrap = "team";
 const heroSelectId = "hero-selection";
 const petSelectId = "pet-sele";
 
-export const HeroesData: Hero[] = await fetchData("json/heroes.json");
-export const Beasts: Pet[] = await fetchData("json/pets.json");
+export const rawHeroesData: Hero[] = await fetchData("json/heroes.json");
+export const rawBeasts: Pet[] = await fetchData("json/pets.json");
 
-const Heroes: Hero[] = HeroesData.map(
+const Heroes: Hero[] = rawHeroesData.map(
   (x) =>
     new Hero(x.id, x.icon, x.heroType, x.heroClass, x.role, x.faction, x.slug)
 );
-const puppies: Pet[] = Beasts.map((x) => new Pet(x.id, x.icon, x.name));
+const puppies: Pet[] = rawBeasts.map((x) => new Pet(x.id, x.icon, x.name));
 
 export class Team {
   #wrap: HTMLElement;
   roster: Hero[] = [];
   private _max: number = 5;
-  damage: [number, string?][];
+  damage: [number, string?, boolean?][];
 
-  food: number;
+  food: Stamina = new Stamina();
 
   constructor(mountId: string);
   constructor(
@@ -54,7 +56,7 @@ export class Team {
     }
 
     this.beast = savedObj("team-pet", new Pet(0, "1", "0"));
-    this.food = savedObj("min-food", 0);
+    this.food = savedObj(this.food.name, new Stamina());
     this.init(mountId);
   }
   init(mid: string) {
@@ -101,12 +103,23 @@ export class Team {
     }
   }
 
-  makeAttack(dmg: number, c?: string) {
+  makeAttack(dmg: number, c?: string, d?: boolean) {
     if (this.damage === undefined) {
       this.damage = [];
     }
-    this.food -= Boss.foodCost;
-    this.damage.push([dmg, c]);
+    if (d) {
+      this.food.setValue(this.food.value - BossManager.retry);
+    } else {
+      this.food.setValue(this.food.value - BossManager.foodCost);
+    }
+    this.damage.push([dmg, c, d]);
+
+    document.getElementById(
+      "allowed-retry"
+    ).innerText = `Attack: ${this.food.BossAttacks()} \nRetry: ${this.food.RetryLimit()}`;
+    document.getElementById("avg-dps").innerText = `AVG DPS: ${Math.round(
+      this.damage.map((x) => x[0]).reduce((a, b) => a + b) / this.damage.length
+    )}`;
   }
 
   inputsContainer(id: string, data: Hero[] | Pet[]) {
@@ -152,9 +165,9 @@ export class Team {
   petHandler(e: InputEvent) {
     const tg = e.target as HTMLInputElement;
     const petGroup = document.querySelectorAll(`.${petSelectId} input`);
-    const clickedPet = Beasts.find((x) => x.name.includes(tg.id.substring(7)));
+    const clickedPet = puppies.find((x) => x.name === tg.name);
     petGroup.forEach((x: HTMLInputElement) => {
-      if (!x.id.includes(clickedPet.name)) x.checked = false;
+      if (x.name != clickedPet.name) x.checked = false;
     });
     this.beast = clickedPet;
     tg.checked = !tg.checked;
@@ -168,7 +181,8 @@ export class Team {
     duraCelerity: number,
     duraSorcery: number,
     duraSustenance: number,
-    c: string = ""
+    c: string = "",
+    d: boolean
   ) {
     const resultRow = newEl(elTag.tr),
       team = newEl(elTag.td, {}),
@@ -183,7 +197,9 @@ export class Team {
 
     this.roster.forEach((x) => team.appendChild(x.img()));
     pet.appendChild(this.beast.img());
-
+    if (d) {
+      comment.innerText += "discarded attack, retry";
+    }
     resultRow.style.verticalAlign = "middle";
     resultRow.appendChild(team);
     resultRow.appendChild(pet);
@@ -195,11 +211,11 @@ export class Team {
     resultRow.appendChild(damage);
     resultRow.appendChild(comment);
 
-    this.makeAttack(dps, c);
+    this.makeAttack(dps, c, d);
     body.appendChild(resultRow);
   }
 
-  mount(elid: string) {
-    document.getElementById(elid).appendChild(this.#wrap);
+  mount(elId: string) {
+    document.getElementById(elId).appendChild(this.#wrap);
   }
 }

@@ -1,4 +1,4 @@
-import {fetchData} from "../components/helper.js";
+import { fetchData } from "../components/helper.js";
 
 interface Boss {
   id: number;
@@ -8,8 +8,8 @@ interface Boss {
 
 const afkBosses: Boss[] = await fetchData("json/bosses.json");
 
-class BossManager {
+export class BossManager {
+  static foodCost = 48;
+  static retry = 4;
   static bosses: Boss[] = afkBosses;
 }
-
-export {BossManager};

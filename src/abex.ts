@@ -3,7 +3,6 @@ import { Militia } from "./types/militia.js";
 import { Expeditor } from "./types/expeditor.js";
 import { Locations } from "./util/locations.js";
 import { AttackForm } from "./abex/attack.js";
-import { foodRemain } from "./abex/retryaya.js";
 import { Team } from "./types/team.js";
 
 export const mil = new Militia(10);
@@ -18,7 +17,6 @@ switch (window.location.pathname) {
     break;
   case Locations.warBook:
     AttackForm();
-    foodRemain();
     break;
   default:
     console.log("nothing to do here");

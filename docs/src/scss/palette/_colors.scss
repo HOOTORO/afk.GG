@@ -59,7 +59,7 @@ $colormap: (
     "dark-pink": rgb(255, 71, 178),
     "dark-red": rgb(255, 46, 46),
     "dark-yellow": rgb(251, 231, 121),
-    "rnb": linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 47, 55, 0.945)),
+    "rnb": linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(3, 73, 85, 0.945)),
     "text": rgb(228, 228, 228),
     "def-bg": color.adjust(rgb(20, 24, 25), $hue: 40deg, $saturation: 20%, $lightness: 21%),
     "dbg": linear-gradient(222deg, rgba(44, 42, 42, 0.198), rgba(0, 47, 55, 0.945)),
@@ -92,7 +92,7 @@ $colormap: (
     "dbg": #fff,
     "foot-bg": hsl(229, 18%, 12%),
     "foot-fg": hsl(191, 97%, 77%),
-    "rnb": linear-gradient(222deg, rgba(173, 10, 238, 0.198), rgba(28, 0, 55, 0.945))
+    "rnb": linear-gradient(222deg, rgba(173, 10, 238, 0.198), rgba(74, 17, 128, 0.945))
   )
 );
 

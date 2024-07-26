@@ -2,28 +2,28 @@
 title: AQUILON. The End.
 description: Well shit happens.
 date:
-    created: 2024-07-11
-    updated: 2024-07-11
+  created: 2024-07-11
+  updated: 2024-07-11
 preview: ""
 authors:
-    - HOOTSMAN
-    - SE2k
+  - HOOTSMAN
+  - SE2k
 categories:
-    - Retro
+  - Retro
 tags:
-    - AQUILON
-    - SadStory
-    - Community
+  - AQUILON
+  - SadStory
+  - Community
 draft: false
 comments: true
 hide: []
 status: new
 slug: the-end-of-aquilon
-lastmod: 2024-07-25T07:40:54.869Z
+lastmod: 2024-07-26T02:39:19.578Z
 ---
 
 /// new
-Вполне предсказуемо, но тем не менее неожиданно скоропостижно развалился AQUILON, не дотянув даже до старта тестового сезона.
+Хоть и предсказуемо, но все же слишком скоропостижно развалился AQUILON, не дотянув даже до старта теста.
 Грустно, эпик провалу не быть.
 Подготовил сводку событий в удобном формате.
 

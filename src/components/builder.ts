@@ -4,8 +4,12 @@ import { newEl } from "./helper.js";
 export class elBuilder {
   #el: HTMLElement;
 
-  constructor(tag: elTag, props: { [k: string]: string } = {}) {
-    this.#el = newEl(tag, props);
+  constructor(
+    tag: elTag,
+    props: { [k: string]: string } = {},
+    inner: string = ""
+  ) {
+    this.#el = newEl(tag, props, inner);
   }
 
   add(el: HTMLElement): elBuilder;

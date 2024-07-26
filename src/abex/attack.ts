@@ -21,7 +21,7 @@ export function AttackForm() {
     csvExport = newBtn("Export", "export-csv md-button"),
     treeDiv = newEl("div", { class: `team-set-inputs` });
 
-  treeDiv.appendChild(expeditor.stamina.html());
+  treeDiv.appendChild(team.food.html());
   expeditor.DuraTree.forEach((x) => {
     treeDiv.appendChild(x.html());
   });
@@ -30,16 +30,19 @@ export function AttackForm() {
       .add(addAttack)
       .add(csvExport)
       .html(),
-    dpsLabel = new elBuilder(elTag.Label, { for: "dps" })
+    dpsLabel = new elBuilder(elTag.Label, { for: "dps" }, "Damage, B.")
       .add(
         newIn(Input.Number, { class: `${c}__input`, id: "dps", step: "1000" })
       )
+      .add(newEl(elTag.Span, { id: "allowed-retry", class: "calculated" }))
       .html(),
-    comLabel = new elBuilder(elTag.Label, { for: "comm" })
+    comLabel = new elBuilder(elTag.Label, { for: "comm" }, "Comment")
       .add(newIn(Input.Text, { class: `${c}__input`, id: "comm" }))
+      .add(newEl(elTag.Span, { id: "avg-dps", class: "calculated" }))
+      .html(),
+    retryLabel = new elBuilder(elTag.Label, { for: "dis-flag" }, "Discarded?")
+      .add(newIn(Input.CheckBox, { class: `${c}__input`, id: "dis-flag" }))
       .html();
-  dpsLabel.innerHTML += "Damage, B.";
-  comLabel.innerHTML += "Comment";
 
   const atkF = new elBuilder(elTag.Form, {
     class: "team-set-inputs",
@@ -47,6 +50,7 @@ export function AttackForm() {
   })
     .add(dpsLabel)
     .add(comLabel)
+    .add(retryLabel)
     .add(btnContainer)
     .html();
 
@@ -77,6 +81,8 @@ export function AttackForm() {
 
   const dpsField = document.getElementById("dps") as HTMLInputElement;
   const commentField = document.getElementById("comm") as HTMLInputElement;
+  const discarded = document.getElementById("dis-flag") as HTMLInputElement;
+
   csvExport.addEventListener("click", (e) => {
     const o = team.damage.map((x) => [
       team.roster.map((y) => y.name).join("|"),
@@ -103,7 +109,18 @@ export function AttackForm() {
       expeditor.DuraTree[Virtues.CELERITY].value,
       expeditor.DuraTree[Virtues.SORCERY].value,
       expeditor.DuraTree[Virtues.SUSTENANCE].value,
-      commentField.value
+      commentField.value,
+      discarded.checked
     );
   });
 }
+
+// TODO
+// since all attackrem func merged here. will be great to implement calculation on the end date of season
+// function inputChange(e: HTMLInputElement) {
+//   if (e.type === "datetime-local") {
+//     AbEx.startD = e.valueAsDate;
+//   } else {
+//     e.setAttribute("value", e.value);
+//   }
+// }

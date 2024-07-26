@@ -1,6 +1,7 @@
 import { updateTableData } from "../abex/relicEstimate.js";
 import { savedObj, storedValue } from "../components/helper.js";
 import { Input } from "../model/constants.js";
+import { BossManager } from "./boss.js";
 import { IconizedInput } from "./iconized.js";
 
 export const stam = "https://i.imgur.com/n5WOzSZ.png";
@@ -12,12 +13,27 @@ const clName = "abex input resource";
 
 export class Stamina extends IconizedInput {
   constructor() {
-    super(0, stam, "ex-food");
+    super(0, stam, `team-food`);
     this.width = 42;
     this.height = 46;
     this.buttons = true;
     this.cssName = clName;
     this.value = parseInt(this.init());
+  }
+
+  setValue(n: number) {
+    this.value = n;
+    this.update(n);
+    (
+      document.querySelector(`input[name=${this.name}]`) as HTMLInputElement
+    ).value = `${n}`;
+  }
+
+  BossAttacks(): number {
+    return Math.floor(this.value / BossManager.foodCost);
+  }
+  RetryLimit(): number {
+    return Math.floor((this.value % BossManager.foodCost) / BossManager.retry);
   }
 }
 

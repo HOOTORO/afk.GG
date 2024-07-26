@@ -1,4 +1,7 @@
 import { DustChest } from "./types.js";
+
+const verb = true;
+
 export enum elTag {
   Input = "input",
   Div = "div",
@@ -141,10 +144,6 @@ class AfkArena {
     return new DustChest(2, 6).dust() / Period.day;
   }
 
-  static dailyPile() {
-    return new DustChest(1, 2).dust() / Period.day;
-  }
-
   static mistyValley() {
     const base = new DustChest(12, 8);
     const firstReward = new DustChest(12, 8);
@@ -159,20 +158,6 @@ class AbEx {
   static spectatorMod = 1.2;
   static sodFastenMod = 0.9;
   static startD = new Date();
-
-  static start() {
-    return new Date();
-  }
-
-  static left() {
-    return new Date(
-      this.startD.getUTCFullYear(),
-      this.startD.getUTCMonth(),
-      this.startD.getUTCDate() + this.abexDurationDays,
-      this.startD.getUTCHours(),
-      this.startD.getUTCMinutes()
-    );
-  }
 
   static silentHoursIn() {
     return new Date(
@@ -191,69 +176,7 @@ class AbEx {
   }
 }
 
-class Boss {
-  static foodCost = 48;
-  static retry = 4;
-}
-
-class ValueModes extends AfkArena {
-  static rSources = [
-    {
-      id: "cursed-realm",
-      label: "Cursed Realm",
-      tableName: "CR",
-      period: 7,
-      display: true,
-    },
-    {
-      id: "treasure-scramble",
-      label: "Treasure Scramble",
-      tableName: "TS",
-      period: 7,
-      display: true,
-    },
-    {
-      id: "nightmare-corridor",
-      label: "Nightmare Corridor",
-      tableName: "NC",
-      period: 7,
-      display: true,
-    },
-    {
-      id: "afk-income",
-      label: "Base AFK Income",
-      tableName: "AFK",
-      period: 1 / 24,
-      display: false,
-    },
-  ];
-
-  static gMode(x: string) {
-    const source = this.rSources.find(
-      (y) => y.id === x || y.label === x || y.tableName === x
-    );
-    if (!source) {
-      throw new Error("Unknown Source Mode");
-    }
-    return Object.values(GameMode).find(
-      (y) => (y as string) === source.tableName
-    );
-  }
-}
-
-type bres =
-  | "dia"
-  | "bait"
-  | "redc"
-  | "yells"
-  | "emblcc"
-  | "timee"
-  | "stars"
-  | "poe"
-  | "dust"
-  | "twise"
-  | "mythfs"
-  | "secrs";
+//
 
 const allRes = [
   "dia",
@@ -270,36 +193,15 @@ const allRes = [
   "secrs",
 ];
 
-enum GameMode {
-  CR = "CR",
-  TS = "TS",
-  NC = "NC",
-  all = "all",
-}
-
-const verb = true;
-
-const sheetId = "1_L4LmobsOtmVeBi3RwTCespyMq4vZLSJT1E-QOsXpoY";
-const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
 const query = encodeURIComponent("Select *");
-const url = function (x: string) {
-  return `${base}&sheet=${x}&tq=${query}`;
-};
 
 export {
   AbEx,
   AfkArena,
-  Boss,
-  GameMode,
   Period,
-  ValueModes,
   allRes,
-  base,
-  bres,
   iconSize,
   query,
   relicEstimateTable,
-  sheetId,
-  url,
   verb,
 };

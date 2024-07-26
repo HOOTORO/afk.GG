@@ -2,11 +2,12 @@ import { fetchData, newEl, safeSum as safeSum } from "../components/helper.js";
 
 import Inventory from "./inventory.js";
 import { Militia } from "./militia.js";
-import { AbEx, Boss, elTag, RelicBase } from "../model/constants.js";
+import { AbEx, elTag, RelicBase } from "../model/constants.js";
 import { Settlement } from "./settlement.js";
 import { Essence, Stamina, StarOfDawn } from "./abex-resource.js";
 import { Tier } from "./tier.js";
 import { Virtue } from "./virtue.js";
+import { BossManager } from "./boss.js";
 
 const townsData: Settlement[] = await fetchData("json/towns.json");
 export const TreeData: Virtue[] = await fetchData("json/duratree.json");
@@ -49,7 +50,7 @@ export class Expeditor {
   // METHODS
 
   BossAttack() {
-    this.stamina.value -= Boss.foodCost;
+    this.stamina.value -= BossManager.foodCost;
   }
 
   EssenceIncome() {

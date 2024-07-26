@@ -1,12 +1,11 @@
 import { elProp, elTag, Input, verb } from "../model/constants.js";
 // import sanitizeHtml from "";
+
 export const log = (x: any) => {
   if (verb) {
     console.log(x);
   }
 };
-
-export { hasEmpty, populateStorage, savedObj, setApp, buttonWrapInput };
 
 //! ///////////////////
 //! HTML Generators //
@@ -47,7 +46,7 @@ export function newBtn(text?: string, c?: string, id?: string) {
   }
   return newEl(elTag.Button, attrs, text);
 }
-function buttonWrapInput(el: HTMLElement, update: (y: number) => void) {
+export function buttonWrapInput(el: HTMLElement, update: (y: number) => void) {
   let input = el as HTMLInputElement;
   const wrap = newEl("div", { class: "number-input" }),
     // incBtn = newBtn("◀️", `desc ${el.className}`),
@@ -93,34 +92,21 @@ export function storedValue(inputId: string, value?: any): boolean | string {
   return v ? v : false;
 }
 
-function savedObj<Type>(str: string, def: Type) {
+export function savedObj<Type>(str: string, def: Type) {
   if (storedValue(str)) {
     return Object.assign(def, JSON.parse(storedValue(str).toString()));
   }
   return def;
 }
 
-function setApp(key: string) {
-  const storedVal = localStorage.getItem(key);
-  $(`#${key} option[value="${storedVal}"]`).first().attr("selected", "");
-}
-
-function populateStorage(key: string, value: string) {
-  if (key && value) {
-    localStorage.setItem(key, value);
-    setApp(key);
-  }
-}
-
 //! ///////////////////
 //! // utility func //
 //! /////////////////
 
-function hasEmpty(obj: Record<string, any>): boolean {
-  return (
-    Object.keys(obj).length === 0 &&
-    Object.values(obj).some((x) => x === null || x === 0 || x === undefined)
-  );
+export async function fetchData(assetsPath: string) {
+  const data = await fetch(`/assets/${assetsPath}`);
+  const str = await data.text();
+  return JSON.parse(str);
 }
 
 export function safeSum(n: number[]) {
@@ -131,8 +117,9 @@ export function safeSum(n: number[]) {
   }
 }
 
-export async function fetchData(assetsPath: string) {
-  const data = await fetch(`/assets/${assetsPath}`);
-  const str = await data.text();
-  return JSON.parse(str);
+function hasEmpty(obj: Record<string, any>): boolean {
+  return (
+    Object.keys(obj).length === 0 &&
+    Object.values(obj).some((x) => x === null || x === 0 || x === undefined)
+  );
 }
