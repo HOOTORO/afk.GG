@@ -11,8 +11,9 @@ tags:
 authors:
     - HOOTSMAN
 status: new
-lastmod: 2024-07-26T13:14:37.836Z
+lastmod: 2024-07-26T16:26:56.124Z
 ---
+
 
 /// details  | [AbEx Realm Ranking][realmranking]
     type: info
@@ -29,20 +30,26 @@ lastmod: 2024-07-26T13:14:37.836Z
 - 🇲🇾 **Malaysian** (a.k.a _Test Server_) - а еще есть ни разу не засветившийся в рейтинге, малайзийский "тестовый сервер"
 ///
 
+
+
 ## Ranking Seasons
 
-| #   | Boss        | Start      | End        |
-| --- | ----------- | ---------- | ---------- |
-| 1   | Gouldos     | 2020.05.30 | 2020.06.19 |
-| 2   | Gouldos     | 2020.08.08 | 2020.08.28 |
-| 3   | Ainz+Albedo | 2020.12.12 | 2020.12.28 |
-| 4   | Ezizh       | 2021.05.02 | 2021.05.18 |
-| 5   | Balancer    | 2021.10.30 | 2021.11.15 |
-| 6   | Balancer    | 2022.03.05 | 2021.03.21 |
-| 7   | Marsha      | 2022.09.03 | 2021.09.19 |
-| 8   | Marsha      | 2022.11.05 | 2021.11.21 |
-| 9   | Clawlossus  | 2023.05.07 | 2021.05.23 |
-| 10  | Clawlossus  | 2023.07.05 | 2021.07.21 |
+| #   | Boss        | Start      | End        | Type                     |
+| --- | ----------- | ---------- | ---------- | ------------------------ |
+| 1   | Gouldos     | 2020.05.30 | 2020.08.29 | _Rush_                   |
+| 2   | Gouldos     | 2020.08.08 | 2020.10.21 | _Rush_                   |
+| 3   | Ainz+Albedo | 2020.12.12 | 2020.12.30 | **_Rush/Damage_**[^what] |
+| 4   | Ezizh       | 2021.05.02 | 2021.05.20 | _Rush_                   |
+| 5   | Balancer    | 2021.10.30 | 2021.11.17 | **Damage**               |
+| 6   | Balancer    | 2022.03.05 | 2022.03.23 | _Rush_                   |
+| 7   | Marsha      | 2022.09.03 | 2022.09.21 | _Rush_                   |
+| 8   | Marsha      | 2022.11.05 | 2022.11.23 | _Rush_                   |
+| 9   | Clawlossus  | 2023.05.07 | 2023.05.23 | **Damage**               |
+| 10  | Clawlossus  | 2023.07.05 | 2023.07.26 | _Rush_                   |
+| 11  | Sky Serpent | 2023.07.05 | 2024.01.31 | _Rush_                   |
+| 12  | Sky Serpent | 2023.07.05 | 2024.04.10 | _Rush_                   |
+
+[^what]: Чисто технически это раш, так как босс убит. По факту же, это была _первая_ бездна на урон, так как босса убила только одна гильдия.
 
 ## S13 TEST: Discovered in AFK Crowdsource
 
@@ -77,6 +84,8 @@ pic related
 
 ### dgwyn in nutshell
 
+Well, lilith states that everything is ok, **she is designed that way**. :kappa:
+
 <figure>
     <video controls
             src="https://www.dropbox.com/scl/fi/u1ziwoa5xn94xkyqb7zxp/dgwyn.mp4?rlkey=cijnfpcsg4mh6hckstf0ghcv8&st=c4fkua6f&raw=1"
@@ -85,10 +94,11 @@ pic related
             title="not even ult">
     </video>
     <figcaption>
-        Well, lilith states that everything is ok, she is designed that way.
-        It's just as simple as it looks: literally оne shot 100B damage, bypassing all defensive mechanics
     </figcaption>
 </figure>
+
+It's just as simple as it looks:  
+_literally оne shot 100B damage, bypassing all defensive mechanics_ :clownfiesta:
 
 ## Построения с прошлого сезона s12
 
