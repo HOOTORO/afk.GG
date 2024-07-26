@@ -10,10 +10,11 @@ categories: []
 tags: []
 draft: true
 comments: false
-hide: []
+hide:
+    - feedback
 status: ""
 slug: war-notes
-lastmod: 2024-07-20T14:18:34.758Z
+lastmod: 2024-07-26T03:22:34.232Z
 template: templates/apps.j2
 ---
 
@@ -28,11 +29,6 @@ template: templates/apps.j2
 :   Калькулятор атак по ласт боссу.
     Показывает кол-во атак и запас ретраев до потери атаки.
 ///
-
-///// tab | Boss attacks
-/// html | div#attack-app
-///
-
 //// details | Team management
     type: settings
     open: False
@@ -40,9 +36,6 @@ template: templates/apps.j2
 /// html | div#team-set
 ///
 ////
-/////
 
-//// tab | Attack Remain Calculator
-/// html | div#rem-food
+/// html | div#attack-app
 ///
-////

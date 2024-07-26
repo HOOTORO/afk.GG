@@ -55,16 +55,16 @@ export function AttackForm() {
     .html();
 
   const atkC = new elBuilder(elTag.Div, { class: c })
-    .add(atkF)
     .add(newEl("h2", {}, "Set Food & Dura Tree"))
     .add(treeDiv)
+    .add(atkF)
     .html();
 
   document.getElementById("attack-app").appendChild(atkC);
   team.mount("team-set");
 
   const header = document
-    .getElementById("team-attacks-form")
+    .getElementById("attack-app")
     .appendChild(
       newEl(elTag.Table, {
         id: outputTableId,

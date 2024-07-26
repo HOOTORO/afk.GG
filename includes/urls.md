@@ -176,6 +176,18 @@
 [reltan]: https://i.imgur.com/WcbwFYc.jpeg
 [relwar]: https://i.imgur.com/Er8E7Hj.jpeg
 
+[template]: https://i.imgur.com/rx6Ytjx.jpeg
+[team-example]: https://i.imgur.com/r5vzeHx.jpeg
+[dgwyn-off-ans]: https://i.imgur.com/Jv9gXBt.png
+[mech1]: https://i.imgur.com/mfuNNgK.png
+[mech2]: https://i.imgur.com/Fgqcw4I.png
+[picrel]: https://i.imgur.com/ViPRWZm.png
+[mech3]: https://i.imgur.com/PzgMZGF.png
+[speculations]: https://i.imgur.com/mWq7Fnj.png
+[mplusdgwyn]: https://i.imgur.com/yMPYWeZ.png
+[anotherone]: https://i.imgur.com/q13gigX.jpeg
+[starters]: https://i.imgur.com/esc2N4a.png
+
 <!--  GUILDS/index -->
 
 [ru-guilds]: https://i.imgur.com/9pyPtIq.png

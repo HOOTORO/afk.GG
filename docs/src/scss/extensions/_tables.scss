@@ -2,7 +2,8 @@
 [data-md-color-scheme="default"],
 [data-md-color-scheme="slate"],
 [data-md-color-scheme="dracula"] {
-  .md-typeset table:not([class]) {
+  .md-typeset table:not([class]),
+  .attack-inputs+table {
     display: table;
     overflow: hidden !important;
     border-radius: 7px;

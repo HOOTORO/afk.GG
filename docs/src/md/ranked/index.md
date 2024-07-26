@@ -7,9 +7,38 @@ authors:
     - HOOTSMAN
 comments: true
 draft: false
-lastmod: 2024-07-25T02:28:04.014Z
+lastmod: 2024-07-26T06:16:39.918Z
 slug: guilds
 ---
+
+## Топ СНГильдий
+
+/// tab | s12
+
+![alt text](https://i.imgur.com/ldXFUfO.png)
+
+[Оригинальная таблица, за авторством Резза и Whxtever](https://docs.google.com/spreadsheets/d/1fl9sOsdd3KOvavZEau6xM-9_foXIu_g0bYUAI8g4VDI/edit?gid=98585275#gid=98585275)
+///
+/// tab | S10
+    attrs: {id: s10}
+
+В этот раз таблицу оперативно подготовили ребята из Prodota.
+Таблица заточена под рекрутеров, сделал версию для людей.
+
+![res10][s10]
+
+**origin sheets**  
+
+- [Версия работяг][s10sheet] Топ на картинке.  
+- [Оригинальная гугл-таблица][pdver] в таблице имеется аналитика и прикидка гипотетического урона.
+///
+/// tab | S9
+
+![res][s9]
+
+[Оригинальная гугл-таблица][s9sheet]
+///
+
 
 /// details | Disclaimer
     type: warning
