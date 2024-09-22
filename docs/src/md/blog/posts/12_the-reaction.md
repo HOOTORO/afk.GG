@@ -20,7 +20,7 @@ comments: true
 hide:
     - feedback
 preview: https://i.imgur.com/uqCQfcs.png
-lastmod: 2024-07-25T06:46:17.615Z
+lastmod: 2024-09-22T23:52:56.245Z
 ---
 
 
@@ -29,28 +29,20 @@ lastmod: 2024-07-25T06:46:17.615Z
 Не планировал давать комментариев по Акве, но к такому запредельному уровню ханжества, чсв и дремучему невежеству, оказался не готов.  
 И таки не смог пройти мимо.
 
+<video controls width="1376" height="720" src="https://www.dropbox.com/scl/fi/pcakxd7n0jf9on024da2o/cvo_0702_on20240725.mp4?rlkey=rly0r71r40lo5sx7qjjbgih6f&st=789zyieu&raw=1" title="WITNESSING OF A HOOTSMAN""></video>
+
 Внутри много скриншотов которые в явном или скрытом виде могут угрожать префронта́льной коре, ознакомление на свой страх и риск.  
-Зато TL;DR предоставлен, аж в двух вариантах!
+Зато  предоставлен, аж в двух вариантах!
 
 <!-- more -->
 
 ## ^^Реакция Аквилона^^
 
-//// new | TL;DR
+/// new | Dorian TL;DR
 
-/// tab | v.HOOTS
-
-<video controls width="1376" height="720" src="https://www.dropbox.com/scl/fi/pcakxd7n0jf9on024da2o/cvo_0702_on20240725.mp4?rlkey=rly0r71r40lo5sx7qjjbgih6f&st=789zyieu&raw=1" title="WITNESSING OF A HOOTSMAN""></video>
+![dorian]
 
 ///
-/// tab | v.Dorian summary
-
-| Краткое содержание по существу |
-| ------------------------------ |
-| ![dorian]                      |
-
-///
-////
 
 > "You should never underestimate the predictability of stupidity"  
 > _(c) Bullet Tooth Tony_
