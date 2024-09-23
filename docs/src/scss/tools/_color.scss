@@ -10,5 +10,5 @@
 }
 
 @function spread($color)  {
-  @return $color lighten($color, 5%) color.adjust($color, $lightness: -5%)
+  @return $color color.adjust($color, $lightness: 5%) color.adjust($color, $lightness: -5%)
 }

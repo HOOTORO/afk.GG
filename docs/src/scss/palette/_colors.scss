@@ -88,7 +88,7 @@ $colormap: (
     "dark-red": hsl(326, 100%, 74%),
     "dark-yellow": hsl(51, 94%, 73%),
     "text": rgb(221, 221, 221),
-    "def-bg": lighten(hsl(231, 15%, 18%), 5%),
+    "def-bg": color.adjust(hsl(231, 15%, 18%), $lightness: 5%),
     "dbg": #fff,
     "foot-bg": hsl(229, 18%, 12%),
     "foot-fg": hsl(191, 97%, 77%),
@@ -202,7 +202,7 @@ $colormap: (
   }
   
   &[data-md-color-scheme="default"] {
-    --md-code-inline-bg-color: #{lighten(map.get($colormap, $def, "pink"), 5%)};
+    --md-code-inline-bg-color: #{color.adjust(map.get($colormap, $def, "pink"), $lightness: 5%)};
     // --md-admonition-title-bg: #ffdb86;
   }
   

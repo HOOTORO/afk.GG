@@ -7,11 +7,10 @@ repo_name: afk.GG
 repo_url: https://github.com/HOOTORO/afk.GG
 edit_uri: edit/master/docs/src/md/
 
-copyright: > 
+copyright: >
   Copyright &copy; 2023 - 2024 Лев Николаевич, HOOTSMAN<br>
   <a href="#__consent">Change cookie settings</a>
 docs_dir: docs/src/md
-
 theme:
   custom_dir: docs/theme
   name: material
@@ -23,11 +22,8 @@ theme:
     edit: simple/editorconfig
     view: simple/markdown
     annotation: material/information-variant-circle
-    # :material-arrow-right-bold-outline: 
-    # :material-arrow-top-left-bottom-right:
-    # :material-arrow-top-left-bottom-right-bold:
-    # 
-  font: false
+  font:
+    false
     # text: Comfortaa, Play, Inter Tight, Bellota Text, Tektur (funny), Tenor Sans
     # too tight/thin: Yanone Kaffeesatz  Poiret One, Sawarabi Gothic
     # g: Montserrat Alternates, Zen Kaku Gothic New, Zen Kaku Gothic Antique (new bettr), Zen Kurenaido
@@ -106,7 +102,7 @@ nav:
 
 plugins:
   # - privacy:
-  #     enabled: !ENV [CI, false]
+  #     enabled: !ENV [CI, true]
   - blog:
       blog_toc: true
       post_excerpt_max_authors: 3
@@ -150,7 +146,8 @@ plugins:
 
 markdown_extensions:
   - toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      slugify:
+        !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
       permalink: "¤"
   - smarty:
       smart_quotes: true
@@ -161,7 +158,7 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.magiclink:
       normalize_issue_symbols: true
-      user:   HOOTORO
+      user: HOOTORO
       provider: github
       repo: afk.GG
   - pymdownx.caret:
@@ -202,7 +199,7 @@ markdown_extensions:
   #     alternate_style: true
   #     combine_header_slug: true
   - pymdownx.blocks.details:
-  # Default admos: note, abstract, info, tip, success,question, , failure, danger, bug, , 
+  # Default admos: note, abstract, info, tip, success,question, , failure, danger, bug, ,
   - pymdownx.blocks.admonition:
       types:
         - danger
@@ -218,7 +215,7 @@ markdown_extensions:
         - name: new
           title: Breaking News❗
         - name: example
-          title: Usage  
+          title: Usage
         - name: settings
           title: Parameters
         - name: quote
@@ -226,9 +223,13 @@ markdown_extensions:
         - name: adheart
           class: sh-luv
           title: <3
+        - name: tv
+          class: tv
+          title: HOO.TV
   - pymdownx.blocks.html:
   - pymdownx.blocks.tab:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      slugify:
+        !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
       alternate_style: true
       # combine_header_slug: true
 
@@ -258,15 +259,15 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/HOOTORO
   consent:
-      title: Cookie consent
-      description: >-
-        We use cookies to recognize your repeated visits and preferences, as well
-        as to measure the effectiveness of our documentation and whether users
-        find what they're searching for. With your consent, you're helping us to
-        make our documentation better.
-      actions:
-        - accept
-        - manage
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage
 
 extra_css:
   - css/main.css

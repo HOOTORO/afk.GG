@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "sass:color";
 
 // ----------------------------------------------------------------------------
 // Helpers
@@ -8,8 +9,8 @@
 /// Convert color in HEX to HSL
 ///
 @function hex2hsl($color) {
-  @return round(hue($color)), round(saturation($color)),
-    round(lightness($color));
+  @return round(color.channel($color, "hue", $space: hsl)), round(color.channel($color, "saturation", $space: hsl)),
+    round(color.channel($color, "lightness", $space: hsl));
 }
 
 // ----------------------------------------------------------------------------

@@ -5,6 +5,7 @@ $admonitions: (
   new: "yellow" var(--md-admonition-icon--new),
   sh-luv: "dark-red" var(--md-admonition-icon--sh-luv),
   settings: "pink" var(--md-admonition-icon--settings),
+  tv: "lime" var(--md-admonition-icon--tv),
   note: "yellow" &,
   abstract: "cyan" &,
   info: "blue" &,
@@ -52,6 +53,7 @@ $aniadmo: (
       // Define base class
       .md-typeset .admonition.#{$name} {
         border-color: var(--md-admonition-icon-color--#{$name});
+        box-shadow: 0px 0px 10px 2px var(--md-admonition-icon-color--#{$name});
 
         // Define base class
         > .admonition-title {

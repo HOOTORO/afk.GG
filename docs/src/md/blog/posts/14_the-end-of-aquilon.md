@@ -19,13 +19,13 @@ comments: true
 hide: []
 status: new
 slug: the-end-of-aquilon
-lastmod: 2024-07-26T15:14:56.338Z
+lastmod: 2024-09-23T10:23:23.065Z
 ---
 
-/// new
+/// tv
 Хоть и предсказуемо, но все же слишком скоропостижно развалился AQUILON, не дотянув даже до старта теста.
 Грустно, эпик провалу не быть.
-Подготовил сводку событий в удобном формате. :clownfiesta:
 
+**TL;DR** :clownfiesta:
 <video controls width="1376" height="720" src="https://www.dropbox.com/scl/fi/y60ij34bytooixxbssopw/cvo_f_on20240725.mp4?rlkey=e124cdjoegybteigypb3xxgc7&st=q4nqqooc&raw=1" title="SECOND WITNESSING OF A HOOTSMAN"></video>
 ///

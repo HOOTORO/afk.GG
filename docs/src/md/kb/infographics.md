@@ -10,7 +10,7 @@ tags:
     - Stats
     - Guide
 template: main.html
-lastmod: 2024-07-11T02:09:21.998Z
+lastmod: 2024-09-23T10:00:19.879Z
 draft: false
 slug: infographics
 preview: /docs/theme/assets/stars/n_evolve_diamond_star_big.png
@@ -48,13 +48,6 @@ status: new
 <figcaption>Lil' bit outdated, but still relevant!</figcaption>
 </figure>
 
-## Isle of Gold
-
-<blockquote class="reddit-embed-bq" style="height:316px" data-embed-theme="dark" data-embed-height="316">
-<a href="https://www.reddit.com/r/afkarena/comments/1bzu5o7/the_isle_of_gold_guide/">The Isle of Gold Guide</a>
-<br> by<a href="https://www.reddit.com/user/Artrizet/">u/Artrizet</a> in<a href="https://www.reddit.com/r/afkarena/">afkarena</a>
-</blockquote>
-<script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
 
 ## Pet Guide
 
