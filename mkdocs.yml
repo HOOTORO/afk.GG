@@ -88,10 +88,10 @@ nav:
       - AFK Statistics:
           - kb/iog.md
   - Ranked:
+      - ranked/index.md
       - ranked/abex.md
       - ranked/hf.md
       - ranked/meme.md
-      - ranked/index.md
       - ranked/guild-archive.md
       - Tools:
           - ranked/tools/abex.md

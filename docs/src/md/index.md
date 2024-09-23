@@ -9,7 +9,8 @@ hide:
 template: home.html
 draft: false
 authors: HOOTSMAN
-lastmod: 2024-07-25T02:16:02.325Z
+lastmod: 2024-09-23T11:41:00.509Z
+icon: material/home-heart
 ---
 
 # ^^Welcome, fellow AFK enjoyer!^^

@@ -7,8 +7,9 @@ authors:
     - HOOTSMAN
 comments: true
 draft: false
-lastmod: 2024-07-26T06:16:39.918Z
+lastmod: 2024-09-23T11:40:14.538Z
 slug: guilds
+icon: fontawesome/solid/hashtag
 ---
 
 ## Топ СНГильдий

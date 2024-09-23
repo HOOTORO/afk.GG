@@ -2,10 +2,10 @@
 
 [need your memes]: https://i.imgur.com/UUD5NxY.png
 
-![alt text](https://i.imgur.com/aGuSHJ7.png)
-![alt text](https://i.imgur.com/e49B8c4.png)
-![alt text](https://i.imgur.com/fUwl5j2.png)
-![alt text](https://i.imgur.com/G2V7Ac0.png)
+![alt text](https://i.imgur.com/aGuSHJ7.png){.memas}
+![alt text](https://i.imgur.com/e49B8c4.png){.memas}
+![alt text](https://i.imgur.com/fUwl5j2.png){.memas}
+![alt text](https://i.imgur.com/G2V7Ac0.png){.memas}
 ![alt text](https://i.imgur.com/1exExzu.png){.memas}
 ![1121040470957633536.jpg](https://i.imgur.com/jnTo85c.jpeg){.memas}
 ![1121040535445057546.jpg](https://i.imgur.com/8thbJN4.jpeg){.memas}

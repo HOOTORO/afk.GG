@@ -3,7 +3,8 @@ title: Welcome
 description: |
     Раздел с полезной информацией про внутриигровые механики.
 template: main.html
-lastmod: 2024-07-25T02:09:09.280Z
+lastmod: 2024-09-23T11:30:57.265Z
+icon: simple/knowledgebase
 ---
 
 Forged by community!
