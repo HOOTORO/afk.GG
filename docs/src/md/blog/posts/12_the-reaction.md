@@ -20,7 +20,7 @@ comments: true
 hide:
     - feedback
 preview: https://i.imgur.com/uqCQfcs.png
-lastmod: 2024-09-22T23:52:56.245Z
+lastmod: 2024-09-23T00:43:10.501Z
 ---
 
 
@@ -38,7 +38,7 @@ lastmod: 2024-09-22T23:52:56.245Z
 
 ## ^^Реакция Аквилона^^
 
-/// new | Dorian TL;DR
+/// new | TL;DR v_Dorian
 
 ![dorian]
 
