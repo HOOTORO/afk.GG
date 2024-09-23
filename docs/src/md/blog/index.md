@@ -3,8 +3,7 @@ title: HOOT-o-ROCK
 description: personal blog
 authors:
     - HOOTSMAN
-lastmod: 2024-09-23T02:17:31.858Z
-draft: true
+lastmod: 2024-09-23T02:20:03.761Z
 slug: hoot-rock
 ---
 

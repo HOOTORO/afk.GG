@@ -50,8 +50,7 @@
           "title": "template",
           "type": "string",
           "hidden": true,
-          "single": true,
-          "default": null
+          "single": true
         },
         {
           "name": "title",
@@ -119,8 +118,7 @@
         {
           "name": "draft",
           "title": "draft",
-          "type": "draft",
-          "default": true
+          "type": "draft"
         },
         {
           "name": "comments",
