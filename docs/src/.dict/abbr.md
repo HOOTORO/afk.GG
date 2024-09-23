@@ -1,58 +1,60 @@
 <!-- Abbreviations -->
+*[ЧСВ] (рус. акр.) Петух
 
 <!-- prettier-ignore -->
-*[TS]: (аббревиатура) Treasure Scramble
-*[HF]: (аббревиатура) Hunting Fields
-*[LC]: (аббревиатура) Legends Championship, тот самый китовый раздел арены героев
-*[CR]: (аббревиатура) Cursed Realm, Проклятый Мир, Курса...
-*[TL;DR]: (англ. аббревиатура) Too Long, Don't Read  
-*[Q&A]: (aнгл. аббревиатура) Questions & Answer. Секция вопросов и ответов
-*[F2P]: (англ. аббревиатура) Free To Play. Игрок, не закинувший в игру ни копейки
+*[TS]: (аббр.) Treasure Scramble
+*[HF]: (аббр.) Hunting Fields
+*[LC]: (аббр.) Legends Championship, тот самый китовый раздел арены героев
+*[CR]: (аббр.) Cursed Realm, Проклятый Мир, Курса...
+*[TL;DR]: (англ. аббр.) Too Long, Don't Read  
+*[Q&A]: (aнгл. аббр.) Questions & Answer. Секция вопросов и ответов
+*[F2P]: (англ. аббр.) Free To Play. Игрок, не закинувший в игру ни копейки
 *[low_spender]: Игрок с минильным донатом
 *[Dolphin]: Игрок с минильным донатом
 *[PTS]: сокр. от Points, Очки, Поинты
 *[кап]: Максимально доступное значение
-*[WR]: (англ. аббревиатура) Win Rate. Соотношение побед к поражениям
-*[HP]: (англ. аббревиатура) Health Points - очки здоровья
-*[GB]: (англ. акроним) Фракция - Graveborn (Одна из двух, указана в единственном числе)
-*[LB]: (англ. акроним) Фракция - Lightbearers
-*[WD]: (англ. акроним) Фракция - Wilders
-*[ML]: (англ. акроним) Фракция - Maulers
-*[CSL]: (англ. акроним) Фракция - Celestials
-*[HG]: (англ. акроним) Фракция - Hypogeans
-*[DIM]: (англ. акроним) Dimansional - (Одна из двух, указана в единственном числе)
-*[AE]: (англ. аббревиатура) Abyssal Expedition, Экспедиция в бездну
-*[AbEx]: (англ. акроним) Abyssal Expedition, Экспедиция в бездну
-*[AS]: (англ. аббревиатура) Attack Speed - Каждое очко этого атрибута увеличивает скорость анимации и частоту атак на 1%
-*[CDR]: (англ. аббревиатура) Crit Damage Resistance
-*[CDA]: (англ. аббревиатура) Crit Damage Amplification
-*[CBR]: (англ. аббревиатура) Crit. Block Rate
-*[ACC]: (англ. акроним) Accuracy
-*[RH]: (англ. аббревиатура) Recieved Healing
-*[PP]: (англ. аббревиатура) Physical Pierce
-*[MP]: (англ. аббревиатура) Magic Pierce
-*[TY]: (англ. акроним) Tenacity
-*[IS]: (англ. акроним) Insight
-*[DEF]: (англ. акроним) Defense Rating
-*[ATK]: (англ. акроним) Attack Rating
-*[CRIT]: (англ. акроним) Crit Rate
-*[PRF]: (англ. акроним) Proficiency
-*[DISS]: (англ. акроним) Dissolve
-*[ME]: (англ. аббревиатура) Magic Efficiency
-*[MS]: (англ. аббревиатура) Magic Suppression
+*[WR]: (англ. аббр.) Win Rate. Соотношение побед к поражениям
+*[HP]: (англ. аббр.) Health Points - очки здоровья
+*[GB]: (англ. акр.) Фракция - Graveborn (Одна из двух, указана в единственном числе)
+*[LB]: (англ. акр.) Фракция - Lightbearers
+*[WD]: (англ. акр.) Фракция - Wilders
+*[ML]: (англ. акр.) Фракция - Maulers
+*[CSL]: (англ. акр.) Фракция - Celestials
+*[HG]: (англ. акр.) Фракция - Hypogeans
+*[DIM]: (англ. акр.) Dimansional - (Одна из двух, указана в единственном числе)
+*[AE]: (англ. аббр.) Abyssal Expedition, Экспедиция в бездну
+*[AbEx]: (англ. акр.) Abyssal Expedition, Экспедиция в бездну
+*[AS]: (англ. аббр.) Attack Speed - Каждое очко этого атрибута увеличивает скорость анимации и частоту атак на 1%
+*[CDR]: (англ. аббр.) Crit Damage Resistance
+*[CDA]: (англ. аббр.) Crit Damage Amplification
+*[CBR]: (англ. аббр.) Crit. Block Rate
+*[ACC]: (англ. акр.) Accuracy
+*[aka]: (англ. аббр.) Also Known As
+*[RH]: (англ. аббр.) Recieved Healing
+*[PP]: (англ. аббр.) Physical Pierce
+*[MP]: (англ. аббр.) Magic Pierce
+*[TY]: (англ. акр.) Tenacity
+*[IS]: (англ. акр.) Insight
+*[DEF]: (англ. акр.) Defense Rating
+*[ATK]: (англ. акр.) Attack Rating
+*[CRIT]: (англ. акр.) Crit Rate
+*[PRF]: (англ. акр.) Proficiency
+*[DISS]: (англ. акр.) Dissolve
+*[ME]: (англ. аббр.) Magic Efficiency
+*[MS]: (англ. аббр.) Magic Suppression
 *[HASTE]: Атрибут определяющий как быстро и с какой частотой герой может атаковать и использовать умения. Высокий показатель увеличивает скорость анимации атак/навыков и позволяет использовать их чаще.
-*[RPS]: (англ. аббревиатура) Recovery Per Second
-*[MR]: (англ. аббревиатура) Magic Resist
-*[PR]: (англ. аббревиатура) Physical Resist
-*[LL]: (англ. аббревиатура) Life Leech
+*[RPS]: (англ. аббр.) Recovery Per Second
+*[MR]: (англ. аббр.) Magic Resist
+*[PR]: (англ. аббр.) Physical Resist
+*[LL]: (англ. аббр.) Life Leech
 *[DODGE]: Уклонение
-*[BnB]: (англ. аббревиатура) гильдий BackNBlack, BackNBlurple, BackNBlanc
-*[KLBR]: (англ. акроним) гильдии KillBeRos
-*[GM]: (англ. аббревиатура)  Guild Master, глава гильдии
-*[ОЕ]: (аббревиатура) Организационная единица
-*[БРО]: (анг. акроним) BRanch Officer
-*[СОф]: (анг. акроним) Squad Officer
-*[хбз]: (аббревиатура) хуйня без задач
+*[BnB]: (англ. аббр.) гильдий BackNBlack, BackNBlurple, BackNBlanc
+*[KLBR]: (англ. акр.) гильдии KillBeRos
+*[GM]: (англ. аббр.)  Guild Master, глава гильдии
+*[ОЕ]: (аббр.) Организационная единица
+*[БРО]: (анг. акр.) BRanch Officer
+*[СОф]: (анг. акр.) Squad Officer
+*[хбз]: (аббр.) хуйня без задач
 
 <!-- Peoples -->
 
