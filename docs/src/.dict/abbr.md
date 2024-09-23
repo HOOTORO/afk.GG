@@ -1,5 +1,5 @@
 <!-- Abbreviations -->
-*[ЧСВ] (рус. акр.) Петух
+*[ЧСВ]: (рус. акр.) Петух
 
 <!-- prettier-ignore -->
 *[TS]: (аббр.) Treasure Scramble
