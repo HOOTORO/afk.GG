@@ -145,5 +145,12 @@
     "codename": "pet_6021",
     "id": 21,
     "icon": "/assets/portraits/pets/pet_6021.png"
+  },
+  {
+    "name": "aist",
+    "short": "ais",
+    "codename": "pet_6022",
+    "id": 22,
+    "icon": "/assets/portraits/pets/pet_6022.png"
   }
 ]

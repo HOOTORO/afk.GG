@@ -1857,5 +1857,70 @@
     "isAwakened": false,
     "name": "dreaf168",
     "icon": "/assets/portraits/heroes/Shamus.jpg"
+  },
+  {
+    "id": 171,
+    "type": "intelligence",
+    "class": "support",
+    "role": "buffer",
+    "icon": "/assets/portraits/heroes/DLoong.jpg",
+    "slug": "dloong",
+    "name": "lan",
+    "faction": "draconis",
+    "isAwakened": true
+  },
+  {
+    "id": 172,
+    "type": "intelligence",
+    "class": "support",
+    "role": "control",
+    "icon": "/assets/portraits/heroes/Snail.jpg",
+    "slug": "snail",
+    "name": "snail",
+    "faction": "wilders",
+    "isAwakened": false
+  },
+  {
+    "id": 173,
+    "type": "agility",
+    "class": "ranger",
+    "role": "continuous",
+    "icon": "/assets/portraits/heroes/CrySword.jpg",
+    "slug": "crysword",
+    "faction": "wilders",
+    "name": "Awk.Eironn",
+    "isAwakened": true
+  },
+  {
+    "id": 174,
+    "type": "intelligence",
+    "class": "mage",
+    "role": "buffer",
+    "icon": "/assets/portraits/heroes/AutumnG.jpg",
+    "slug": "autumng",
+    "faction": "celestials",
+    "isAwakened": false
+  },
+  {
+    "id": 175,
+    "type": "strength",
+    "class": "tank",
+    "role": "buffer",
+    "icon": "/assets/portraits/heroes/DConcierge.jpg",
+    "slug": "dconcierge",
+    "name": "kreg",
+    "faction": "draconis",
+    "isAwakened": false
+  },
+  {
+    "id": 176,
+    "type": "agility",
+    "class": "support",
+    "role": "continuous",
+    "icon": "/assets/portraits/heroes/SoulScythe.jpg",
+    "slug": "soulscythe",
+    "name": "randle",
+    "faction": "graveborns",
+    "isAwakened": false
   }
 ]
