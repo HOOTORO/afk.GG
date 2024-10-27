@@ -1,7 +1,7 @@
 import { expeditor, team } from "../abex.js";
 import { elBuilder } from "../components/builder.js";
 import { exportToCsv } from "../components/csvexport.js";
-import { newEl, newIn, newBtn } from "../components/helper.js";
+import { newBtn, newEl, newIn } from "../components/helper.js";
 import { elTag, Input } from "../model/constants.js";
 import { Virtues } from "../types/virtue.js";
 
@@ -19,6 +19,7 @@ export function AttackForm() {
 
   const addAttack = newBtn("Add Dmg", "add-attack md-button"),
     csvExport = newBtn("Export", "export-csv md-button"),
+    retryBtn = newBtn("Retry", "retry-attack md-button"),
     treeDiv = newEl("div", { class: `team-set-inputs` });
 
   treeDiv.appendChild(team.food.html());
@@ -27,7 +28,8 @@ export function AttackForm() {
   });
 
   const btnContainer = new elBuilder(elTag.Label)
-      .add(addAttack)
+    .add(addAttack)
+    // .add(retryBtn)
       .add(csvExport)
       .html(),
     dpsLabel = new elBuilder(elTag.Label, { for: "dps" }, "Damage, B.")
@@ -112,6 +114,18 @@ export function AttackForm() {
       commentField.value,
       discarded.checked
     );
+    // let food = document.getElementsByName("team-food")[0] as HTMLInputElement
+    // let atkLeft = food.valueAsNumber/BossManager.foodCost
+    // if (food.valueAsNumber > BossManager.foodCost && discarded.checked) {
+    //    food.value = (food.valueAsNumber - BossManager.retry).toString()
+    // }
+    //     if (food.valueAsNumber > BossManager.foodCost && !discarded.checked) {
+    //    food.value = (food.valueAsNumber - BossManager.foodCost).toString()
+    //     }
+    
+    
+
+
   });
 }
 
